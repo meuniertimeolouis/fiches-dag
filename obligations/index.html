@@ -303,6 +303,18 @@ select{padding:8px 10px;border:1px solid var(--line);border-radius:8px;backgroun
 <script src="data/ch07.js"></script>
 <script src="data/ch08.js"></script>
 <script src="data/ch09.js"></script>
+<script src="data/ch10.js"></script>
+<script src="data/ch11.js"></script>
+<script src="data/ch12.js"></script>
+<script src="data/ch13.js"></script>
+<script src="data/ch14.js"></script>
+<script src="data/ch15.js"></script>
+<script src="data/ch16.js"></script>
+<script src="data/ch17.js"></script>
+<script src="data/ch18.js"></script>
+<script src="data/ch19.js"></script>
+<script src="data/ch20.js"></script>
+<script src="data/ch21.js"></script>
 <script src="data/pieges.js"></script>
 <script>
 /* =====================================================================
@@ -439,7 +451,7 @@ function drawFiche() {
       ${piegesHtml(pg.pieges, CH.train)}</section>` : ""}
       ${(pg.reflexes || []).length ? `<section class="sec" id="s${c.num}-rfx"><h3>Bons réflexes</h3>${reflexesHtml(pg.reflexes)}</section>` : ""}` : ""}
     ${c.retenir ? `<section class="sec"><h3>L'essentiel à retenir</h3><ul>${c.retenir.map(x => `<li>${fmt(x)}</li>`).join("")}</ul></section>` : ""}
-    ${arts.length ? `<section class="sec" id="s${c.num}-art"><h3>Articles du chapitre</h3><div class="artbox">${arts.map(a => `<details><summary>Article ${esc(a.num)} ${esc(a.code || "C. civ.")}${a.theme ? `<span class="t">${esc(a.theme)}</span>` : ""}</summary><p>${esc(a.texte)}</p>${a.retenir ? `<div class="src"><strong>À retenir :</strong> ${esc(a.retenir)}</div>` : ""}</details>`).join("")}</div><p class="src">Textes en vigueur, vérifiés sur Légifrance.</p></section>` : ""}
+    ${arts.length ? `<section class="sec" id="s${c.num}-art"><h3>Articles du chapitre</h3><div class="artbox">${arts.map(a => `<details><summary>Article ${esc(a.aff || a.num)} ${esc(a.code || "C. civ.")}${a.theme ? `<span class="t">${esc(a.theme)}</span>` : ""}</summary><p>${esc(a.texte)}</p>${a.retenir ? `<div class="src"><strong>À retenir :</strong> ${esc(a.retenir)}</div>` : ""}</details>`).join("")}</div><p class="src">Textes en vigueur, vérifiés sur Légifrance.</p></section>` : ""}
     ${regs.length || cas.length || (c.quiz || []).length ? `<section class="sec"><h3>S'entraîner</h3><div class="row">
       ${regs.map(r => `<button type="button" class="btn" data-go-reg="${esc(r.id)}">Régime : ${esc(r.titre)}</button>`).join("")}
       ${cas.map(x => `<button type="button" class="btn" data-go-cas="${esc(x.id)}">Cas pratique : ${esc(x.titre)}</button>`).join("")}
@@ -625,7 +637,7 @@ function filteredArticles() {
 }
 function startDeck(list) { A.deck = shuffle(list || filteredArticles()); A.i = 0; A.shown = false; A.known = 0; A.again = []; }
 function articleCard(a) {
-  return `<article class="acard" id="art-${esc(a.num)}"><div class="anum">Article ${esc(a.num)}<small>${esc(a.code || "C. civ.")}${a.theme ? " · " + esc(a.theme) : ""}</small></div>
+  return `<article class="acard" id="art-${esc(a.num)}"><div class="anum">Article ${esc(a.aff || a.num)}<small>${esc(a.code || "C. civ.")}${a.theme ? " · " + esc(a.theme) : ""}</small></div>
     <p class="atext">${esc(a.texte)}</p>${a.retenir ? `<p class="aret"><strong>À retenir :</strong> ${esc(a.retenir)}</p>` : ""}</article>`;
 }
 function drawArticles() {
@@ -638,7 +650,7 @@ function drawArticles() {
   if (!A.deck.length) { box.innerHTML = `<p class="muted">Aucun article ne correspond.</p>`; return; }
   if (A.i >= A.deck.length) {
     box.innerHTML = `<div class="flashbox panel"><h2>${A.known} / ${A.deck.length} articles sus</h2>
-      ${A.again.length ? `<p style="margin:0">À revoir : ${A.again.map(a => `<button type="button" class="art" data-art="${esc(a.num)}">${esc(a.num)}</button>`).join(" ")}</p>` : `<p style="margin:0">Aucun article à revoir.</p>`}
+      ${A.again.length ? `<p style="margin:0">À revoir : ${A.again.map(a => `<button type="button" class="art" data-art="${esc(a.num)}">${esc(a.aff || a.num)}</button>`).join(" ")}</p>` : `<p style="margin:0">Aucun article à revoir.</p>`}
       <div class="row">${A.again.length ? `<button type="button" class="btn primary" id="aAgain">Réciter les articles à revoir</button>` : ""}<button type="button" class="btn" id="aRestart">Tout recommencer</button></div></div>`;
     const ag = $("#aAgain"); if (ag) ag.addEventListener("click", () => { startDeck(A.again); drawArticles(); });
     $("#aRestart").addEventListener("click", () => { startDeck(); drawArticles(); });
@@ -648,7 +660,7 @@ function drawArticles() {
   box.innerHTML = `<div class="flashbox">
     <div class="meta"><span>${A.i + 1} / ${A.deck.length}</span><span>${A.known} su${A.known > 1 ? "s" : ""}</span></div>
     <div class="bar"><i style="width:${(A.i / A.deck.length) * 100}%"></i></div>
-    <article class="acard"><div class="anum">Article ${esc(a.num)}<small>${esc(a.code || "C. civ.")}${a.theme ? " · " + esc(a.theme) : ""}</small></div>
+    <article class="acard"><div class="anum">Article ${esc(a.aff || a.num)}<small>${esc(a.code || "C. civ.")}${a.theme ? " · " + esc(a.theme) : ""}</small></div>
       ${A.shown ? `<p class="atext">${esc(a.texte)}</p>${a.retenir ? `<p class="aret"><strong>À retenir :</strong> ${esc(a.retenir)}</p>` : ""}` : `<p class="muted" style="margin:0">Récitez le texte de l'article, puis vérifiez.</p>`}
     </article>
     <div class="row">${A.shown

@@ -1,0 +1,99 @@
+/* Présentation « épurée » : mêmes contenus, interface réduite à l'essentiel.
+   Activée par l'attribut data-look="epure" sur <html> (voir look.js). */
+:root[data-look="epure"]{
+  --bg:#FFFFFF;--surface:#FFFFFF;--ink:#1B1B1B;--muted:#6E6E6E;--line:#E7E7E7;
+  --accent:#2D4A6E;--accent-soft:#F4F6F9;--dag:#2D4A6E;--dag-soft:#F4F6F9;--obl:#2D4A6E;--obl-soft:#F4F6F9;
+  --ok:#2F6B4F;--ok-bg:transparent;--ko:#9A2F2F;--ko-bg:transparent;--warn:#8A5A00;--warn-bg:transparent;
+  --f-mono:var(--f-body);--r:0px;
+}
+@media (prefers-color-scheme:dark){:root[data-look="epure"]:not([data-theme="light"]){
+  --bg:#121212;--surface:#121212;--ink:#E9E9E9;--muted:#9C9C9C;--line:#2A2A2A;
+  --accent:#A9C0DE;--accent-soft:#1A1D22;--dag:#A9C0DE;--dag-soft:#1A1D22;--obl:#A9C0DE;--obl-soft:#1A1D22;
+  --ok:#86C9A6;--ko:#E59A9A;--warn:#E8BF6A}}
+:root[data-look="epure"][data-theme="dark"]{
+  --bg:#121212;--surface:#121212;--ink:#E9E9E9;--muted:#9C9C9C;--line:#2A2A2A;
+  --accent:#A9C0DE;--accent-soft:#1A1D22;--ok:#86C9A6;--ko:#E59A9A;--warn:#E8BF6A}
+
+/* Typographie : une seule famille pour l'interface, lecture aérée */
+[data-look="epure"] body{font-size:15.5px;line-height:1.7}
+[data-look="epure"] .wrap{max-width:1040px}
+[data-look="epure"] .eyebrow,[data-look="epure"] .lab,[data-look="epure"] .fig .ft,[data-look="epure"] .pg .lbl,
+[data-look="epure"] .rlist .ch,[data-look="epure"] .chlist .pt,[data-look="epure"] .kv b,[data-look="epure"] .tag,
+[data-look="epure"] details.idx summary,[data-look="epure"] .qkind,[data-look="epure"] .piege b{
+  text-transform:none;letter-spacing:0;font-size:13px;font-weight:500}
+[data-look="epure"] h1{font-weight:500}
+[data-look="epure"] header,[data-look="epure"] header.top{border-bottom:0}
+
+/* Navigation : du texte, pas de boutons */
+[data-look="epure"] .tabs{border-bottom:1px solid var(--line);gap:18px}
+[data-look="epure"] .tabs button{padding:10px 0;font-weight:500;border-bottom-width:1px}
+[data-look="epure"] .tabs button[aria-selected="true"]{border-bottom-color:var(--ink)}
+[data-look="epure"] .chip,[data-look="epure"] .toc a,[data-look="epure"] .steps li,[data-look="epure"] .notion{
+  border:0;background:none;border-radius:0;padding:0 2px;color:var(--muted)}
+[data-look="epure"] .toc{gap:4px 14px}
+[data-look="epure"] .chip[aria-pressed="true"],[data-look="epure"] .steps li.cur{color:var(--ink);background:none;text-decoration:underline;text-underline-offset:4px}
+[data-look="epure"] .seg{border-radius:0;border-color:var(--line)}
+[data-look="epure"] .seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+[data-look="epure"] .rlist button,[data-look="epure"] .chlist button{border-left:0;padding-left:0}
+[data-look="epure"] .rlist button[aria-current="true"],[data-look="epure"] .chlist button[aria-current="true"]{background:none;color:var(--ink);font-weight:700}
+[data-look="epure"] .index{border-left:0}
+
+/* Boutons sobres */
+[data-look="epure"] .btn,[data-look="epure"] .opt,[data-look="epure"] select,[data-look="epure"] input[type="search"],[data-look="epure"] textarea{border-radius:4px;background:transparent}
+[data-look="epure"] .btn.primary{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+[data-look="epure"] .opt.good{background:transparent}
+[data-look="epure"] .art{background:none;border-radius:3px}
+
+/* Plus de cartes : des blocs séparés par un filet */
+[data-look="epure"] .panel,[data-look="epure"] .acard,[data-look="epure"] .case,[data-look="epure"] .cond,
+[data-look="epure"] .pg,[data-look="epure"] .method li,[data-look="epure"] .qpanel,[data-look="epure"] .card,
+[data-look="epure"] a.card,[data-look="epure"] .artbox details,[data-look="epure"] .minor,[data-look="epure"] .fig,
+[data-look="epure"] .tree,[data-look="epure"] .faits,[data-look="epure"] .empty{
+  background:transparent;border:0;border-radius:0;box-shadow:none}
+[data-look="epure"] .acard,[data-look="epure"] .case,[data-look="epure"] .cond,[data-look="epure"] .pg,
+[data-look="epure"] .method li,[data-look="epure"] .card,[data-look="epure"] a.card,[data-look="epure"] .artbox details{
+  border-bottom:1px solid var(--line);padding-left:0;padding-right:0}
+[data-look="epure"] .alist,[data-look="epure"] .cases{gap:0 28px}
+[data-look="epure"] .pglist,[data-look="epure"] .artbox{gap:0}
+[data-look="epure"] a.card{border-top:0;padding-top:0}
+[data-look="epure"] a.card:hover{transform:none}
+[data-look="epure"] a.card .go{text-decoration:underline;text-underline-offset:4px}
+[data-look="epure"] .fig{padding:4px 0}
+[data-look="epure"] .faits{padding:0 0 0 16px;border-left:2px solid var(--line)}
+
+/* Numéros de conditions : discrets */
+[data-look="epure"] .cond{padding-left:36px}
+[data-look="epure"] .cond::before{background:none;color:var(--muted);border:1px solid var(--line);left:0;width:24px;height:24px}
+[data-look="epure"] .method li{padding-left:40px}
+[data-look="epure"] .method li::before{left:0;color:var(--muted)}
+
+/* Encadrés : un simple filet à gauche */
+[data-look="epure"] .defn,[data-look="epure"] .arret,[data-look="epure"] .warnbox,[data-look="epure"] .rfx,
+[data-look="epure"] .note,[data-look="epure"] .kv.piege,[data-look="epure"] .piege,[data-look="epure"] .verdict{
+  background:transparent;border:0;border-left:2px solid var(--line);border-radius:0;padding:2px 0 2px 14px;color:var(--ink)}
+[data-look="epure"] .warnbox,[data-look="epure"] .kv.piege,[data-look="epure"] .piege{border-left-color:var(--warn)}
+[data-look="epure"] .warnbox::before{color:var(--warn)}
+[data-look="epure"] .defn{border-left-color:var(--ink)}
+[data-look="epure"] .verdict.ok{border-left-color:var(--ok);color:var(--ok)}
+[data-look="epure"] .verdict.ko{border-left-color:var(--ko);color:var(--ko)}
+
+/* Pièges : plus de bandes colorées */
+[data-look="epure"] .pg .pf,[data-look="epure"] .pg .pj{background:none;padding:8px 0}
+[data-look="epure"] .pg .pq{padding:0 0 10px 30px}
+[data-look="epure"] .pg .reveal{margin-left:30px}
+
+/* Schémas : traits fins, sans aplats */
+[data-look="epure"] .tree-s .nd,[data-look="epure"] .steps-s .bx{background:transparent;border-radius:4px}
+[data-look="epure"] .tree-s .nd.root{background:transparent;border-color:var(--ink)}
+[data-look="epure"] .tree-s li::before,[data-look="epure"] .tree-s li::after,[data-look="epure"] .tree-s ul ul::before{border-width:1px}
+[data-look="epure"] .tbl th{background:transparent;border-bottom:2px solid var(--ink)}
+[data-look="epure"] .tbl th,[data-look="epure"] .tbl td{border-left:0;border-right:0;border-top:0}
+[data-look="epure"] .frise{border-left-width:1px;border-left-color:var(--line)}
+[data-look="epure"] .frise li::before{width:9px;height:9px;left:-23px;border-width:1px}
+
+/* Sélecteur d'affichage */
+.look-switch{display:flex;gap:10px;align-items:center;margin-top:12px;font-size:13px;color:var(--muted)}
+.look-switch button{border:0;background:none;padding:0;font:inherit;color:var(--muted);cursor:pointer;text-decoration:none}
+.look-switch button[aria-pressed="true"]{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.look-switch button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+[data-look="epure"] .tag{background:none;padding:0;color:var(--muted)}

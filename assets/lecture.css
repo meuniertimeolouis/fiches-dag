@@ -1,0 +1,10 @@
+/* Texte justifié partout, sauf tableaux, schémas et éléments d'interface. */
+body{text-align:justify;hyphens:auto;-webkit-hyphens:auto;text-wrap:pretty}
+h1,h2,h3,h4,.eyebrow,.lab,.tag,.go,nav,.tabs,.toc,.chips,.chip,.seg,.steps,.meta,.qmeta,.index,.rlist,.chlist,
+.anum,.date,.stamp,.ref,.doc,.notion,.score,.frise .d,.pg .lbl,.look-switch,input,select,textarea,label,summary{text-align:left;hyphens:manual;-webkit-hyphens:manual}
+table,th,td,.tbl,.tbl *{text-align:left!important;hyphens:manual;-webkit-hyphens:manual}
+.tree-s,.steps-s,.steps-s *{text-align:left;hyphens:manual;-webkit-hyphens:manual}
+.tree-s li{text-align:center}
+@media (max-width:700px){.tree-s li{text-align:left}}
+.ref-art,.art,.stamp,.date{white-space:nowrap}
+.empty{text-align:center}

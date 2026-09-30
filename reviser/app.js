@@ -113,10 +113,10 @@ function chrome(sub, toolCur) {
   S.subject = sub; save();
   document.querySelectorAll(".subjects a").forEach(a => a.setAttribute("aria-current", a.dataset.sub === sub ? "page" : "false"));
   const tools = sub === "obl"
-    ? [["obl", "Parcours"], ["obl/outils/regimes", "Régimes"], ["obl/outils/articles", "Articles"], ["obl/outils/pieges", "Tous les pièges"], ["obl/outils/quiz", "Quiz mélangé"]]
+    ? [["obl", "Parcours"], ["obl/outils/regimes", "Régimes"], ["obl/outils/articles", "Articles"], ["obl/outils/pieges", "Pièges"], ["obl/outils/quiz", "Quiz mélangé"]]
     : [["dag", "Parcours"], ["dag/frise", "Frise chronologique"], ["dag/fiches", "Toutes les fiches"]];
   $("#tools").innerHTML = tools.map(([p, t]) => `<a href="#/${p}" ${toolCur === p ? 'aria-current="page"' : ""}>${t}</a>`).join("") +
-    `<span class="sp"></span><a href="../${sub === "obl" ? "obligations" : "droit-administratif"}/">Ancienne présentation</a>`;
+"";
   $("#thumbs").innerHTML = "";
 }
 function thumbs(items) {
@@ -213,6 +213,31 @@ function piegesHtml(list, withCh) {
     <button type="button" class="btn reveal">Voir la correction</button>
     <p class="j"><span class="ic" aria-hidden="true">✓</span><span><span class="lb">Il faut écrire</span>${fmt(x.juste)}</span></p>
     ${x.pourquoi ? `<p class="q"><strong>Pourquoi :</strong> ${fmt(x.pourquoi)}</p>` : ""}</article>`).join("");
+}
+
+function oblPiegesAll(mode) {
+  const withPg = CHS.filter(c => (((OBL.pieges || {})[c.num] || {}).pieges || []).length);
+  const total = withPg.reduce((a, c) => a + OBL.pieges[c.num].pieges.length, 0);
+  const wire = () => main().querySelectorAll(".reveal").forEach(b => b.addEventListener("click", () => b.closest(".pg").classList.add("open")));
+  const switcher = `<div class="seg" role="group" aria-label="Affichage"><a href="#/obl/outils/pieges" ${mode !== "melange" ? 'aria-current="page"' : ""}>Par thème et chapitre</a><a href="#/obl/outils/pieges/melange" ${mode === "melange" ? 'aria-current="page"' : ""}>Tout mélanger</a></div>`;
+  if (mode === "melange") {
+    const all = withPg.flatMap(c => OBL.pieges[c.num].pieges.map(x => ({ ...x, ch: c.num })));
+    setMain(`<div class="head"><h1>Pièges</h1><p class="muted" style="margin-top:6px">${total} cartes des ${withPg.length} chapitres, dans le désordre. Cherchez l'erreur avant d'afficher la correction.</p>${switcher}</div><div class="content train">${piegesHtml(shuffle(all), true)}</div>`);
+    wire(); return;
+  }
+  setMain(`<div class="head"><h1>Pièges</h1><p class="muted" style="margin-top:6px">${total} cartes, rangées par thème puis par chapitre. Ouvrez un chapitre, cherchez l'erreur, puis affichez la correction.</p>${switcher}</div>
+    <div class="content">${PARTS.map(p => {
+      const chs = withPg.filter(c => c.part === p.id);
+      if (!chs.length) return "";
+      const n = chs.reduce((a, c) => a + OBL.pieges[c.num].pieges.length, 0);
+      return `<section class="sec" id="pg-${p.id}"><h2>${esc(p.t)} <span class="count">${plural(n, "carte")}</span></h2>
+        ${chs.map(c => { const pg = OBL.pieges[c.num]; return `<details class="pgch" id="pgc-${c.num}"><summary><span class="n">${c.num}</span><span class="t">${esc(c.titre || c.court)}</span><span class="count">${plural(pg.pieges.length, "carte")}</span></summary>
+          <div class="train">${piegesHtml(pg.pieges)}</div>
+          ${(pg.reflexes || []).length ? `<div class="pgrfx"><h3>Bons réflexes du chapitre</h3>${pg.reflexes.map(r => `<div class="rfx"><h4>Face à : ${esc(r.face)}</h4><ol>${r.etapes.map(e => `<li>${fmt(e)}</li>`).join("")}</ol>${r.astuce ? `<p class="small" style="margin-top:6px"><strong>Réflexe copie :</strong> ${fmt(r.astuce)}</p>` : ""}</div>`).join("")}</div>` : ""}
+          <p class="small"><a href="#/obl/ch/${c.num}/fiche">Revoir la fiche du chapitre ${c.num}</a></p></details>`; }).join("")}</section>`;
+    }).join("")}</div>`);
+  thumbs(PARTS.filter(p => withPg.some(c => c.part === p.id)).map(p => ["pg-" + p.id, p.court]));
+  wire();
 }
 
 /* ---------- Quiz générique ---------- */
@@ -320,12 +345,7 @@ function oblTool(t, args) {
     if (args[0]) { const el = document.getElementById("art-" + args[0]); if (el) { el.scrollIntoView({ block: "center" }); el.classList.add("flash"); } else $("#alist").insertAdjacentHTML("afterbegin", `<p class="warnbox">L'article ${esc(args[0])} n'est pas dans la base du site.</p>`); }
     return;
   }
-  if (t === "pieges") {
-    const all = CHS.flatMap(c => (((OBL.pieges || {})[c.num] || {}).pieges || []).map(x => ({ ...x, ch: c.num })));
-    setMain(`<div class="head"><h1>Tous les pièges</h1><p class="muted" style="margin-top:6px">${all.length} cartes, les 21 chapitres mélangés.</p></div><div class="content train">${piegesHtml(shuffle(all), true)}</div>`);
-    main().querySelectorAll(".reveal").forEach(b => b.addEventListener("click", () => b.closest(".pg").classList.add("open")));
-    return;
-  }
+  if (t === "pieges") return oblPiegesAll(args[0]);
   if (t === "quiz") {
     setMain(`<div class="head"><h1>Quiz mélangé</h1><p class="muted" style="margin-top:6px">Vingt questions tirées de tous les chapitres.</p></div><div class="content" id="qz"></div>`);
     quizView($("#qz"), CHS.flatMap(c => (c.quiz || []).map(q => ({ ...q, ch: c.num }))), null, null, { n: 20, showCh: true });
@@ -345,8 +365,30 @@ function oblTool(t, args) {
     <section class="sec"><h2>Conditions</h2><ol class="conds">${(cur.conditions || []).map(c => `<li class="cond"><h4>${esc(c.nom)}</h4>${c.detail ? `<p>${fmt(c.detail)}</p>` : ""}${c.preuve ? `<p class="kv"><b>Preuve</b>${fmt(c.preuve)}</p>` : ""}${c.piege ? `<p class="kv piege"><b>Piège</b>${fmt(c.piege)}</p>` : ""}</li>`).join("")}</ol></section>
     ${(cur.exonerations || []).length ? `<section class="sec"><h2>Causes d'exonération</h2><ul>${cur.exonerations.map(x => `<li><strong>${esc(x.nom)}</strong>${x.detail ? " : " + fmt(x.detail) : ""}${x.effet ? ` <em>(${esc(x.effet)})</em>` : ""}</li>`).join("")}</ul></section>` : ""}
     ${(cur.copie || []).length ? `<section class="sec"><h2>Sur une copie</h2><ul>${cur.copie.map(x => `<li>${fmt(x)}</li>`).join("")}</ul></section>` : ""}
+    ${sylHtml((OBL.syllogismes || {})[cur.id])}
     <section class="sec"><h2>Arbre de raisonnement</h2><p class="muted">Répondez condition par condition sur les faits de votre cas.</p><div id="tree"></div></section>`;
   treeView($("#tree"), cur);
+}
+function sylHtml(y) {
+  if (!y) return "";
+  return `<section class="sec syl" id="syl"><h2>Exemple rédigé : de la majeure à la conclusion</h2>
+    <p class="muted small">Ce qu'on écrit sur la copie une fois les faits qualifiés. Pas d'énoncé : une hypothèse de deux lignes suffit à montrer l'articulation.</p>
+    <details class="methode"><summary>La méthode du cas pratique en cinq temps</summary><ol>
+      <li><strong>Faits qualifiés</strong> : seulement les faits utiles, traduits en catégories juridiques ; ne pas recopier l'énoncé.</li>
+      <li><strong>Problème de droit</strong> : « La question est de savoir si… », posé en termes juridiques.</li>
+      <li><strong>Majeure</strong> (« En droit, ») : les textes et la jurisprudence qui les interprète, les notions définies sans réciter le cours, les conditions annoncées dans l'ordre où la mineure les vérifiera, puis l'effet.</li>
+      <li><strong>Mineure</strong> (« En l'espèce, ») : les faits confrontés à chaque condition, dans le même ordre, chacune conclue ; si le droit est incertain, envisager les deux thèses.</li>
+      <li><strong>Conclusion</strong> (« En conséquence, ») : la réponse concrète au client, avec le fondement et ce qu'il obtient.</li>
+    </ol><p class="small muted">D'après la méthodologie n° 3 de l'Université Jean Monnet, « La résolution d'un cas pratique ». Toujours justifier et citer la source.</p></details>
+    <div class="syl-hyp"><span class="lb">Hypothèse</span><p>${fmt(y.faits)}</p></div>
+    <div class="syl-flow">
+      <div class="syl-step"><span class="lb">Problème de droit</span><div><p>${fmt(y.probleme)}</p></div></div>
+      <div class="syl-step maj"><span class="lb">Majeure</span><div>${y.majeure.map(p => `<p>${fmt(p)}</p>`).join("")}</div></div>
+      <div class="syl-step min"><span class="lb">Mineure</span><div>${y.mineure.map(p => `<p>${fmt(p)}</p>`).join("")}</div></div>
+      <div class="syl-step ccl"><span class="lb">Conclusion</span><div><p>${fmt(y.conclusion)}</p></div></div>
+    </div>
+    ${y.articulation ? `<p class="kv syl-art"><b>Le point qui fait la note</b>${fmt(y.articulation)}</p>` : ""}
+  </section>`;
 }
 function treeView(box, r) {
   const conds = r.conditions || [], exos = r.exonerations || [];
@@ -411,7 +453,21 @@ function dagSeance(s, step) {
 }
 function dagAll() {
   chrome("dag", "dag/fiches");
-  setMain(`<div class="head"><h1>Toutes les fiches d'arrêts</h1></div><div class="content">${DAG.D.slice().sort((a, b) => a.date.localeCompare(b.date)).map(dcard).join("")}</div>`);
+  const st = { q: "", s: "all" };
+  setMain(`<div class="head"><h1>Toutes les fiches d'arrêts</h1></div>
+    <div class="fr-filters"><input type="search" id="dq" placeholder="Nom, mot-clé, date, notion" aria-label="Rechercher un arrêt" autocomplete="off">
+    <div class="chips" role="group" aria-label="Séance">${["all", ...Object.keys(DAG.SEANCES)].map(s => `<button type="button" class="chip" data-se="${s}" aria-pressed="${s === "all"}">${s === "all" ? "Toutes les séances" : "Séance " + s}</button>`).join("")}</div></div>
+    <p class="small muted" id="dn" aria-live="polite"></p><div class="content" id="dl"></div>`);
+  const norm = x => String(x || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const draw = () => {
+    const q = norm(st.q.trim());
+    const list = DAG.D.filter(d => (st.s === "all" || d.s === st.s) && (!q || norm([d.nom, d.label, d.date, d.ref, d.stamp, d.jur, d.faits, d.sol, d.portee, (d.notions || []).join(" ")].join(" ")).includes(q))).sort((a, b) => a.date.localeCompare(b.date));
+    $("#dn").textContent = plural(list.length, "arrêt");
+    $("#dl").innerHTML = list.map(dcard).join("") || `<p class="muted">Aucun arrêt ne correspond. Essayez un autre mot.</p>`;
+  };
+  $("#dq").addEventListener("input", e => { st.q = e.target.value; draw(); });
+  main().querySelectorAll("[data-se]").forEach(b => b.addEventListener("click", () => { st.s = b.dataset.se; main().querySelectorAll("[data-se]").forEach(x => x.setAttribute("aria-pressed", String(x === b))); draw(); }));
+  draw();
 }
 function relsOf(id) {
   const out = [];

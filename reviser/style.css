@@ -293,3 +293,44 @@ input[type="search"],select{padding:8px 10px;border:1px solid var(--rule);border
 .content .frise{gap:12px}
 .subjects a{text-align:center;hyphens:manual}
 @media (max-width:560px){.subjects a{padding:8px 10px 7px;font-size:13.5px}}
+
+/* Pièges : par thème puis par chapitre */
+.seg a{display:inline-block;padding:7px 14px;text-decoration:none;color:var(--ink2);background:var(--card);font-size:14px}
+.seg a+a{border-left:1px solid var(--rule)}
+.seg a[aria-current="page"]{background:var(--acc);color:#fff}
+.head .seg{margin-top:12px}
+.count{font:500 13px var(--sans);color:var(--ink2);margin-left:8px;white-space:nowrap}
+details.pgch{border-bottom:1px solid var(--rule2)}
+details.pgch>summary{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:4px 14px;align-items:baseline;padding:12px 4px;cursor:pointer;list-style:none;text-align:left}
+details.pgch>summary::-webkit-details-marker{display:none}
+details.pgch>summary:hover{background:var(--card)}
+details.pgch>summary .n{font:600 20px var(--serif);color:var(--acc);text-align:right}
+details.pgch>summary .t{font-weight:500;hyphens:manual}
+details.pgch>summary .t::after{content:"+";margin-left:10px;color:var(--ink2);font-weight:400}
+details.pgch[open]>summary .t::after{content:"−"}
+details.pgch>summary:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+details.pgch>.train,details.pgch>.pgrfx,details.pgch>p{margin-left:58px}
+details.pgch>p{margin-bottom:14px}
+.pgrfx{margin-top:16px}
+.pgrfx h3{font-size:17px;margin-bottom:10px}
+@media (max-width:640px){details.pgch>summary{grid-template-columns:34px minmax(0,1fr)}details.pgch>summary .count{grid-column:2;margin-left:0}details.pgch>.train,details.pgch>.pgrfx,details.pgch>p{margin-left:0}}
+
+/* Régimes : syllogisme rédigé */
+.syl .methode{border:1px solid var(--rule);border-radius:10px;background:var(--card);padding:10px 16px}
+.syl .methode summary{cursor:pointer;font:600 15px var(--sans);text-align:left}
+.syl .methode ol{margin:10px 0 6px;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.syl .lb{display:block;font:600 13px var(--sans);color:var(--ink2);text-align:left;margin-bottom:4px}
+.syl-hyp{border-left:3px solid var(--rule);padding:2px 0 2px 14px;font-style:italic}
+.syl-hyp p{margin:0}
+.syl-flow{display:flex;flex-direction:column;position:relative}
+.syl-step{display:grid;grid-template-columns:132px minmax(0,1fr);gap:16px;padding:14px 0;border-top:1px solid var(--rule2)}
+.syl-step:first-child{border-top:0;padding-top:4px}
+.syl-step>.lb{font:600 14px var(--sans);color:var(--acc);margin:2px 0 0;position:relative;padding-left:16px}
+.syl-step>.lb::before{content:"";position:absolute;left:0;top:5px;width:8px;height:8px;border-radius:50%;background:var(--acc)}
+.syl-step.maj>.lb::before,.syl-step.min>.lb::before{border-radius:2px}
+.syl-step.ccl>.lb::before{width:10px;height:10px;top:4px;left:-1px}
+.syl-step>div{display:flex;flex-direction:column;gap:10px}
+.syl-step p{margin:0}
+.syl-step.ccl>div{background:var(--acc-soft);border-radius:10px;padding:12px 14px}
+.syl-art{border-left:3px solid var(--acc);padding:2px 0 2px 12px;margin:0;color:var(--ink)}
+@media (max-width:640px){.syl-step{grid-template-columns:minmax(0,1fr);gap:6px}}

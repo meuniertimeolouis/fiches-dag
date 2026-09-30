@@ -1,6 +1,6 @@
 /* Chapitre 20 — Le régime général de l'obligation : la transmission des obligations
    Fiche reformulée à partir du manuel ; textes vérifiés sur Légifrance. */
-var OBL = window.OBL = window.OBL || { chapitres: [], regimes: [], articles: [, "1743"], cas: [] };
+var OBL = window.OBL = window.OBL || { chapitres: [], regimes: [], articles: [], cas: [] };
 
 OBL.chapitres.push({
   num: 20,
@@ -203,7 +203,7 @@ OBL.chapitres.push({
     "Subrogation légale : paiement par celui qui a un **intérêt légitime** et libère le **débiteur définitif** ([[1346]]) ; conventionnelle : **expresse** et **concomitante** ([[1346-1]]), ou consentie par le débiteur emprunteur ([[1346-2]]).",
     "Subrogation : recours **à hauteur du paiement** ([[1346-4]]) ; le créancier partiellement payé est **préféré** ([[1346-3]]) ; opposable au débiteur après notification ou prise d'acte, aux tiers dès le paiement ([[1346-5]])."
   ],
-  articles: ["1216", "1216-1", "1216-2", "1216-3", "1321", "1322", "1323", "1324", "1325", "1326", "1327", "1327-1", "1327-2", "1328", "1328-1", "1346", "1346-1", "1346-2", "1346-3", "1346-4", "1346-5"],
+  articles: ["1216", "1216-1", "1216-2", "1216-3", "1321", "1322", "1323", "1324", "1325", "1326", "1327", "1327-1", "1327-2", "1328", "1328-1", "1346", "1346-1", "1346-2", "1346-3", "1346-4", "1346-5", "1743"],
   regimes: ["cession-creance", "cession-contrat", "subrogation-personnelle"],
   cas: ["ch20-menuiserie"],
   quiz: [

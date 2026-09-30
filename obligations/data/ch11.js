@@ -1,6 +1,6 @@
 /* Chapitre 11 — L'inexécution du contrat : les autres sanctions
    Fiche reformulée à partir du manuel ; textes vérifiés sur Légifrance. */
-var OBL = window.OBL = window.OBL || { chapitres: [], regimes: [], articles: [, "1732"], cas: [] };
+var OBL = window.OBL = window.OBL || { chapitres: [], regimes: [], articles: [], cas: [] };
 
 OBL.chapitres.push({
   num: 11,
@@ -198,7 +198,7 @@ OBL.chapitres.push({
     "Préjudice prévisible à la conclusion ([[1231-3]]) sauf faute lourde ou dolosive ; toujours direct ([[1231-4]]).",
     "Clauses limitatives : écartées en cas de faute lourde ou dolosive, si elles vident l'obligation essentielle ([[1170]] ; Chronopost, Faurecia), ou par des textes spéciaux ; clause pénale révisable même d'office si manifestement excessive ou dérisoire ([[1231-5]])."
   ],
-  articles: ["1104", "1170", "1171", "1186", "1187", "1224", "1225", "1226", "1227", "1228", "1229", "1230", "1231", "1231-1", "1231-2", "1231-3", "1231-4", "1231-5", "1231-6", "1231-7", "1343-2", "1953", "1245-14"],
+  articles: ["1104", "1170", "1171", "1186", "1187", "1224", "1225", "1226", "1227", "1228", "1229", "1230", "1231", "1231-1", "1231-2", "1231-3", "1231-4", "1231-5", "1231-6", "1231-7", "1343-2", "1953", "1245-14", "1732"],
   regimes: ["resolution-clause", "resolution-notification", "responsabilite-contractuelle"],
   cas: ["ch11-four-boulangerie"],
   quiz: [

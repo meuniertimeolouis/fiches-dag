@@ -1,6 +1,6 @@
 /* Chapitre 18 — Les quasi-contrats
    Fiche reformulée à partir du manuel ; textes vérifiés sur Légifrance. */
-var OBL = window.OBL = window.OBL || { chapitres: [], regimes: [], articles: [, "1984"], cas: [] };
+var OBL = window.OBL = window.OBL || { chapitres: [], regimes: [], articles: [], cas: [] };
 
 OBL.chapitres.push({
   num: 18,
@@ -182,7 +182,7 @@ OBL.chapitres.push({
     "Restitutions selon [[1352]] s. : bonne foi présumée (intérêts et fruits à compter de la demande), mauvaise foi (à compter du paiement).",
     "Enrichissement injustifié : corrélation + absence de justification ([[1303-1]]) + subsidiarité ([[1303-3]]) ; indemnité = moindre des deux valeurs, la plus forte si l'enrichi est de mauvaise foi ([[1303]], [[1303-4]])."
   ],
-  articles: ["1300", "1301", "1301-1", "1301-2", "1301-3", "1301-4", "1301-5", "1302", "1302-1", "1302-2", "1302-3", "1303", "1303-1", "1303-2", "1303-3", "1303-4", "1352", "1352-1", "1352-2", "1352-7", "2249", "2274"],
+  articles: ["1300", "1301", "1301-1", "1301-2", "1301-3", "1301-4", "1301-5", "1302", "1302-1", "1302-2", "1302-3", "1303", "1303-1", "1303-2", "1303-3", "1303-4", "1352", "1352-1", "1352-2", "1352-7", "2249", "2274", "1984"],
   regimes: ["gestion-affaires", "indu-restitution", "enrichissement-injustifie"],
   cas: ["ch18-degat-des-eaux"],
   quiz: [

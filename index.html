@@ -2,85 +2,14 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Révisions Droit L2</title>
-<link rel="stylesheet" href="assets/polices.css">
-<style>
-html{color-scheme:light}body{margin:0}[hidden]{display:none!important}
-:root{
-  --bg:#F4F6F9;--surface:#FFFFFF;--ink:#16202E;--muted:#586476;--line:#DCE2EA;
-  --dag:#2A5DB0;--dag-soft:#E6EEFA;--obl:#8A4B1F;--obl-soft:#F7ECE3;
-  --f-display:"Spectral","Iowan Old Style",Georgia,serif;
-  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0F141B;--surface:#171E28;--ink:#E5E9EF;--muted:#9AA5B4;--line:#2A3441;
-  --dag:#86ACEB;--dag-soft:#1D2A40;--obl:#E3A77A;--obl-soft:#2E2118;color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0F141B;--surface:#171E28;--ink:#E5E9EF;--muted:#9AA5B4;--line:#2A3441;
-  --dag:#86ACEB;--dag-soft:#1D2A40;--obl:#E3A77A;--obl-soft:#2E2118;color-scheme:dark}
-*{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55}
-.wrap{max-width:980px;margin:0 auto;padding:40px 20px 64px}
-.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-h1{font-family:var(--f-display);font-weight:600;font-size:clamp(30px,5vw,44px);line-height:1.1;margin:4px 0 8px;text-wrap:balance}
-header p{margin:0;color:var(--muted);max-width:62ch}
-header{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:28px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
-a.card{--c:var(--dag);--cs:var(--dag-soft);display:flex;flex-direction:column;gap:12px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:10px;padding:22px 22px 20px;color:var(--ink);text-decoration:none;transition:border-color .15s,transform .15s}
-a.card:hover{border-color:var(--c);transform:translateY(-2px)}
-a.card:focus-visible{outline:2px solid var(--c);outline-offset:3px}
-a.card.obl{--c:var(--obl);--cs:var(--obl-soft)}
-.tag{align-self:flex-start;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--c);background:var(--cs);border-radius:999px;padding:3px 10px}
-.card h2{font-family:var(--f-display);font-weight:600;font-size:26px;line-height:1.15;margin:0}
-.card p{margin:0;color:var(--muted)}
-.card ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:3px;font-size:14px}
-.go{margin-top:auto;font-weight:600;color:var(--c);font-size:14.5px}
-footer{margin-top:36px;color:var(--muted);font-size:13px}
-@media (max-width:560px){.wrap{padding:28px 16px 48px}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
-</style>
-<link rel="stylesheet" href="assets/lecture.css">
-<link rel="stylesheet" href="assets/epure.css">
-<script src="assets/look.js"></script>
-<script src="assets/typo.js" defer></script>
+<title>Réviser · Droit L2</title>
+<meta http-equiv="refresh" content="0; url=reviser/">
+<script>location.replace("reviser/" + location.hash);</script>
+<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F8FA;color:#1A1D24;display:grid;place-items:center;min-height:100vh}a{color:#B0171F}</style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="eyebrow">Licence 2 · Université Jean Monnet</div>
-    <h1>Révisions de droit</h1>
-    <p>Choisissez une matière. Chaque espace a ses propres outils, adaptés à ce qui est attendu à l'examen. Rien n'est enregistré : tout repart à zéro quand vous fermez la page.</p>
-  </header>
-
-  <div class="grid">
-    <a class="card" href="droit-administratif/">
-      <span class="tag">Fiches d'arrêts</span>
-      <h2>Droit administratif général</h2>
-      <p>Les grands arrêts de la plaquette, séance par séance.</p>
-      <ul>
-        <li>Fiches : juridiction, date, faits, solution, portée</li>
-        <li>Recherche, filtres par séance et par notion</li>
-        <li>Mode révision et tests à choix multiple</li>
-      </ul>
-      <span class="go">Ouvrir →</span>
-    </a>
-    <a class="card obl" href="obligations/">
-      <span class="tag">Cas pratiques</span>
-      <h2>Droit des obligations</h2>
-      <p>Raisonner juste sur un cas pratique, condition par condition.</p>
-      <ul>
-        <li>Régimes : fondement, conditions, exonérations</li>
-        <li>Articles du Code civil à réciter</li>
-        <li>Entraînement au cas pratique guidé</li>
-      </ul>
-      <span class="go">Ouvrir →</span>
-    </a>
-  </div>
-
-  <footer>Site de révision personnel, sans lien officiel avec l'université.</footer>
-</div>
+<p><a href="reviser/">Ouvrir les révisions</a></p>
 </body>
 </html>

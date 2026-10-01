@@ -113,7 +113,7 @@ function chrome(sub, toolCur) {
   S.subject = sub; save();
   document.querySelectorAll(".subjects a").forEach(a => a.setAttribute("aria-current", a.dataset.sub === sub ? "page" : "false"));
   const tools = sub === "obl"
-    ? [["obl", "Parcours"], ["obl/outils/regimes", "Régimes"], ["obl/outils/articles", "Articles"], ["obl/outils/pieges", "Pièges"], ["obl/outils/quiz", "Quiz mélangé"]]
+    ? [["obl", "Parcours"], ["obl/outils/regimes", "Régimes"], ["obl/outils/articles", "Articles"], ["obl/outils/pieges", "Pièges"], ["obl/outils/cas", "Cas pratiques"], ["obl/outils/quiz", "Quiz mélangé"]]
     : [["dag", "Parcours"], ["dag/frise", "Frise chronologique"], ["dag/fiches", "Toutes les fiches"]];
   $("#tools").innerHTML = tools.map(([p, t]) => `<a href="#/${p}" ${toolCur === p ? 'aria-current="page"' : ""}>${t}</a>`).join("") +
 "";
@@ -189,7 +189,7 @@ function oblChapter(n, step) {
   if (step === "fiche") oblFiche(c, box);
   else if (step === "pieges") oblPieges(c, box);
   else if (step === "quiz") quizView(box, (c.quiz || []).map(q => ({ ...q, ch: n })), res => { const p = prog("obl", n); p.quiz = { best: Math.max(res.score, (p.quiz && p.quiz.best) || 0), of: res.of }; save(); }, { sub: "obl", id: n, base });
-  else if (step === "cas") casView(box, (OBL.cas || []).filter(x => (c.cas || []).includes(x.id)), { sub: "obl", id: n, base });
+  else if (step === "cas") casView(box, (OBL.cas || []).filter(x => (c.cas || []).includes(x.id)), { sub: "obl", id: n, base, more: bankMore(n) });
   else if (step === "articles") articlesView(box, (c.articles || []).map(artBy).filter(Boolean), { sub: "obl", id: n, base });
   if (["fiche", "pieges"].includes(step)) { box.insertAdjacentHTML("beforeend", nextBar("obl", n, OSTEPS, step, base)); wireNext("obl", n); }
 }
@@ -280,27 +280,55 @@ const CSTEPS = [
   { k: "mineure", t: "Mineure", h: "Appliquez la règle aux faits, condition par condition." },
   { k: "conclusion", t: "Conclusion", h: "Répondez précisément à la question posée." }
 ];
+const qsOf = c => c.questions && c.questions.length ? c.questions : [{ q: c.question, corrige: c.corrige || {} }];
 function casView(box, list, ctx) {
-  if (!list.length) { box.innerHTML = `<p class="muted">Pas de cas pratique pour ce chapitre.</p>` + nextBar(ctx.sub, ctx.id, OSTEPS, "cas", ctx.base); wireNext(ctx.sub, ctx.id); return; }
-  const c = list[0], st = { i: 0, shown: {}, drafts: {} };
+  if (!list.length) { box.innerHTML = `<p class="muted">Pas de cas pratique pour ce chapitre.</p>` + (ctx ? nextBar(ctx.sub, ctx.id, OSTEPS, "cas", ctx.base) : ""); if (ctx) wireNext(ctx.sub, ctx.id); return; }
+  const c = list[0], qs = qsOf(c), st = { q: 0, i: 0, shown: {}, drafts: {} };
+  const extra = ctx && ctx.more ? ctx.more : "";
   const draw = () => {
-    const s = CSTEPS[st.i], cor = c.corrige || {};
-    const corHtml = s.k === "mineure" ? (cor.mineure || []).map(x => `<div class="minor"><h4>${esc(x.condition)}</h4><p>${esc(x.corrige)}</p></div>`).join("") : `<p>${esc(cor[s.k] || "")}</p>`;
+    const Q = qs[st.q], cor = Q.corrige || {}, s = CSTEPS[st.i], key = st.q + ":" + s.k;
+    const corHtml = s.k === "mineure" ? (cor.mineure || []).map(x => `<div class="minor"><h4>${fmt(x.condition)}</h4><p>${fmt(x.corrige)}</p></div>`).join("") : String(cor[s.k] || "").split(/\n\n+/).map(p => `<p>${fmt(p)}</p>`).join("");
+    const last = st.q === qs.length - 1 && st.i === CSTEPS.length - 1;
     box.innerHTML = `<h2 style="font-size:24px">${esc(c.titre)}</h2>
-      <div class="faits">${esc(c.faits)}${c.question ? `\n\n<strong>${esc(c.question)}</strong>` : ""}</div>
-      <ol class="csteps">${CSTEPS.map((x, i) => `<li class="${i === st.i ? "cur" : st.shown[x.k] ? "done" : ""}">${i + 1}. ${esc(x.t)}</li>`).join("")}</ol>
+      <div class="faits">${fmt(c.faits)}</div>
+      ${qs.length > 1 ? `<div class="qtabs" role="group" aria-label="Questions">${qs.map((x, i) => `<button type="button" class="chip" data-q="${i}" aria-pressed="${i === st.q}">Question ${i + 1}</button>`).join("")}</div>` : ""}
+      ${Q.q ? `<p class="cq"><strong>${qs.length > 1 ? `Question ${st.q + 1} : ` : ""}${fmt(Q.q)}</strong></p>` : ""}
+      <ol class="csteps">${CSTEPS.map((x, i) => `<li class="${i === st.i ? "cur" : st.shown[st.q + ":" + x.k] ? "done" : ""}">${i + 1}. ${esc(x.t)}</li>`).join("")}</ol>
       <div class="panel"><h3>${esc(s.t)}</h3><p class="muted" style="margin:0">${esc(s.h)}</p>
-        <label class="small muted" for="draft">Votre réponse (gardée seulement le temps de la page)</label><textarea id="draft">${esc(st.drafts[s.k] || "")}</textarea>
-        ${st.shown[s.k] ? `<div style="display:flex;flex-direction:column;gap:8px"><strong>Corrigé</strong>${corHtml}</div>` : `<div><button type="button" class="btn main" id="cshow">Voir le corrigé</button></div>`}
-        <div class="row" style="justify-content:space-between"><button type="button" class="btn" id="cprev" ${st.i === 0 ? "disabled" : ""}>Étape précédente</button>${st.i < CSTEPS.length - 1 ? `<button type="button" class="btn" id="cnext">Étape suivante du corrigé</button>` : ""}</div></div>
-      ${st.i === CSTEPS.length - 1 && st.shown[s.k] ? nextBar(ctx.sub, ctx.id, OSTEPS, "cas", ctx.base) : ""}`;
-    $("#draft").addEventListener("input", e => { st.drafts[s.k] = e.target.value; });
-    const sh = $("#cshow"); if (sh) sh.addEventListener("click", () => { st.shown[s.k] = true; draw(); });
-    $("#cprev").addEventListener("click", () => { st.i--; draw(); });
-    const nx = $("#cnext"); if (nx) nx.addEventListener("click", () => { st.i++; draw(); });
-    wireNext(ctx.sub, ctx.id);
+        <label class="small muted" for="draft">Votre réponse (gardée seulement le temps de la page)</label><textarea id="draft">${esc(st.drafts[key] || "")}</textarea>
+        ${st.shown[key] ? `<div class="corr"><strong>Corrigé</strong>${corHtml}</div>` : `<div><button type="button" class="btn main" id="cshow">Voir le corrigé</button></div>`}
+        <div class="row" style="justify-content:space-between"><button type="button" class="btn" id="cprev" ${st.i === 0 && st.q === 0 ? "disabled" : ""}>Étape précédente</button>${!last ? `<button type="button" class="btn" id="cnext">${st.i < CSTEPS.length - 1 ? "Étape suivante du corrigé" : "Question suivante"}</button>` : ""}</div></div>
+      ${last && st.shown[key] && ctx && ctx.sub ? nextBar(ctx.sub, ctx.id, OSTEPS, "cas", ctx.base) : ""}${extra}`;
+    $("#draft").addEventListener("input", e => { st.drafts[key] = e.target.value; });
+    const sh = $("#cshow"); if (sh) sh.addEventListener("click", () => { st.shown[key] = true; draw(); });
+    $("#cprev").addEventListener("click", () => { if (st.i > 0) st.i--; else { st.q--; st.i = CSTEPS.length - 1; } draw(); });
+    const nx = $("#cnext"); if (nx) nx.addEventListener("click", () => { if (st.i < CSTEPS.length - 1) st.i++; else { st.q++; st.i = 0; } draw(); });
+    box.querySelectorAll("[data-q]").forEach(b => b.addEventListener("click", () => { st.q = +b.dataset.q; st.i = 0; draw(); }));
+    if (ctx && ctx.sub) wireNext(ctx.sub, ctx.id);
   };
   draw();
+}
+const BANK = OBL.entrainement || [];
+function bankRow(x) {
+  const nq = qsOf(x).length;
+  return `<a class="chrow" href="#/obl/outils/cas/${esc(x.id)}"><span class="n">${esc(x.num)}</span><span class="t">${esc(x.titre)} <span class="muted small">(chapitre${(x.chapitres || []).length > 1 ? "s" : ""} ${(x.chapitres || []).join(", ")})</span></span><span class="right"><span class="sc">${plural(nq, "question")}</span></span></a>`;
+}
+function bankMore(n) {
+  const l = BANK.filter(x => (x.chapitres || []).includes(n));
+  return l.length ? `<section class="sec" style="margin-top:28px"><h2>Pour s'entraîner : ${plural(l.length, "autre cas pratique", "autres cas pratiques")}</h2>${l.map(bankRow).join("")}</section>` : "";
+}
+function oblBank(id) {
+  const c = BANK.find(x => x.id === id);
+  if (c) {
+    setMain(`<div class="head"><div class="kick"><a href="#/obl/outils/cas">Cas pratiques</a> · n° ${esc(c.num)} · chapitre${(c.chapitres || []).length > 1 ? "s" : ""} ${(c.chapitres || []).map(n => `<a href="#/obl/ch/${n}/fiche">${n}</a>`).join(", ")}</div></div><div class="content" id="cb"></div>`);
+    const i = BANK.indexOf(c), nx = BANK[i + 1];
+    casView($("#cb"), [c], { more: nx ? `<div class="next"><span></span><a class="btn" href="#/obl/outils/cas/${esc(nx.id)}">Cas suivant : ${esc(nx.titre)}</a></div>` : "" });
+    return;
+  }
+  setMain(`<div class="head"><h1>Cas pratiques</h1><p class="muted" style="margin-top:6px">${plural(BANK.length, "cas")} rangés par chapitre, chacun corrigé pas à pas : qualification, problème de droit, majeure, mineure, conclusion. Rédigez avant d'ouvrir le corrigé.</p></div>
+    <div class="content">${PARTS.map(p => { const chs = CHS.filter(c => c.part === p.id && BANK.some(x => (x.chapitres || [])[0] === c.num)); if (!chs.length) return "";
+      return `<section class="sec" id="cb-${p.id}"><h2>${esc(p.t)}</h2>${chs.map(c => `<h3 class="cbch">Chapitre ${c.num} · ${esc(c.titre || c.court)}</h3>${BANK.filter(x => (x.chapitres || [])[0] === c.num).map(bankRow).join("")}`).join("")}</section>`; }).join("")}</div>`);
+  thumbs(PARTS.filter(p => CHS.some(c => c.part === p.id && BANK.some(x => (x.chapitres || [])[0] === c.num))).map(p => ["cb-" + p.id, p.court]));
 }
 
 /* ---------- Articles ---------- */
@@ -346,6 +374,7 @@ function oblTool(t, args) {
     return;
   }
   if (t === "pieges") return oblPiegesAll(args[0]);
+  if (t === "cas") return oblBank(args[0]);
   if (t === "quiz") {
     setMain(`<div class="head"><h1>Quiz mélangé</h1><p class="muted" style="margin-top:6px">Vingt questions tirées de tous les chapitres.</p></div><div class="content" id="qz"></div>`);
     quizView($("#qz"), CHS.flatMap(c => (c.quiz || []).map(q => ({ ...q, ch: c.num }))), null, null, { n: 20, showCh: true });

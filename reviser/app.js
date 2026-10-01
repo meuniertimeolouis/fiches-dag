@@ -363,6 +363,18 @@ function articlesView(box, list, ctx) {
 }
 
 /* ---------- Outils (obligations) ---------- */
+const LOG = window.OBL_LOGIQUE || { KINDS: {}, DEFAUT: "" };
+const logOf = (r, i) => ((LOG[r.id] || {}).c || [])[i] || { k: "cond" };
+function condsHtml(r) {
+  const lg = LOG[r.id] || {}, K = LOG.KINDS || {};
+  const conds = r.conditions || [];
+  const used = [...new Set(conds.map((_, i) => logOf(r, i).k))].filter(k => K[k]);
+  return `<section class="sec"><h2>Conditions</h2>
+    <div class="logic"><p><strong>Comment lire cette liste.</strong> ${esc(lg.regle || LOG.DEFAUT)}</p>
+      <details><summary>Légende des mentions</summary><ul>${used.map(k => `<li><strong>${esc(K[k].t)}</strong> : ${esc(K[k].d)}.</li>`).join("")}</ul></details></div>
+    <ol class="conds">${conds.map((c, i) => { const s = logOf(r, i), kd = K[s.k] || K.cond || { t: "" };
+      return `<li class="cond k-${esc(s.k)}${kd.cumul === false || !kd.cumul ? " nc" : ""}"><span class="ctag">${esc(kd.t)}</span>${s.n ? `<span class="cnote">${esc(s.n)}</span>` : ""}<h4>${esc(c.nom)}</h4>${c.detail ? `<p>${fmt(c.detail)}</p>` : ""}${c.preuve ? `<p class="kv"><b>Preuve</b>${fmt(c.preuve)}</p>` : ""}${c.piege ? `<p class="kv piege"><b>Piège</b>${fmt(c.piege)}</p>` : ""}</li>`; }).join("")}</ol></section>`;
+}
 function oblTool(t, args) {
   chrome("obl", "obl/outils/" + t);
   if (t === "articles") {
@@ -391,12 +403,12 @@ function oblTool(t, args) {
   box.innerHTML = `<div class="head"><div class="kick">${esc(cur.chapitre || "")}</div><h1>${esc(cur.titre)}</h1></div>
     ${cur.resume ? `<p class="intro">${esc(cur.resume)}</p>` : ""}
     ${(cur.fondement || []).length ? `<p><strong>Fondement :</strong> ${cur.fondement.map(n => `<button type="button" class="ref-art" data-art="${esc(n)}">art. ${esc((artBy(n) || {}).aff || n)}</button>`).join(", ")}</p>` : ""}
-    <section class="sec"><h2>Conditions</h2><ol class="conds">${(cur.conditions || []).map(c => `<li class="cond"><h4>${esc(c.nom)}</h4>${c.detail ? `<p>${fmt(c.detail)}</p>` : ""}${c.preuve ? `<p class="kv"><b>Preuve</b>${fmt(c.preuve)}</p>` : ""}${c.piege ? `<p class="kv piege"><b>Piège</b>${fmt(c.piege)}</p>` : ""}</li>`).join("")}</ol></section>
+    ${condsHtml(cur)}
     ${(cur.exonerations || []).length ? `<section class="sec"><h2>Causes d'exonération</h2><ul>${cur.exonerations.map(x => `<li><strong>${esc(x.nom)}</strong>${x.detail ? " : " + fmt(x.detail) : ""}${x.effet ? ` <em>(${esc(x.effet)})</em>` : ""}</li>`).join("")}</ul></section>` : ""}
     ${(cur.copie || []).length ? `<section class="sec"><h2>Sur une copie</h2><ul>${cur.copie.map(x => `<li>${fmt(x)}</li>`).join("")}</ul></section>` : ""}
     ${sylHtml((OBL.syllogismes || {})[cur.id])}
-    <section class="sec"><h2>Arbre de raisonnement</h2><p class="muted">Répondez condition par condition sur les faits de votre cas.</p><div id="tree"></div></section>`;
-  treeView($("#tree"), cur);
+    <section class="sec"><h2>Arbre de raisonnement</h2>${(LOG[cur.id] || {}).arbre === false ? `<p class="muted">Pas d'arbre pour ce régime : ses points ne sont pas des conditions cumulatives à vérifier l'une après l'autre (voir la lecture des conditions ci-dessus).</p>` : `<p class="muted">Répondez sur les faits de votre cas, condition par condition. Les points qui ne sont pas des conditions (étapes, effets) ne sont pas posés.</p><div id="tree"></div>`}</section>`;
+  if ((LOG[cur.id] || {}).arbre !== false) treeView($("#tree"), cur);
 }
 function sylHtml(y) {
   if (!y) return "";
@@ -420,15 +432,17 @@ function sylHtml(y) {
   </section>`;
 }
 function treeView(box, r) {
-  const conds = r.conditions || [], exos = r.exonerations || [];
+  const K = LOG.KINDS || {};
+  const conds = (r.conditions || []).map((c, i) => { const s = logOf(r, i); return { ...c, _n: i + 1, _s: s, question: s.question || c.question }; }).filter(c => !c._s.skip), exos = r.exonerations || [];
   const t = { phase: "cond", i: 0, path: [], end: null };
+  const cls = e => e.ok === true ? "ok" : e.ok === false ? "ko" : "";
   const draw = () => {
     let body;
-    if (t.end) body = `<div class="verdict ${t.end.ok ? "ok" : "ko"}">${esc(t.end.text)}</div><div><button type="button" class="btn" id="tr">Recommencer</button></div>`;
+    if (t.end) body = `<div class="verdict ${cls(t.end)}">${esc(t.end.text)}</div><div><button type="button" class="btn" id="tr">Recommencer</button></div>`;
     else {
       const it = t.phase === "cond" ? conds[t.i] : exos[t.i];
       const qt = it.question || (t.phase === "cond" ? `La condition « ${it.nom} » est-elle remplie ?` : `Le défendeur peut-il invoquer : ${it.nom} ?`);
-      body = `<div class="small muted">${t.phase === "cond" ? `Condition ${t.i + 1} sur ${conds.length}` : `Exonération ${t.i + 1} sur ${exos.length}`}</div><div class="qtext">${esc(qt)}</div><div class="row"><button type="button" class="btn ok" data-a="1">Oui</button><button type="button" class="btn ko" data-a="0">Non</button></div>`;
+      body = `<div class="small muted">${t.phase === "cond" ? `Condition ${it._n} (étape ${t.i + 1} sur ${conds.length})` : `Exonération ${t.i + 1} sur ${exos.length}`}</div><div class="qtext">${esc(qt)}</div><div class="row"><button type="button" class="btn ok" data-a="1">Oui</button><button type="button" class="btn ko" data-a="0">Non</button></div>`;
     }
     box.innerHTML = `<div class="treebox" aria-live="polite">${t.path.length ? `<ol class="tpath">${t.path.map(s => `<li><span class="${s.ok ? "y" : "n"}">${s.ok ? "Oui" : "Non"}</span>${esc(s.label)}</li>`).join("")}</ol>` : ""}${body}</div>`;
     const rr = box.querySelector("#tr"); if (rr) rr.addEventListener("click", () => { Object.assign(t, { phase: "cond", i: 0, path: [], end: null }); draw(); });
@@ -436,7 +450,7 @@ function treeView(box, r) {
       const yes = b.dataset.a === "1";
       if (t.phase === "cond") {
         const c = conds[t.i]; t.path.push({ ok: yes, label: c.nom });
-        if (!yes) t.end = { ok: false, text: `La condition « ${c.nom} » fait défaut : ce fondement ne peut pas prospérer. Envisagez-en un autre.` };
+        if (!yes) t.end = c._s.ifNo ? { ok: undefined, text: c._s.ifNo.text } : { ok: false, text: `La condition « ${c.nom} » fait défaut : ce fondement ne peut pas prospérer. Envisagez-en un autre.` };
         else if (++t.i >= conds.length) { if (exos.length) { t.phase = "exo"; t.i = 0; } else t.end = { ok: true, text: "Toutes les conditions sont réunies." }; }
       } else {
         const x = exos[t.i]; t.path.push({ ok: !yes, label: `${x.nom} : ${yes ? "invocable" : "non invocable"}` });

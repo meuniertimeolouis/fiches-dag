@@ -231,6 +231,15 @@ input[type="search"],select{padding:8px 10px;border:1px solid var(--rule);border
 .cond::before{content:counter(c);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:0;background:var(--acc);color:#fff;display:grid;place-items:center;font:600 13px var(--sans)}
 .cond h4{font-size:16px}
 .kv{font-size:14px;margin-top:4px}
+.logic{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--navy);padding:14px 18px;font-size:15.5px;display:flex;flex-direction:column;gap:8px}
+.logic p{margin:0}
+.logic details{font-size:14px;color:var(--ink2)}
+.logic summary{cursor:pointer;font-weight:600;color:var(--navy);text-align:left}
+.logic ul{margin:8px 0 2px;padding-left:20px;display:flex;flex-direction:column;gap:3px}
+.ctag{display:inline-block;font:700 11.5px var(--sans);letter-spacing:.07em;text-transform:uppercase;color:var(--navy);border:1px solid var(--navy);padding:1px 7px;margin:0 8px 6px 0}
+.cond.nc .ctag{color:var(--ink2);border-color:var(--rule);background:var(--paper)}
+.cond.nc::before{background:var(--paper);color:var(--ink2);border:1px solid var(--rule)}
+.cnote{font-size:13.5px;color:var(--ink2);font-style:italic}
 .kv b{color:var(--ink2);font-weight:600;margin-right:6px}
 .kv.piege{color:var(--warn)}
 .treebox{border:1px solid var(--acc);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:12px;background:var(--card)}

@@ -29,7 +29,7 @@ OBL.chapitres.push({
           "**Un enfant mineur** : la responsabilité cesse à la majorité et à l'**émancipation** (art. 413-7 : les parents d'un mineur émancipé ne répondent plus de plein droit de ses actes).",
           "**Des parents exerçant l'autorité parentale** : exercice conjoint par principe, même après séparation (art. 372 et 373-2) ; en cas d'exercice unilatéral (décès, retrait, décision du juge aux affaires familiales, filiation établie tardivement), **seul** le parent qui l'exerce est responsable. Un beau-parent ou un grand-parent n'est jamais responsable sur ce fondement.",
           "**Un fait du mineur** ayant causé le dommage : un simple **fait causal** suffit, même non fautif (Ass. plén., 9 mai 1984, Fullenwarth ; Civ. 2e, 10 mai 2001, Levert, n° 99-11.287 ; Ass. plén., 13 déc. 2002).",
-          "**Pas de décision administrative ou judiciaire** confiant l'enfant à un tiers (placement à l'aide sociale à l'enfance, par exemple). En dehors de ce cas, l'éloignement de l'enfant, même long, est indifférent."
+          "**Pas de décision administrative ou judiciaire** confiant l'enfant à un tiers (placement à l'aide sociale à l'enfance, par exemple). En dehors de ce cas, l'éloignement de l'enfant, même long, est indifférent (déjà avant 2024 : Crim., 8 févr. 2005, enfant confié depuis l'âge d'un an à sa grand-mère)."
         ] },
         { schema: { type: "frise", titre: "De la faute présumée des parents à la responsabilité liée à l'autorité parentale", evenements: [
           { date: "1804", t: "Faute présumée", d: "Présomption simple de faute d'éducation ou de surveillance ; les parents s'exonèrent en prouvant qu'ils n'ont pu empêcher le fait (al. 7 actuel). Condition de cohabitation." },
@@ -46,7 +46,7 @@ OBL.chapitres.push({
           "**Pas d'exonération par l'absence de faute**, alors même que [[1242]], al. 7 évoque encore la preuve que les parents « n'ont pu empêcher le fait » : ce texte est neutralisé depuis Bertrand pour les parents.",
           "**Force majeure** : appréciée à l'égard des **parents** (Civ. 2e, 17 févr. 2011). Le fait de l'enfant ne leur étant jamais extérieur, l'exonération est quasi impossible.",
           "**Faute de la victime** et **fait d'un tiers** : effets du droit commun (exonération partielle ou totale).",
-          "**Solidarité** entre les deux parents ; action possible, en plus, contre l'enfant lui-même sur le fondement de sa faute ([[1240]]), l'*infans* pouvant commettre une faute objective (Ass. plén., 9 mai 1984, Lemaire et Derguini)."
+          "**Solidarité** entre les deux parents ; action possible, en plus, contre l'enfant lui-même sur le fondement de sa faute ([[1240]] ; Civ. 2e, 11 sept. 2014), l'*infans* pouvant commettre une faute objective (Ass. plén., 9 mai 1984, Lemaire et Derguini)."
         ] },
         { attention: "Loi dans le temps : pour des faits postérieurs à l'entrée en vigueur de la loi du 23 juin 2025, appliquez le nouveau texte. Pour des faits antérieurs, la solution est en pratique identique depuis l'arrêt d'Assemblée plénière du 28 juin 2024 (la cohabitation découle de l'exercice conjoint de l'autorité parentale)." }
       ]
@@ -55,15 +55,15 @@ OBL.chapitres.push({
       titre: "La responsabilité du commettant du fait de ses préposés",
       contenu: [
         { p: "[[1242]], al. 5 : les commettants répondent du dommage causé par leurs préposés « dans les fonctions auxquelles ils les ont employés ». Trois conditions cumulatives, puis la question de l'**immunité du préposé**." },
-        { def: { terme: "Lien de préposition", texte: "droit de donner au préposé des **ordres ou des instructions** sur la manière de remplir ses fonctions. Il naît le plus souvent d'un **contrat de travail**, mais peut résulter d'une simple **situation de fait** (ami ou parent qui aide occasionnellement)." } },
+        { def: { terme: "Lien de préposition", texte: "droit de donner au préposé des **ordres ou des instructions** sur la manière de remplir ses fonctions. Il naît le plus souvent d'un **contrat de travail**, mais peut résulter d'une simple **situation de fait** (ami ou parent qui aide occasionnellement). Définition posée par Civ., 4 mai 1937." } },
         { liste: [
           "**Indépendance technique** : le médecin salarié d'une clinique reste son préposé, car il est subordonné dans l'organisation de son travail.",
           "**Prêt de main-d'œuvre** : l'entreprise utilisatrice devient commettant si elle a réellement le pouvoir de donner des ordres au salarié prêté ; sinon, l'employeur le reste.",
-          "**Fait du préposé** : un fait de nature à engager sa propre responsabilité (en pratique une **faute**) ; à la différence des parents, la jurisprudence n'a pas admis qu'un simple fait causal suffise.",
+          "**Fait du préposé** : un fait de nature à engager sa propre responsabilité (en pratique une **faute**) ; une **faute objective** suffit (le préposé privé de discernement peut engager son commettant). À la différence des parents, la jurisprudence n'a pas, jusqu'ici, admis qu'un simple fait causal suffise (Civ. 2e, 8 avr. 2004), mais la solution est incertaine depuis Costedoat.",
           "**Chose utilisée par le préposé** : c'est le commettant qui en est gardien ([[1242]], al. 1er)."
         ] },
         { h: "Le lien avec les fonctions : l'abus de fonctions" },
-        { arret: { ref: "Ass. plén., 19 mai 1988", apport: "Après une longue divergence entre la 2e chambre civile et la chambre criminelle, le commettant ne s'exonère que si son préposé a agi **hors des fonctions** auxquelles il était employé, **sans autorisation** et **à des fins étrangères à ses attributions**. Trois conditions **cumulatives**, à prouver par le commettant." } },
+        { arret: { ref: "Ass. plén., 19 mai 1988", apport: "Après une longue divergence entre la 2e chambre civile et la chambre criminelle, le commettant ne s'exonère que si son préposé a agi **hors des fonctions** auxquelles il était employé, **sans autorisation** et **à des fins étrangères à ses attributions**. Trois conditions **cumulatives**, à prouver par le commettant. La jurisprudence est très sévère : l'acte rattaché au travail par le temps, le lieu ou les moyens n'est pas un abus, quelles que soient les intentions du préposé (détournement de fonds sur le lieu de travail, incendie des locaux qu'il devait surveiller, agressions sexuelles sur le lieu de travail : Civ. 2e, 17 mars 2011)." } },
         { schema: { type: "etapes", titre: "Tester l'abus de fonctions", etapes: [
           { t: "1. Hors des fonctions ?", d: "Critère objectif : l'acte se rattache-t-il au travail par le **temps**, le **lieu** ou les **moyens** ? Si oui, pas d'abus." },
           { t: "2. Sans autorisation ?", d: "L'autorisation du commettant est en pratique présumée : à lui de prouver qu'il n'avait rien autorisé." },
@@ -81,7 +81,7 @@ OBL.chapitres.push({
         { liste: [
           "**Portée générale** : l'immunité profite à tout salarié, même techniquement indépendant (sage-femme salariée : Civ. 1re, 9 nov. 2004), et joue aussi dans le cadre de la loi du 5 juillet 1985 (Civ. 2e, 28 mai 2009).",
           "**Immunité procédurale, non irresponsabilité** : le commettant ou son assureur peut agir contre l'**assureur** de responsabilité du préposé (Civ. 1re, 12 juill. 2007). L'assureur du commettant n'a pas de recours contre le préposé, sauf malveillance (C. assur., art. L. 121-12, al. 3).",
-          "**Cumul** : le préposé qui perd son immunité sans commettre d'abus de fonctions peut être condamné **avec** le commettant (*in solidum*) ; la victime a deux débiteurs.",
+          "**Cumul** : si le préposé a perdu son immunité sans que l'abus de fonctions soit caractérisé, la Cour de cassation paraît admettre le **cumul** des responsabilités du commettant et du préposé (Civ. 2e, 16 juin 2005), sans l'avoir jamais affirmé expressément. Si l'on assimilait le dépassement de mission à l'abus de fonctions, les deux responsabilités seraient au contraire alternatives.",
           "Précurseur : Com., 12 oct. 1993, Rochas."
         ] }
       ]
@@ -109,10 +109,10 @@ OBL.chapitres.push({
         { arret: { ref: "Ass. plén., 29 mars 1991, Blieck (n° 89-15.231)", apport: "Un handicapé mental placé dans un centre d'aide par le travail met le feu à une forêt. L'association qui avait **accepté la charge d'organiser et de contrôler, à titre permanent, le mode de vie** de cette personne doit répondre de ses actes sur le fondement de l'art. 1384, al. 1er anc. Pas un principe général au sens strict, mais un **décloisonnement** de l'article." } },
         { schema: { type: "tableau", titre: "Les deux domaines de l'art. 1242, al. 1er", colonnes: ["", "Contrôle du mode de vie d'autrui", "Contrôle de l'activité d'autrui"], lignes: [
           ["Responsables", "Associations et établissements prenant en charge des mineurs (assistance éducative) ou des majeurs handicapés", "Associations sportives ; association de majorettes (Civ. 2e, 12 déc. 2002)"],
-          ["Pouvoir exigé", "Organiser et contrôler **à titre permanent** le mode de vie", "Organiser, diriger et contrôler l'activité, **temporairement** (compétition, entraînement, voire à l'issue du match)"],
+          ["Pouvoir exigé", "Organiser et contrôler **à titre permanent** le mode de vie", "Organiser, diriger et contrôler l'activité, **temporairement** (compétition, entraînement, voire à l'issue du match : Civ. 2e, 5 juill. 2018, n° 17-19.957)"],
           ["Source du pouvoir", "**Décision judiciaire ou administrative** ; pas un contrat (Civ. 1re, 15 déc. 2011 : maison de retraite hébergeant un résident en vertu d'un contrat)", "Statuts et règles sportives"],
           ["Fait de l'auteur", "Question non tranchée (le fait causal suffit peut-être, par analogie avec les parents)", "**Faute caractérisée par une violation des règles du jeu**, par un joueur même non identifié (Civ. 2e, 20 nov. 2003 ; Ass. plén., 29 juin 2007)"],
-          ["Exclus", "Membres de la famille (grands-parents), gardiens bénévoles ; tuteur d'un majeur protégé (Civ. 2e, 25 févr. 1998), mais non tuteur d'un mineur (Crim., 28 mars 2000)", "Syndicat professionnel (Civ. 2e, 26 oct. 2006) ; association de chasse (Civ. 2e, 11 sept. 2008)"]
+          ["Exclus", "Membres de la famille (grands-parents), gardiens bénévoles ; administrateur légal d'un majeur incapable (Civ. 2e, 25 févr. 1998, avant la loi du 5 mars 2007), mais non tuteur d'un mineur (Crim., 28 mars 2000)", "Syndicat professionnel (Civ. 2e, 26 oct. 2006) ; association de chasse (Civ. 2e, 11 sept. 2008)"]
         ] } },
         { h: "La permanence du pouvoir" },
         { p: "L'association chargée par un **juge des enfants** d'organiser et de contrôler à titre permanent le mode de vie d'un mineur reste responsable de plein droit **même lorsque celui-ci est chez ses parents**, tant qu'aucune décision judiciaire n'a suspendu ou interrompu sa mission (Civ. 2e, 6 juin 2002 ; déjà Crim., 26 mars 1997). Symétriquement, les parents ne sont plus responsables : l'enfant est confié à un tiers par décision judiciaire ([[1242]], al. 4)." },

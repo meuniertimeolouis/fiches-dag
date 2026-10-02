@@ -18,7 +18,9 @@ OBL.chapitres.push({
           ["**Résolution**", "Inexécution d'un contrat valable", "Fin du contrat (voir chapitre 11)"],
           ["« Inexistence »", "Vice très grave (absence totale de consentement)", "Notion doctrinale sans régime propre : la jurisprudence applique la nullité, et même une nullité **relative** (Com., 23 oct. 2019, n° 18-11.425)"]
         ] } },
-        { p: "Le juge peut relever d'office une nullité **absolue** (sans y être obligé) ; une nullité relative ne peut en principe être invoquée que par la partie protégée, sauf en droit de la consommation, où le juge peut relever d'office les dispositions du code (C. consom., art. R. 632-1). Les nullités sont **virtuelles** : pas besoin qu'un texte prévoie expressément la nullité (« pas de nullité sans texte » ne vaut qu'exceptionnellement, en droit des sociétés par exemple)." }
+        { p: "Le juge peut relever d'office une nullité **absolue** (sans y être obligé) ; une nullité relative ne peut en principe être invoquée que par la partie protégée, sauf en droit de la consommation, où le juge peut relever d'office les dispositions du code (C. consom., art. R. 632-1). Les nullités sont **virtuelles** : pas besoin qu'un texte prévoie expressément la nullité (« pas de nullité sans texte » ne vaut qu'exceptionnellement, en droit des sociétés par exemple)." },
+        { p: "**Nullité judiciaire ou consensuelle.** En principe, l'« inexistence » étant écartée, une action en justice est nécessaire : la nullité est prononcée par le juge ([[1178]], al. 1er). Pour les contrats conclus depuis le 1er octobre 2016, les parties peuvent toutefois la **constater d'un commun accord**, ce qui suppose sans doute qu'elles s'entendent aussi sur ses effets. Le juge a la **faculté** (non l'obligation) de la soulever d'office, en respectant le contradictoire (art. 12 CPC) ; pour le réputé non écrit, il doit au contraire écarter la clause sans marge d'appréciation." },
+        { p: "La nullité est en outre **de droit** : le juge qui constate le défaut d'une condition de validité ne peut refuser de l'annuler par opportunité. La nullité facultative reste exceptionnelle (art. 464 C. civ. : actes passés avant l'ouverture d'une mesure de protection, annulables ou réductibles si l'intéressé a subi un préjudice ou présentait une inaptitude connue à défendre ses intérêts)." }
       ]
     },
     {
@@ -26,8 +28,8 @@ OBL.chapitres.push({
       contenu: [
         { p: "Critère ancien : la **gravité** du vice (contrat « malade » ou « mort-né »). Critère moderne, issu de Japiot et Gaudemet et codifié : **l'intérêt protégé par la règle violée** ([[1179]])." },
         { schema: { type: "arbre", titre: "Qualifier la nullité ([[1179]])", racine: { t: "Quel intérêt protège la règle violée ?", enfants: [
-          { lien: "le seul intérêt privé", t: "Nullité relative", d: "vices du consentement ([[1131]]), incapacité, insanité d'esprit, lésion, ordre public de protection, forme de protection, contrepartie dérisoire (Com., 22 mars 2016, n° 14-14.218), défaut d'objet (Civ. 3e, 24 janv. 2019, n° 17-25.793), absence de consentement (Com., 23 oct. 2019, n° 18-11.425)" },
-          { lien: "l'intérêt général", t: "Nullité absolue", d: "contenu ou but illicite ([[1162]]), ordre public de direction" }
+          { lien: "le seul intérêt privé", t: "Nullité relative", d: "vices du consentement ([[1131]]), incapacité, insanité d'esprit, lésion, ordre public de protection, forme de protection, indétermination ou vileté du prix (Com., 22 mars 2016, n° 14-14.218), défaut d'objet (Civ. 3e, 24 janv. 2019, n° 17-25.793), absence de consentement selon la jurisprudence récente (Com., 23 oct. 2019, n° 18-11.425), forme exigée dans un but de protection (droit de la consommation)" },
+          { lien: "l'intérêt général", t: "Nullité absolue", d: "contenu ou but illicite ([[1162]]), ordre public de direction, forme exigée hors but de protection, absence de consentement dans la lecture classique (aujourd'hui concurrencée par la solution relative)" }
         ] } } },
         { schema: { type: "tableau", titre: "Ce que change la distinction", colonnes: ["", "Nullité relative", "Nullité absolue"], lignes: [
           ["Qui peut agir ?", "Seulement la partie **protégée** ([[1181]]) ; ses héritiers ; ses créanciers par l'action oblique", "**Toute personne justifiant d'un intérêt** et le **ministère public** ([[1180]])"],
@@ -35,21 +37,30 @@ OBL.chapitres.push({
           ["Prescription de l'action", "**5 ans** ([[2224]]) à compter de la connaissance du vice ; découverte de l'erreur ou du dol, cessation de la violence ([[1144]])", "**5 ans** aussi depuis la loi du 17 juin 2008 (auparavant 30 ans)"],
           ["Délai butoir", "20 ans à compter de la naissance du droit ([[2232]])", "20 ans ([[2232]])"]
         ] } },
-        { attention: "Depuis 2008, **les deux nullités se prescrivent par cinq ans**. Écrire « la nullité absolue se prescrit par trente ans » est une erreur classique. Exceptions : délai préfix de deux ans pour la rescision pour lésion d'une vente d'immeuble ([[1676]]) ; la demande tendant à faire réputer une clause non écrite n'est pas soumise à la prescription (Civ. 1re, 13 mars 2019, n° 17-23.169)." }
+        { attention: "Depuis 2008, **les deux nullités se prescrivent par cinq ans**. Écrire « la nullité absolue se prescrit par trente ans » est une erreur classique. Exceptions : délai préfix de deux ans pour la rescision pour lésion d'une vente d'immeuble ([[1676]]) ; la demande tendant à faire réputer une clause non écrite n'est pas soumise à la prescription (Civ. 1re, 13 mars 2019, n° 17-23.169)." },
+        { h: "Titulaires de l'action : précisions" },
+        { liste: [
+          "**Nullité relative** : la partie protégée ou son représentant ; ses **ayants cause à titre universel** (héritiers, qui agissent ou poursuivent l'action) ; ses **ayants cause à titre particulier** (le sous-acquéreur reçoit l'action avec le bien) ; ses **créanciers**, non en leur nom propre mais par l'action oblique ([[1341-1]]). Le cocontractant, lui, ne peut pas agir : l'auteur du dol ne peut s'en prévaloir.",
+          "**Nullité absolue** : **les deux contractants**, y compris celui qui est à l'origine du vice, leurs ayants cause, le **ministère public** (art. 423 CPC, consacré par [[1180]], utilisé surtout pour l'ordre public de direction) et les **tiers absolus** (*penitus extranei*) qui justifient d'un intérêt patrimonial. Le droit des créanciers d'agir en leur nom propre, et non par la seule action oblique, divise la doctrine."
+        ] },
+        { h: "Point de départ de la prescription" },
+        { p: "Droit commun : le jour où le titulaire a connu ou aurait dû connaître les faits permettant d'agir ([[2224]]). Pour la nullité absolue, la solution antérieure à 2008 partait de la conclusion du contrat ; aujourd'hui, il faut en principe tenir compte de la connaissance effective de la cause de nullité par chaque titulaire, d'où des points de départ pouvant différer, mais toujours enfermés dans le délai butoir de vingt ans ([[2232]]). [[1144]] ne vaut que pour les vices du consentement : on n'en déduit pas que toute nullité relative ne court qu'à la cessation du vice ; la suspension pour impossibilité d'agir (trouble mental, par exemple) reste possible." }
       ]
     },
     {
       titre: "Exercer ou éteindre l'action",
       contenu: [
         { h: "1. Action et exception" },
-        { p: "Par **voie d'action**, la nullité est demandée à titre principal et se prescrit. Par **voie d'exception** (comme moyen de défense contre une demande d'exécution), elle est **imprescriptible**, mais seulement si le contrat **n'a reçu aucune exécution** ([[1185]]), que la nullité soit relative ou absolue." },
+        { p: "Par **voie d'action**, la nullité est demandée à titre principal et se prescrit. Par **voie d'exception** (comme moyen de défense contre une demande d'exécution), elle est **imprescriptible**, mais seulement si le contrat **n'a reçu aucune exécution** ([[1185]]), que la nullité soit relative ou absolue. Adage : *quae temporalia sunt ad agendum perpetua sunt ad excipiendum*. La règle, d'abord jurisprudentielle, empêche une partie d'attendre l'expiration du délai pour exiger l'exécution ; elle ne joue pas pour les délais **préfix**." },
         { h: "2. La confirmation" },
         { def: { terme: "Confirmation", texte: "acte par lequel celui qui pourrait se prévaloir de la nullité **y renonce** ([[1182]]). Réservée à la nullité **relative**." } },
         { liste: [
+          "**Conditions** : acte unilatéral du seul titulaire de l'action, accompli **après** la conclusion, en **connaissance du vice** et avec l'**intention de le réparer** (solution ancienne : Civ., 16 mars 1948). La volonté tacite ne doit pas être équivoque.",
           "**Expresse** : l'acte mentionne l'objet de l'obligation et le vice ; possible seulement **après** la conclusion du contrat.",
-          "**Tacite** : exécution volontaire **en connaissance de la cause de nullité** ([[1182]], al. 3). La simple reproduction des articles du Code de la consommation dans un contrat hors établissement ne suffit pas à prouver cette connaissance (Civ. 1re, 24 janv. 2024, n° 22-16.115, revirement).",
+          "**Tacite** : exécution volontaire **en connaissance de la cause de nullité** ([[1182]], al. 3). La simple reproduction des articles du Code de la consommation dans un contrat hors établissement ne suffit pas à prouver cette connaissance, sauf circonstances révélant une connaissance effective, par exemple l'envoi par le professionnel d'une demande de confirmation ([[1183]]) ; solution étendue aux contrats antérieurs comme postérieurs à l'ordonnance (Civ. 1re, 24 janv. 2024, n° 22-16.115, revirement).",
           "En cas de **violence** : seulement après qu'elle a cessé.",
-          "Effet : renonciation aux moyens de nullité, **sans préjudice des droits des tiers** ; si plusieurs personnes peuvent agir, la renonciation de l'une ne prive pas les autres ([[1181]], al. 3)."
+          "Effet : renonciation aux moyens de nullité, **sans préjudice des droits des tiers** ; si plusieurs personnes peuvent agir, la renonciation de l'une ne prive pas les autres ([[1181]], al. 3). La confirmation était traditionnellement **rétroactive** (le contrat est purgé dès l'origine), ce que [[1182]] n'énonce plus expressément.",
+          "Nullité **absolue** : pas de confirmation, mais les parties peuvent **refaire** le contrat (nouvel accord, effets pour l'avenir seulement), possibilité que les textes de 2016 ne mentionnent pas mais que permet la liberté contractuelle."
         ] },
         { h: "3. L'action interrogatoire" },
         { p: "Une partie peut demander **par écrit** à celle qui pourrait invoquer la nullité de **confirmer** le contrat ou d'**agir dans les six mois**, à peine de forclusion ; la cause de nullité doit avoir **cessé** ; sans action dans le délai, le contrat est **réputé confirmé** ([[1183]]). Applicable dès le 1er octobre 2016, même aux contrats antérieurs." }
@@ -59,24 +70,36 @@ OBL.chapitres.push({
       titre: "Les effets de l'annulation",
       contenu: [
         { h: "1. Étendue : nullité partielle" },
-        { p: "Quand seule une clause est viciée, **seule la clause** est annulée, **sauf** si elle a été un **élément déterminant** de l'engagement des parties ou de l'une d'elles ([[1184]], al. 1er). Le contrat est toujours maintenu si la loi répute la clause non écrite, ou si le but de la règle violée l'exige (clause illicite d'un contrat de travail : l'annulation totale nuirait au salarié protégé)." },
+        { p: "Quand seule une clause est viciée, **seule la clause** est annulée, **sauf** si elle a été un **élément déterminant** de l'engagement des parties ou de l'une d'elles ([[1184]], al. 1er). Le contrat est toujours maintenu si la loi répute la clause non écrite, ou si le but de la règle violée l'exige (clause illicite d'un contrat de travail : l'annulation totale nuirait au salarié protégé). Pour le **réputé non écrit**, seule la clause, voire la seule partie illicite de la clause si elle est divisible, est supprimée (Com., 26 janv. 2022, n° 20-16.782, sur [[1171]]). Avant 2016, la jurisprudence appliquait déjà le critère de la clause déterminante, pour concilier l'art. 900 (nullité partielle des libéralités) et l'ancien art. 1172 (nullité totale)." },
         { h: "2. Contrats interdépendants" },
         { p: "Quand plusieurs contrats sont nécessaires à une même opération et que l'un disparaît, sont **caducs** les contrats dont l'exécution devient impossible et ceux pour lesquels le contrat disparu était une condition déterminante du consentement, à condition que le cocontractant **connaissait l'opération d'ensemble** ([[1186]], al. 2 et 3). Auparavant, Ch. mixte, 17 mai 2013 : les contrats concomitants ou successifs d'une opération incluant une location financière sont interdépendants." },
+        { liste: [
+          "Conditions de [[1186]], al. 2 et 3 : contrats **nécessaires à une même opération** ; **interdépendance** objective (exécution rendue impossible par la disparition) ou subjective (le contrat disparu était une condition déterminante du consentement d'une partie) ; **connaissance** de l'opération d'ensemble, lors de son consentement, par le contractant à qui la caducité est opposée.",
+          "Location financière : toute clause incompatible avec l'interdépendance est réputée non écrite (Com., 10 janv. 2024, n° 22-20.466, au visa de [[1186]]) ; ailleurs, les clauses contraires sont sans doute admises (point discuté).",
+          "Prêt et sûreté : l'annulation du prêt n'entraîne pas celle de la sûreté, qui garantit les restitutions (Com., 17 nov. 1982) ; solution consacrée par [[1352-9]]."
+        ] },
         { h: "3. Rétroactivité et restitutions" },
         { p: "Le contrat annulé est **censé n'avoir jamais existé** ([[1178]], al. 2) : chacun rend ce qu'il a reçu, selon les règles communes des restitutions ([[1352]] à [[1352-9]])." },
         { schema: { type: "tableau", titre: "Les restitutions (art. 1352 à 1352-9)", colonnes: ["Ce qui a été reçu", "Comment le rendre", "Texte"], lignes: [
           ["Une chose", "En nature ; si impossible, en valeur estimée **au jour de la restitution**", "[[1352]]"],
           ["Dégradations", "Le restituant en répond, sauf s'il est de bonne foi et sans faute", "[[1352-1]]"],
           ["Chose revendue", "De bonne foi : le prix de revente ; de mauvaise foi : la valeur si elle est supérieure", "[[1352-2]]"],
-          ["Fruits et jouissance", "Inclus ; la jouissance est évaluée au jour du jugement", "[[1352-3]]"],
+          ["Fruits et jouissance", "Inclus, quelle que soit la bonne foi ; jouissance évaluée au jour où le juge statue ; fruits non retrouvés en nature : valeur à la date du remboursement", "[[1352-3]]"],
           ["Somme d'argent", "Avec intérêts au taux légal et taxes acquittées", "[[1352-6]]"],
           ["Intérêts, fruits : depuis quand ?", "De mauvaise foi : depuis le paiement ; de bonne foi : depuis la demande", "[[1352-7]]"],
           ["Prestation de service", "En valeur, appréciée **à la date où elle a été fournie**", "[[1352-8]]"],
           ["Dépenses du restituant", "Remboursées : nécessaires, et utiles dans la limite de la plus-value", "[[1352-5]]"],
-          ["Mineur, majeur protégé", "Restitutions réduites au profit retiré", "[[1352-4]]"],
+          ["Mineur non émancipé, majeur protégé", "Restitutions réduites à hauteur du profit retiré (rédaction issue de la loi du 20 avril 2018)", "[[1352-4]]"],
           ["Sûretés", "Reportées sur l'obligation de restituer", "[[1352-9]]"]
         ] } },
-        { p: "À l'égard des **tiers**, la rétroactivité fait tomber les droits consentis sur la chose (*nemo plus juris* : on ne transmet pas plus de droits qu'on n'en a), sauf mécanismes protecteurs : possession de bonne foi d'un meuble (art. 2276), actes d'administration, usucapion." },
+        { liste: [
+          "Sans aucune exécution, il n'y a rien à restituer : les parties sont simplement libérées. Sinon, chacune rend ce qu'elle a reçu (Carbonnier : un **contrat synallagmatique renversé**). Les restitutions sont **de plein droit** : le juge peut les ordonner sans demande (Civ. 1re, 24 janv. 2024, n° 21-20.693).",
+          "La mauvaise foi d'une partie ne la prive pas de sa créance de restitution ; elle joue sur le point de départ des intérêts, fruits et jouissance (Civ. 3e, 5 déc. 2024, n° 23-16.270).",
+          "Jouissance : [[1352-3]] met à la charge du restituant la valeur de la jouissance, ce qui écarte la solution de la Ch. mixte du 9 juill. 2004 (aucune indemnité pour la seule occupation, du fait de la rétroactivité). La plus-value profite au propriétaire, y compris en cas de restitution en valeur (estimation au jour de la restitution).",
+          "Contrats à exécution successive (travail, bail) : restitution **en valeur** seulement, d'après la prestation réellement fournie et non le prix convenu ([[1352-8]]).",
+          "*Nemo auditur propriam turpitudinem allegans* : avant 2016, le contractant animé d'une intention immorale pouvait être privé de restitution (contrats à titre onéreux, immoralité seulement, jamais pour la simple violation de l'ordre public), sans que cela l'empêche de demander l'annulation. L'ordonnance ne reprend pas la règle, d'origine prétorienne, qui pourrait subsister de façon résiduelle."
+        ] },
+        { p: "À l'égard des **tiers**, l'annulation leur est opposable (le locataire d'un immeuble dont la vente est annulée doit en tenir compte) et, surtout, la rétroactivité fait tomber les droits consentis sur la chose (*nemo plus juris* : on ne transmet pas plus de droits qu'on n'en a), sauf mécanismes protecteurs : maintien des **actes d'administration**, possession de bonne foi d'un meuble (art. 2276), prescription acquisitive immobilière (art. 2273 s.), à condition que le délai soit écoulé. Les textes sur la nullité ne prennent pas parti sur ces correctifs, d'origine jurisprudentielle." },
         { h: "4. La responsabilité" },
         { p: "Indépendamment de l'annulation, la partie lésée peut demander réparation selon la **responsabilité extracontractuelle** ([[1178]], al. 4) : le contrat ayant disparu, la responsabilité ne peut être contractuelle (ex. dommages et intérêts contre l'auteur d'un dol)." }
       ]

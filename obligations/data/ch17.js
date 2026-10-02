@@ -18,8 +18,8 @@ OBL.chapitres.push({
         ] },
         { h: "Dans quel délai ?" },
         { schema: { type: "tableau", titre: "Délais de prescription de l'action en responsabilité", colonnes: ["Hypothèse", "Durée", "Point de départ", "Texte"], lignes: [
-          ["Droit commun (contractuel ou extracontractuel)", "**5 ans**", "Jour où la victime a connu ou aurait dû connaître les faits, c'est-à-dire la manifestation du dommage", "[[2224]]"],
-          ["Dommage **corporel** (victime directe ou indirecte), atteintes psychiques comprises", "**10 ans**", "**Consolidation** du dommage initial ou aggravé", "[[2226]], al. 1er"],
+          ["Droit commun (contractuel ou extracontractuel)", "**5 ans**", "Jour où la victime a connu ou aurait dû connaître les faits, c'est-à-dire la manifestation du dommage (Civ. 1re, 11 mars 2010)", "[[2224]]"],
+          ["Dommage **corporel** (victime directe ou indirecte), atteintes psychiques comprises", "**10 ans**", "**Consolidation** du dommage initial ou aggravé (atteintes psychiques comprises : Civ. 2e, 7 juill. 2022, n° 20-19.147)", "[[2226]], al. 1er"],
           ["Tortures, actes de barbarie, violences ou agressions sexuelles contre un mineur", "**20 ans**", "Idem", "[[2226]], al. 2"],
           ["Produits défectueux", "**3 ans** (et extinction à 10 ans)", "Connaissance du dommage, du défaut et du producteur", "[[1245-16]]"]
         ] } },
@@ -41,11 +41,11 @@ OBL.chapitres.push({
         { liste: [
           "**Victime par ricochet** : le fait générateur atteint une autre personne, mais son préjudice (affection, perte de revenus) lui est **propre**. À ne pas confondre avec l'action que les **héritiers** exercent au nom du défunt : les proches peuvent cumuler les deux qualités et demander réparation de deux préjudices distincts.",
           "**Syndicats** : action légale pour l'intérêt collectif de la profession (C. trav., art. L. 2132-3).",
-          "**Associations** : elles défendent les intérêts individuels de leurs membres ; pour l'**intérêt collectif**, même sans habilitation légale, l'action est admise s'il entre dans leur **objet social** (Civ. 1re, 18 sept. 2008).",
+          "**Associations** : elles défendent les intérêts individuels de leurs membres ; pour l'**intérêt collectif**, même sans habilitation légale, l'action est admise s'il entre dans leur **objet social** (Civ. 3e, 26 sept. 2007 ; Civ. 1re, 18 sept. 2008) ; l'admission de l'action pour les intérêts individuels des membres remonte à Civ., 25 nov. 1929.",
           "**Action de groupe** : créée en 2014 pour les consommateurs, elle a été unifiée et largement ouverte par la loi n° 2025-391 du 30 avril 2025, pour le compte de plusieurs personnes placées dans une situation similaire résultant d'un même manquement d'un professionnel ou d'une personne publique."
         ] },
         { h: "Un préjudice certain : la perte de chance" },
-        { def: { terme: "Perte de chance", texte: "« disparition actuelle et certaine d'une éventualité favorable » (Ass. plén., 27 juin 2025). Le préjudice final (gagner le procès, réussir le concours) est incertain ; la **chance** perdue, elle, est certaine et se répare." } },
+        { def: { terme: "Perte de chance", texte: "« disparition actuelle et certaine d'une éventualité favorable » (Ass. plén., 27 juin 2025). Le préjudice final (gagner le procès, réussir le concours) est incertain ; la **chance** perdue, elle, est certaine et se répare (Civ. 2e, 12 mai 1966)." } },
         { liste: [
           "Exemples : l'avocat qui laisse passer le délai d'appel fait perdre une chance de gagner ; l'étudiant blessé perd une chance d'exercer la profession visée si son parcours la rendait **réelle et sérieuse**.",
           "Réparation **à hauteur de la chance perdue**, jamais égale à l'avantage espéré.",
@@ -66,7 +66,8 @@ OBL.chapitres.push({
           { date: "4 mars 2002", t: "Loi « anti-Perruche »", d: "nul ne peut se prévaloir d'un préjudice du seul fait de sa naissance (CASF, art. L. 114-5) ; les parents ne sont indemnisés que de **leur propre préjudice**, sur preuve d'une **faute caractérisée**" },
           { date: "6 oct. 2005", t: "CEDH (Draon et Maurice c/ France)", d: "l'application immédiate aux instances en cours viole le droit au respect des biens" },
           { date: "11 juin 2010", t: "Cons. const., n° 2010-2 QPC", d: "disposition transitoire censurée : la loi ne vaut que pour les enfants nés après son entrée en vigueur" }
-        ] } }
+        ] } },
+        { p: "La **faute caractérisée** exigée des praticiens s'apprécie selon la jurisprudence (Civ. 1re, 16 janv. 2013). Le préjudice propre des parents ne se limite plus au préjudice moral : il peut inclure des pertes de gains professionnels et une incidence professionnelle, lorsqu'ils cessent ou modifient leur activité pour s'occuper de l'enfant handicapé (Civ. 1re, 15 oct. 2024, n° 24-16.323)." }
       ]
     },
     {
@@ -100,7 +101,7 @@ OBL.chapitres.push({
           { date: "3 mars 2015", t: "Soc.", d: "restriction aux salariés des établissements ouvrant droit à la préretraite amiante (ACAATA)" },
           { date: "5 avr. 2019", t: "Ass. plén., n° 18-17.442", d: "revirement : tout salarié exposé à l'amiante avec un **risque élevé de pathologie grave** peut agir, sur le fondement de l'obligation de sécurité de l'employeur" },
           { date: "11 sept. 2019", t: "Soc., n° 17-24.879", d: "extension à toute **substance nocive ou toxique** ; le salarié doit prouver une anxiété personnellement subie" },
-          { date: "18 févr. 2026", t: "Civ. 1re, n° 21-23.415 (Distilbène)", d: "hors du travail : l'anxiété née d'un risque élevé de pathologie grave est caractérisée par la seule **connaissance** de ce risque par la victime" }
+          { date: "18 févr. 2026", t: "Civ. 1re, n° 21-23.415 (Distilbène)", d: "hors du travail : l'anxiété née d'un risque élevé de pathologie grave est caractérisée par la seule **connaissance** de ce risque par la victime ; le préjudice était déjà admis pour des effets secondaires de médicaments ou substances dangereuses (Civ. 2e, 15 juin 2023 ; Civ. 1re, 18 déc. 2024, qui le rejette faute de preuve d'une exposition à un risque élevé)" }
         ] } },
         { h: "Le dommage corporel et la nomenclature Dintilhac" },
         { p: "Élaborée en 2005 par un groupe de travail présidé par J.-P. Dintilhac, la nomenclature n'a **pas de valeur normative**, mais tous les acteurs l'utilisent. Elle croise deux distinctions : préjudices **patrimoniaux / extrapatrimoniaux** et préjudices **temporaires** (avant la **consolidation**) / **permanents** (après). Le juge doit distinguer les postes pour permettre le recours poste par poste des tiers payeurs (loi du 5 juill. 1985, art. 31)." },
@@ -111,15 +112,15 @@ OBL.chapitres.push({
         ] } },
         { liste: [
           "**Déficit fonctionnel** : perte de qualité de vie et troubles dans les conditions d'existence, indépendamment des revenus ; poste **extrapatrimonial**, temporaire ou permanent.",
-          "**Préjudice d'agrément** : impossibilité de pratiquer **régulièrement** une activité **spécifique** sportive ou de loisirs (Civ. 2e, 28 mai 2009), à prouver ; il ne recouvre plus la perte générale des agréments de la vie, absorbée par le déficit fonctionnel.",
+          "**Préjudice d'agrément** : impossibilité de pratiquer **régulièrement** une activité **spécifique** sportive ou de loisirs (Civ. 2e, 28 mai 2009), à prouver (Civ. 2e, 29 mars 2018) ; il ne recouvre plus la perte générale des agréments de la vie, que l'assemblée plénière y avait incluse (Ass. plén., 19 déc. 2003) et qu'absorbe désormais le déficit fonctionnel (revirement du 28 mai 2009).",
           "**Souffrances endurées** (ancien *pretium doloris*) : souffrances physiques et morales jusqu'à la consolidation.",
           "**Préjudice esthétique** : atteinte à l'apparence (cicatrices), temporaire ou permanent.",
           "**Préjudice sexuel** : morphologique, lié à l'acte sexuel, lié à la procréation (Civ. 2e, 17 juin 2010).",
-          "**Perte de gains professionnels futurs** : calculée selon l'évolution probable des revenus ; une perte **totale** suppose l'impossibilité définitive d'exercer toute activité rémunératrice ; l'**incidence professionnelle** couvre la dévalorisation sur le marché du travail, la pénibilité, la perte de retraite.",
-          "**Préjudice d'angoisse de mort imminente** : poste **autonome** pour la victime consciente de sa mort prochaine (Ch. mixte, 25 mars 2022, n° 20-15.624, qui reconnaît le même jour le préjudice d'**attente et d'inquiétude** des proches, n° 20-17.072)."
+          "**Perte de gains professionnels futurs** : calculée selon l'évolution probable des revenus ; une perte **totale** suppose l'impossibilité définitive, après consolidation, d'exercer une quelconque activité rémunératrice (Civ. 2e, 10 oct. 2024, n° 23-12.612) ; l'**incidence professionnelle** couvre la dévalorisation sur le marché du travail, la pénibilité, la perte de retraite.",
+          "**Préjudice d'angoisse de mort imminente** : poste **autonome** pour la victime consciente de sa mort prochaine, qui met fin à une divergence entre la 2e chambre civile (Civ. 2e, 16 sept. 2010 : refus) et la chambre criminelle (Crim., 15 oct. 2013 : admission) ; il est retenu même si la victime survit (Civ. 2e, 11 juill. 2024) (Ch. mixte, 25 mars 2022, n° 20-15.624, qui reconnaît le même jour le préjudice d'**attente et d'inquiétude** des proches, n° 20-17.072)."
         ] },
         { h: "Les victimes par ricochet" },
-        { p: "L'ancienne exigence d'un **lien de droit** (parenté, alliance, obligation alimentaire) avec la victime directe est abandonnée : suffit un préjudice **personnel et certain**. En pratique, le cercle familial proche est indemnisé (conjoint ou concubin, enfants, parents, frères et sœurs) ; un tiers peut l'être s'il prouve un lien d'affection particulier, et un parent sans lien réel avec la victime peut ne rien obtenir." },
+        { p: "L'ancienne exigence d'un **lien de droit** (parenté, alliance, obligation alimentaire) avec la victime directe est abandonnée : suffit un préjudice **personnel et certain**. En pratique, le cercle familial proche est indemnisé (conjoint ou concubin, enfants, parents, frères et sœurs) ; un tiers peut l'être s'il prouve un lien d'affection particulier (Civ. 2e, 16 avr. 1996), et un parent sans lien réel avec la victime peut ne rien obtenir." },
         { schema: { type: "tableau", titre: "Préjudices des victimes par ricochet", colonnes: ["", "Décès de la victime directe", "Survie de la victime directe"], lignes: [
           ["Patrimoniaux", "Frais d'obsèques ; **perte de revenus** des proches (part des revenus du défunt consacrée à chacun, durée prévisible) ; frais divers", "Pertes de revenus des proches (ex. arrêt de travail pour l'assister) ; frais divers"],
           ["Extrapatrimoniaux", "**Préjudice d'affection** ; préjudice d'accompagnement", "Préjudice d'affection ; préjudices extrapatrimoniaux exceptionnels (bouleversement de la vie familiale)"]
@@ -131,7 +132,7 @@ OBL.chapitres.push({
     {
       titre: "La réparation du préjudice",
       contenu: [
-        { p: "Le droit à réparation naît au jour du dommage, mais le préjudice est **évalué au jour du jugement**, qui est déclaratif : la victime ne subit pas l'érosion monétaire." },
+        { p: "Le droit à réparation naît au jour du dommage, mais le préjudice est **évalué au jour du jugement** (Civ., 15 juill. 1943), qui est déclaratif : la victime ne subit pas l'érosion monétaire." },
         { h: "Le principe de réparation intégrale" },
         { p: "Réparer « **tout le préjudice, mais rien que le préjudice** » : replacer la victime dans la situation où elle se serait trouvée sans le fait dommageable, sans perte ni profit." },
         { liste: [
@@ -153,7 +154,7 @@ OBL.chapitres.push({
         ] } },
         { h: "Le pouvoir souverain des juges du fond" },
         { liste: [
-          "L'évaluation est une question de **fait** : les juges du fond n'ont pas à justifier leur méthode ni, hors dommage corporel, à détailler les chefs de préjudice.",
+          "L'évaluation est une question de **fait**, relevant du pouvoir souverain des juges du fond (Ass. plén., 26 mars 1999) : les juges du fond n'ont pas à justifier leur méthode ni, hors dommage corporel, à détailler les chefs de préjudice.",
           "Ils choisissent le **mode de réparation** : dommages et intérêts (le plus fréquent) ou réparation **en nature** (remise en état, démolition, cessation du trouble) ; pour le préjudice écologique, la réparation en nature est **prioritaire** ([[1249]]).",
           "Contrôle de la Cour de cassation : respect de la **réparation intégrale** et appréciation ***in concreto*** (interdiction d'appliquer un barème)."
         ] }
@@ -170,7 +171,7 @@ OBL.chapitres.push({
           ["Exemple", "Accident de la route suivi d'une opération au cours de laquelle l'œil est lésé : l'accident est une cause (Civ. 2e, 27 janv. 2000)", "L'appel téléphonique qui fait sortir la victime n'est pas la cause de l'accident de la route"],
           ["Jurisprudence", "Préférence marquée dans les arrêts récents de la 2e chambre civile", "Préférence traditionnelle ; la Cour de cassation n'a jamais consacré l'une ou l'autre en termes de principe"]
         ] } },
-        { p: "Quelle que soit la théorie, la jurisprudence exige un lien **certain** (le fait a été nécessaire au dommage ; en cas de doute, pas de responsabilité) et **direct**." },
+        { p: "Tout événement résulte d'une multitude de causes : les prendre toutes en compte conduirait, selon la formule de G. Marty, à « la causalité de l'univers », d'où la nécessité d'un tri. La 2e chambre civile a retenu l'accident de la route à l'origine d'une opération au cours de laquelle l'œil a été lésé (Civ. 2e, 27 janv. 2000 ; dans le même sens Civ. 2e, 2 juin 2005). Quelle que soit la théorie, la jurisprudence exige un lien **certain** (le fait a été nécessaire au dommage ; en cas de doute, pas de responsabilité) et **direct**." },
         { h: "La preuve" },
         { liste: [
           "Charge : la **victime**, demanderesse.",

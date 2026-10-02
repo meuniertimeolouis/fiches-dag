@@ -754,7 +754,7 @@ OBL.pieges[14] = {
       pourquoi: "Garde et subordination sont incompatibles ; la victime agit contre l'employeur ([[1242]], al. 1er, ou al. 5)." },
     { faux: "Un jeune enfant ne peut pas être gardien, faute de discernement.",
       juste: "L'*infans* peut être gardien (Ass. plén., 9 mai 1984, Gabillet).",
-      pourquoi: "La garde ne suppose pas le discernement ; c'est l'un des cinq arrêts de 1984 qui objectivent la responsabilité des enfants." },
+      pourquoi: "La garde ne suppose pas le discernement ; c'est l'un des quatre arrêts du 9 mai 1984 qui objectivent la responsabilité des enfants." },
     { faux: "Le vice interne de la chose est un cas de force majeure pour le gardien.",
       juste: "La force majeure doit être **extérieure au gardien et à la chose** : un vice de la chose n'exonère jamais le gardien, qui peut seulement se retourner contre le fabricant.",
       pourquoi: "Depuis Teffaine et Jand'heur, le gardien répond même du vice qu'il ne pouvait pas déceler." },

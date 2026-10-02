@@ -27,25 +27,25 @@ OBL.chapitres.push({
         { def: { terme: "Clause résolutoire", texte: "stipulation qui « précise les engagements dont l'inexécution entraînera la résolution du contrat » ([[1225]], al. 1er) et permet au créancier de résoudre **de plein droit**, sans juge, quelle que soit la gravité du manquement." } },
         { liste: [
           "**Interprétation stricte** : la clause doit exprimer sans équivoque la volonté de résoudre **de plein droit** ; à défaut, elle ne fait que rappeler la possibilité d'une résolution judiciaire (Civ. 1re, 15 juin 1994 ; Civ. 3e, 12 oct. 1994).",
-          "Elle doit **désigner les obligations** visées : les clauses « balais » (« tout manquement à l'une quelconque des obligations ») ne répondent pas à [[1225]].",
+          "Le principe de la mise en demeure préalable était déjà posé avant 2016 (Civ. 3e, 23 mars 2017, n° 16-13.060, le rappelle). Elle doit **désigner les obligations** visées : les clauses « balais » (« tout manquement à l'une quelconque des obligations ») ne répondent pas à [[1225]].",
           "Licite par principe, sauf textes spéciaux (assurance, certains baux) et contrôle des clauses abusives ([[1171]] ; droit de la consommation).",
           "**Mise en demeure infructueuse** préalable, qui **mentionne expressément la clause**, sauf stipulation dispensant de mise en demeure ([[1225]], al. 2)."
         ] },
         { h: "Les pouvoirs du juge" },
         { liste: [
           "Il vérifie la **qualification** de la clause et la réunion de ses **conditions**.",
-          "Il peut en écarter le jeu si le **créancier** l'invoque de **mauvaise foi** (Civ. 1re, 31 janv. 1995) : aujourd'hui fondement de [[1104]]. Ex. : sommation délivrée pendant les congés du débiteur, que le créancier savait absent.",
+          "Il peut en écarter le jeu si le **créancier** l'invoque de **mauvaise foi** (Civ. 1re, 31 janv. 1995) : aujourd'hui fondement de [[1104]]. Ex. : sommation délivrée pendant les congés du débiteur, que le créancier savait absent, ou bailleur qui refuse de délivrer les quittances de loyer et prive le locataire des aides au logement. Autres arrêts : Civ. 1re, 16 févr. 1999 et 10 nov. 2010 ; Civ. 3e, 8 sept. 2016, n° 13-28.063.",
           "La **bonne foi du débiteur** est en revanche indifférente (Civ. 3e, 10 mars 1993) : sinon, on ajouterait une condition à la clause.",
-          "Il ne peut pas accorder de **délai de grâce** (sauf textes spéciaux, notamment en matière de baux), ni modifier la clause."
+          "Il ne peut pas accorder de **délai de grâce** (solution acquise de longue date : Civ. 3e, 4 juin 1986 ; exceptions par textes spéciaux, notamment en matière de baux), ni modifier une clause qu'il jugerait déséquilibrée (la sanction passe par [[1171]] ou par la bonne foi, pas par la révision)."
         ] },
         { h: "Clause résolutoire et résolution judiciaire" },
-        { p: "« La résolution peut, en toute hypothèse, être demandée en justice » ([[1227]]) : la clause est **facultative** pour le créancier, qui peut préférer le juge (pour obtenir en même temps des dommages et intérêts, ou faire trancher une contestation). Une clause de **renonciation anticipée** à la résolution judiciaire est valable si elle est expresse et révèle la compréhension de sa portée par celui qui renonce (Civ. 3e, 3 nov. 2011)." }
+        { p: "« La résolution peut, en toute hypothèse, être demandée en justice » ([[1227]]) : la clause est **facultative** pour le créancier, qui peut préférer le juge (pour obtenir en même temps des dommages et intérêts, ou faire trancher une contestation). Cette solution est ancienne (Com., 7 mars 1984). Une clause de **renonciation anticipée** à la résolution judiciaire est valable si elle est expresse et révèle la compréhension de sa portée par celui qui renonce (Civ. 3e, 3 nov. 2011). Le rapport sur l'ordonnance n'entend pas remettre en cause cette jurisprudence : le juge vérifie au cas par cas que la renonciation ne porte pas atteinte à la substance du droit d'agir ni à celui d'obtenir l'exécution par les autres sanctions de [[1217]]. L'intérêt de la voie judiciaire malgré la clause : cumuler résolution et dommages et intérêts, et soumettre l'appréciation de l'inexécution au juge." }
       ]
     },
     {
       titre: "La résolution par notification",
       contenu: [
-        { p: "Avant 2016, la jurisprudence admettait déjà que « la gravité du comportement d'une partie à un contrat peut justifier que l'autre partie y mette fin de façon unilatérale à ses risques et périls » (Civ. 1re, 13 oct. 1998, Tocqueville, n° 96-21.485 : clinique rompant avec un anesthésiste ; Civ. 1re, 20 févr. 2001 ; Com., 10 févr. 2009). [[1226]] consacre et encadre cette faculté, pour les contrats à durée déterminée comme indéterminée." },
+        { p: "Avant 2016, la jurisprudence admettait déjà que « la gravité du comportement d'une partie à un contrat peut justifier que l'autre partie y mette fin de façon unilatérale à ses risques et périls » (Civ. 1re, 13 oct. 1998, Tocqueville, n° 96-21.485 : clinique rompant avec un anesthésiste ; Civ. 1re, 20 févr. 2001 ; Com., 10 févr. 2009). [[1226]] consacre et encadre cette faculté, pour les contrats à durée déterminée comme indéterminée. Certains textes spéciaux la prévoyaient déjà (faute grave en droit du travail), mais la chambre sociale a estimé, dans un avis du 3 avr. 2019, que [[1226]] ne s'applique pas aux modes de rupture du contrat de travail. Le critère a glissé du « comportement » grave (arrêts de 1998 et 2001) vers le « manquement » grave, plus objectif ; les deux approches coexistent encore." },
         { schema: { type: "etapes", titre: "La procédure de l'article 1226", etapes: [
           { t: "1. Une inexécution suffisamment grave", d: "même exigence que pour la résolution judiciaire ; la jurisprudence retient un manquement grave ou un comportement grave (Com., 18 oct. 2023, n° 20-21.579)" },
           { t: "2. Une mise en demeure spéciale", d: "sommer le débiteur de s'exécuter dans un délai raisonnable en mentionnant expressément qu'à défaut le créancier sera en droit de résoudre ; dispense en cas d'urgence, ou lorsqu'il résulte des circonstances qu'elle est vaine (Com., 18 oct. 2023)" },
@@ -54,28 +54,28 @@ OBL.chapitres.push({
           { t: "5. Le contrôle éventuel du juge", d: "le débiteur peut à tout moment contester ; le **créancier** doit alors **prouver la gravité** de l'inexécution ([[1226]], al. 4)" }
         ] } },
         { attention: "« À ses risques et périls » : si la rupture est jugée injustifiée, le créancier peut être condamné à des dommages et intérêts, et le juge peut refuser d'en tirer effet, le contrat continuant alors à produire ses effets." },
-        { p: "Articulation avec une clause résolutoire : la chambre commerciale admet la résolution unilatérale même si le contrat contient une clause résolutoire dont les modalités n'ont pas été respectées (Com., 10 févr. 2009) ; la troisième chambre civile a paru plus réservée. Les textes de 2016 sont muets sur ce point." }
+        { p: "Articulation avec une clause résolutoire : la chambre commerciale admet la résolution unilatérale même si le contrat contient une clause résolutoire dont les modalités n'ont pas été respectées (Com., 10 févr. 2009) ; la troisième chambre civile a paru plus réservée (Civ. 3e, 9 oct. 2013), avant une inflexion possible (Civ. 3e, 8 févr. 2018, n° 16-24.641). La solution est confirmée en chambre commerciale (Com., 1er oct. 2013, n° 12-20.830). Les textes de 2016 sont muets sur ce point. Si la rupture est infondée, le juge peut l'écarter : le contrat continue (Com., 18 nov. 2008)." }
       ]
     },
     {
       titre: "La résolution judiciaire",
       contenu: [
         { h: "Domaine" },
-        { p: "Terrain d'élection : les **contrats synallagmatiques**. Quelques contrats synallagmatiques y échappent (assurance, où joue la déchéance ; rente viagère ; cession d'office ministériel) ; à l'inverse, certains contrats unilatéraux comme le prêt à intérêt peuvent être résolus. [[1224]] ne mentionne plus la limite aux contrats synallagmatiques." },
+        { p: "Terrain d'élection : les **contrats synallagmatiques**. Quelques contrats synallagmatiques y échappent (assurance, où joue la déchéance ; rente viagère, art. 1978 ; cession d'office ministériel, la résolution rétroactive remettant en cause la nomination de l'officier et les actes passés) ; à l'inverse, certains contrats unilatéraux comme le prêt à intérêt (art. 1912) peuvent être résolus, ses obligations étant très proches de l'interdépendance (le prêt d'un professionnel du crédit est d'ailleurs consensuel depuis Civ. 1re, 27 mai 2000). [[1224]] ne mentionne plus la limite aux contrats synallagmatiques." },
         { h: "Conditions de fond" },
         { liste: [
-          "**L'inexécution d'une obligation contractuelle**, même tacite (obligation d'information du vendeur). La **faute n'est pas exigée** : le constat du manquement suffit (Com., 18 janv. 2023, n° 21-16.812, sous le visa de [[1217]]).",
+          "**L'inexécution d'une obligation contractuelle**, même tacite (obligation d'information du vendeur : Civ. 1re, 28 mai 2009) ; la violation d'une obligation purement légale ne suffit pas, en principe. La **faute n'est pas exigée** : le constat du manquement suffit (Com., 18 janv. 2023, n° 21-16.812, sous le visa de [[1217]]).",
           "**Une inexécution suffisamment grave** ([[1224]]), appréciée souverainement : carence caractérisée, ou manquement à une obligation **déterminante** de la conclusion du contrat (Com., 2 juill. 1996). Le juge se demande si le lien contractuel peut encore être utile.",
-          "**Dieselgate** : la livraison d'un véhicule équipé d'un dispositif d'invalidation interdit par le droit de l'Union caractérise un manquement grave à l'obligation de délivrance conforme justifiant la résolution, sans que les juges du fond puissent la refuser au motif d'un rappel proposé ou d'un long usage du véhicule (Civ. 1re, 24 sept. 2025, n° 23-23.869).",
+          "**Dieselgate** : la livraison d'un véhicule équipé d'un dispositif d'invalidation interdit par le droit de l'Union caractérise un manquement grave à l'obligation de délivrance conforme justifiant la résolution, sans que les juges du fond puissent la refuser au motif d'un rappel proposé ou d'un long usage du véhicule (Civ. 1re, 24 sept. 2025, n° 23-23.869). La Cour crée ainsi un manquement-type emportant résolution (Genicon) : la gravité se déduit de la nature de l'obligation violée, avec une fonction quasi pénale.",
           "**Torts réciproques** : le juge peut prononcer la résolution **aux torts partagés** ; les restitutions sont dues selon le droit commun, les fautes respectives jouant sur les dommages et intérêts (Com., 15 mai 2024, n° 23-13.990).",
           "**Force majeure** : sous l'empire de l'ancien article 1184, la résolution devait être demandée au juge même en cas de force majeure (Civ., 14 avr. 1891). [[1218]] prévoit désormais une résolution de plein droit si l'empêchement est définitif (voir chapitre 10)."
         ] },
         { h: "Mise en œuvre et pouvoirs du juge" },
         { liste: [
-          "Seul le **créancier** de l'obligation inexécutée peut agir ; le débiteur défaillant peut éviter la résolution en **offrant d'exécuter**, à tout moment, même pour la première fois en appel.",
+          "Seul le **créancier** de l'obligation inexécutée peut agir (Civ., 4 mai 1920) ; le débiteur défaillant peut éviter la résolution en **offrant d'exécuter**, à tout moment, même pour la première fois en appel.",
           "Le juge apprécie la situation **au jour où il statue**, en tenant compte des éléments postérieurs à l'assignation (commencement d'exécution).",
           "Selon [[1228]], il peut **constater ou prononcer** la résolution, **ordonner l'exécution** en accordant éventuellement un **délai** au débiteur, ou allouer **seulement des dommages et intérêts**.",
-          "Il ne peut pas à la fois résoudre le contrat et condamner le débiteur à l'exécuter : les deux sanctions sont incompatibles."
+          "Il ne peut pas à la fois résoudre le contrat et condamner le débiteur à l'exécuter : les deux sanctions sont incompatibles (Civ. 1re, 17 févr. 1982)."
         ] }
       ]
     },
@@ -91,7 +91,7 @@ OBL.chapitres.push({
           ["Droit antérieur", "Anéantissement rétroactif si inexécution dès l'origine (Civ. 3e, 30 avr. 2003)", "Résiliation pour l'avenir à partir de l'inexécution (même arrêt)"]
         ] } },
         { h: "Les clauses qui survivent ([[1230]])" },
-        { p: "La résolution n'affecte ni les clauses relatives au **règlement des différends** (clause compromissoire, attributive de juridiction), ni celles **destinées à produire effet même en cas de résolution**, comme les clauses de **confidentialité** et de **non-concurrence**. Pour des contrats antérieurs à 2016, la chambre commerciale a admis le maintien d'une clause limitative de réparation malgré la résolution (Com., 7 févr. 2018, n° 16-20.352) ; la clause pénale produit elle aussi effet." },
+        { p: "La résolution n'affecte ni les clauses relatives au **règlement des différends** (clause compromissoire, attributive de juridiction), ni celles **destinées à produire effet même en cas de résolution**, comme les clauses de **confidentialité** et de **non-concurrence** (innovation sur ce dernier point, la jurisprudence contraire datant de Civ. 1re, 6 mars 1996, n° 93-21.728 ; solution proche des principes européens du droit des contrats). Pour des contrats antérieurs à 2016, la chambre commerciale a admis le maintien d'une clause limitative de réparation malgré la résolution (Com., 7 févr. 2018, n° 16-20.352) ; la clause pénale produit elle aussi effet." },
         { h: "Les contrats interdépendants" },
         { p: "La disparition d'un contrat par résolution peut entraîner la **caducité** des contrats interdépendants ([[1186]], al. 2 et 3 ; effets : [[1187]]). La résolution par notification suffit et est opposable à celui contre qui la caducité est invoquée, sans qu'il soit nécessaire d'attraire le cocontractant du contrat résolu (Com., 5 févr. 2025, n° 23-23.358)." }
       ]
@@ -107,19 +107,19 @@ OBL.chapitres.push({
           ["Engagement", "Mettre en œuvre tous les moyens pour atteindre un but", "Atteindre le résultat promis", "Faute présumée"],
           ["Preuve pour le créancier", "Prouver la **faute** (comportement non conforme à celui d'un professionnel raisonnable, apprécié *in abstracto*)", "Prouver que le **résultat n'est pas atteint**", "Prouver le dommage survenu après l'intervention"],
           ["Exonération du débiteur", "Absence de faute ou cause étrangère", "**Seulement la cause étrangère**", "Preuve de l'absence de faute"],
-          ["Exemples", "Médecin (soins : Civ., 20 mai 1936, Mercier), avocat, enseignant, voyageur jouant un rôle actif (embarquement d'un télésiège)", "Livrer une chose, ne pas faire, transporteur de personnes pendant le trajet (télésiège en marche : Civ. 1re, 11 mars 1986)", "Garagiste : faute et lien causal présumés si les désordres surviennent ou persistent après son intervention (Civ. 1re, 11 mai 2022, n° 20-19.732) ; bail ([[1732]])"]
+          ["Exemples", "Médecin (soins : Civ., 20 mai 1936, Mercier), avocat, enseignant, voyageur jouant un rôle actif (embarquement d'un télésiège)", "Livrer une chose, ne pas faire, transporteur de personnes pendant le trajet (télésiège en marche : Civ. 1re, 11 mars 1986)", "Garagiste : faute et lien causal présumés si les désordres surviennent ou persistent après son intervention (Civ. 1re, 11 mai 2022, n° 20-19.732 ; Civ. 1re, 25 juin 2025, n° 23-22.515) ; employeur exposant le salarié à une substance nocive (Soc., 25 nov. 2015, n° 14-24.444 ; Ass. plén., 5 avr. 2019, n° 18-17.442) ; bail ([[1732]])"]
         ] } },
         { liste: [
-          "**Critères** : d'abord la **volonté des parties** ; subsidiairement l'**aléa** (le débiteur maîtrisait-il seul l'exécution ?) et, pour la sécurité, le **rôle actif ou passif** du créancier.",
-          "**Opportunité** : le souci d'indemniser les atteintes corporelles pousse vers l'obligation de résultat (centres de transfusion sanguine et sang contaminé : Civ. 1re, 12 avr. 1995).",
-          "**Transport ferroviaire** : obligation de sécurité de résultat du moment où le voyageur commence à monter dans le train jusqu'à ce qu'il achève d'en descendre (Civ. 1re, 7 mars 1989) ; l'accident de quai relève du droit délictuel.",
-          "**Responsabilité médicale** : depuis la loi du 4 mars 2002, elle est **légale** et fondée sur la faute (CSP, art. L. 1142-1) ; l'ancienne obligation de sécurité de résultat en matière d'infections nosocomiales (Civ. 1re, 29 juin 1999) est relayée par la loi pour les établissements de santé."
+          "**Critères** : d'abord la **volonté des parties** ; subsidiairement l'**aléa** (le débiteur maîtrisait-il seul l'exécution ? Civ. 3e, 5 nov. 2020, n° 19-10.857 : entretien de la porte d'accès d'un parking) et, pour la sécurité, le **rôle actif ou passif** du créancier.",
+          "**Opportunité** : le souci d'indemniser les atteintes corporelles pousse vers l'obligation de résultat (centres de transfusion sanguine et sang contaminé : Civ. 1re, 12 avr. 1995), avant l'intervention d'une loi d'indemnisation spéciale (CSP, art. L. 3122-1 s.).",
+          "**Transport ferroviaire** : obligation de sécurité de résultat du moment où le voyageur commence à monter dans le train jusqu'à ce qu'il achève d'en descendre (Civ. 2e, 7 mars 1989) ; l'accident de quai relève du droit délictuel.",
+          "**Responsabilité médicale** : depuis la loi du 4 mars 2002, elle est **légale** et fondée sur la faute (CSP, art. L. 1142-1) ; l'ancienne obligation de sécurité de résultat en matière d'infections nosocomiales (Civ. 1re, 29 juin 1999) est relayée par la loi pour les établissements de santé. Par un arrêt de principe (Civ. 1re, 14 oct. 2010), la Cour de cassation en a déduit que la responsabilité médicale est devenue légale, de sorte que la question est moins celle de moyens ou de résultat que celle de la faute ou de l'absence de faute ; le droit à indemnisation d'un accident médical non fautif relève de la solidarité nationale. Des solutions dérogatoires existaient pour le matériel défectueux (Civ. 1re, 9 nov. 1999 ; 7 nov. 2000)."
         ] },
         { h: "La gravité de la faute" },
-        { p: "Une faute simple suffit à engager la responsabilité. Mais prouver une faute **lourde** ou **dolosive** écarte la limitation au préjudice prévisible ([[1231-3]]) et les clauses limitatives." },
+        { p: "Une faute simple suffit à engager la responsabilité, sauf texte spécial exigeant une faute qualifiée (CASF, art. L. 114-5 : faute caractérisée du médecin pour le préjudice moral des parents d'un enfant né handicapé). Mais prouver une faute **lourde** ou **dolosive** écarte la limitation au préjudice prévisible ([[1231-3]]) et les clauses limitatives." },
         { liste: [
-          "**Faute dolosive** : inexécution **délibérée**, sans qu'il soit besoin d'une intention de nuire (Civ. 1re, 4 févr. 1969). Rien à voir avec le dol vice du consentement.",
-          "**Faute lourde** : négligence d'une **extrême gravité**, confinant au dol et dénotant l'inaptitude du débiteur à accomplir sa mission ; elle est assimilée au dol (Req., 24 oct. 1932). Elle ne se déduit plus du seul manquement à une obligation essentielle (Ch. mixte, 22 avr. 2005 ; Com., 13 juin 2006).",
+          "**Faute dolosive** : inexécution **délibérée**, sans qu'il soit besoin d'une intention de nuire (Civ. 1re, 4 févr. 1969). Rien à voir avec le dol vice du consentement (confusion que l'ordonnance de 2016 a voulu éviter en abandonnant le mot « dol » dans [[1231-3]]) ; voir aussi Com., 4 mars 2008.",
+          "**Faute lourde** : négligence d'une **extrême gravité**, confinant au dol et dénotant l'inaptitude du débiteur à accomplir sa mission ; elle est assimilée au dol (Req., 24 oct. 1932). Elle ne se déduit plus du seul manquement à une obligation essentielle (Ch. mixte, 22 avr. 2005 ; Com., 13 juin 2006), conception que la 1re chambre civile avait retenue en 1984 ; illustration récente : Com., 10 mars 2009.",
           "À distinguer de la faute lucrative de [[1254]] (loi du 30 avr. 2025) : **sanction civile** prononcée à la demande du ministère public ou du Gouvernement contre un professionnel qui a délibérément commis une faute en vue d'un gain ou d'une économie indus ayant causé des dommages à plusieurs personnes ; son produit alimente un fonds de financement des actions de groupe (étudiée avec la réparation)."
         ] }
       ]
@@ -133,21 +133,21 @@ OBL.chapitres.push({
             { t: "Fait de la chose utilisée", d: "jamais exonératoire : le vice de la chose n'échappe pas au contrôle du débiteur" },
             { t: "Fait d'un préposé ou d'un substitut", d: "jamais exonératoire : le débiteur répond de ceux qu'il emploie (Civ. 1re, 18 janv. 1989 : incendie volontaire par le gardien)" }
           ] },
-          { t: "Fait d'un tiers", d: "exonération totale s'il présente les caractères de la force majeure et que le tiers est étranger à la sphère du débiteur ; sinon, le débiteur et le tiers sont tenus *in solidum*" },
+          { t: "Fait d'un tiers", d: "exonération totale s'il présente les caractères de la force majeure et que le tiers est étranger à la sphère du débiteur ; sinon, le débiteur et le tiers sont tenus *in solidum* ; le tiers ne doit pas relever de la sphère du débiteur (Civ. 1re, 23 juin 2011 : agression d'un voyageur par un autre dans un train)" },
           { t: "Fait du créancier", d: "force majeure : exonération totale ; faute non irrésistible : exonération **partielle** selon la gravité des fautes (Civ. 1re, 31 janv. 1973)" }
         ] } } },
         { schema: { type: "frise", titre: "La faute du voyageur face au transporteur ferroviaire", evenements: [
           { date: "Avant 2008", t: "Droit commun", d: "la faute de la victime exonère partiellement" },
           { date: "13 mars 2008", t: "Civ. 1re", d: "le transporteur ne peut s'exonérer partiellement ; la faute de la victime n'exonère totalement que si elle présente les caractères de la force majeure" },
-          { date: "11 déc. 2019", t: "Civ. 1re, n° 18-13.840", d: "application prioritaire du règlement (CE) n° 1371/2007 : la faute du voyageur exonère de nouveau le transporteur, partiellement si elle n'est pas irrésistible ; le droit interne n'intervient que pour une plus grande indemnisation" }
+          { date: "11 déc. 2019", t: "Civ. 1re, n° 18-13.840", d: "application prioritaire du règlement (CE) n° 1371/2007 : la faute du voyageur exonère de nouveau le transporteur, partiellement si elle n'est pas irrésistible ; le droit interne n'intervient que pour une plus grande indemnisation (au seul stade de l'évaluation du dommage)" }
         ] } },
         { h: "Le préjudice" },
-        { p: "Il doit être **prouvé** par le créancier : l'inexécution, même fautive, ne suffit pas. Tout préjudice est réparable : **perte subie** et **gain manqué** ([[1231-2]]), préjudice **moral**, préjudice corporel (les caractères du préjudice sont étudiés avec la responsabilité en général)." },
+        { p: "Il doit être **prouvé** par le créancier : l'inexécution, même fautive, ne suffit pas (Civ. 2e, 11 sept. 2009 ; Civ. 1re, 22 nov. 2017, n° 16-27.551). Tout préjudice est réparable : **perte subie** et **gain manqué** ([[1231-2]]), préjudice **moral**, préjudice corporel (les caractères du préjudice sont étudiés avec la responsabilité en général)." },
         { h: "Le préjudice prévisible ([[1231-3]])" },
         { liste: [
-          "**Principe** : le débiteur n'est tenu que des dommages et intérêts **prévus ou prévisibles lors de la conclusion** du contrat. La prévisibilité porte sur la nature du dommage mais aussi sur son montant. Ex. : le garagiste ne doit que la valeur du véhicule volé, pas celle de l'objet précieux laissé dans le coffre à son insu.",
+          "**Principe** : le débiteur n'est tenu que des dommages et intérêts **prévus ou prévisibles lors de la conclusion** du contrat (rappel : Com., 11 mars 2020, n° 18-22.472). La prévisibilité porte sur la nature du dommage mais aussi sur son montant. Ex. : le garagiste ne doit que la valeur du véhicule volé, pas celle de l'objet précieux laissé dans le coffre à son insu.",
           "**Exception** : faute **lourde ou dolosive** : réparation intégrale, même de l'imprévisible.",
-          "**Appréciation casuistique** : dommage corporel toujours prévisible ; en revanche, le coût d'un voyage manqué à cause du retard du train conduisant à l'aéroport a été jugé imprévisible pour la SNCF (Civ. 1re, 28 avr. 2011)."
+          "**Appréciation casuistique** : dommage corporel toujours prévisible ; présence de bijoux de grande valeur dans les bagages prévisible pour un transporteur (Civ. 1re, 3 juin 1998) ; en revanche, le coût d'un voyage manqué à cause du retard du train conduisant à l'aéroport a été jugé imprévisible pour la SNCF (Civ. 1re, 28 avr. 2011 ; dans le même sens, Civ. 1re, 14 janv. 2016, n° 14-28.277)."
         ] },
         { h: "Le lien de causalité ([[1231-4]])" },
         { p: "Même en cas de faute lourde ou dolosive, les dommages et intérêts ne comprennent que ce qui est une **suite immédiate et directe** de l'inexécution. La faute lourde lève la limite de la prévisibilité, **jamais** celle de la causalité." }
@@ -173,6 +173,7 @@ OBL.chapitres.push({
         ] },
         { schema: { type: "frise", titre: "Clause limitative et obligation essentielle", evenements: [
           { date: "1984", t: "Détour par la faute lourde", d: "le manquement à une obligation essentielle est qualifié de faute lourde, qui neutralise la clause (Civ. 1re, 18 janv. 1984) ; abandonné depuis Ch. mixte, 22 avr. 2005" },
+          { date: "23 févr. 1994", t: "Civ. 1re", d: "la clause limitative est écartée directement parce qu'elle porte sur l'obligation essentielle et contredit la portée de l'engagement" },
           { date: "22 oct. 1996", t: "Chronopost (Com., n° 93-18.632)", d: "clause limitative réputée non écrite, sur le fondement de la cause, parce qu'elle contredisait la portée de l'engagement de livrer dans le délai" },
           { date: "29 juin 2010", t: "Faurecia (Com., n° 09-11.841)", d: "« seule est réputée non écrite la clause limitative de réparation qui contredit la portée de l'obligation essentielle souscrite par le débiteur » : contrôle *in concreto*, selon l'économie du contrat" },
           { date: "2016", t: "[[1170]]", d: "toute clause qui prive de sa substance l'obligation essentielle du débiteur est réputée non écrite" }
@@ -180,10 +181,10 @@ OBL.chapitres.push({
         { h: "La clause pénale ([[1231-5]])" },
         { def: { terme: "Clause pénale", texte: "clause par laquelle les parties fixent **à l'avance et forfaitairement** l'indemnité due en cas d'inexécution. Le juge ne peut allouer ni plus ni moins ([[1231-5]], al. 1er), sauf à exercer son **pouvoir modérateur** (institué par la loi du 9 juillet 1975)." } },
         { liste: [
-          "**Qualification** (trois critères cumulatifs) : une évaluation **conventionnelle** (pas une somme fixée par la loi) ; à titre de **dommages et intérêts** ; sanctionnant l'inexécution, donc à caractère **comminatoire**. Le créancier n'a pas à prouver son préjudice pour l'invoquer (Civ. 3e, 20 déc. 2006).",
-          "**Ne sont pas des clauses pénales** : l'indemnité d'immobilisation d'une promesse unilatérale de vente (Civ. 3e, 5 déc. 1984), qui rémunère l'exclusivité consentie ; la **faculté de dédit** (Civ. 3e, 9 janv. 1991), qui est le prix d'un droit de se retirer.",
+          "**Qualification** (trois critères cumulatifs) : une évaluation **conventionnelle** (pas une somme fixée par la loi) ; à titre de **dommages et intérêts** ; sanctionnant l'inexécution, donc à caractère **comminatoire**. Le créancier n'a pas à prouver son préjudice pour l'invoquer (Civ. 3e, 20 déc. 2006). Elle doit assurer l'exécution par son caractère comminatoire et une somme forfaitaire déterminable (Com., 4 mai 2017, n° 15-19.141 ; Com., 6 déc. 2017, n° 16-12.804 ; Com., 5 déc. 2018, n° 17-22.346). Une somme fixée par la loi ou le règlement n'est pas une clause pénale (Civ. 2e, 31 mars 2022, n° 20-23.284) ; contra pour une clause des statuts d'une coopérative (Civ. 3e, 18 déc. 2025, n° 24-19.042).",
+          "**Ne sont pas des clauses pénales** : l'indemnité d'immobilisation d'une promesse unilatérale de vente (Civ. 3e, 5 déc. 1984 ; Civ. 3e, 16 janv. 2025, n° 23-23.378), qui indemnise l'immobilisation du bien ; la **faculté de dédit** (Civ. 3e, 9 janv. 1991 ; Com., 18 janv. 2011), qui est le prix d'un droit de se retirer.",
           "**Révision** : le juge peut, **même d'office**, **modérer ou augmenter** la pénalité **manifestement excessive ou dérisoire** ([[1231-5]], al. 2), en l'appréciant au jour où il statue ; en cas d'exécution partielle, il peut la diminuer à proportion de l'intérêt procuré au créancier (al. 3). Ces règles sont d'ordre public (al. 4).",
-          "**Limites** : en modérant, le juge ne peut descendre sous le montant du préjudice réellement subi ; il ne peut supprimer la pénalité que s'il constate l'absence de tout préjudice.",
+          "**Limites** : en modérant, le juge ne peut descendre sous le montant du préjudice réellement subi ; il ne peut supprimer la pénalité que s'il constate l'absence de tout préjudice (Com., 16 juill. 1991 ; Com., 8 avr. 2015). Une simple disproportion ne suffit pas : l'excès doit être manifeste.",
           "**Mise en demeure** : la pénalité n'est encourue qu'après mise en demeure, sauf inexécution définitive ([[1231-5]], al. 5)."
         ] }
       ]

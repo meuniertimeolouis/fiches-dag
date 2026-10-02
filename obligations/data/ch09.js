@@ -17,14 +17,27 @@ OBL.chapitres.push({
           { t: "Créanciers chirographaires", d: "action oblique ([[1341-1]]), paulienne ([[1341-2]]), directe ([[1341-3]])" },
           { t: "Tiers absolus (*penitus extranei*)", d: "ni droits ni obligations ; mais le contrat leur est opposable ([[1200]])" }
         ] } } },
+        { h: "Qui est partie, qui est tiers ?" },
+        { p: "La qualité de partie ou de tiers s'apprécie au jour de l'**exécution** du contrat, car elle peut évoluer depuis la formation. Sont **assimilés aux parties** :" },
+        { liste: [
+          "les **ayants cause à titre universel** (héritiers, légataires) : investis des droits et actions du défunt (art. 724), ils deviennent parties au jour de l'exécution (l'héritier du vendeur doit livrer). L'ancien art. 1122 n'a pas été repris ; une clause contraire reste possible et les contrats *intuitu personae* demeurent intransmissibles (cf. mandat, art. 2003, al. 3) ;",
+          "le **représenté** : en cas de représentation parfaite (le représentant révèle sa qualité), le représenté est seul tenu et le représentant est un tiers (art. 1154, al. 1er) ; en cas de représentation imparfaite (qualité non révélée), le représentant est engagé (art. 1154, al. 2) ;",
+          "le **cessionnaire** du contrat, qui remplace le cédant ; celui-ci devient tiers pour l'avenir si le cédé l'a expressément déchargé (cession de bail)."
+        ] },
         { h: "Ayants cause à titre particulier et chaînes de contrats" },
-        { p: "Le sous-acquéreur dispose contre le fabricant ou le vendeur initial d'une **action directe, nécessairement contractuelle**, en garantie, car l'action est un accessoire de la chose transmise (Ass. plén., 7 févr. 1986). En revanche, pas d'action contractuelle dans les **groupes de contrats sans transfert de propriété** : le maître de l'ouvrage agit contre le sous-traitant sur le terrain **délictuel** (Ass. plén., 12 juill. 1991, Besse)." },
+        { p: "Le sous-acquéreur dispose contre le fabricant ou le vendeur initial d'une **action directe, nécessairement contractuelle**, en garantie, car l'action est un accessoire de la chose transmise (Ass. plén., 7 févr. 1986). En revanche, pas d'action contractuelle dans les **groupes de contrats sans transfert de propriété** : le maître de l'ouvrage agit contre le sous-traitant sur le terrain **délictuel** (Ass. plén., 12 juill. 1991, Besse). Les arrêts de 1988 (Civ. 1re, 8 mars et 21 juin 1988) avaient consacré le « groupe de contrats » ; l'Assemblée plénière l'a écarté en 1991 au visa de l'ancien art. 1165. La solution de 1986 repose donc sur la qualité d'ayant cause à titre particulier, non sur l'existence d'un groupe." },
+        { liste: [
+          "**Dettes** : jamais transmises à l'ayant cause à titre particulier (Civ., 15 janv. 1918), car nul ne devient débiteur contre son gré ; exceptions légales : bail opposable à l'acquéreur (art. 1743), contrat de travail lors du transfert d'entreprise (C. trav., art. L. 1224-1), assurance (C. assur., art. L. 121-10).",
+          "**Créances** : transmises lorsqu'elles sont l'**accessoire de la chose** (*intuitu rei*) : clause de non-concurrence suivant le fonds de commerce (Civ. 1re, 3 déc. 1996), actions en garantie (Ass. plén., 7 févr. 1986), action résolutoire (Civ. 1re, 20 mai 2010). La CJUE, elle, exige le consentement du sous-acquéreur à une clause attributive de compétence (7 févr. 2013).",
+          "**Droits réels** : transmis avec la chose, car opposables *erga omnes*."
+        ] },
         { h: "Les actions du créancier" },
         { schema: { type: "tableau", titre: "Trois actions pour atteindre le patrimoine du débiteur", colonnes: ["Action", "Idée", "Conditions", "Effet"], lignes: [
-          ["**Oblique** ([[1341-1]])", "Exercer les droits que le débiteur néglige", "Carence du débiteur compromettant les droits du créancier ; droits patrimoniaux non attachés à la personne", "Profite au patrimoine du débiteur (donc à tous ses créanciers)"],
-          ["**Paulienne** ([[1341-2]])", "Faire tomber un acte frauduleux du débiteur", "Fraude du débiteur ; complicité du tiers si l'acte est à titre onéreux", "Acte **inopposable** au seul créancier qui agit"],
+          ["**Oblique** ([[1341-1]])", "Exercer les droits que le débiteur néglige", "Carence du débiteur compromettant gravement les droits du créancier ; droits patrimoniaux non strictement attachés à la personne (sont exclus les droits extrapatrimoniaux, insaisissables ou purement personnels, comme la révocation d'une donation)", "Profite au patrimoine du débiteur (donc à tous ses créanciers)"],
+          ["**Paulienne** ([[1341-2]])", "Faire tomber un acte frauduleux du débiteur", "Fraude du débiteur, c'est-à-dire connaissance du préjudice causé au créancier (Civ. 1re, 17 oct. 1979), postérieure à la créance ; connaissance de la fraude par le tiers si l'acte est à titre onéreux", "Acte **inopposable** au seul créancier qui agit"],
           ["**Directe** ([[1341-3]])", "Agir contre le débiteur de son débiteur", "Seulement dans les cas prévus par la loi (sous-traitant, bailleur contre sous-locataire, victime contre l'assureur)", "Paiement direct au créancier"]
-        ] } }
+        ] } },
+        { p: "Les créanciers chirographaires sont assimilés aux *penitus extranei* : le contrat de leur débiteur n'affecte leur droit de gage que **indirectement**. L'action oblique réintègre les valeurs au patrimoine du débiteur, au profit de tous les créanciers ; l'action paulienne ne profite qu'au demandeur et laisse l'acte valable entre le débiteur et le tiers. Elle peut aussi viser le remplacement d'un bien par des fonds plus faciles à dissimuler (Com., 29 janv. 2025, n° 23-20.836)." }
       ]
     },
     {
@@ -34,18 +47,22 @@ OBL.chapitres.push({
         { schema: { type: "tableau", titre: "Deux techniques voisines", colonnes: ["", "Promesse de porte-fort", "Stipulation pour autrui"], lignes: [
           ["Textes", "[[1204]]", "[[1205]] à [[1209]]"],
           ["Mécanisme", "Je promets **le fait d'un tiers** (qu'il ratifiera ou exécutera)", "Le **stipulant** fait promettre au **promettant** une prestation au profit d'un **bénéficiaire** tiers"],
-          ["Le tiers est-il obligé ?", "**Non**, tant qu'il n'a pas ratifié", "Il n'est pas obligé : il **reçoit un droit**"],
+          ["Le tiers est-il obligé ?", "**Non**, tant qu'il n'a pas ratifié", "Il n'est pas obligé : il **reçoit un droit** (une charge ne peut peser sur lui qu'avec son acceptation : Civ. 1re, 8 déc. 1987)"],
           ["Si le tiers refuse", "Le porte-fort doit des **dommages et intérêts**", "La stipulation peut être révoquée ou profiter au stipulant"],
           ["Si le tiers accepte", "Le porte-fort est libéré ; la ratification rétroagit au jour du porte-fort", "Droit direct du bénéficiaire contre le promettant **dès la stipulation** ([[1206]])"],
           ["Exemple", "Un indivisaire vend le bien en se portant fort des autres", "Assurance-vie ; transporteur et proches de la victime (Civ., 6 déc. 1932)"]
         ] } },
+        { p: "Le porte-fort n'est qu'une dérogation **apparente** : le tiers n'est engagé que par sa propre ratification, non par la promesse. Le porte-fort est tenu d'une **obligation de résultat** : le refus du tiers engage sa responsabilité sans preuve de faute (Civ. 1re, 7 mars 2018, n° 15-21.244). Ratification : effet rétroactif, porte-fort libéré ([[1204]], al. 2 et 3). Utile quand on ne peut conclure seul (conjoint marié sous le régime de communauté, représentant d'un incapable)." },
         { h: "Le régime de la stipulation pour autrui" },
         { liste: [
           "Bénéficiaire : même une **personne future**, mais précisément désignée ou déterminable lors de l'exécution ([[1205]]).",
           "Droit **direct** contre le promettant, né **dès la stipulation**, sans passer par le patrimoine du stipulant ([[1206]], al. 1er ; Civ., 12 juill. 1956).",
           "Révocable librement par le stipulant tant que le bénéficiaire n'a pas **accepté** ; irrévocable dès que l'acceptation parvient au stipulant ou au promettant ([[1206]]). Après le décès du stipulant, ses héritiers ne peuvent révoquer qu'après une mise en demeure d'accepter restée trois mois sans réponse ([[1207]]).",
           "Acceptation expresse ou tacite, possible même après le décès du stipulant ou du promettant ([[1208]]).",
-          "Le stipulant peut lui-même exiger l'exécution au profit du bénéficiaire ([[1209]])."
+          "Le stipulant peut lui-même exiger l'exécution au profit du bénéficiaire ([[1209]]) et agir en responsabilité ou en résolution (Civ. 1re, 12 juill. 1956).",
+          "**Conditions** : contrat préalable valable entre stipulant et promettant ; clause en principe expresse (la stipulation tacite, Civ., 6 déc. 1932, est en recul, la jurisprudence préférant fonder l'action des tiers sur le manquement contractuel) ; profit d'un tiers ; bénéficiaire désigné ou déterminable (à défaut, la prestation revient au stipulant), une personne simplement conçue pouvant être bénéficiaire. L'acceptation, libre de forme, peut intervenir jusqu'au jour de l'exécution.",
+          "Le promettant peut opposer au bénéficiaire les exceptions issues du contrat de base (nullité par exemple) ; le bénéficiaire ne peut pas demander la résolution, réservée au stipulant. Les créanciers du stipulant n'ont aucun droit sur la créance (C. assur., art. L. 132-14 pour l'assurance-vie).",
+          "La révocation, émanant du stipulant ou, après son décès, de ses héritiers, est **rétroactive** : le bénéficiaire est censé n'avoir jamais bénéficié de la stipulation ([[1207]], al. 5)."
         ] }
       ]
     },
@@ -57,6 +74,7 @@ OBL.chapitres.push({
           "**Opposabilité aux tiers** : le tiers qui aide sciemment une partie à violer le contrat commet une faute délictuelle (**tierce complicité** : l'employeur qui embauche un salarié en connaissance de sa clause de non-concurrence). Idem pour le tiers qui acquiert en connaissance d'un pacte de préférence ([[1123]]).",
           "**Invocation par les tiers** : un tiers peut invoquer le contrat comme un fait, notamment pour prouver (ex. la valeur d'un bien)."
         ] },
+        { p: "Fondement : Com., 22 oct. 1991 (théorie du « contrat-fait »), consacrée par [[1200]]. Complicité : « toute personne qui, avec connaissance, aide autrui à enfreindre les obligations contractuelles pesant sur lui commet une faute délictuelle » (Com., 11 oct. 1971 ; Ass. plén., 9 mai 2008). La faute (art. 1240) est la violation consciente de la norme contractuelle opposable : pour la non-concurrence, la connaissance de la clause suffit ; une exigence plus sévère en matière d'exclusivité a été abandonnée (Com., 27 oct. 1992). La responsabilité est délictuelle, car la source est l'obligation légale de respecter les droits nés du contrat opposable." },
         { h: "Le tiers victime d'un manquement contractuel" },
         { schema: { type: "frise", titre: "L'inexécution d'un contrat peut-elle fonder l'action d'un tiers ?", evenements: [
           { date: "Avant 2006", t: "Jurisprudence divisée", d: "exigence d'une faute « détachable » du contrat (Com.) / simple inexécution suffisante (Civ. 1re, 18 juill. 2000)" },
@@ -64,20 +82,21 @@ OBL.chapitres.push({
           { date: "13 janv. 2020", t: "Ass. plén., Sucrerie de Bois rouge (n° 17-19.963)", d: "confirmation, avec une motivation enrichie : ne pas entraver l'indemnisation des tiers" },
           { date: "3 juill. 2024", t: "Com., n° 21-14.947", d: "le tiers peut se voir opposer les **conditions et limites de responsabilité** applicables entre les contractants (clause limitative, par exemple) : il ne doit pas être mieux traité que le créancier" }
         ] } },
-        { attention: "Sur une copie, citez Boot shop et Sucrerie de Bois rouge, puis la limite posée par la chambre commerciale en 2024 (confirmée par Com., 17 déc. 2025, n° 24-20.154)." }
+        { attention: "Sur une copie, citez Boot shop et Sucrerie de Bois rouge, puis la limite posée par la chambre commerciale en 2024 (confirmée par Com., 17 déc. 2025, n° 24-20.154, pour les clauses de forclusion, de prescription ou de conciliation). Cette solution, critiquée pour son hybridation des régimes sans base textuelle, devrait appeler une nouvelle intervention de l'Assemblée plénière ; la proposition de loi sénatoriale de 2020 (art. 1234) revenait à la responsabilité extracontractuelle, avec un droit d'option pour le tiers ayant un intérêt légitime." }
       ]
     },
     {
       titre: "La simulation",
       contenu: [
         { def: { terme: "Simulation", texte: "les parties concluent un **acte apparent** qui dissimule un **acte occulte**, ou **contre-lettre**, qui exprime leur véritable volonté ([[1201]]). Ex. : vente déclarée pour un prix inférieur au prix réel ; donation déguisée en vente ; prête-nom." } },
+        { p: "Formes courantes : simulation sur l'**existence** de l'acte (vente fictive), sur sa **nature** (donation déguisée) ou sur son **objet** (prix minoré ou majoré). La contre-lettre doit respecter les conditions de validité (consentement, capacité) mais peut être **postérieure** à l'acte apparent (Com., 9 mars 1981). Entre les parties, elle est prouvée par écrit au-delà de 1 500 euros ou contre un acte ostensible écrit (action en déclaration de simulation) ; à l'égard des tiers, la preuve est libre. La vente fictive est écartée par la seule contre-lettre ; en cas de prix dissimulé, acte apparent et contre-lettre se combinent." },
         { schema: { type: "tableau", titre: "Les effets de la simulation ([[1201]])", colonnes: ["Entre qui ?", "Acte qui l'emporte", "Explication"], lignes: [
           ["Les parties", "La **contre-lettre**", "C'est leur volonté réelle ; la simulation n'est pas en elle-même une cause de nullité"],
-          ["Les tiers qui se fient à l'apparence", "L'**acte apparent**, qui leur est opposable", "La contre-lettre ne leur est **pas opposable**"],
+          ["Les tiers qui se fient à l'apparence (de bonne foi, c'est-à-dire ignorant la contre-lettre)", "L'**acte apparent**, qui leur est opposable", "La contre-lettre ne leur est **pas opposable**"],
           ["Les tiers qui ont intérêt à la réalité", "Ils peuvent **se prévaloir** de la contre-lettre", "Action en déclaration de simulation, preuve par tout moyen"],
-          ["Conflit entre tiers", "Celui qui invoque l'**acte apparent** l'emporte", "Protection de la sécurité juridique"]
+          ["Conflit entre tiers", "Celui qui invoque l'**acte apparent** l'emporte, s'il est de bonne foi (Civ., 25 avr. 1939)", "Protection de la sécurité juridique : opposer la contre-lettre à un tiers reviendrait à la lui opposer, contrairement à [[1201]]"]
         ] } },
-        { attention: "Exceptions : sont **nuls** la contre-lettre augmentant le prix de cession d'un office ministériel et tout acte dissimulant une partie du prix d'une vente d'immeuble, de fonds de commerce ou de clientèle ([[1202]]) : but de lutte contre la fraude fiscale." }
+        { attention: "Exceptions : sont **nuls** la contre-lettre augmentant le prix de cession d'un office ministériel et tout acte dissimulant une partie du prix d'une vente d'immeuble, de fonds de commerce ou de clientèle ([[1202]]) : but de lutte contre la fraude fiscale. Seule la **contre-lettre** est annulée : la vente est maintenue au prix apparent, l'acheteur se libérant valablement en le payant (Ch. mixte, 12 juin 1981), ce qui l'incite à dénoncer la fraude. La simulation n'est donc pas illicite en soi ; elle devient frauduleuse quand elle vise à tromper créanciers ou fisc, la preuve de la fraude étant libre." }
       ]
     }
   ],

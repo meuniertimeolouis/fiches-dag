@@ -21,7 +21,9 @@ OBL.chapitres.push({
         { liste: [
           "**Licéité** : la condition doit être licite, sinon **l'obligation est nulle** ([[1304-1]]). Le Code ne vise plus la condition impossible.",
           "**Potestativité** : est nulle l'obligation contractée sous une condition dont la réalisation dépend de la **seule volonté du débiteur** ([[1304-2]]). S'obliger « si je le veux », ce n'est pas s'obliger.",
-          "**Tempérament** : la nullité ne peut plus être invoquée si l'obligation a été **exécutée en connaissance de cause** ([[1304-2]], seconde phrase)."
+          "**Tempérament** : la nullité ne peut plus être invoquée si l'obligation a été **exécutée en connaissance de cause** ([[1304-2]], seconde phrase).",
+          "**Événement futur** : l'événement doit être à venir. Avant 2016, un événement déjà réalisé mais ignoré des parties pouvait valoir condition ; l'ordonnance ne reprend pas cette précision. L'exigence de **possibilité** de la condition, jugée peu cohérente, a aussi disparu.",
+          "**Élément du contrat** : un élément essentiel du contrat (consentement, objet, cause) ne peut jamais être érigé en condition : celle-ci affecte l'existence de l'obligation, non la formation du contrat."
         ] },
         { schema: { type: "tableau", titre: "La condition potestative, avant et après 2016", colonnes: ["Catégorie (droit antérieur)", "Définition", "Sort avant 2016", "Depuis 2016 ([[1304-2]])"], lignes: [
           ["Casuelle", "Dépend du hasard (gain au loto)", "Valable", "Valable : ne dépend pas de la volonté du débiteur"],
@@ -29,7 +31,8 @@ OBL.chapitres.push({
           ["Simplement potestative", "Dépend de la volonté du débiteur, mais aussi de circonstances extérieures (« si je démissionne »)", "Valable (distinction doctrinale reçue en jurisprudence)", "Valable si la réalisation ne dépend pas de la **seule** volonté du débiteur"],
           ["Purement potestative", "Dépend de la seule volonté du débiteur (« si je le veux »)", "Nulle (art. 1174 anc.), si suspensive et du côté du débiteur", "**Nulle**, sauf exécution en connaissance de cause"]
         ] } },
-        { p: "Les distinctions anciennes restent applicables aux contrats conclus avant le 1er octobre 2016. Le texte nouveau abandonne les catégories pour un critère unique : la réalisation dépend-elle de la **seule volonté du débiteur** ? Une condition apparemment extérieure (le mariage du vendeur) peut être potestative si le débiteur en maîtrise seul la survenance." }
+        { p: "Les distinctions anciennes restent applicables aux contrats conclus avant le 1er octobre 2016. Le texte nouveau abandonne les catégories pour un critère unique : la réalisation dépend-elle de la **seule volonté du débiteur** ? Une condition apparemment extérieure (le mariage du vendeur) peut être potestative si le débiteur en maîtrise seul la survenance." },
+        { p: "Sous l'empire du droit antérieur, la nullité ne frappait que la condition **suspensive**, **purement potestative**, du côté du **débiteur** : la condition **résolutoire** potestative était admise (faculté de rachat, [[1659]] ; reprise d'un article dans les magasins qui acceptent l'échange). L'article [[1304-2]] vise l'obligation « contractée sous une condition » sans distinguer suspensive et résolutoire : la portée exacte du texte sur ce point relève de l'interprétation." }
       ]
     },
     {
@@ -46,7 +49,8 @@ OBL.chapitres.push({
         { liste: [
           "La condition **suspensive** est **réputée accomplie** si celui qui y avait intérêt en a **empêché** l'accomplissement ([[1304-3]], al. 1er).",
           "La condition **résolutoire** est **réputée défaillie** si son accomplissement a été **provoqué** par la partie qui y avait intérêt ([[1304-3]], al. 2).",
-          "Application majeure : la promesse sous condition d'obtention d'un prêt. L'acquéreur doit avoir demandé un prêt **conforme aux caractéristiques** stipulées (montant, durée, taux) ; s'il a demandé un prêt différent, la condition est réputée accomplie (Civ. 3e, 30 janv. 2008). À l'inverse, la stipulation d'un montant maximal ne l'oblige pas à accepter n'importe quelle offre d'un montant inférieur."
+          "Application majeure : la promesse sous condition d'obtention d'un prêt. L'acquéreur doit avoir demandé un prêt **conforme aux caractéristiques** stipulées (montant, durée, taux) ; s'il a demandé un prêt différent, la condition est réputée accomplie (Civ. 3e, 30 janv. 2008). À l'inverse, la stipulation d'un montant maximal ne l'oblige pas à accepter n'importe quelle offre d'un montant inférieur (Civ. 3e, 14 déc. 2022, n° 21-21.539).",
+          "Avant la réforme, la jurisprudence n'exigeait de la partie tenue que des **diligences moyennes** pour que la condition se réalise (la fiction de l'ancien article 1178 jouait avec modération) ; elle sanctionne le comportement fautif, non l'inaction ordinaire (Civ. 3e, 12 sept. 2007)."
         ] },
         { h: "La renonciation" },
         { p: "Une partie peut renoncer à la condition stipulée **dans son intérêt exclusif**, tant que celle-ci n'est **ni accomplie ni défaillie** ([[1304-4]], rédaction issue de la loi du 20 avril 2018). La condition de prêt est stipulée dans l'intérêt exclusif de l'acquéreur : lui seul peut y renoncer, et avant l'échéance." },
@@ -84,7 +88,8 @@ OBL.chapitres.push({
           "**Déchéance conventionnelle** : clause d'exigibilité anticipée en cas de défaillance (échéances impayées d'un prêt), très fréquente.",
           "**Effet relatif** : la déchéance encourue par un débiteur est **inopposable à ses coobligés, même solidaires, et à ses cautions** ([[1305-5]]) : eux conservent le bénéfice du terme."
         ] },
-        { attention: "Le décès du débiteur n'entraîne pas la déchéance du terme. L'ouverture d'une sauvegarde ou d'un redressement judiciaire ne rend pas exigibles les créances non échues ; le jugement qui ouvre ou prononce la **liquidation judiciaire**, en revanche, les rend exigibles (C. com., art. L. 643-1), sous des réserves propres au droit des entreprises en difficulté." },
+        { attention: "Le décès du débiteur n'entraîne pas la déchéance du terme (Civ. 1re, 20 oct. 2021, n° 20-13.661). L'ouverture d'une sauvegarde ou d'un redressement judiciaire ne rend pas exigibles les créances non échues ; le jugement qui ouvre ou prononce la **liquidation judiciaire**, en revanche, les rend exigibles (C. com., art. L. 643-1), sous des réserves propres au droit des entreprises en difficulté." },
+        { p: "Avant la réforme, la Cour de cassation lisait l'ancien article 1188 **strictement** : il ne visait que les sûretés **conventionnelles**, et leur diminution devait être **imputable au débiteur**. Ces conditions de la déchéance de l'article [[1305-4]] sont à garder en tête pour les contrats antérieurs au 1er octobre 2016." },
         { schema: { type: "tableau", titre: "Terme ou condition : la synthèse", colonnes: ["", "Terme", "Condition"], lignes: [
           ["Événement", "Futur et **certain**", "Futur et **incertain**"],
           ["Affecte", "L'**exigibilité** ou la durée", "L'**efficacité** de l'obligation (naissance ou anéantissement)"],
@@ -139,7 +144,9 @@ OBL.chapitres.push({
         { liste: [
           "Le débiteur peut payer l'un ou l'autre des créanciers **tant qu'il n'est pas poursuivi** par l'un d'eux ([[1311]], al. 2).",
           "Tout acte qui **interrompt ou suspend la prescription** à l'égard de l'un des créanciers profite aux autres ([[1312]]).",
-          "La **remise de dette** consentie par un seul créancier ne libère le débiteur que pour **la part de ce créancier** ([[1350-1]], al. 2) ; de même pour le serment déféré par l'un d'eux ([[1385-4]])."
+          "La jurisprudence a étendu cette solution à la **mise en demeure**.",
+          "La **remise de dette** consentie par un seul créancier ne libère le débiteur que pour **la part de ce créancier** ([[1350-1]], al. 2) ; de même pour le serment déféré par l'un d'eux ([[1385-4]]).",
+          "**Source** : exclusivement conventionnelle, sur clause expresse du titre ; même entre commerçants, elle ne se présume pas (Civ. 1re, 16 juin 1992 ; Com. 26 sept. 2018, n° 16-28.133)."
         ] },
         { attention: "Technique rare et dangereuse : les créanciers s'exposent à la malhonnêteté ou à l'insolvabilité de celui qui a encaissé. Application pratique principale : le **compte joint** (chaque cotitulaire peut en retirer la totalité)." }
       ]
@@ -148,9 +155,10 @@ OBL.chapitres.push({
       titre: "La solidarité passive",
       contenu: [
         { def: { terme: "Solidarité passive", texte: "solidarité **entre débiteurs** : chacun est tenu de **toute la dette** et le paiement fait par l'un libère tous les autres envers le créancier ([[1313]], al. 1er). Le créancier choisit le débiteur qu'il poursuit et peut poursuivre les autres ensuite (al. 2). C'est une **garantie** contre l'insolvabilité d'un codébiteur." } },
+        { attention: "La qualification d'une exception (commune, personnelle, ou personnelle éteignant une part divise) commande son régime et prête à discussion : voir, par exemple, Civ. 1re, 5 juin 2019, n° 17-27.066. Distinguez l'exception **purement personnelle** (vice du consentement, incapacité, terme propre : elle ne profite qu'à son titulaire, les autres restent tenus du tout) de l'exception **simplement personnelle** (remise de dette : tous peuvent l'invoquer, mais elle ne diminue la dette que de la part de son bénéficiaire)." },
         { h: "Les sources" },
         { liste: [
-          "**Conventionnelle** : elle ne se présume pas ([[1310]]) ; elle doit être **certaine**, mais aucune formule sacramentelle n'est exigée : une volonté non équivoque suffit. Clause type : « les preneurs sont tenus solidairement ».",
+          "**Conventionnelle** : elle ne se présume pas ([[1310]]) ; elle doit être **certaine**, mais aucune formule sacramentelle n'est exigée : une volonté non équivoque suffit (Civ. 1re, 3 déc. 1974 ; Civ. 3e, 26 janv. 2005). Clause type : « les preneurs sont tenus solidairement ».",
           "**Légale** : parents exerçant l'autorité parentale ([[1242]], al. 4) ; coemprunteurs d'une même chose ([[1887]]) ; époux pour les dettes ménagères (art. 220) ; coauteurs condamnés pour une même infraction (C. pr. pén.).",
           "**Présumée en matière commerciale** : exception coutumière ancienne, maintenue par la jurisprudence entre commerçants pour les dettes commerciales."
         ] },
@@ -168,6 +176,7 @@ OBL.chapitres.push({
           "L'**interruption de la prescription** contre l'un vaut contre tous ([[2245]], al. 1er).",
           "Le **serment** déféré à l'un profite aux autres ([[1385-4]]).",
           "Les codébiteurs répondent **solidairement de l'inexécution** ; la charge définitive pèse sur ceux à qui elle est imputable ([[1319]]).",
+          "La **transaction** conclue avec l'un oblige les autres, en application de la représentation mutuelle (Com. 28 mars 2006). Les **voies de recours** et l'autorité de la chose jugée relèvent du même mécanisme ; voir par exemple l'effet de l'appel d'un coobligé en cas de solidarité ou d'indivisibilité (C. pr. civ., art. 552).",
           "Mais la **déchéance du terme** encourue par l'un est **inopposable** aux autres ([[1305-5]])."
         ] },
         { p: "Ces effets étaient expliqués par l'idée de **représentation mutuelle** des codébiteurs, chacun étant le « contradicteur légitime » du créancier et le représentant de ses coobligés (Civ., 1er déc. 1885), mais seulement pour conserver ou diminuer la dette, jamais pour l'aggraver (*ad conservandam, non ad augendam obligationem*). Critiquée, cette notion n'est pas reprise par l'ordonnance, qui énumère les effets au cas par cas." },
@@ -175,7 +184,7 @@ OBL.chapitres.push({
         { schema: { type: "etapes", titre: "A, B et C doivent solidairement 900 euros ; A paie tout", etapes: [
           { t: "1. Obligation à la dette", d: "le créancier réclame 900 euros à A, qui ne peut exiger la division ([[1313]])" },
           { t: "2. Contribution", d: "entre eux, chacun ne doit que sa part, en principe égale : 300 euros ([[1317]], al. 1er)" },
-          { t: "3. Recours", d: "A agit contre B et C **à proportion de leur part** : 300 euros chacun, jamais 600 contre un seul ([[1317]], al. 2), par un recours subrogatoire ou personnel" },
+          { t: "3. Recours", d: "A agit contre B et C **à proportion de leur part** (répartition par **parts viriles** : le tout divisé par le nombre de codébiteurs) : 300 euros chacun, jamais 600 contre un seul ([[1317]], al. 2), par un recours subrogatoire ou personnel (mandat, gestion d'affaires) ; il ne récupère que ce qu'il a payé **au-delà de sa propre part** (Civ. 1re, 10 oct. 2019, n° 18-20.429)" },
           { t: "4. Insolvabilité", d: "si C est insolvable, sa part se répartit entre les solvables, **y compris A** : A et B supportent 150 euros de plus chacun ([[1317]], al. 3)" }
         ] } },
         { liste: [
@@ -187,11 +196,12 @@ OBL.chapitres.push({
     {
       titre: "L'obligation in solidum",
       contenu: [
-        { def: { terme: "Obligation *in solidum*", texte: "obligation de plusieurs personnes tenues **chacune pour le tout** envers le créancier, sans être liées par la solidarité ni par un lien de représentation. Création **jurisprudentielle**, destinée à contourner la règle selon laquelle la solidarité ne se présume pas ; l'ordonnance de 2016 ne la régit pas." } },
+        { def: { terme: "Obligation *in solidum*", texte: "obligation de plusieurs personnes tenues **chacune pour le tout** envers le créancier, sans être liées par la solidarité ni par un lien de représentation. Création **jurisprudentielle**, destinée à contourner la règle selon laquelle la solidarité ne se présume pas ; l'ordonnance de 2016 ne la régit pas (le projet de réforme de la responsabilité civile de mars 2017 la remplaçait par la solidarité)." } },
+        { p: "Fondement : « quand il y a participation de plusieurs à un fait dommageable », la réparation est ordonnée **pour le tout contre chacun** s'il est impossible de déterminer dans quelle proportion chaque faute a concouru au dommage (Civ., 11 juill. 1892). La solidarité légale (parents du fait de leur enfant, coauteurs d'une infraction) est trop étroite pour couvrir les dommages à causes plurales ; à défaut, la victime serait réduite à diviser ses poursuites entre coresponsables, tenus d'une simple obligation conjointe." },
         { p: "Domaine principal : la **responsabilité civile**. Lorsque plusieurs personnes ont, par des faits distincts, concouru à un **même dommage**, chacune est condamnée à le réparer en totalité, quelle que soit la nature des faits générateurs (faute, fait d'une chose, fait d'autrui). Autres applications : obligation alimentaire, assurances." },
         { liste: [
           "**Effets principaux transposés** : la victime réclame le tout à l'un quelconque des coresponsables ; le paiement de l'un libère les autres ; celui qui a payé exerce un **recours en contribution** contre les autres.",
-          "**Effets secondaires exclus** en principe : pas de représentation mutuelle, donc pas d'extension de l'interruption de la prescription ou de la chose jugée d'un coobligé à l'autre."
+          "**Effets secondaires exclus** en principe : pas de représentation mutuelle, donc pas d'extension de l'interruption de la prescription ou de la chose jugée d'un coobligé à l'autre. Des exceptions rares existent (assurances : Civ. 1re, 12 juin 1968)."
         ] },
         { schema: { type: "tableau", titre: "Synthèse : la pluralité de débiteurs", colonnes: ["", "Obligation conjointe", "Solidarité passive", "Obligation *in solidum*", "Indivisibilité"], lignes: [
           ["Source", "Principe ([[1309]])", "Loi ou contrat, ne se présume pas ([[1310]])", "Jurisprudence", "Nature de la prestation ou contrat ([[1320]])"],

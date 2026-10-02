@@ -16,7 +16,7 @@ OBL.chapitres.push({
           { t: "Enrichissement injustifié", d: "l'enrichi indemnise l'appauvri, à titre subsidiaire ([[1303]])" },
           { lien: "et", t: "Quasi-contrats innommés", d: "ex. loteries publicitaires (Ch. mixte, 6 sept. 2002)" }
         ] } } },
-        { p: "L'alinéa 2 vise les quasi-contrats « régis par le présent sous-titre » : la formule laisse la catégorie **ouverte**. La jurisprudence l'avait déjà élargie : l'organisateur d'une **loterie publicitaire** qui annonce un gain à une personne dénommée sans mettre en évidence l'existence d'un aléa s'oblige, par ce fait purement volontaire, à le délivrer (Ch. mixte, 6 sept. 2002, n° 98-22.981)." },
+        { p: "L'alinéa 2 vise les quasi-contrats « régis par le présent sous-titre » : la formule laisse la catégorie **ouverte**. La jurisprudence l'avait déjà élargie : l'organisateur d'une **loterie publicitaire** qui annonce un gain à une personne dénommée sans mettre en évidence l'existence d'un aléa s'oblige, par ce fait purement volontaire, à le délivrer (Ch. mixte, 6 sept. 2002, n° 98-22.981 ; solution confirmée, par exemple, par Civ. 1re, 18 mars 2003 et 13 juin 2006, puis 23 juin 2011)." },
         { attention: "Solution critiquée : le « gagnant » déçu n'est pas appauvri et le fait de l'organisateur n'a rien de licite. On y voit une sanction de la tromperie plus qu'un vrai quasi-contrat. En copie, présentez-la comme une **conception extensive** de la notion." },
         { h: "Application dans le temps de la réforme de 2016" },
         { p: "L'ordonnance ne comporte pas de disposition transitoire propre aux quasi-contrats. La Cour de cassation applique l'article 2 du Code civil : les **conditions d'existence** relèvent de la loi en vigueur au jour du **fait** qui en est la source ; la **détermination et le calcul de l'indemnité** relèvent immédiatement de la loi nouvelle (Civ. 1re, 3 mars 2021, à propos de l'enrichissement injustifié)." }
@@ -47,11 +47,11 @@ OBL.chapitres.push({
         { h: "Les conditions relatives au gérant" },
         { liste: [
           "**Intention de gérer l'affaire d'autrui** : le gérant agit dans l'intérêt du maître (Civ., 25 juin 1919). Cet intérêt n'a pas à être **exclusif** : l'intérêt personnel du gérant n'exclut pas la gestion d'affaires ([[1301-4]], al. 1er). L'acte peut aussi être inspiré par l'intérêt général : celui qui poursuit des voleurs et récupère la recette d'un magasin gère l'affaire de ce dernier (Civ. 1re, 26 janv. 1988).",
-          "**Absence d'obligation préexistante** (« sans y être tenu ») : celui qui agit en exécution d'une obligation **légale** ou **contractuelle** n'est pas gérant d'affaires. La spontanéité est de l'essence du quasi-contrat."
+          "**Absence d'obligation préexistante** (« sans y être tenu ») : celui qui agit en exécution d'une obligation **légale** (Civ. 1re, 17 juill. 1996) ou **contractuelle** (Soc., 11 oct. 1984 ; rappel : Civ. 1re, 15 mai 2019) n'est pas gérant d'affaires. La spontanéité est de l'essence du quasi-contrat."
         ] },
         { h: "Les conditions relatives à l'acte de gestion" },
-        { p: "La **nature** de l'acte est indifférente : [[1301]] vise « les actes juridiques et matériels ». Actes conservatoires et d'administration en pratique, mais aussi, exceptionnellement, **actes de disposition** (jurisprudence ancienne constante)." },
-        { p: "L'**utilité** figure depuis 2016 dans la définition de [[1301]]. Elle suppose un acte **nécessaire et opportun**, apprécié **au jour où il est accompli** (et non au regard du résultat final), avec une sévérité mesurée puisque le gérant est bénévole. Son enjeu est surtout l'indemnisation : seul le maître dont l'affaire a été « **utilement gérée** » est tenu envers le gérant ([[1301-2]])." },
+        { p: "La **nature** de l'acte est indifférente : [[1301]] vise « les actes juridiques et matériels ». Acte matériel ou juridique, de toute gravité (Civ., 28 févr. 1910 ; un licenciement a pu être ainsi qualifié : Soc., 29 janv. 2013). Actes conservatoires et d'administration en pratique, mais aussi, exceptionnellement, **actes de disposition** (Civ., 28 oct. 1942 ; Civ. 1re, 15 mai 1974)." },
+        { p: "L'**utilité** figure depuis 2016 dans la définition de [[1301]]. Elle suppose un acte **nécessaire et opportun**, apprécié **au jour où il est accompli** (et non au regard du résultat final), avec une sévérité mesurée puisque le gérant est bénévole (Civ. 1re, 28 janv. 2010). Son enjeu est surtout l'indemnisation : seul le maître dont l'affaire a été « **utilement gérée** » est tenu envers le gérant ([[1301-2]])." },
         { attention: "Acte inutile ou conditions non réunies : le gérant n'a pas d'action au titre de la gestion d'affaires, mais si le maître **en a profité**, il doit l'indemniser **selon les règles de l'enrichissement injustifié** ([[1301-5]]). C'est la passerelle entre les deux quasi-contrats." }
       ]
     },
@@ -64,13 +64,13 @@ OBL.chapitres.push({
           ["Contenu", "Soins d'une **personne raisonnable** ; **poursuivre** la gestion jusqu'à ce que le maître ou son successeur puisse y pourvoir ([[1301-1]], al. 1er) ; rendre compte", "Remplir les **engagements** contractés dans son intérêt ; **rembourser les dépenses** ; **indemniser les dommages** subis par le gérant du fait de la gestion ([[1301-2]], al. 1er et 2)"],
           ["Intérêts", "—", "Les sommes avancées portent intérêt **du jour du paiement** ([[1301-2]], al. 3)"],
           ["Faute", "Responsable de ses fautes ; le juge peut **modérer** l'indemnité due au maître selon les circonstances (urgence, bénévolat) ([[1301-1]], al. 2)", "—"],
-          ["Rémunération", "—", "**Aucune** : la gestion est désintéressée (jurisprudence constante)"]
+          ["Rémunération", "—", "**Aucune** : la gestion est désintéressée (Civ. 1re, 29 mai 2019)"]
         ] } },
         { p: "Gestion **intéressée** : lorsque le gérant avait aussi un intérêt personnel, la charge des engagements, des dépenses et des dommages se **répartit à proportion des intérêts de chacun** dans l'affaire commune ([[1301-4]], al. 2)." },
         { h: "Les effets à l'égard des tiers" },
         { p: "Quand le gérant conclut des contrats avec des tiers (achat de matériaux, appel à un artisan), qui est engagé envers ceux-ci ?" },
         { liste: [
-          "**Avant 2016** : si le gérant avait agi **au nom du maître**, représentation parfaite, seul le maître était obligé ; s'il avait agi **en son nom propre**, il était seul tenu envers le tiers, sauf à se faire rembourser par le maître.",
+          "**Avant 2016** : si le gérant avait agi **au nom du maître**, représentation parfaite, seul le maître était obligé ; s'il avait agi **en son nom propre**, il était seul tenu envers le tiers (Civ. 1re, 2 févr. 2022), sauf à se faire rembourser par le maître.",
           "**Depuis 2016** : le maître doit remplir les engagements contractés « **dans son intérêt** » par le gérant ([[1301-2]], al. 1er). Le critère n'est plus le nom sous lequel le gérant a contracté mais l'intérêt du maître, pourvu que la gestion ait été **utile**."
         ] },
         { attention: "Le gérant n'est jamais rémunéré, mais il est **indemnisé de ses dommages** (blessure subie en intervenant, par exemple) : ne confondez pas rémunération et indemnisation." }
@@ -87,16 +87,16 @@ OBL.chapitres.push({
           ["Preuve de l'erreur", "**Non** (Ass. plén., 2 avr. 1993)", "**Non** : l'accipiens a reçu ce qui ne lui était pas dû", "**Oui** : erreur **ou contrainte**"],
           ["Contre qui agir ?", "L'accipiens", "L'accipiens", "Le créancier payé ; ou celui dont la dette a été acquittée par erreur ([[1302-2]], al. 2)"]
         ] } },
-        { p: "Ne sont **pas** indus : le paiement volontaire d'une **obligation naturelle** ([[1302]], al. 2) ; le paiement d'une **dette prescrite** ([[2249]]), car la prescription n'empêche pas le paiement de trouver une cause ; le paiement **anticipé** d'une dette à terme, car la dette existe déjà ([[1305-2]]). En revanche, ce qui a été payé alors qu'une **condition suspensive** était pendante peut être répété ([[1304-5]], al. 2)." },
+        { p: "Ne sont **pas** indus : le paiement volontaire d'une **obligation naturelle** ([[1302]], al. 2) ; le paiement d'une **dette prescrite** ([[2249]] ; déjà Req., 17 janv. 1938), car la prescription n'empêche pas le paiement de trouver une cause ; le paiement **anticipé** d'une dette à terme, car la dette existe déjà ([[1305-2]]). En revanche, ce qui a été payé alors qu'une **condition suspensive** était pendante peut être répété ([[1304-5]], al. 2)." },
         { h: "L'erreur du solvens" },
         { liste: [
           "**Jurisprudence classique** : la preuve de l'erreur était toujours exigée, car un paiement sans dette pouvait aussi s'expliquer par une intention libérale.",
           "**Revirement** : pour l'indu objectif, la restitution est due « sans être tenu à aucune autre preuve » que l'absence de dette (Ass. plén., 2 avr. 1993, Jeumont-Schneider, à propos de cotisations sociales).",
-          "**Depuis 2016** : l'accipiens doit restituer ce qu'il a reçu « **par erreur ou sciemment** » ([[1302-1]]). L'erreur du solvens n'est exigée que pour l'**indu subjectif passif** ([[1302-2]], al. 1er), qui admet aussi la **contrainte**."
+          "**Depuis 2016** : l'accipiens doit restituer ce qu'il a reçu « **par erreur ou sciemment** » ([[1302-1]]). L'erreur du solvens n'est exigée que pour l'**indu subjectif passif** ([[1302-2]], al. 1er), qui admet aussi la **contrainte** (reprise de Com., 5 mai 2004)."
         ] },
         { attention: "Limite propre à l'indu subjectif passif : l'action contre le créancier **cesse** si, par suite du paiement, il a **détruit son titre** ou **abandonné ses sûretés** ([[1302-2]], al. 1er). Le solvens se retourne alors contre le vrai débiteur (al. 2)." },
         { h: "La faute du solvens" },
-        { p: "Le solvens négligent (qui paie sans vérifier l'existence ou le montant de la dette) conserve son action. Avant 2016, l'absence de faute n'était pas une condition de la répétition, sauf à déduire des dommages et intérêts au profit de l'accipiens lésé (Civ. 1re, 17 févr. 2010). Depuis 2016, la faute ne ferme pas l'action : la restitution « **peut être réduite** si le paiement procède d'une faute » ([[1302-3]], al. 2), directement, sans passer par la responsabilité civile." }
+        { p: "Le solvens négligent (qui paie sans vérifier l'existence ou le montant de la dette) conserve son action. Avant 2016, l'absence de faute n'était pas une condition de la répétition, sauf à déduire des dommages et intérêts au profit de l'accipiens lésé (Civ. 1re, 17 févr. 2010) ; auparavant, la jurisprudence refusait même l'action au solvens qui avait payé un faux créancier par grave négligence (Com., 23 avr. 1976). Depuis 2016, la faute ne ferme pas l'action : la restitution « **peut être réduite** si le paiement procède d'une faute » ([[1302-3]], al. 2), directement, sans passer par la responsabilité civile." }
       ]
     },
     {
@@ -123,7 +123,7 @@ OBL.chapitres.push({
         { p: "Inconnu du Code de 1804, l'enrichissement **sans cause** est une création **prétorienne**, fondée sur l'équité : nul ne doit s'enrichir injustement aux dépens d'autrui. L'ordonnance de 2016 l'a codifié sous le nom d'**enrichissement injustifié** ([[1303]] à [[1303-4]]). L'action de l'appauvri s'appelait l'action *de in rem verso*." },
         { schema: { type: "frise", titre: "De l'arrêt Boudier au Code civil", evenements: [
           { date: "15 juin 1892", t: "Req., Boudier", d: "un marchand d'engrais impayé par le fermier agit contre le propriétaire qui a profité des récoltes : l'action *de in rem verso* n'est soumise à « aucune condition déterminée »" },
-          { date: "2 mars 1915", t: "Civ., Briauhant", d: "pour éviter les excès : l'action est **subsidiaire**, fermée à qui dispose d'une autre action" },
+          { date: "2 mars 1915", t: "Civ.", d: "pour éviter les excès : l'action est **subsidiaire**, fermée à qui dispose d'une autre action" },
           { date: "12 juill. 1994", t: "Civ. 1re", d: "l'enfant qui a soigné ses parents au-delà des exigences de la **piété filiale** peut être indemnisé" },
           { date: "1er oct. 2016", t: "Ordonnance du 10 févr. 2016", d: "codification : [[1303]] à [[1303-4]]" },
           { date: "10 janv. 2024", t: "Civ. 1re", d: "l'action ne peut pallier la **carence probatoire** d'un prêteur qui ne prouve pas le prêt" },
@@ -138,9 +138,9 @@ OBL.chapitres.push({
         { h: "Seconde condition : l'absence de justification" },
         { def: { terme: "Enrichissement injustifié", texte: "enrichissement qui ne procède **ni de l'accomplissement d'une obligation par l'appauvri ni de son intention libérale** ([[1303-1]]). Un contrat, la loi, une libéralité, une décision de justice justifient le transfert de valeur." } },
         { liste: [
-          "**Devoir moral, obligation naturelle, amitié** : ils justifient l'appauvrissement. **Exception** : l'aide excédant **notablement** les exigences de la piété filiale ouvre droit à indemnité (Civ. 1re, 12 juill. 1994 ; Civ. 1re, 30 avr. 2025).",
+          "**Devoir moral, obligation naturelle, amitié** : ils justifient l'appauvrissement. **Exception** : l'aide excédant **notablement** les exigences de la piété filiale ouvre droit à indemnité (Civ. 1re, 12 juill. 1994 ; Civ. 1re, 30 avr. 2025, n° 23-15.838). Même une simple relation d'amitié justifie l'appauvrissement (Civ. 3e, 1er mars 1989).",
           "**Profit personnel** : pas d'indemnisation si l'appauvrissement procède d'un acte accompli par l'appauvri **en vue d'un profit personnel** ([[1303-2]], al. 1er).",
-          "**Faute de l'appauvri** : elle n'exclut plus l'action (avant 2016, la jurisprudence l'écartait en cas de faute caractérisée) ; le juge peut seulement **modérer** l'indemnisation ([[1303-2]], al. 2)."
+          "**Faute de l'appauvri** : elle n'exclut plus l'action (avant 2016, la jurisprudence l'écartait en cas de faute caractérisée, voire de faute lourde ou intentionnelle : Civ. 1re, 5 avr. 2018, mais admettait l'action pour une simple imprudence) ; le juge peut seulement **modérer** l'indemnisation ([[1303-2]], al. 2)."
         ] }
       ]
     },
@@ -148,7 +148,7 @@ OBL.chapitres.push({
       titre: "L'enrichissement injustifié : subsidiarité et indemnité",
       contenu: [
         { h: "La subsidiarité" },
-        { p: "Principe posé en 1915 et codifié : « L'appauvri n'a pas d'action sur ce fondement lorsqu'une **autre action lui est ouverte** ou se heurte à un **obstacle de droit**, tel que la prescription » ([[1303-3]]). L'enrichissement injustifié ne doit pas servir à contourner les règles du contrat, de la responsabilité, de la preuve ou de la prescription. [[1303]] l'exprime aussi : il s'applique « **en dehors des cas** de gestion d'affaires et de paiement de l'indu »." },
+        { p: "Principe posé en 1915 et codifié : « L'appauvri n'a pas d'action sur ce fondement lorsqu'une **autre action lui est ouverte** ou se heurte à un **obstacle de droit**, tel que la prescription » ([[1303-3]]). L'enrichissement injustifié ne doit pas servir à contourner les règles du contrat, de la responsabilité, de la preuve ou de la prescription. La jurisprudence traditionnelle fermait l'action dès qu'une action existait en théorie, même devenue impossible par prescription, forclusion, chose jugée ou défaut de preuve (Civ. 3e, 29 avr. 1971) ; elle s'est assouplie depuis la fin des années 1980, sans abandonner le principe (Civ. 1re, 5 nov. 2009 : pas de contournement des règles du droit des contrats). [[1303]] l'exprime aussi : il s'applique « **en dehors des cas** de gestion d'affaires et de paiement de l'indu »." },
         { schema: { type: "etapes", titre: "Tester la subsidiarité dans une copie", etapes: [
           { t: "1. Une autre action existe-t-elle en théorie ?", d: "contrat, responsabilité, gestion d'affaires, indu, action spéciale prévue par la loi" },
           { t: "2. Est-elle fermée par un obstacle de droit ?", d: "prescription, forclusion, autorité de la chose jugée, défaut de preuve : l'action *de in rem verso* est **irrecevable** ([[1303-3]])" },

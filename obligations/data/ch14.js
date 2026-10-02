@@ -27,7 +27,7 @@ OBL.chapitres.push({
       contenu: [
         { p: "Le mot est entendu **très largement** : toute chose, quelle que soit sa nature, peut engager la responsabilité de son gardien." },
         { liste: [
-          "**Nature physique indifférente** : solide, liquide, gaz, fumée, voire phénomène immatériel (onde, courant électrique).",
+          "**Nature physique indifférente** : solide, liquide, gaz, fumée, voire phénomène immatériel (onde, courant électrique). Exemple récent : le nuage toxique né d'émanations au sein d'une entreprise (Civ. 2e, 5 sept. 2024, n° 21-23.442).",
           "**Nature juridique indifférente** : meuble ou immeuble (un sol glissant, un escalier, une vitrine).",
           "**Caractères indifférents** : chose dangereuse ou non, actionnée par la main de l'homme ou non, viciée ou non (Jand'heur), en mouvement ou inerte."
         ] },
@@ -38,7 +38,8 @@ OBL.chapitres.push({
           { lien: "sauf", t: "Chose sans maître ou abandonnée", d: "*res nullius* (neige, eau de pluie) ou *res derelictae* : sans gardien, pas de responsabilité ; mais celui qui s'approprie la chose, même un instant, en devient gardien (Civ. 2e, 10 févr. 1982 : coup de pied dans une bouteille abandonnée)" },
           { lien: "sauf", t: "Dommages matériels entre sportifs", d: "C. sport, art. L. 321-3-1 (loi du 12 mars 2012) : pas de responsabilité du fait des choses pour les dommages **matériels** causés à un autre pratiquant pendant une manifestation ou un entraînement, sur un lieu réservé à la pratique" }
         ] } } },
-        { attention: "Produits défectueux : le régime des [[1245]] s. réserve les autres actions ([[1245-17]]), mais la CJCE (25 avr. 2002, Commission c/ France et González Sánchez) juge que la victime ne peut pas invoquer un autre régime **fondé sur le défaut de sécurité** du produit. Elle garde la faute et la garantie des vices cachés. En pratique, l'art. 1242, al. 1er est donc écarté quand le dommage tient au défaut du produit. La directive (UE) 2024/2853, à transposer au plus tard le 9 décembre 2026, n'a pas encore modifié les [[1245]] s." }
+        { p: "**Choses sans maître** : la neige ou l'eau de pluie n'ont pas de gardien. Mais le propriétaire ou l'occupant du sol sur lequel elles se sont accumulées peut en devenir gardien, ce qui fait disparaître la qualité de *res nullius* (Civ. 2e, 15 juin 2023, n° 22-12.162 : sol recouvert de neige glacée, société gardienne du sol). Solution exceptionnelle." },
+        { attention: "Produits défectueux : le régime des [[1245]] s. réserve les autres actions ([[1245-17]]), mais la CJCE (25 avr. 2002, Commission c/ France et González Sánchez) juge que la victime ne peut pas invoquer un autre régime **fondé sur le défaut de sécurité** du produit. Elle garde la faute et la garantie des vices cachés. En pratique, l'art. 1242, al. 1er est donc écarté quand le dommage tient au défaut du produit (Civ. 1re, 11 juill. 2018, n° 17-20.154). La directive (UE) 2024/2853, à transposer au plus tard le 9 décembre 2026, n'a pas encore modifié les [[1245]] s." }
       ]
     },
     {
@@ -64,18 +65,18 @@ OBL.chapitres.push({
           "**Présomption** : le propriétaire est présumé gardien ; il peut prouver qu'il avait **transféré** la garde.",
           "**Garde alternative** : en principe, une seule personne est gardienne à un instant donné.",
           "**Infans** : un enfant, même privé de discernement, peut être gardien (Ass. plén., 9 mai 1984, Gabillet : un enfant de trois ans tenant un bâton).",
-          "**Préposé** : jamais gardien, car il n'exerce pas ses pouvoirs de façon indépendante. C'est le **commettant** qui est gardien de la chose utilisée par son salarié."
+          "**Préposé** : jamais gardien, car il n'exerce pas ses pouvoirs de façon indépendante. C'est le **commettant** qui est gardien de la chose utilisée par son salarié (rappel de principe : Civ. 2e, 16 janv. 2020, n° 19-10.489)."
         ] },
         { schema: { type: "arbre", titre: "Qui est gardien ?", racine: { t: "Le propriétaire", d: "présumé gardien (présomption simple)", enfants: [
-          { lien: "transfert involontaire", t: "Le voleur ou celui qui a détourné la chose", d: "Franck : le propriétaire volé perd la garde (limite : un jeune enfant qui s'empare d'un pistolet chez des hôtes n'en devient pas gardien, Civ. 2e, 26 nov. 2020)" },
-          { lien: "transfert volontaire", t: "Le locataire, l'emprunteur, le dépositaire", d: "à condition d'avoir reçu **toute possibilité de prévenir le dommage** : simple usage ≠ transfert de garde (prêt bref d'une machine complexe : pas de transfert)" },
+          { lien: "transfert involontaire", t: "Le voleur ou celui qui a détourné la chose", d: "Franck : le propriétaire volé perd la garde (limite : un jeune enfant qui s'empare d'un pistolet chez des hôtes n'en devient pas gardien, Civ. 2e, 26 nov. 2020, n° 19-19.676)" },
+          { lien: "transfert volontaire", t: "Le locataire, l'emprunteur, le dépositaire", d: "à condition d'avoir reçu **toute possibilité de prévenir le dommage** : simple usage ≠ transfert de garde. Pour le **prêt**, les solutions varient avec la complexité de la chose, la durée et les circonstances : pas de transfert pour un tracteur prêté brièvement dans un but précis, transfert pour un chariot confié à un client de grand magasin (deux arrêts, Civ. 2e, 14 janv. 1999)" },
           { lien: "garde fractionnée", t: "Fabricant (structure) / détenteur (comportement)", d: "pour les choses dotées d'un dynamisme propre et dangereuses (Civ. 2e, 5 janv. 1956, Oxygène liquide)" },
           { lien: "garde commune", t: "Plusieurs cogardiens", d: "pouvoirs identiques, sans hiérarchie ; exceptionnelle et en repli" }
         ] } } },
         { h: "Garde de la structure et garde du comportement" },
         { p: "Proposée par Goldman, la distinction impute au **fabricant** les dommages dus au **vice interne** de la chose (garde de la structure) et au **détenteur** ceux dus à son **utilisation** (garde du comportement). Elle est réservée aux choses dotées d'un dynamisme propre et dangereuses (bouteilles de gaz, aérosols, téléviseur qui implose) ; elle a été refusée pour les cigarettes (Civ. 2e, 20 nov. 2003). Son intérêt a beaucoup reculé depuis le régime des produits défectueux ([[1245]] s.), qui vise directement le producteur." },
         { h: "La garde commune" },
-        { p: "Elle suppose des pouvoirs **identiques et sans hiérarchie** (pas de garde commune entre le skipper et ses équipiers : le skipper est seul gardien). Dans les jeux de balle, la jurisprudence préfère aujourd'hui attribuer la garde **successivement** au joueur qui a la balle. Effets : **responsabilité *in solidum*** des cogardiens envers un tiers ; mais la victime **cogardienne** ne peut rien réclamer, car on ne peut être à la fois gardien et victime." }
+        { p: "Elle suppose des pouvoirs **identiques et sans hiérarchie** (pas de garde commune entre le skipper et ses équipiers : le skipper est seul gardien). Dans les jeux de balle, la jurisprudence préfère aujourd'hui attribuer la garde **successivement** au joueur qui a la balle (jeu de balle, football, enfants jouant avec une torche, squash : Civ. 2e, 27 nov. 2025, n° 24-12.045). Effets : **responsabilité *in solidum*** des cogardiens envers un tiers ; mais la victime **cogardienne** ne peut rien réclamer, car on ne peut être à la fois gardien et victime." }
       ]
     },
     {
@@ -94,7 +95,7 @@ OBL.chapitres.push({
           { date: "5 juill. 1985", t: "Loi Badinter", d: "Le législateur intervient pour les accidents de la circulation." },
           { date: "6 avr. 1987", t: "Civ. 2e (trois arrêts)", d: "Abandon de Desmares : la faute de la victime qui n'a pas les caractères de la force majeure exonère **partiellement** le gardien." }
         ] } },
-        { p: "La force majeure est appréciée avec une **grande sévérité**, surtout pour la SNCF : le comportement d'un voyageur qui descend d'un train en marche ou traverse les voies n'est presque jamais jugé imprévisible. Admission exceptionnelle en 2018 pour des victimes poussées sur les voies par un tiers (Civ. 2e, 8 févr. 2018)." },
+        { p: "La force majeure est appréciée avec une **grande sévérité**, surtout pour la SNCF : le comportement d'un voyageur qui descend d'un train en marche ou traverse les voies n'est presque jamais jugé imprévisible. Même sévérité en matière sportive : la chute d'un motard sur un circuit (Civ. 2e, 30 nov. 2023, n° 22-16.820) ou la déviation de trajectoire d'un skieur en compétition (Civ. 2e, 19 sept. 2024, n° 23-10.638) sont jugées prévisibles. Admission exceptionnelle en 2018 pour des victimes poussées sur les voies par un tiers (Civ. 2e, 8 févr. 2018, n° 17-10.516 et 16-26.198), après un examen détaillé des circonstances des agressions." },
         { attention: "Si aucun régime de responsabilité du fait des choses ne s'applique, la victime peut toujours agir contre le propriétaire ou l'utilisateur sur le fondement de la **faute prouvée** ([[1240]], [[1241]])." }
       ]
     },
@@ -109,7 +110,7 @@ OBL.chapitres.push({
           "**Animal** : tout animal **approprié** (domestique ou sauvage captif). L'animal sauvage en liberté n'a pas de gardien.",
           "**Responsable** : le **propriétaire** ou **celui qui s'en sert** pendant qu'il est à son usage, c'est-à-dire en pratique le gardien (usage à titre indépendant : dresseur, vétérinaire, maréchal-ferrant qui a la maîtrise de l'animal).",
           "**Fait de l'animal** : mêmes règles de preuve que pour les choses (présumé en cas de mouvement et de contact ; sinon, rôle actif à prouver, par exemple des chiens qui effraient un cheval : Civ. 2e, 17 janv. 2019).",
-          "**Régime** : responsabilité de plein droit, identique à celle de [[1242]], al. 1er. L'animal **égaré ou échappé** reste sous la responsabilité de son propriétaire : la fuite n'est pas une force majeure (le texte le dit)."
+          "**Régime** : responsabilité de plein droit, identique à celle de [[1242]], al. 1er. L'animal **égaré ou échappé** reste sous la responsabilité de son propriétaire : la fuite n'est pas une force majeure (le texte le dit), pas plus que l'avertissement donné sur la dangerosité de l'animal (Civ. 2e, 27 mars 2014, n° 13-15.528)."
         ] },
         { h: "La ruine des bâtiments ([[1244]])" },
         { liste: [

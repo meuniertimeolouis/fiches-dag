@@ -10,6 +10,12 @@ OBL.chapitres.push({
       titre: "L'interprétation du contrat",
       contenu: [
         { p: "Interpréter relève du **pouvoir souverain des juges du fond** ; la Cour de cassation ne contrôle que la **dénaturation** d'une clause claire et précise (Civ., 15 avr. 1872, Veuve Foucauld : le juge ne peut, sous prétexte d'interpréter, modifier une clause claire). Solution codifiée : [[1192]]." },
+        { liste: [
+          "**Principe** : pouvoir souverain des juges du fond (Cass., sect. réun., 2 févr. 1808) ; aucun pourvoi pour « fausse interprétation », car l'opération repose sur des circonstances de fait.",
+          "**Dénaturation** d'une clause claire et précise ([[1192]]). La notion, longtemps restrictive à la chambre commerciale (simple reproduction erronée), a été alignée sur les autres chambres (Com., 31 janv. 1995) : elle vise l'interprétation d'une clause claire et, par extension, l'erreur flagrante d'interprétation.",
+          "**Qualification** du contrat : question de droit contrôlée (Com., 30 mai 1969, cassation d'une décision qualifiant de bail une vente).",
+          "**Clauses types** : contrôle direct de certaines clauses reproduites en grand nombre (conventions collectives, Ass. plén., 6 févr. 1976 ; certains contrats d'assurance, Civ. 1re, 16 mai 1995), sans principe général."
+        ] },
         { schema: { type: "etapes", titre: "La méthode des articles 1188 à 1192", etapes: [
           { t: "Clause claire ?", d: "on l'applique, sans l'interpréter ([[1192]])" },
           { t: "Commune intention", d: "plutôt que le sens littéral ([[1188]], al. 1er) : méthode subjective" },
@@ -17,9 +23,16 @@ OBL.chapitres.push({
           { t: "Cohérence et effet utile", d: "clauses les unes par les autres ; opération d'ensemble ([[1189]]) ; sens qui donne un effet ([[1191]])" },
           { t: "Dans le doute", d: "gré à gré : contre le créancier ; adhésion : contre celui qui l'a proposé ([[1190]])" }
         ] } },
+        { p: "Précisions : [[1188]], al. 1er, reprend l'ancien art. 1156 ; l'al. 2 (personne raisonnable), d'inspiration européenne, introduit une **hiérarchie** (volonté d'abord, norme objective à défaut). [[1189]], al. 2 : les contrats qui concourent, dans l'intention commune, à une même opération s'interprètent en fonction d'elle. [[1190]] prolonge C. consom., art. L. 211-1, al. 2 (doute en faveur du consommateur). Les anciens art. 1158 à 1160, 1163 et 1164 n'ont pas été repris mais restent applicables aux contrats conclus avant le 1er octobre 2016." },
         { h: "L'interprétation créatrice : le « forçage » du contrat" },
         { p: "Les contrats obligent aussi à « toutes les suites que leur donnent l'équité, l'usage ou la loi » ([[1194]]). Sur ce fondement, le juge a **ajouté** des obligations que les parties n'avaient pas prévues." },
-        { arret: { ref: "Civ., 21 nov. 1911 (Compagnie générale transatlantique)", apport: "Le transporteur de personnes est tenu d'une **obligation de sécurité** : conduire le voyageur sain et sauf à destination. Point de départ du forçage du contrat, étendu ensuite à de nombreux contrats (obligation d'information, de conseil, de sécurité)." } },
+        { arret: { ref: "Civ., 21 nov. 1911 (Compagnie générale transatlantique)", apport: "Le transporteur de personnes est tenu d'une **obligation de sécurité** : conduire le voyageur sain et sauf à destination. Point de départ du forçage du contrat (expression de Josserand), étendu ensuite à de nombreux contrats (obligation d'information, de conseil, de sécurité)." } },
+        { liste: [
+          "**Fondements** : la bonne foi ([[1104]]) et surtout [[1194]] (ancien art. 1135) : le juge ajoute ce que l'équité, l'usage ou la loi attachent à l'obligation d'après sa nature ; l'arrêt de 1911 est rendu au visa de l'ancien art. 1134. Les usages professionnels peuvent s'imposer à des tiers à la profession qui les ont connus et acceptés (Com., 4 oct. 2023, n° 22-15.685).",
+          "**Obligation de sécurité** : tout contrat de transport (Civ. 1re, 7 mars 1989 : télésiège, remonte-pente, toboggan aquatique), professionnels dont la clientèle est blessée dans leurs locaux, assistance bénévole. Son extension à la vente (Civ. 1re, 11 juin 1991) a été abandonnée avec le régime des produits défectueux. Contrat de travail : amiante (Soc., 28 févr. 2002 ; Ass. plén., 24 juin 2005 : obligation de résultat, manquement constitutif d'une faute inexcusable), puis régime hybride de présomption simple de faute (Soc., 25 nov. 2015 ; Ass. plén., 5 avr. 2019, n° 18-17.442), préjudice d'anxiété (Soc., 11 sept. 2019) et rattachement à une obligation **légale** (Civ. 2e, 8 oct. 2020).",
+          "**Obligation contractuelle d'information et de conseil** (à distinguer de l'obligation précontractuelle) : due par les professions dont le statut impose le conseil (médecin, avocat, notaire, banquier...) et dans les contrats translatifs ; le vendeur professionnel doit se renseigner sur les besoins de l'acheteur (Civ. 1re, 11 mai 2022, n° 20-62.210).",
+          "Critique : ces obligations ne sont pas voulues par les parties, le rattachement au contrat est artificiel ; les projets de réforme de la responsabilité envisagent de sortir le dommage corporel du terrain contractuel."
+        ] },
         { attention: "Le forçage connaît un reflux : la jurisprudence préfère parfois, pour les dommages corporels, la responsabilité extracontractuelle. Et l'obligation de sécurité de l'employeur n'est plus une obligation de résultat : l'employeur s'exonère en prouvant qu'il a pris toutes les mesures de prévention nécessaires (Soc., 25 nov. 2015, n° 14-24.444, Air France)." }
       ]
     },
@@ -27,16 +40,23 @@ OBL.chapitres.push({
       titre: "L'exécution de bonne foi",
       contenu: [
         { p: "La bonne foi s'impose à l'exécution ([[1104]], d'ordre public). Elle impose deux devoirs : **loyauté** (ne pas nuire à l'autre, ne pas abuser d'une prérogative contractuelle) et **coopération** (faciliter l'exécution, informer)." },
-        { arret: { ref: "Com., 3 nov. 1992 (arrêt Huard)", apport: "Le fournisseur qui prive son distributeur, lié par une clause d'exclusivité, des moyens de pratiquer des prix concurrentiels manque à la bonne foi : illustration du devoir de coopération." } },
+        { arret: { ref: "Com., 3 nov. 1992 (arrêt Huard)", apport: "Le fournisseur qui, profitant de l'évolution des circonstances économiques, refuse de renégocier et prive son distributeur lié par une clause d'exclusivité des moyens de pratiquer des prix concurrentiels manque à la bonne foi : illustration du devoir de coopération, sanctionné par des dommages et intérêts et non par une révision judiciaire (solution prolongée par Com., 24 nov. 1998 ; contra Civ. 1re, 16 mars 2004)." } },
         { arret: { ref: "Com., 10 juill. 2007 (arrêt Les Maréchaux)", apport: "Si la règle de bonne foi permet au juge de sanctionner l'usage **déloyal** d'une prérogative contractuelle, elle ne l'autorise pas à porter atteinte à la **substance même des droits et obligations** légalement convenus. La bonne foi sanctionne la manière d'exercer un droit, pas le droit lui-même." } },
+        { liste: [
+          "**Loyauté** : ne pas nuire à l'autre ni rendre plus difficile son exécution (le chauffeur de taxi qui prend toujours le trajet le plus long) ; la jurisprudence ne sanctionne que les abus les plus graves (Civ. 1re, 30 juin 2004). **Cohérence** : changer brutalement d'attitude peut être sanctionné (Civ. 3e, 28 janv. 2009).",
+          "**Coopération** : obligations positives (renégocier, faciliter l'exécution) restées marginales ; pas d'obligation d'assistance à la reconversion (Com., 6 mai 2002). La doctrine solidariste (Demogue, Mazeaud) va plus loin que la Cour de cassation, qui s'en tient à un « égoïsme tempéré ».",
+          "**Place dans le Code** : [[1104]], d'ordre public, figure parmi les dispositions liminaires et vaut à tous les stades du contrat (négociation, formation, exécution) ; l'ordonnance n'en fait ni un principe directeur ni une règle supérieure aux autres.",
+          "**Prolongements de l'arrêt Les Maréchaux** : le juge ne peut modifier les modalités de paiement (Com., 19 juin 2019, n° 17-29.000) ; la seule mauvaise foi du vendeur n'est pas un motif de résolution ou d'annulation de la vente (Civ. 1re, 1er juill. 2020)."
+        ] },
         { attention: "La mauvaise foi prive d'effet l'exercice d'une clause (ex. invoquer une clause résolutoire de mauvaise foi) ; elle ne permet pas de réécrire le contrat. Distinction très attendue en commentaire." }
       ]
     },
     {
       titre: "La modification du contrat",
       contenu: [
-        { p: "Principe : les contrats ne peuvent être modifiés ou révoqués que **du consentement mutuel** des parties, ou pour les causes que la **loi** autorise ([[1193]])." },
+        { p: "Principe : les contrats ne peuvent être modifiés ou révoqués que **du consentement mutuel** des parties, ou pour les causes que la **loi** autorise ([[1193]]). Le législateur peut modifier la norme contractuelle, mais la loi nouvelle ne s'applique en principe pas aux contrats en cours (d'où le seuil du 1er octobre 2016). Le juge ne peut pas non plus, sous prétexte d'équité, modifier des clauses précises (Com., 10 juill. 2007)." },
         { h: "L'imprévision" },
+        { p: "L'imprévision est un déséquilibre **survenu en cours d'exécution** ; la lésion suppose un déséquilibre dès la formation. Avant 2016, la révision était refusée, avec des correctifs indirects : sanction du refus de renégocier au titre de la bonne foi (Huard, 1992) et Com., 29 juin 2010 (référé, au visa de l'ancien art. 1131 : le déséquilibre privant l'engagement de contrepartie réelle rend l'obligation sérieusement contestable)." },
         { schema: { type: "frise", titre: "De Craponne à l'article 1195", evenements: [
           { date: "6 mars 1876", t: "Civ., Canal de Craponne", d: "Refus de toute révision judiciaire pour imprévision, même si le prix fixé en 1560 est devenu dérisoire : le juge ne peut modifier le contrat, quelque équitable que cela lui paraisse." },
           { date: "1916", t: "CE, Gaz de Bordeaux", d: "Le juge administratif admet l'imprévision dans les contrats administratifs : le droit civil reste fermé." },
@@ -49,27 +69,41 @@ OBL.chapitres.push({
           { t: "À défaut d'accord dans un délai raisonnable", d: "le juge, saisi par **une** partie, peut **réviser** le contrat ou **y mettre fin**" }
         ] } },
         { attention: "[[1195]] n'est pas d'ordre public : les parties peuvent l'écarter ou aménager le risque (clause de hardship, d'indexation). Il ne s'applique pas aux contrats conclus avant le 1er octobre 2016 ; il est écarté pour certaines opérations sur titres et contrats financiers (C. mon. fin., art. L. 211-40-1)." },
+        { liste: [
+          "Le changement de circonstances n'a pas à être économique (épidémie, guerre) ; l'**imprévisibilité** s'apprécie *in abstracto* ; l'« excessive onérosité » n'est pas définie. La troisième condition (risque non accepté) rend le texte **supplétif** : la clause d'acceptation du risque est presque de style dans les contrats d'affaires, mais sa rédaction peut se heurter à [[1170]] (obligation essentielle) ou [[1171]] (déséquilibre significatif). Le débat est vif entre impérativité raisonnée (Libchaber) et liberté d'exclure (Genicon).",
+          "Le texte a été maintenu en 2018 malgré l'opposition du Sénat ; le mécanisme est **préventif** (menace de révision ou de fin du contrat pour inciter à négocier). La révision judiciaire porte sur le prix pour l'avenir ou les conditions d'exécution ; ses critères restent flous et les cas sont très rares."
+        ] },
+        { h: "Les aménagements contractuels" },
+        { liste: [
+          "**Clause de révision (hardship)** : oblige à **renégocier de bonne foi**, non à conclure ; sans accord, le contrat est maintenu en l'état, la mauvaise foi dans la négociation engageant la responsabilité (Com., 3 oct. 2006). Validité fondée sur la liberté contractuelle.",
+          "**Clause d'indexation (échelle mobile)** : fait varier le prix **automatiquement** selon un indice. Validité reconnue pour les dettes de somme d'argent ([[1343]], al. 2) ; encadrée par C. mon. fin., art. L. 112-1 s. : indice en lien direct avec l'objet du contrat ou l'activité des parties, pas d'indexation sur le niveau général des prix ou des salaires (art. L. 112-2), le lien avec la cause étant admis (Civ. 1re, 9 janv. 1974) ; exceptions : dettes d'aliments, certains livrets. Elle doit jouer **à la hausse comme à la baisse** (Civ. 3e, 30 juin 2021, n° 19-23.038 ; Civ. 3e, 19 juin 2025, n° 23-18.853).",
+          "Indexation illicite : nullité absolue (ordre public monétaire de direction), mais le juge peut limiter la nullité à la clause et substituer un indice (Com., 7 janv. 1975), solution que [[1167]] (indice disparu) conforte par extension."
+        ] },
         { h: "La fin unilatérale du contrat" },
         { schema: { type: "tableau", titre: "Peut-on sortir seul du contrat ?", colonnes: ["Contrat", "Règle", "Texte"], lignes: [
           ["Engagement perpétuel", "Prohibé : chacun peut y mettre fin comme pour un contrat à durée indéterminée", "[[1210]]"],
           ["À durée indéterminée", "Résiliation à tout moment, en respectant le préavis prévu ou, à défaut, un **délai raisonnable**", "[[1211]]"],
           ["À durée déterminée", "Exécution **jusqu'au terme** ; pas de résiliation unilatérale, sauf clause ou texte", "[[1212]]"],
           ["Tout contrat", "Révocation par accord des parties (*mutuus dissensus*)", "[[1193]]"]
-        ] } }
+        ] } },
+        { h: "Mutuus dissensus et résiliation" },
+        { p: "Le **mutuus dissensus** est l'accord de volonté qui met fin au contrat. Il suppose les conditions de validité des contrats ([[1128]] s.) ; la volonté tacite est admise si elle est non équivoque (Civ. 1re, 20 nov. 1960) ; pas de parallélisme des formes, sauf pour les contrats solennels notariés. En théorie, preuve écrite au-delà de 1 500 euros ([[1359]]), mais la jurisprudence admettait la liberté de preuve (Civ. 1re, 18 mai 1994). Effets : aucune indemnité (Com., 1er févr. 1994) ; il produit, selon la jurisprudence, les effets d'une **condition résolutoire**, donc rétroactifs, sauf volonté contraire des parties de ne mettre fin au contrat que pour l'avenir." },
+        { p: "**Résiliation unilatérale** : autorisée par la loi pour certains contrats (travail, C. trav., art. L. 1231-1 ; bail, art. 1736 ; assurance, C. assur., art. L. 113-12 ; mandat, art. 2004 et 2007) ou par une clause de dédit. Aucun principe général pour les contrats *intuitu personae* : seulement les textes. Dans le contrat à durée indéterminée, elle s'impose à l'autre partie même si le contrat énumère limitativement les causes de rupture (Com., 31 mai 1994), sans obligation de motiver, mais l'**abus** (rupture brutale après avoir laissé espérer la pérennité et suscité des dépenses : Com., 28 févr. 1995 ; 20 janv. 1998) engage la responsabilité de droit commun, l'abus n'étant pas repris par [[1211]] mais maintenu selon le rapport (Com., 8 févr. 2017). L'interdiction des engagements perpétuels a valeur constitutionnelle (Cons. const., 9 nov. 1999) ; un pacte d'associés pour la durée de la société n'en est pas un (Civ. 1re, 25 janv. 2023, n° 19-25.478)." }
       ]
     },
     {
       titre: "L'effet translatif",
       contenu: [
         { p: "Dans les contrats qui ont pour objet l'aliénation de la propriété, le **transfert s'opère lors de la conclusion du contrat**, par le seul échange des consentements, sauf report voulu par les parties, imposé par la nature des choses (chose de genre : transfert à l'individualisation) ou par la loi ([[1196]]). Le vendeur doit conserver la chose jusqu'à la délivrance avec les soins d'une personne raisonnable ([[1197]])." },
+        { p: "Avant 2016, l'effet translatif se rattachait à l'obligation de donner (ancien art. 1138) ; il est aujourd'hui un effet **direct** du contrat, dit « non obligationnel », immédiat et automatique. Exceptions : **volonté des parties** (réserve de propriété, art. 2367 : suspend l'effet translatif jusqu'au complet paiement, non la vente elle-même, Com., 17 oct. 2018) ; **nature des choses** (chose future, chose de genre non individualisée, art. 1585) ; **loi** (vente à terme d'un immeuble à construire, art. 1601-2)." },
         { h: "Les risques" },
-        { p: "*Res perit domino* : le transfert de propriété emporte transfert des **risques** ([[1196]], al. 3). Mais le débiteur de l'obligation de délivrer **mis en demeure** reprend les risques ([[1344-2]])." },
+        { p: "*Res perit domino* : le transfert de propriété emporte transfert des **risques** ([[1196]], al. 3). Mais le débiteur de l'obligation de délivrer **mis en demeure** reprend les risques ([[1344-2]]), sauf s'il prouve que la perte serait survenue de la même manière si l'obligation avait été exécutée ([[1351-1]], al. 1er). Hors contrat translatif, la règle est *res perit debitori* : le débiteur de l'obligation devenue impossible en supporte le risque, le créancier est libéré. Le jeu combiné du transfert immédiat et de *res perit domino* est sévère pour l'acheteur, d'où les clauses de réserve de propriété." },
         { h: "Les conflits entre acquéreurs successifs" },
         { schema: { type: "tableau", titre: "Le même bien vendu deux fois ([[1198]])", colonnes: ["Bien", "Qui l'emporte ?", "Condition"], lignes: [
           ["Meuble corporel", "Celui qui a **pris possession** le premier, même si son droit est postérieur", "Être de **bonne foi**"],
           ["Immeuble", "Celui qui a **publié le premier** son titre authentique au fichier immobilier, même si son droit est postérieur", "Être de **bonne foi**"]
         ] } },
-        { attention: "La condition de **bonne foi** du second acquéreur qui publie le premier est une nouveauté de 2016 : elle renverse Civ. 3e, 12 janv. 2011, qui jugeait la connaissance de la première vente indifférente." }
+        { attention: "La condition de **bonne foi** du second acquéreur qui publie le premier est une nouveauté de 2016 : elle renverse Civ. 3e, 12 janv. 2011, qui jugeait la connaissance de la première vente indifférente. Les deux acquéreurs doivent tenir leur droit d'une **même personne**. Pour les meubles, [[1198]], al. 1er, applique [[2276]]." }
       ]
     }
   ],
@@ -79,6 +113,7 @@ OBL.chapitres.push({
     "Bonne foi : sanctionne l'usage déloyal d'une prérogative, pas la substance des droits (Com., 10 juill. 2007).",
     "Modification ou révocation : accord des parties ou loi ([[1193]]) ; imprévision ([[1195]]) : renégociation, puis résolution ou révision.",
     "Durée : engagements perpétuels prohibés ([[1210]]) ; CDI résiliable avec préavis raisonnable ([[1211]]) ; CDD jusqu'au terme ([[1212]]).",
+    "Mutuus dissensus, résiliation légale ou du CDI ; clause de révision et d'indexation pour prévenir l'imprévision.",
     "Transfert de propriété et des risques à la conclusion ([[1196]]) ; mise en demeure ([[1344-2]]) ; conflits d'acquéreurs : possession ou publicité de bonne foi ([[1198]])."
   ],
   articles: ["1103", "1104", "1188", "1189", "1190", "1191", "1192", "1193", "1194", "1195", "1196", "1197", "1198", "1210", "1211", "1212", "1344-2"],
@@ -87,7 +122,7 @@ OBL.chapitres.push({
   quiz: [
     { q: "Le juge peut-il interpréter une clause claire et précise ?", choix: ["Oui, s'il l'estime inéquitable", "Non : ce serait une dénaturation", "Oui, selon la commune intention"], bonne: 1, expl: "[[1192]] ; Civ., 15 avr. 1872." },
     { q: "Lorsque la commune intention des parties ne peut être décelée, le contrat s'interprète :", choix: ["Contre le créancier", "Selon le sens que lui donnerait une personne raisonnable placée dans la même situation", "Selon le sens littéral"], bonne: 1, expl: "[[1188]], al. 2." },
-    { q: "Sur quel texte le juge a-t-il découvert l'obligation de sécurité du transporteur ?", choix: ["L'actuel article 1195", "L'article devenu 1194 (suites que donnent l'équité, l'usage ou la loi)", "L'article 1240"], bonne: 1, expl: "Civ., 21 nov. 1911 (ancien art. 1135, devenu [[1194]])." },
+    { q: "Sur quel texte le juge a-t-il découvert l'obligation de sécurité du transporteur ?", choix: ["L'actuel article 1195", "L'article devenu 1194 (suites que donnent l'équité, l'usage ou la loi)", "L'article 1240"], bonne: 1, expl: "Civ., 21 nov. 1911 (visa de l'ancien art. 1134 ; fondement doctrinal : ancien art. 1135, devenu [[1194]])." },
     { q: "Selon l'arrêt Les Maréchaux (2007), la bonne foi permet au juge :", choix: ["De modifier l'équilibre du contrat", "De sanctionner l'usage déloyal d'une prérogative, sans toucher à la substance des droits et obligations", "D'annuler le contrat"], bonne: 1, expl: "Com., 10 juill. 2007." },
     { q: "Un contrat de 2014 devient ruineux à cause d'une flambée imprévisible des prix. Le juge peut-il le réviser ?", choix: ["Oui, sur le fondement de l'article 1195", "Non : l'article 1195 ne s'applique qu'aux contrats conclus depuis le 1er octobre 2016", "Oui, sur le fondement de la bonne foi"], bonne: 1, expl: "Pour les contrats antérieurs, la jurisprudence Canal de Craponne (1876) s'applique : pas de révision judiciaire." },
     { q: "Pendant la renégociation de l'article 1195, la partie qui la demande :", choix: ["Peut suspendre ses obligations", "Doit continuer à exécuter ses obligations", "Peut résilier le contrat"], bonne: 1, expl: "[[1195]], al. 1er, in fine." },

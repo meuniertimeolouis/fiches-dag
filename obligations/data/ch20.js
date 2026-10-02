@@ -30,7 +30,7 @@ OBL.chapitres.push({
         { h: "Les conditions de validité" },
         { liste: [
           "**Un contrat de droit commun** entre cédant et cessionnaire : consentement, capacité, contenu licite et certain ([[1128]]). À titre onéreux, le prix est en général **inférieur au nominal** : le cessionnaire spécule sur le recouvrement. À titre gratuit, c'est une donation.",
-          "**Un objet très large** : une ou plusieurs créances, **présentes ou futures**, **déterminées ou déterminables** ([[1321]], al. 2), non encore exigibles, de somme d'argent ou non.",
+          "**Un objet très large** : une ou plusieurs créances, **présentes ou futures**, **déterminées ou déterminables** ([[1321]], al. 2), non encore exigibles, de somme d'argent ou non (créance future : Civ. 1re, 28 oct. 1981 ; créance non exigible : Com., 7 déc. 2004).",
           "**Des limites** : certaines créances sont incessibles par la loi (créances alimentaires, fraction insaisissable des salaires : C. trav., art. L. 3252-2 s.). Si l'incessibilité est seulement **stipulée**, la cession reste possible **avec le consentement du débiteur** ([[1321]], al. 4) : c'est le seul cas où il doit consentir.",
           "**Un écrit à peine de nullité** ([[1322]]) pour les cessions conclues depuis le 1er octobre 2016. Auparavant, la cession était consensuelle. L'écrit compense l'allègement des formalités d'opposabilité ; lui donner **date certaine** reste prudent, car la date de l'acte règle les conflits."
         ] },
@@ -53,7 +53,7 @@ OBL.chapitres.push({
         { liste: [
           "**Transfert à la date de l'acte**, pour une créance présente comme future ([[1323]], al. 1er).",
           "**La créance même est transmise**, pour sa valeur nominale : cédée 8 000 € alors qu'elle vaut 10 000 €, elle permet au cessionnaire de réclamer **10 000 €** au débiteur. C'est la grande différence avec la subrogation.",
-          "**Avec ses accessoires** ([[1321]], al. 3) : sûretés, actions en justice, titre exécutoire. Mais une **dette** née du même contrat n'est pas un accessoire de la créance : le cessionnaire n'en devient pas débiteur.",
+          "**Avec ses accessoires** ([[1321]], al. 3) : sûretés, actions en justice, titre exécutoire. Mais une **dette** née du même contrat n'est pas un accessoire de la créance : le cessionnaire n'en devient pas débiteur (Com., 2 juill. 2013).",
           "**Avec ses vices** : ce qui fonde l'opposabilité des exceptions au cessionnaire (*nemo plus juris ad alium transferre potest quam ipse habet*)."
         ] },
         { h: "La garantie due par le cédant ([[1326]])" },
@@ -65,14 +65,14 @@ OBL.chapitres.push({
         { p: "Les clauses réduisant la garantie légale ne sont plus visées par le Code ; elles semblent admises au nom de la liberté contractuelle, [[1326]] n'étant pas déclaré d'ordre public. Le droit ancien interdisait d'écarter la garantie du fait personnel du cédant ; la solution devrait survivre." },
         { h: "À l'égard du débiteur cédé" },
         { schema: { type: "etapes", titre: "La situation du débiteur cédé, étape par étape", etapes: [
-          { t: "Avant que la cession lui soit opposable", d: "Il peut valablement **payer le cédant** : ce paiement le libère. Le cessionnaire, déjà créancier entre les parties, peut toutefois accomplir des actes **conservatoires**." },
+          { t: "Avant que la cession lui soit opposable", d: "Il peut valablement **payer le cédant** : ce paiement le libère (solution déjà admise par Civ., 20 juin 1938). Le cessionnaire, déjà créancier entre les parties, peut toutefois accomplir des actes **conservatoires**." },
           { t: "Notification ou prise d'acte", d: "La cession devient opposable au débiteur ([[1324]], al. 1er). Il doit désormais payer le **cessionnaire** : s'il paie le cédant, il paie mal et risque de payer deux fois." },
           { t: "Exceptions **inhérentes à la dette**", d: "Nullité, exception d'inexécution, résolution, compensation de dettes **connexes** : opposables au cessionnaire **quelle que soit leur date** ([[1324]], al. 2)." },
-          { t: "Exceptions **nées des rapports avec le cédant**", d: "Terme accordé, remise de dette, compensation de dettes **non connexes** : opposables seulement si elles sont nées **avant** que la cession lui soit devenue opposable ([[1324]], al. 2). Le droit antérieur retenait une solution voisine : exceptions dont la **cause** était antérieure." },
+          { t: "Exceptions **nées des rapports avec le cédant**", d: "Terme accordé, remise de dette, compensation de dettes **non connexes** : opposables seulement si elles sont nées **avant** que la cession lui soit devenue opposable ([[1324]], al. 2). Le droit antérieur retenait une solution voisine : exceptions dont la **cause** était antérieure, même si elles se manifestaient après la cession (Com., 12 janv. 2010). Rappel net de la règle : Civ. 2e, 22 janv. 2026, n° 24-19.267." },
           { t: "Frais", d: "Le débiteur n'avance pas les frais supplémentaires causés par la cession ; cédant et cessionnaire en sont tenus solidairement, la charge finale pesant sur le cessionnaire sauf clause contraire ([[1324]], al. 3)." }
         ] } },
         { attention: "Si le débiteur a **pris acte sans réserve** de la cession, il ne peut plus opposer au cessionnaire la compensation qu'il aurait pu opposer au cédant ([[1347-5]]). Conseil au débiteur : émettre des réserves en prenant acte." },
-        { p: "Restent inopposables les moyens **strictement personnels au cédant**, qui ne tiennent pas à la dette elle-même. Et la règle d'opposabilité des exceptions a une limite procédurale : le cessionnaire n'a pas qualité pour défendre seul, en l'absence du cédant, à une demande de **résolution du contrat** dont la créance est issue." }
+        { p: "Restent inopposables les moyens **strictement personnels au cédant**, qui ne tiennent pas à la dette elle-même. Et la règle d'opposabilité des exceptions a une limite procédurale : le cessionnaire n'a pas qualité pour défendre seul, en l'absence du cédant, à une demande de **résolution du contrat** dont la créance est issue (Com., 15 mai 2019, n° 17-27.686)." }
       ]
     },
     {
@@ -82,7 +82,7 @@ OBL.chapitres.push({
         { h: "Les conditions" },
         { liste: [
           "**Un contrat** entre le débiteur cédant et le cessionnaire.",
-          "**L'accord du créancier cédé** ([[1327]]), qui peut être donné **par avance**, par exemple dans le contrat d'origine ([[1327-1]]). Sa nature est discutée : véritable consentement faisant du créancier une partie (opération tripartite) ou simple **autorisation**, condition d'opposabilité. Le parallèle avec la cession de contrat, où la Cour de cassation a retenu la seconde analyse (Com., 24 avr. 2024), plaide pour l'autorisation ; la question n'est pas tranchée pour la cession de dette.",
+          "**L'accord du créancier cédé** ([[1327]]), qui peut être donné **par avance**, par exemple dans le contrat d'origine ([[1327-1]]). Sa nature est discutée : véritable consentement faisant du créancier une partie (opération tripartite) ou simple **autorisation**, condition d'opposabilité. Le parallèle avec la cession de contrat, où la Cour de cassation a retenu la seconde analyse (Com., 24 avr. 2024, n° 22-15.958), et le parallélisme de rédaction entre [[1327]] et [[1216]] plaident pour l'autorisation ; la question n'est pas tranchée pour la cession de dette.",
           "**Un écrit à peine de nullité** ([[1327]], al. 2), ajouté par la loi du 20 avril 2018 (disposition non interprétative) : exigé pour les cessions conclues **depuis le 1er octobre 2018** ; celles conclues entre le 1er octobre 2016 et le 30 septembre 2018 n'y sont pas soumises.",
           "**Opposabilité** : si le créancier a donné son accord par avance et n'est pas intervenu à l'acte, la cession ne lui est opposable, et il ne peut s'en prévaloir, que du jour où elle lui a été **notifiée** ou dès qu'il en a **pris acte** ([[1327-1]])."
         ] },
@@ -105,9 +105,10 @@ OBL.chapitres.push({
         { h: "Conditions de fond" },
         { liste: [
           "**Un contrat cessible** : en cours d'exécution (à exécution successive ou non encore exécuté), sinon la cession n'a plus d'objet ; non assorti d'une **clause d'incessibilité**.",
-          "**Contrat *intuitu personae*** : longtemps réputé incessible, il peut être cédé **avec l'accord du cédé** (Com., 7 janv. 1992, n° 90-14.831) ; [[1216]] ne pose aucune restriction.",
-          "**L'accord du cédé** : avant la réforme, son consentement était une **condition de validité** (Com., 6 mai 1997, deux arrêts). Depuis, la chambre commerciale a jugé que cet accord **peut être donné sans forme**, pourvu qu'il soit **non équivoque**, et **prouvé par tout moyen** ; surtout, **son défaut n'emporte pas la nullité de la cession mais son inopposabilité au cédé** (Com., 24 avr. 2024). L'accord est donc une **autorisation**, pas un consentement faisant du cédé une partie à la cession.",
-          "**Accord donné par avance** (clause de cessibilité dans le contrat cédé) : la cession produit effet à l'égard du cédé lorsque l'acte de cession lui est **notifié** ou lorsqu'il en **prend acte** ([[1216]], al. 2)."
+          "**Contrat *intuitu personae*** : longtemps réputé incessible, il peut être cédé **avec l'accord du cédé** (Com., 7 janv. 1992, n° 90-14.831 ; Civ. 1re, 6 juin 2000) ; [[1216]] ne pose aucune restriction.",
+          "**L'accord du cédé** : avant la réforme, son consentement était une **condition de validité** (Com., 6 mai 1997, deux arrêts). Depuis, la chambre commerciale a jugé que cet accord **peut être donné sans forme**, pourvu qu'il soit **non équivoque**, et **prouvé par tout moyen** ; surtout, **son défaut n'emporte pas la nullité de la cession mais son inopposabilité au cédé** (Com., 24 avr. 2024, n° 22-15.958 ; déjà, sous l'empire du droit antérieur, Civ. 3e, 9 févr. 2017, n° 15-15.428). L'accord est donc une **autorisation**, pas un consentement faisant du cédé une partie à la cession ; elle pourrait, selon certains auteurs, faire l'objet d'un contrôle en cas d'abus. Faute d'accord, les relations du cédé avec les autres parties ne changent pas et le cessionnaire doit assumer les obligations du cédant : les praticiens stipulent souvent l'accord du cédé comme condition suspensive ou résolutoire de la cession.",
+          "**Accord donné par avance** (clause de cessibilité dans le contrat cédé) : la cession produit effet à l'égard du cédé lorsque l'acte de cession lui est **notifié** ou lorsqu'il en **prend acte** ([[1216]], al. 2). Il y a prise d'acte, par exemple, lorsque le preneur paie son loyer entre les mains du cessionnaire (Com., 9 juin 2022, n° 20-18.490).",
+          "**Clause de cession par avance** : dite clause conventionnelle de cession, elle donne d'avance l'accord du cédé à une cession future ; ce n'est pas un consentement qui ferait du cédé une partie à la cession."
         ] },
         { h: "Conditions de forme" },
         { p: "La cession doit être **constatée par écrit, à peine de nullité** ([[1216]], al. 3), pour les cessions conclues depuis le 1er octobre 2016 (auparavant : contrat consensuel). L'écrit concerne l'acte de cession, pas l'accord du cédé. Avant la réforme, on exigeait en outre les formalités de l'ancien article 1690 ; elles ont perdu leur intérêt dès lors que l'accord du cédé est requis." },
@@ -137,16 +138,16 @@ OBL.chapitres.push({
         { p: "L'ancien article 1251 énumérait **cinq cas** limitatifs (créancier payant un créancier préférable, acquéreur d'immeuble payant les créanciers hypothécaires, personne tenue avec d'autres ou pour d'autres, héritier acceptant à concurrence de l'actif net, paiement des frais funéraires). L'ordonnance de 2016 **généralise** : la subrogation a lieu **par le seul effet de la loi** au profit de celui qui :" },
         { liste: [
           "**paie** la dette ;",
-          "**y a un intérêt légitime** : notion ouverte, qui écarte le paiement malveillant (le rapport au Président de la République cite le paiement fait par un concurrent pour nuire) ;",
+          "**y a un intérêt légitime** : notion ouverte, qui écarte le paiement malveillant (le rapport au Président de la République cite le paiement fait par un concurrent pour nuire) ; l'intérêt peut être moral ou affectif (Civ. 1re, 13 nov. 2025, n° 23-16.988, sous les textes antérieurs à la réforme ; Civ. 2e, 27 nov. 2025, n° 23-13.753, sous [[1346]]) ;",
           "et dont le paiement **libère envers le créancier celui sur qui doit peser la charge définitive** de tout ou partie de la dette."
         ] },
-        { p: "Le *solvens* n'a donc plus à être tenu, même pour partie, à la dette. Il ne doit simplement pas être lui-même le **débiteur définitif** de ce qu'il paie : le codébiteur solidaire n'est subrogé que pour ce qui excède sa propre part ([[1317]])." },
+        { p: "Le *solvens* n'a donc plus à être tenu, même pour partie, à la dette. Il ne doit simplement pas être lui-même le **débiteur définitif** de ce qu'il paie : le codébiteur solidaire, comme le coresponsable condamné *in solidum*, n'est subrogé que pour ce qui excède sa propre part ([[1317]])." },
         { h: "La subrogation conventionnelle consentie par le créancier ([[1346-1]])" },
         { liste: [
           "**Expresse** : l'intention de transmettre la créance doit être certaine, puisque la subrogation déroge à l'effet extinctif du paiement ; le mot « subrogation » n'est pas indispensable.",
           "**Concomitante au paiement** : une subrogation postérieure est impossible (la créance est déjà éteinte). Exception : le subrogeant peut avoir manifesté, **dans un acte antérieur**, la volonté que son cocontractant lui soit subrogé **lors du paiement** (subrogation anticipée, admise par Com., 29 janv. 1991) ; elle produit effet au jour du paiement. La concomitance se prouve **par tous moyens** ; une quittance subrogative à date certaine reste prudente.",
           "**Paiement de la dette d'autrui** : celui qui paie sa propre dette ne peut en principe être subrogé ; mais celui qui s'acquitte d'une dette qui lui est personnelle peut bénéficier d'une subrogation conventionnelle s'il a libéré, par son paiement, **celui sur qui doit peser la charge définitive** de la dette (Civ. 1re, 22 juill. 1987).",
-          "Aucune autre condition de forme. Application courante : l'**affacturage** (le *factor* paie les créances d'un fournisseur et est subrogé contre ses clients)."
+          "Aucune autre condition de forme. Application courante : l'**affacturage** (le *factor* paie les créances d'un fournisseur et est subrogé contre ses clients). Le Code conserve des textes propres à cette subrogation malgré la généralisation de la subrogation légale, pour éviter des difficultés dans la pratique contractuelle."
         ] },
         { h: "La subrogation conventionnelle consentie par le débiteur ([[1346-2]])" },
         { p: "Le débiteur **emprunte** pour payer sa dette et subroge le **prêteur** dans les droits du créancier (subrogation *ex parte debitoris*). Deux régimes :" },
@@ -168,10 +169,10 @@ OBL.chapitres.push({
         ] },
         { h: "Ce qui est transmis ([[1346-4]])" },
         { liste: [
-          "**La créance elle-même**, avec sa nature (civile ou commerciale, à terme ou conditionnelle) et **ses accessoires** : sûretés (cautionnement, hypothèque, gage), actions en justice (nullité, résolution, garantie).",
-          "**Sauf les droits exclusivement attachés à la personne du créancier** (par exemple des prérogatives de puissance publique).",
+          "**La créance elle-même**, avec sa nature (civile ou commerciale, à terme ou conditionnelle ; Civ. 3e, 7 juill. 2010) et **ses accessoires** : sûretés (cautionnement, hypothèque, gage), actions en justice (nullité, résolution, garantie).",
+          "**Sauf les droits exclusivement attachés à la personne du créancier** (par exemple des prérogatives de puissance publique ; Civ. 1re, 4 avr. 2024, n° 22-23.040 y range comme exception purement personnelle la faculté du prêteur d'exiger le remboursement anticipé de toutes les sommes dues à l'échéance du prêt).",
           "**Intérêts** : le subrogé n'a droit qu'à l'**intérêt légal à compter d'une mise en demeure**, sauf nouvel intérêt convenu avec le débiteur ; ces intérêts sont garantis par les sûretés, dans la limite des engagements initiaux des tiers garants ([[1346-4]], al. 2).",
-          "**Avec ses vices** : le débiteur oppose au subrogé les exceptions **inhérentes à la dette** (nullité, exception d'inexécution, résolution, compensation de dettes connexes, clause limitative, prescription calculée selon la nature d'origine de la créance) et celles **nées de ses rapports avec le subrogeant avant** que la subrogation lui soit devenue opposable (terme, remise de dette, compensation de dettes non connexes) ([[1346-5]], al. 3)."
+          "**Avec ses vices** : le débiteur oppose au subrogé les exceptions **inhérentes à la dette** (nullité, exception d'inexécution, résolution, compensation de dettes connexes, clause limitative, prescription calculée selon la nature d'origine de la créance ; pour la compensation, Civ. 3e, 29 janv. 2026, n° 24-17.255) et celles **nées de ses rapports avec le subrogeant avant** que la subrogation lui soit devenue opposable (terme, remise de dette, compensation de dettes non connexes) ([[1346-5]], al. 3)."
         ] },
         { h: "Les deux limites de la transmission" },
         { schema: { type: "etapes", titre: "Calculer le recours subrogatoire", etapes: [

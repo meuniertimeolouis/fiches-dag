@@ -24,7 +24,7 @@ OBL.chapitres.push({
       titre: "La loi Badinter : conditions d'application",
       contenu: [
         { p: "Défendue par la doctrine (Tunc) qui voyait dans l'accident automobile un **risque social**, la loi du 5 juillet 1985 ne cherche pas un coupable mais un **débiteur solvable**, c'est-à-dire un assureur. Elle s'applique aux victimes « même lorsqu'elles sont transportées en vertu d'un contrat » ([[L85-1|art. 1er de la loi de 1985]]) : elle **dépasse la distinction** entre responsabilité contractuelle et délictuelle." },
-        { attention: "La loi instaure un régime **autonome et d'ordre public**, qui **exclut** le droit commun (jurisprudence constante, rappelée par Civ. 2e, 31 mars 2022). Si ses conditions sont réunies, on n'invoque ni [[1240]] ni [[1242]], al. 1er." },
+        { attention: "La loi instaure un régime **autonome et d'ordre public**, qui **exclut** le droit commun (jurisprudence constante, rappelée par Civ. 2e, 31 mars 2022). La loi ne répare toutefois pas les dommages causés aux **marchandises** transportées par un véhicule accidenté, qui restent hors de son champ (Civ. 2e, 7 avr. 2022, n° 21-11.137). Si ses conditions sont réunies, on n'invoque ni [[1240]] ni [[1242]], al. 1er." },
         { schema: { type: "arbre", titre: "Quatre conditions cumulatives ([[L85-1|art. 1er]])", racine: { t: "Application de la loi de 1985", enfants: [
           { t: "Un accident de la circulation", d: "événement soudain et fortuit, en lien avec la circulation" },
           { t: "Un véhicule terrestre à moteur (VTAM)", d: "avec ses remorques ; sauf trains et tramways sur voie propre" },
@@ -100,7 +100,7 @@ OBL.chapitres.push({
           "Proches de la victime : leur préjudice est réparé en tenant compte des limitations ou exclusions opposables à la victime directe ([[L85-6|art. 6]])."
         ] },
         { h: "La procédure d'indemnisation" },
-        { p: "L'assureur doit présenter une **offre d'indemnité** à la victime d'une atteinte à la personne au plus tard **huit mois après l'accident** (C. assur., art. L. 211-9). Sanctions : offre tardive, intérêts au double du taux légal (art. L. 211-13) ; offre manifestement insuffisante, pénalité (art. L. 211-14). L'acceptation forme une transaction. Si le responsable n'est pas assuré ou reste inconnu, le **FGAO** (fonds de garantie des assurances obligatoires de dommages) indemnise." }
+        { p: "L'assureur doit présenter une **offre d'indemnité** à la victime d'une atteinte à la personne au plus tard **huit mois après l'accident** (C. assur., art. L. 211-9). Sanctions : offre tardive, intérêts au double du taux légal (art. L. 211-13) ; offre manifestement insuffisante, pénalité (art. L. 211-14). L'acceptation forme une transaction. Si la victime accepte l'offre, le paiement doit intervenir **dans le mois** de l'acceptation (art. L. 211-18) ; si elle la refuse, elle agit en justice contre l'assureur. Si le responsable n'est pas assuré ou reste inconnu, le **FGAO** (fonds de garantie des assurances obligatoires de dommages) indemnise." }
       ]
     },
     {
@@ -122,14 +122,15 @@ OBL.chapitres.push({
           "Appréciation *in abstracto*, selon toutes les circonstances : **présentation**, **usage raisonnablement attendu**, **moment de la mise en circulation** ([[1245-3]], al. 2). Un produit n'est pas défectueux du seul fait qu'un autre, plus perfectionné, est sorti ensuite (al. 3).",
           "**Défaut d'information** : une notice qui ne signale pas un risque suffit souvent à caractériser le défaut ; mais la mention du risque n'exonère pas toujours, notamment si le bilan bénéfice/risque est défavorable.",
           "Le respect des règles de l'art, des normes ou d'une **autorisation administrative** (AMM) n'exclut pas le défaut ([[1245-9]]).",
-          "Si le **type ou la série** est défectueux, inutile de prouver le défaut de l'exemplaire utilisé (CJUE, 5 mars 2015)."
+          "Si le **type ou la série** est défectueux, inutile de prouver le défaut de l'exemplaire utilisé (CJUE, 5 mars 2015).",
+          "Preuve **double** : la victime établit le **défaut** et le lien causal avec le dommage, mais aussi que le dommage est **imputable au produit** ; la Cour de cassation l'a affirmé à propos de l'intoxication d'un agriculteur par un produit phytosanitaire (Civ. 1re, 21 oct. 2020, Monsanto)."
         ] },
         { h: "La preuve" },
         { p: "La victime prouve le **dommage**, le **défaut** et le **lien de causalité** ([[1245-8]]). Elle peut recourir à des **présomptions graves, précises et concordantes** (Civ. 1re, 22 mai 2008, vaccin contre l'hépatite B), même quand la science n'établit ni n'exclut le lien (CJUE, 21 juin 2017, aff. C-621/15), mais sans présomption irréfragable. L'appréciation des indices (proximité temporelle, absence d'antécédents) relève des juges du fond." },
         { h: "Le producteur et les autres responsables" },
         { schema: { type: "tableau", titre: "Qui répond du défaut ?", colonnes: ["Personne", "Régime", "Texte"], lignes: [
           ["Fabricant du produit fini, producteur d'une matière première, fabricant d'une partie composante (à titre professionnel)", "**Producteur**", "[[1245-5]], al. 1er"],
-          ["Celui qui appose son nom ou sa marque ; l'importateur dans l'Union", "**Assimilé** au producteur", "[[1245-5]], al. 2"],
+          ["Celui qui appose son nom ou sa marque ; l'importateur dans l'Union", "**Assimilé** au producteur", "[[1245-5]], al. 2 (la marque apposée suffit : CJUE, 7 juill. 2022, aff. C-264/21)"],
           ["Fabricant de la composante et celui qui l'a incorporée", "**Solidairement** responsables", "[[1245-7]]"],
           ["Vendeur, loueur (sauf crédit-bailleur), autre fournisseur professionnel", "**Subsidiaire** : seulement si le producteur **ne peut être identifié**, et il s'exonère en désignant son fournisseur ou le producteur dans les **trois mois** de la demande", "[[1245-6]]"]
         ] } },
@@ -152,9 +153,9 @@ OBL.chapitres.push({
         { h: "Des causes d'exonération limitativement énumérées" },
         { schema: { type: "tableau", titre: "Ce que le producteur peut invoquer", colonnes: ["Moyen", "Effet", "Texte"], lignes: [
           ["Absence de mise en circulation ; défaut né après la mise en circulation ; produit non destiné à la distribution", "Exonération totale", "[[1245-10]], 1° à 3°"],
-          ["**Risque de développement** : l'état des connaissances scientifiques et techniques, lors de la mise en circulation, ne permettait pas de déceler le défaut", "Exonération totale, **sauf** dommage causé par un élément ou un produit du corps humain", "[[1245-10]], 4° ; [[1245-11]]"],
+          ["**Risque de développement** : l'état des connaissances scientifiques et techniques, lors de la mise en circulation, ne permettait pas de déceler le défaut", "Exonération totale, **sauf** dommage causé par un élément ou un produit du corps humain", "[[1245-10]], 4° ; [[1245-11]] (distinction jugée conforme à la Constitution : Cons. const., 10 mars 2023, n° 2023-1036 QPC)"],
           ["Conformité à des règles impératives législatives ou réglementaires", "Exonération totale", "[[1245-10]], 5°"],
-          ["Faute de la victime (ou d'une personne dont elle répond)", "Réduction ou suppression, selon les circonstances", "[[1245-12]]"],
+          ["Faute de la victime (ou d'une personne dont elle répond)", "Réduction ou suppression, selon les circonstances ; la faute qui n'a fait qu'**aggraver** le dommage sans le causer est écartée (Civ. 1re, 2 juin 2021)", "[[1245-12]]"],
           ["**Fait d'un tiers**", "**Aucune** réduction envers la victime (seulement un recours)", "[[1245-13]]"],
           ["Respect des normes ou autorisation administrative", "**Aucun** effet", "[[1245-9]]"],
           ["Clause limitative ou exonératoire", "**Réputée non écrite**, sauf entre professionnels pour les biens à usage professionnel", "[[1245-14]]"]
@@ -163,10 +164,10 @@ OBL.chapitres.push({
         { h: "L'articulation avec le droit commun" },
         { p: "[[1245-17]] réserve les autres actions, mais la CJCE l'a lu restrictivement (CJCE, 25 avr. 2002, *González Sánchez*, aff. C-183/00) : la victime **ne peut pas** invoquer un autre régime reposant sur le **même fondement** (le défaut de sécurité) ; elle **peut** invoquer un fondement **différent**, comme la **garantie des vices cachés** ou la **faute**. Le juge doit relever d'office le régime spécial quand les faits s'y prêtent (Ch. mixte, 7 juill. 2017)." },
         { liste: [
-          "Exclus contre le producteur : l'obligation de sécurité et la responsabilité du fait des choses, qui procèdent nécessairement d'un défaut de sécurité (Civ. 1re, 11 juill. 2018, n° 17-20.154).",
+          "Exclus contre le producteur : l'obligation de sécurité et la responsabilité du fait des choses, qui procèdent nécessairement d'un défaut de sécurité (Civ. 1re, 11 juill. 2018, n° 17-20.154). Les **vices cachés** restent possibles (Civ. 1re, 19 avr. 2023, n° 21-23.126).",
           "Admise : la **faute distincte du défaut**, par exemple le **maintien en circulation** d'un produit dont le producteur connaît le défaut ou un **manquement à son devoir de vigilance** sur les risques (Civ. 1re, 15 nov. 2023, n° 22-21.174 et trois autres, Mediator). Intérêt majeur : échapper au délai de trois ans et bénéficier de la prescription de droit commun (dix ans à compter de la consolidation pour un dommage corporel, [[2226]]).",
           "Le principe d'exclusivité ne vise que les dommages causés à un bien d'usage **privé** ; pour un bien professionnel, d'autres régimes restent ouverts (CJCE, 4 juin 2009, aff. C-285/08).",
-          "Il ne protège que le **producteur** : l'**utilisateur** professionnel d'un produit défectueux (hôpital, médecin, exploitant) répond selon son propre régime (CJUE, 21 déc. 2011, aff. C-495/10 ; pour le professionnel de santé, responsabilité pour faute : Civ. 1re, 12 juill. 2012)."
+          "Il ne protège que le **producteur** : l'**utilisateur** professionnel d'un produit défectueux (hôpital, médecin, exploitant) répond selon son propre régime (CJUE, 21 déc. 2011, aff. C-495/10 ; pour le professionnel de santé, responsabilité pour faute : Civ. 1re, 12 juill. 2012). Condamné, l'utilisateur sans faute dans l'usage peut obtenir du producteur le remboursement **intégral** de ce qu'il a versé (Civ. 1re, 18 févr. 2026, n° 24-19.881)."
         ] },
         { h: "La réparation" },
         { p: "Réparation intégrale des atteintes à la personne ; pour les biens, seulement ceux **autres que le produit lui-même** et au-delà d'une **franchise de 500 €** fixée par décret ([[1245-1]], al. 2)." },
@@ -187,7 +188,7 @@ OBL.chapitres.push({
       contenu: [
         { p: "Création prétorienne (arrêt du 27 novembre 1844, sous le visa des articles 544 et 1382 anciens), la responsabilité s'est détachée de la faute et de l'abus de droit pour reposer sur un principe autonome : « **nul ne doit causer à autrui un trouble anormal de voisinage** » (Civ. 2e, 19 nov. 1986). La loi du 15 avril 2024 l'a codifiée à [[1253]], en reprenant l'essentiel de la jurisprudence." },
         { schema: { type: "arbre", titre: "La responsabilité de l'article 1253", racine: { t: "Responsabilité **de plein droit** ([[1253]], al. 1er)", enfants: [
-          { t: "Un trouble", d: "bruit, odeurs, vibrations, fumées, perte d'ensoleillement, poussières ; en principe durable, parfois un événement unique" },
+          { t: "Un trouble", d: "bruit, odeurs, vibrations, fumées, perte d'ensoleillement, poussières ; en principe durable, parfois un événement unique (Civ. 3e, 8 nov. 2018)" },
           { t: "Anormal", d: "excède les inconvénients normaux de voisinage : intensité, heure, lieu (ville ou campagne), seuil de la personne raisonnable ; peu importe que l'activité soit licite ou autorisée" },
           { t: "Causé par un responsable énuméré", d: "propriétaire, locataire, occupant sans titre, titulaire d'un titre d'occupation ou d'exploitation, maître d'ouvrage ou celui qui en exerce les pouvoirs" },
           { t: "À un voisin", d: "toute personne proche qui subit le trouble ; pas de contiguïté exigée" },

@@ -129,11 +129,11 @@ OBL.chapitres.push({
           "**Atteinte à la personne** : pas d'effet justificatif, car le corps humain est **indisponible** (art. 16-1) et le droit à réparation du dommage corporel est d'ordre public. Le consentement pourra seulement être analysé comme une **faute de la victime** réduisant son indemnité."
         ] },
         { h: "Les clauses exonératoires ou limitatives de responsabilité" },
-        { p: "Rares en matière délictuelle (pas de relation préalable), elles existent : le panneau « la direction décline toute responsabilité » à l'entrée d'un magasin. Principe : **nullité**, car [[1240]] et [[1241]] sont **d'ordre public** et ne peuvent être écartés par avance (Civ. 2e, 17 févr. 1955 ; Civ. 1re, 5 juill. 2017, n° 16-13.407, à propos d'une clause invoquée contre une action pour réticence dolosive)." },
+        { p: "Rares en matière délictuelle (pas de relation préalable), elles existent : le panneau « la direction décline toute responsabilité » à l'entrée d'un magasin. Principe : **nullité**, car [[1240]] et [[1241]] sont **d'ordre public** et ne peuvent être écartés par avance (Civ. 2e, 17 févr. 1955 ; Civ. 1re, 5 juill. 2017, n° 16-13.407, à propos d'une clause de garantie invoquée contre une action en dommages-intérêts pour réticence dolosive, exercée sans demande d'annulation du contrat : la faute a été commise avant la formation du contrat, ce qui explique le terrain délictuel malgré l'existence d'un contrat entre les parties)." },
         { liste: [
           "**Portée** : la motivation (caractère d'ordre public de la responsabilité **pour faute**) laisse penser que la clause pourrait être valable pour une responsabilité délictuelle **sans faute** (fait des choses, fait d'autrui). Question non tranchée.",
           "**Brèche** : le tiers qui invoque un manquement contractuel peut se voir opposer les **conditions et limites** du contrat (Com., 3 juill. 2024, n° 21-14.947). Une clause limitative peut donc jouer contre une victime qui agit sur le terrain délictuel, même en cas de faute ; les 1re et 2e chambres civiles ne se sont pas encore prononcées.",
-          "**Réforme** : le projet de 2017 (art. 1281) et la proposition sénatoriale de 2020 (art. 1284) admettraient ces clauses en matière extracontractuelle, sauf pour le dommage corporel et, selon les articles suivants, pour la responsabilité pour faute. Non adoptés."
+          "**Réforme** : le projet de 2017 (art. 1281) et la proposition sénatoriale de 2020 (art. 1284) admettraient ces clauses en principe en matière extracontractuelle, avec deux exceptions : le **dommage corporel** et la **responsabilité pour faute**, ce qui conforterait la solution de 2017. Non adoptés."
         ] }
       ]
     }

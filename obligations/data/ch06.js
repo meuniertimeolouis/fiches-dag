@@ -15,19 +15,21 @@ OBL.chapitres.push({
           ["Si la forme manque", "Contrat **nul** (sauf régularisation) : [[1172]], al. 2", "Contrat valable mais difficile à prouver ; autres modes de preuve parfois possibles", "Contrat valable entre les parties mais **inopposable** aux tiers"],
           ["Texte clé", "[[1172]]", "[[1173]]", "[[1173]]"]
         ] } },
-        { attention: "Un contrat écrit n'est pas forcément solennel. Sur une copie, demandez-vous toujours : l'écrit est-il exigé **à peine de nullité** ? Si le texte ne le dit pas, c'est en principe une exigence de preuve." }
+        { attention: "Un contrat écrit n'est pas forcément solennel. Sur une copie, demandez-vous toujours : l'écrit est-il exigé **à peine de nullité** ? Si le texte ne le dit pas, c'est en principe une exigence de preuve." },
+        { p: "Les effets sont radicalement différents : l'écrit exigé *ad probationem* ([[1359]], au-delà de 1 500 euros) laisse le contrat valable et sa preuve peut parfois se faire par d'autres moyens ; l'écrit *ad solemnitatem* est, lui, le plus souvent **sans remède** en cas d'absence. Les formes de publicité visent à informer les tiers (enregistrement fiscal, publicité foncière de tout transfert de droit immobilier) : leur défaut affecte en principe l'**opposabilité**, non la validité ([[1173]])." },
+        { p: "**Formalisme conventionnel** : si les parties ont fait d'une formalité (par exemple la signature d'un compromis chez le notaire) la condition de leur engagement, leur consentement peut être jugé subordonné à cette formalité et le contrat non formé ; si elle n'est qu'accessoire (par exemple probatoire), l'accord oral ou par courriels suffit à former le contrat (ex. vente consensuelle d'un terrain, art. 1582 et 1583). C'est une question de volonté des parties, à apprécier d'après les faits." }
       ]
     },
     {
       titre: "Consensualisme et renaissance du formalisme",
       contenu: [
-        { p: "Le droit romain classique était formaliste. Le consensualisme s'impose sous l'influence des canonistes (respect de la parole donnée) : « on lie les bœufs par les cornes et les hommes par les paroles » (Loysel, XVIIe siècle). Le Code de 1804 le retient implicitement ; la réforme de 2016 l'écrit ([[1172]])." },
-        { p: "Depuis le milieu du XXe siècle, le **formalisme renaît** comme outil de **protection** : l'écrit fait prendre conscience de l'engagement et permet d'imposer des **mentions obligatoires** (crédit à la consommation, assurance : exclusions en caractères très apparents). Critique : la nullité est encourue dès qu'une mention manque, même si le profane a compris ; le formalisme devient parfois un outil de régulation des professionnels." },
+        { p: "Le droit romain classique était formaliste. Le consensualisme s'impose sous l'influence des canonistes (respect de la parole donnée) : « on lie les bœufs par les cornes et les hommes par la parole » (Loysel). Il n'est admis comme principe qu'à partir du XVIe siècle. Le Code de 1804 le retient implicitement, convaincu de ses avantages (simplicité, rapidité, économie, cohérence avec l'autonomie de la volonté) ; la réforme de 2016 l'écrit ([[1172]]). La jurisprudence l'affirmait déjà (Civ. 3e, 27 nov. 1990, pour la vente)." },
+        { p: "Depuis le milieu du XXe siècle, le **formalisme renaît** comme outil de **protection** : l'écrit fait prendre conscience de l'engagement et permet d'imposer des **mentions obligatoires** (crédit à la consommation, assurance : exclusions en caractères très apparents). Critique : la nullité est encourue dès qu'une mention manque, même si le profane a compris ; le formalisme devient parfois un outil de régulation des professionnels, ce qui explique la rigueur de certaines sanctions. Le **formalisme informatif** suppose que l'acte soit lu et compris, ce qui est incertain pour les contrats complexes, et les sanctions sont hétérogènes. Exemples : exclusions de garantie en caractères très apparents (C. assur., art. L. 112-4) ; mentions du contrat de crédit (C. consom., art. L. 312-12)." },
         { schema: { type: "frise", titre: "Le cautionnement : de la preuve à la validité", evenements: [
           { date: "Code de 1804", t: "Mention manuscrite = règle de preuve", d: "ancien art. 1326 : somme en lettres et en chiffres" },
-          { date: "1983-1987", t: "Civ. 1re : règle de validité", d: "la mention protège la caution : son absence entraîne la nullité (Civ. 1re, 30 juin 1987)" },
-          { date: "15 nov. 1989", t: "Civ. 1re : retour à la preuve", d: "la jurisprudence ne peut pas créer un contrat solennel" },
-          { date: "Ord. 15 sept. 2021", t: "Art. 2297 C. civ.", d: "la caution personne physique **appose elle-même** la mention, **à peine de nullité** ; le mot « manuscrite » disparaît (mention électronique possible) et le libellé est libre" }
+          { date: "1983-1987", t: "Civ. 1re : règle de validité", d: "la mention protège la caution : son absence entraîne la nullité (Civ. 1re, 19 avr. 1983, puis 30 juin 1987)" },
+          { date: "15 nov. 1989", t: "Civ. 1re : retour à la preuve", d: "critique : le juge n'a pas le pouvoir de créer un contrat solennel et la nullité automatique le privait d'apprécier la réelle conscience de la caution ; la mention redevient une règle de preuve" },
+          { date: "Ord. 15 sept. 2021", t: "Art. 2297 C. civ.", d: "la caution personne physique **appose elle-même** la mention qu'elle s'engage à payer ce que doit le débiteur, dans la limite d'un montant en principal et accessoires en toutes lettres et en chiffres, **à peine de nullité** ; le mot « manuscrite » disparaît (mention électronique possible) et le libellé est libre" }
         ] } }
       ]
     },
@@ -36,14 +38,14 @@ OBL.chapitres.push({
       contenu: [
         { def: { terme: "Contrat solennel", texte: "contrat dont la **validité** est subordonnée à des formes déterminées par la loi ([[1109]], al. 2 ; [[1172]], al. 2)." } },
         { schema: { type: "arbre", titre: "Deux degrés de solennité", racine: { t: "Contrat solennel", enfants: [
-          { t: "Acte notarié", d: "actes graves : donation ([[931]]), contrat de mariage ([[1394]]), hypothèque, subrogation consentie par le débiteur sans le concours du créancier ([[1346-2]], al. 2), vente d'immeuble à construire" },
-          { t: "Écrit sous signature privée", d: "cession de créance ([[1322]]), cession de contrat ([[1216]], al. 3), crédit à la consommation, gage, cautionnement d'une personne physique" }
+          { t: "Acte notarié", d: "actes graves : donation ([[931]]), contrat de mariage ([[1394]]), hypothèque (art. 2416), subrogation consentie par le débiteur sans le concours du créancier ([[1346-2]], al. 2), vente d'immeuble à construire, location-accession. Le notaire, tenu d'un devoir d'information et de conseil, éclaire les parties" },
+          { t: "Écrit sous signature privée", d: "cession de créance ([[1322]]), cession de contrat ([[1216]], al. 3), cession de parts sociales, courtage matrimonial, prêt à la consommation, gage (art. 2336), cautionnement d'une personne physique (art. 2297)" }
         ] } } },
-        { p: "Souplesse pour la donation : la jurisprudence admet la **donation déguisée** et le **don manuel** (remise de la chose), qui échappent à l'acte notarié." },
+        { p: "Souplesse pour la donation : la jurisprudence admet la **donation déguisée** et le **don manuel** (remise de la chose), qui échappent à l'acte notarié (la jurisprudence interprète strictement les textes imposant la solennité, mais est souple ici). Le droit électronique pose un principe d'**équivalence** des formalités électroniques ([[1174]] s.)." },
         { h: "Régime" },
         { liste: [
           "Défaut de forme : **nullité**, « sauf possible régularisation » ([[1172]], al. 2) ; sa nature (relative ou absolue) dépend du texte ou de l'intérêt protégé. Certains textes prévoient une autre sanction (déchéance du droit aux intérêts en matière de crédit).",
-          "**Parallélisme des formes** : la promesse d'un contrat solennel doit respecter la même forme (promesse de donation par acte notarié). La promesse d'hypothèque sous seing privé est admise, mais elle ne se résout qu'en dommages et intérêts.",
+          "**Parallélisme des formes** : la promesse d'un contrat solennel doit respecter la même forme (promesse de donation par acte notarié). La promesse d'hypothèque sous seing privé est admise (solution acquise depuis le XIXe siècle ; Civ. 1re, 21 mars 2006), mais elle ne crée qu'une obligation de faire qui se résout en dommages et intérêts : le juge ne peut ordonner l'inscription forcée. L'exception au parallélisme n'est donc qu'**apparente**.",
           "**Forme électronique** : équivalente à l'écrit papier ([[1174]]), sauf pour les actes sous signature privée du droit de la famille et des successions ([[1175]]). La mention manuscrite peut être apposée électroniquement si le procédé garantit qu'elle émane de celui qui s'oblige."
         ] }
       ]
@@ -52,15 +54,15 @@ OBL.chapitres.push({
       titre: "Les contrats réels",
       contenu: [
         { def: { terme: "Contrat réel", texte: "contrat dont la **formation** est subordonnée à la **remise d'une chose** ([[1109]], al. 3 ; [[1172]], al. 3)." } },
-        { p: "Hérités du droit romain : prêt à usage ([[1875]]), prêt de consommation ([[1892]]), dépôt ([[1919]]). La doctrine y voit un archaïsme : la remise pourrait être une simple obligation d'exécution, ce qui rendrait ces contrats consensuels et synallagmatiques." },
+        { p: "Hérités du droit romain : prêt à usage ([[1875]]), prêt de consommation ([[1892]]), dépôt ([[1919]]) et, avant 2006, gage. Dans ces contrats, la remise paraissait nécessaire à l'existence même de la convention (le dépositaire ne peut garder une chose qu'il n'a pas). La doctrine y voit un archaïsme : la remise pourrait être une simple obligation d'exécution, ce qui rendrait ces contrats consensuels et synallagmatiques. Longtemps insensible, la jurisprudence a maintenu la catégorie (Civ. 1re, 20 juill. 1981 pour le prêt) et y a même ajouté le don manuel. Elle subsiste ([[1172]], al. 3) : l'avant-projet de réforme des contrats spéciaux conserve le caractère réel du prêt à usage désintéressé, du prêt de consommation gratuit et du dépôt." },
         { schema: { type: "tableau", titre: "Une catégorie en recul", colonnes: ["Contrat", "Qualification actuelle", "Source"], lignes: [
           ["Prêt consenti par un **professionnel du crédit**", "**Consensuel** : la remise des fonds est une obligation du prêteur", "Civ. 1re, 28 mars 2000"],
           ["Prêt consenti par un **particulier**", "**Réel**", "Civ. 1re, 7 mars 2006"],
           ["Gage", "Plus réel mais **solennel** (écrit exigé ; gage sans dépossession possible)", "Ord. 23 mars 2006, art. 2336"],
           ["Don manuel", "Réel (la remise remplace l'acte notarié)", "Jurisprudence"],
-          ["Dépôt, prêt à usage", "Réels", "[[1919]], [[1875]]"]
+          ["Dépôt, prêt à usage", "Traditionnellement réels ; la position de la jurisprudence reste à définir", "[[1919]], [[1875]]"]
         ] } },
-        { p: "Régime : sans remise, **pas de contrat** et pas d'exécution forcée. La **promesse** de contrat réel est valable mais ne vaut pas contrat : elle ne se résout qu'en dommages et intérêts." }
+        { p: "Régime : sans remise, le contrat n'est pas valablement formé : **pas de contrat** et pas d'exécution forcée de la remise. La **promesse** de contrat réel, que les tribunaux admettent malgré l'économie du contrat réel, est valable mais ne vaut pas contrat : elle ne se résout qu'en dommages et intérêts, comme la promesse de contrat solennel. Pour le prêt entre particuliers, il faut aussi se demander si l'accord peut être prouvé ([[1359]] : preuve libre sous 1 500 euros)." }
       ]
     }
   ],

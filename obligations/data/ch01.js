@@ -43,6 +43,9 @@ OBL.chapitres.push({
           { lien: "il promet d'exécuter", t: "Obligation civile", d: "la promesse la transforme : exécution forcée possible" }
         ] } } },
         { arret: { ref: "Cass. civ. 1re, 10 oct. 1995, n° 93-20.300", apport: "L'engagement unilatéral pris en connaissance de cause d'exécuter une obligation naturelle transforme celle-ci en **obligation civile** : le créancier peut alors en exiger l'exécution en justice." } },
+        { arret: { ref: "Req. 17 janv. 1938", apport: "Le paiement spontané d'une dette **prescrite** est valable et ne peut être répété. La décision ne vise pas expressément l'obligation naturelle, mais elle est l'application classique de la conception d'Aubry et Rau. Même solution aujourd'hui, de façon textuelle : [[2249]]." } },
+        { arret: { ref: "Req. 7 mars 1911", apport: "Exemple type de la thèse de Ripert : entre frères et sœurs, il n'existe pas d'obligation alimentaire légale, mais un devoir moral. Celui qui s'engage à l'exécuter se lie juridiquement (voir aussi, pour des illustrations plus récentes, Civ. 1re, 4 janv. 2005 ; 23 mai 2006 ; 17 oct. 2012 ; 11 oct. 2017, n° 16-24.533)." } },
+        { p: "Cas voisin de la dette prescrite : celui d'un débiteur placé dans une procédure de rétablissement personnel (Civ. 2e, 22 mars 2018, n° 17-14.024)." },
         { p: "La vraie difficulté pratique est donc de **caractériser** l'obligation naturelle préexistante : c'est elle qui justifie que le paiement ou la promesse ne soient pas une libéralité ou un paiement de l'indu." }
       ]
     },

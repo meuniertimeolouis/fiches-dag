@@ -432,11 +432,38 @@ function articlesView(box, list, ctx) {
 /* ---------- Outils (obligations) ---------- */
 const LOG = window.OBL_LOGIQUE || { KINDS: {}, DEFAUT: "" };
 const logOf = (r, i) => ((LOG[r.id] || {}).c || [])[i] || { k: "cond" };
+const FORM = window.OBL_FORMULES || {};
+const fmtA = t => fmt(String(t).replace(/\[\[([^\]|]+)\]\]/g, (m, n) => artBy(n) ? m : "art. " + n));
+function formuleHtml(r) {
+  const f = FORM[r.id]; if (!f) return "";
+  const K = LOG.KINDS || {};
+  const all = (r.conditions || []).map((c, i) => ({ n: c.nom, k: logOf(r, i).k }));
+  let items = [], plus = [];
+  if (f.conds) items = f.conds.map(t => ({ t, k: "cond" }));
+  else {
+    all.forEach(x => {
+      if (x.k === "niv2") return plus.push(x.n);
+      if (!(K[x.k] || {}).cumul) return;
+      const last = items[items.length - 1];
+      if (x.k === "alt" && last && last.k === "alt") last.t += " ou " + x.n.charAt(0).toLowerCase() + x.n.slice(1);
+      else items.push({ t: x.n, k: x.k });
+    });
+  }
+  const tag = k => k === "alt" ? `<span class="fm-tag">alternatives : l'une suffit</span>` : k === "sous" ? `<span class="fm-tag">selon le cas</span>` : k === "neg" ? `<span class="fm-tag">négative</span>` : "";
+  return `<section class="sec formule" id="formule"><h2>Formule d'application</h2><div class="fm">
+    <div class="fm-row"><span class="fm-k">Pour que</span><p>${fmtA(f.pour)}</p></div>
+    <div class="fm-row"><span class="fm-k">Il faut</span><div><p>la réunion des conditions suivantes :</p><ul class="fm-conds">${items.map(x => `<li>${fmtA(x.t)}${tag(x.k)}</li>`).join("")}</ul></div></div>
+    <div class="fm-row fm-then"><span class="fm-k">Alors</span><p>${fmtA(f.alors)}</p></div>
+    ${plus.length ? `<div class="fm-row fm-plus"><span class="fm-k">En outre</span><div><p>${esc(f.plusLabel || "Pour la sanction renforcée, il faut ajouter :")}</p><ul class="fm-conds">${plus.map(x => `<li>${fmtA(x)}</li>`).join("")}</ul>${f.plusAlors ? `<p>Alors : ${fmtA(f.plusAlors)}</p>` : ""}</div></div>` : ""}
+    <div class="fm-row fm-else"><span class="fm-k">Sinon</span><p>${fmtA(f.sinon)}</p></div>
+    ${f.reserve ? `<div class="fm-row fm-res"><span class="fm-k">Sous réserve</span><p>${fmtA(f.reserve)}</p></div>` : ""}
+  </div></section>`;
+}
 function condsHtml(r) {
   const lg = LOG[r.id] || {}, K = LOG.KINDS || {};
   const conds = r.conditions || [];
   const used = [...new Set(conds.map((_, i) => logOf(r, i).k))].filter(k => K[k]);
-  return `<section class="sec"><h2>Conditions</h2>
+  return `<section class="sec"><h2>Les conditions, une à une</h2>
     <div class="logic"><p><strong>Comment lire cette liste.</strong> ${esc(lg.regle || LOG.DEFAUT)}</p>
       <details><summary>Légende des mentions</summary><ul>${used.map(k => `<li><strong>${esc(K[k].t)}</strong> : ${esc(K[k].d)}.</li>`).join("")}</ul></details></div>
     <ol class="conds">${conds.map((c, i) => { const s = logOf(r, i), kd = K[s.k] || K.cond || { t: "" };
@@ -470,6 +497,7 @@ function oblTool(t, args) {
   box.innerHTML = `<div class="head"><div class="kick">${esc(cur.chapitre || "")}</div><h1>${esc(cur.titre)}</h1></div>
     ${cur.resume ? `<p class="intro">${esc(cur.resume)}</p>` : ""}
     ${(cur.fondement || []).length ? `<p><strong>Fondement :</strong> ${cur.fondement.map(n => `<button type="button" class="ref-art" data-art="${esc(n)}">art. ${esc((artBy(n) || {}).aff || n)}</button>`).join(", ")}</p>` : ""}
+    ${formuleHtml(cur)}
     ${condsHtml(cur)}
     ${(cur.exonerations || []).length ? `<section class="sec"><h2>Causes d'exonération</h2><ul>${cur.exonerations.map(x => `<li><strong>${esc(x.nom)}</strong>${x.detail ? " : " + fmt(x.detail) : ""}${x.effet ? ` <em>(${esc(x.effet)})</em>` : ""}</li>`).join("")}</ul></section>` : ""}
     ${(cur.copie || []).length ? `<section class="sec"><h2>Sur une copie</h2><ul>${cur.copie.map(x => `<li>${fmt(x)}</li>`).join("")}</ul></section>` : ""}

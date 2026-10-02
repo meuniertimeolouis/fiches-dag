@@ -21,7 +21,7 @@
     pour: "le bénéficiaire obtienne la formation du contrat promis malgré la rétractation du promettant",
     alors: "le contrat promis est formé : la rétractation du promettant pendant le délai d'option est sans effet et le bénéficiaire peut en obtenir l'exécution forcée ([[1124]], al. 2).",
     sinon: "sans promesse valable ou sans levée de l'option dans le délai, la promesse est caduque : le contrat promis n'est pas formé.",
-    reserve: "une stipulation contraire des parties (sanction limitée à des dommages et intérêts) ; le contrat conclu avec un tiers de bonne foi."
+    reserve: "une stipulation contraire des parties (sanction limitée à des dommages et intérêts) ; le contrat conclu avec un tiers qui ignorait la promesse n'est pas nul ([[1124]], al. 3)."
   };
   F["erreur"] = {
     pour: "le contrat soit annulé pour erreur",
@@ -60,7 +60,7 @@
   F["tiers-victime"] = {
     pour: "un tiers puisse obtenir réparation d'un manquement contractuel",
     alors: "le tiers engage la responsabilité délictuelle du contractant ([[1240]]) en invoquant le seul manquement contractuel, sans prouver de faute détachable du contrat (Ass. plén., 6 oct. 2006, Boot shop ; Ass. plén., 13 janv. 2020, Bois rouge).",
-    sinon: "l'action est rejetée ; le tiers qui dispose d'une action contractuelle (sous-acquéreur) doit l'exercer, sans pouvoir opter ([[1199]]).",
+    sinon: "l'action est rejetée ; le tiers qui dispose d'une action contractuelle (sous-acquéreur) doit l'exercer, sans pouvoir opter.",
     reserve: "les conditions et limites du contrat peuvent être opposées au tiers (Com., 3 juill. 2024, n° 21-14.947)."
   };
   F["force-majeure-contrat"] = {
@@ -169,7 +169,7 @@
   };
   F["troubles-voisinage"] = {
     pour: "le responsable d'un trouble de voisinage soit tenu de le réparer",
-    alors: "il répond de plein droit des conséquences du trouble, sans qu'aucune faute ne soit à prouver ([[1253]]).",
+    alors: "il répond de plein droit du dommage qui résulte du trouble, sans qu'aucune faute ne soit à prouver ([[1253]], al. 1er).",
     sinon: "pas de réparation sur ce fondement : le trouble n'excède pas les inconvénients normaux du voisinage ou le défendeur n'est pas visé par le texte.",
     reserve: "la préoccupation ([[1253]], al. 2) ; la cause étrangère."
   };
@@ -192,7 +192,7 @@
   F["gestion-affaires"] = {
     pour: "le gérant obtienne du maître le remboursement de ses dépenses et l'exécution de ses engagements",
     alors: "le maître remplit les engagements contractés dans son intérêt par le gérant, rembourse les dépenses utiles et l'indemnise des dommages subis ([[1301-2]]).",
-    sinon: "la gestion d'affaires est écartée (mandat, obligation préexistante ou opposition du maître) ; à défaut seulement d'utilité, le gérant n'obtient que la valeur du profit retiré par le maître ([[1301-5]], [[1303]]).",
+    sinon: "la gestion d'affaires est écartée (mandat, obligation préexistante ou opposition du maître) ; si l'action du gérant ne répond pas aux conditions de la gestion d'affaires mais profite au maître, le gérant est indemnisé selon les règles de l'enrichissement injustifié ([[1301-5]], [[1303]]).",
     reserve: "la faute du gérant : il répond de ses fautes envers le maître et le juge peut modérer l'indemnité ([[1301-1]])."
   };
   F["indu-restitution"] = {
@@ -222,7 +222,7 @@
     pour: "le créancier puisse exiger immédiatement le paiement d'une dette à terme",
     conds: [
       "Un terme existant ([[1305]])",
-      "L'arrivée de l'échéance ou une cause de déchéance du terme ([[1305-4]])",
+      "L'arrivée de l'échéance ou une cause de déchéance du terme (notamment [[1305-4]])",
       "Un débiteur poursuivi que la déchéance atteint (elle est inopposable aux coobligés et aux cautions, [[1305-5]])"
     ],
     alors: "la dette est exigible : le créancier peut en poursuivre le paiement.",
@@ -246,7 +246,7 @@
   };
   F["cession-contrat"] = {
     pour: "la cession de contrat soit valable",
-    alors: "le cessionnaire devient partie au contrat ([[1216]]) ; le cédant n'est libéré pour l'avenir que si le cédé l'a expressément déchargé, sinon il reste tenu solidairement ([[1216-1]]).",
+    alors: "le cessionnaire devient partie au contrat ([[1216]]) ; le cédant n'est libéré pour l'avenir que si le cédé a expressément consenti à la cession ; à défaut, et sauf clause contraire, il reste tenu solidairement à l'exécution du contrat ([[1216-1]]).",
     sinon: "la cession est nulle à défaut d'écrit ([[1216]], al. 3) ; sans accord du cédé, elle lui est seulement inopposable (Com., 24 avr. 2024).",
     reserve: "le cédé peut opposer au cessionnaire toutes les exceptions opposables au cédant ; le cessionnaire n'oppose que les exceptions inhérentes à la dette ([[1216-2]])."
   };

@@ -89,7 +89,7 @@ function blockHtml(b) {
   if (b.p) return `<p>${fmt(b.p)}</p>`;
   if (b.h) return `<h4>${fmt(b.h)}</h4>`;
   if (b.liste) return `<ul>${b.liste.map(x => `<li>${fmt(x)}</li>`).join("")}</ul>`;
-  if (b.def) return `<div class="defn"><b>${esc(b.def.terme)}</b> : ${fmt(b.def.texte)}</div>`;
+  if (b.def) return `<div class="defn"><b>${fmt(b.def.terme)}</b> : ${fmt(b.def.texte)}</div>`;
   if (b.attention) return `<div class="warnbox">${fmt(b.attention)}</div>`;
   if (b.arret) return `<div class="arret"><span class="ref">${esc(b.arret.ref)}</span>${fmt(b.arret.apport)}</div>`;
   if (b.schema) return schemaHtml(b.schema);

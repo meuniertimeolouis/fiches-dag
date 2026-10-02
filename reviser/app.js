@@ -199,7 +199,21 @@ function oblFiche(c, box) {
   box.innerHTML = `${c.intro ? `<p class="intro">${fmt(c.intro)}</p>` : ""}
     ${secs.map((s, i) => `<section class="sec" id="s${i}"><h2>${esc(s.titre)}</h2>${(s.contenu || []).map(blockHtml).join("")}</section>`).join("")}
     ${c.retenir ? `<section class="sec"><h2>L'essentiel à retenir</h2><ul>${c.retenir.map(x => `<li>${fmt(x)}</li>`).join("")}</ul></section>` : ""}
+    ${formulesChapitre(regs)}
+    ${complHtml(c)}
     ${regs.length ? `<section class="sec"><h2>Régimes du chapitre</h2><div class="row">${regs.map(r => `<a class="btn" href="#/obl/outils/regimes/${esc(r.id)}">${esc(r.titre)}</a>`).join("")}</div></section>` : ""}`;
+}
+function formulesChapitre(regs) {
+  const list = regs.filter(r => FORM[r.id]);
+  if (!list.length) return "";
+  return `<section class="sec"><h2>Formules logiques des régimes</h2><p class="muted small">Pour chaque régime : les conditions à réunir, la conséquence si elles le sont, le rejet sinon.</p>${list.map(r => `<details class="fdet"><summary>${esc(r.titre)}</summary>${formuleHtml(r).replace(/<section[^>]*><h2>[^<]*<\/h2>/, "<div>").replace(/<\/section>$/, "</div>")}<p class="small"><a href="#/obl/outils/regimes/${esc(r.id)}">Voir le régime complet</a></p></details>`).join("")}</section>`;
+}
+function complHtml(c) {
+  const k = (OBL.complements || {})[c.num]; if (!k) return "";
+  const pg = ((OBL.pieges || {})[c.num] || {}).pieges || [];
+  const blk = (t, list) => (list || []).length ? `<section class="sec"><h2>${t}</h2><dl class="notes">${list.map(x => `<div><dt>${fmt(x.t)}</dt><dd>${fmt(x.p)}</dd></div>`).join("")}</dl></section>` : "";
+  const pieges = pg.length ? `<section class="sec"><h2>Pièges classiques</h2><ul class="pgmini">${pg.map(x => `<li><span class="f">✗ ${fmt(x.faux)}</span><span class="j">✓ ${fmt(x.juste)}</span></li>`).join("")}</ul><p class="small"><a href="#/obl/ch/${c.num}/pieges">S'entraîner sur ces pièges</a></p></section>` : "";
+  return blk("Remarques et précisions", k.remarques) + pieges + blk("Ce qui fait la différence sur la copie", k.difference);
 }
 function oblPieges(c, box) {
   const pg = (OBL.pieges || {})[c.num] || { pieges: [], reflexes: [] };
@@ -432,6 +446,7 @@ function articlesView(box, list, ctx) {
 /* ---------- Outils (obligations) ---------- */
 const LOG = window.OBL_LOGIQUE || { KINDS: {}, DEFAUT: "" };
 const logOf = (r, i) => ((LOG[r.id] || {}).c || [])[i] || { k: "cond" };
+(function () { const C = OBL.complements || {}; OBL.pieges = OBL.pieges || {}; Object.keys(C).forEach(n => { if (!(C[n].pieges || []).length) return; const b = OBL.pieges[n] = OBL.pieges[n] || { pieges: [], reflexes: [] }; b.pieges = (b.pieges || []).concat(C[n].pieges); }); })();
 const FORM = window.OBL_FORMULES || {};
 const fmtA = t => fmt(String(t).replace(/\[\[([^\]|]+)\]\]/g, (m, n) => artBy(n) ? m : "art. " + n));
 function formuleHtml(r) {

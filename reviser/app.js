@@ -348,7 +348,7 @@ function officialHtml(paraList) {
   }).join("");
 }
 function caseRow(u) {
-  return `<a class="chrow cprow" href="#/obl/outils/cas/${esc(u.id)}"><span class="n">${esc(u.code)}</span><span class="t">${esc(u.titre)}<small class="cpq">${esc(u.q || "")}</small></span><span class="right"><span class="sc">${u.n > 1 ? `question ${u.k} sur ${u.n}` : ""}</span></span></a>`;
+  return `<a class="chrow cprow" href="#/obl/outils/cas/${esc(u.id)}"><span class="n">${esc(u.code)}</span><span class="t">${esc(u.titre)}<small class="cpq">${esc(u.apercu || u.q || "")}</small></span><span class="right"><span class="sc">${u.n > 1 ? `question ${u.k} sur ${u.n}` : ""}</span></span></a>`;
 }
 function caseIndex(ch, withNext) {
   const list = unitsIn(ch, "site"), man = unitsIn(ch, "manuel");

@@ -149,7 +149,7 @@ function oblHome() {
   const resume = last
     ? `<p>Reprise au chapitre ${last.n}, <strong>${esc(CHS[last.n - 1].court)}</strong>, à l'étape ${esc(OSTEPS.find(s => s.k === last.step).t.toLowerCase())}.</p>
        <div class="row"><a class="btn main" href="#/obl/ch/${last.n}/${last.step}">Reprendre</a>${next.num !== last.n ? `<a class="btn" href="#/obl/ch/${next.num}/fiche">Chapitre ${next.num} : ${esc(next.court)}</a>` : ""}</div>`
-    : `<p>Vingt et un chapitres, chacun en cinq étapes : la fiche de cours, les pièges, un quiz, un cas pratique corrigé et les articles du Code civil.</p>
+    : `<p>Vingt et un chapitres, chacun en cinq étapes : la fiche de cours, les pièges, un quiz, des cas pratiques corrigés et les articles du Code civil.</p>
        <div class="row"><a class="btn main" href="#/obl/ch/1/fiche">Commencer par le chapitre 1</a></div>`;
   const total = CHS.reduce((a, c) => a + chDone(c.num), 0);
   setMain(`<section class="resume"><div class="eyebrow">Licence 2 · Université Jean Monnet</div><h1>Droit des obligations</h1>${resume}<p class="small muted">${total} étape${total > 1 ? "s" : ""} faite${total > 1 ? "s" : ""} sur ${CHS.length * OSTEPS.length}. La progression est gardée dans ce navigateur.</p></section>
@@ -189,7 +189,7 @@ function oblChapter(n, step) {
   if (step === "fiche") oblFiche(c, box);
   else if (step === "pieges") oblPieges(c, box);
   else if (step === "quiz") quizView(box, (c.quiz || []).map(q => ({ ...q, ch: n })), res => { const p = prog("obl", n); p.quiz = { best: Math.max(res.score, (p.quiz && p.quiz.best) || 0), of: res.of }; save(); }, { sub: "obl", id: n, base });
-  else if (step === "cas") casView(box, (OBL.cas || []).filter(x => (c.cas || []).includes(x.id)), { sub: "obl", id: n, base, more: bankMore(n) });
+  else if (step === "cas") { box.innerHTML = caseIndex(n) + nextBar("obl", n, OSTEPS, "cas", base); wireNext("obl", n); }
   else if (step === "articles") articlesView(box, (c.articles || []).map(artBy).filter(Boolean), { sub: "obl", id: n, base });
   if (["fiche", "pieges"].includes(step)) { box.insertAdjacentHTML("beforeend", nextBar("obl", n, OSTEPS, step, base)); wireNext("obl", n); }
 }
@@ -272,7 +272,7 @@ function quizView(box, pool, onEnd, ctx, opts) {
   draw();
 }
 
-/* ---------- Cas pratique ---------- */
+/* ---------- Cas pratiques : un cas = une page ---------- */
 const CSTEPS = [
   { k: "qualification", t: "Qualification", h: "Traduisez les faits en termes juridiques." },
   { k: "probleme", t: "Problème de droit", h: "Formulez la question juridique, en termes généraux." },
@@ -281,54 +281,121 @@ const CSTEPS = [
   { k: "conclusion", t: "Conclusion", h: "Répondez précisément à la question posée." }
 ];
 const qsOf = c => c.questions && c.questions.length ? c.questions : [{ q: c.question, corrige: c.corrige || {} }];
-function casView(box, list, ctx) {
-  if (!list.length) { box.innerHTML = `<p class="muted">Pas de cas pratique pour ce chapitre.</p>` + (ctx ? nextBar(ctx.sub, ctx.id, OSTEPS, "cas", ctx.base) : ""); if (ctx) wireNext(ctx.sub, ctx.id); return; }
-  const c = list[0], qs = qsOf(c), st = { q: 0, i: 0, shown: {}, drafts: {} };
-  const extra = ctx && ctx.more ? ctx.more : "";
+/* Situation du récit correspondant à chaque question, quand le récit en contient plusieurs (1., 2., 3.) */
+const SITS = { cp46: [1, 2], cp51: [1, 2], cp52: [1, 2, 2, 2], cp54: [1, 1, 2, 3], cp55: [1, 2, 2], cp57: [1, 2], cp58: [1, 2] };
+function faitsParts(f) {
+  const ps = String(f || "").split(/\n\n+/), idx = [];
+  ps.forEach((p, i) => { if (/^[1-9][°.]\s/.test(p)) idx.push(i); });
+  if (idx.length < 2) return { pre: "", sits: [] };
+  return { pre: ps.slice(0, idx[0]).join("\n\n"), sits: idx.map((a, j) => ps.slice(a, idx[j + 1] === undefined ? ps.length : idx[j + 1]).join("\n\n")) };
+}
+function bestChapter(cands, corr) {
+  const ok = (cands || []).filter(n => CHS[n - 1]);
+  if (ok.length < 2) return ok[0] || 1;
+  const cited = (JSON.stringify(corr || {}).match(/\[\[([0-9][0-9L\-]*)/g) || []).map(s => s.slice(2));
+  let best = ok[0], sc = -1;
+  ok.forEach(n => { const a = CHS[n - 1].articles || [], s = cited.filter(x => a.includes(x)).length; if (s > sc) { sc = s; best = n; } });
+  return best;
+}
+/* Un cas pratique du site peut poser plusieurs questions : chaque question devient un cas indépendant. */
+function unitsOf(c, fixedCh) {
+  const qs = qsOf(c), fp = faitsParts(c.faits), out = [];
+  if (c.id === "cp01" && fp.sits.length) {
+    const cor = qs[0].corrige;
+    fp.sits.forEach((s, j) => {
+      const m = (cor.mineure || [])[j], last = m && (String(m.corrige).trim().match(/[^.]+\.$/) || [""])[0].trim();
+      out.push({ caseId: c.id, titre: c.titre.replace(/ : cinq situations à qualifier/, ""), faits: s.replace(/^\d°\s*/, ""), q: qs[0].q.replace("Pour chacune de ces situations", "Pour cette situation"),
+        corrige: { ...cor, mineure: m ? [m] : [], conclusion: last || cor.conclusion }, k: j + 1, n: fp.sits.length, ch: bestChapter(c.chapitres, m) });
+    });
+    return out;
+  }
+  const sp = (OBL.casSplit || {})[c.id];
+  if (sp) {
+    const cor = qs[0].corrige, full = String(cor.conclusion || ""), segs = [];
+    let from = 0;
+    sp.cuts.forEach(m => { const at = full.indexOf(m, from); segs.push(full.slice(from, at)); from = at; });
+    segs.push(full.slice(from));
+    const clean = t => { t = t.replace(/^[\s;]*(\d\)\s*)?/, "").replace(/[\s;]+$/, ""); t = t.charAt(0).toUpperCase() + t.slice(1); return /[.»)]$/.test(t) ? t : t + "."; };
+    sp.q.forEach((q, i) => out.push({ caseId: c.id, titre: c.titre, faits: c.faits, q, k: i + 1, n: sp.q.length, ch: fixedCh || bestChapter(c.chapitres, cor),
+      corrige: { ...cor, mineure: sp.m[i].map(j => cor.mineure[j]), conclusion: clean(segs[sp.cs ? sp.cs[i] : i]) } }));
+    return out;
+  }
+  qs.forEach((Q, i) => {
+    const si = (SITS[c.id] || [])[i], faits = si && fp.sits[si - 1] ? [fp.pre, fp.sits[si - 1].replace(/^\d[.°]\s*/, "")].filter(Boolean).join("\n\n") : c.faits;
+    out.push({ caseId: c.id, titre: c.titre, faits, q: Q.q, corrige: Q.corrige || {}, k: i + 1, n: qs.length, ch: fixedCh || bestChapter(c.chapitres, Q.corrige) });
+  });
+  return out;
+}
+let _UN = null;
+function allUnits() {
+  if (_UN) return _UN;
+  const raw = [];
+  CHS.forEach(ch => (OBL.cas || []).filter(x => (ch.cas || []).includes(x.id)).forEach(c => unitsOf(c, ch.num).forEach(u => raw.push({ ...u, src: "site" }))));
+  (OBL.entrainement || []).forEach(c => unitsOf(c).forEach(u => raw.push({ ...u, src: "site" })));
+  (OBL.manuel || []).forEach(u => raw.push({ ...u, src: "manuel" }));
+  const cnt = {};
+  raw.sort((a, b) => a.ch - b.ch).forEach(u => { const key = u.src + u.ch; cnt[key] = (cnt[key] || 0) + 1; u.code = (u.src === "manuel" ? "M" : "") + u.ch + "." + cnt[key]; u.id = (u.src === "manuel" ? "m" : "c") + u.ch + "-" + cnt[key]; });
+  return (_UN = raw);
+}
+const unitsIn = (ch, src) => allUnits().filter(u => u.ch === ch && (!src || u.src === src));
+const paras = t => String(t || "").split(/\n\n+/).filter(Boolean).map(p => `<p>${fmt(p)}</p>`).join("");
+const LAB = [[/^La (première |seconde |deuxième |troisième )?question/i, "Problème de droit"], [/^En principe|^En outre, l.article|^Or, en principe/i, "Majeure"], [/^En l.espèce/i, "Mineure"], [/^En conclusion|^En condusion/i, "Conclusion"]];
+function officialHtml(paraList) {
+  return paraList.map(p => {
+    if (typeof p === "object") return `<h4 class="ctitle">${fmt(p.h)}</h4>`;
+    const l = LAB.find(x => x[0].test(p));
+    return `<p>${l ? `<span class="lab">${l[1]}</span>` : ""}${fmt(p)}</p>`;
+  }).join("");
+}
+function caseRow(u) {
+  return `<a class="chrow cprow" href="#/obl/outils/cas/${esc(u.id)}"><span class="n">${esc(u.code)}</span><span class="t">${esc(u.titre)}<small class="cpq">${esc(u.q || "")}</small></span><span class="right"><span class="sc">${u.n > 1 ? `question ${u.k} sur ${u.n}` : ""}</span></span></a>`;
+}
+function caseIndex(ch, withNext) {
+  const list = unitsIn(ch, "site"), man = unitsIn(ch, "manuel");
+  const blocks = [];
+  blocks.push(list.length ? `<p class="muted">${plural(list.length, "cas pratique")} dans ce chapitre. Chaque cas est indépendant : choisissez-en un, rédigez votre réponse, puis consultez le corrigé.</p><div class="cplist">${list.map(caseRow).join("")}</div>` : `<p class="muted">Aucun cas pratique pour ce chapitre.</p>`);
+  if (man.length) blocks.push(`<section class="sec"><h2>Cas du manuel</h2><div class="cplist">${man.map(caseRow).join("")}</div></section>`);
+  return blocks.join("");
+}
+function caseView(box, u) {
+  const st = { i: 0, shown: {}, all: false, draft: "" };
+  const sib = unitsIn(u.ch, u.src), at = sib.indexOf(u), prev = sib[at - 1], nxt = sib[at + 1];
+  const official = Array.isArray(u.corrige);
   const draw = () => {
-    const Q = qs[st.q], cor = Q.corrige || {}, s = CSTEPS[st.i], key = st.q + ":" + s.k;
-    const corHtml = s.k === "mineure" ? (cor.mineure || []).map(x => `<div class="minor"><h4>${fmt(x.condition)}</h4><p>${fmt(x.corrige)}</p></div>`).join("") : String(cor[s.k] || "").split(/\n\n+/).map(p => `<p>${fmt(p)}</p>`).join("");
-    const last = st.q === qs.length - 1 && st.i === CSTEPS.length - 1;
-    box.innerHTML = `<h2 style="font-size:24px">${esc(c.titre)}</h2>
-      <div class="faits">${fmt(c.faits)}</div>
-      ${qs.length > 1 ? `<div class="qtabs" role="group" aria-label="Questions">${qs.map((x, i) => `<button type="button" class="chip" data-q="${i}" aria-pressed="${i === st.q}">Question ${i + 1}</button>`).join("")}</div>` : ""}
-      ${Q.q ? `<p class="cq"><strong>${qs.length > 1 ? `Question ${st.q + 1} : ` : ""}${fmt(Q.q)}</strong></p>` : ""}
-      <ol class="csteps">${CSTEPS.map((x, i) => `<li class="${i === st.i ? "cur" : st.shown[st.q + ":" + x.k] ? "done" : ""}">${i + 1}. ${esc(x.t)}</li>`).join("")}</ol>
-      <div class="panel"><h3>${esc(s.t)}</h3><p class="muted" style="margin:0">${esc(s.h)}</p>
-        <label class="small muted" for="draft">Votre réponse (gardée seulement le temps de la page)</label><textarea id="draft">${esc(st.drafts[key] || "")}</textarea>
-        ${st.shown[key] ? `<div class="corr"><strong>Corrigé</strong>${corHtml}</div>` : `<div><button type="button" class="btn main" id="cshow">Voir le corrigé</button></div>`}
-        <div class="row" style="justify-content:space-between"><button type="button" class="btn" id="cprev" ${st.i === 0 && st.q === 0 ? "disabled" : ""}>Étape précédente</button>${!last ? `<button type="button" class="btn" id="cnext">${st.i < CSTEPS.length - 1 ? "Étape suivante du corrigé" : "Question suivante"}</button>` : ""}</div></div>
-      ${last && st.shown[key] && ctx && ctx.sub ? nextBar(ctx.sub, ctx.id, OSTEPS, "cas", ctx.base) : ""}${extra}`;
-    $("#draft").addEventListener("input", e => { st.drafts[key] = e.target.value; });
-    const sh = $("#cshow"); if (sh) sh.addEventListener("click", () => { st.shown[key] = true; draw(); });
-    $("#cprev").addEventListener("click", () => { if (st.i > 0) st.i--; else { st.q--; st.i = CSTEPS.length - 1; } draw(); });
-    const nx = $("#cnext"); if (nx) nx.addEventListener("click", () => { if (st.i < CSTEPS.length - 1) st.i++; else { st.q++; st.i = 0; } draw(); });
-    box.querySelectorAll("[data-q]").forEach(b => b.addEventListener("click", () => { st.q = +b.dataset.q; st.i = 0; draw(); }));
-    if (ctx && ctx.sub) wireNext(ctx.sub, ctx.id);
+    const cor = official ? null : u.corrige, s = CSTEPS[st.i];
+    const sectionHtml = k => k === "mineure" ? (cor.mineure || []).map(x => `<div class="minor"><h4>${fmt(x.condition)}</h4><p>${fmt(x.corrige)}</p></div>`).join("") : paras(cor[k]);
+    let corr;
+    if (official) corr = st.all ? `<div class="corr"><strong>Corrigé du manuel</strong>${officialHtml(u.corrige)}<p class="small muted src">${esc(u.source || "")}</p></div>` : `<div><button type="button" class="btn main" id="cshow">Afficher le corrigé du manuel</button></div>`;
+    else if (st.all) corr = `<div class="corr full"><strong>Corrigé complet</strong>${CSTEPS.map(x => `<h3>${esc(x.t)}</h3>${sectionHtml(x.k)}`).join("")}</div>`;
+    else corr = st.shown[s.k] ? `<div class="corr"><strong>Corrigé : ${esc(s.t.toLowerCase())}</strong>${sectionHtml(s.k)}</div><div><button type="button" class="btn" id="call">Corrigé complet</button></div>` : `<div class="row"><button type="button" class="btn main" id="cshow">Voir cette étape du corrigé</button><button type="button" class="btn" id="call">Corrigé complet</button></div>`;
+    const steps = official ? "" : `<ol class="csteps">${CSTEPS.map((x, i) => `<li class="${i === st.i && !st.all ? "cur" : st.shown[x.k] || st.all ? "done" : ""}">${i + 1}. ${esc(x.t)}</li>`).join("")}</ol>`;
+    const work = official ? `` : (st.all ? "" : `<h3>${esc(s.t)}</h3><p class="muted" style="margin:0">${esc(s.h)}</p>`);
+    box.innerHTML = `<div class="head"><div class="kick"><a href="#/obl/outils/cas">Cas pratiques</a> · <a href="#/obl/ch/${u.ch}/cas">Chapitre ${u.ch}</a> · Cas ${esc(u.code)}</div><h1>${esc(u.titre)}</h1>${u.n > 1 ? `<p class="muted small">Question ${u.k} sur ${u.n} de ce cas, traitée séparément.</p>` : ""}</div>
+      <section class="enonce"><h2>Énoncé</h2><div class="faits">${paras(u.faits)}</div>${u.q ? `<p class="cq"><strong>${fmt(u.q)}</strong></p>` : ""}</section>
+      <section class="panel">${steps}${work}
+        <label class="small muted" for="draft">Votre réponse (non enregistrée : elle disparaît quand vous quittez la page)</label><textarea id="draft">${esc(st.draft)}</textarea>
+        ${corr}
+        ${official || st.all ? "" : `<div class="row" style="justify-content:space-between"><button type="button" class="btn" id="cprev" ${st.i === 0 ? "disabled" : ""}>Étape précédente</button><button type="button" class="btn" id="cnext" ${st.i === CSTEPS.length - 1 ? "disabled" : ""}>Étape suivante</button></div>`}</section>
+      <div class="next cpnav">${prev ? `<a class="btn" href="#/obl/outils/cas/${esc(prev.id)}">← Cas ${esc(prev.code)}</a>` : "<span></span>"}<a class="btn" href="#/obl/ch/${u.ch}/cas">Index du chapitre ${u.ch}</a>${nxt ? `<a class="btn" href="#/obl/outils/cas/${esc(nxt.id)}">Cas ${esc(nxt.code)} →</a>` : "<span></span>"}</div>`;
+    $("#draft").addEventListener("input", e => { st.draft = e.target.value; });
+    const sh = $("#cshow"); if (sh) sh.addEventListener("click", () => { if (official) st.all = true; else st.shown[s.k] = true; draw(); });
+    const al = $("#call"); if (al) al.addEventListener("click", () => { st.all = true; draw(); });
+    const pv = $("#cprev"), nx = $("#cnext");
+    if (pv) pv.addEventListener("click", () => { if (st.i > 0) st.i--; draw(); });
+    if (nx) nx.addEventListener("click", () => { if (st.i < CSTEPS.length - 1) st.i++; draw(); });
+    mark("obl", u.ch, "cas");
   };
   draw();
 }
-const BANK = OBL.entrainement || [];
-function bankRow(x) {
-  const nq = qsOf(x).length;
-  return `<a class="chrow" href="#/obl/outils/cas/${esc(x.id)}"><span class="n">${esc(x.num)}</span><span class="t">${esc(x.titre)} <span class="muted small">(chapitre${(x.chapitres || []).length > 1 ? "s" : ""} ${(x.chapitres || []).join(", ")})</span></span><span class="right"><span class="sc">${plural(nq, "question")}</span></span></a>`;
-}
-function bankMore(n) {
-  const l = BANK.filter(x => (x.chapitres || []).includes(n));
-  return l.length ? `<section class="sec" style="margin-top:28px"><h2>Pour s'entraîner : ${plural(l.length, "autre cas pratique", "autres cas pratiques")}</h2>${l.map(bankRow).join("")}</section>` : "";
-}
 function oblBank(id) {
-  const c = BANK.find(x => x.id === id);
-  if (c) {
-    setMain(`<div class="head"><div class="kick"><a href="#/obl/outils/cas">Cas pratiques</a> · n° ${esc(c.num)} · chapitre${(c.chapitres || []).length > 1 ? "s" : ""} ${(c.chapitres || []).map(n => `<a href="#/obl/ch/${n}/fiche">${n}</a>`).join(", ")}</div></div><div class="content" id="cb"></div>`);
-    const i = BANK.indexOf(c), nx = BANK[i + 1];
-    casView($("#cb"), [c], { more: nx ? `<div class="next"><span></span><a class="btn" href="#/obl/outils/cas/${esc(nx.id)}">Cas suivant : ${esc(nx.titre)}</a></div>` : "" });
-    return;
-  }
-  setMain(`<div class="head"><h1>Cas pratiques</h1><p class="muted" style="margin-top:6px">${plural(BANK.length, "cas")} rangés par chapitre, chacun corrigé pas à pas : qualification, problème de droit, majeure, mineure, conclusion. Rédigez avant d'ouvrir le corrigé.</p></div>
-    <div class="content">${PARTS.map(p => { const chs = CHS.filter(c => c.part === p.id && BANK.some(x => (x.chapitres || [])[0] === c.num)); if (!chs.length) return "";
-      return `<section class="sec" id="cb-${p.id}"><h2>${esc(p.t)}</h2>${chs.map(c => `<h3 class="cbch">Chapitre ${c.num} · ${esc(c.titre || c.court)}</h3>${BANK.filter(x => (x.chapitres || [])[0] === c.num).map(bankRow).join("")}`).join("")}</section>`; }).join("")}</div>`);
-  thumbs(PARTS.filter(p => CHS.some(c => c.part === p.id && BANK.some(x => (x.chapitres || [])[0] === c.num))).map(p => ["cb-" + p.id, p.court]));
+  const u = id && allUnits().find(x => x.id === id);
+  if (u) { setMain(`<div class="content" id="cb"></div>`); return caseView($("#cb"), u); }
+  const all = allUnits(), site = all.filter(x => x.src === "site"), man = all.filter(x => x.src === "manuel");
+  const grp = (list, tag) => PARTS.map(p => { const chs = CHS.filter(c => c.part === p.id && list.some(x => x.ch === c.num)); if (!chs.length) return "";
+    return `<section class="sec" id="${tag}-${p.id}"><h2>${esc(p.t)}</h2>${chs.map(c => `<h3 class="cbch"><a href="#/obl/ch/${c.num}/cas">Chapitre ${c.num} · ${esc(c.titre || c.court)}</a> <span class="muted small">${plural(list.filter(x => x.ch === c.num).length, "cas")}</span></h3><div class="cplist">${list.filter(x => x.ch === c.num).map(caseRow).join("")}</div>`).join("")}</section>`; }).join("");
+  setMain(`<div class="head"><h1>Cas pratiques</h1><p class="muted" style="margin-top:6px">${plural(site.length, "cas indépendant", "cas indépendants")}, classés par chapitre. Choisissez un cas, rédigez votre réponse, puis consultez le corrigé, présenté étape par étape ou en entier.</p></div>
+    <div class="content">${grp(site, "cb")}${man.length ? `<h2 class="hman">Cas du manuel</h2>${grp(man, "cm")}` : ""}</div>`);
+  thumbs(PARTS.filter(p => site.some(x => (CHS[x.ch - 1] || {}).part === p.id)).map(p => ["cb-" + p.id, p.court]));
 }
 
 /* ---------- Articles ---------- */

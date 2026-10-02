@@ -1,0 +1,23 @@
+/* Découpage des cas pratiques de chapitre en cas indépendants : une question = un cas.
+   q : questions ; m : indices des lignes de la mineure propres à chaque question ; cuts : débuts de segments de la conclusion, dans l'ordre du texte ;
+   cs : segment de conclusion de chaque question (par défaut dans l'ordre). Qualification, problème de droit et majeure restent communs. */
+var OBL = window.OBL = window.OBL || {};
+OBL.casSplit = {
+  "ch1-promesse-soeur": { q: ["Léa peut-elle obtenir la suite des versements ?", "Hugo peut-il récupérer ce qu'il a payé ?"], m: [[0, 1, 2], [3, 4]], cuts: ["Hugo ne peut pas"] },
+  "ch2-qualification": { q: ["Qualifiez l'abonnement téléphonique au regard des classifications du Code civil et indiquez une conséquence pratique de cette qualification.", "Qualifiez le prêt de 500 euros au regard des classifications du Code civil et indiquez une conséquence pratique de cette qualification.", "Qualifiez la promesse d'aide au déménagement au regard des classifications du Code civil et indiquez une conséquence pratique de cette qualification."], m: [[0], [1], [2]], cuts: ["le prêt est un contrat", "la promesse d'aide n'est pas"] },
+  "ch3-maison-bord-de-loire": { q: ["Julien peut-il obtenir la vente ?", "Quels sont les droits d'Inès ?"], m: [[0], [1, 2, 3]], cuts: ["Inès, victime"] },
+  "ch4-brocante": { q: ["Clara peut-elle obtenir l'annulation de la vente et des dommages et intérêts ?", "Mme Roux peut-elle agir contre Victor ?"], m: [[0, 1, 2, 3, 4], [5]], cuts: ["Mme Roux ne dispose"] },
+  "ch6-cession-oral": { q: ["La cession de créance est-elle valable ?", "La sœur de Lucas peut-elle garder le scooter ?", "La sœur de Lucas peut-elle exiger le studio ?"], m: [[0], [1], [2]], cuts: ["le don manuel du scooter", "la promesse verbale de donner le studio"] },
+  "ch7-voiture-dol": { q: ["L'action d'Élise est-elle recevable ?", "Si la vente est annulée, que devront se restituer les parties ?"], m: [[0, 1, 2, 4], [3]], cuts: ["Elle aurait dû agir"] },
+  "ch8-contrat-energie": { q: ["Le fournisseur peut-il suspendre la fourniture ?", "Que peut-il faire ?"], m: [[3], [0, 1, 2]], cuts: ["Il doit demander"] },
+  "ch9-assurance-vie": { q: ["Les héritiers peuvent-ils révoquer la stipulation au profit de Chloé ?", "Peuvent-ils réclamer les 40 000 euros ?"], m: [[0], [1]], cuts: ["La contre-lettre"] },
+  "ch12-salle-escalade": { q: ["Sur quel fondement chacune des victimes doit-elle agir ? Hugo peut-il choisir le terrain délictuel ?", "Une relaxe du moniteur empêcherait-elle toute indemnisation ?"], m: [[0, 1, 2], [3]], cuts: ["Une relaxe du moniteur"] },
+  "ch13-tournoi-handball": { q: ["Mehdi peut-il obtenir réparation de Karim ?", "Le club de Firminy peut-il agir contre Paul ?", "Antoine peut-il opposer à Léo sa propre faute ?"], m: [[0, 1], [2], [3, 4]], cuts: ["Paul doit réparer", "Antoine est responsable"] },
+  "ch14-jour-de-tempete": { q: ["Samir peut-il obtenir réparation de son préjudice corporel ? Contre qui et sur quel fondement ?", "Samir peut-il obtenir réparation des dégâts causés à sa voiture ? Contre qui et sur quel fondement ?"], m: [[0, 1, 2], [3, 4, 5]], cuts: ["Il obtiendra de M. Ferrand"] },
+  "ch15-week-end-agite": { q: ["M. Roche peut-il obtenir réparation des deux parents d'Enzo ?", "L'action de Mme Blanc contre Nadia peut-elle prospérer ?", "Les clients trompés peuvent-ils obtenir réparation de la SARL ?"], m: [[0, 1, 2], [3, 4], [5, 6]], cuts: ["L'action de Mme Blanc", "Les clients trompés"] },
+  "ch16-scooter": { q: ["Mme Garnier peut-elle être indemnisée par Théo, et dans quelle mesure ?", "Théo peut-il être indemnisé, et contre qui ?", "Qu'en est-il de la voiture de Karim ?"], m: [[0, 1, 2], [3, 4], [5]], cuts: ["Karim obtiendra la réparation", "Théo peut agir contre Karim"], cs: [0, 2, 1] },
+  "ch18-degat-des-eaux": { q: ["Quelles sommes Clémence peut-elle obtenir de M. Roux ?", "Que doit-elle à l'agence ?"], m: [[0, 1, 2, 3], [4, 5]], cuts: ["Clémence doit restituer"] },
+  "ch19-appartement-colocation": { q: ["Léa est-elle libérée de la promesse ?", "Que peut réclamer la bailleresse à Hugo, et quels recours aura-t-il ?"], m: [[0, 1, 2], [3, 4, 5]], cuts: ["Hugo, débiteur solidaire"] },
+  "ch20-menuiserie": { q: ["Finacred pouvait-elle exiger 12 000 euros en juillet 2025 ?", "Léa peut-elle se retourner contre son père, pour quel montant, et comment se règle son conflit avec Finacred ?"], m: [[0, 1, 2, 3], [4, 5]], cuts: ["Léa est subrogée"] },
+  "ch21-librairie": { q: ["Camille doit-elle payer les Éditions Loire, et que peut-elle obtenir d'Hugo ?", "Le commandement de payer de la SCI est-il fondé ?", "La créance contre le lycée est-elle prescrite ?"], m: [[0, 1, 2], [3, 4], [5]], cuts: ["2) ", "3) "] }
+};

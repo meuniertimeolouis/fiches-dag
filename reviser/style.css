@@ -398,3 +398,17 @@ details.pgch>p{margin-bottom:14px}
 .fdet{border:1px solid var(--rule);background:var(--card);margin:0 0 8px}
 .fdet>summary{cursor:pointer;padding:10px 14px;font-weight:600;color:var(--navy)}
 .fdet>div{padding:0 14px 6px}
+
+/* Arrêts */
+.afilt{gap:12px;align-items:center;margin-bottom:8px}
+.afilt select{margin-left:4px;max-width:220px}
+.arow .right{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+.abrow{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.abadge{display:inline-block;font:600 11px/1.5 var(--sans);padding:1px 8px;border:1px solid var(--rule);background:var(--card);color:var(--ink2);text-transform:uppercase;letter-spacing:.04em}
+.ab-cm{color:var(--navy);border-color:var(--navy)}.ab-td{color:var(--ok);border-color:var(--ok)}.ab-ver{color:var(--ko);border-color:var(--ko);background:var(--ko-soft)}
+.ajust{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.ajust li{background:var(--ok-soft);border-left:3px solid var(--ok);padding:10px 14px}
+.aou{display:block;margin-top:4px;font-size:14px;color:var(--ink2)}.aou::before{content:"À utiliser : ";font-weight:600}
+.ntag{font:inherit;font-size:13px;cursor:pointer;border:1px solid var(--rule);background:var(--card);color:var(--navy);padding:1px 8px;margin:2px 2px 2px 0}
+.arow{grid-template-columns:minmax(0,1fr) auto}
+.arow .cpq{display:block;margin-top:4px}

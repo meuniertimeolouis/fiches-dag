@@ -113,7 +113,7 @@ function chrome(sub, toolCur) {
   S.subject = sub; save();
   document.querySelectorAll(".subjects a").forEach(a => a.setAttribute("aria-current", a.dataset.sub === sub ? "page" : "false"));
   const tools = sub === "obl"
-    ? [["obl", "Parcours"], ["obl/outils/regimes", "Régimes"], ["obl/outils/articles", "Articles"], ["obl/outils/pieges", "Pièges"], ["obl/outils/cas", "Cas pratiques"], ["obl/outils/quiz", "Quiz mélangé"]]
+    ? [["obl", "Parcours"], ["obl/outils/regimes", "Régimes"], ["obl/outils/articles", "Articles"], ["obl/outils/pieges", "Pièges"], ["obl/outils/cas", "Cas pratiques"], ["obl/outils/arrets", "Arrêts"], ["obl/outils/quiz", "Quiz mélangé"]]
     : [["dag", "Parcours"], ["dag/frise", "Frise chronologique"], ["dag/fiches", "Toutes les fiches"]];
   $("#tools").innerHTML = tools.map(([p, t]) => `<a href="#/${p}" ${toolCur === p ? 'aria-current="page"' : ""}>${t}</a>`).join("") +
 "";
@@ -193,6 +193,72 @@ function oblChapter(n, step) {
   else if (step === "articles") articlesView(box, (c.articles || []).map(artBy).filter(Boolean), { sub: "obl", id: n, base });
   if (["fiche", "pieges"].includes(step)) { box.insertAdjacentHTML("beforeend", nextBar("obl", n, OSTEPS, step, base)); wireNext("obl", n); }
 }
+
+/* ---------- Arrêts ---------- */
+const ARR = () => OBL.arrets || [];
+const MOIS = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."];
+const arrDate = d => { const m = /^(\d{4})-(\d\d)-(\d\d)$/.exec(d || ""); return m ? (+m[3] === 1 ? "1er" : +m[3]) + " " + MOIS[+m[2] - 1] + " " + m[1] : (d || ""); };
+const arrCite = a => [a.juridiction, arrDate(a.date), a.numero ? "n° " + a.numero : ""].filter(Boolean).join(", ");
+const arrBadges = a => (a.provenance || []).map(p => `<span class="abadge ab-${/^TD/.test(p) ? "td" : p === "CM" ? "cm" : "man"}">${esc(p)}</span>`).join("") + (a.a_verifier ? `<span class="abadge ab-ver">à vérifier</span>` : "");
+const arrFilt = { q: "", ch: "", theme: "", prov: "", ver: false };
+function arrRow(a) {
+  return `<a class="chrow arow" href="#/obl/outils/arrets/${esc(a.id)}"><span class="t"><b>${esc(a.nom)}</b> <span class="muted small">${esc(arrCite(a))}</span><small class="cpq">${esc((a.justifie && a.justifie[0] && a.justifie[0].argument) || a.question || "")}</small></span><span class="right">${arrBadges(a)}</span></a>`;
+}
+function arretsIndex() {
+  const all = ARR().slice().sort((x, y) => (x.date || "").localeCompare(y.date || ""));
+  const themes = [...new Set(all.map(a => a.theme).filter(Boolean))].sort((a, b) => a.localeCompare(b, "fr"));
+  const chs = [...new Set(all.flatMap(a => a.chapitres || []))].sort((a, b) => a - b);
+  const sel = (id, lab, opts, cur) => `<label class="small">${lab} <select id="${id}"><option value="">Tous</option>${opts.map(([v, t]) => `<option value="${esc(v)}"${String(v) === String(cur) ? " selected" : ""}>${esc(t)}</option>`).join("")}</select></label>`;
+  setMain(`<div class="head"><h1>Arrêts</h1><p class="muted" style="margin-top:6px">Un arrêt, ce qu'il décide, et surtout <strong>ce qu'il permet de justifier</strong> en copie. Provenance : CM (plans de cours), TD (séances), Manuel.</p></div>
+  <div class="row afilt"><input type="search" id="arq" placeholder="Nom, notion, mot de la solution" value="${esc(arrFilt.q)}" style="min-width:260px">
+  ${sel("arth", "Thème", themes.map(t => [t, t]), arrFilt.theme)}${sel("arch", "Chapitre", chs.map(n => [n, "Ch. " + n + " · " + ((CHS[n - 1] || {}).court || "")]), arrFilt.ch)}
+  ${sel("arpv", "Provenance", [["CM", "Cours (CM)"], ["TD", "TD"], ["Manuel", "Manuel"]], arrFilt.prov)}
+  <label class="small"><input type="checkbox" id="arvr"${arrFilt.ver ? " checked" : ""}> à vérifier seulement</label></div>
+  <p class="muted small" id="arcount"></p><div id="arlist" class="cplist"></div>`);
+  const draw = () => {
+    const q = arrFilt.q.trim().toLowerCase();
+    const list = all.filter(a => (!q || [a.nom, a.juridiction, a.numero, (a.notions || []).join(" "), a.solution, a.question, (a.justifie || []).map(j => j.argument).join(" ")].join(" ").toLowerCase().includes(q))
+      && (!arrFilt.theme || a.theme === arrFilt.theme) && (!arrFilt.ch || (a.chapitres || []).includes(+arrFilt.ch))
+      && (!arrFilt.prov || (a.provenance || []).some(p => p.startsWith(arrFilt.prov))) && (!arrFilt.ver || a.a_verifier));
+    $("#arcount").textContent = plural(list.length, "arrêt") + " sur " + all.length;
+    $("#arlist").innerHTML = list.map(arrRow).join("") || `<p class="muted">Aucun arrêt ne correspond.</p>`;
+  };
+  $("#arq").addEventListener("input", e => { arrFilt.q = e.target.value; draw(); });
+  $("#arth").addEventListener("change", e => { arrFilt.theme = e.target.value; draw(); });
+  $("#arch").addEventListener("change", e => { arrFilt.ch = e.target.value; draw(); });
+  $("#arpv").addEventListener("change", e => { arrFilt.prov = e.target.value; draw(); });
+  $("#arvr").addEventListener("change", e => { arrFilt.ver = e.target.checked; draw(); });
+  draw();
+}
+function arretPage(id) {
+  const all = ARR().slice().sort((x, y) => (x.date || "").localeCompare(y.date || ""));
+  const a = all.find(x => x.id === id);
+  if (!a) { setMain(`<div class="head"><h1>Arrêt introuvable</h1></div><p><a href="#/obl/outils/arrets">Retour aux arrêts</a></p>`); return; }
+  const same = all.filter(x => x.id !== a.id && (x.notions || []).some(n => (a.notions || []).includes(n))).slice(0, 8);
+  const core = `<section class="sec"><h2>Faits</h2><p>${fmt(a.faits || "Non renseigné.")}</p></section>
+    <section class="sec"><h2>Question de droit</h2><p>${fmt(a.question || "")}</p></section>
+    <section class="sec"><h2>Solution</h2><p>${fmt(a.solution || "")}</p></section>`;
+  const body = a.td_fiche
+    ? `<section class="sec"><h2>À toi de faire la fiche</h2><p class="muted small">Cet arrêt est à fiche en TD : fais-la d'abord (faits, procédure, question, solution), puis ouvre le corrigé pour comparer.</p><details class="fdet"><summary>Voir le corrigé</summary><div>${core}</div></details></section>`
+    : core;
+  setMain(`<div class="head"><div class="kick"><a href="#/obl/outils/arrets">Arrêts</a>${a.theme ? " · " + esc(a.theme) : ""}</div><h1>${esc(a.nom)}</h1><p class="muted">${esc(arrCite(a))}</p><div class="abrow">${arrBadges(a)}</div></div>
+  <div class="content">
+  ${a.a_verifier ? `<p class="warnbox"><strong>À vérifier avant de citer en copie.</strong> ${esc(a.note_verif || "Les références (date, numéro, solution) n'ont pas toutes été confirmées à la source.")}</p>` : (a.note_verif ? `<p class="muted small">${esc(a.note_verif)}</p>` : "")}
+  ${body}
+  <section class="sec"><h2>Ce que cet arrêt permet de justifier</h2><ul class="ajust">${(a.justifie || []).map(j => `<li>${fmt(j.argument)}${j.ou ? `<span class="aou">${fmt(j.ou)}</span>` : ""}</li>`).join("")}</ul></section>
+  ${a.distinguer ? `<section class="sec"><h2>À ne pas confondre</h2><p>${fmt(a.distinguer)}</p></section>` : ""}
+  ${(a.textes || []).length ? `<section class="sec"><h2>Textes</h2><p>${a.textes.map(esc).join(" · ")}</p></section>` : ""}
+  <section class="sec"><h2>Liens avec le cours</h2><div class="row">${(a.chapitres || []).map(n => `<a class="btn" href="#/obl/ch/${n}">Chapitre ${n}${CHS[n - 1] ? " · " + esc(CHS[n - 1].court) : ""}</a>`).join("")}</div>
+  ${(a.notions || []).length ? `<p class="small" style="margin-top:10px">Notions : ${a.notions.map(n => `<button type="button" class="ntag" data-notion="${esc(n)}">${esc(n)}</button>`).join(" ")}</p>` : ""}</section>
+  ${same.length ? `<section class="sec"><h2>Arrêts voisins</h2><div class="cplist">${same.map(arrRow).join("")}</div></section>` : ""}
+  </div>`);
+  document.querySelectorAll("[data-notion]").forEach(b => b.addEventListener("click", () => { arrFilt.q = b.dataset.notion; arrFilt.theme = arrFilt.ch = arrFilt.prov = ""; arrFilt.ver = false; go("obl/outils/arrets"); }));
+}
+function arretsDuChapitre(n) {
+  const l = ARR().filter(a => (a.chapitres || []).includes(n)).sort((x, y) => (x.date || "").localeCompare(y.date || ""));
+  if (!l.length) return "";
+  return `<section class="sec"><h2>Arrêts du chapitre</h2><details class="fdet"><summary>${plural(l.length, "arrêt")} lié${l.length > 1 ? "s" : ""} à ce chapitre</summary><div class="cplist">${l.map(arrRow).join("")}</div></details></section>`;
+}
 function oblFiche(c, box) {
   const secs = c.sections || [];
   const regs = (OBL.regimes || []).filter(r => (c.regimes || []).includes(r.id));
@@ -201,6 +267,7 @@ function oblFiche(c, box) {
     ${c.retenir ? `<section class="sec"><h2>L'essentiel à retenir</h2><ul>${c.retenir.map(x => `<li>${fmt(x)}</li>`).join("")}</ul></section>` : ""}
     ${formulesChapitre(regs)}
     ${complHtml(c)}
+    ${arretsDuChapitre(c.num)}
     ${regs.length ? `<section class="sec"><h2>Régimes du chapitre</h2><div class="row">${regs.map(r => `<a class="btn" href="#/obl/outils/regimes/${esc(r.id)}">${esc(r.titre)}</a>`).join("")}</div></section>` : ""}`;
 }
 function formulesChapitre(regs) {
@@ -496,6 +563,7 @@ function oblTool(t, args) {
   }
   if (t === "pieges") return oblPiegesAll(args[0]);
   if (t === "cas") return oblBank(args[0]);
+  if (t === "arrets") return args[0] ? arretPage(args[0]) : arretsIndex();
   if (t === "quiz") {
     setMain(`<div class="head"><h1>Quiz mélangé</h1><p class="muted" style="margin-top:6px">Vingt questions tirées de tous les chapitres.</p></div><div class="content" id="qz"></div>`);
     quizView($("#qz"), CHS.flatMap(c => (c.quiz || []).map(q => ({ ...q, ch: c.num }))), null, null, { n: 20, showCh: true });

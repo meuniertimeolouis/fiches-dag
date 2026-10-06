@@ -158,11 +158,10 @@ window.OBL.arrets = [
    "1303-3"
   ],
   "a_verifier": true,
-  "note_verif": "Faits et nom usuel éventuel de l'arrêt non établis par le site ; vérifier.",
+  "note_verif": "Toujours à vérifier : aucune source primaire ou secondaire accessible n'a permis de confirmer la formation, les parties ni les faits de l'arrêt du 2 mars 1915. La règle (subsidiarité, art. 1303-3) est, elle, certaine.",
   "reste": [
-   "Formation exacte (Civ. ? Req. ?) et date du 2 mars 1915, nom usuel éventuel et n° éventuel de l'arrêt",
-   "Faits de l'espèce",
-   "Arrêt(s) d'assouplissement de la subsidiarité antérieurs à 2016 (ex. Civ. 1re, 14 mars 1995 cité sans preuve par la fiche d'origine)"
+   "Formation, parties et faits de l'arrêt du 2 mars 1915 (non trouvés en accès libre)",
+   "Arrêt(s) d'assouplissement de la subsidiarité antérieurs à 2016 : ne pas citer « Civ. 1re, 14 mars 1995 » sans l'avoir lu"
   ],
   "source": "Non trouvé sur Légifrance (recherche texte libre) ni sur Wikipédia ; art. 1303-3 C. civ. connu, date et nature de l'arrêt (formation) du 2 mars 1915 non confirmées",
   "verifie": false
@@ -172,7 +171,7 @@ window.OBL.arrets = [
   "nom": "Clément-Bayard",
   "juridiction": "Req. (Chambre des requêtes)",
   "date": "1915-08-03",
-  "numero": "00-02.378",
+  "numero": "",
   "provenance": [
    "CM",
    "Manuel"
@@ -204,11 +203,12 @@ window.OBL.arrets = [
     "ou": "Réponse à la défense fondée sur un droit"
    }
   ],
-  "distinguer": "Ne pas confondre avec le trouble anormal de voisinage, responsabilité sans faute consacrée par la loi du 15 avril 2024 : ici l'intention de nuire est constitutive de l'abus. L'abus de droit relève aujourd'hui de la faute (art. 1240).",
+  "distinguer": "Ne pas confondre avec le trouble anormal de voisinage, responsabilité de plein droit (sans faute) désormais inscrite à l'art. 1253 C. civ. par la loi n° 2024-346 du 15 avril 2024 : ici, c'est l'intention de nuire qui caractérise l'abus. L'abus de droit relève de la faute (art. 1240).",
   "textes": [
    "544",
    "647",
-   "1240 (ex-1382)"
+   "1240 (ex-1382)",
+   "1253 (loi du 15 avr. 2024)"
   ],
   "td_fiche": false,
   "theme": "Faute (fait personnel)",
@@ -217,13 +217,11 @@ window.OBL.arrets = [
    "647",
    "1240"
   ],
-  "a_verifier": true,
-  "note_verif": "Arrêt retrouvé sur Légifrance (texte intégral, rejet, CA Amiens 12 nov. 1913). Le n° 00-02.378 est un numéro de référence d'archive Légifrance.",
-  "reste": [
-   "Mention de la loi du 15 avril 2024 (trouble anormal de voisinage) citée de mémoire, non contrôlée sur Légifrance"
-  ],
-  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007070363 (Req., 3 août 1915, réf. Légifrance 00-02.378, inédit, rejet, CA Amiens 12 nov. 1913) ; arrêt antérieur à 1950, texte intégral sur Légifrance",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Arrêt vérifié (Req., 3 août 1915, Coquerel c/ Clément-Bayard, DP 1917, 1, 79 ; rejet). Pas de numéro de pourvoi : « 00-02.378 » est une référence d'archivage Légifrance, à ne pas citer comme n° de pourvoi. Loi du 15 avril 2024 vérifiée.",
+  "reste": [],
+  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007070363 ; https://law.utexas.edu/transnational/foreign-law-translations/french/case.php?id=1205 (Coquerel v. Clément-Bayard, DP 1917. 1. 79) ; loi n° 2024-346 du 15 avr. 2024, art. 1253 C. civ. : https://www.cnb.avocat.fr/fr/actualites/la-responsabilite-du-fait-des-troubles-de-voisinage-anormaux-entre-dans-le-code-civil",
+  "verifie": true
  },
  {
   "id": "lejars-templier-1923",
@@ -269,14 +267,11 @@ window.OBL.arrets = [
   "articles": [
    "1240"
   ],
-  "a_verifier": true,
-  "note_verif": "Absent du site (inventaire). Pas de n° de pourvoi dans le plan.",
-  "reste": [
-   "n° de pourvoi non trouvé (arrêt absent de Légifrance)",
-   "contenu de Dangereux non relu sur Légifrance (seul le titre/date a été vérifié)"
-  ],
-  "source": "Civ., 13 févr. 1923, Lejars c/ Consorts Templier, rejet (absent de Légifrance) : https://www.doctrine.fr/d/CASS/1923/DE08924601734796456 (texte intégral) ; Dangereux : Légifrance JURITEXT000006982751 (Ch. mixte, 27 févr. 1970, n° 68-10.276, titre et date vérifiés)",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Arrêt vérifié : Civ., 13 févr. 1923, Lejars c/ Consorts Templier, DP 1923, 1, 52, rejet. Arrêt ancien : il n'a pas de numéro de pourvoi utilisable en copie ; on le cite par la date et le recueil.",
+  "reste": [],
+  "source": "https://law.utexas.edu/transnational/foreign-law-translations/french/case.php?id=1232 (Civ. 13 févr. 1923, DP 1923. 1. 52, texte traduit, rejet) ; Dangereux : Légifrance JURITEXT000006982751 (Ch. mixte, 27 févr. 1970, n° 68-10.276)",
+  "verifie": true
  },
  {
   "id": "jandheur-1930",
@@ -374,10 +369,9 @@ window.OBL.arrets = [
    "1241"
   ],
   "a_verifier": true,
-  "note_verif": "Plan sans n° de pourvoi ; référence : Bull. civ. n° 181, p. 377. Parties et faits tirés des attendus reproduits dans le plan.",
+  "note_verif": "Toujours à vérifier : date, formation et formule (« lésion certaine d'un intérêt légitime juridiquement protégé ») sont classiques, mais le texte de l'arrêt n'a pas pu être lu ; les faits (taxi, fille naturelle) viennent du plan de cours. Cite-le « Civ., 27 juill. 1937, DP 1938, 1, 5 » ; un arrêt de 1937 n'a pas de n° de pourvoi à citer.",
   "reste": [
-   "pas de n° de pourvoi ni de texte intégral accessible (arrêt de 1937 absent de Légifrance)",
-   "faits (taxi, concubine et fille naturelle) non recoupés avec le texte de l'arrêt : repris du plan de cours"
+   "Faits et dispositif exacts sur le texte de l'arrêt (DP 1938, 1, 5 ; S. 1938, 1, 321, note Marty)"
   ],
   "source": "Absent de Légifrance (recherche « concubine 27 juillet 1937 » : 0 résultat). Sources secondaires consultées : résultats Google vers gdroit.fr, cours-de-droit.net, OpenEdition Books (Bull. civ. n° 181) et références doctrinales : Civ. 27 juill. 1937, Métenier, DP 1938, 1, p. 5 ; S. 1938, I, p. 321, note G. Marty.",
   "verifie": false
@@ -401,7 +395,7 @@ window.OBL.arrets = [
    "gardien et propriétaire",
    "responsabilité du fait des choses"
   ],
-  "faits": "Le docteur Franck avait confié sa voiture à son fils mineur, qui l'avait laissée en stationnement sur la voie publique. Le véhicule est volé ; le voleur, jamais retrouvé, provoque un accident mortel. Les ayants droit de la victime (un facteur) agissent contre le propriétaire. La cour d'appel de Nancy (3 mars 1936) écarte sa responsabilité : dépossédé par le vol, il ne pouvait plus surveiller sa voiture. Un premier pourvoi avait déjà été formé : le second pourvoi est examiné par les chambres réunies.",
+  "faits": "Le docteur Franck avait confié sa voiture à son fils mineur, qui l'avait laissée en stationnement sur la voie publique. Le véhicule est volé ; le voleur, jamais retrouvé, provoque un accident mortel. Les ayants droit de la victime agissent contre le propriétaire. La cour d'appel de Nancy (3 mars 1936) écarte sa responsabilité : dépossédé par le vol, il ne pouvait plus surveiller sa voiture. Un premier pourvoi avait déjà été formé : le second pourvoi est examiné par les chambres réunies.",
   "question": "Le propriétaire d'un véhicule volé reste-t-il son gardien au sens de l'art. 1384, al. 1er (ancien), et répond-il de plein droit du dommage causé par le voleur ?",
   "solution": "Sur ce point, rejet du pourvoi : le propriétaire, privé par le vol de l'usage, de la direction et du contrôle de sa voiture, n'en avait plus la garde ; la présomption de responsabilité de l'art. 1384, al. 1er ne peut donc plus jouer contre lui. La garde est ainsi détachée de la propriété pour devenir une notion de fait (usage, direction, contrôle), la propriété n'étant plus qu'un indice. Le reproche de faute du propriétaire (négligence) relève d'un autre moyen.",
   "justifie": [
@@ -428,15 +422,11 @@ window.OBL.arrets = [
   "articles": [
    "1242"
   ],
-  "a_verifier": true,
-  "note_verif": "Bull. n° 292 ; pas de n° de pourvoi. L'arrêt porte seulement sur la première branche du moyen (rejet) et renvoie la seconde branche (faute) à la chambre civile.",
-  "reste": [
-   "n° de pourvoi non trouvé (arrêt absent de Légifrance)",
-   "texte intégral (PDF mafr.fr) non lu : formulation exacte de la solution et n° Bull. 292 donnés par le site à confirmer",
-   "'victime facteur' : à vérifier"
-  ],
-  "source": "Chambres réunies, 2 déc. 1941 (absent de Légifrance) ; commentaire et faits : https://www.mafr.fr/ressources/thesaurus/jurisprudence/02-cour-de-cassation/cour-de-cassation-chambres-reunies-2/ (dont le PDF de l'arrêt n'a pas été lu)",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Arrêt vérifié : Ch. réunies, 2 déc. 1941, Franck, rejet ; formule « privé de l'usage, de la direction et du contrôle de sa voiture, [il] n'en avait plus la garde ». Arrêt ancien : pas de n° de pourvoi à citer. Détail « victime facteur » retiré faute de source.",
+  "reste": [],
+  "source": "https://www.mafr.fr/ressources/thesaurus/jurisprudence/02-cour-de-cassation/cour-de-cassation-chambres-reunies-2/ (texte et commentaire de l'arrêt)",
+  "verifie": true
  },
  {
   "id": "civ-1943-07-15-evaluation-jour-du-jugement",
@@ -457,9 +447,9 @@ window.OBL.arrets = [
    "réparation intégrale",
    "érosion monétaire"
   ],
-  "faits": "Arrêt de la chambre civile du 15 juillet 1943 (Veuve Busquet c/ Consorts Rozières) : une cour d'appel avait évalué le préjudice à une date antérieure à sa décision ; la Cour de cassation lui reproche de ne pas l'avoir apprécié au moment où elle statue. Détails de l'affaire non vérifiés.",
+  "faits": "Dans la nuit du 19 au 20 février 1923, un mur s'effondre et endommage la maison des époux Busquet ; les consorts Rozières, qui l'avaient fragilisé par des travaux, sont jugés entièrement responsables. La cour d'appel (23 janvier 1935) fixe l'indemnité d'après la valeur du bien au jour de l'accident.",
   "question": "À quelle date s'apprécie le montant du préjudice ?",
-  "solution": "Cassation sur ce point (selon les sources secondaires consultées) : la réparation d'un dommage s'apprécie en valeur au jour où le juge statue, et non au jour du fait dommageable. Le droit à réparation naît du dommage, mais l'évaluation de son montant doit tenir compte de la valeur du préjudice au moment de la décision, afin d'assurer une réparation intégrale malgré l'évolution des prix.",
+  "solution": "Cassation, au visa de l'art. 1382 ancien (1240 actuel). L'auteur d'un fait dommageable doit réparer l'intégralité du préjudice ; l'étendue de ce préjudice et le montant de l'indemnité s'apprécient au jour où le juge statue, et non au jour du fait dommageable, afin d'assurer une réparation intégrale malgré l'évolution des prix.",
   "justifie": [
    {
     "argument": "Soutenir que le préjudice s'évalue au jour de la décision du juge, afin que la victime ne subisse pas l'érosion monétaire entre le fait dommageable et le jugement.",
@@ -480,15 +470,11 @@ window.OBL.arrets = [
    "1240",
    "1231-1"
   ],
-  "a_verifier": true,
-  "note_verif": "Site : ch17 l.135, compl. Pas de n° ni de faits sur le site.",
-  "reste": [
-   "N° de pourvoi non retrouvé (arrêt antérieur à Légifrance) : champ numero laissé vide",
-   "Faits de l'affaire non vérifiés sur le texte de l'arrêt (consulter GAJC ou Doctrine avec accès)",
-   "Formulation exacte de la solution (« jour du jugement » ou jour de l'arrêt d'appel) à confirmer sur le texte"
-  ],
-  "source": "Absent de Légifrance (recherche « 15 juillet 1943 » sans résultat). Sources secondaires consultées via recherche web : Doctrine (Cour de cassation, Chambre civile, 15 juillet 1943), recensions des Grands arrêts de la jurisprudence civile (GAJC, t. 2, Veuve Busquet c/ Consorts Rozières, Civ. 15 juill. 1943), notes citant « Cass. civ. 15 juillet 1943, GAJC, vol. 2 »",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Arrêt vérifié : Civ., 15 juill. 1943, Veuve Busquet c/ Consorts Rozières, JCP 1943, II, 2500, cassation. Arrêt ancien : pas de n° de pourvoi à citer.",
+  "reste": [],
+  "source": "https://law.utexas.edu/transnational/foreign-law-translations/french/case.php?id=1228 (Busquet v. Rozières, Civ. 15 juill. 1943, JCP 1943. II. 2500, texte traduit)",
+  "verifie": true
  },
  {
   "id": "branly-1951",
@@ -548,7 +534,7 @@ window.OBL.arrets = [
  },
  {
   "id": "com-1951-06-19-lamoriciere",
-  "nom": "Lamoricière",
+  "nom": "Lamoricière (Transports maritimes de l'État c/ Brossette)",
   "juridiction": "Com.",
   "date": "1951-06-19",
   "numero": "",
@@ -565,9 +551,9 @@ window.OBL.arrets = [
    "exonération",
    "concours de causes"
   ],
-  "faits": "Naufrage du paquebot Lamoricière lors d'une tempête ; le navire avait été alimenté avec un charbon de mauvaise qualité, qui avait contribué à l'accident. Les victimes agissent contre le transporteur/gardien du navire, qui invoque la tempête comme cas de force majeure.",
+  "faits": "Le 9 janvier 1942, le paquebot Lamoricière, parti d'Alger pour Marseille, sombre corps et biens dans une tempête d'une violence exceptionnelle au large des Baléares ; il était contraint, en temps de guerre, d'utiliser un charbon de mauvaise qualité. Les ayants droit d'un passager décédé (M. Brossette) agissent contre l'armateur, les Transports maritimes de l'État, sur le fondement de l'art. 1384, al. 1er ancien.",
   "question": "Lorsqu'un événement de force majeure (tempête) et une faute du responsable (combustible défectueux) concourent à la production du dommage, le responsable est-il totalement ou seulement partiellement exonéré ?",
-  "solution": "La chambre commerciale retient que la tempête présentait bien les caractères de la force majeure, mais que la faute du transporteur (mauvaise qualité du charbon) avait aussi contribué au dommage : l'exonération n'est que partielle et le responsable reste tenu à hauteur de sa part causale. (Texte intégral non consulté : solution rapportée par une source secondaire.)",
+  "solution": "La chambre commerciale approuve les juges du fond : l'armateur, qui avait conservé l'usage et le contrôle du navire, en était le gardien (art. 1384, al. 1er). Mais la tempête, d'une violence tout à fait exceptionnelle, et l'emploi forcé d'un charbon défectueux constituaient des causes étrangères ayant concouru au dommage : le gardien n'est tenu que d'un cinquième du dommage. C'est l'arrêt de l'exonération PARTIELLE par la force majeure.",
   "justifie": [
    {
     "argument": "Illustrer la causalité partielle : quand la force majeure concourt avec la faute du responsable, le lien de causalité n'est rompu qu'en partie, d'où une exonération partielle.",
@@ -578,7 +564,7 @@ window.OBL.arrets = [
     "ou": "Cas pratique sur l'exonération du gardien ou du transporteur"
    }
   ],
-  "distinguer": "Ne pas confondre avec l'exonération partielle pour faute de la victime : ici le concours est entre une force majeure et la faute du défendeur. Ne pas présenter la solution comme 'abandonnée' : l'exonération partielle en cas de concours demeure admise. Pour la définition de la force majeure en matière extracontractuelle, voir Ass. plén., 14 avr. 2006, n° 04-18.902 (imprévisibilité et irrésistibilité) ; en matière contractuelle, art. 1218 C. civ.",
+  "distinguer": "Solution isolée et abandonnée : la jurisprudence postérieure juge que la force majeure exonère totalement ou pas du tout (« tout ou rien »), par ex. Civ. 3e, 9 déc. 1998 (sécheresse : pas d'exonération partielle du constructeur). En copie, citer Lamoricière comme l'exception historique, non comme le droit positif. Ne pas confondre avec l'exonération partielle par la faute de la victime, qui reste admise. Le charbon n'était pas une « faute » du gardien : la responsabilité reposait sur la garde du navire. Définition actuelle de la force majeure : Ass. plén., 14 avr. 2006, n° 04-18.902 ; en matière contractuelle, art. 1218 C. civ.",
   "textes": [],
   "td_fiche": false,
   "theme": "Exonération et partage de responsabilité",
@@ -587,14 +573,11 @@ window.OBL.arrets = [
    "1240",
    "1242"
   ],
-  "a_verifier": true,
-  "note_verif": "Faits, n° de pourvoi et formulation exacte non vérifiés : à lire sur Légifrance. Le site (ch17) ne donne ni n° ni détail de l'espèce.",
-  "reste": [
-   "n° de pourvoi introuvable (arrêt absent de Légifrance)",
-   "texte intégral non lu : faits issus d'une source secondaire unique"
-  ],
-  "source": "Cass. com., 19 juin 1951 (absent de Légifrance) ; résumé secondaire : https://gdroit.fr/droit-des-obligations/causes-dexoneration-cause-etrangere-et-force-majeure/",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Arrêt vérifié : Com., 19 juin 1951, Transports maritimes de l'État c/ Brossette et Bastard, D. 1951, 717, note Ripert. Arrêt ancien : pas de n° de pourvoi à citer. L'ancienne fiche était fausse sur deux points : le charbon présenté comme une faute du transporteur, et la solution présentée comme toujours admise.",
+  "reste": [],
+  "source": "https://law.utexas.edu/transnational/foreign-law-translations/french/case.php?id=1436 (Com. 19 juin 1951, texte traduit) ; abandon : Civ. 3e, 9 déc. 1998, https://www.anil.org/documentation-experte/analyses-juridiques-jurisprudence/jurisprudence/jurisprudence-1999/force-majeure-/-dommages-/-exoneration-partielle-de-responsabilite/",
+  "verifie": true
  },
  {
   "id": "civ2-1955-02-17-clause-non-responsabilite-delictuelle",
@@ -705,7 +688,7 @@ window.OBL.arrets = [
  },
  {
   "id": "civ2-1966-05-12-perte-de-chance",
-  "nom": "Perte de chance (Civ. 2e, 1966)",
+  "nom": "Erhard c/ Bennoun : chance trop hypothétique (Civ. 2e, 1966)",
   "juridiction": "Civ. 2e",
   "date": "1966-05-12",
   "numero": "",
@@ -722,9 +705,9 @@ window.OBL.arrets = [
    "causalité",
    "réparation à proportion de la chance perdue"
   ],
-  "faits": "Faits non vérifiés (arrêt absent de Légifrance). Les sources secondaires évoquent la perte de la chance d'exercer une profession (pharmacien) à la suite d'un dommage corporel, jugée trop incertaine ; deux arrêts du même jour (12 mai 1966) sont signalés (D. 1966, 700, note Azard).",
-  "question": "La perte d'une chance dont la réalisation reste hypothétique ou trop lointaine ouvre-t-elle droit à réparation ? À quelles conditions la chance perdue constitue-t-elle un préjudice certain ?",
-  "solution": "Selon les sources secondaires consultées (rubrique « Perte d'une chance. Refus. » des Grands arrêts de la jurisprudence civile ; cours de responsabilité civile), la Civ. 2e du 12 mai 1966 est citée comme exemple de REFUS d'indemniser une chance perdue, parce que la chance invoquée (celle d'exercer une profession, la profession de pharmacien selon certaines sources) était trop éloignée/éventuelle pour constituer un préjudice certain. Elle illustre donc la limite du principe : seule une chance sérieuse et actuelle, perdue de façon certaine, est réparable (et l'indemnité est mesurée à la chance perdue, non à l'avantage espéré). Les faits et le texte intégral n'ont pas pu être vérifiés.",
+  "faits": "Mlle Erhard, 19 ans, est blessée dans un accident dont Bennoun est jugé entièrement responsable. Elle reproche à la cour d'appel de Paris (31 janvier 1964) de ne pas l'avoir indemnisée pour avoir dû renoncer à la carrière de pharmacienne qu'elle envisageait. Au jour de l'accident, elle venait d'échouer à la première partie du baccalauréat et n'avait entrepris aucune étude préparatoire à cette profession.",
+  "question": "La victime peut-elle être indemnisée de la perte d'une carrière qu'elle envisageait mais à laquelle rien ne la préparait encore ?",
+  "solution": "Rejet du pourvoi de la victime. La carrière de pharmacienne, dont elle était « très loin » d'avoir entrepris la préparation, était purement hypothétique : les juges du fond ont pu estimer qu'elle invoquait un préjudice incertain, non réparable. L'arrêt illustre la limite de la perte de chance : seule la disparition d'une éventualité favorable réelle et sérieuse est réparable.",
   "justifie": [
    {
     "argument": "Rappeler que la perte d'une chance n'est réparable que si la chance était réelle et sérieuse : une éventualité lointaine ou purement hypothétique ne forme pas un préjudice certain.",
@@ -735,7 +718,7 @@ window.OBL.arrets = [
     "ou": "Dissertation : le caractère certain du préjudice."
    }
   ],
-  "distinguer": "À ne pas confondre avec Civ. 1re, 14 déc. 1965, souvent cité comme point de départ de la perte de chance, où la chance est admise. Ici (Civ. 2e, 12 mai 1966) la chance est refusée comme trop incertaine. Pour la médecine, voir ensuite Civ. 1re, 18 mars 1969 (perte de chance de survie/guérison) et, pour le calcul, la réparation à hauteur de la chance perdue. Référence à Civ. 1re, 14 déc. 1965 et 18 mars 1969 donnée de mémoire doctrinale, non vérifiée ici.",
+  "distinguer": "Arrêt de REFUS : ne pas le citer comme admettant la réparation d'une perte de chance. Seule une chance réelle et sérieuse est réparable, et elle l'est à proportion de sa probabilité, non à hauteur de l'avantage espéré.",
   "textes": [
    "1240"
   ],
@@ -745,18 +728,11 @@ window.OBL.arrets = [
    "1240",
    "1231-2"
   ],
-  "a_verifier": true,
-  "note_verif": "Date et chambre confirmées par plusieurs sources secondaires (GAJC : Civ. 2e, 12 mai 1966, rubrique « perte d'une chance, refus » ; Doctrine : Cass. 2e civ., 12 mai 1966, publié au Bulletin, n° 561 selon Doctrine, 564 selon un manuel). Absent de Légifrance : n° de pourvoi et motifs exacts non vérifiés. La solution de la fiche d'origine (chance admise) est probablement inexacte.",
-  "reste": [
-   "n° de pourvoi",
-   "faits exacts (profession invoquée)",
-   "texte intégral et motif décisif",
-   "n° de Bulletin (561, 564 ou autre)",
-   "le second arrêt du même jour",
-   "références Civ. 1re 14 déc. 1965 / 18 mars 1969 citées dans 'distinguer'"
-  ],
-  "source": "https://www.doctrine.fr (Cass. 2e civ., 12 mai 1966, Bull. civ. II, n° 561 ou 564 selon sources) ; recoupements GAJC (Dalloz) via moteur de recherche ; absent de Légifrance",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Arrêt vérifié : Civ. 2e, 12 mai 1966, Erhard c/ Bennoun, D. 1967, 3, rejet. L'ancienne fiche était fausse (chance admise). N° du Bulletin et second arrêt du même jour non recherchés, retirés.",
+  "reste": [],
+  "source": "https://law.utexas.edu/transnational/foreign-law-translations/french/case.php?id=1225 (Erhard v. Bennoun, Civ. 2e 12 mai 1966, D. 1967, 3, texte traduit)",
+  "verifie": true
  },
  {
   "id": "guyomard-comba-1967",
@@ -1711,7 +1687,7 @@ window.OBL.arrets = [
     "ou": "Plan chronologique sur le préjudice de la victime inconsciente"
    }
   ],
-  "distinguer": "Ne pas le citer comme admettant ou refusant l'indemnisation : la cassation repose sur le défaut de motivation et de base légale. La solution de principe est posée par Crim. 1994 et Civ. 2e 1995.",
+  "distinguer": "Ne pas le citer comme admettant ou refusant l'indemnisation : la cassation repose sur le défaut de réponse à conclusions et de base légale. Le principe (l'état végétatif n'exclut aucun poste de préjudice) est posé par Civ. 2e, 22 févr. 1995, n° 92-18.731, et réaffirmé par Crim., 15 janv. 2019, n° 17-86.461, puis Crim., 8 avr. 2026, n° 25-82.585.",
   "textes": [
    "1382 ancien",
    "455 et 458 anc. CPC"
@@ -1722,14 +1698,11 @@ window.OBL.arrets = [
    "1240",
    "1231-1"
   ],
-  "a_verifier": true,
-  "note_verif": "Plan sans n° de pourvoi (Bull. civ. II n° 133). Date et référence au Bulletin à confirmer. Absent du site.",
-  "reste": [
-   "n° du Bulletin civil (II n° 133 selon l'ancienne note) non confirmé",
-   "références exactes des arrêts de 1994 (Crim.) et 1995 (Civ. 2e) cités dans « distinguer » non vérifiées (texte intégral non ouvert)"
-  ],
-  "source": "https://www.legifrance.gouv.fr/search?fonds=JURI&tab_selection=juri&searchField=ALL&query=%22%C3%A9tat%20v%C3%A9g%C3%A9tatif%22%20capital%20rente%2021%20juin%201989 (Cass. 2e civ., 21 juin 1989, n° 87-18.379, publié au Bulletin ; fiche de résultat Légifrance)",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Arrêt vérifié sur Légifrance (Civ. 2e, 21 juin 1989, n° 87-18.379, publié). N° du Bulletin non confirmé : ne pas le citer. Référence « Crim. 1994 » de l'ancienne fiche remplacée par des arrêts vérifiés.",
+  "reste": [],
+  "source": "Légifrance (Civ. 2e, 21 juin 1989, n° 87-18.379) ; principe : https://www.labase-lextenso.fr/gazette-du-palais/2026-n19/l-etat-vegetatif-d-un-blesse-ne-reduit-ni-n-exclut-son-indemnisation-integrale-GPL491q6",
+  "verifie": true
  },
  {
   "id": "civ1-1990-01-24-inconduite-du-mari",
@@ -2734,7 +2707,7 @@ window.OBL.arrets = [
     "ou": "Cas pratique : action contre le parent qui exerce le droit de visite"
    }
   ],
-  "distinguer": "À ne pas confondre avec l'arrêt Bertrand, rendu le même jour (Civ. 2e, 19 févr. 1997, n° 94-21.111), autre arrêt sur la responsabilité des parents dont le contenu n'a pas été consulté ici. Le critère de cohabitation, apprécié ici au regard de la résidence habituelle chez le parent gardien, a été repensé depuis : Ass. plén., 28 juin 2024 (n° 22-84.760) retient que, tant que les parents exercent l'autorité parentale, la cohabitation ne cesse pas pour les deux et la responsabilité de plein droit de l'art. 1242 al. 4 peut peser sur chacun. Dans Samda, le père a été tenu personnellement sur le terrain de la faute (art. 1240), non de la responsabilité de plein droit.",
+  "distinguer": "À ne pas confondre avec l'arrêt Bertrand, rendu le même jour (Civ. 2e, 19 févr. 1997, n° 94-21.111) : responsabilité de plein droit des parents, dont seule la force majeure ou la faute de la victime les exonère. Le critère de cohabitation retenu ici a été abandonné : Ass. plén., 28 juin 2024 (n° 22-84.760) rattache la cohabitation à l'exercice conjoint de l'autorité parentale, puis la loi n° 2025-568 du 23 juin 2025 a supprimé la condition de cohabitation de l'art. 1242, al. 4 (parents responsables « en tant qu'ils exercent l'autorité parentale », sauf enfant confié à un tiers par décision administrative ou judiciaire). Dans Samda, le père a été tenu personnellement sur le terrain de la faute (art. 1240), non de la responsabilité de plein droit.",
   "textes": [
    "1384 al. 4 (aujourd'hui 1242 al. 4)",
    "1382 (aujourd'hui 1240)"
@@ -2745,15 +2718,11 @@ window.OBL.arrets = [
    "1242",
    "1240"
   ],
-  "a_verifier": true,
-  "note_verif": "Arrêt vérifié sur Légifrance (texte intégral, publié au bulletin, cassation partielle). Bull. II n° 55 non recoupé. Passage sur Ass. plén. 28 juin 2024 confirmé via Légifrance (n° 22-84.760) ; la mention de la loi du 23 juin 2025 et de Crim. 29 avril 2014 présentes dans l'ancienne fiche n'ont pas pu être vérifiées et ont été retirées.",
-  "reste": [
-   "Bull. civ. II n° 55",
-   "Existence et contenu d'une éventuelle loi de 2025 sur la cohabitation (retirée faute de vérification)",
-   "Arrêt Bertrand du même jour (n° 94-21.111) : n° et contenu non consultés, mention de distinction reprise de l'ancienne fiche"
-  ],
-  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007037023 (Civ. 2e, 19 févr. 1997, n° 93-14.646, publié au bulletin) ; Ass. plén. 28 juin 2024, n° 22-84.760 (résultat de recherche Légifrance)",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Arrêt vérifié sur Légifrance (Civ. 2e, 19 févr. 1997, n° 93-14.646, publié, cassation partielle). Loi du 23 juin 2025 vérifiée. N° du Bulletin non confirmé : ne pas le citer.",
+  "reste": [],
+  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007037023 ; Bertrand : https://law.utexas.edu/transnational/foreign-law-translations/french/table.php?id=80 ; loi n° 2025-568 : https://www.cnb.avocat.fr/fr/actualites/responsabilite-civile-des-parents-ce-que-change-la-loi-attal",
+  "verifie": true
  },
  {
   "id": "civ2-1997-02-19-bertrand",
@@ -2908,13 +2877,11 @@ window.OBL.arrets = [
   "articles": [
    "1240"
   ],
-  "a_verifier": true,
-  "note_verif": "Absent du site. Cassation suivie d'un arrêt de rejet de l'Ass. plén. sur renvoi de la cour d'appel de Reims.",
-  "reste": [
-   "texte intégral de l'arrêt de 1997 non ouvert : motifs précis (faits, attribution des propos au président de PSA) repris de la fiche existante, à confirmer"
-  ],
+  "a_verifier": false,
+  "note_verif": "Vérifié sur Légifrance : Civ. 2e, 2 avr. 1997, n° 95-14.687, Bull. II n° 113, cassation ; renvoi CA Reims puis Ass. plén., 12 juill. 2000, n° 99-19.004, rejet.",
+  "reste": [],
   "source": "https://www.legifrance.gouv.fr/search/juri?tab_selection=juri&searchField=ALL&query=%2295-14.687%22 (Cass. 2e civ., 2 avr. 1997, n° 95-14.687, cassation, publié) ; https://www.legifrance.gouv.fr/search/juri?tab_selection=juri&searchField=ALL&query=%2299-19.004%22 (Ass. plén., 12 juill. 2000, n° 99-19.004, rejet, publié)",
-  "verifie": false
+  "verifie": true
  },
  {
   "id": "civ2-1997-04-02-escalator-meridien",
@@ -3639,7 +3606,7 @@ window.OBL.arrets = [
     "ou": "Dissertation ou commentaire : faute et liberté d'expression ; contrôle de la Cour de cassation sur la faute."
    }
   ],
-  "distinguer": "Ne pas confondre avec les deux autres arrêts d'Assemblée plénière du même jour (12 juill. 2000, n° 98-10.160 et n° 98-11.155), relatifs à la responsabilité pour des propos publics : ici l'absence de faute tient à la nature satirique des propos, appréciée souverainement par les juges du fond. Rapprocher de la cassation antérieure (Civ. 2e, 2 avr. 1997, Bull. n° 113) qui avait précédé ce renvoi.",
+  "distinguer": "Ne pas confondre avec les deux autres arrêts d'Assemblée plénière du même jour (n° 98-10.160, article sur la torture en Algérie ; n° 98-11.155, « On ne badine pas avec la mort ») : ceux-ci jugent que les abus de la liberté d'expression prévus et réprimés par la loi du 29 juillet 1881 ne peuvent être réparés sur le fondement de l'art. 1382. Ici, il n'y a pas d'infraction de presse en cause : l'action relève bien de l'art. 1382, mais aucune faute n'est retenue, vu la nature satirique des propos. Rapprocher de la cassation antérieure (Civ. 2e, 2 avr. 1997, Bull. n° 113).",
   "textes": [
    "1382 (ancien)",
    "1240"
@@ -3649,13 +3616,11 @@ window.OBL.arrets = [
   "articles": [
    "1240"
   ],
-  "a_verifier": true,
-  "note_verif": "Vérifié sur Légifrance : Ass. plén., 12 juill. 2000, n° 99-19.004, publié au Bulletin, rejet ; CA Reims 9 févr. 1999, rendu sur renvoi après cassation Civ. 2e 2 avr. 1997 (Bull. n° 113). Les deux autres arrêts du 12 juill. 2000 (98-10.160 et 98-11.155) existent bien à Légifrance mais leur contenu exact n'a pas été relu : le rapprochement dans 'distinguer' reste à confirmer.",
-  "reste": [
-   "Contenu exact des arrêts Ass. plén. 12 juill. 2000 n° 98-10.160 et 98-11.155 (rapprochement dans 'distinguer' : existence confirmée, contenu non relu)"
-  ],
-  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007042384",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Vérifié sur Légifrance : Ass. plén., 12 juill. 2000, n° 99-19.004, publié, rejet. Contenu des deux autres arrêts du même jour vérifié.",
+  "reste": [],
+  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007042384 ; autres arrêts du même jour : https://law.utexas.edu/transnational/foreign-law-translations/french/case.php?id=1237",
+  "verifie": true
  },
  {
   "id": "ass-plen-2000-07-12-lieutenant-algerie",
@@ -3729,7 +3694,7 @@ window.OBL.arrets = [
    "régime spécial",
    "non-cumul avec le droit commun"
   ],
-  "faits": "Un journal publie un article accusant une personne décédée d'avoir été responsable de la contamination de plusieurs victimes par le virus du SIDA. Ses parents demandent réparation de leur préjudice moral à l'auteur et à l'éditeur. La cour d'appel rejette la demande au motif que l'article 34 de la loi de 1881 est seul applicable.",
+  "faits": "Un magazine publie un article intitulé « L'affaire X… On ne badine pas avec la mort », laissant entendre qu'un jeune homme décédé, séropositif, aurait délibérément contaminé des partenaires par le virus du SIDA. Ses parents demandent réparation de leur préjudice moral à l'auteur et à l'éditeur. La cour d'appel rejette la demande au motif que l'article 34 de la loi de 1881 est seul applicable.",
   "question": "Les héritiers peuvent-ils invoquer l'article 1382 contre une diffamation de la mémoire d'un défunt relevant de la loi de 1881 ?",
   "solution": "Non : les abus de la liberté d'expression prévus et réprimés par la loi de 1881 ne peuvent être réparés sur le fondement de l'article 1382 ; rejet du pourvoi.",
   "justifie": [
@@ -3752,13 +3717,11 @@ window.OBL.arrets = [
   "articles": [
    "1240"
   ],
-  "a_verifier": true,
-  "note_verif": "Absent du site. Identité de motifs avec l'arrêt n° 98-10160.",
-  "reste": [
-   "texte intégral non ouvert : faits (article sur un défunt, SIDA) et visa exact de l'art. 34 loi de 1881 non confirmés"
-  ],
-  "source": "https://www.legifrance.gouv.fr/search/juri?tab_selection=juri&searchField=NUM_AFFAIRE&query=98-11.155 (Cass. Ass. plén., 12 juill. 2000, n° 98-11.155, rejet, publié au Bulletin) ; mention croisée avec 98-10.160 dans TJ Paris 20 déc. 2023, n° 18/14422",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Vérifié : Ass. plén., 12 juill. 2000, n° 98-11.155, publié, rejet ; faits confirmés par le texte de l'arrêt.",
+  "reste": [],
+  "source": "Légifrance (Ass. plén., 12 juill. 2000, n° 98-11.155) ; https://law.utexas.edu/transnational/foreign-law-translations/french/case.php?id=1237 (texte traduit des deux arrêts du 12 juill. 2000)",
+  "verifie": true
  },
  {
   "id": "ass-plen-2000-11-17-perruche",
@@ -4168,7 +4131,7 @@ window.OBL.arrets = [
     "ou": "Cas pratique : enfants et fait des choses"
    }
   ],
-  "distinguer": "Montre que la garde s'apprécie au moment du dommage : une simple participation à un jeu commun ou des conseils ne créent pas une garde en commun. Comparer, avec prudence, avec la jurisprudence sur la garde de la chose dans les jeux collectifs (par ex. l'arrêt du 13 janvier 2005 sur le football, cité par l'ancienne fiche mais non vérifié ici). Ne pas confondre avec l'autre arrêt du 11 juillet 2002 (n° 01-01.666), sans rapport avec ce jeu. Depuis 2016, le texte est l'art. 1242 al. 1er ; la responsabilité des parents (art. 1242 al. 4) peut aussi être recherchée pour le dommage causé par l'enfant.",
+  "distinguer": "Montre que la garde s'apprécie au moment du dommage : une simple participation à un jeu commun ou des conseils ne créent pas une garde en commun. Comparer avec Civ. 2e, 13 janv. 2005 (Girault c/ Niobey, football, rejet) : tous les joueurs ont l'usage du ballon mais aucun n'en a individuellement le contrôle et la direction. Ne pas confondre avec l'autre arrêt du 11 juillet 2002 (n° 01-01.666), sans rapport avec ce jeu. Depuis 2016, le texte est l'art. 1242 al. 1er ; la responsabilité des parents (art. 1242 al. 4) peut aussi être recherchée pour le dommage causé par l'enfant.",
   "textes": [
    "1384 al. 1er (ancien)",
    "1242 al. 1er"
@@ -4178,14 +4141,11 @@ window.OBL.arrets = [
   "articles": [
    "1242"
   ],
-  "a_verifier": true,
-  "note_verif": "Arrêt vérifié sur Légifrance (texte intégral, publié au bulletin, cassation). Non vérifiés : Bull. civ. II n° 176 et l'arrêt du 13 janv. 2005 (football) cité en distinction.",
-  "reste": [
-   "Bull. civ. II n° 176 (doublon possible avec l'arrêt du 4 nov. 2010 selon l'ancienne note)",
-   "Arrêt du 13 janv. 2005 (football) : références et contenu non consultés"
-  ],
+  "a_verifier": false,
+  "note_verif": "Arrêt vérifié sur Légifrance (Civ. 2e, 11 juill. 2002, n° 00-21.346, publié, cassation). N° du Bulletin non confirmé : ne pas le citer. Arrêt football de 2005 vérifié sur le fond (n° de pourvoi non trouvé).",
+  "reste": [],
   "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007046234 (Civ. 2e, 11 juill. 2002, n° 00-21.346, publié au bulletin)",
-  "verifie": false
+  "verifie": true
  },
  {
   "id": "ch-mixte-2002-09-06-loterie-publicitaire",
@@ -4844,7 +4804,7 @@ window.OBL.arrets = [
     "ou": "Commentaire d'arrêt : critère de l'abus de fonctions ; contrôle de la Cour de cassation."
    }
   ],
-  "distinguer": "Ne pas confondre avec les décisions retenant la responsabilité du commettant lorsque le préposé a trouvé dans ses fonctions l'occasion ou les moyens de sa faute, ni avec l'immunité du préposé (Ass. plén., 25 févr. 2000, Costedoat, n° 97-17.378, qui existe sur Légifrance) lorsqu'il agit dans les limites de sa mission. Le critère de l'abus de fonctions vient de Ass. plén., 19 mai 1988 (n° 87-82.654, existence confirmée) : à rapprocher avant de citer.",
+  "distinguer": "Ne pas confondre avec les décisions retenant la responsabilité du commettant lorsque le préposé a trouvé dans ses fonctions l'occasion ou les moyens de sa faute, ni avec l'immunité du préposé qui agit sans excéder les limites de sa mission (Ass. plén., 25 févr. 2000, Costedoat, n° 97-17.378). Le critère de l'abus de fonctions (hors des fonctions, sans autorisation, à des fins étrangères à ses attributions) vient de Ass. plén., 19 mai 1988 (n° 87-82.654, D. 1988, 513).",
   "textes": [
    "1384 al. 5 (aujourd'hui 1242 al. 5)",
    "L. 211-1 C. assur."
@@ -4854,14 +4814,11 @@ window.OBL.arrets = [
   "articles": [
    "1242"
   ],
-  "a_verifier": true,
-  "note_verif": "Vérifié sur Légifrance : Civ. 2e, 3 juin 2004, n° 03-10.819, publié au Bulletin, cassation partielle ; CA Toulouse 10 déc. 2002, renvoi Agen. Intitulé 'Jansou' d'après le nom de l'employeur (société Transports Jansou). La fiche initiale citait 'IRSAM (2011)' et une 'rare décision' admettant l'abus de fonctions : non vérifié, retiré.",
-  "reste": [
-   "Rapprochement avec Ass. plén. 19 mai 1988 (n° 87-82.654) et Ass. plén. 25 févr. 2000 (Costedoat) : existence confirmée mais contenu non relu",
-   "Jurisprudence postérieure sur l'abus de fonctions (jusqu'à aujourd'hui) non vérifiée"
-  ],
-  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007049512",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Vérifié sur Légifrance : Civ. 2e, 3 juin 2004, n° 03-10.819, publié, cassation partielle ; renvoi Agen. Intitulé « Jansou » d'après le nom de l'employeur. Références d'Ass. plén. 1988 et 2000 confirmées.",
+  "reste": [],
+  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007049512 ; Ass. plén. 1988 et 2000 : https://law.utexas.edu/transnational/foreign-law-translations/french/table.php?id=81",
+  "verifie": true
  },
  {
   "id": "civ2-2004-06-10-polo-marquage-dangereux",
@@ -5325,7 +5282,7 @@ window.OBL.arrets = [
     "ou": "Dissertation sur la faute et le préjudice dans les rapports familiaux"
    }
   ],
-  "distinguer": "La réparation sur le fondement du droit commun (art. 1240) exige un préjudice distinct de celui qui résulte de la dissolution du mariage. À rapprocher d'autres arrêts sur la faute du conjoint (l'ancienne fiche citait Civ. 1re, 1er févr. 2009, non vérifié). Ne pas en déduire que tout divorce pour faute ouvre droit à dommages-intérêts. Depuis la loi du 26 mai 2004 (en vigueur au 1er janvier 2005), l'art. 266 du Code civil encadre les dommages-intérêts en cas de dissolution aux torts exclusifs ; le droit commun reste utilisable pour un préjudice distinct.",
+  "distinguer": "La réparation sur le fondement du droit commun (art. 1240) exige un préjudice distinct de celui qui résulte de la dissolution du mariage. Ne pas en déduire que tout divorce pour faute ouvre droit à dommages-intérêts. Depuis la loi n° 2004-439 du 26 mai 2004 (en vigueur le 1er janvier 2005), l'art. 266 C. civ. permet d'allouer des dommages-intérêts pour les conséquences d'une particulière gravité de la dissolution, lorsque le divorce est prononcé aux torts exclusifs de l'autre époux ou pour altération définitive du lien conjugal à la demande de l'autre époux ; le droit commun (art. 1240) reste ouvert pour un préjudice distinct.",
   "textes": [
    "1240 (anc. 1382)",
    "455 CPC"
@@ -5336,15 +5293,11 @@ window.OBL.arrets = [
    "1240",
    "266"
   ],
-  "a_verifier": true,
-  "note_verif": "Arrêt vérifié sur Légifrance (texte intégral, publié au bulletin, cassation partielle). Non vérifiés : Bull. civ. I n° 143 (cité par le TD) et l'arrêt du 1er févr. 2009 cité en distinction dans l'ancienne fiche.",
-  "reste": [
-   "Bull. civ. I n° 143",
-   "Civ. 1re, 1er févr. 2009 : références et contenu non consultés",
-   "Mention de l'art. 266 C. civ. et de la loi du 26 mai 2004 d'après mes connaissances, non recoupée sur Légifrance dans cette session"
-  ],
+  "a_verifier": false,
+  "note_verif": "Arrêt vérifié sur Légifrance (Civ. 1re, 22 mars 2005, n° 04-11.942, publié, cassation partielle). Référence « Civ. 1re, 1er févr. 2009 » supprimée : le 1er février 2009 était un dimanche, l'arrêt ne peut exister. N° du Bulletin non confirmé : ne pas le citer.",
+  "reste": [],
   "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007051039 (Civ. 1re, 22 mars 2005, n° 04-11.942, publié au bulletin)",
-  "verifie": false
+  "verifie": true
  },
  {
   "id": "civ1-2005-09-27-figaro-litteraire",
@@ -5382,7 +5335,7 @@ window.OBL.arrets = [
     "ou": "Commentaire d'arrêt : technique de cassation (art. 627 al. 2 CPC)."
    }
   ],
-  "distinguer": "Ne pas confondre avec l'atteinte à la vie privée, qui relève de l'art. 9 du Code civil (réparée ici au profit de l'ex-époux et des enfants, point non remis en cause). Cette solution s'inscrit dans le mouvement d'exclusion du droit commun pour les abus de la liberté d'expression, à rapprocher des arrêts d'Assemblée plénière du 12 juillet 2000 (ex. n° 98-10.160, 99-19.004), dont le rapprochement exact est à vérifier avant citation.",
+  "distinguer": "Ne pas confondre avec l'atteinte à la vie privée, qui relève de l'art. 9 du Code civil (réparée ici au profit de l'ex-époux et des enfants, point non remis en cause). L'arrêt étend l'exclusion de l'art. 1382 posée par l'Ass. plén. du 12 juill. 2000 (n° 98-10.160 et 98-11.155) pour les abus prévus par la loi de 1881 : ici, même hors de toute infraction de presse, les abus de la liberté d'expression envers les personnes échappent au droit commun.",
   "textes": [
    "1382 (ancien)",
    "1240",
@@ -5394,13 +5347,11 @@ window.OBL.arrets = [
    "1240",
    "9"
   ],
-  "a_verifier": true,
-  "note_verif": "Vérifié sur Légifrance : Civ. 1re, 27 sept. 2005, n° 03-13.622, publié au Bulletin, cassation partielle sans renvoi ; CA Caen 6 mars 2003. Le contrôle de la portée ultérieure (évolution postérieure à 2005 sur la portée de l'exclusion de l'art. 1382 en matière de liberté d'expression) n'a pas été mené.",
-  "reste": [
-   "Évolution ultérieure de la jurisprudence sur l'exclusion de l'art. 1382 en cas d'abus de la liberté d'expression (portée actuelle, rapprochement avec Ass. plén. 12 juill. 2000)"
-  ],
-  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007051612",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Vérifié : Civ. 1re, 27 sept. 2005, n° 03-13.622, Bull. I n° 348, cassation partielle sans renvoi ; CA Caen 6 mars 2003.",
+  "reste": [],
+  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007051612 ; https://law.utexas.edu/transnational/foreign-law-translations/french/case.php?id=1233 (Bull. civ. 2005, I, n° 348)",
+  "verifie": true
  },
  {
   "id": "crim-2006-03-28-stade-de-france",
@@ -6207,7 +6158,7 @@ window.OBL.arrets = [
   "nom": "Préjudice d'agrément : activité spécifique sportive ou de loisirs (Civ. 2e, 28 mai 2009)",
   "juridiction": "Civ. 2e",
   "date": "2009-05-28",
-  "numero": "08-19.829",
+  "numero": "08-16.829",
   "provenance": [
    "Manuel"
   ],
@@ -6221,9 +6172,9 @@ window.OBL.arrets = [
    "préjudice corporel",
    "double indemnisation"
   ],
-  "faits": "",
+  "faits": "Une patiente, transfusée en 1984, contracte l'hépatite C et décède en 2004. Ses ayants droit obtiennent de la cour d'appel une indemnité au titre du déficit fonctionnel et une autre au titre du préjudice d'agrément (perte des activités de loisirs, impossibilité de s'occuper de ses petits-enfants).",
   "question": "Que recouvre le préjudice d'agrément : la perte générale des plaisirs de la vie ou l'impossibilité de pratiquer une activité précise ?",
-  "solution": "Le préjudice d'agrément indemnisable est celui lié à l'impossibilité pour la victime de pratiquer régulièrement une activité spécifique, sportive ou de loisirs. Il est défini restrictivement : la gêne dans les actes de la vie courante et la perte générale de qualité de vie relèvent du déficit fonctionnel permanent, ce qui évite le double compte (articulation avec la nomenclature Dintilhac).",
+  "solution": "Cassation partielle, au visa de l'art. 1147 ancien et du principe de la réparation intégrale sans perte ni profit : « la réparation d'un poste de préjudice personnel distinct dénommé préjudice d'agrément vise exclusivement à l'indemnisation du préjudice lié à l'impossibilité pour la victime de pratiquer régulièrement une activité spécifique sportive ou de loisirs ». La gêne dans les actes de la vie courante relève du déficit fonctionnel : l'indemniser deux fois viole la réparation intégrale.",
   "justifie": [
    {
     "argument": "Exiger de la victime qu'elle établisse la pratique régulière d'une activité sportive ou de loisirs précise pour obtenir une indemnisation distincte au titre de l'agrément.",
@@ -6234,7 +6185,7 @@ window.OBL.arrets = [
     "ou": "Cas pratique, dissertation sur la réparation intégrale du préjudice corporel."
    }
   ],
-  "distinguer": "Le caractère de « revirement » vis-à-vis de Ass. plén. 19 décembre 2003 n'a pas pu être contrôlé : ne pas l'affirmer en copie sans vérification. Ne pas confondre avec le déficit fonctionnel permanent ni avec le préjudice sexuel ou d'établissement, postes distincts de la nomenclature Dintilhac. Arrêt confirmé par Civ. 2e, 8 avril 2010 (n° 09-11.634) et Civ. 2e, 28 juin 2012 (n° 11-16.120) qui s'y réfèrent.",
+  "distinguer": "Revirement par rapport à Ass. plén., 19 déc. 2003, qui retenait une conception large du préjudice d'agrément (troubles dans les conditions d'existence) : la 2e chambre adopte la définition restrictive de la nomenclature Dintilhac (P. Jourdain : « le doute n'est plus permis »). Ne pas confondre avec le déficit fonctionnel permanent ni avec le préjudice sexuel ou d'établissement. Solution reprise par Civ. 2e, 8 avr. 2010 (n° 09-11.634) et 28 juin 2012 (n° 11-16.120).",
   "textes": [
    "1240"
   ],
@@ -6244,15 +6195,11 @@ window.OBL.arrets = [
    "1240",
    "1231-1"
   ],
-  "a_verifier": true,
-  "note_verif": "Le texte de l'arrêt du 28 mai 2009 n'a pas été trouvé sur Légifrance (recherche par n° et par mots-clés). Date et n° de pourvoi 08-19.829 déduits de deux arrêts publiés de la Civ. 2e (8 avril 2010, 09-11.634 ; 28 juin 2012, 11-16.120) qui le citent sur la définition du préjudice d'agrément.",
-  "reste": [
-   "Texte intégral du 28 mai 2009 introuvable sur Légifrance : formation, faits et motif exact non lus",
-   "Existence et nature d'un revirement par rapport à Ass. plén. 19 déc. 2003 non confirmées",
-   "Faits de l'espèce inconnus"
-  ],
-  "source": "https://www.legifrance.gouv.fr/search/juri?tab_selection=juri&searchField=ALL&query=%2208-19.829%22 (références croisées dans Légifrance, JURITEXT000022086123 pour Civ. 2e 8 avril 2010)",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Vérifié : Civ. 2e, 28 mai 2009, n° 08-16.829 (et non 08-19.829), Bull. II n° 131, cassation partielle.",
+  "reste": [],
+  "source": "https://actu.dalloz-etudiant.fr/fileadmin/actualites/pdfs/MARS_2014/arret_28_mai_2009.pdf (texte de l'arrêt) ; P. Jourdain, RTD civ. 2009, 534 : https://actu.dalloz-etudiant.fr/fileadmin/actualites/pdfs/Rtd_civ_2009_jourdain.pdf",
+  "verifie": true
  },
  {
   "id": "civ2-2009-05-28-preposé-conducteur-loi-1985",
@@ -7190,13 +7137,11 @@ window.OBL.arrets = [
    "1252",
    "1240"
   ],
-  "a_verifier": true,
-  "note_verif": "Site : ch17 l.76, compl. l.5. Les faits de l'Erika sont de connaissance générale ; n° de pourvoi non repris par le site.",
-  "reste": [
-   "texte intégral non ouvert : chefs de cassation partielle non détaillés ; faits et rôle de chaque partie civile à confirmer"
-  ],
+  "a_verifier": false,
+  "note_verif": "Vérifié sur Légifrance : Crim., 25 sept. 2012, n° 10-82.938, publié, rejet et cassation partielle sans renvoi. Le détail des chefs cassés n'est pas utile en copie. Loi n° 2016-1087 du 8 août 2016 : art. 1246 à 1252 C. civ.",
+  "reste": [],
   "source": "https://www.legifrance.gouv.fr/search/juri?tab_selection=juri&searchField=ALL&query=erika%20pr%C3%A9judice%20%C3%A9cologique%2025%20septembre%202012 (Cass. crim., 25 sept. 2012, n° 10-82.938, rejet et cassation partielle sans renvoi, publié)",
-  "verifie": false
+  "verifie": true
  },
  {
   "id": "civ2-2013-02-07-le-conservateur",
@@ -7936,7 +7881,7 @@ window.OBL.arrets = [
     "ou": "Cas pratique ou dissertation : préjudice certain et lien de causalité en cas de dommage par ricochet."
    }
   ],
-  "distinguer": "Ne pas appliquer à l'enfant non encore conçu au décès : la solution vise l'enfant déjà conçu (infans conceptus). Les extensions ultérieures (notamment Civ. 2e, 11 févr. 2021, n° 19-23.525, rejet, publié, existence confirmée sur Légifrance mais contenu non relu) sont à vérifier avant d'être citées.",
+  "distinguer": "Ne pas appliquer à l'enfant non encore conçu au décès : la solution vise l'enfant déjà conçu (infans conceptus). Extension : Civ. 2e, 11 févr. 2021, n° 19-23.525 (rejet) : l'enfant qui était conçu au moment du décès de son grand-père, victime de faits présentant le caractère matériel d'une infraction, peut demander réparation du préjudice que lui cause ce décès.",
   "textes": [
    "1382 (ancien)",
    "1240"
@@ -7946,14 +7891,11 @@ window.OBL.arrets = [
   "articles": [
    "1240"
   ],
-  "a_verifier": true,
-  "note_verif": "Vérifié sur Légifrance : Civ. 2e, 14 déc. 2017, n° 16-26.687, publié au Bulletin, rejet ; CA Metz 29 sept. 2016 sur renvoi après cassation Civ. 2e 10 sept. 2015 (n° 14-19.891) ; ECLI:FR:CCASS:2017:C201605. Le contexte était un accident du travail avec faute inexcusable. L'arrêt du 11 févr. 2021 (19-23.525) existe mais n'a pas été lu ; la mention d'un arrêt du 11 mars 2021 (enfant non conçu) n'a pas été trouvée.",
-  "reste": [
-   "Contenu de Civ. 2e, 11 févr. 2021, n° 19-23.525 (extension alléguée au grand-père)",
-   "Existence et contenu de l'arrêt du 11 mars 2021 sur l'enfant non conçu au décès (cité dans la fiche d'origine, non retrouvé)"
-  ],
-  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000036216902 (ECLI:FR:CCASS:2017:C201605)",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Vérifié sur Légifrance : Civ. 2e, 14 déc. 2017, n° 16-26.687, publié, rejet. Arrêt du 11 févr. 2021 vérifié. Mention d'un arrêt du « 11 mars 2021 » (enfant non conçu) supprimée : introuvable.",
+  "reste": [],
+  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000036216902 ; Civ. 2e, 11 févr. 2021 : https://www.lemag-juridique.com/nos-articles/articles/reparation-prejudice-moral-enfant-naitre-fait-deces-son-grand-pere-2123.htm",
+  "verifie": true
  },
  {
   "id": "civ2-2018-02-08-ratp-agression-metro",
@@ -8055,7 +7997,7 @@ window.OBL.arrets = [
     "ou": "Cas pratique : responsabilité du fait des choses et causes d'exonération (art. 1242 al. 1er Code civil, ex-1384 al. 1er)."
    }
   ],
-  "distinguer": "La force majeure se juge au cas par cas : ne pas en déduire que la SNCF est toujours exonérée en cas de chute sur les voies (la solution dépend du caractère imprévisible et irrésistible du fait du tiers). Ne pas confondre avec la définition de la force majeure en matière contractuelle (art. 1218 C. civ., ordonnance de 2016), qui reprend les mêmes critères, ni avec Ass. plén., 14 avr. 2006 (deux arrêts, force majeure : l'irrésistibilité suffit, l'imprévisibilité s'appréciant au moment du contrat ou, hors contrat, de l'événement).",
+  "distinguer": "La force majeure se juge au cas par cas : ne pas en déduire que le transporteur est toujours exonéré. Le même jour, Civ. 2e, 8 févr. 2018, n° 16-26.198 (RATP) casse, pour défaut de motifs (art. 455 CPC), un arrêt qui avait écarté la force majeure par une affirmation générale (« le fait d'un tiers qui pousse un usager n'est pas irrésistible »). Ne pas confondre avec la force majeure contractuelle (art. 1218 C. civ.) ni avec Ass. plén., 14 avr. 2006 (deux arrêts sur les critères de la force majeure).",
   "textes": [
    "1384 al. 1er ancien (1242 al. 1er)"
   ],
@@ -8065,14 +8007,11 @@ window.OBL.arrets = [
    "1242",
    "1218"
   ],
-  "a_verifier": true,
-  "note_verif": "Bull. II n° 27. Le site cite le n° 17-10.516 avec l'autre arrêt ; ici date, juridiction, n° et solution conformes.",
-  "reste": [
-   "Mention « 16-26198 (même jour) » dans distinguer non contrôlée : retirée de la fiche faute de vérification",
-   "N° du Bull. civ. (II, n° 27) non contrôlé"
-  ],
-  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000036635563 (Civ. 2e, 8 févr. 2018, n° 17-10.516, ECLI:FR:CCASS:2018:C200146, Publié au bulletin ; CA Paris 18 déc. 2015)",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Vérifié : Civ. 2e (et non 1re), 8 févr. 2018, n° 17-10.516, publié, rejet. Arrêt du même jour n° 16-26.198 vérifié. N° du Bulletin non confirmé : ne pas le citer.",
+  "reste": [],
+  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000036635563 ; https://www.lemondedudroit.fr/droit-civil/291-obligations/56284-attaque-ayant-entraine-la-mort-dans-le-rer-la-force-majeure-exonere-la-sncf.html ; n° 16-26.198 : https://www.labase-lextenso.fr/jp-commente/cc/2018-02/16-26-198-CC-08022018-16_26198",
+  "verifie": true
  },
  {
   "id": "civ2-2018-07-05-club-fin-du-match",
@@ -9487,7 +9426,7 @@ window.OBL.arrets = [
     "ou": "Cas pratique : limites de la responsabilité des parents"
    }
   ],
-  "distinguer": "Revirement de Civ. 2e, 20 janv. 2000, n° 98-14.479 (cohabitation = résidence habituelle fixée par le juge) et de Crim., 6 nov. 2012, n° 11-86.857. Ne pas appliquer l'ancienne solution aux dommages postérieurs à ce revirement ; la responsabilité reste de plein droit (Ass. plén. 13 déc. 2002, Bertrand, n° 01-14.007, fait même non fautif du mineur), seules la force majeure ou la faute de la victime exonérant. L'enfant confié à un tiers par décision administrative ou judiciaire décharge les parents.",
+  "distinguer": "Revirement de Civ. 2e, 20 janv. 2000, n° 98-14.479 (cohabitation = résidence habituelle fixée par le juge) et de Crim., 6 nov. 2012, n° 11-86.857, confirmé par Crim., 29 avr. 2014 (responsabilité du seul parent chez qui la résidence est fixée). Réforme : la loi n° 2025-568 du 23 juin 2025 a réécrit l'art. 1242, al. 4 : « Les parents, en tant qu'ils exercent l'autorité parentale, sont, de plein droit, solidairement responsables du dommage causé par leurs enfants mineurs, sauf lorsque ceux-ci ont été confiés à un tiers par une décision administrative ou judiciaire. » La condition de cohabitation disparaît du texte. La responsabilité reste de plein droit (Bertrand, Civ. 2e, 19 févr. 1997 ; Ass. plén., 13 déc. 2002, fait même non fautif du mineur) : seules la force majeure ou la faute de la victime exonèrent.",
   "textes": [
    "1242 al. 4",
    "Art. 18 CIDE",
@@ -9500,14 +9439,11 @@ window.OBL.arrets = [
    "373-2",
    "373-2-9"
   ],
-  "a_verifier": true,
-  "note_verif": "Arrêt vérifié sur Légifrance (date, n°, formation, solution). Réforme législative postérieure non confirmée.",
-  "reste": [
-   "Existence, date et contenu d'une loi du 23 juin 2025 supprimant « habitant avec eux » à l'art. 1242 al. 4 : non retrouvée sur Légifrance, à contrôler avant toute mention",
-   "Crim. 29 avr. 2014 (cité dans l'ancienne fiche) : non confirmé"
-  ],
-  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000049857511 ; ECLI:FR:CCASS:2024:CR90678 ; arrêt n° 678 B+R, pourvoi K 22-84.760",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Arrêt vérifié sur Légifrance (date, n°, formation, solution). Loi n° 2025-568 du 23 juin 2025 vérifiée. Crim., 29 avr. 2014 vérifié sur le fond (n° de pourvoi non confirmé : ne pas le citer).",
+  "reste": [],
+  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000049857511 ; loi n° 2025-568 : https://www.cnb.avocat.fr/fr/actualites/responsabilite-civile-des-parents-ce-que-change-la-loi-attal ; Crim. 29 avr. 2014 : https://actu.dalloz-etudiant.fr/fileadmin/actualites/pdfs/SEPTEMBRE_2014/D2014-1620.pdf",
+  "verifie": true
  },
  {
   "id": "com-2024-07-03-opposabilite-limites-contractuelles-au-tiers",
@@ -9546,7 +9482,7 @@ window.OBL.arrets = [
     "ou": "Commentaire : portée de l'arrêt, avec réserve sur son application aux autres types de clauses"
    }
   ],
-  "distinguer": "Prolonge Ass. plén., 6 oct. 2006 (Boot Shop, n° 05-13.255) et Ass. plén., 13 janv. 2020 (n° 17-19.963) : le tiers peut agir sur le terrain délictuel pour un manquement contractuel, mais dans les limites du contrat. Ne pas écrire que toute clause limitative est opposable à tout tiers : la solution vise le tiers qui invoque le manquement contractuel. Faits et texte de 2024 relèvent de l'ancien droit (avant ordonnance de 2016) ; l'art. 1200 actuel (opposabilité du contrat aux tiers) et l'art. 1231-3 ne sont pas visés.",
+  "distinguer": "Prolonge Ass. plén., 6 oct. 2006 (Boot Shop, n° 05-13.255) et Ass. plén., 13 janv. 2020 (n° 17-19.963) : le tiers peut agir sur le terrain délictuel pour un manquement contractuel, mais dans les limites du contrat. Confirmé et étendu par Com., 17 déc. 2025, n° 24-20.154 (clauses de procédure : déchéance, prescription, conciliation préalable). Position propre aux arrêts de la chambre commerciale : ne pas l'attribuer aux chambres civiles sans arrêt à l'appui. Ne pas écrire que toute clause limitative est opposable à tout tiers : la solution vise le tiers qui invoque le manquement contractuel. Faits relevant de l'ancien droit (avant l'ordonnance de 2016) ; l'art. 1200 actuel et l'art. 1231-3 ne sont pas visés.",
   "textes": [],
   "td_fiche": false,
   "theme": "Faute (fait personnel)",
@@ -9555,14 +9491,11 @@ window.OBL.arrets = [
    "1199",
    "1200"
   ],
-  "a_verifier": true,
-  "note_verif": "Arrêt vérifié sur Légifrance (texte intégral, arrêt n° 435 FS-B, ECLI:FR:CCASS:2024:CO00435). Non vérifiée : la confirmation par Com., 17 déc. 2025, n° 24-20.154, reprise de l'ancienne fiche.",
-  "reste": [
-   "Confirmation par Com., 17 déc. 2025, n° 24-20.154 (non consultée)",
-   "Position de la 1re chambre civile sur la question (non vérifiée)"
-  ],
-  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000049906517 (Com., 3 juill. 2024, n° 21-14.947, publié au bulletin, ECLI:FR:CCASS:2024:CO00435)",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Arrêt vérifié sur Légifrance (Com., 3 juill. 2024, n° 21-14.947, FS-B). Confirmation par Com., 17 déc. 2025, n° 24-20.154 vérifiée.",
+  "reste": [],
+  "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000049906517 ; Com. 17 déc. 2025 : https://consultation.avocat.fr/blog/bighaigui-tchassante-tchedre/article-2979906-l-opposabilite-des-clauses-du-contrat-aux-tiers-agissant.html",
+  "verifie": true
  },
  {
   "id": "civ2-2024-09-05-nuage-toxique-airbus",
@@ -9583,7 +9516,7 @@ window.OBL.arrets = [
   ],
   "faits": "Deux salariés d'une société de gardiennage inhalent une substance toxique lors d'une ronde dans l'usine d'Airbus Opérations et sont hospitalisés. Aucune expertise n'a pu identifier la substance ni la cause de son émanation.",
   "question": "Peut-on engager la responsabilité du fait des choses lorsque la substance à l'origine du dommage n'a pas été identifiée ?",
-  "solution": "Rejet : la société, propriétaire et exploitante de l'usine, est gardienne des substances qui peuvent émaner en son sein ; le nuage toxique émanant de l'usine étant à l'origine des symptômes, sa responsabilité est engagée sans inversion de la charge de la preuve.",
+  "solution": "Deux pourvois joints. Sur celui de la société Airbus Opérations (n° 21-24.765), rejet : la société propriétaire et exploitante de l'usine est gardienne des substances qui peuvent émaner en son sein ; le nuage toxique émanant de l'usine étant à l'origine des symptômes, sa responsabilité du fait des choses (art. 1242 al. 1er) est engagée, peu important que la substance n'ait pas été identifiée. Sur le pourvoi de l'employeur (Securitas, n° 21-23.442), cassation partielle sans renvoi, sur une question distincte d'immunité de l'employeur en matière d'accident du travail (art. L. 451-1 CSS).",
   "justifie": [
    {
     "argument": "Soutenir que le propriétaire et exploitant d'un site répond des émanations dommageables nées en son sein, même si la substance n'est pas précisément identifiée.",
@@ -9605,14 +9538,11 @@ window.OBL.arrets = [
    "1242",
    "1384"
   ],
-  "a_verifier": true,
-  "note_verif": "Divergence relevée par l'audit : le site (ch14.js l.30) donne le n° 21-23.442, le plan 21-24.765 (pourvoi n° 21-24.765 dans l'arrêt) ; suivre le plan, mais vérifier sur Légifrance. Date et juridiction concordent. L'arrêt parle d'un pourvoi n° 21-24.765 formé par la société.",
-  "reste": [
-   "Texte intégral non lu (outil navigateur indisponible) : confirmer la solution, la mention Légifrance « cassation partielle sans renvoi » étant à concilier avec « Rejet » indiqué dans la fiche",
-   "Confirmer les faits et la portée (garde de substances émanant du site)"
-  ],
-  "source": "https://www.legifrance.gouv.fr/search?fonds=JURI&tab_selection=juri&searchField=NUM_AFFAIRE&query=21-24.765 (résultat de recherche seul : Cass. civ. 2e, 5 sept. 2024, 21-23.442 et 21-24.765, publié au bulletin) ; texte intégral non lu",
-  "verifie": false
+  "a_verifier": false,
+  "note_verif": "Vérifié : Civ. 2e, 5 sept. 2024, n° 21-23.442 et 21-24.765 (pourvois joints), FS-B, cassation partielle sans renvoi ; CA Toulouse 7 juill. 2021. Le point « garde du nuage » est un rejet ; la cassation porte sur l'immunité de l'employeur.",
+  "reste": [],
+  "source": "https://www.labase-lextenso.fr/jp-commente/cc/2024-09/21-23-442-CC-05092024-21_23442 ; https://www.tondu-avocat.fr/chose-non-identifiee-et-responsabilite-du-fait-des-choses/ ; Gaz. Pal. 2025, n° 2 : https://www.labase-lextenso.fr/gazette-du-palais/2025-n2/responsabilite-du-fait-des-choses-la-garde-du-nuage-toxique-GPL471m9",
+  "verifie": true
  },
  {
   "id": "civ2-2024-09-19-ski-cross",
@@ -9867,7 +9797,7 @@ window.OBL.arrets = [
     "ou": "Dissertation / commentaire : critères de la garde"
    }
   ],
-  "distinguer": "La fiche d'origine (« garde successive de la balle ») ne correspond pas à l'arrêt : il s'agit de squash et la Cour raisonne sur la garde de la raquette, instrument du dommage, sans consacrer une garde successive de la balle. Comparer avec Civ. 2e, 13 janv. 2005 (football, garde collective ; référence non contrôlée) et, pour l'exigence d'un fait actif de la chose, avec les arrêts sur la participation à un jeu. Ne pas en déduire que la cogarde est exclue en toute hypothèse.",
+  "distinguer": "La fiche d'origine (« garde successive de la balle ») ne correspond pas à l'arrêt : il s'agit de squash et la Cour raisonne sur la garde de la raquette, instrument du dommage, sans consacrer une garde successive de la balle. Comparer avec Civ. 2e, 13 janv. 2005 (Girault c/ Niobey, football, rejet) : tous les joueurs ont l'usage du ballon, aucun n'en a individuellement le contrôle et la direction, d'où l'absence de garde du joueur qui frappe. Ne pas en déduire que la cogarde est exclue en toute hypothèse.",
   "textes": [
    "1242 al. 1er"
   ],
@@ -9876,13 +9806,11 @@ window.OBL.arrets = [
   "articles": [
    "1242"
   ],
-  "a_verifier": true,
-  "note_verif": "Vérifié sur Légifrance : Civ. 2e, 27 nov. 2025, n° 24-12.045, P+B, cassation. La fiche d'origine, issue du site, était inexacte sur le fond.",
-  "reste": [
-   "Référence exacte de Civ. 2e 13 janv. 2005 (football) citée dans « distinguer » : non contrôlée"
-  ],
+  "a_verifier": false,
+  "note_verif": "Vérifié sur Légifrance : Civ. 2e, 27 nov. 2025, n° 24-12.045, F-B, cassation. Arrêt football de 2005 vérifié sur le fond (n° de pourvoi non trouvé : citer par la date).",
+  "reste": [],
   "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000052970359 ; ECLI:FR:CCASS:2025:C201224 ; arrêt n° 1224 F-B, pourvoi P 24-12.045",
-  "verifie": false
+  "verifie": true
  },
  {
   "id": "civ1-2026-02-18-distilbene-anxiete",

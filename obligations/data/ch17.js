@@ -45,7 +45,7 @@ OBL.chapitres.push({
           "**Action de groupe** : créée en 2014 pour les consommateurs, elle a été unifiée et largement ouverte par la loi n° 2025-391 du 30 avril 2025, pour le compte de plusieurs personnes placées dans une situation similaire résultant d'un même manquement d'un professionnel ou d'une personne publique."
         ] },
         { h: "Un préjudice certain : la perte de chance" },
-        { def: { terme: "Perte de chance", texte: "« disparition actuelle et certaine d'une éventualité favorable » (Ass. plén., 27 juin 2025). Le préjudice final (gagner le procès, réussir le concours) est incertain ; la **chance** perdue, elle, est certaine et se répare (Civ. 2e, 12 mai 1966)." } },
+        { def: { terme: "Perte de chance", texte: "« disparition actuelle et certaine d'une éventualité favorable » (Ass. plén., 27 juin 2025). Le préjudice final (gagner le procès, réussir le concours) est incertain ; la **chance** perdue, elle, est certaine et se répare, à condition d'être réelle et sérieuse : une chance purement hypothétique ne l'est pas (Civ. 2e, 12 mai 1966, refus pour une carrière de pharmacienne à peine envisagée)." } },
         { liste: [
           "Exemples : l'avocat qui laisse passer le délai d'appel fait perdre une chance de gagner ; l'étudiant blessé perd une chance d'exercer la profession visée si son parcours la rendait **réelle et sérieuse**.",
           "Réparation **à hauteur de la chance perdue**, jamais égale à l'avantage espéré.",

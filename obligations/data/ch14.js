@@ -27,7 +27,7 @@ OBL.chapitres.push({
       contenu: [
         { p: "Le mot est entendu **très largement** : toute chose, quelle que soit sa nature, peut engager la responsabilité de son gardien." },
         { liste: [
-          "**Nature physique indifférente** : solide, liquide, gaz, fumée, voire phénomène immatériel (onde, courant électrique). Exemple récent : le nuage toxique né d'émanations au sein d'une entreprise (Civ. 2e, 5 sept. 2024, n° 21-23.442).",
+          "**Nature physique indifférente** : solide, liquide, gaz, fumée, voire phénomène immatériel (onde, courant électrique). Exemple récent : le nuage toxique né d'émanations au sein d'une entreprise (Civ. 2e, 5 sept. 2024, n° 21-23.442 et 21-24.765).",
           "**Nature juridique indifférente** : meuble ou immeuble (un sol glissant, un escalier, une vitrine).",
           "**Caractères indifférents** : chose dangereuse ou non, actionnée par la main de l'homme ou non, viciée ou non (Jand'heur), en mouvement ou inerte."
         ] },

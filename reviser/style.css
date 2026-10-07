@@ -443,6 +443,8 @@ details.pgch>p{margin-bottom:14px}
 .trainrow .btn{padding:6px 12px;font-size:13.5px}
 .vlim{border-top:1px solid var(--rule);padding-top:12px}
 .chrow .t small.sub{display:block;font:400 13.5px var(--sans);color:var(--ink2);margin-top:3px}
+.tdrow .t small{display:block;margin-top:4px;font:400 14.5px/1.45 var(--sans);color:var(--ink2)}
+.tdrow .right{gap:8px}
 
 /* Mes fiches : liste, éditeur, aperçu */
 .okbox{background:var(--ok-soft);border-left:3px solid var(--ok);padding:12px 16px;font-size:16px}

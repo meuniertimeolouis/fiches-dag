@@ -113,7 +113,7 @@ function chrome(sub, toolCur) {
   S.subject = sub; save();
   document.querySelectorAll(".subjects a").forEach(a => a.setAttribute("aria-current", a.dataset.sub === sub ? "page" : "false"));
   const tools = sub === "obl"
-    ? [["obl", "Cours"], ["obl/manuel", "Fiches du manuel"], ["obl/outils/regimes", "Régimes"], ["obl/outils/articles", "Articles"], ["obl/outils/pieges", "Pièges"], ["obl/outils/cas", "Cas pratiques"], ["obl/outils/arrets", "Arrêts"], ["obl/outils/quiz", "Quiz mélangé"]]
+    ? [["obl", "Cours"], ["obl/manuel", "Fiches du manuel"], ["obl/td", "Fiches TD"], ["obl/outils/regimes", "Régimes"], ["obl/outils/articles", "Articles"], ["obl/outils/pieges", "Pièges"], ["obl/outils/cas", "Cas pratiques"], ["obl/outils/arrets", "Arrêts"], ["obl/outils/quiz", "Quiz mélangé"]]
     : [["dag", "Parcours"], ["dag/frise", "Frise chronologique"], ["dag/fiches", "Toutes les fiches"]];
   $("#tools").innerHTML = tools.map(([p, t]) => `<a href="#/${p}" ${toolCur === p ? 'aria-current="page"' : ""}>${t}</a>`).join("") +
 "";
@@ -134,6 +134,7 @@ function render() {
     if (r[1] === "ch") return oblChapter(+r[2], r[3] || "fiche");
     if (r[1] === "outils") return oblTool(r[2] || "regimes", r.slice(3).map(decodeURIComponent));
     if (r[1] === "manuel") return oblHome();
+    if (r[1] === "td") return oblFichesTD();
     if (r[1] === "cours") return coursChapitre(r[2]);
     if (r[1] === "hp") return horsPlan(r[2]);
     return coursHome();
@@ -142,6 +143,21 @@ function render() {
   if (r[1] === "frise") { chrome("dag", "dag/frise"); setMain(`<div class="head"><h1>Frise chronologique des arrêts</h1></div><div id="frise"></div>`); return friseView($("#frise"), { seance: "all" }); }
   if (r[1] === "fiches") return dagAll();
   return dagHome();
+}
+
+/* ---------- Fiches TD (PDF à télécharger) ---------- */
+const FICHES_TD = [
+  { td: 2, t: "Le préjudice", f: "td2-prejudice.pdf", d: "Dommage et préjudice, caractères du préjudice réparable, préjudices réparables" },
+  { td: 3, t: "Le lien de causalité", f: "td3-lien-de-causalite.pdf", d: "Équivalence des conditions, causalité adéquate, causalité alternative, Distilbène" },
+  { td: 4, t: "Le fait personnel", f: "td4-fait-personnel.pdf", d: "La faute (art. 1240 et 1241), faute de la victime, faits justificatifs" },
+  { td: 5, t: "Le fait des choses", f: "td5-fait-des-choses.pdf", d: "Art. 1242 al. 1, rôle actif, garde et transfert de garde, exonération" },
+  { td: 6, t: "Le fait d'autrui", f: "td6-fait-d-autrui.pdf", d: "Parents, Blieck, associations sportives, commettants, immunité du préposé" }
+];
+function oblFichesTD() {
+  chrome("obl", "obl/td");
+  const dir = "../obligations/fiches-td/";
+  setMain(`<div class="head"><h1>Fiches TD</h1><p class="muted" style="margin-top:6px">Une fiche par séance de TD : les notions du TD, les exercices corrigés, les pièges, le vocabulaire, les articles, la jurisprudence et une auto-évaluation corrigée. Format A4, prêtes à imprimer.</p></div>
+    <section class="part"><h2>Responsabilité extracontractuelle</h2>${FICHES_TD.map(x => `<div class="chrow tdrow"><span class="n">${x.td}</span><span class="t">${esc(x.t)}<small class="cpq">${esc(x.d)}</small></span><span class="right row"><a class="btn" href="${dir + x.f}" target="_blank" rel="noopener">Ouvrir</a><a class="btn main" href="${dir + x.f}" download="${esc(x.t)} - TD ${x.td}.pdf">Télécharger</a></span></div>`).join("")}</section>`);
 }
 
 /* =================== DROIT DES OBLIGATIONS =================== */

@@ -126,6 +126,7 @@ function thumbs(items) {
 
 function render() {
   const r = parse();
+  if (r[0] === "fiches") { window.scrollTo(0, 0); return mesFiches(r[1] ? decodeURIComponent(r[1]) : ""); }
   const sub = r[0] === "dag" ? "dag" : r[0] === "obl" ? "obl" : S.subject || "obl";
   if (!r.length) { go(sub); return; }
   window.scrollTo(0, 0);
@@ -843,6 +844,224 @@ function friseBody(d) {
     ${d.piege ? `<p class="small"><strong style="color:var(--warn)">Piège :</strong> ${esc(d.piege)}</p>` : ""}
     ${rel.length ? `<div class="rels"><strong style="font-size:14px">Liens</strong>${rel.map(r => { const x = byId(r.id); return `<span>${/ par$/.test(r.txt.trim()) ? "Est " + esc(r.txt.trim()) : esc(r.txt.trim()[0].toUpperCase() + r.txt.trim().slice(1))} <button type="button" data-jump="${x.id}">${esc(x.nom)} (${x.date.slice(0, 4)})</button></span>`; }).join("")}</div>` : `<p class="small muted">Pas de lien direct avec un autre arrêt de la plaquette.</p>`}
     <p class="small muted">${esc(d.notions.join(", "))}</p></div>`;
+}
+
+/* =================== MES FICHES (rédigées par l'étudiant, enregistrées dans ce navigateur) =================== */
+const FKEY = "reviser.fiches.v1";
+const MATIERES = { obl: "Droit des obligations", dag: "Droit administratif", autre: "Autre matière" };
+const MODELES = {
+  vide: { t: "Fiche vierge", d: "Une page blanche.", titre: "", contenu: "" },
+  notion: { t: "Fiche de notion", d: "Définition, fondement, conditions, régime, jurisprudence, à retenir, pièges.", titre: "Notion : ", contenu: "# Définition\n\n\n# Fondement\n\n- Article : \n\n# Conditions\n\n1. \n2. \n\n# Régime et effets\n\n\n# Jurisprudence\n\n- **Arrêt**, Civ. 1re, date : solution.\n\n> À retenir : \n\n! Piège : " },
+  arret: { t: "Fiche d'arrêt", d: "Références, faits, procédure, prétentions, problème de droit, solution, sens, valeur et portée.", titre: "Arrêt : ", contenu: "# Références\n\nJuridiction, formation, date, n° de pourvoi.\n\n# Faits\n\n\n# Procédure\n\n\n# Prétentions et moyens\n\n\n# Problème de droit\n\n\n# Solution\n\n\n# Sens, valeur et portée\n\n\n> À retenir : " },
+  plan: { t: "Plan de dissertation", d: "Introduction (accroche, définitions, intérêt, problématique, annonce), deux parties, deux sous-parties.", titre: "Sujet : ", contenu: "# Introduction\n\n- Accroche\n- Définitions\n- Intérêt du sujet\n- Problématique\n- Annonce de plan\n\n# I. \n\n## A. \n\n## B. \n\n# II. \n\n## A. \n\n## B. " }
+};
+let F = { fiches: [], export: null };
+try { const raw = localStorage.getItem(FKEY); if (raw) F = Object.assign(F, JSON.parse(raw)); } catch (e) {}
+if (!Array.isArray(F.fiches)) F.fiches = [];
+let fSaveOk = true;
+const fSave = () => { try { localStorage.setItem(FKEY, JSON.stringify(F)); fSaveOk = true; } catch (e) { fSaveOk = false; } return fSaveOk; };
+const fById = id => F.fiches.find(f => f.id === id);
+const fNewId = () => "f" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+const fDate = iso => { try { return new Date(iso).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" }); } catch (e) { return ""; } };
+const fDateH = iso => { try { return new Date(iso).toLocaleString("fr-FR", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }); } catch (e) { return ""; } };
+const fUnsaved = () => F.fiches.some(f => !F.export || f.maj > F.export);
+
+/* Mise en forme : # titre, ## sous-titre, ### intertitre, - liste, 1. liste numérotée, > À retenir, ! Piège, --- trait,
+   **gras**, *italique*, __souligné__, [[1240]] article du Code civil */
+const fInline = t => fmt(t).replace(/__([^_]+)__/g, "<u>$1</u>");
+function fRender(src) {
+  const lines = String(src || "").replace(/\r\n?/g, "\n").split("\n");
+  let out = "", para = [], list = null;
+  const flushP = () => { if (para.length) { out += `<p>${para.map(fInline).join("<br>")}</p>`; para = []; } };
+  const flushL = () => {
+    if (!list) return;
+    const build = (items, i, depth) => {
+      const tag = items[i].ol ? "ol" : "ul"; let h = `<${tag}>`;
+      while (i < items.length && items[i].d >= depth) {
+        if (items[i].d > depth) { const r = build(items, i, items[i].d); h = h.replace(/<\/li>$/, "") + r.h + "</li>"; i = r.i; continue; }
+        h += `<li>${fInline(items[i].t)}</li>`; i++;
+      }
+      return { h: h + `</${tag}>`, i };
+    };
+    let i = 0; while (i < list.length) { const r = build(list, i, list[i].d); out += r.h; i = r.i; }
+    list = null;
+  };
+  const flush = () => { flushP(); flushL(); };
+  let box = null;
+  const flushBox = () => { if (box) { out += `<div class="fx-box fx-${box.k}">${box.lines.map(l => `<p>${fInline(l)}</p>`).join("")}</div>`; box = null; } };
+  lines.forEach(raw => {
+    const l = raw.replace(/\s+$/, "");
+    const m = l.match(/^\s*([>!])\s?(.*)$/);
+    if (m) { flush(); const k = m[1] === ">" ? "ret" : "pg"; if (!box || box.k !== k) { flushBox(); box = { k, lines: [] }; } if (m[2]) box.lines.push(m[2]); return; }
+    flushBox();
+    if (!l.trim()) { flush(); return; }
+    let h = l.match(/^(#{1,3})\s+(.*)$/);
+    if (h) { flush(); const n = h[1].length + 1; out += `<h${n}>${fInline(h[2])}</h${n}>`; return; }
+    if (/^\s*(-{3,}|\*{3,})\s*$/.test(l)) { flush(); out += "<hr>"; return; }
+    const li = l.match(/^(\s*)([-*•]|\d+[.)])\s+(.*)$/);
+    if (li) { flushP(); list = list || []; list.push({ d: Math.floor(li[1].replace(/\t/g, "  ").length / 2), ol: /\d/.test(li[2]), t: li[3] }); return; }
+    if (list && /^\s{2,}\S/.test(l)) { list[list.length - 1].t += " " + l.trim(); return; }
+    flushL(); para.push(l.trim());
+  });
+  flush(); flushBox();
+  return out;
+}
+
+function fChrome(cur) {
+  document.body.dataset.subject = "fiches";
+  document.querySelectorAll(".subjects a").forEach(a => a.setAttribute("aria-current", a.dataset.sub === "fiches" ? "page" : "false"));
+  $("#tools").innerHTML = [["fiches", "Toutes mes fiches"], ["fiches/nouvelle", "Nouvelle fiche"]].map(([p, t]) => `<a href="#/${p}" ${cur === p ? 'aria-current="page"' : ""}>${t}</a>`).join("");
+  $("#thumbs").innerHTML = "";
+}
+function mesFiches(id) {
+  if (!id) return fListe();
+  if (id === "nouvelle") return fNouvelle();
+  return fEditeur(id);
+}
+
+function fListe() {
+  fChrome("fiches");
+  const st = { q: "", m: "" };
+  const warn = !F.fiches.length ? "" : fUnsaved()
+    ? `<p class="warnbox fx-warn">Vos fiches sont enregistrées dans ce navigateur seulement. ${F.export ? `Des modifications ont été faites depuis votre dernière sauvegarde (${esc(fDate(F.export))}).` : "Vous n'avez encore jamais téléchargé de sauvegarde."} <button type="button" class="btn" data-fx="export">Télécharger une sauvegarde</button></p>`
+    : `<p class="muted small">Dernière sauvegarde téléchargée le ${esc(fDate(F.export))} : elle contient toutes vos fiches.</p>`;
+  setMain(`<div class="head"><div class="kick">Mes fiches</div><h1>Mes fiches de révision</h1>
+      <p class="muted">Rédigez vos propres fiches, modifiez-les quand vous voulez et téléchargez-les en PDF. Elles restent dans ce navigateur : téléchargez régulièrement une sauvegarde pour les retrouver sur un autre appareil ou après avoir vidé l'historique.</p>
+      <div class="row" style="margin-top:14px"><a class="btn main" href="#/fiches/nouvelle">Nouvelle fiche</a><button type="button" class="btn" data-fx="export" ${F.fiches.length ? "" : "disabled"}>Télécharger une sauvegarde</button><button type="button" class="btn" data-fx="import">Importer une sauvegarde</button><input type="file" id="fx-file" accept=".json,application/json" hidden></div></div>
+    ${warn}
+    <div id="fx-msg" role="status"></div>
+    ${F.fiches.length ? `<div class="row fx-filt"><input type="search" id="fx-q" placeholder="Rechercher dans mes fiches" aria-label="Rechercher dans mes fiches"><div class="chips" role="group" aria-label="Matière"><button type="button" class="chip" data-m="" aria-pressed="true">Toutes</button>${Object.entries(MATIERES).filter(([k]) => F.fiches.some(f => f.matiere === k)).map(([k, t]) => `<button type="button" class="chip" data-m="${k}" aria-pressed="false">${esc(t)}</button>`).join("")}</div></div>` : ""}
+    <div id="fx-list"></div>`);
+  const draw = () => {
+    const q = st.q.toLowerCase();
+    const list = F.fiches.filter(f => (!st.m || f.matiere === st.m) && (!q || [f.titre, f.theme, f.contenu].join(" ").toLowerCase().includes(q))).sort((a, b) => b.maj.localeCompare(a.maj));
+    $("#fx-list").innerHTML = !F.fiches.length
+      ? `<div class="fx-empty"><h2>Aucune fiche pour l'instant</h2><p class="muted">Commencez par une fiche vierge ou par un modèle : fiche de notion, fiche d'arrêt, plan de dissertation.</p><div class="row"><a class="btn main" href="#/fiches/nouvelle">Créer ma première fiche</a></div></div>`
+      : list.length ? list.map(f => `<div class="chrow fx-row"><a class="t" href="#/fiches/${esc(f.id)}"><b>${esc(f.titre || "Sans titre")}</b><small class="sub">${esc(MATIERES[f.matiere] || "")}${f.theme ? " · " + esc(f.theme) : ""} · modifiée le ${esc(fDateH(f.maj))}</small></a><span class="right row"><a class="btn" href="#/fiches/${esc(f.id)}">Modifier</a><button type="button" class="btn" data-pdf="${esc(f.id)}">PDF</button></span></div>`).join("")
+      : `<p class="muted">Aucune fiche ne correspond.</p>`;
+    $("#fx-list").querySelectorAll("[data-pdf]").forEach(b => b.addEventListener("click", () => fPrint(fById(b.dataset.pdf))));
+  };
+  draw();
+  const q = $("#fx-q"); if (q) q.addEventListener("input", () => { st.q = q.value.trim(); draw(); });
+  main().querySelectorAll("[data-m]").forEach(b => b.addEventListener("click", () => { st.m = b.dataset.m; main().querySelectorAll("[data-m]").forEach(x => x.setAttribute("aria-pressed", String(x === b))); draw(); }));
+  main().querySelectorAll('[data-fx="export"]').forEach(b => b.addEventListener("click", () => { fExport(); fListe(); }));
+  const file = $("#fx-file");
+  main().querySelector('[data-fx="import"]').addEventListener("click", () => file.click());
+  file.addEventListener("change", () => { const fl = file.files[0]; if (fl) fImport(fl); });
+}
+
+function fNouvelle() {
+  fChrome("fiches/nouvelle");
+  const m0 = S.subject === "dag" ? "dag" : "obl";
+  setMain(`<div class="head"><div class="kick"><a href="#/fiches">Mes fiches</a></div><h1>Nouvelle fiche</h1><p class="muted">Choisissez la matière et un point de départ. Tout reste modifiable ensuite.</p></div>
+    <div class="fx-new">
+      <label class="fx-lab">Matière<select id="fx-m">${Object.entries(MATIERES).map(([k, t]) => `<option value="${k}" ${k === m0 ? "selected" : ""}>${esc(t)}</option>`).join("")}</select></label>
+      <div class="fx-models">${Object.entries(MODELES).map(([k, mo]) => `<button type="button" class="fx-model" data-mo="${k}"><b>${esc(mo.t)}</b><span>${esc(mo.d)}</span></button>`).join("")}</div>
+    </div>`);
+  main().querySelectorAll("[data-mo]").forEach(b => b.addEventListener("click", () => {
+    const mo = MODELES[b.dataset.mo], now = new Date().toISOString();
+    const f = { id: fNewId(), titre: mo.titre, matiere: $("#fx-m").value, theme: "", contenu: mo.contenu, cree: now, maj: now };
+    F.fiches.push(f); fSave(); go("fiches/" + f.id);
+  }));
+}
+
+function fEditeur(id) {
+  fChrome("");
+  const f = fById(id);
+  if (!f) { setMain(`<div class="head"><h1>Fiche introuvable</h1><p class="muted">Elle a peut-être été supprimée, ou elle a été créée dans un autre navigateur : importez la sauvegarde qui la contient.</p></div><p><a class="btn" href="#/fiches">Retour à mes fiches</a></p>`); return; }
+  setMain(`<div class="head fx-head"><div class="kick"><a href="#/fiches">Mes fiches</a> · <span id="fx-state">Enregistrée</span></div>
+      <input id="fx-t" class="fx-title" value="${esc(f.titre)}" placeholder="Titre de la fiche" aria-label="Titre de la fiche">
+      <div class="row fx-meta"><label class="fx-lab">Matière<select id="fx-m">${Object.entries(MATIERES).map(([k, t]) => `<option value="${k}" ${k === f.matiere ? "selected" : ""}>${esc(t)}</option>`).join("")}</select></label>
+      <label class="fx-lab">Chapitre ou thème<input id="fx-th" value="${esc(f.theme)}" placeholder="Ex. : chapitre 13, la faute"></label></div>
+      <div class="row" style="margin-top:12px"><button type="button" class="btn main" id="fx-pdf">Télécharger en PDF</button><a class="btn" href="#/fiches">Terminer</a><button type="button" class="btn ko" id="fx-del">Supprimer</button></div></div>
+    <div class="seg fx-tabs" role="group" aria-label="Affichage"><button type="button" data-tab="ed" aria-pressed="true">Écrire</button><button type="button" data-tab="pv" aria-pressed="false">Aperçu</button></div>
+    <div class="fx-ed" data-show="ed">
+      <div class="fx-col fx-src">
+        <div class="fx-tb" role="toolbar" aria-label="Mise en forme">
+          <button type="button" data-ins="h1" title="Titre de partie"># Titre</button><button type="button" data-ins="h2" title="Sous-titre">## Sous-titre</button>
+          <button type="button" data-ins="b" title="Gras"><b>G</b></button><button type="button" data-ins="i" title="Italique"><i>I</i></button><button type="button" data-ins="u" title="Souligné"><u>S</u></button>
+          <button type="button" data-ins="ul" title="Liste à puces">• Liste</button><button type="button" data-ins="ol" title="Liste numérotée">1. Liste</button>
+          <button type="button" data-ins="ret" title="Encadré À retenir">À retenir</button><button type="button" data-ins="pg" title="Encadré Piège">Piège</button><button type="button" data-ins="art" title="Article du Code civil">Article</button>
+        </div>
+        <textarea id="fx-c" spellcheck="true" aria-label="Contenu de la fiche">${esc(f.contenu)}</textarea>
+        <details class="fx-help"><summary>Comment mettre en forme</summary><ul class="small">
+          <li><code># Titre</code>, <code>## Sous-titre</code>, <code>### Intertitre</code> en début de ligne.</li>
+          <li><code>- élément</code> pour une liste à puces, <code>1. élément</code> pour une liste numérotée ; deux espaces devant pour une sous-liste.</li>
+          <li><code>**gras**</code>, <code>*italique*</code>, <code>__souligné__</code>.</li>
+          <li><code>&gt; texte</code> pour un encadré « À retenir », <code>! texte</code> pour un encadré « Piège ».</li>
+          <li><code>[[1240]]</code> renvoie à l'article 1240 du Code civil sur le site ; <code>---</code> trace un trait.</li>
+          <li>Pour le PDF, choisissez « Enregistrer au format PDF » comme imprimante.</li></ul></details>
+      </div>
+      <div class="fx-col fx-pv"><div class="fx-pvlab">Aperçu</div><article class="fx-doc" id="fx-pv"></article></div>
+    </div>`);
+  const ta = $("#fx-c"), pv = $("#fx-pv"), state = $("#fx-state");
+  const docHtml = () => `<h1>${esc(f.titre || "Sans titre")}</h1>${fRender(f.contenu)}`;
+  const preview = () => { pv.innerHTML = docHtml(); };
+  let tm = null;
+  const changed = () => {
+    f.titre = $("#fx-t").value; f.matiere = $("#fx-m").value; f.theme = $("#fx-th").value; f.contenu = ta.value; f.maj = new Date().toISOString();
+    preview(); state.textContent = "Enregistrement…";
+    clearTimeout(tm); tm = setTimeout(() => { state.textContent = fSave() ? "Enregistrée à " + new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" }) : "Échec de l'enregistrement : mémoire du navigateur pleine ou bloquée"; state.classList.toggle("fx-err", !fSaveOk); }, 400);
+  };
+  preview();
+  [ta, $("#fx-t"), $("#fx-th")].forEach(el => el.addEventListener("input", changed));
+  $("#fx-m").addEventListener("change", changed);
+  main().querySelectorAll("[data-tab]").forEach(b => b.addEventListener("click", () => { main().querySelector(".fx-ed").dataset.show = b.dataset.tab; main().querySelectorAll("[data-tab]").forEach(x => x.setAttribute("aria-pressed", String(x === b))); }));
+  const wrap = (a, z, ph) => { const s = ta.selectionStart, e = ta.selectionEnd, sel = ta.value.slice(s, e) || ph; ta.setRangeText(a + sel + z, s, e, "end"); if (sel === ph) ta.setSelectionRange(s + a.length, s + a.length + ph.length); };
+  const prefix = p => { const s = ta.selectionStart, e = ta.selectionEnd, v = ta.value, ls = v.lastIndexOf("\n", s - 1) + 1, le = v.indexOf("\n", e) < 0 ? v.length : v.indexOf("\n", e);
+    const block = v.slice(ls, le).split("\n").map((l, i) => (typeof p === "function" ? p(i) : p) + l.replace(/^(#{1,3}|[>!]|[-*•]|\d+[.)])\s+/, "")).join("\n"); ta.setRangeText(block, ls, le, "end"); };
+  const INS = { h1: () => prefix("# "), h2: () => prefix("## "), b: () => wrap("**", "**", "texte en gras"), i: () => wrap("*", "*", "texte en italique"), u: () => wrap("__", "__", "texte souligné"),
+    ul: () => prefix("- "), ol: () => prefix(i => (i + 1) + ". "), ret: () => prefix("> "), pg: () => prefix("! "), art: () => wrap("[[", "]]", "1240") };
+  main().querySelectorAll("[data-ins]").forEach(b => b.addEventListener("click", () => { ta.focus(); INS[b.dataset.ins](); changed(); }));
+  $("#fx-pdf").addEventListener("click", () => fPrint(f));
+  $("#fx-del").addEventListener("click", () => { if (!confirm(`Supprimer définitivement la fiche « ${f.titre || "Sans titre"} » ?`)) return; F.fiches = F.fiches.filter(x => x !== f); fSave(); go("fiches"); });
+}
+
+/* PDF : impression de la seule fiche, avec la feuille de style @media print (choisir « Enregistrer au format PDF ») */
+function fPrint(f) {
+  if (!f) return;
+  let z = document.getElementById("printzone");
+  if (!z) { z = document.createElement("div"); z.id = "printzone"; document.body.appendChild(z); }
+  z.innerHTML = `<article class="fx-doc fx-print"><div class="fx-pkick">${esc(MATIERES[f.matiere] || "")}${f.theme ? " · " + esc(f.theme) : ""}</div><h1>${esc(f.titre || "Sans titre")}</h1>${fRender(f.contenu)}<div class="fx-pfoot">Fiche personnelle · mise à jour le ${esc(fDate(f.maj))}</div></article>`;
+  z.querySelectorAll("button.ref-art").forEach(b => { const s = document.createElement("span"); s.textContent = b.textContent; b.replaceWith(s); });
+  const title = document.title;
+  document.title = (f.titre || "Fiche").replace(/[\\/:*?"<>|]+/g, " ").trim();
+  document.body.classList.add("pfiche");
+  const done = () => { document.body.classList.remove("pfiche"); document.title = title; window.removeEventListener("afterprint", done); };
+  window.addEventListener("afterprint", done);
+  setTimeout(() => { window.print(); setTimeout(() => { if (!window.matchMedia("print").matches) done(); }, 1000); }, 50);
+}
+
+/* Sauvegarde : un fichier .json qui contient toutes les fiches */
+function fExport() {
+  const now = new Date().toISOString();
+  const data = { format: "reviser-mes-fiches", version: 1, exporte: now, fiches: F.fiches };
+  const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: "application/json" }));
+  const a = document.createElement("a"); a.href = url; a.download = `mes-fiches-${now.slice(0, 10)}.json`;
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 2000);
+  F.export = now; fSave();
+}
+function fImport(file) {
+  const msg = t => { const m = $("#fx-msg"); if (m) m.innerHTML = t; };
+  const rd = new FileReader();
+  rd.onload = () => {
+    let d; try { d = JSON.parse(rd.result); } catch (e) { msg(`<p class="warnbox">Ce fichier n'est pas une sauvegarde lisible.</p>`); return; }
+    const list = Array.isArray(d) ? d : d && Array.isArray(d.fiches) ? d.fiches : null;
+    if (!list) { msg(`<p class="warnbox">Ce fichier ne contient pas de fiches.</p>`); return; }
+    let add = 0, upd = 0, same = 0;
+    list.forEach(x => {
+      if (!x || typeof x !== "object") return;
+      const f = { id: String(x.id || fNewId()), titre: String(x.titre || ""), matiere: MATIERES[x.matiere] ? x.matiere : "autre", theme: String(x.theme || ""), contenu: String(x.contenu || ""), cree: String(x.cree || x.maj || new Date().toISOString()), maj: String(x.maj || new Date().toISOString()) };
+      const cur = fById(f.id);
+      if (!cur) { F.fiches.push(f); add++; }
+      else if (f.maj > cur.maj) { Object.assign(cur, f); upd++; }
+      else same++;
+    });
+    if (!fSave()) { msg(`<p class="warnbox">Import impossible : la mémoire du navigateur est pleine ou bloquée.</p>`); return; }
+    fListe();
+    msg(`<p class="okbox">Sauvegarde importée : ${plural(add, "fiche ajoutée", "fiches ajoutées")}, ${plural(upd, "fiche mise à jour", "fiches mises à jour")}${same ? `, ${plural(same, "fiche déjà à jour", "fiches déjà à jour")}` : ""}.</p>`);
+  };
+  rd.readAsText(file);
 }
 
 render();

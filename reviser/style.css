@@ -443,3 +443,89 @@ details.pgch>p{margin-bottom:14px}
 .trainrow .btn{padding:6px 12px;font-size:13.5px}
 .vlim{border-top:1px solid var(--rule);padding-top:12px}
 .chrow .t small.sub{display:block;font:400 13.5px var(--sans);color:var(--ink2);margin-top:3px}
+
+/* Mes fiches : liste, éditeur, aperçu */
+.okbox{background:var(--ok-soft);border-left:3px solid var(--ok);padding:12px 16px;font-size:16px}
+.fx-warn{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin:0 0 24px}
+.fx-warn .btn{padding:6px 14px;font-size:13.5px}
+.fx-filt{margin:0 0 8px;gap:12px 18px}
+.fx-filt input[type="search"]{min-width:260px;flex:1 1 260px;max-width:420px}
+.fx-row{grid-template-columns:minmax(0,1fr) auto}
+.fx-row .t{text-decoration:none;color:inherit}
+.fx-row .t b{font-weight:600}
+.fx-row .right .btn{padding:6px 14px;font-size:13.5px}
+.fx-empty{border:1px dashed var(--rule);background:var(--card);padding:28px;display:flex;flex-direction:column;gap:10px;text-align:left}
+.fx-empty h2{font-size:22px}
+.fx-lab{display:flex;flex-direction:column;gap:4px;font:600 12.5px var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);text-align:left}
+.fx-lab input,.fx-lab select{text-transform:none;letter-spacing:0;font:15px var(--sans);color:var(--ink);padding:8px 10px;border:1px solid var(--rule);border-radius:var(--r);background:var(--card);min-width:220px;max-width:100%}
+.fx-new{display:flex;flex-direction:column;gap:22px}
+.fx-models{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.fx-model{display:flex;flex-direction:column;gap:6px;text-align:left;padding:18px;border:1px solid var(--rule);border-top:3px solid var(--navy);background:var(--card);cursor:pointer;border-radius:var(--r)}
+.fx-model:hover{background:var(--acc-soft)}
+.fx-model b{font:600 18px var(--serif);color:var(--navy)}
+.fx-model span{font-size:14px;color:var(--ink2);line-height:1.5}
+.fx-head{margin-bottom:18px}
+.fx-head .kick span{text-transform:none;letter-spacing:0;font-weight:500}
+.fx-head .kick .fx-err{color:var(--ko);font-weight:700}
+.fx-title{display:block;width:100%;margin:10px 0 14px;padding:4px 0;border:0;border-bottom:1px dashed var(--rule);background:transparent;font:600 clamp(26px,3.2vw,36px)/1.25 var(--serif);color:var(--navy)}
+.fx-title:focus{outline:0;border-bottom:1px solid var(--navy)}
+.fx-meta{gap:12px 20px;align-items:flex-end}
+.fx-tabs{display:none;margin-bottom:12px}
+.fx-ed{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
+.fx-col{display:flex;flex-direction:column;gap:8px;min-width:0}
+.fx-tb{display:flex;flex-wrap:wrap;gap:4px}
+.fx-tb button{border:1px solid var(--rule);background:var(--card);border-radius:var(--r);padding:4px 10px;font-size:13.5px;cursor:pointer;color:var(--ink)}
+.fx-tb button:hover{border-color:var(--navy);color:var(--navy)}
+#fx-c{min-height:62vh;font:15px/1.6 ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;background:var(--card);text-align:left;hyphens:manual}
+.fx-help{font-size:14px;color:var(--ink2)}
+.fx-help summary{cursor:pointer}
+.fx-help code{font-size:13px;background:var(--rule2);padding:0 4px}
+.fx-pv{position:sticky;top:16px;max-height:calc(100vh - 32px);overflow:auto}
+.fx-pvlab{font:600 12.5px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+.fx-doc{background:var(--card);border:1px solid var(--rule);padding:28px 32px;font-size:16px;line-height:1.65}
+.fx-doc h1{font-size:28px;margin:0 0 18px;padding-bottom:12px;border-bottom:2px solid var(--navy)}
+.fx-doc h2{font-size:21px;margin:22px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--rule)}
+.fx-doc h3{font-size:18px;margin:16px 0 6px}
+.fx-doc h4{font:700 16px var(--sans);margin:12px 0 4px;color:var(--ink)}
+.fx-doc p{margin:0 0 10px}
+.fx-doc ul,.fx-doc ol{margin:0 0 10px;padding-left:24px}
+.fx-doc li{margin:2px 0}
+.fx-doc li>ul,.fx-doc li>ol{margin:2px 0}
+.fx-doc hr{border:0;border-top:1px solid var(--rule);margin:18px 0}
+.fx-box{margin:12px 0;padding:10px 14px 10px 16px;border-left:3px solid var(--navy);background:var(--acc-soft)}
+.fx-box p{margin:0 0 4px}.fx-box p:last-child{margin:0}
+.fx-ret::before{content:"À retenir";display:block;font:700 12px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--navy);margin-bottom:4px}
+.fx-pg{border-left-color:var(--ko);background:var(--ko-soft)}
+.fx-pg::before{content:"Piège";display:block;font:700 12px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ko);margin-bottom:4px}
+#printzone{display:none}
+@media (max-width:900px){
+  .fx-tabs{display:inline-flex}
+  .fx-ed{grid-template-columns:minmax(0,1fr)}
+  .fx-ed[data-show="ed"] .fx-pv,.fx-ed[data-show="pv"] .fx-src{display:none}
+  .fx-pv{position:static;max-height:none}
+  .fx-pvlab{display:none}
+  #fx-c{min-height:55vh}
+}
+@media (max-width:640px){
+  .fx-doc{padding:18px 16px}
+  .fx-row{grid-template-columns:minmax(0,1fr)}.fx-row .right{grid-column:1}
+  .fx-lab input,.fx-lab select,.fx-filt input[type="search"]{min-width:0;width:100%}
+  .fx-meta .fx-lab{flex:1 1 100%}
+}
+
+/* Mes fiches : PDF (impression de la seule fiche) */
+@media print{
+  body.pfiche>*:not(#printzone){display:none!important}
+  body.pfiche #printzone{display:block}
+  body.pfiche{background:#fff;font-size:11pt;text-align:justify}
+  .fx-print{border:0;padding:0;font:11pt/1.5 var(--serif);color:#000;background:#fff}
+  .fx-print h1{font-size:20pt;color:#14284B;border-bottom:1.5pt solid #14284B;margin:4pt 0 12pt;padding-bottom:6pt}
+  .fx-print h2{font-size:14pt;color:#14284B;border-bottom:.5pt solid #999;margin:14pt 0 6pt;break-after:avoid;page-break-after:avoid}
+  .fx-print h3{font-size:12pt;color:#14284B;margin:10pt 0 4pt;break-after:avoid;page-break-after:avoid}
+  .fx-print h4{font-size:11pt;margin:8pt 0 3pt;break-after:avoid}
+  .fx-print p,.fx-print li{orphans:3;widows:3}
+  .fx-print .fx-box{break-inside:avoid;page-break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .fx-pkick{font:600 8.5pt var(--sans);letter-spacing:.1em;text-transform:uppercase;color:#555}
+  .fx-pfoot{margin-top:18pt;padding-top:6pt;border-top:.5pt solid #999;font:8.5pt var(--sans);color:#555}
+}
+@page{margin:16mm 16mm 18mm}

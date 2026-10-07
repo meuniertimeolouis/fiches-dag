@@ -1127,7 +1127,7 @@ OBL.pieges[20] = {
       juste: "Il acquiert la créance elle-même et en réclame la **valeur nominale**. C'est le **subrogé** qui est limité à ce qu'il a payé ([[1346-4]]).",
       pourquoi: "La cession peut être spéculative, la subrogation ne l'est pas." },
     { faux: "Le débiteur cédé peut opposer au cessionnaire toutes les exceptions qu'il avait contre le cédant.",
-      juste: "Il oppose les exceptions **inhérentes à la dette** (nullité, exception d'inexécution, résolution, compensation de dettes connexes) si elles existent, ou ont leur cause, avant la notification, et les exceptions **nées de ses rapports avec le cédant** (terme, remise, compensation de dettes non connexes) seulement si elles sont nées **avant** que la cession lui soit devenue opposable ([[1324]], al. 2).",
+      juste: "Il oppose les exceptions **inhérentes à la dette** (nullité, exception d'inexécution, résolution, compensation de dettes connexes), même nées après la notification (Com., 12 janv. 2010), mais les exceptions **nées de ses rapports avec le cédant** (terme, remise, compensation de dettes non connexes) seulement si elles sont nées **avant** que la cession lui soit devenue opposable ([[1324]], al. 2).",
       pourquoi: "Et la prise d'acte sans réserve lui fait perdre la compensation ([[1347-5]])." },
     { faux: "Le cédant d'une créance garantit que le débiteur paiera.",
       juste: "Le cédant à titre onéreux garantit l'**existence** de la créance et de ses accessoires ; il ne garantit la **solvabilité** du débiteur que s'il s'y est engagé, dans la limite du prix retiré, et seulement la solvabilité **actuelle** sauf stipulation expresse ([[1326]]).",

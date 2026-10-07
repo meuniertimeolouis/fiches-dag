@@ -10,6 +10,13 @@
   --r:2px;
   color-scheme:light;
 }
+/* Droit administratif : accent rouge (en-tête, onglets, boutons, titres) */
+body[data-subject="dag"]{
+  --navy:#8B1A1A;--navy2:#6B1212;
+  --acc:var(--navy);--acc-soft:#F7ECEC;
+  --obl:var(--navy);--dag:var(--navy);--obl-soft:var(--acc-soft);--dag-soft:var(--acc-soft);
+}
+body[data-subject="dag"] .brand span,body[data-subject="dag"] .subjects a:not([aria-current="page"]){color:#F1D3D3}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 var(--sans);text-align:justify;hyphens:auto;-webkit-hyphens:auto;-webkit-font-smoothing:antialiased}

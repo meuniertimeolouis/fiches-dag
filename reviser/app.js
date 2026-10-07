@@ -113,7 +113,7 @@ function chrome(sub, toolCur) {
   S.subject = sub; save();
   document.querySelectorAll(".subjects a").forEach(a => a.setAttribute("aria-current", a.dataset.sub === sub ? "page" : "false"));
   const tools = sub === "obl"
-    ? [["obl", "Parcours"], ["obl/outils/regimes", "Régimes"], ["obl/outils/articles", "Articles"], ["obl/outils/pieges", "Pièges"], ["obl/outils/cas", "Cas pratiques"], ["obl/outils/arrets", "Arrêts"], ["obl/outils/quiz", "Quiz mélangé"]]
+    ? [["obl", "Cours"], ["obl/manuel", "Fiches du manuel"], ["obl/outils/regimes", "Régimes"], ["obl/outils/articles", "Articles"], ["obl/outils/pieges", "Pièges"], ["obl/outils/cas", "Cas pratiques"], ["obl/outils/arrets", "Arrêts"], ["obl/outils/quiz", "Quiz mélangé"]]
     : [["dag", "Parcours"], ["dag/frise", "Frise chronologique"], ["dag/fiches", "Toutes les fiches"]];
   $("#tools").innerHTML = tools.map(([p, t]) => `<a href="#/${p}" ${toolCur === p ? 'aria-current="page"' : ""}>${t}</a>`).join("") +
 "";
@@ -132,7 +132,10 @@ function render() {
   if (sub === "obl") {
     if (r[1] === "ch") return oblChapter(+r[2], r[3] || "fiche");
     if (r[1] === "outils") return oblTool(r[2] || "regimes", r.slice(3).map(decodeURIComponent));
-    return oblHome();
+    if (r[1] === "manuel") return oblHome();
+    if (r[1] === "cours") return coursChapitre(r[2]);
+    if (r[1] === "hp") return horsPlan(r[2]);
+    return coursHome();
   }
   if (r[1] === "s") return dagSeance(r[2], r[3] || "frise");
   if (r[1] === "frise") { chrome("dag", "dag/frise"); setMain(`<div class="head"><h1>Frise chronologique des arrêts</h1></div><div id="frise"></div>`); return friseView($("#frise"), { seance: "all" }); }
@@ -143,7 +146,7 @@ function render() {
 /* =================== DROIT DES OBLIGATIONS =================== */
 function chDone(n) { const p = S.obl[n] || {}; return OSTEPS.filter(s => p[s.k]).length; }
 function oblHome() {
-  chrome("obl", "obl");
+  chrome("obl", "obl/manuel");
   const last = S.last && S.last.sub === "obl" ? S.last : null;
   const next = CHS.find(c => chDone(c.num) < OSTEPS.length) || CHS[0];
   const resume = last
@@ -152,7 +155,7 @@ function oblHome() {
     : `<p>Vingt et un chapitres, chacun en cinq étapes : la fiche de cours, les pièges, un quiz, des cas pratiques corrigés et les articles du Code civil.</p>
        <div class="row"><a class="btn main" href="#/obl/ch/1/fiche">Commencer par le chapitre 1</a></div>`;
   const total = CHS.reduce((a, c) => a + chDone(c.num), 0);
-  setMain(`<section class="resume"><div class="eyebrow">Licence 2 · Université Jean Monnet</div><h1>Droit des obligations</h1>${resume}<p class="small muted">${total} étape${total > 1 ? "s" : ""} faite${total > 1 ? "s" : ""} sur ${CHS.length * OSTEPS.length}. La progression est gardée dans ce navigateur.</p></section>
+  setMain(`<section class="resume"><div class="eyebrow">Licence 2 · Université Jean Monnet · Fiches du manuel</div><h1>Droit des obligations</h1>${resume}<p class="small muted">${total} étape${total > 1 ? "s" : ""} faite${total > 1 ? "s" : ""} sur ${CHS.length * OSTEPS.length}. La progression est gardée dans ce navigateur.</p></section>
     ${PARTS.map(p => `<section class="part" id="p-${p.id}"><h2>${esc(p.t)}</h2>${CHS.filter(c => c.part === p.id).map(c => {
       const d = chDone(c.num), q = (S.obl[c.num] || {}).quiz;
       return `<a class="chrow" href="#/obl/ch/${c.num}/${firstTodo(c.num)}"><span class="n">${c.num}</span><span class="t">${esc(c.titre || c.court)}</span>
@@ -170,19 +173,19 @@ function nextBar(sub, id, steps, cur, base, extra) {
   const i = steps.findIndex(s => s.k === cur), nx = steps[i + 1];
   return `<div class="next">${extra || ""}<span></span>${nx
     ? `<a class="btn main" href="${base}/${nx.k}" data-done="${cur}">Étape suivante : ${esc(nx.t)}</a>`
-    : `<a class="btn main" href="#/${sub}" data-done="${cur}">Terminer ce parcours</a>`}</div>`;
+    : `<a class="btn main" href="#/${sub === "obl" ? "obl/manuel" : sub}" data-done="${cur}">Terminer ce parcours</a>`}</div>`;
 }
 function wireNext(sub, id) {
   main().querySelectorAll("[data-done]").forEach(a => a.addEventListener("click", () => mark(sub, id, a.dataset.done, (S[sub][id] || {})[a.dataset.done] || true)));
 }
 
 function oblChapter(n, step) {
-  chrome("obl", "obl");
+  chrome("obl", "obl/manuel");
   const c = CHS.find(x => x.num === n);
   if (!c || !c.sections) { go("obl"); return; }
   S.last = { sub: "obl", n, step }; save();
   const base = `#/obl/ch/${n}`;
-  setMain(`<div class="path">${stepperHtml("#/obl", "Parcours", OSTEPS, base, step, S.obl[n] || {})}
+  setMain(`<div class="path">${stepperHtml("#/obl/manuel", "Fiches du manuel", OSTEPS, base, step, S.obl[n] || {})}
     <div><div class="head"><div class="kick">Chapitre ${n} · ${esc(PARTS.find(p => p.id === c.part).t)}</div><h1>${esc(c.titre)}</h1></div>
     <div class="content" id="step"></div></div></div>`);
   const box = $("#step");
@@ -192,6 +195,93 @@ function oblChapter(n, step) {
   else if (step === "cas") { box.innerHTML = caseIndex(n) + nextBar("obl", n, OSTEPS, "cas", base); wireNext("obl", n); }
   else if (step === "articles") articlesView(box, (c.articles || []).map(artBy).filter(Boolean), { sub: "obl", id: n, base });
   if (["fiche", "pieges"].includes(step)) { box.insertAdjacentHTML("beforeend", nextBar("obl", n, OSTEPS, step, base)); wireNext("obl", n); }
+}
+
+/* ---------- Cours (plans de Pr Fouvet, S3) ---------- */
+const COURS = OBL.cours || { chapitres: [], horsplan: [] };
+const COURS_TITRES = [
+  { t: "Introduction", ids: ["intro"] },
+  { t: "Partie 1 · Titre 1 : Les conditions communes de la responsabilité extracontractuelle", ids: ["prejudice", "causalite"] },
+  { t: "Partie 1 · Titre 2 : Les faits générateurs de responsabilité", ids: ["faute", "choses", "autrui"] }
+];
+const coursCh = id => COURS.chapitres.find(c => c.id === id);
+function coursHome() {
+  chrome("obl", "obl");
+  const last = S.lastCours && coursCh(S.lastCours);
+  const first = COURS.chapitres[0];
+  const resume = `<p>Le cours suit le plan de Pr Fouvet : l'introduction, puis la responsabilité extracontractuelle (préjudice, causalité, faute, fait des choses, fait d'autrui). Chaque notion est reliée aux arrêts du cours et au réflexe à avoir en cas pratique.</p>
+    <div class="row">${last ? `<a class="btn main" href="#/obl/cours/${last.id}">Reprendre : ${esc(last.t)}</a>` : first ? `<a class="btn main" href="#/obl/cours/${first.id}">Commencer par l'introduction</a>` : ""}<a class="btn" href="#/obl/manuel">Fiches du manuel</a></div>`;
+  const row = (href, n, t, d) => `<a class="chrow" href="${href}"><span class="n">${n}</span><span class="t">${esc(t)}${d && d !== t ? `<small class="sub">${esc(d)}</small>` : ""}</span><span class="right"></span></a>`;
+  let k = 0;
+  setMain(`<section class="resume"><div class="eyebrow">Licence 2 · Université Jean Monnet · Semestre 3</div><h1>Droit des obligations</h1>${resume}</section>
+    ${COURS_TITRES.map((p, i) => `<section class="part" id="cp-${i}"><h2>${esc(p.t)}</h2>${p.ids.map(coursCh).filter(Boolean).map(c => row(`#/obl/cours/${c.id}`, ++k, c.t, c.kick)).join("")}</section>`).join("")}
+    <section class="part" id="cp-hp"><h2>Hors plan : notions du manuel pour le cas pratique</h2>
+      <p class="muted small hpnote">Ces notions ne figurent pas dans les plans distribués mais servent en cas pratique. Elles sont présentées sous l'angle de leur utilité : à quoi elles servent, comment raisonner, quels pièges éviter.</p>
+      ${COURS.horsplan.map((h, i) => row(`#/obl/hp/${h.id}`, "H" + (i + 1), h.t, h.kick)).join("")}</section>
+    <section class="part" id="cp-man"><h2>Pour aller plus loin</h2>${row("#/obl/manuel", "→", "Fiches du manuel : les 21 chapitres en cinq étapes", "Fiche, pièges, quiz, cas pratiques, articles")}</section>`);
+  thumbs([["cp-0", "Introduction"], ["cp-1", "Titre 1"], ["cp-2", "Titre 2"], ["cp-hp", "Hors plan"], ["cp-man", "Manuel"]]);
+}
+function cBlock(b) {
+  if (b.txt) return `<blockquote class="ctxt"><span class="ref">${esc(b.txt.r)}</span>${fmtA(b.txt.q)}</blockquote>`;
+  if (b.a) {
+    const a = ARR().find(x => x.id === b.a);
+    if (!a) return b.r ? `<div class="carr"><p>${fmtA(b.r)}</p></div>` : "";
+    return `<div class="carr"><a class="ref" href="#/obl/outils/arrets/${esc(a.id)}">${esc(a.nom)}</a> <span class="muted small">${esc(arrCite(a))}</span>${a.a_verifier ? ` <span class="abadge ab-ver">à vérifier</span>` : ""}${b.r ? `<p>${fmtA(b.r)}</p>` : ""}</div>`;
+  }
+  if (b.a2) return `<div class="carr"><span class="ref">${esc(b.a2)}</span>${b.r ? `<p>${fmtA(b.r)}</p>` : ""}</div>`;
+  if (b.cp) return `<div class="cptip">${fmtA(b.cp)}</div>`;
+  if (b.p) return `<p>${fmtA(b.p)}</p>`;
+  if (b.liste) return `<ul>${b.liste.map(x => `<li>${fmtA(x)}</li>`).join("")}</ul>`;
+  if (b.def) return `<div class="defn"><b>${fmtA(b.def.terme)}</b> : ${fmtA(b.def.texte)}</div>`;
+  if (b.attention) return `<div class="warnbox">${fmtA(b.attention)}</div>`;
+  if (b.schema) return schemaHtml(b.schema);
+  return "";
+}
+function coursNode(n, d, id) {
+  const h = Math.min(d + 2, 6);
+  const body = (n.c || []).map(cBlock).join("") + (n.s || []).map((x, i) => coursNode(x, d + 1, id + "-" + i)).join("");
+  if (d === 0) return `<section class="sec cn" id="${id}"><h2>${esc(n.t)}</h2>${body}</section>`;
+  return `<div class="cn cn${d}"><h${h}>${esc(n.t)}</h${h}>${body}</div>`;
+}
+function coursChapitre(id) {
+  chrome("obl", "obl");
+  const i = COURS.chapitres.findIndex(c => c.id === id), c = COURS.chapitres[i];
+  if (!c) { go("obl"); return; }
+  S.lastCours = id; save();
+  const prev = COURS.chapitres[i - 1], next = COURS.chapitres[i + 1];
+  const secs = (c.s || []).map((n, j) => ["s-" + j, n.t]);
+  const man = (c.manuel || []).map(n => CHS.find(x => x.num === n)).filter(Boolean);
+  setMain(`<div class="path"><nav class="stepper toc" aria-label="Sommaire"><a class="back" href="#/obl">← Cours</a><ol>${secs.map(([sid, t]) => `<li><a href="#${sid}" data-scroll="${sid}"><span>${esc(t.replace(/^Section \d+\s*[–-]\s*/, ""))}</span></a></li>`).join("")}${man.length ? `<li><a href="#s-train" data-scroll="s-train"><span>S'entraîner</span></a></li>` : ""}</ol></nav>
+    <div><div class="head"><div class="kick">${esc(c.kick)}</div><h1>${esc(c.t)}</h1></div>
+    <div class="content cours">${c.intro ? `<p class="lead">${fmtA(c.intro)}</p>` : ""}${(c.c || []).map(cBlock).join("")}
+    ${(c.s || []).map((n, j) => coursNode(n, 0, "s-" + j)).join("")}
+    ${man.length ? `<section class="sec" id="s-train"><h2>S'entraîner</h2><p class="muted">Les chapitres du manuel qui couvrent cette partie du cours, avec leurs pièges, quiz et cas pratiques corrigés.</p>${man.map(m => `<div class="row trainrow"><b>Ch. ${m.num} · ${esc(m.court)}</b><a class="btn" href="#/obl/ch/${m.num}/fiche">Fiche</a><a class="btn" href="#/obl/ch/${m.num}/pieges">Pièges</a><a class="btn" href="#/obl/ch/${m.num}/quiz">Quiz</a><a class="btn" href="#/obl/ch/${m.num}/cas">Cas pratiques</a></div>`).join("")}</section>` : ""}
+    <div class="next">${prev ? `<a class="btn" href="#/obl/cours/${prev.id}">← ${esc(prev.t)}</a>` : ""}<span></span>${next ? `<a class="btn main" href="#/obl/cours/${next.id}">${esc(next.t)} →</a>` : `<a class="btn main" href="#/obl">Retour au cours</a>`}</div>
+    </div></div></div>`);
+  main().querySelectorAll(".toc [data-scroll]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); const el = document.getElementById(a.dataset.scroll); if (el) el.scrollIntoView({ behavior: "smooth" }); }));
+}
+function horsPlan(id) {
+  chrome("obl", "obl");
+  const i = COURS.horsplan.findIndex(h => h.id === id), h = COURS.horsplan[i];
+  if (!h) { go("obl"); return; }
+  const man = (h.manuel || []).map(n => CHS.find(x => x.num === n)).filter(Boolean);
+  const S2 = [["h-int", "À quoi sert cette notion"], ["h-dev", "Ce qu'elle permet de développer"], ["h-txt", "Textes"], ["h-met", "Raisonner en cas pratique"], ["h-arr", "Arrêts utiles"], ["h-pg", "Pièges"]];
+  const prev = COURS.horsplan[i - 1], next = COURS.horsplan[i + 1];
+  setMain(`<div class="path"><nav class="stepper toc" aria-label="Sommaire"><a class="back" href="#/obl">← Cours</a><ol>${S2.map(([sid, t]) => `<li><a href="#${sid}" data-scroll="${sid}"><span>${t}</span></a></li>`).join("")}</ol></nav>
+    <div><div class="head"><div class="kick">Hors plan · ${esc(h.kick)}</div><h1>${esc(h.t)}</h1></div>
+    <div class="content cours">
+      <section class="sec" id="h-int"><h2>À quoi sert cette notion</h2><p class="lead">${fmtA(h.interet)}</p></section>
+      <section class="sec" id="h-dev"><h2>Ce qu'elle permet de développer</h2><ul>${(h.developper || []).map(x => `<li>${fmtA(x)}</li>`).join("")}</ul></section>
+      <section class="sec" id="h-txt"><h2>Textes</h2><ul>${(h.textes || []).map(x => `<li>${fmtA(x)}</li>`).join("")}</ul></section>
+      <section class="sec" id="h-met"><h2>Raisonner en cas pratique</h2><ol class="meth">${(h.methode || []).map(x => `<li>${fmtA(x)}</li>`).join("")}</ol></section>
+      <section class="sec" id="h-arr"><h2>Arrêts utiles</h2>${(h.arrets || []).map(cBlock).join("")}</section>
+      <section class="sec" id="h-pg"><h2>Pièges</h2><div class="train">${piegesHtml(h.pieges || [])}</div></section>
+      ${h.limite ? `<p class="muted small vlim"><strong>Limite de vérification :</strong> ${fmtA(h.limite)}</p>` : ""}
+      ${man.length ? `<p class="small">Dans le manuel : ${man.map(m => `<a href="#/obl/ch/${m.num}/fiche">chapitre ${m.num}, ${esc(m.court)}</a>`).join(" ; ")}.</p>` : ""}
+      <div class="next">${prev ? `<a class="btn" href="#/obl/hp/${prev.id}">← ${esc(prev.t)}</a>` : ""}<span></span>${next ? `<a class="btn main" href="#/obl/hp/${next.id}">${esc(next.t)} →</a>` : `<a class="btn main" href="#/obl">Retour au cours</a>`}</div>
+    </div></div></div>`);
+  main().querySelectorAll(".reveal").forEach(b => b.addEventListener("click", () => b.closest(".pg").classList.add("open")));
+  main().querySelectorAll(".toc [data-scroll]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); const el = document.getElementById(a.dataset.scroll); if (el) el.scrollIntoView({ behavior: "smooth" }); }));
 }
 
 /* ---------- Arrêts ---------- */

@@ -412,3 +412,34 @@ details.pgch>p{margin-bottom:14px}
 .ntag{font:inherit;font-size:13px;cursor:pointer;border:1px solid var(--rule);background:var(--card);color:var(--navy);padding:1px 8px;margin:2px 2px 2px 0}
 .arow{grid-template-columns:minmax(0,1fr) auto}
 .arow .cpq{display:block;margin-top:4px}
+
+/* ---------- Cours (plans du cours) ---------- */
+.hpnote{margin:14px 0 4px;max-width:760px}
+.toc ol{counter-reset:none}
+.toc li a{grid-template-columns:1fr;counter-increment:none}
+.toc li a::before{content:none}
+.toc li a span{font:500 14.5px/1.35 var(--sans)}
+.cours .lead{font:400 18px/1.6 var(--serif);color:var(--ink)}
+.cn{display:flex;flex-direction:column;gap:12px}
+.cn1{margin-top:12px}
+.cn1>h3{font-size:19px;color:var(--navy)}
+.cn2>h4{font:700 16.5px var(--sans);color:var(--ink);margin-top:6px}
+.cn3>h5{font:600 15.5px var(--sans);color:var(--ink2);margin-top:4px}
+.cn4>h6{font:italic 600 15px var(--sans);color:var(--ink2);margin:2px 0 0}
+.cn3,.cn4{padding-left:14px;border-left:1px solid var(--rule2)}
+.ctxt{margin:0;border-left:3px solid var(--rule);background:var(--card);padding:12px 16px;font:400 16px/1.6 var(--serif);color:var(--ink)}
+.ctxt .ref{display:block;font:600 12.5px var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);margin-bottom:6px}
+.carr{border:1px solid var(--rule);background:var(--card);padding:12px 16px}
+.carr .ref{font:600 16px var(--serif);color:var(--navy)}
+.carr a.ref{text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px}
+.carr a.ref:hover{text-decoration-color:var(--navy)}
+.carr p{margin:6px 0 0}
+.cptip{border-left:3px solid var(--ok);background:var(--ok-soft);padding:12px 16px}
+.cptip::before{content:"En cas pratique : ";font:700 14px var(--sans);color:var(--ok)}
+.meth{padding-left:22px}
+.meth li{margin-bottom:8px}
+.trainrow{padding:10px 0;border-bottom:1px solid var(--rule2)}
+.trainrow b{flex:1 1 220px;font:600 15px var(--sans)}
+.trainrow .btn{padding:6px 12px;font-size:13.5px}
+.vlim{border-top:1px solid var(--rule);padding-top:12px}
+.chrow .t small.sub{display:block;font:400 13.5px var(--sans);color:var(--ink2);margin-top:3px}

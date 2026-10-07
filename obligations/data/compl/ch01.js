@@ -9,7 +9,7 @@ OBL.complements[1] = {
     { t: "Consécration textuelle en deux temps", p: "Avant 2016, seul l'ancien art. 1235, al. 2 (devenu [[1302]], al. 2) évoquait l'obligation naturelle, pour interdire la restitution. Depuis l'ordonnance du 10 février 2016, l'[[1100]], al. 2, la rattache à l'exécution volontaire ou à la promesse d'exécution d'un **devoir de conscience envers autrui**, ce qui consacre la thèse de Ripert." },
     { t: "Limite de la thèse de Ripert", p: "Ripert reconnaissait lui-même qu'on ne peut pas définir le domaine des obligations naturelles **a priori** : le juge les déduit après coup, quand il constate un engagement atypique. D'où un contrôle au cas par cas du devoir de conscience." },
     { t: "Les sources : un article mal placé, une critique", p: "L'ancien art. 1370 énumérait quatre sources, mais il était mal situé dans le Code ; la réforme l'a remplacé par l'[[1100]], al. 1er. Critique doctrinale : la loi est le fondement de toutes les obligations, donc ne devrait pas figurer à égalité avec l'acte et le fait ; la ligne de partage utile est entre obligation voulue et obligation subie." },
-    { t: "Une distinction abandonnée, mais pas ses notions", p: "L'ordonnance du 10 février 2016 n'a pas repris la distinction donner / faire / ne pas faire. Seule la notion d'obligation de donner disparaît vraiment (le transfert est un effet du contrat, [[1196]]) ; faire et ne pas faire restent perceptibles, par exemple à l'[[1222]]." },
+    { t: "Une distinction abandonnée, mais pas ses notions", p: "L'ordonnance du 10 février 2016 n'a pas repris la distinction donner / faire / ne pas faire. Seule la notion d'obligation de donner disparaît vraiment (le transfert est un effet du contrat, [[1196]]) ; faire et ne pas faire ne sont plus évoqués par le Code, mais gardent un intérêt didactique, notamment en responsabilité contractuelle (on en perçoit la trace à l'[[1222]])." },
     { t: "Moyens et résultat : un silence du législateur, pas un abandon", p: "Distinction due à Demogue, sous-entendue par les anciens art. 1137 et 1147 et entérinée par la jurisprudence. L'ordonnance de 2016 l'a laissée de côté dans l'attente d'une réforme de la responsabilité civile ; les deux projets de la Chancellerie (mars 2016 et avril 2017) semblaient l'abandonner, ce qui a inquiété la doctrine. Elle reste du droit positif." }
   ],
   difference: [
@@ -26,7 +26,7 @@ OBL.complements[1] = {
   pieges: [
     { faux: "L'obligation en nature est celle qui n'est pas sanctionnée par le juge.",
       juste: "L'obligation **en nature** est celle qui n'a pas pour objet une somme d'argent. Celle qui n'est pas sanctionnée par la contrainte est l'obligation **naturelle**.",
-      pourquoi: "Deux classifications distinctes : la première relève de l'objet, la seconde de l'intensité du lien juridique." },
+      pourquoi: "Deux classifications distinctes : la première relève de l'objet de l'obligation, la seconde de l'absence de pouvoir de contrainte (debitum sans obligatio)." },
     { faux: "La loi est une source d'obligation comme les autres, au même rang que le contrat et le délit.",
       juste: "C'est la lettre de l'[[1100]], al. 1er, mais la loi est le fondement de **toutes** les obligations : l'opposition décisive est celle de l'acte juridique (voulu) et du fait juridique (subi).",
       pourquoi: "Une copie qui relève cette critique et propose la summa divisio acte / fait montre qu'elle a compris le sens de la classification." },

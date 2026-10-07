@@ -20,7 +20,7 @@ OBL.chapitres.push({
         { h: "Qui est partie, qui est tiers ?" },
         { p: "La qualité de partie ou de tiers s'apprécie au jour de l'**exécution** du contrat, car elle peut évoluer depuis la formation. Sont **assimilés aux parties** :" },
         { liste: [
-          "les **ayants cause à titre universel** (héritiers, légataires) : investis des droits et actions du défunt (art. 724), ils deviennent parties au jour de l'exécution (l'héritier du vendeur doit livrer). L'ancien art. 1122 n'a pas été repris ; une clause contraire reste possible et les contrats *intuitu personae* demeurent intransmissibles (cf. mandat, art. 2003, al. 3) ;",
+          "les **ayants cause à titre universel** (héritiers, légataires) : investis des droits et actions du défunt (art. 724), ils deviennent parties au jour de l'exécution (l'héritier du vendeur doit livrer). L'ancien art. 1122 n'a pas été repris ; une clause contraire reste sans doute possible et les contrats *intuitu personae* devraient demeurer intransmissibles (cf. mandat, art. 2003, al. 3), faute désormais de fondement textuel général ;",
           "le **représenté** : en cas de représentation parfaite (le représentant révèle sa qualité), le représenté est seul tenu et le représentant est un tiers (art. 1154, al. 1er) ; en cas de représentation imparfaite (qualité non révélée), le représentant est engagé (art. 1154, al. 2) ;",
           "le **cessionnaire** du contrat, qui remplace le cédant ; celui-ci devient tiers pour l'avenir si le cédé l'a expressément déchargé (cession de bail)."
         ] },
@@ -33,7 +33,7 @@ OBL.chapitres.push({
         ] },
         { h: "Les actions du créancier" },
         { schema: { type: "tableau", titre: "Trois actions pour atteindre le patrimoine du débiteur", colonnes: ["Action", "Idée", "Conditions", "Effet"], lignes: [
-          ["**Oblique** ([[1341-1]])", "Exercer les droits que le débiteur néglige", "Carence du débiteur compromettant gravement les droits du créancier ; droits patrimoniaux non strictement attachés à la personne (sont exclus les droits extrapatrimoniaux, insaisissables ou purement personnels, comme la révocation d'une donation)", "Profite au patrimoine du débiteur (donc à tous ses créanciers)"],
+          ["**Oblique** ([[1341-1]])", "Exercer les droits que le débiteur néglige", "Carence du débiteur compromettant les droits du créancier ; droits patrimoniaux non strictement attachés à la personne (sont exclus les droits extrapatrimoniaux, insaisissables ou purement personnels, comme la révocation d'une donation)", "Profite au patrimoine du débiteur (donc à tous ses créanciers)"],
           ["**Paulienne** ([[1341-2]])", "Faire tomber un acte frauduleux du débiteur", "Fraude du débiteur, c'est-à-dire connaissance du préjudice causé au créancier (Civ. 1re, 17 oct. 1979), postérieure à la créance ; connaissance de la fraude par le tiers si l'acte est à titre onéreux", "Acte **inopposable** au seul créancier qui agit"],
           ["**Directe** ([[1341-3]])", "Agir contre le débiteur de son débiteur", "Seulement dans les cas prévus par la loi (sous-traitant, bailleur contre sous-locataire, victime contre l'assureur)", "Paiement direct au créancier"]
         ] } },
@@ -56,11 +56,11 @@ OBL.chapitres.push({
         { h: "Le régime de la stipulation pour autrui" },
         { liste: [
           "Bénéficiaire : même une **personne future**, mais précisément désignée ou déterminable lors de l'exécution ([[1205]]).",
-          "Droit **direct** contre le promettant, né **dès la stipulation**, sans passer par le patrimoine du stipulant ([[1206]], al. 1er ; Civ., 12 juill. 1956).",
+          "Droit **direct** contre le promettant, né **dès la stipulation**, sans passer par le patrimoine du stipulant ([[1206]], al. 1er ; Civ. 1re, 12 juill. 1956).",
           "Révocable librement par le stipulant tant que le bénéficiaire n'a pas **accepté** ; irrévocable dès que l'acceptation parvient au stipulant ou au promettant ([[1206]]). Après le décès du stipulant, ses héritiers ne peuvent révoquer qu'après une mise en demeure d'accepter restée trois mois sans réponse ([[1207]]).",
           "Acceptation expresse ou tacite, possible même après le décès du stipulant ou du promettant ([[1208]]).",
           "Le stipulant peut lui-même exiger l'exécution au profit du bénéficiaire ([[1209]]) et agir en responsabilité ou en résolution (Civ. 1re, 12 juill. 1956).",
-          "**Conditions** : contrat préalable valable entre stipulant et promettant ; clause en principe expresse (la stipulation tacite, Civ., 6 déc. 1932, est en recul, la jurisprudence préférant fonder l'action des tiers sur le manquement contractuel) ; profit d'un tiers ; bénéficiaire désigné ou déterminable (à défaut, la prestation revient au stipulant), une personne simplement conçue pouvant être bénéficiaire. L'acceptation, libre de forme, peut intervenir jusqu'au jour de l'exécution.",
+          "**Conditions** : contrat préalable valable entre stipulant et promettant ; clause en principe expresse (la stipulation tacite, Civ., 6 déc. 1932, est en recul, la jurisprudence préférant fonder l'action des tiers sur le manquement contractuel) ; profit d'un tiers ; bénéficiaire désigné ou déterminable (à défaut, la prestation revient au stipulant), une personne future pouvant être bénéficiaire si elle est au moins conçue lors de l'exécution. L'acceptation, libre de forme, peut intervenir jusqu'au jour de l'exécution.",
           "Le promettant peut opposer au bénéficiaire les exceptions issues du contrat de base (nullité par exemple) ; le bénéficiaire ne peut pas demander la résolution, réservée au stipulant. Les créanciers du stipulant n'ont aucun droit sur la créance (C. assur., art. L. 132-14 pour l'assurance-vie).",
           "La révocation, émanant du stipulant ou, après son décès, de ses héritiers, est **rétroactive** : le bénéficiaire est censé n'avoir jamais bénéficié de la stipulation ([[1207]], al. 5)."
         ] }

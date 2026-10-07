@@ -27,9 +27,9 @@ OBL.chapitres.push({
         { def: { terme: "Clause résolutoire", texte: "stipulation qui « précise les engagements dont l'inexécution entraînera la résolution du contrat » ([[1225]], al. 1er) et permet au créancier de résoudre **de plein droit**, sans juge, quelle que soit la gravité du manquement." } },
         { liste: [
           "**Interprétation stricte** : la clause doit exprimer sans équivoque la volonté de résoudre **de plein droit** ; à défaut, elle ne fait que rappeler la possibilité d'une résolution judiciaire (Civ. 1re, 15 juin 1994 ; Civ. 3e, 12 oct. 1994).",
-          "Le principe de la mise en demeure préalable était déjà posé avant 2016 (Civ. 3e, 23 mars 2017, n° 16-13.060, le rappelle). Elle doit **désigner les obligations** visées : les clauses « balais » (« tout manquement à l'une quelconque des obligations ») ne répondent pas à [[1225]].",
+          "La clause doit **désigner les obligations** visées : les clauses « balais » (« tout manquement à l'une quelconque des obligations ») ne répondent pas à [[1225]].",
           "Licite par principe, sauf textes spéciaux (assurance, certains baux) et contrôle des clauses abusives ([[1171]] ; droit de la consommation).",
-          "**Mise en demeure infructueuse** préalable, qui **mentionne expressément la clause**, sauf stipulation dispensant de mise en demeure ([[1225]], al. 2)."
+          "**Mise en demeure infructueuse** préalable, qui **mentionne expressément la clause**, sauf stipulation dispensant de mise en demeure ([[1225]], al. 2) ; le principe de la mise en demeure était déjà posé avant 2016 (rappel : Civ. 3e, 23 mars 2017, n° 16-13.060)."
         ] },
         { h: "Les pouvoirs du juge" },
         { liste: [
@@ -61,7 +61,7 @@ OBL.chapitres.push({
       titre: "La résolution judiciaire",
       contenu: [
         { h: "Domaine" },
-        { p: "Terrain d'élection : les **contrats synallagmatiques**. Quelques contrats synallagmatiques y échappent (assurance, où joue la déchéance ; rente viagère, art. 1978 ; cession d'office ministériel, la résolution rétroactive remettant en cause la nomination de l'officier et les actes passés) ; à l'inverse, certains contrats unilatéraux comme le prêt à intérêt (art. 1912) peuvent être résolus, ses obligations étant très proches de l'interdépendance (le prêt d'un professionnel du crédit est d'ailleurs consensuel depuis Civ. 1re, 27 mai 2000). [[1224]] ne mentionne plus la limite aux contrats synallagmatiques." },
+        { p: "Terrain d'élection : les **contrats synallagmatiques**. Quelques contrats synallagmatiques y échappent (assurance, où joue la déchéance ; rente viagère, art. 1978 ; cession d'office ministériel, la résolution rétroactive remettant en cause la nomination de l'officier et les actes passés) ; à l'inverse, certains contrats unilatéraux comme le prêt à intérêt (art. 1912) peuvent être résolus, ses obligations étant très proches de l'interdépendance (le prêt d'un professionnel du crédit est d'ailleurs consensuel depuis Civ. 1re, 28 mars 2000). [[1224]] ne mentionne plus la limite aux contrats synallagmatiques." },
         { h: "Conditions de fond" },
         { liste: [
           "**L'inexécution d'une obligation contractuelle**, même tacite (obligation d'information du vendeur : Civ. 1re, 28 mai 2009) ; la violation d'une obligation purement légale ne suffit pas, en principe. La **faute n'est pas exigée** : le constat du manquement suffit (Com., 18 janv. 2023, n° 21-16.812, sous le visa de [[1217]]).",

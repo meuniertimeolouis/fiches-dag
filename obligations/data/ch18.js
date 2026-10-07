@@ -17,7 +17,7 @@ OBL.chapitres.push({
           { lien: "et", t: "Quasi-contrats innommés", d: "ex. loteries publicitaires (Ch. mixte, 6 sept. 2002)" }
         ] } } },
         { p: "L'alinéa 2 vise les quasi-contrats « régis par le présent sous-titre » : la formule laisse la catégorie **ouverte**. La jurisprudence l'avait déjà élargie : l'organisateur d'une **loterie publicitaire** qui annonce un gain à une personne dénommée sans mettre en évidence l'existence d'un aléa s'oblige, par ce fait purement volontaire, à le délivrer (Ch. mixte, 6 sept. 2002, n° 98-22.981 ; solution confirmée, par exemple, par Civ. 1re, 18 mars 2003 et 13 juin 2006, puis 23 juin 2011)." },
-        { attention: "Solution critiquée : le « gagnant » déçu n'est pas appauvri et le fait de l'organisateur n'a rien de licite. On y voit une sanction de la tromperie plus qu'un vrai quasi-contrat. En copie, présentez-la comme une **conception extensive** de la notion." },
+        { attention: "Solution critiquée : le « gagnant » déçu n'est pas appauvri et le caractère licite du fait de l'organisateur est plus qu'incertain. On y voit une sanction de la tromperie plus qu'un vrai quasi-contrat. En copie, présentez-la comme une **conception extensive** de la notion." },
         { h: "Application dans le temps de la réforme de 2016" },
         { p: "L'ordonnance ne comporte pas de disposition transitoire propre aux quasi-contrats. La Cour de cassation applique l'article 2 du Code civil : les **conditions d'existence** relèvent de la loi en vigueur au jour du **fait** qui en est la source ; la **détermination et le calcul de l'indemnité** relèvent immédiatement de la loi nouvelle (Civ. 1re, 3 mars 2021, à propos de l'enrichissement injustifié)." }
       ]
@@ -58,7 +58,7 @@ OBL.chapitres.push({
     {
       titre: "La gestion d'affaires : les effets",
       contenu: [
-        { p: "Premier réflexe : la **ratification**. Si le maître ratifie la gestion, elle **vaut mandat** ([[1301-3]]) : les règles du mandat s'appliquent seules. À défaut, la gestion d'affaires produit ses effets propres, qui en font un quasi-contrat **synallagmatique** : obligations réciproques du gérant et du maître." },
+        { p: "Premier réflexe : la **ratification**. Si le maître ratifie la gestion (ratification **expresse**, précise le manuel), elle **vaut mandat** ([[1301-3]]) : les règles du mandat s'appliquent seules. À défaut, la gestion d'affaires produit ses effets propres, qui en font un quasi-contrat **synallagmatique** : obligations réciproques du gérant et du maître." },
         { schema: { type: "tableau", titre: "Les obligations réciproques", colonnes: ["", "Le gérant", "Le maître de l'affaire"], lignes: [
           ["Principe", "Toutes les obligations d'un **mandataire** ([[1301]])", "Tenu seulement si l'affaire a été **utilement gérée** ([[1301-2]])"],
           ["Contenu", "Soins d'une **personne raisonnable** ; **poursuivre** la gestion jusqu'à ce que le maître ou son successeur puisse y pourvoir ([[1301-1]], al. 1er) ; rendre compte", "Remplir les **engagements** contractés dans son intérêt ; **rembourser les dépenses** ; **indemniser les dommages** subis par le gérant du fait de la gestion ([[1301-2]], al. 1er et 2)"],
@@ -71,7 +71,7 @@ OBL.chapitres.push({
         { p: "Quand le gérant conclut des contrats avec des tiers (achat de matériaux, appel à un artisan), qui est engagé envers ceux-ci ?" },
         { liste: [
           "**Avant 2016** : si le gérant avait agi **au nom du maître**, représentation parfaite, seul le maître était obligé ; s'il avait agi **en son nom propre**, il était seul tenu envers le tiers (Civ. 1re, 2 févr. 2022), sauf à se faire rembourser par le maître.",
-          "**Depuis 2016** : le maître doit remplir les engagements contractés « **dans son intérêt** » par le gérant ([[1301-2]], al. 1er). Le critère n'est plus le nom sous lequel le gérant a contracté mais l'intérêt du maître, pourvu que la gestion ait été **utile**."
+          "**Depuis 2016** : le maître doit remplir les engagements contractés « **dans son intérêt** » par le gérant ([[1301-2]], al. 1er). Le critère **semble** ne plus être le nom sous lequel le gérant a contracté mais l'intérêt du maître, pourvu que la gestion ait été **utile** : le manuel n'y voit qu'une modification « en partie » des solutions antérieures."
         ] },
         { attention: "Le gérant n'est jamais rémunéré, mais il est **indemnisé de ses dommages** (blessure subie en intervenant, par exemple) : ne confondez pas rémunération et indemnisation." }
       ]
@@ -114,7 +114,7 @@ OBL.chapitres.push({
           "Les **sûretés** garantissant l'obligation sont reportées sur l'obligation de restituer ([[1352-9]]).",
           "Mauvaise foi : elle s'apprécie **au moment de la réception** (l'accipiens savait qu'il recevait l'indu)."
         ] },
-        { attention: "Avant 2016, l'accipiens de bonne foi n'était pas garant de la perte fortuite de la chose (art. 1379 anc.). Les textes actuels prévoient une restitution **en valeur** lorsque la restitution en nature est impossible ([[1352]]) et n'exonèrent le restituant de bonne foi que des **dégradations** non fautives ([[1352-1]]) : la portée de l'ancienne règle sous l'empire des nouveaux textes est discutée." }
+        { attention: "Avant 2016, l'accipiens de bonne foi n'était pas garant de la perte fortuite de la chose (art. 1379 anc.). Les textes actuels prévoient une restitution **en valeur** lorsque la restitution en nature est impossible ([[1352]]) et n'exonèrent le restituant de bonne foi que des **dégradations** non fautives ([[1352-1]]) : la portée de l'ancienne règle sous l'empire des nouveaux textes est discutée. Le manuel, lui, la maintient en visant [[1352-1]] : l'accipiens de bonne foi ne doit rien en cas de perte fortuite ; celui de mauvaise foi en est garant, même par cas fortuit." }
       ]
     },
     {

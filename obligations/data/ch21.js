@@ -88,7 +88,7 @@ OBL.chapitres.push({
           { t: "3. Deux mois d'obstruction", d: "Somme d'argent : **consignation** à la Caisse des dépôts et consignations. Chose à livrer : **séquestre** auprès d'un gardien professionnel ; si c'est impossible ou trop onéreux, vente autorisée par le juge et consignation du prix ([[1345-1]])." },
           { t: "4. Libération", d: "La consignation ou le séquestre libère le débiteur **à compter de leur notification** au créancier ([[1345-1]], al. 3). Pour une autre obligation, le débiteur est libéré si l'obstruction n'a pas cessé dans les deux mois ([[1345-2]]). Frais à la charge du créancier ([[1345-3]])." }
         ] } },
-        { p: "**Opposition au paiement** : les créanciers du créancier peuvent bloquer le paiement entre les mains du débiteur ; c'est aujourd'hui une **saisie** régie par le Code des procédures civiles d'exécution." }
+        { p: "**Opposition au paiement** : les créanciers du créancier peuvent bloquer le paiement entre les mains du débiteur ; elle est aujourd'hui assimilée à une **saisie conservatoire**, régie par le Code des procédures civiles d'exécution (art. L. 511-1 s.)." }
       ]
     },
     {
@@ -100,7 +100,7 @@ OBL.chapitres.push({
           "**Moyens** : le paiement se prouve **par tout moyen** ([[1342-8]]). La Cour de cassation l'avait déjà jugé, qualifiant le paiement de **fait juridique** (Civ. 1re, 16 sept. 2010), contre l'ancienne exigence d'un écrit au-delà de 1 500 euros. La quittance reste la preuve la plus sûre.",
           "**Remise du titre** : la remise **volontaire** par le créancier de l'**original sous signature privée** ou de la **copie exécutoire** du titre vaut **présomption simple de libération** ([[1342-9]]) ; remise à un codébiteur solidaire : même effet pour tous. La cause de la libération (paiement ou remise de dette) reste à prouver par celui qui s'en prévaut."
         ] },
-        { attention: "Avant l'ordonnance de 2016, la remise de l'acte sous seing privé faisait présumer la libération de façon **irréfragable** (la remise de la grosse notariée, de façon simple). Pour les remises postérieures au 1er octobre 2016, la présomption est toujours **simple**." },
+        { attention: "Avant l'ordonnance de 2016, la remise de l'acte sous seing privé faisait présumer la libération de façon **irréfragable** (la remise de la grosse notariée, de façon simple). Pour les remises consenties à compter du 1er octobre 2016, la présomption est toujours **simple**." },
         { h: "L'imputation" },
         { p: "Question : sur quelle dette, ou quelle partie de dette, s'impute un paiement insuffisant ? L'enjeu est concret : les dettes n'ont pas les mêmes intérêts, garanties ou dates." },
         { schema: { type: "etapes", titre: "L'ordre d'imputation", etapes: [
@@ -122,7 +122,7 @@ OBL.chapitres.push({
           "**Une obligation ancienne valable** : pas de novation si elle est nulle ([[1331]] ; elle était, selon la jurisprudence, la cause de l'obligation nouvelle : Civ. 1re, 7 nov. 1995), sauf si la novation a pour **objet déclaré** de substituer un engagement valable à un engagement vicié (hypothèse proche de la confirmation). L'engagement d'exécuter une obligation naturelle n'est pas une novation : c'est une transformation « improprement qualifiée novation » (Civ. 1re, 10 oct. 1995).",
           "**Une obligation nouvelle valable** ([[1331]]) : si elle est annulée, l'obligation ancienne revit, même lorsque l'annulation tient au fait de l'une des parties (Com., 14 mai 1996).",
           "**Un élément nouveau** (*aliquid novi*) : changement d'**objet** (livrer un bien au lieu de payer, capital au lieu d'une rente viagère), de **cause** (dette de prix transformée en prêt), de **débiteur** ou de **créancier** ([[1329]], al. 2), adjonction d'une condition. Ne suffisent pas : un changement de montant, de lieu, de monnaie, de sûreté, d'indexation, de délais ou de modalités de remboursement.",
-          "**L'intention de nover** (*animus novandi*) : « la novation ne se présume pas ; la volonté de l'opérer doit résulter clairement de l'acte » ([[1330]]). Elle peut être tacite si elle est certaine (Civ. 3e, 15 janv. 1975), les juges du fond l'appréciant souverainement ; rappel de la règle, y compris dans une novation réalisée dans le cadre d'une stipulation pour autrui : Com., 26 janv. 2010 ; Civ. 3e, 8 janv. 2026, n° 24-11.645."
+          "**L'intention de nover** (*animus novandi*) : « la novation ne se présume pas ; la volonté de l'opérer doit résulter clairement de l'acte » ([[1330]]). La jurisprudence antérieure à la réforme l'admettait tacite si elle était dépourvue d'ambiguïté (Civ. 3e, 15 janv. 1975), les juges du fond interprétant, dans le doute, la volonté des parties ; rappel de la règle, y compris dans une novation réalisée dans le cadre d'une stipulation pour autrui : Com., 26 janv. 2010 ; Civ. 3e, 8 janv. 2026, n° 24-11.645."
         ] },
         { h: "Les trois variétés" },
         { schema: { type: "tableau", titre: "Novation par changement d'obligation, de débiteur, de créancier", colonnes: ["Variété", "Qui consent ?", "Remarque"], lignes: [

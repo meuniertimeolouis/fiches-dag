@@ -89,7 +89,7 @@ OBL.chapitres.push({
           "**Effet relatif** : la déchéance encourue par un débiteur est **inopposable à ses coobligés, même solidaires, et à ses cautions** ([[1305-5]]) : eux conservent le bénéfice du terme."
         ] },
         { attention: "Le décès du débiteur n'entraîne pas la déchéance du terme (Civ. 1re, 20 oct. 2021, n° 20-13.661). L'ouverture d'une sauvegarde ou d'un redressement judiciaire ne rend pas exigibles les créances non échues ; le jugement qui ouvre ou prononce la **liquidation judiciaire**, en revanche, les rend exigibles (C. com., art. L. 643-1), sous des réserves propres au droit des entreprises en difficulté." },
-        { p: "Avant la réforme, la Cour de cassation lisait l'ancien article 1188 **strictement** : il ne visait que les sûretés **conventionnelles**, et leur diminution devait être **imputable au débiteur**. Ces conditions de la déchéance de l'article [[1305-4]] sont à garder en tête pour les contrats antérieurs au 1er octobre 2016." },
+        { p: "Avant la réforme, la Cour de cassation lisait l'ancien article 1188 **strictement** : il ne visait que les sûretés **conventionnelles**, et leur diminution devait être **imputable au débiteur**. Ces exigences de l'ancien article 1188 sont à garder en tête pour les contrats antérieurs au 1er octobre 2016 (le manuel ne dit pas si elles valent pour [[1305-4]])." },
         { schema: { type: "tableau", titre: "Terme ou condition : la synthèse", colonnes: ["", "Terme", "Condition"], lignes: [
           ["Événement", "Futur et **certain**", "Futur et **incertain**"],
           ["Affecte", "L'**exigibilité** ou la durée", "L'**efficacité** de l'obligation (naissance ou anéantissement)"],

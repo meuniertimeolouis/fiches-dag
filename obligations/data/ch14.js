@@ -4,7 +4,7 @@ var OBL = window.OBL = window.OBL || { chapitres: [], regimes: [], articles: [],
 
 OBL.chapitres.push({
   num: 14,
-  intro: "En 1804, le Code ne connaissait que deux cas de responsabilité du fait d'une chose : l'**animal** ([[1243]]) et le **bâtiment en ruine** ([[1244]]). Face aux accidents de l'ère industrielle, la Cour de cassation a « découvert » dans la phrase d'annonce de l'art. 1384, al. 1er anc. (aujourd'hui [[1242]], al. 1er) un **principe général de responsabilité du fait des choses**, sans faute (Teffaine, 1896 ; Jand'heur, 1930). Trois conditions : une **chose**, un **fait de la chose**, un **gardien**. Une seule issue pour le gardien : la **cause étrangère**. Les régimes spéciaux (incendie, animaux, ruine, et hors Code les accidents de la circulation et les produits défectueux) l'emportent sur le principe général quand ils s'appliquent.",
+  intro: "En 1804, le Code ne connaissait que deux cas de responsabilité du fait d'une chose : l'**animal** ([[1243]]) et le **bâtiment en ruine** ([[1244]]). Face aux accidents de l'ère industrielle, la Cour de cassation a « découvert » dans la phrase d'annonce de l'art. 1384, al. 1er anc. (aujourd'hui [[1242]], al. 1er) un **principe général de responsabilité du fait des choses**, sans faute (Teffaine, 1896 ; Jand'heur, 1930). Trois conditions : une **chose**, un **fait de la chose**, un **gardien**. Une seule issue pour le gardien : la **cause étrangère**. Les régimes spéciaux (incendie, animaux, ruine, produits défectueux ([[1245]] s.), et hors Code les accidents de la circulation) l'emportent sur le principe général quand ils s'appliquent.",
   sections: [
     {
       titre: "La découverte d'un principe général",
@@ -87,7 +87,7 @@ OBL.chapitres.push({
           ["Contester une **condition**", "Rôle passif de la chose (renverser la présomption) ; transfert de la garde (à prouver par le propriétaire)", "Pas de responsabilité du défendeur ; en cas de transfert, la victime agit contre le vrai gardien"],
           ["**Force majeure**", "Événement imprévisible, irrésistible et **extérieur** au gardien **et à la chose** : le vice interne de la chose n'est jamais une force majeure", "Exonération **totale**"],
           ["**Fait d'un tiers**", "Exonératoire seulement s'il présente les caractères de la force majeure", "Sinon : responsabilité ***in solidum*** du gardien et du tiers envers la victime, puis recours entre eux"],
-          ["**Faute de la victime**", "Force majeure : exonération totale. Simple faute : exonération partielle. Fait de la victime cause exclusive : obstacle à la responsabilité (Civ. 2e, 7 avr. 2022, n° 20-19.746)", "Totale ou partielle (partage)"],
+          ["**Faute de la victime**", "Force majeure : exonération totale. Simple faute : exonération partielle. Fait de la victime à l'origine exclusive du dommage : obstacle à l'examen de la responsabilité du gardien (Civ. 2e, 7 avr. 2022, n° 20-19.746, portée incertaine)", "Totale ou partielle (partage)"],
           ["Acceptation des risques", "**Abandonnée** en matière de fait des choses (Civ. 2e, 4 nov. 2010, n° 09-65.947)", "Aucun effet exonératoire"]
         ] } },
         { schema: { type: "frise", titre: "La faute de la victime : l'épisode Desmares", evenements: [
@@ -174,7 +174,7 @@ OBL.regimes.push(
       { nom: "Absence de faute", question: "Le gardien prouve-t-il qu'il n'a commis aucune faute ?", detail: "Inopérant depuis Jand'heur.", effet: "Aucun." },
       { nom: "Force majeure", question: "L'événement était-il imprévisible, irrésistible et extérieur au gardien et à la chose ?", detail: "Le vice interne de la chose n'est jamais extérieur. Appréciation très stricte.", effet: "Exonération totale." },
       { nom: "Fait d'un tiers", question: "Un tiers a-t-il contribué au dommage ?", detail: "Exonératoire seulement s'il a les caractères de la force majeure.", effet: "Totale si force majeure ; sinon condamnation *in solidum* et recours contributif." },
-      { nom: "Faute de la victime", question: "La victime a-t-elle commis une faute ayant contribué à son dommage ?", detail: "Faute ayant les caractères de la force majeure, ou fait de la victime cause exclusive (Civ. 2e, 7 avr. 2022) : exonération totale. Simple faute : partage (Civ. 2e, 6 avr. 1987, fin de Desmares).", effet: "Totale ou partielle." },
+      { nom: "Faute de la victime", question: "La victime a-t-elle commis une faute ayant contribué à son dommage ?", detail: "Faute ayant les caractères de la force majeure : exonération totale. Fait de la victime à l'origine exclusive du dommage : obstacle à l'examen de la responsabilité du gardien (Civ. 2e, 7 avr. 2022, portée incertaine). Simple faute : partage (Civ. 2e, 6 avr. 1987, fin de Desmares).", effet: "Totale ou partielle." },
       { nom: "Acceptation des risques", question: "La victime participait-elle à une activité dangereuse ?", detail: "Abandonnée en matière de fait des choses (Civ. 2e, 4 nov. 2010).", effet: "Aucun (mais attention à C. sport, art. L. 321-3-1 pour les dommages matériels)." }
     ],
     copie: [

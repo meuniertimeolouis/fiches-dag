@@ -19,7 +19,7 @@ OBL.pieges[1] = {
       juste: "Cette classification a été **abandonnée en 2016** ; le transfert de propriété est désormais un **effet du contrat** ([[1196]]).",
       pourquoi: "On peut la citer comme classification ancienne ou doctrinale, jamais comme droit positif." },
     { faux: "La distinction des obligations de moyens et de résultat figure dans le Code civil.",
-      juste: "Elle n'est **pas codifiée** : c'est une construction doctrinale (Demogue) appliquée par la jurisprudence.",
+      juste: "Elle n'est **pas codifiée** (seulement sous-entendue, avant 2016, par les anciens art. 1137 et 1147) : c'est une construction doctrinale (Demogue) entérinée par la jurisprudence.",
       pourquoi: "Citer un article inexistant est une erreur lourde ; citer sa source doctrinale et jurisprudentielle est un plus." },
     { faux: "Dans une obligation de résultat, le débiteur est toujours responsable si le résultat n'est pas atteint.",
       juste: "Le créancier n'a pas à prouver de faute, mais le débiteur s'exonère en prouvant la **force majeure** ([[1218]]).",
@@ -86,7 +86,7 @@ OBL.pieges[2] = {
   reflexes: [
     { face: "Qualifier un contrat",
       etapes: [
-        "Vérifier que c'est bien un **contrat** : accord de volontés destiné à produire des effets de droit ([[1101]]).",
+        "Vérifier que c'est bien un **contrat** : accord de volontés destiné à créer, modifier, transmettre ou éteindre des obligations ([[1101]]), avec la volonté de se placer sur le terrain du droit.",
         "Passer **toutes** les classifications des articles [[1105]] à [[1111-1]], une par une.",
         "Pour chacune, indiquer la **conséquence de régime** (règles spéciales, [[1171]] et [[1190]] pour l'adhésion, preuve, etc.).",
         "Noter la **date de conclusion** : avant ou après le 1er octobre 2016 ?"
@@ -137,7 +137,7 @@ OBL.pieges[3] = {
       pourquoi: "La solution inverse (Consorts Cruz, 1993) est abandonnée : la citer seulement comme étape historique." },
     { faux: "Une publicité mentionnant un prix est toujours une offre.",
       juste: "Il n'y a offre que si la proposition est **précise et ferme** ([[1114]]) ; sinon, c'est une invitation à entrer en négociation.",
-      pourquoi: "Vérifier les réserves : une réserve objective (stock disponible) n'empêche pas l'offre ; une réserve subjective (agrément du cocontractant) en fait une invitation à négocier." }
+      pourquoi: "Vérifier les réserves : une réserve objective (stock disponible) n'empêche pas l'offre ; une réserve subjective (« sous réserve de confirmation ») en fait une invitation à négocier, sauf contrat intuitu personae où l'agrément du cocontractant est implicite." }
   ],
   reflexes: [
     { face: "Le contrat est-il formé ?",
@@ -184,7 +184,7 @@ OBL.pieges[4] = {
       pourquoi: "C'est pourquoi on examine le dol avant l'erreur : ses conditions sont plus favorables à la victime." },
     { faux: "Il n'y a pas de dol d'un tiers.",
       juste: "Le dol doit en principe émaner du cocontractant, mais aussi de son **représentant, gérant d'affaires, préposé ou porte-fort**, ou d'un **tiers de connivence** ([[1138]]).",
-      pourquoi: "En dehors de ces cas, la victime d'un tiers ne peut invoquer que l'erreur, si ses conditions sont réunies." },
+      pourquoi: "En dehors de ces cas, la victime ne peut obtenir la nullité que sur le terrain de l'erreur, si ses conditions sont réunies, et peut agir en responsabilité délictuelle contre le tiers ; le dol du tiers est en outre sanctionné dans les actes unilatéraux et les donations." },
     { faux: "Le mandant doit toujours réparer le dommage causé par le dol de son mandataire.",
       juste: "Le dol du mandataire permet d'**annuler** le contrat ([[1138]]), mais le mandant n'en répond sur le terrain de la **responsabilité** que s'il a **personnellement commis une faute** (Ch. mixte, 29 oct. 2021, n° 19-18.470).",
       pourquoi: "Distinguer l'action en nullité et l'action en dommages et intérêts." },
@@ -223,7 +223,7 @@ OBL.pieges[4] = {
     { face: "Qui est l'auteur de la tromperie ou de la pression ?",
       etapes: [
         "Le cocontractant ou une personne visée par [[1138]] : dol possible.",
-        "Un tiers sans lien : pas de dol ; erreur si ses conditions sont réunies.",
+        "Un tiers sans lien : pas de nullité pour dol (sauf acte unilatéral ou donation) ; erreur si ses conditions sont réunies, et responsabilité délictuelle du tiers.",
         "Pour la violence : peu importe l'auteur ([[1142]])."
       ],
       astuce: "Identifier les personnes dans les faits avant de choisir le fondement." }
@@ -243,7 +243,7 @@ OBL.pieges[5] = {
       pourquoi: "Commencer par qualifier le contrat." },
     { faux: "Un prix trop bas permet d'annuler le contrat pour lésion.",
       juste: "La lésion **n'est pas une cause générale de nullité** ([[1168]]) ; elle ne joue que si la loi le prévoit (vente d'immeuble, plus des 7/12, au profit du **vendeur** seul : [[1674]]).",
-      pourquoi: "L'acheteur n'a jamais l'action en rescision (art. 1683)." },
+      pourquoi: "Dans la vente d'immeuble, l'acheteur n'a pas l'action en rescision (art. 1683) ; seuls quelques textes spéciaux protègent l'acheteur (achat d'engrais : lésion de plus d'un quart)." },
     { faux: "La contrepartie dérisoire s'apprécie au moment où le litige survient.",
       juste: "Elle s'apprécie **au moment de la formation** du contrat ([[1169]]).",
       pourquoi: "Si la contrepartie disparaît ensuite, penser à la caducité ([[1186]]) ou à l'imprévision ([[1195]])." },
@@ -290,7 +290,7 @@ OBL.pieges[5] = {
 OBL.pieges[6] = {
   pieges: [
     { faux: "Un contrat consensuel est un contrat conclu oralement.",
-      juste: "Consensuel signifie formé par le **seul échange des consentements, quel qu'en soit le mode d'expression** ([[1172]], al. 1er) : un écrit peut exister sans être exigé pour la validité.",
+      juste: "Consensuel signifie formé par le **seul échange des consentements, quel qu'en soit le mode d'expression** ([[1109]], al. 1er) : un écrit peut exister sans être exigé pour la validité.",
       pourquoi: "Oral ≠ consensuel ; écrit ≠ solennel." },
     { faux: "Au-delà de 1 500 €, un contrat non écrit est nul.",
       juste: "L'écrit de l'article [[1359]] est une **forme de preuve**, pas de validité : le contrat existe, mais se prouve difficilement (commencement de preuve par écrit, [[1362]]).",
@@ -322,7 +322,7 @@ OBL.pieges[6] = {
         "Preuve : le contrat existe ; chercher les modes de preuve admis ([[1359]], [[1362]]).",
         "Opposabilité : contrat valable entre les parties, mais inopposable aux tiers."
       ],
-      astuce: "Une phrase suffit souvent à gagner le point : « cette forme est exigée ad validitatem / ad probationem »." },
+      astuce: "Une phrase suffit souvent à gagner le point : « cette forme est exigée ad solemnitatem / ad probationem »." },
     { face: "Une somme a été promise mais pas remise",
       etapes: [
         "Qualifier : prêt, donation, promesse de prêt ?",
@@ -337,7 +337,7 @@ OBL.pieges[7] = {
   pieges: [
     { faux: "La nullité absolue est plus grave et imprescriptible.",
       juste: "La distinction repose sur l'**intérêt protégé** (général ou privé, [[1179]]), et les deux actions se prescrivent par **cinq ans** ([[2224]]), dans la limite de vingt ans ([[2232]]).",
-      pourquoi: "L'imprescriptibilité et la prescription trentenaire de la nullité absolue ont disparu en 2008." },
+      pourquoi: "Avant la loi du 17 juin 2008, la nullité absolue se prescrivait par trente ans (et non jamais) ; seule l'exception de nullité est perpétuelle, si le contrat n'a reçu aucune exécution ([[1185]])." },
     { faux: "Les deux parties peuvent invoquer la nullité relative.",
       juste: "Seule la **partie que la loi entend protéger** peut la demander ([[1181]]) ; la nullité absolue peut être demandée par **toute personne justifiant d'un intérêt** et par le **ministère public** ([[1180]]).",
       pourquoi: "Dans un cas pratique, vérifier la qualité du demandeur." },
@@ -407,7 +407,7 @@ OBL.pieges[8] = {
       juste: "Elle est transférée **lors de la conclusion du contrat** ([[1196]]), sauf clause contraire (réserve de propriété), nature des choses ou loi.",
       pourquoi: "Les **risques** suivent la propriété, sauf mise en demeure du débiteur de l'obligation de délivrer ([[1196]], al. 3 ; [[1344-2]])." },
     { faux: "Quand un immeuble est vendu deux fois, le premier acheteur l'emporte.",
-      juste: "L'emporte celui qui a **publié le premier** son titre, **s'il est de bonne foi** ([[1198]], al. 2) ; pour un meuble corporel, celui qui a été **mis en possession** le premier, de bonne foi (al. 1er).",
+      juste: "L'emporte celui qui a **publié le premier** son titre, **s'il est de bonne foi** ([[1198]], al. 2) ; pour un meuble corporel, celui qui a **pris possession** le premier, de bonne foi (al. 1er).",
       pourquoi: "La bonne foi est exigée depuis 2016 : un second acquéreur qui connaissait la première vente ne peut pas se prévaloir de sa publication." }
   ],
   reflexes: [
@@ -445,7 +445,7 @@ OBL.pieges[9] = {
       juste: "Le **tiers complice** engage sa responsabilité **délictuelle** : le contrat lui est opposable ([[1200]]).",
       pourquoi: "Exemple : le tiers acquéreur qui connaît le pacte de préférence." },
     { faux: "Le tiers victime d'une inexécution doit prouver une faute délictuelle distincte du manquement contractuel.",
-      juste: "Le tiers peut invoquer **le manquement contractuel** dès lors qu'il lui a causé un dommage (Ass. plén., 6 oct. 2006, Boot shop ; Ass. plén., 13 janv. 2020, Bois rouge), mais il se voit opposer les **limites et conditions** du contrat (Com., 3 juill. 2024, n° 21-14.947).",
+      juste: "Le tiers peut invoquer **le manquement contractuel** dès lors qu'il lui a causé un dommage (Ass. plén., 6 oct. 2006, Boot shop ; Ass. plén., 13 janv. 2020, Bois rouge), mais, selon la chambre commerciale, il **peut se voir opposer** les **conditions et limites** de la responsabilité applicables entre les contractants (Com., 3 juill. 2024, n° 21-14.947), solution que l'Assemblée plénière n'a pas encore consacrée.",
       pourquoi: "Trois arrêts à connaître ensemble, dans l'ordre." },
     { faux: "Le porte-fort engage le tiers.",
       juste: "Seul le **promettant** s'engage ([[1204]]) ; le tiers reste libre. S'il refuse, le promettant doit des **dommages et intérêts** ; s'il ratifie, l'engagement a un effet **rétroactif**.",
@@ -471,7 +471,7 @@ OBL.pieges[9] = {
       etapes: [
         "Est-elle vraiment **tiers** ? Ayant cause à titre particulier, membre d'une **chaîne translative** (action contractuelle : Ass. plén., 7 févr. 1986) ?",
         "Si elle est tiers : responsabilité **délictuelle** fondée sur le manquement contractuel (Boot shop, Bois rouge).",
-        "Limites : clauses et conditions du contrat opposables (Com., 3 juill. 2024)."
+        "Limites : selon la chambre commerciale, conditions et limites de la responsabilité contractuelle opposables au tiers (Com., 3 juill. 2024 ; Com., 17 déc. 2025), solution non tranchée par l'Assemblée plénière."
       ],
       astuce: "Groupe de contrats **sans** transfert de propriété : action délictuelle (Besse, 1991)." },
     { face: "Un créancier n'est pas payé",
@@ -754,7 +754,7 @@ OBL.pieges[14] = {
       pourquoi: "Garde et subordination sont incompatibles ; la victime agit contre l'employeur ([[1242]], al. 1er, ou al. 5)." },
     { faux: "Un jeune enfant ne peut pas être gardien, faute de discernement.",
       juste: "L'*infans* peut être gardien (Ass. plén., 9 mai 1984, Gabillet).",
-      pourquoi: "La garde ne suppose pas le discernement ; c'est l'un des quatre arrêts du 9 mai 1984 qui objectivent la responsabilité des enfants." },
+      pourquoi: "La garde ne suppose pas le discernement ; c'est l'un des arrêts d'Assemblée plénière du 9 mai 1984 qui objectivent la responsabilité des enfants." },
     { faux: "Le vice interne de la chose est un cas de force majeure pour le gardien.",
       juste: "La force majeure doit être **extérieure au gardien et à la chose** : un vice de la chose n'exonère jamais le gardien, qui peut seulement se retourner contre le fabricant.",
       pourquoi: "Depuis Teffaine et Jand'heur, le gardien répond même du vice qu'il ne pouvait pas déceler." },
@@ -785,7 +785,7 @@ OBL.pieges[14] = {
       etapes: [
         "Pas de présomption : chercher dans les faits un élément d'**anormalité** (vitre qui se brise au moindre choc, obstacle mal signalé, sol glissant).",
         "Si l'anormalité est établie, même un rôle **partiel** suffit (Civ. 2e, 30 nov. 2023).",
-        "Examiner la **faute de la victime** (inattention, ivresse) : exonération partielle, ou totale si elle est la cause exclusive (Civ. 2e, 7 avr. 2022)."
+        "Examiner la **faute de la victime** (inattention, ivresse) : exonération partielle ; si elle est à l'origine exclusive du dommage, elle fait obstacle à l'examen de la responsabilité du gardien (Civ. 2e, 7 avr. 2022, portée incertaine)."
       ],
       astuce: "Le mot « légèrement » dans l'énoncé (choc léger) est un indice d'anormalité de la chose." },
     { face: "Le propriétaire soutient qu'il n'était plus gardien",
@@ -879,7 +879,7 @@ OBL.pieges[16] = {
       pourquoi: "Accident (non-conducteur) ou préjudice (conducteur) : le mot change tout." },
     { faux: "La faute du conducteur victime ne peut exclure son indemnisation que si elle est la cause exclusive de l'accident ou présente les caractères de la force majeure.",
       juste: "Toute faute du conducteur ayant **contribué à son préjudice** peut **limiter ou exclure** son indemnisation, appréciée en **faisant abstraction du comportement des autres** conducteurs (Ch. mixte, 28 mars 1997 ; Civ. 2e, 13 oct. 2005) ; l'exclusion n'exige pas la force majeure.",
-      pourquoi: "Mais pas de faute « de comportement » sans rôle causal : l'ivresse ou l'absence de permis ne comptent que si elles ont joué un rôle (Ass. plén., 6 avr. 2007)." },
+      pourquoi: "Mais pas de faute « de comportement » sans rôle causal : l'ivresse ne compte que si elle a joué un rôle (Ass. plén., 6 avr. 2007), de même que l'absence de permis (Crim., 27 nov. 2007)." },
     { faux: "Le conducteur blessé par la faute d'un piéton peut agir contre lui sur la loi Badinter.",
       juste: "La loi ne vise que le **conducteur ou le gardien d'un VTAM** ([[L85-2|art. 2 de la loi de 1985]]) : contre un piéton ou un cycliste, action de **droit commun** ([[1240]], [[1242]]).",
       pourquoi: "Le régime spécial protège les victimes contre les véhicules, pas l'inverse." },
@@ -1057,7 +1057,7 @@ OBL.pieges[19] = {
   pieges: [
     { faux: "La clause « je paierai quand j'aurai vendu ma maison » est un terme, puisque les parties considèrent la vente comme acquise.",
       juste: "L'événement est **objectivement incertain** dans sa réalisation : c'est une **condition** (Civ. 1re, 13 avr. 1999). Le terme suppose un événement **certain**, seule sa date pouvant être incertaine ([[1305]]).",
-      pourquoi: "Critère objectif : la volonté des parties ne transforme pas un événement incertain en événement certain." },
+      pourquoi: "Critère objectif : la volonté des parties ne transforme pas un événement incertain en événement certain. [[1305]] paraît consacrer cette lecture, même si la jurisprudence a parfois hésité (Com. 12 oct. 2004 ; Civ. 3e, 7 janv. 2016)." },
     { faux: "L'accomplissement de la condition suspensive rétroagit au jour du contrat.",
       juste: "Depuis 2016, l'obligation devient pure et simple **à compter de l'accomplissement** ; la rétroactivité n'existe que si les parties l'ont **stipulée** ([[1304-6]]).",
       pourquoi: "La rétroactivité de l'ancien article 1179 ne vaut plus que pour les contrats conclus avant le 1er octobre 2016." },
@@ -1127,7 +1127,7 @@ OBL.pieges[20] = {
       juste: "Il acquiert la créance elle-même et en réclame la **valeur nominale**. C'est le **subrogé** qui est limité à ce qu'il a payé ([[1346-4]]).",
       pourquoi: "La cession peut être spéculative, la subrogation ne l'est pas." },
     { faux: "Le débiteur cédé peut opposer au cessionnaire toutes les exceptions qu'il avait contre le cédant.",
-      juste: "Il oppose toujours les exceptions **inhérentes à la dette** (nullité, exception d'inexécution, résolution, compensation de dettes connexes), mais les exceptions **nées de ses rapports avec le cédant** (terme, remise, compensation de dettes non connexes) seulement si elles sont nées **avant** que la cession lui soit devenue opposable ([[1324]], al. 2).",
+      juste: "Il oppose les exceptions **inhérentes à la dette** (nullité, exception d'inexécution, résolution, compensation de dettes connexes) si elles existent, ou ont leur cause, avant la notification, et les exceptions **nées de ses rapports avec le cédant** (terme, remise, compensation de dettes non connexes) seulement si elles sont nées **avant** que la cession lui soit devenue opposable ([[1324]], al. 2).",
       pourquoi: "Et la prise d'acte sans réserve lui fait perdre la compensation ([[1347-5]])." },
     { faux: "Le cédant d'une créance garantit que le débiteur paiera.",
       juste: "Le cédant à titre onéreux garantit l'**existence** de la créance et de ses accessoires ; il ne garantit la **solvabilité** du débiteur que s'il s'y est engagé, dans la limite du prix retiré, et seulement la solvabilité **actuelle** sauf stipulation expresse ([[1326]]).",

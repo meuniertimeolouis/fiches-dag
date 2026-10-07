@@ -172,7 +172,7 @@ function oblHome() {
     : `<p>Vingt et un chapitres, chacun en cinq étapes : la fiche de cours, les pièges, un quiz, des cas pratiques corrigés et les articles du Code civil.</p>
        <div class="row"><a class="btn main" href="#/obl/ch/1/fiche">Commencer par le chapitre 1</a></div>`;
   const total = CHS.reduce((a, c) => a + chDone(c.num), 0);
-  setMain(`<section class="resume"><div class="eyebrow">Licence 2 · Université Jean Monnet · Fiches du manuel</div><h1>Droit des obligations</h1>${resume}<p class="small muted">${total} étape${total > 1 ? "s" : ""} faite${total > 1 ? "s" : ""} sur ${CHS.length * OSTEPS.length}. La progression est gardée dans ce navigateur.</p></section>
+  setMain(`<section class="resume"><div class="eyebrow">Licence 2 · Fiches du manuel</div><h1>Droit des obligations</h1>${resume}<p class="small muted">${total} étape${total > 1 ? "s" : ""} faite${total > 1 ? "s" : ""} sur ${CHS.length * OSTEPS.length}. La progression est gardée dans ce navigateur.</p></section>
     ${PARTS.map(p => `<section class="part" id="p-${p.id}"><h2>${esc(p.t)}</h2>${CHS.filter(c => c.part === p.id).map(c => {
       const d = chDone(c.num), q = (S.obl[c.num] || {}).quiz;
       return `<a class="chrow" href="#/obl/ch/${c.num}/${firstTodo(c.num)}"><span class="n">${c.num}</span><span class="t">${esc(c.titre || c.court)}</span>
@@ -230,7 +230,7 @@ function coursHome() {
     <div class="row">${last ? `<a class="btn main" href="#/obl/cours/${last.id}">Reprendre : ${esc(last.t)}</a>` : first ? `<a class="btn main" href="#/obl/cours/${first.id}">Commencer par l'introduction</a>` : ""}<a class="btn" href="#/obl/manuel">Fiches du manuel</a></div>`;
   const row = (href, n, t, d) => `<a class="chrow" href="${href}"><span class="n">${n}</span><span class="t">${esc(t)}${d && d !== t ? `<small class="sub">${esc(d)}</small>` : ""}</span><span class="right"></span></a>`;
   let k = 0;
-  setMain(`<section class="resume"><div class="eyebrow">Licence 2 · Université Jean Monnet · Semestre 3</div><h1>Droit des obligations</h1>${resume}</section>
+  setMain(`<section class="resume"><div class="eyebrow">Licence 2 · Semestre 3</div><h1>Droit des obligations</h1>${resume}</section>
     ${COURS_TITRES.map((p, i) => `<section class="part" id="cp-${i}"><h2>${esc(p.t)}</h2>${p.ids.map(coursCh).filter(Boolean).map(c => row(`#/obl/cours/${c.id}`, ++k, c.t, c.kick)).join("")}</section>`).join("")}
     <section class="part" id="cp-hp"><h2>Hors plan : notions du manuel pour le cas pratique</h2>
       <p class="muted small hpnote">Ces notions ne figurent pas dans les plans distribués mais servent en cas pratique. Elles sont présentées sous l'angle de leur utilité : à quoi elles servent, comment raisonner, quels pièges éviter.</p>
@@ -758,7 +758,7 @@ function dagHome() {
   const resume = last
     ? `<p>Reprise à la séance ${esc(last.n)}, <strong>${esc(DAG.SEANCES[last.n])}</strong>, étape ${esc(DSTEPS.find(s => s.k === last.step).t.toLowerCase())}.</p><div class="row"><a class="btn main" href="#/dag/s/${last.n}/${last.step}">Reprendre</a></div>`
     : `<p>Trois séances, ${DAG.D.length} arrêts. Chaque séance se révise en trois temps : situer les arrêts sur la frise, apprendre les fiches, puis se tester.</p><div class="row"><a class="btn main" href="#/dag/s/2/frise">Commencer par la séance 2</a></div>`;
-  setMain(`<section class="resume"><div class="eyebrow">Licence 2 · Université Jean Monnet</div><h1>Droit administratif</h1>${resume}</section>
+  setMain(`<section class="resume"><div class="eyebrow">Licence 2</div><h1>Droit administratif</h1>${resume}</section>
     <section class="part"><h2>Séances</h2>${Object.keys(DAG.SEANCES).map(s => {
       const n = DAG.D.filter(d => d.s === s).length, p = S.dag[s] || {};
       return `<a class="chrow" href="#/dag/s/${s}/${(DSTEPS.find(x => !p[x.k]) || DSTEPS[0]).k}"><span class="n">${s}</span><span class="t">${esc(DAG.SEANCES[s])} <span class="muted small">(${n} arrêts)</span></span>

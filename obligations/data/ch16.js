@@ -88,7 +88,7 @@ OBL.chapitres.push({
         { def: { terme: "Conducteur", texte: "celui qui a la **maîtrise** du véhicule ou se trouve **dans ou sur** celui-ci au moment de l'accident. La personne éjectée ou descendue du véhicule peut avoir perdu cette qualité ; en cas de doute, la preuve incombe à celui qui invoque la qualité de conducteur." } },
         { schema: { type: "etapes", titre: "Appliquer l'article 4 au conducteur victime", etapes: [
           { t: "Caractériser une faute", d: "excès de vitesse, alcool, franchissement de ligne blanche, casque ou ceinture non attaché, etc." },
-          { t: "Vérifier son rôle causal", d: "la faute doit avoir **contribué à la réalisation de son préjudice** (Ch. mixte, 28 mars 1997). Un état d'ivresse ou l'absence de permis ne suffit pas sans lien avec le dommage (Ass. plén., 6 avr. 2007)." },
+          { t: "Vérifier son rôle causal", d: "la faute doit avoir **contribué à la réalisation de son préjudice** (Ch. mixte, 28 mars 1997). Un état d'ivresse ne suffit pas sans lien avec le dommage (Ass. plén., 6 avr. 2007), pas plus que l'absence de permis (Crim., 27 nov. 2007)." },
           { t: "Apprécier la faute isolément", d: "en faisant **abstraction du comportement des autres conducteurs** (Civ. 2e, 13 oct. 2005)." },
           { t: "Fixer l'effet", d: "limitation ou exclusion, appréciée souverainement par les juges du fond ; l'exclusion totale n'exige pas les caractères de la force majeure." }
         ] } },

@@ -176,7 +176,7 @@ OBL.chapitres.push({
         { liste: [
           "Charge : la **victime**, demanderesse.",
           "Moyens : **tous moyens**, car la causalité est un fait juridique ([[1358]]) ; les **présomptions de fait** graves, précises et concordantes sont très utilisées (produits de santé : CJUE, 21 juin 2017).",
-          "Présomptions **légales** : contamination par le VIH ou l'hépatite C après transfusion ; imputabilité du dommage à l'accident de la circulation.",
+          "Présomptions **légales** de causalité : contamination par le VIH ou l'hépatite C après transfusion (CSP, art. L. 3122-2 et L. 1221-14) ; présomption **jurisprudentielle** d'imputabilité du dommage à l'accident de la circulation (Civ. 2e, 19 févr. 1997).",
           "**Causalité alternative** : quand l'auteur, membre d'un groupe identifié, est inconnu. Distilbène : la victime qui prouve son exposition à la molécule peut agir contre chaque laboratoire l'ayant fabriquée, à charge pour lui de prouver que son produit n'est pas en cause (Civ. 1re, 24 sept. 2009) ; même raisonnement pour une infection nosocomiale contractée dans l'un de plusieurs établissements (Civ. 1re, 17 juin 2010). Refus en revanche pour une compresse oubliée après deux interventions successives (Civ. 1re, 3 nov. 2016)."
         ] }
       ]

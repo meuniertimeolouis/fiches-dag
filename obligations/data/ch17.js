@@ -67,7 +67,7 @@ OBL.chapitres.push({
           { date: "6 oct. 2005", t: "CEDH (Draon et Maurice c/ France)", d: "l'application immédiate aux instances en cours viole le droit au respect des biens" },
           { date: "11 juin 2010", t: "Cons. const., n° 2010-2 QPC", d: "disposition transitoire censurée : la loi ne vaut que pour les enfants nés après son entrée en vigueur" }
         ] } },
-        { p: "La **faute caractérisée** exigée des praticiens s'apprécie selon la jurisprudence (Civ. 1re, 16 janv. 2013). Le préjudice propre des parents ne se limite plus au préjudice moral : il peut inclure des pertes de gains professionnels et une incidence professionnelle, lorsqu'ils cessent ou modifient leur activité pour s'occuper de l'enfant handicapé (Civ. 1re, 15 oct. 2024, n° 24-16.323)." }
+        { p: "La **faute caractérisée** exigée des praticiens s'apprécie selon la jurisprudence (Civ. 1re, 16 janv. 2013). Le préjudice propre des parents ne se limite plus au préjudice moral : il peut inclure des pertes de gains professionnels et une incidence professionnelle, lorsqu'ils cessent ou modifient leur activité pour s'occuper de l'enfant handicapé (Civ. 1re, 15 oct. 2025, n° 24-16.323)." }
       ]
     },
     {

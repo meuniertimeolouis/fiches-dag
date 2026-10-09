@@ -36,7 +36,7 @@
       juste: "Le juge saisi d'une demande de démolition-reconstruction doit rechercher, si on le lui demande, une disproportion manifeste même si la demande est présentée comme une **réparation** d'un montant égal (Civ. 3e, 6 juill. 2023, n° 22-10.884). Mais pas hors du contrat (Civ. 3e, 4 avr. 2024, n° 22-21.132).",
       pourquoi: "La solution dépasse la lettre de [[1221]] pour éviter de la contourner par la voie indemnitaire." },
     { faux: "Le locataire peut suspendre le paiement des loyers dès que le bailleur manque à son obligation d'entretien.",
-      juste: "Il ne le peut que si le défaut de réparation **empêche totalement l'occupation** des lieux, la suspension d'une obligation principale ne se justifiant pas par un manquement à une obligation accessoire (Civ. 3e, 18 sept. 2025, n° 23-24.005).",
+      juste: "Il ne le peut que si le défaut de réparation **empêche totalement l'occupation** des lieux, la suspension d'une obligation principale ne se justifiant pas par un manquement à une obligation accessoire (Civ. 10 avr. 1959 ; rappel : Civ. 3e, 18 sept. 2025, n° 23-24.005, locaux devenus « impropres à l'usage auquel ils étaient destinés »).",
       pourquoi: "[[1219]] exige une inexécution suffisamment grave, entendue au regard de la proportionnalité et de la bonne foi." },
     { faux: "L'exception d'inexécution joue entre toutes les obligations d'un même contrat, même si l'une est assortie d'un délai de paiement.",
       juste: "Elle suppose des obligations **interdépendantes** : le vendeur qui a consenti un terme au prix ne peut refuser de livrer ([[1612]]) ; de même si l'obligation est conditionnelle.",

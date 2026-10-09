@@ -38,7 +38,7 @@ window.OBL.cours = {
         ]},
         { t: "3. Classification en fonction des sources", c: [
           { txt: { r: "Art. 1100 C. civ.", q: "« Les obligations naissent d'actes juridiques, de faits juridiques ou de l'autorité seule de la loi. Elles peuvent naître de l'exécution volontaire ou de la promesse d'exécution d'un devoir de conscience envers autrui. »" } },
-          { txt: { r: "Art. 1100-1 et 1100-2 C. civ.", q: "Acte juridique : « manifestation de volonté destinée à produire des effets de droit ». Fait juridique : « agissement ou événement auquel la loi attache des effets de droit »." } }
+          { txt: { r: "Art. 1100-1 et 1100-2 C. civ.", q: "Les actes juridiques sont « des manifestations de volonté destinées à produire des effets de droit ». Les faits juridiques sont « des agissements ou des événements auxquels la loi attache des effets de droit »." } }
         ], s: [
           { t: "a) Les actes juridiques : la naissance volontaire d'obligations", c: [
             { p: "Contrat, acte unilatéral, acte juridique collectif." },
@@ -378,7 +378,7 @@ window.OBL.cours = {
             { p: "Les quatre arrêts d'Assemblée plénière du **9 mai 1984** abandonnent l'exigence de discernement :" },
             { a: "gabillet-1984", r: "Fait des choses : l'enfant de 3 ans peut être gardien d'un bâton." },
             { a: "fullenwarth-1984", r: "Parents : il suffit que l'enfant ait commis un acte cause directe du dommage." },
-            { a: "lemaire-1984", r: "Faute de l'enfant auteur, retenue sans vérifier son discernement." },
+            { a: "lemaire-1984", r: "Faute de l'enfant victime (électrocuté en vissant une ampoule), retenue sans vérifier son discernement : partage de responsabilité." },
             { a: "derguini-1984", r: "Faute de l'enfant victime, opposée pour réduire son indemnisation." }
           ]},
           { t: "b) Réception du revirement", c: [
@@ -566,7 +566,7 @@ window.OBL.cours = {
   id: "autrui", kick: "Partie 1 · Titre 2 · Chapitre 3", t: "Le fait d'autrui", plan: "Plan du Chapitre 3 du Titre 2 de la Partie 1", manuel: [15],
   intro: "On répond d'autrui lorsqu'on a autorité sur lui ou qu'on organise son activité. En cas pratique, cela permet d'atteindre un responsable **solvable et assuré** (parents, employeur, association) à côté de l'auteur direct. Commence toujours par les cas légaux (art. [[1242]] al. 4 à 8) avant le principe général de l'al. 1er.",
   c: [
-    { txt: { r: "Art. 1242 C. civ. (version issue de la loi n° 2025-568 du 23 juin 2025, telle que reproduite dans le plan)", q: "« On est responsable non seulement du dommage que l'on cause par son propre fait, mais encore de celui qui est causé par le fait des personnes dont on doit répondre, ou des choses que l'on a sous sa garde. […] Les parents, en tant qu'ils exercent l'autorité parentale, sont, de plein droit, solidairement responsables du dommage causé par leurs enfants mineurs, sauf lorsque que ceux-ci ont été confiés à un tiers par une décision administrative ou judiciaire. Les maîtres et les commettants, du dommage causé par leurs domestiques et préposés dans les fonctions auxquelles ils les ont employés ; Les instituteurs et les artisans, du dommage causé par leurs élèves et apprentis pendant le temps qu'ils sont sous leur surveillance. La responsabilité ci-dessus a lieu, à moins que les parents et les artisans ne prouvent qu'ils n'ont pu empêcher le fait qui donne lieu à cette responsabilité. En ce qui concerne les instituteurs, les fautes, imprudences ou négligences invoquées contre eux comme ayant causé le fait dommageable, devront être prouvées, conformément au droit commun, par le demandeur, à l'instance. »" } },
+    { txt: { r: "Art. 1242 C. civ. (version issue de la loi n° 2025-568 du 23 juin 2025, telle que reproduite dans le plan)", q: "« On est responsable non seulement du dommage que l'on cause par son propre fait, mais encore de celui qui est causé par le fait des personnes dont on doit répondre, ou des choses que l'on a sous sa garde. […] Les parents, en tant qu'ils exercent l'autorité parentale, sont, de plein droit, solidairement responsables du dommage causé par leurs enfants mineurs, sauf lorsque que [sic] ceux-ci ont été confiés à un tiers par une décision administrative ou judiciaire. Les maîtres et les commettants, du dommage causé par leurs domestiques et préposés dans les fonctions auxquelles ils les ont employés ; Les instituteurs et les artisans, du dommage causé par leurs élèves et apprentis pendant le temps qu'ils sont sous leur surveillance. La responsabilité ci-dessus a lieu, à moins que les parents et les artisans ne prouvent qu'ils n'ont pu empêcher le fait qui donne lieu à cette responsabilité. En ce qui concerne les instituteurs, les fautes, imprudences ou négligences invoquées contre eux comme ayant causé le fait dommageable, devront être prouvées, conformément au droit commun, par le demandeur, à l'instance. »" } },
     { p: "Projets de réforme : projet de la Chancellerie du 13 mars 2017 (art. 1245 à 1249) et proposition sénatoriale du 29 juillet 2020 (art. 1243 à 1248). Ils posent que la responsabilité du fait d'autrui suppose la preuve d'un fait de nature à engager la responsabilité de l'auteur direct." }
   ],
   s: [
@@ -646,11 +646,11 @@ window.OBL.cours = {
         ]},
         { t: "2. Les limites de l'immunité du préposé", c: [
           { a: "ass-plen-2001-12-14-cousin", r: "Faute pénale intentionnelle : le préposé condamné pénalement engage sa responsabilité civile, même s'il a agi sur ordre." },
-          { txt: { r: "Art. 121-3 C. pén.", q: "« Il n'y a point de crime ou de délit sans intention de le commettre. Toutefois, lorsque la loi le prévoit, il y a délit en cas d'imprudence, de négligence ou de mise en danger délibérée de la personne d'autrui. […] »" } },
+          { txt: { r: "Art. 121-3 C. pén.", q: "« Il n'y a point de crime ou de délit sans intention de le commettre. Toutefois, lorsque la loi le prévoit, il y a délit en cas de mise en danger délibérée de la personne d'autrui. Il y a également délit, lorsque la loi le prévoit, en cas de faute d'imprudence, de négligence ou de manquement à une obligation de prudence ou de sécurité prévue par la loi ou le règlement […]. Dans le cas prévu par l'alinéa qui précède, les personnes physiques qui n'ont pas causé directement le dommage […] sont responsables pénalement s'il est établi qu'elles ont, soit violé de façon manifestement délibérée une obligation particulière de prudence ou de sécurité prévue par la loi ou le règlement, soit commis une faute caractérisée et qui exposait autrui à un risque d'une particulière gravité qu'elles ne pouvaient ignorer. […] »" } },
           { p: "**La faute pénale non intentionnelle** : la faute qualifiée de l'art. 121-3 C. pén." },
           { a: "crim-2006-03-28-stade-de-france", r: "Faute pénale non intentionnelle qualifiée (art. 121-3) : le préposé titulaire d'une délégation de pouvoirs engage sa responsabilité." },
           { p: "**La faute civile intentionnelle** :" },
-          { a: "civ2-2007-12-20-voiturier-recours-commettant", r: "Faute civile intentionnelle : la victime n'a pas d'action contre le préposé resté dans sa mission, « hors le cas où le préjudice résulte d'une infraction pénale ou d'une faute intentionnelle » ; le commettant n'a donc pas de recours subrogatoire contre lui." },
+          { a: "civ2-2007-12-20-voiturier-recours-commettant", r: "Faute civile intentionnelle : la victime n'a pas d'action contre le préposé resté dans sa mission, « hors le cas où le préjudice de la victime résulte d'une infraction pénale ou d'une faute intentionnelle » ; le commettant n'a donc pas de recours subrogatoire contre lui." },
           { a: "civ2-2008-02-21-gardienne-courrier", r: "Même formule : l'immunité cède devant l'infraction pénale ou la faute intentionnelle." }
         ]},
         { t: "3. Récapitulatif", c: [
@@ -718,7 +718,7 @@ window.OBL.cours = {
     "**Défenses exclues (art. 2)** : la force majeure et le fait d'un tiers ne sont opposables à aucune victime, même conductrice.",
     "**Victime non conductrice, dommage corporel (art. 3)** : indemnisée sauf faute inexcusable cause exclusive de l'accident ; si elle a moins de 16 ans, plus de 70 ans ou un taux d'incapacité d'au moins 80 %, indemnisée dans tous les cas, sauf si elle a volontairement recherché le dommage.",
     "**Victime conductrice (art. 4)** : sa faute, appréciée en elle-même, limite ou exclut son indemnisation.",
-    "**Dommages aux biens (art. 5)** et **victimes par ricochet (art. 6)** : la faute de la victime directe leur est opposable dans les mêmes limites."
+    "**Dommages aux biens (art. 5)** : la faute de la victime limite ou exclut l'indemnisation de ses biens (sans exiger une faute inexcusable). **Victimes par ricochet (art. 6)** : leur préjudice est réparé en tenant compte des limitations ou exclusions opposables à la victime directe."
   ],
   arrets: [
     { a: "civ2-2009-05-28-preposé-conducteur-loi-1985", r: "Le préposé conducteur d'un véhicule de son commettant, resté dans sa mission, n'est pas tenu d'indemniser la victime." },

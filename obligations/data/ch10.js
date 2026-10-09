@@ -77,7 +77,7 @@ OBL.chapitres.push({
         { h: "L'exception de droit commun ([[1219]])" },
         { liste: [
           "**Des obligations interdépendantes** : condition non écrite mais inhérente au mécanisme. Elle fait défaut si le créancier a accordé un **terme** ou si l'obligation est conditionnelle : le vendeur qui a consenti un délai de paiement ne peut pas refuser de livrer ([[1612]]).",
-          "**Une inexécution suffisamment grave** : la jurisprudence antérieure raisonnait en termes de **bonne foi** et de **proportionnalité** ; les solutions sont reconduites. Le locataire ne peut suspendre le paiement des loyers que si le défaut de réparation **empêche totalement l'occupation** des lieux (Civ. 3e, 18 sept. 2025, n° 23-24.005, dans la continuité d'une jurisprudence ancienne).",
+          "**Une inexécution suffisamment grave** : la jurisprudence antérieure raisonnait en termes de **bonne foi** et de **proportionnalité** ; les solutions sont reconduites. Le locataire ne peut suspendre le paiement des loyers que si le défaut de réparation **empêche totalement l'occupation** des lieux (Civ. 10 avr. 1959) ; rappel récent : il peut refuser de payer à compter du jour où les locaux sont devenus « impropres à l'usage auquel ils étaient destinés », sans mise en demeure préalable (Civ. 3e, 18 sept. 2025, n° 23-24.005).",
           "**Aucune formalité** : ni juge, ni mise en demeure préalable. C'est une voie de justice privée, exercée aux risques de celui qui l'invoque si l'inexécution n'était pas assez grave."
         ] },
         { h: "L'exception pour risque d'inexécution ([[1220]])" },

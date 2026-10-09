@@ -42,7 +42,7 @@ OBL.chapitres.push({
         { liste: [
           "**Pas d'accord** : si le maître a demandé ou accepté l'intervention, il y a **mandat** ([[1984]]), c'est-à-dire un contrat. Le voisin prié de surveiller la maison est un mandataire, non un gérant.",
           "**Pas d'opposition** : la gestion d'affaires ne légitime pas l'intrusion dans les affaires d'autrui contre sa volonté.",
-          "La jurisprudence exige en outre que le maître soit **hors d'état d'agir** lui-même : pas de gestion d'affaires pour la banque qui vend de sa propre initiative les titres d'un client joignable (Com., 12 janv. 1999). L'exigence rejoint la condition d'utilité et l'obligation de gérer « jusqu'à ce que le maître [...] soit en mesure d'y pourvoir » ([[1301-1]])."
+          "La jurisprudence exige en outre que le maître soit **hors d'état d'agir** lui-même : pas de gestion d'affaires pour la banque qui vend de sa propre initiative les titres d'un client sans établir que celui-ci était hors d'état d'agir lui-même (Com., 12 janv. 1999). L'exigence rejoint la condition d'utilité et l'obligation de gérer « jusqu'à ce que le maître [...] soit en mesure d'y pourvoir » ([[1301-1]])."
         ] },
         { h: "Les conditions relatives au gérant" },
         { liste: [

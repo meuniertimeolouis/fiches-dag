@@ -38,7 +38,7 @@ OBL.chapitres.push({
       contenu: [
         { def: { terme: "Contrat solennel", texte: "contrat dont la **validité** est subordonnée à des formes déterminées par la loi ([[1109]], al. 2 ; [[1172]], al. 2)." } },
         { schema: { type: "arbre", titre: "Deux degrés de solennité", racine: { t: "Contrat solennel", enfants: [
-          { t: "Acte notarié", d: "actes graves : donation ([[931]]), contrat de mariage ([[1394]]), hypothèque (art. 2416), subrogation consentie par le débiteur sans le concours du créancier ([[1346-2]], al. 2), vente d'immeuble à construire, location-accession. Le notaire, tenu d'un devoir d'information et de conseil, éclaire les parties" },
+          { t: "Acte notarié", d: "actes graves : donation ([[931]]), contrat de mariage ([[1394]]), hypothèque (art. 2409), subrogation consentie par le débiteur sans le concours du créancier ([[1346-2]], al. 2), vente d'immeuble à construire, location-accession. Le notaire, tenu d'un devoir d'information et de conseil, éclaire les parties" },
           { t: "Écrit sous signature privée", d: "cession de créance ([[1322]]), cession de contrat ([[1216]], al. 3), cession de parts sociales, courtage matrimonial, prêt à la consommation, gage (art. 2336), cautionnement d'une personne physique (art. 2297)" }
         ] } } },
         { p: "Souplesse pour la donation : la jurisprudence admet la **donation déguisée** et le **don manuel** (remise de la chose), qui échappent à l'acte notarié (la jurisprudence interprète strictement les textes imposant la solennité, mais est souple ici). Le droit électronique pose un principe d'**équivalence** des formalités électroniques ([[1174]] s.)." },

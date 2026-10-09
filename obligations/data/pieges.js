@@ -728,9 +728,9 @@ OBL.pieges[13] = {
       astuce: "Distinguez bien la cause étrangère (rupture du lien causal) du fait justificatif (disparition de l'illicéité)." },
     { face: "L'auteur ou la victime est un jeune enfant",
       etapes: [
-        "Enfant auteur : sa faute objective peut être retenue ; mais agir surtout contre les **parents** ([[1242]], al. 4, v. chapitre 14).",
+        "Enfant auteur : sa faute objective peut être retenue ; mais agir surtout contre les **parents** ([[1242]], al. 4, v. chapitre 15).",
         "Enfant victime : sa faute peut réduire son indemnisation (Derguini) ; appréciée comme celle d'une personne raisonnable.",
-        "Accident impliquant un véhicule terrestre à moteur : loi Badinter, victime de moins de 16 ans indemnisée de son dommage corporel dans tous les cas ([[L85-3]])."
+        "Accident impliquant un véhicule terrestre à moteur : loi Badinter, victime de moins de 16 ans indemnisée de son dommage corporel sauf si elle a volontairement recherché le dommage ([[L85-3]])."
       ],
       astuce: "Signalez que la solution est critiquée et que les projets de réforme voudraient la supprimer." }
   ]

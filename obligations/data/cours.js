@@ -15,30 +15,38 @@ window.OBL.cours = {
   { t: "Section 1 – Présentation générale du droit des obligations", s: [
     { t: "§1. L'objet du droit des obligations", s: [
       { t: "A- La notion d'obligation", c: [
-        { def: { terme: "Obligation", texte: "lien de droit entre deux personnes, en vertu duquel l'une (le créancier) peut exiger de l'autre (le débiteur) une prestation. Elle a une face active (la créance) et une face passive (la dette)." } },
-        { p: "L'obligation est un **droit personnel** : elle s'exerce contre une personne, à la différence du droit réel, qui porte directement sur une chose." }
+        { def: { terme: "Obligation", texte: "lien de droit entre deux personnes, en vertu duquel l'une (le créancier) peut exiger de l'autre (le débiteur) une prestation **ou une abstention**. Elle a une face active (la créance) et une face passive (la dette)." } },
+        { p: "L'obligation est un **droit personnel** : elle s'exerce contre une personne, à la différence du droit réel, qui porte directement sur une chose." },
+        { p: "Schéma classique (droit romain, repris par la doctrine allemande) : l'obligation réunit une **dette** (*debitum*, ce qui est dû) et un **pouvoir de contrainte** (*obligatio*). La contrainte, autrefois exercée sur la personne du débiteur, porte aujourd'hui sur son **patrimoine** : droit de gage général du créancier (art. 2284 C. civ. : « Quiconque s'est obligé personnellement, est tenu de remplir son engagement sur tous ses biens mobiliers et immobiliers, présents et à venir »), saisies, astreintes. Le créancier chirographaire n'a ni droit de suite ni droit de préférence, d'où l'intérêt des sûretés. L'obligation naturelle est l'exception : une dette sans pouvoir de contrainte." },
+        { p: "La créance est aussi un **bien**, transmissible : la Cour EDH y voit un bien au sens de l'art. 1er du Protocole n° 1, et la réforme de 2016 organise la cession de créance, de dette et de contrat (art. 1321 s.)." }
       ]},
       { t: "B- La classification des obligations", s: [
         { t: "1. Classifications en fonction de l'objet", c: [
           { liste: [
-            "**Faire, ne pas faire, donner** : distinction traditionnelle. La réforme de 2016 ne reprend plus l'obligation de donner comme catégorie (le transfert de propriété résulte de l'échange des consentements, art. [[1196]]).",
-            "**Obligations monétaires / non monétaires** : l'obligation de somme d'argent obéit à des règles propres (nominalisme monétaire, intérêts moratoires).",
-            "**Obligation de moyens / de résultat** : le débiteur de moyens promet de tout mettre en œuvre ; le débiteur de résultat promet un résultat précis. L'enjeu est **probatoire** : pour une obligation de moyens, le créancier prouve la faute ; pour une obligation de résultat, la seule absence de résultat suffit et le débiteur ne s'exonère que par la force majeure."
+            "**Faire, ne pas faire, donner** : distinction traditionnelle (anc. art. 1101 et 1126). Donner = transférer la propriété ; faire = accomplir une prestation positive (soins du médecin, travail du salarié) ; ne pas faire = s'abstenir (non-concurrence, non-construction). Son intérêt tenait aux sanctions de l'inexécution (anc. art. 1142). L'ordonnance de 2016 **abandonne toute la distinction**, pas seulement l'obligation de donner, critiquée parce que le transfert de propriété s'opère *solo consensu* : il relève désormais de l'effet translatif du contrat (art. [[1196]] s.). Faire / ne pas faire garde un intérêt didactique.",
+            "**Obligations monétaires / non monétaires** (le manuel dit **pécuniaires / en nature**) : l'obligation de somme d'argent obéit à des règles propres (art. 1343 s. : nominalisme monétaire, art. 1343 ; intérêts moratoires, art. 1231-6) ; son exécution forcée est aisée, la monnaie étant fongible. L'obligation en nature englobe le faire, le ne pas faire et le transfert d'autre chose qu'une somme d'argent. Non prévue en 1804, la distinction est implicitement reconnue par l'ordonnance de 2016.",
+            "**Obligation de moyens / de résultat** (distinction due à **Demogue**, reprise par la jurisprudence ; sous-entendue par les anc. art. 1137 et 1147, non reprise par l'ordonnance de 2016, ce qui ne change pas le droit positif) : le débiteur de moyens promet de tout mettre en œuvre (l'avocat ne promet pas le gain du procès) ; le débiteur de résultat promet un résultat précis (livrer une chose de genre). L'enjeu est **probatoire** : pour une obligation de moyens, le créancier prouve la faute ; pour une obligation de résultat, la seule absence de résultat suffit et le débiteur ne s'exonère que par la force majeure (cause étrangère). Les projets de réforme de la responsabilité (2016, 2017) semblent abandonner la distinction."
           ]},
           { cp: "Dès qu'un contrat est en jeu (transport, soins, activité sportive encadrée), qualifie l'obligation de sécurité (moyens ou résultat) : c'est elle qui dit qui doit prouver quoi." }
         ]},
         { t: "2. Classification en fonction de la sanction", c: [
           { p: "L'**obligation civile** est susceptible d'exécution forcée (exemple du cours : l'obligation alimentaire entre ascendants et descendants, art. 203 et 205 C. civ.)." },
-          { p: "L'**obligation naturelle** n'est pas susceptible d'exécution forcée, mais ce qui a été volontairement payé ne peut être répété." },
+          { p: "L'**obligation naturelle** (« obligation juridique sans contrainte ») n'est pas susceptible d'exécution forcée, mais ce qui a été volontairement payé ne peut être répété." },
           { txt: { r: "Art. 1302, al. 2 C. civ. (seule occurrence de l'expression dans le Code)", q: "« La restitution n'est pas admise à l'égard des obligations naturelles qui ont été volontairement acquittées. »" } },
           { p: "Exemples : obligation alimentaire entre collatéraux (frères et sœurs) ; paiement d'une dette prescrite. L'engagement unilatéral d'exécuter une obligation naturelle la **transforme en obligation civile** (art. [[1100]], al. 2)." },
+          { liste: [
+            "**Obligation civile imparfaite** (Aubry et Rau) : une obligation civile privée de sa contrainte par un vice de formation ou un événement postérieur. Exemple type : la dette prescrite, dont le paiement spontané reste valable (Req., 17 janv. 1938).",
+            "**Devoir moral monté à la vie juridique** (Ripert) : le devoir de conscience devient obligation naturelle quand le débiteur le reconnaît. Exemple : l'aide entre frères et sœurs (Req., 7 mars 1911). C'est cette conception que **consacre l'art. 1100, al. 2** (« devoir de conscience envers autrui »). Limite reconnue par Ripert : le domaine des obligations naturelles ne se définit qu'*a posteriori*, par le juge."
+          ]},
+          { p: "**Régime** : pas d'exécution forcée ; pas de restitution après exécution volontaire (art. 1302, al. 2) ; mais si le débiteur **s'est engagé** à l'exécuter, le créancier a une action en justice (Civ. 1re, 10 oct. 1995)." },
           { a: "civ1-2005-01-04-engagement-frere-legs-verbal", r: "L'engagement écrit de partager un legs verbal exécute une obligation naturelle et devient une obligation civile." },
           { a: "quinte-plus-1995", r: "Transformation de l'obligation naturelle en obligation civile par un engagement unilatéral, sans obligation civile préexistante (« improprement qualifiée novation »)." },
           { cp: "Quelqu'un réclame le remboursement de ce qu'il a payé « par devoir » ? Cherche l'obligation naturelle (art. 1302 al. 2) : pas de répétition si le paiement était volontaire. Quelqu'un a promis de payer par devoir moral ? L'art. 1100 al. 2 permet d'en exiger l'exécution." }
         ]},
         { t: "3. Classification en fonction des sources", c: [
           { txt: { r: "Art. 1100 C. civ.", q: "« Les obligations naissent d'actes juridiques, de faits juridiques ou de l'autorité seule de la loi. Elles peuvent naître de l'exécution volontaire ou de la promesse d'exécution d'un devoir de conscience envers autrui. »" } },
-          { txt: { r: "Art. 1100-1 et 1100-2 C. civ.", q: "Les actes juridiques sont « des manifestations de volonté destinées à produire des effets de droit ». Les faits juridiques sont « des agissements ou des événements auxquels la loi attache des effets de droit »." } }
+          { txt: { r: "Art. 1100-1 et 1100-2 C. civ.", q: "Les actes juridiques sont « des manifestations de volonté destinées à produire des effets de droit ». Les faits juridiques sont « des agissements ou des événements auxquels la loi attache des effets de droit »." } },
+          { p: "Avant 2016, l'**ancien art. 1370** retenait quatre sources : contrat, quasi-contrat, délit ou quasi-délit, loi. Critique (manuel) : faire de la loi une source autonome est discutable, puisqu'elle est la source première de toute obligation ; la vraie distinction oppose ce qui est **voulu** (acte juridique) à ce qui ne l'est pas (fait juridique). L'art. 1100, al. 1 maintient pourtant la loi au même rang que l'acte et le fait." }
         ], s: [
           { t: "a) Les actes juridiques : la naissance volontaire d'obligations", c: [
             { p: "Contrat, acte unilatéral, acte juridique collectif." },
@@ -48,9 +56,9 @@ window.OBL.cours = {
             { p: "Deux familles : les faits qui **causent un dommage** (responsabilité civile, objet du semestre) et les faits qui procurent un **avantage indu** (quasi-contrats)." },
             { txt: { r: "Art. 1300 C. civ.", q: "« Les quasi-contrats sont des faits purement volontaires dont il résulte un engagement de celui qui en profite sans y avoir droit, et parfois un engagement de leur auteur envers autrui. Les quasi-contrats régis par le présent sous-titre sont la gestion d'affaire, le paiement de l'indu et l'enrichissement injustifié. »" } },
             { liste: [
-              "**Gestion d'affaires** : conditions, art. [[1301]] (gérer sciemment et utilement l'affaire d'autrui, sans y être tenu, à l'insu ou sans opposition du maître) ; effets, art. [[1301-2]] (le maître exécute les engagements pris dans son intérêt, rembourse les dépenses, indemnise le gérant).",
-              "**Paiement de l'indu** : art. [[1302]] à [[1302-3]]. Quatre figures vues en cours : dette inexistante, dette éteinte, paiement à un faux créancier, paiement par un faux débiteur. Restitution selon les art. 1352 à 1352-9 ; elle peut être réduite si le paiement procède d'une faute (art. 1302-3, al. 2).",
-              "**Enrichissement injustifié** : né de l'arrêt Boudier (Req., 15 juin 1892), codifié aux art. [[1303]] à [[1303-4]] ; subsidiarité (art. [[1303-3]]) ; indemnité égale à la moindre des deux valeurs de l'enrichissement et de l'appauvrissement (art. 1303)."
+              "**Gestion d'affaires** : conditions, art. [[1301]] (gérer sciemment et utilement l'affaire d'autrui, sans y être tenu, à l'insu ou sans opposition du maître ; le gérant est alors soumis à toutes les obligations d'un mandataire) ; effets, art. [[1301-2]] (le maître dont l'affaire a été **utilement** gérée exécute les engagements pris dans son intérêt, rembourse les dépenses, indemnise le gérant de ses dommages ; les sommes avancées portent intérêt du jour du paiement).",
+              "**Paiement de l'indu** : art. [[1302]] à [[1302-3]]. Quatre figures vues en cours : dette inexistante, dette éteinte, paiement à un faux créancier, paiement par un faux débiteur. Celui qui paie est le *solvens*, celui qui reçoit l'*accipiens*. Conditions : l'*accipiens* qui a reçu « par erreur ou sciemment » ce qui ne lui était pas dû doit restituer (art. 1302-1) ; celui qui a payé la dette d'autrui « par erreur ou sous la contrainte » agit contre le créancier, sauf si celui-ci a, par suite du paiement, détruit son titre ou abandonné ses sûretés, ou contre le débiteur dont la dette a été acquittée (art. 1302-2). Restitution selon les art. 1352 à 1352-9 ; elle peut être réduite si le paiement procède d'une faute (art. 1302-3, al. 2).",
+              "**Enrichissement injustifié** : consacré par l'arrêt Boudier (Req., 15 juin 1892), codifié aux art. [[1303]] à [[1303-4]]. Conditions : l'enrichissement est injustifié s'il ne procède ni de l'accomplissement d'une obligation par l'appauvri ni de son intention libérale (art. 1303-1) ; pas d'indemnisation si l'appauvrissement vient d'un acte accompli par l'appauvri en vue d'un profit personnel (art. 1303-2, al. 1) ; **subsidiarité** : pas d'action si une autre action est ouverte ou se heurte à un obstacle de droit, comme la prescription (art. [[1303-3]]). Effets : indemnité égale à la **moindre** des deux valeurs de l'enrichissement et de l'appauvrissement (art. 1303), l'appauvrissement étant constaté au jour de la dépense, l'enrichissement tel qu'il subsiste au jour de la demande, les deux évalués au jour du jugement ; en cas de mauvaise foi de l'enrichi, la **plus forte** des deux (art. 1303-4)."
             ]},
             { a: "req-1892-06-15-boudier", r: "Consécration prétorienne de l'action de in rem verso." },
             { cp: "Les quasi-contrats sont développés pour le cas pratique dans la partie « Hors plan » (fiche Quasi-contrats)." }
@@ -61,30 +69,32 @@ window.OBL.cours = {
     { t: "§2. Les sources du droit des obligations", s: [
       { t: "A- L'évolution des sources nationales", s: [
         { t: "1. L'adoption du Code civil napoléonien", c: [
-          { p: "Commission nommée par Bonaparte en 1800 : **Tronchet** et **Bigot de Préameneu** (pays de coutumes), **Portalis** et **Maleville** (pays de droit écrit). Le Code de 1804 concilie solutions romaines et coutumières dans une idéologie libérale. Livre III : Titre 3 « Des contrats » ; Titre 4, très bref, « Des engagements qui se forment sans convention » (responsabilité civile et quasi-contrats)." }
+          { p: "Sous l'Ancien Régime, le droit est morcelé (droit écrit d'inspiration romaine au Sud, coutumes au Nord) ; les projets de Code de la Révolution échouent. Commission nommée par Bonaparte en 1800 : **Tronchet** et **Bigot de Préameneu** (pays de coutumes), **Portalis** et **Maleville** (pays de droit écrit). Le Code civil, promulgué le **21 mars 1804**, concilie solutions romaines et coutumières dans l'idéologie libérale issue de la Révolution. Livre III : Titre III « Des contrats ou des obligations conventionnelles en général » ; Titre IV, beaucoup plus sommaire, « Des engagements qui se forment sans convention » (responsabilité civile et quasi-contrats). La responsabilité délictuelle n'y tenait qu'en cinq articles (anc. art. 1382 à 1386)." }
         ]},
         { t: "2. Le dépassement des textes d'origine", c: [
-          { p: "Dépassement par des **normes spéciales** (lois de 1898 sur les accidents du travail, de 1985 sur les accidents de la circulation, de 1998 sur les produits défectueux…) et par des **normes jurisprudentielles** (principe général du fait des choses, du fait d'autrui…)." },
+          { p: "Dépassement par des **normes spéciales** (loi du 9 avril 1898 sur les accidents du travail, loi n° 85-677 du 5 juillet 1985 sur les accidents de la circulation, loi n° 98-389 du 19 mai 1998 sur les produits défectueux…) et par des **normes jurisprudentielles** (principe général de responsabilité du fait des choses : Teffaine, 1896, puis Jand'heur, 1930 ; principe général du fait d'autrui : Blieck, 1991)." },
+          { def: { terme: "Jurisprudence (définition du cours)", texte: "processus, et son produit, par lequel certaines décisions de justice sont repérées et diffusées parce qu'elles délivrent, en termes généraux, des interprétations, des qualifications ou des descriptions de règles dont il y a lieu de supposer qu'elles seront reproduites dans des situations équivalentes et pourront servir de référence. A priori, ce sont les décisions des cours suprêmes." } },
           { attention: "Jurisprudence ≠ contentieux, et jurisprudence ≠ un arrêt. On n'écrit pas « selon la jurisprudence du 7 septembre 2022 » mais « selon un arrêt de la deuxième chambre civile du… ». La doctrine n'est pas une source du droit : elle inspire seulement interprétations et réformes." }
         ]},
         { t: "3. La réforme du droit des obligations", c: [
           { liste: [
-            "Avant-projets doctrinaux : Catala (2005) ; Terré (contrats 2009, responsabilité 2011, régime général 2013).",
+            "Avant-projets doctrinaux : Catala (groupe mené par P. Catala et G. Viney, rapport remis au garde des Sceaux en septembre 2005) ; Terré (contrats 2009, responsabilité 2011, régime général 2013).",
             "Loi n° 2008-561 du 17 juin 2008 portant réforme de la prescription en matière civile.",
-            "Ordonnance n° 2016-131 du 10 février 2016 (contrats, régime général, preuve), ratifiée par la loi n° 2018-287 du 20 avril 2018."
+            "Loi d'habilitation n° 2015-177 du 16 février 2015 (art. 8) autorisant le Gouvernement à réformer par ordonnance.",
+            "Ordonnance n° 2016-131 du 10 février 2016 portant réforme du droit des contrats, du régime général et de la preuve des obligations, entrée en vigueur le **1er octobre 2016**, ratifiée par la loi n° 2018-287 du 20 avril 2018. Elle concerne le droit commun des contrats, les **quasi-contrats**, le régime général et la preuve."
           ]},
-          { attention: "La réforme de 2016 **ne touche pas** la responsabilité civile, contractuelle ou extracontractuelle (seule la numérotation a changé : 1382 → 1240, 1384 → 1242…). La responsabilité n'existe qu'à l'état de **projets** : projet de la Chancellerie (13 mars 2017), proposition de loi sénatoriale (29 juillet 2020). Cite-les comme projets, jamais comme droit positif." }
+          { attention: "La réforme de 2016 **ne touche pas** la responsabilité civile, contractuelle ou extracontractuelle (seule la numérotation a changé : 1382 → 1240, 1383 → 1241, 1384 → 1242, 1385 → 1243, 1386 → 1244). La **réforme d'ensemble** n'existe qu'à l'état de **projets** : avant-projet de la Chancellerie (avril 2016), projet de la Chancellerie (13 mars 2017), proposition de loi sénatoriale (29 juillet 2020). Cite-les comme projets, jamais comme droit positif. Mais n'écris pas que les textes de la responsabilité sont inchangés depuis 1804 : des réformes ponctuelles existent (préjudice écologique, art. 1246 s., loi du 8 août 2016 ; troubles anormaux de voisinage, art. 1253, loi du 15 avril 2024 ; art. 1242 modifié par la loi n° 2025-568 ; sanction civile de la faute lucrative, art. 1254, loi du 30 avril 2025)." }
         ]}
       ]},
       { t: "B- La place des sources internationales et européennes", s: [
         { t: "1. Les normes au niveau de l'Union européenne", c: [
           { liste: [
             "Règles de conflit : Règlement Rome I n° 593/2008 (obligations contractuelles) ; Règlement Rome II n° 864/2007 (obligations non contractuelles : responsabilité extracontractuelle et quasi-contrats).",
-            "Normes unifiées dans des domaines limités : directive 85/374/CEE du 25 juillet 1985 (produits défectueux, transposée en 1998) ; directive 2004/35/CE du 21 avril 2004 (responsabilité environnementale)."
+            "Normes unifiées dans des domaines limités : directive 85/374/CEE du 25 juillet 1985 (produits défectueux, transposée en 1998), appelée à être remplacée par la directive (UE) 2024/2853 du 23 octobre 2024 pour les produits mis en circulation à compter du 9 décembre 2026 ; directive 2004/35/CE du 21 avril 2004 (responsabilité environnementale)."
           ]}
         ]},
         { t: "2. Les normes au niveau international", c: [
-          { liste: ["Convention de Vienne sur la vente internationale de marchandises (CVIM) du 11 avril 1980, entrée en vigueur en France en 1988.", "Principes Unidroit (Institut international pour l'unification du droit privé, Rome)."] }
+          { liste: ["Convention de Vienne sur la vente internationale de marchandises (CVIM) du 11 avril 1980, adoptée dans le cadre de la CNUDCI (Nations unies), entrée en vigueur en France le 1er janvier 1988.", "Principes Unidroit (Institut international pour l'unification du droit privé, Rome)."] }
         ]}
       ]}
     ]}
@@ -95,18 +105,27 @@ window.OBL.cours = {
     { t: "§1. Le domaine du droit de la responsabilité civile", s: [
       { t: "A- Ce que n'est pas la responsabilité civile", s: [
         { t: "1. Distinction entre la responsabilité civile et la responsabilité administrative", c: [
-          { a2: "TC, 8 février 1873, Blanco", r: "La responsabilité de l'État pour les dommages causés par les agents du service public « ne peut être régie par les principes qui sont établis dans le Code civil » ; elle relève du juge administratif." },
+          { a2: "TC, 8 février 1873, Blanco", r: "La responsabilité de l'État pour les dommages causés par les agents du service public « ne peut être régie par les principes qui sont établis dans le Code civil, pour les rapports de particulier à particulier » ; elle « n'est ni générale, ni absolue » et relève du juge administratif." },
           { cp: "Le responsable est une personne publique agissant pour un service public administratif ? Le Code civil ne s'applique pas : signale-le et réoriente (sauf textes spéciaux, comme la substitution de l'État aux enseignants, art. L. 911-4 C. éduc., qui relève du juge judiciaire)." }
         ]},
         { t: "2. Distinction entre la responsabilité civile et la responsabilité pénale", c: [
           { attention: "« Délit » n'a pas le même sens : au pénal, catégorie d'infraction entre la contravention et le crime ; au civil, fait dommageable **intentionnel**, opposé au **quasi-délit** (imprudence, négligence)." },
-          { liste: ["Des domaines qui ne coïncident pas (une infraction sans dommage ; un dommage sans infraction).", "Des fonctions distinctes : punir / réparer.", "Des mécanismes distincts : faute pénale définie par la loi, faute civile générale ; responsabilité pénale personnelle, responsabilité civile possible du fait d'autrui.", "Des différences de procédure (action civile devant le juge pénal ou civil)."] }
+          { liste: ["Des domaines qui ne coïncident pas (une infraction sans dommage ; un dommage sans infraction).", "Des fonctions distinctes : punir / réparer.", "Des mécanismes distincts : faute pénale définie par la loi, faute civile générale ; responsabilité pénale personnelle, responsabilité civile possible du fait d'autrui.", "Des différences de procédure (action civile devant le juge pénal ou civil)."] },
+          { p: "**Fonctions** : le pénal punit ; le civil indemnise, avec un rôle secondaire de sanction et de prévention (la loi du 30 avril 2025 a créé une **sanction civile** de la faute lucrative, art. [[1254]], versée à un fonds et non à la victime). **Rapprochements procéduraux** : la victime peut porter son action civile devant le juge pénal en même temps que l'action publique (art. 3 C. pr. pén.), si elle a personnellement souffert du dommage directement causé par l'infraction (art. 2 C. pr. pén.) ; ce qui est jugé au pénal s'impose au juge civil (autorité de la chose jugée au criminel sur le civil). Depuis la **loi du 10 juillet 2000**, la faute civile d'imprudence est dissociée de la faute pénale : une relaxe pour imprudence n'empêche pas le juge civil de retenir une faute (art. 4-1 C. pr. pén.)." }
         ]}
       ]},
       { t: "B- Ce qu'est la responsabilité civile", s: [
         { t: "1. Responsabilité contractuelle et responsabilité extracontractuelle", c: [
           { p: "On parle désormais de responsabilité **extracontractuelle** (plutôt que délictuelle, qui englobait délits et quasi-délits). Le vocable exprime le **principe de non-cumul** : si un contrat valable existe et que le dommage résulte de son inexécution, la victime doit agir sur le terrain contractuel ; la responsabilité extracontractuelle est subsidiaire." },
           { attention: "Le nouveau vocabulaire ne signifie pas que la responsabilité extracontractuelle copie la contractuelle : historiquement, c'est l'inverse." },
+          { a2: "Civ., 11 janvier 1922", r: "Principe du non-cumul, plus exactement de **non-option** : la victime ne peut choisir le régime le plus favorable ; en présence d'un contrat, le dommage né de son inexécution relève de la seule responsabilité contractuelle." },
+          { liste: [
+            "Exception jurisprudentielle : le **juge pénal** saisi de l'action civile applique les règles délictuelles même si un contrat lie les parties (Crim., 15 juin 1923).",
+            "Exceptions législatives : accidents de la circulation (loi de 1985, art. 1er), produits défectueux (art. 1245-1), accidents médicaux (art. L. 1142-1 CSP) : le contrat est indifférent.",
+            "La qualification n'est pas toujours évidente : le client blessé dans un magasin en libre accès, avant tout achat, agit sur le terrain **délictuel** (Civ. 1re, 9 sept. 2020, n° 19-11.882, cité par le manuel).",
+            "Projet sénatorial de 2020 : option ouverte à la victime d'un dommage corporel (art. 1233, al. 2) ; action contractuelle du tiers intéressé à la bonne exécution (art. 1234, al. 2). Ce sont des projets."
+          ]},
+          { a2: "Ass. plén., 6 octobre 2006, n° 05-13.255 (Boot shop / Myr'Ho) et Ass. plén., 13 janvier 2020, n° 17-19.963 (Bois rouge)", r: "Le **tiers** à un contrat peut invoquer, sur le fondement délictuel, un manquement contractuel dès lors que ce manquement lui a causé un dommage." },
           { cp: "Premier réflexe de tout cas pratique : y a-t-il un contrat valable entre le responsable et la victime, et le dommage vient-il de son exécution ? Si oui, terrain contractuel (art. 1231-1) ; sinon, art. 1240 s. Le tiers victime d'une inexécution contractuelle agit, lui, sur le terrain délictuel." }
         ]},
         { t: "2. Le droit commun de la responsabilité et les régimes spéciaux", c: [
@@ -116,7 +135,12 @@ window.OBL.cours = {
     ]},
     { t: "§2. Les évolutions du droit de la responsabilité civile", s: [
       { t: "A- L'objectivation de la responsabilité civile", c: [
-        { p: "Passage d'une responsabilité fondée sur la faute morale à des responsabilités **sans faute** (fait des choses, fait d'autrui, régimes spéciaux) et à une faute **objective**, appréciée sans discernement (arrêts de 1984). L'objectif devient l'indemnisation de la victime." }
+        { p: "Passage d'une responsabilité fondée sur la faute morale (Domat, anc. art. 1382) à des responsabilités **sans faute** (fait des choses, fait d'autrui, régimes spéciaux) et à une faute **objective**, appréciée sans discernement (arrêts de 1984). Cause : la révolution industrielle et le machinisme (à partir des années 1880), qui multiplient des accidents où la victime ne peut prouver de faute. L'objectif devient l'indemnisation de la victime : on passe « d'une dette de responsabilité à une créance d'indemnisation » (Y. Lambert-Faivre, RTD civ. 1987)." },
+        { liste: [
+          "**Théorie du risque** (Saleilles, Josserand, fin du XIXe siècle) : qui crée un risque pour autrui en répond, même sans faute. Critiquée par Planiol (elle condamnerait à l'immobilité et serait inéquitable).",
+          "**Théorie de la garantie** (Starck, thèse de 1947) : raisonner du côté de la victime ; ses droits essentiels (intégrité corporelle et matérielle) doivent être garantis sans faute, les autres préjudices restant soumis à la faute. Elle a inspiré la loi de 1985.",
+          "Courant contemporain : renouveau des fonctions de **sanction** (faute lucrative) et de **prévention** (principe de précaution)."
+        ]}
       ]},
       { t: "B- La collectivisation de la responsabilité civile", c: [
         { p: "Le poids de la réparation est transféré sur des collectivités : **assurance** de responsabilité (obligatoire pour les véhicules terrestres à moteur), **fonds d'indemnisation** (FGTI, FGAO, ONIAM), sécurité sociale. Conséquence pratique : derrière le responsable, il y a presque toujours un assureur ou un fonds." }

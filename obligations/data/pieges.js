@@ -36,7 +36,7 @@ OBL.pieges[1] = {
       etapes: [
         "Existe-t-il un **devoir de conscience** envers autrui (famille, honneur, réparation morale) ?",
         "Le débiteur a-t-il **payé** (alors : pas de restitution si paiement volontaire, [[1302]], al. 2) ou **promis** (alors : obligation civile, exécution forcée possible) ?",
-        "La promesse est-elle **prouvée** ? Au-delà de 1 500 €, écrit exigé ([[1359]]), sauf commencement de preuve par écrit ([[1362]])."
+        "La promesse est-elle **prouvée** ? Au-delà de 1 500 €, écrit exigé ([[1359]]), sauf commencement de preuve par écrit ([[1362]]) corroboré par un autre moyen de preuve ([[1361]])."
       ],
       astuce: "Toujours traiter séparément ce qui a été versé et ce qui reste à verser." },
     { face: "Une prestation n'a pas donné le résultat espéré",
@@ -346,7 +346,7 @@ OBL.pieges[7] = {
       pourquoi: "Si le contrat a été exécuté, même partiellement, l'exception se prescrit comme l'action." },
     { faux: "On peut confirmer un contrat atteint de nullité absolue.",
       juste: "La nullité absolue **ne peut pas être couverte** par la confirmation ([[1180]], al. 2) ; seule la nullité relative peut l'être ([[1181]], al. 2).",
-      pourquoi: "La confirmation suppose la connaissance du vice et l'intention de le réparer ([[1182]])." },
+      pourquoi: "La confirmation suppose la connaissance du vice et l'intention de le réparer ([[1182]] ; Civ., 16 mars 1948)." },
     { faux: "Exécuter le contrat, c'est le confirmer.",
       juste: "L'exécution volontaire vaut confirmation **seulement en connaissance de la cause de nullité**, et, en cas de violence, **après qu'elle a cessé** ([[1182]], al. 3).",
       pourquoi: "Chercher dans les faits le moment où la victime a découvert le vice." },
@@ -361,7 +361,7 @@ OBL.pieges[7] = {
       pourquoi: "Le receveur de bonne foi ne doit les fruits qu'à compter de la **demande** ([[1352-7]])." },
     { faux: "Après une annulation, la victime ne peut rien demander de plus que les restitutions.",
       juste: "Elle peut demander **réparation** de son dommage dans les conditions du droit commun de la responsabilité **extracontractuelle** ([[1178]], al. 4).",
-      pourquoi: "Le contrat étant censé n'avoir jamais existé, la responsabilité ne peut pas être contractuelle." }
+      pourquoi: "Le comportement reproché est antérieur à la formation du contrat : la responsabilité est nécessairement délictuelle ([[1240]])." }
   ],
   reflexes: [
     { face: "L'action en nullité est-elle recevable ?",
@@ -371,7 +371,7 @@ OBL.pieges[7] = {
         "**Délai** : cinq ans, point de départ (découverte, cessation de la violence), butoir de vingt ans.",
         "**Obstacles** : confirmation ([[1182]]), action interrogatoire restée sans réponse ([[1183]])."
       ],
-      astuce: "Si l'action est prescrite, penser à l'exception de nullité ([[1185]])." },
+      astuce: "Si l'action est prescrite, penser à l'exception de nullité, perpétuelle seulement si le contrat n'a reçu aucune exécution ([[1185]])." },
     { face: "Le contrat est annulé : et maintenant ?",
       etapes: [
         "Nullité totale ou partielle ([[1184]]) ?",
@@ -485,7 +485,7 @@ OBL.pieges[9] = {
       etapes: [
         "Qualifier la **simulation** : acte ostensible et contre-lettre.",
         "Entre parties : la contre-lettre s'applique ([[1201]]).",
-        "Tiers : ils peuvent choisir, se prévaloir de l'acte apparent ou de l'acte secret.",
+        "Tiers : ils peuvent choisir, se prévaloir de l'acte apparent ou de l'acte secret ; en cas de conflit entre tiers, celui qui invoque l'acte apparent l'emporte s'il est de bonne foi (Civ., 25 avr. 1939 ; Civ. 1re, 22 févr. 1983).",
         "Vérifier les nullités spéciales ([[1202]]) et la fraude fiscale éventuelle."
       ],
       astuce: "Ne pas conclure à la nullité par principe : la simulation n'est pas illicite en soi." }
@@ -681,7 +681,7 @@ OBL.pieges[13] = {
       pourquoi: "L'imputabilité n'est plus un élément de la faute." },
     { faux: "La faute d'un enfant s'apprécie par comparaison avec un enfant du même âge.",
       juste: "La 2e chambre civile l'apprécie *in abstracto*, par rapport à une **personne raisonnable**, sans égard au jeune âge (Civ. 2e, 28 févr. 1996).",
-      pourquoi: "La comparaison avec un enfant du même âge est une proposition doctrinale, non consacrée." },
+      pourquoi: "La comparaison avec un enfant du même âge est une proposition doctrinale, non consacrée par la 2e chambre civile (certains arrêts de la 1re chambre civile ont pu sembler aller en ce sens : Civ. 1re, 6 mars 1996)." },
     { faux: "Une personne atteinte d'un trouble mental est civilement irresponsable.",
       juste: "Elle est « obligée à réparation » ([[414-3]], issu de la loi du 3 janv. 1968), dans **tous** les cas de responsabilité (faute, fait des choses, fait d'autrui).",
       pourquoi: "L'irresponsabilité pénale (C. pén., art. 122-1) est sans incidence sur la responsabilité civile." },

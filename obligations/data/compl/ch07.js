@@ -30,7 +30,7 @@
       juste: "Il en a la **faculté** (art. 12 CPC), à condition de respecter le contradictoire. Il y est au contraire tenu pour une clause **réputée non écrite**.",
       pourquoi: "Ne pas confondre le pouvoir du juge face à une nullité et son devoir face au réputé non écrit." },
     { faux: "Le réputé non écrit est une nullité partielle comme les autres.",
-      juste: "Il opère de plein droit, sans examen du caractère déterminant de la clause ([[1184]], al. 2), échappe à la prescription (Civ. 1re, 13 mars 2019) et n'impose pas au juge de s'interroger sur la volonté des parties.",
+      juste: "Il opère de plein droit, sans examen du caractère déterminant de la clause ([[1184]], al. 2), échappe à la prescription (Civ. 1re, 13 mars 2019) et doit être relevé d'office par le juge, sans pouvoir d'appréciation.",
       pourquoi: "L'originalité de la sanction tient à ces trois traits ; la nullité partielle de [[1184]], al. 1er, suppose au contraire une action et l'appréciation du caractère déterminant." },
     { faux: "L'annulation du prêt entraîne la caducité du cautionnement ou de l'hypothèque qui le garantit.",
       juste: "La sûreté **survit** et est reportée de plein droit sur l'obligation de restituer ([[1352-9]]), sans priver la caution du bénéfice du terme.",

@@ -28,7 +28,7 @@ OBL.chapitres.push({
         { def: { terme: "Gestion d'affaires", texte: "situation de celui (le **gérant**) qui, **sans y être tenu**, gère **sciemment et utilement** l'affaire d'autrui (le **maître de l'affaire**, ou géré), **à l'insu ou sans opposition** de celui-ci ([[1301]]). Exemple type : le voisin qui fait réparer en urgence la toiture d'un propriétaire absent." } },
         { schema: { type: "arbre", titre: "Les conditions de la gestion d'affaires ([[1301]])", racine: { t: "Gestion d'affaires", enfants: [
           { t: "Quant au maître", d: "ni accord (sinon mandat), ni opposition (sinon immixtion fautive)", enfants: [
-            { t: "Hors d'état d'agir ?", d: "exigence jurisprudentielle (Com., 12 janv. 1999)" }
+            { t: "Hors d'état d'agir ?", d: "exigence jurisprudentielle incertaine (Com., 12 janv. 1999)" }
           ] },
           { t: "Quant au gérant", d: "intention de gérer l'affaire d'autrui, sans obligation préexistante", enfants: [
             { t: "« Sciemment »", d: "volonté d'agir pour autrui ; un intérêt personnel concurrent est admis ([[1301-4]])" },
@@ -42,7 +42,7 @@ OBL.chapitres.push({
         { liste: [
           "**Pas d'accord** : si le maître a demandé ou accepté l'intervention, il y a **mandat** ([[1984]]), c'est-à-dire un contrat. Le voisin prié de surveiller la maison est un mandataire, non un gérant.",
           "**Pas d'opposition** : la gestion d'affaires ne légitime pas l'intrusion dans les affaires d'autrui contre sa volonté.",
-          "La jurisprudence exige en outre que le maître soit **hors d'état d'agir** lui-même : pas de gestion d'affaires pour la banque qui vend de sa propre initiative les titres d'un client sans établir que celui-ci était hors d'état d'agir lui-même (Com., 12 janv. 1999). L'exigence rejoint la condition d'utilité et l'obligation de gérer « jusqu'à ce que le maître [...] soit en mesure d'y pourvoir » ([[1301-1]])."
+          "Une incertitude existe sur l'exigence que le maître soit **hors d'état d'agir** lui-même ; la Cour de cassation l'a reprise : pas de gestion d'affaires pour la banque qui vend de sa propre initiative les titres d'un client sans établir que celui-ci était hors d'état d'agir lui-même (Com., 12 janv. 1999). L'exigence rejoint la condition d'utilité et l'obligation de gérer « jusqu'à ce que le maître [...] soit en mesure d'y pourvoir » ([[1301-1]])."
         ] },
         { h: "Les conditions relatives au gérant" },
         { liste: [
@@ -207,7 +207,7 @@ OBL.regimes.push(
     fondement: ["1301", "1301-1", "1301-2", "1301-3", "1301-4", "1301-5"],
     resume: "Déterminer si celui qui s'est occupé de l'affaire d'autrui sans mandat peut obtenir du maître le remboursement de ses dépenses, l'indemnisation de ses dommages et l'exécution des engagements pris envers des tiers.",
     conditions: [
-      { nom: "Absence d'accord et d'opposition du maître", question: "Le maître a-t-il ignoré l'intervention, ou du moins ne s'y est-il pas opposé, sans l'avoir demandée ?", detail: "Accord préalable : mandat. Opposition : pas de gestion d'affaires. La jurisprudence exige aussi que le maître soit hors d'état d'agir (Com., 12 janv. 1999).", preuve: "Au gérant, par tout moyen (fait juridique).", piege: "Si le maître ratifie ensuite, la gestion vaut mandat ([[1301-3]]) : appliquer alors le mandat." },
+      { nom: "Absence d'accord et d'opposition du maître", question: "Le maître a-t-il ignoré l'intervention, ou du moins ne s'y est-il pas opposé, sans l'avoir demandée ?", detail: "Accord préalable : mandat. Opposition : pas de gestion d'affaires. La jurisprudence semble exiger aussi, sans certitude, que le maître soit hors d'état d'agir (Com., 12 janv. 1999).", preuve: "Au gérant, par tout moyen (fait juridique).", piege: "Si le maître ratifie ensuite, la gestion vaut mandat ([[1301-3]]) : appliquer alors le mandat." },
       { nom: "Intention de gérer l'affaire d'autrui", question: "Le gérant a-t-il agi sciemment pour le compte du maître ?", detail: "Un intérêt personnel concurrent n'exclut pas la qualification ([[1301-4]], al. 1er) mais entraîne une répartition de la charge à proportion des intérêts de chacun (al. 2).", piege: "Celui qui croit gérer sa propre affaire n'est pas gérant d'affaires : penser à l'enrichissement injustifié." },
       { nom: "Absence d'obligation préexistante", question: "Le gérant est-il intervenu « sans y être tenu » ?", detail: "Une obligation légale ou contractuelle d'agir exclut la gestion d'affaires : on applique alors le régime de cette obligation." },
       { nom: "Un acte de gestion", question: "Le gérant a-t-il accompli un acte matériel ou juridique pour le maître ?", detail: "Tout acte, même de disposition ; en pratique, actes conservatoires et d'administration." },

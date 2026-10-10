@@ -69,7 +69,7 @@ OBL.chapitres.push({
         ] },
         { schema: { type: "arbre", titre: "Qui est gardien ?", racine: { t: "Le propriétaire", d: "présumé gardien (présomption simple)", enfants: [
           { lien: "transfert involontaire", t: "Le voleur ou celui qui a détourné la chose", d: "Franck : le propriétaire volé perd la garde (limite : un jeune enfant qui s'empare d'un pistolet chez des hôtes n'en devient pas gardien, Civ. 2e, 26 nov. 2020, n° 19-19.676)" },
-          { lien: "transfert volontaire", t: "Le locataire, l'emprunteur, le dépositaire", d: "à condition d'avoir reçu **toute possibilité de prévenir le dommage** : simple usage ≠ transfert de garde. Pour le **prêt**, les solutions varient avec la complexité de la chose, la durée et les circonstances : pas de transfert pour un tracteur prêté brièvement dans un but précis, transfert pour un chariot confié à un client de grand magasin (deux arrêts, Civ. 2e, 14 janv. 1999)" },
+          { lien: "transfert volontaire", t: "Le locataire, l'emprunteur, le dépositaire", d: "à condition d'avoir reçu **toute possibilité de prévenir le dommage** (Civ. 1re, 9 juin 1993) : simple usage ≠ transfert de garde. Pour le **prêt**, les solutions varient avec la complexité de la chose, la durée et les circonstances : pas de transfert pour un tracteur prêté brièvement dans un but précis, transfert pour un chariot confié à un client de grand magasin (deux arrêts, Civ. 2e, 14 janv. 1999)" },
           { lien: "garde fractionnée", t: "Fabricant (structure) / détenteur (comportement)", d: "pour les choses dotées d'un dynamisme propre et dangereuses (Civ. 2e, 5 janv. 1956, Oxygène liquide)" },
           { lien: "garde commune", t: "Plusieurs cogardiens", d: "pouvoirs identiques, sans hiérarchie ; exceptionnelle et en repli" }
         ] } } },
@@ -109,7 +109,7 @@ OBL.chapitres.push({
         { liste: [
           "**Animal** : tout animal **approprié** (domestique ou sauvage captif). L'animal sauvage en liberté n'a pas de gardien.",
           "**Responsable** : le **propriétaire** ou **celui qui s'en sert** pendant qu'il est à son usage, c'est-à-dire en pratique le gardien (usage à titre indépendant : dresseur, vétérinaire, maréchal-ferrant qui a la maîtrise de l'animal).",
-          "**Fait de l'animal** : mêmes règles de preuve que pour les choses (présumé en cas de mouvement et de contact ; sinon, rôle actif à prouver, par exemple des chiens qui effraient un cheval : Civ. 2e, 17 janv. 2019).",
+          "**Fait de l'animal** : mêmes règles de preuve que pour les choses (présumé en cas de mouvement et de contact ; sinon, rôle actif à prouver, apprécié parfois avec souplesse : chute d'une cavalière due à la présence de deux chiens sur le chemin, Civ. 2e, 17 janv. 2019, n° 17-28.861).",
           "**Régime** : responsabilité de plein droit, identique à celle de [[1242]], al. 1er. L'animal **égaré ou échappé** reste sous la responsabilité de son propriétaire : la fuite n'est pas une force majeure (le texte le dit), pas plus que l'avertissement donné sur la dangerosité de l'animal (Civ. 2e, 27 mars 2014, n° 13-15.528)."
         ] },
         { h: "La ruine des bâtiments ([[1244]])" },
@@ -190,7 +190,7 @@ OBL.regimes.push(
     resume: "Engager la responsabilité de plein droit du propriétaire ou de l'utilisateur d'un animal qui a causé un dommage.",
     conditions: [
       { nom: "Un animal approprié", question: "L'animal a-t-il un propriétaire (animal domestique ou sauvage captif) ?", detail: "L'animal sauvage en liberté n'engage personne sur ce fondement.", piege: "Oublier que l'animal égaré ou échappé reste approprié." },
-      { nom: "Le fait de l'animal", question: "L'animal a-t-il été l'instrument du dommage ?", detail: "Présumé en cas de mouvement et de contact (morsure, ruade) ; sinon, la victime prouve un comportement anormal (chiens qui surgissent et effraient un cheval : Civ. 2e, 17 janv. 2019)." },
+      { nom: "Le fait de l'animal", question: "L'animal a-t-il été l'instrument du dommage ?", detail: "Présumé en cas de mouvement et de contact (morsure, ruade) ; sinon, la victime prouve le rôle actif de l'animal, apprécié parfois avec souplesse (chute d'une cavalière due à la présence de deux chiens sur le chemin : Civ. 2e, 17 janv. 2019, n° 17-28.861)." },
       { nom: "Le responsable", question: "Qui était propriétaire, ou qui se servait de l'animal au moment du dommage ?", detail: "Propriétaire par principe, même si l'animal s'est échappé. L'utilisateur qui a la maîtrise indépendante de l'animal (dresseur, vétérinaire, maréchal-ferrant) peut répondre à sa place.", piege: "Écrire que la fuite de l'animal transfère la garde." }
     ],
     exonerations: [

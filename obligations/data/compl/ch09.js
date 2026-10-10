@@ -35,10 +35,10 @@
       juste: "Seule la **contre-lettre** est nulle ; la vente est maintenue au prix apparent (Ch. mixte, 12 juin 1981), sans qu'on recherche une indivisibilité.",
       pourquoi: "La solution protège l'acheteur et l'incite à dénoncer la fraude, au prix d'un certain malaise (il profite de la dissimulation)." },
     { faux: "Dans un conflit entre créanciers du vendeur et de l'acheteur après une vente fictive, la contre-lettre l'emporte car elle exprime la vérité.",
-      juste: "Le tiers qui invoque l'**acte apparent** est préféré, s'il est de bonne foi (Civ., 25 avr. 1939) : la contre-lettre n'est pas opposable aux tiers ([[1201]]).",
+      juste: "Le tiers qui invoque l'**acte apparent** est préféré (Civ., 25 avr. 1939), s'il est de bonne foi, sans avoir à prouver une erreur invincible (Civ. 1re, 22 févr. 1983) : la contre-lettre n'est pas opposable aux tiers ([[1201]]).",
       pourquoi: "Donner la préférence à la contre-lettre reviendrait à l'opposer à l'un des tiers." },
     { faux: "Le tiers victime d'un manquement contractuel obtient réparation sans que les clauses du contrat lui soient opposables.",
-      juste: "Depuis Com., 3 juill. 2024 (n° 21-14.947), le tiers qui invoque le manquement sur le fondement délictuel se voit opposer les **conditions et limites** de responsabilité applicables entre les contractants (clauses limitatives, et clauses procédurales : Com., 17 déc. 2025).",
+      juste: "Depuis Com., 3 juill. 2024 (n° 21-14.947), le tiers qui invoque le manquement sur le fondement délictuel **peut**, selon la chambre commerciale, **se voir opposer** les **conditions et limites** de responsabilité applicables entre les contractants (clauses limitatives, et clauses procédurales : Com., 17 déc. 2025).",
       pourquoi: "La solution n'est pas unanime entre chambres et l'Assemblée plénière n'a pas encore tranché." }
   ]
 }; })();

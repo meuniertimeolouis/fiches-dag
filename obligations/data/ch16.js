@@ -53,7 +53,7 @@ OBL.chapitres.push({
         { schema: { type: "tableau", titre: "La preuve de l'implication", colonnes: ["Situation", "Solution", "Référence"], lignes: [
           ["**Contact** entre le véhicule et la victime (ou son véhicule)", "Implication **certaine**, que le véhicule soit **en mouvement ou à l'arrêt**", "Civ. 2e, 23 mars 1994 : est nécessairement impliqué tout VTAM heurté, à l'arrêt ou en mouvement"],
           ["**Pas de contact**", "La victime doit prouver que le véhicule a **joué un rôle** (éblouissement, manœuvre qui fait chuter, gravillons projetés)", "Appréciation souple : véhicule de pompiers dont le conducteur fait signe aux cyclistes (Civ. 2e, 1er juin 2011)"],
-          ["**Accident complexe** (carambolage)", "Sont impliqués **tous les véhicules intervenus à quelque titre que ce soit** dans un accident traité comme un **fait unique**, s'il y a continuité temporelle et causale", "Abandon de l'appréciation collision par collision, qui prévalait auparavant"]
+          ["**Accident complexe** (carambolage)", "Sont impliqués **tous les véhicules intervenus à quelque titre que ce soit** dans un accident traité comme un **fait unique**, s'il y a continuité temporelle et causale", "Abandon de l'appréciation collision par collision, qui prévalait auparavant ; continuité appréciée au cas par cas (Civ. 2e, 24 mai 2018, n° 17-19.445)"]
         ] } },
         { h: "L'imputabilité du dommage à l'accident" },
         { p: "Le dommage doit se rattacher à l'accident. L'imputabilité est **présumée** : le conducteur impliqué ne s'en libère qu'en prouvant que l'accident est **sans relation** avec le dommage (Civ. 2e, 19 févr. 1997). La présomption vaut pour un dommage apparu peu après l'accident ; pour un suicide survenu des mois plus tard, les ayants droit doivent prouver le lien." },
@@ -61,7 +61,7 @@ OBL.chapitres.push({
         { liste: [
           "Le **conducteur** ou le **gardien** d'un VTAM impliqué ([[L85-2|art. 2]]), la garde s'entendant comme pour [[1242]], al. 1er ; en pratique, leur **assureur**.",
           "Le **préposé** qui conduit le véhicule de son commettant n'est en principe pas débiteur de l'indemnisation : on agit contre le commettant, gardien.",
-          "Le **conducteur** blessé qui agit contre un **piéton** ou un **cycliste** ne peut pas invoquer la loi : droit commun ([[1240]], [[1242]])."
+          "Le **conducteur** blessé qui agit contre un **piéton** ou un **cycliste** ne peut pas invoquer la loi : droit commun ([[1240]], [[1242]] ; Civ. 2e, 30 nov. 2023, n° 21-19.215, conducteur de tramway contre un cycliste fautif)."
         ] }
       ]
     },
@@ -135,7 +135,7 @@ OBL.chapitres.push({
           ["Vendeur, loueur (sauf crédit-bailleur), autre fournisseur professionnel", "**Subsidiaire** : seulement si le producteur **ne peut être identifié**, et il s'exonère en désignant son fournisseur ou le producteur dans les **trois mois** de la demande", "[[1245-6]]"]
         ] } },
         { h: "La mise en circulation" },
-        { p: "Le produit est mis en circulation quand le producteur s'en **dessaisit volontairement** ([[1245-4]]), c'est-à-dire quand il sort du processus de fabrication pour entrer dans un processus de commercialisation (CJCE, 9 févr. 2006, aff. C-127/04). Un transfert de propriété à la victime n'est pas nécessaire (produit utilisé lors d'une prestation de soins : CJCE, 10 mai 2001). Pour un produit fabriqué en série, la date retenue est celle de la mise en circulation du **lot** dont il est issu." }
+        { p: "Le produit est mis en circulation quand le producteur s'en **dessaisit volontairement** ([[1245-4]]), c'est-à-dire quand il sort du processus de fabrication pour entrer dans un processus de commercialisation (CJCE, 9 févr. 2006, aff. C-127/04) ; elle ne se confond pas avec l'autorisation de mise sur le marché (Ch. mixte, 7 juill. 2017, n° 15-25.651). Un transfert de propriété à la victime n'est pas nécessaire (produit utilisé lors d'une prestation de soins : CJCE, 10 mai 2001). Pour un produit fabriqué en série, la date retenue est celle de la mise en circulation du **lot** dont il est issu." }
       ]
     },
     {
@@ -165,7 +165,7 @@ OBL.chapitres.push({
         { p: "[[1245-17]] réserve les autres actions, mais la CJCE l'a lu restrictivement (CJCE, 25 avr. 2002, *González Sánchez*, aff. C-183/00) : la victime **ne peut pas** invoquer un autre régime reposant sur le **même fondement** (le défaut de sécurité) ; elle **peut** invoquer un fondement **différent**, comme la **garantie des vices cachés** ou la **faute**. Le juge doit relever d'office le régime spécial quand les faits s'y prêtent (Ch. mixte, 7 juill. 2017)." },
         { liste: [
           "Exclus contre le producteur : l'obligation de sécurité et la responsabilité du fait des choses, qui procèdent nécessairement d'un défaut de sécurité (Civ. 1re, 11 juill. 2018, n° 17-20.154). Les **vices cachés** restent possibles (Civ. 1re, 19 avr. 2023, n° 21-23.126).",
-          "Admise : la **faute distincte du défaut**, par exemple le **maintien en circulation** d'un produit dont le producteur connaît le défaut ou un **manquement à son devoir de vigilance** sur les risques (Civ. 1re, 15 nov. 2023, n° 22-21.174 et trois autres, Mediator). Intérêt majeur : échapper au délai de trois ans et bénéficier de la prescription de droit commun (dix ans à compter de la consolidation pour un dommage corporel, [[2226]]).",
+          "Admise : la **faute distincte du défaut**, par exemple le **maintien en circulation** d'un produit dont le producteur connaît le défaut ou un **manquement à son devoir de vigilance** sur les risques (Civ. 1re, 15 nov. 2023, n° 22-21.174 et trois autres, Mediator ; lecture validée par CJUE, 26 mars 2026, aff. C-338/24). Intérêt majeur : échapper au délai de trois ans et bénéficier de la prescription de droit commun (dix ans à compter de la consolidation pour un dommage corporel, [[2226]]).",
           "Le principe d'exclusivité ne vise que les dommages causés à un bien d'usage **privé** ; pour un bien professionnel, d'autres régimes restent ouverts (CJCE, 4 juin 2009, aff. C-285/08).",
           "Il ne protège que le **producteur** : l'**utilisateur** professionnel d'un produit défectueux (hôpital, médecin, exploitant) répond selon son propre régime (CJUE, 21 déc. 2011, aff. C-495/10 ; pour le professionnel de santé, responsabilité pour faute : Civ. 1re, 12 juill. 2012). Condamné, l'utilisateur sans faute dans l'usage peut obtenir du producteur le remboursement **intégral** de ce qu'il a versé (Civ. 1re, 18 févr. 2026, n° 24-19.881)."
         ] },

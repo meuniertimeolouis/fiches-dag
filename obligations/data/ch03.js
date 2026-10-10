@@ -114,7 +114,7 @@ OBL.chapitres.push({
       titre: "Le contrat entre absents",
       contenu: [
         { p: "Quand les parties ne sont pas en présence (courrier, téléphone, internet), où et quand le contrat est-il formé ? La **date** reste essentielle : rétractation, prescription, transfert de propriété et des risques, loi applicable dans le temps." },
-        { p: "L'intérêt du **lieu** de formation s'est réduit : en droit interne, la compétence territoriale ne dépend plus du lieu de formation du contrat, et le règlement Rome I (17 juin 2008) a abandonné la règle *locus regit actum*. Reste la **date** (rétractation, prescription, transfert de propriété, application de la loi dans le temps)." },
+        { p: "L'intérêt du **lieu** de formation s'est réduit : en droit interne, la compétence territoriale ne dépend plus du lieu de formation du contrat, et, en droit international privé, le règlement Rome I (17 juin 2008) ne fait plus dépendre la loi applicable du lieu de conclusion (ce lieu ne reste qu'un rattachement alternatif pour la validité formelle, art. 11). Reste la **date** (rétractation, prescription, transfert de propriété, application de la loi dans le temps)." },
         { schema: { type: "tableau", titre: "Deux théories", colonnes: ["", "Théorie de l'émission", "Théorie de la réception"], lignes: [
           ["Moment", "Envoi de l'acceptation", "Réception de l'acceptation par l'offrant"],
           ["Idée", "Il suffit que les volontés coexistent", "Il faut une véritable rencontre des volontés"],

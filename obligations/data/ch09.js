@@ -94,7 +94,7 @@ OBL.chapitres.push({
           ["Les parties", "La **contre-lettre**", "C'est leur volonté réelle ; la simulation n'est pas en elle-même une cause de nullité"],
           ["Les tiers qui se fient à l'apparence (de bonne foi, c'est-à-dire ignorant la contre-lettre)", "L'**acte apparent**, qui leur est opposable", "La contre-lettre ne leur est **pas opposable**"],
           ["Les tiers qui ont intérêt à la réalité", "Ils peuvent **se prévaloir** de la contre-lettre", "Action en déclaration de simulation, preuve par tout moyen"],
-          ["Conflit entre tiers", "Celui qui invoque l'**acte apparent** l'emporte, s'il est de bonne foi (Civ., 25 avr. 1939)", "Protection de la sécurité juridique : opposer la contre-lettre à un tiers reviendrait à la lui opposer, contrairement à [[1201]]"]
+          ["Conflit entre tiers", "Celui qui invoque l'**acte apparent** l'emporte (Civ., 25 avr. 1939), s'il est de bonne foi, sans avoir à prouver une erreur invincible (Civ. 1re, 22 févr. 1983)", "Protection de la sécurité juridique : opposer la contre-lettre à un tiers reviendrait à la lui opposer, contrairement à [[1201]]"]
         ] } },
         { attention: "Exceptions : sont **nuls** la contre-lettre augmentant le prix de cession d'un office ministériel et tout acte dissimulant une partie du prix d'une vente d'immeuble, de fonds de commerce ou de clientèle ([[1202]]) : but de lutte contre la fraude fiscale. Seule la **contre-lettre** est annulée : la vente est maintenue au prix apparent, l'acheteur se libérant valablement en le payant (Ch. mixte, 12 juin 1981), ce qui l'incite à dénoncer la fraude. La simulation n'est donc pas illicite en soi ; elle devient frauduleuse quand elle vise à tromper créanciers ou fisc, la preuve de la fraude étant libre." }
       ]
@@ -105,7 +105,7 @@ OBL.chapitres.push({
     "Ayant cause à titre particulier : action contractuelle directe en garantie (Ass. plén., 7 févr. 1986) ; groupe de contrats sans transfert de propriété : action délictuelle (Besse, 1991).",
     "Créanciers : action oblique, paulienne, directe ([[1341-1]] à [[1341-3]]).",
     "Porte-fort ([[1204]]) : promettre le fait d'un tiers ; stipulation pour autrui ([[1205]] s.) : droit direct du bénéficiaire dès la stipulation, révocable jusqu'à l'acceptation.",
-    "Tiers victime d'un manquement contractuel : responsabilité délictuelle (Boot shop 2006, Bois rouge 2020), avec les limites contractuelles (Com., 3 juill. 2024).",
+    "Tiers victime d'un manquement contractuel : responsabilité délictuelle (Boot shop 2006, Bois rouge 2020), mais, selon la chambre commerciale, avec les conditions et limites contractuelles (Com., 3 juill. 2024), non encore consacrées par l'Assemblée plénière.",
     "Simulation : contre-lettre entre les parties ; inopposable aux tiers, qui peuvent s'en prévaloir ([[1201]]) ; nullités de [[1202]]."
   ],
   articles: ["1123", "1199", "1200", "1201", "1202", "1203", "1204", "1205", "1206", "1207", "1208", "1209", "1341-1", "1341-2", "1341-3"],
@@ -136,7 +136,7 @@ OBL.regimes.push({
     { nom: "Un dommage causé au tiers", question: "Ce manquement a-t-il causé un dommage au tiers ?", detail: "Lien de causalité à prouver, comme en responsabilité délictuelle ([[1240]])." }
   ],
   exonerations: [
-    { nom: "Les conditions et limites du contrat", question: "Le contrat contient-il des clauses limitant ou encadrant la responsabilité du débiteur ?", detail: "Com., 3 juill. 2024, n° 21-14.947 : le tiers peut se les voir opposer, pour ne pas être mieux traité que le créancier.", effet: "Réparation limitée comme elle l'aurait été pour le créancier." }
+    { nom: "Les conditions et limites du contrat", question: "Le contrat contient-il des clauses limitant ou encadrant la responsabilité du débiteur ?", detail: "Com., 3 juill. 2024, n° 21-14.947 (confirmé par Com., 17 déc. 2025) : le tiers peut se les voir opposer, pour ne pas être mieux traité que le créancier. Solution de la chambre commerciale, que l'Assemblée plénière n'a pas encore consacrée et dont l'application par les autres chambres reste incertaine.", effet: "Réparation limitée comme elle l'aurait été pour le créancier." }
   ],
   copie: [
     "Fondement : responsabilité délictuelle (le tiers n'a pas d'action contractuelle) ; citer [[1240]] et les deux arrêts d'assemblée plénière."

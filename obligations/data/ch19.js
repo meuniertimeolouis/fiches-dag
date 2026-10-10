@@ -50,7 +50,7 @@ OBL.chapitres.push({
           "La condition **suspensive** est **réputée accomplie** si celui qui y avait intérêt en a **empêché** l'accomplissement ([[1304-3]], al. 1er).",
           "La condition **résolutoire** est **réputée défaillie** si son accomplissement a été **provoqué** par la partie qui y avait intérêt ([[1304-3]], al. 2).",
           "Application majeure : la promesse sous condition d'obtention d'un prêt. L'acquéreur doit avoir demandé un prêt **conforme aux caractéristiques** stipulées (montant, durée, taux) ; s'il a demandé un prêt différent, la condition est réputée accomplie (Civ. 3e, 30 janv. 2008). À l'inverse, la stipulation d'un montant maximal ne l'oblige pas à accepter n'importe quelle offre d'un montant inférieur (Civ. 3e, 14 déc. 2022, n° 21-24.539).",
-          "Avant la réforme, la jurisprudence n'exigeait de la partie tenue que des **diligences moyennes** pour que la condition se réalise (la fiction de l'ancien article 1178 jouait avec modération) ; elle sanctionne le comportement fautif, non l'inaction ordinaire (Civ. 3e, 12 sept. 2007)."
+          "Avant la réforme, la fiction de l'ancien article 1178 (Civ. 3e, 12 sept. 2007) jouait avec modération : la jurisprudence n'exigeait de la partie tenue que des **diligences moyennes** pour que la condition se réalise."
         ] },
         { h: "La renonciation" },
         { p: "Une partie peut renoncer à la condition stipulée **dans son intérêt exclusif**, tant que celle-ci n'est **ni accomplie ni défaillie** ([[1304-4]], rédaction issue de la loi du 20 avril 2018). La condition de prêt est stipulée dans l'intérêt exclusif de l'acquéreur : lui seul peut y renoncer, et avant l'échéance." },

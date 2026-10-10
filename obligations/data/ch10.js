@@ -21,7 +21,7 @@ OBL.chapitres.push({
           ] }
         ] } } },
         { p: "**Cumul** : « les sanctions qui ne sont pas incompatibles peuvent être cumulées ; des dommages et intérêts peuvent toujours s'y ajouter » ([[1217]], dernier al.). On ne peut pas demander à la fois l'exécution forcée et la résolution d'une même obligation ; on peut réclamer l'exécution forcée **et** des dommages et intérêts pour le retard." },
-        { arret: { ref: "Civ. 1re, 18 déc. 2024, n° 24-14.750", apport: "« Un créancier qui peut faire usage d'une sanction unilatérale doit pouvoir demander au juge de prononcer cette sanction. » Toute sanction que le créancier peut mettre en œuvre seul (réduction du prix, exception d'inexécution, résolution par notification) peut donc aussi être demandée en justice." } },
+        { arret: { ref: "Civ. 1re, 18 déc. 2024, n° 24-14.750", apport: "« Un créancier qui peut faire usage d'une sanction unilatérale doit pouvoir demander au juge de prononcer cette sanction. » Toute sanction que le créancier peut mettre en œuvre seul (réduction du prix, exception d'inexécution, résolution par notification) devrait donc pouvoir aussi être demandée en justice (portée encore à éprouver, sauf pour la résolution : [[1227]])." } },
         { h: "La mise en demeure" },
         { def: { terme: "Mise en demeure", texte: "acte par lequel le créancier **interpelle solennellement** le débiteur pour qu'il exécute. Elle constate officiellement le retard et ouvre la voie à la plupart des sanctions ([[1344]] s.)." } },
         { liste: [

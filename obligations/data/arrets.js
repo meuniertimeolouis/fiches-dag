@@ -584,7 +584,7 @@ window.OBL.arrets = [
   "nom": "Clause de non-responsabilité en matière délictuelle",
   "juridiction": "Civ. 2e",
   "date": "1955-02-17",
-  "numero": "",
+  "numero": "55-02.810",
   "provenance": [
    "Manuel"
   ],
@@ -691,7 +691,7 @@ window.OBL.arrets = [
   "nom": "Erhard c/ Bennoun : chance trop hypothétique (Civ. 2e, 1966)",
   "juridiction": "Civ. 2e",
   "date": "1966-05-12",
-  "numero": "",
+  "numero": "64-12.434",
   "provenance": [
    "Manuel"
   ],
@@ -1461,7 +1461,7 @@ window.OBL.arrets = [
   ],
   "faits": "Le 10 avril 1976, une fillette de moins de 6 ans (5 ans et 9 mois selon les parents) s'élance sur un passage protégé devant une voiture, puis fait demi-tour pour regagner le trottoir ; elle est heurtée et mortellement blessée. L'automobiliste est déclaré coupable d'homicide involontaire (défaut d'attention), mais la cour d'appel de Nancy (9 juill. 1980, statuant sur renvoi après cassation criminelle du 13 déc. 1978) partage par moitié la responsabilité. Les parents soutiennent que le défaut de discernement de l'enfant exclut toute faute de sa part.",
   "question": "La faute d'un très jeune enfant victime peut-elle être retenue pour réduire son indemnisation sans qu'on ait vérifié sa capacité à discerner les conséquences de son acte ?",
-  "solution": "Rejet du pourvoi (Assemblée plénière saisie par ordonnance du premier président du 15 mars 1983) : la cour d'appel, qui n'était pas tenue de vérifier si la mineure était capable de discerner les conséquences de ses actes, a pu retenir, sur le fondement de l'art. 1382 ancien, que la victime avait commis une faute ayant concouru avec celle de l'automobiliste au dommage, dans une proportion souverainement appréciée. Le discernement n'est donc plus exigé pour retenir la faute d'un enfant, victime comme auteur (voir aussi Ass. plén., 9 mai 1984, Lemaire, n° 80-14.994, rendu le même jour pour l'enfant auteur).",
+  "solution": "Rejet du pourvoi (Assemblée plénière saisie par ordonnance du premier président du 15 mars 1983) : la cour d'appel, qui n'était pas tenue de vérifier si la mineure était capable de discerner les conséquences de ses actes, a pu retenir, sur le fondement de l'art. 1382 ancien, que la victime avait commis une faute ayant concouru avec celle de l'automobiliste au dommage, dans une proportion souverainement appréciée. Le discernement n'est donc plus exigé pour retenir la faute d'un enfant, victime comme auteur (voir aussi Ass. plén., 9 mai 1984, Gabillet, n° 80-14.994, rendu le même jour pour l'enfant auteur).",
   "justifie": [
    {
     "argument": "Soutenir que la faute d'un enfant, même très jeune, peut être retenue contre lui sans rechercher son discernement (appréciation objective de la faute, détachée de l'imputabilité), pour partager la responsabilité avec l'auteur du dommage.",
@@ -1476,7 +1476,7 @@ window.OBL.arrets = [
     "ou": "TD sur la faute ; dissertation sur les victimes vulnérables"
    }
   ],
-  "distinguer": "Ne pas l'opposer à Civ. 2e, 28 févr. 1996 (n° 94-13.084), qui la confirme en affirmant que la faute d'un mineur peut être retenue même s'il n'est pas capable de discerner les conséquences de son acte (enfant de 8 ans, cassation). À distinguer d'Ass. plén., 9 mai 1984, Lemaire (n° 80-14.994), qui concerne l'enfant auteur du dommage. Pour les victimes d'accidents de la circulation, la loi du 5 juillet 1985 (art. 3 et 5) a limité l'opposabilité de la faute de la victime, notamment pour les enfants de moins de 16 ans, protégés sauf faute inexcusable à certaines conditions. Art. 1382 ancien devenu 1240 (ordonnance de 2016).",
+  "distinguer": "Ne pas l'opposer à Civ. 2e, 28 févr. 1996 (n° 94-13.084), qui la confirme en affirmant que la faute d'un mineur peut être retenue même s'il n'est pas capable de discerner les conséquences de son acte (enfant de 8 ans, cassation). À distinguer d'Ass. plén., 9 mai 1984, Gabillet (n° 80-14.994), qui concerne l'enfant auteur du dommage. Pour les victimes d'accidents de la circulation, la loi du 5 juillet 1985 (art. 3 et 5) a limité l'opposabilité de la faute de la victime, notamment pour les enfants de moins de 16 ans, protégés sauf faute inexcusable à certaines conditions. Art. 1382 ancien devenu 1240 (ordonnance de 2016).",
   "textes": [
    "1382 (aujourd'hui 1240)"
   ],
@@ -7110,7 +7110,7 @@ window.OBL.arrets = [
   ],
   "faits": "Naufrage du pétrolier Erika au large de la Bretagne en décembre 1999 et pollution du littoral par les hydrocarbures. Après condamnation pénale de plusieurs responsables (dont l'affréteur) en appel, des collectivités territoriales et associations se constituent parties civiles et demandent réparation, notamment de l'atteinte à l'environnement.",
   "question": "Un préjudice écologique pur est-il réparable, malgré l'exigence d'un préjudice personnel ?",
-  "solution": "Rejet des pourvois pour l'essentiel (avec cassation partielle sans renvoi sur certains points) : la chambre criminelle approuve la réparation du préjudice résultant de l'atteinte à l'environnement, y compris le préjudice écologique « pur » (atteinte directe ou indirecte aux intérêts collectifs que protègent les collectivités et associations agréées), distinct du préjudice matériel et moral. Le caractère personnel du préjudice est préservé par la qualité à agir de collectivités investies d'une compétence environnementale. La loi du 8 août 2016 a ensuite consacré le préjudice écologique (art. 1246 à 1252 C. civ.).",
+  "solution": "Rejet des pourvois pour l'essentiel (avec cassation partielle sans renvoi sur certains points) : la chambre criminelle approuve la réparation du préjudice résultant de l'atteinte à l'environnement, y compris le préjudice écologique « pur » (« atteinte directe ou indirecte portée à l'environnement et découlant de l'infraction »), distinct du préjudice matériel et moral. La cassation partielle, sans renvoi, ne porte que sur la recevabilité de la constitution de partie civile de l'association Robin des Bois et sur l'exonération de Total SA de réparations civiles. La loi du 8 août 2016 a ensuite consacré le préjudice écologique (art. 1246 à 1252 C. civ.).",
   "justifie": [
    {
     "argument": "Citer l'arrêt comme la consécration par la Cour de cassation de la réparation du préjudice écologique « pur » avant la loi de 2016, notamment au profit de collectivités territoriales.",

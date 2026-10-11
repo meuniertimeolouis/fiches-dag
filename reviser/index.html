@@ -34,6 +34,13 @@
   </div>
   <form method="dialog"><button class="btn main" value="ok" autofocus>J'ai compris</button></form>
 </dialog>
+<dialog class="avert" id="avert-dag" aria-labelledby="avert-dag-titre" aria-describedby="avert-dag-texte">
+  <h2 id="avert-dag-titre">Section en cours d'édition</h2>
+  <div id="avert-dag-texte">
+    <p>La section <strong>Droit administratif</strong> est <strong>en cours d'édition</strong> : son contenu est incomplet et peut changer.</p>
+  </div>
+  <form method="dialog"><button class="btn main" value="ok" autofocus>J'ai compris</button></form>
+</dialog>
 <footer class="foot">Support de révision établi à titre personnel par un étudiant de Licence 2 ; il n'émane pas de l'Université Jean Monnet et ne remplace ni les cours ni les travaux dirigés. Aucune donnée n'est collectée : la progression et vos fiches sont enregistrées dans ce navigateur uniquement.</footer>
 <script src="../obligations/data/ch01.js?v=4"></script>
 <script src="../obligations/data/ch02.js?v=4"></script>
@@ -89,5 +96,6 @@
 <script src="../assets/dag-data.js"></script>
 <script src="app.js?v=17"></script>
 <script>(function(){var d=document.getElementById("avert");if(d&&d.showModal)d.showModal();else if(d)d.setAttribute("open","")})();</script>
+<script>(function(){var d=document.getElementById("avert-dag"),l=document.querySelector("a.dag");if(!d||!l)return;l.addEventListener("click",function(){var g=document.getElementById("avert");if(g&&g.open)return;if(d.showModal)d.showModal();else d.setAttribute("open","")})})();</script>
 </body>
 </html>

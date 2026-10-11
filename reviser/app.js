@@ -527,13 +527,8 @@ function allUnits() {
 }
 const unitsIn = (ch, src) => allUnits().filter(u => u.ch === ch && (!src || u.src === src));
 const paras = t => String(t || "").split(/\n\n+/).filter(Boolean).map(p => `<p>${fmt(p)}</p>`).join("");
-const LAB = [[/^La (première |seconde |deuxième |troisième )?question/i, "Problème de droit"], [/^En principe|^En outre, l.article|^Or, en principe/i, "Majeure"], [/^En l.espèce/i, "Mineure"], [/^En conclusion|^En condusion/i, "Conclusion"]];
 function officialHtml(paraList) {
-  return paraList.map(p => {
-    if (typeof p === "object") return `<h4 class="ctitle">${fmt(p.h)}</h4>`;
-    const l = LAB.find(x => x[0].test(p));
-    return `<p>${l ? `<span class="lab">${l[1]}</span>` : ""}${fmt(p)}</p>`;
-  }).join("");
+  return paraList.map(p => typeof p === "object" ? `<h4 class="ctitle">${fmt(p.h)}</h4>` : `<p>${fmt(p)}</p>`).join("");
 }
 function caseRow(u) {
   return `<a class="chrow cprow" href="#/obl/outils/cas/${esc(u.id)}"><span class="n">${esc(u.code)}</span><span class="t">${esc(u.titre)}<small class="cpq">${esc(u.apercu || u.q || "")}</small></span><span class="right"><span class="sc">${u.n > 1 ? `question ${u.k} sur ${u.n}` : ""}</span></span></a>`;
@@ -542,24 +537,25 @@ function caseIndex(ch, withNext) {
   const list = unitsIn(ch, "site"), man = unitsIn(ch, "manuel");
   const blocks = [];
   blocks.push(list.length ? `<p class="muted">${plural(list.length, "cas pratique")} dans ce chapitre. Chaque cas est indépendant : choisissez-en un, rédigez votre réponse, puis consultez le corrigé.</p><div class="cplist">${list.map(caseRow).join("")}</div>` : `<p class="muted">Aucun cas pratique pour ce chapitre.</p>`);
-  if (man.length) blocks.push(`<section class="sec"><h2>Cas du manuel</h2><div class="cplist">${man.map(caseRow).join("")}</div></section>`);
+  if (man.length) blocks.push(`<section class="sec"><h2>Cas pratique du manuel Hypercours</h2><p class="muted small">Énoncés et corrigés recopiés tels quels du manuel (HyperCours, Droit des obligations 2027).</p><div class="cplist">${man.map(caseRow).join("")}</div></section>`);
   return blocks.join("");
 }
 function caseView(box, u) {
   const st = { i: 0, shown: {}, all: false, draft: "" };
-  const sib = unitsIn(u.ch, u.src), at = sib.indexOf(u), prev = sib[at - 1], nxt = sib[at + 1];
+  const sib = u.src === "manuel" ? allUnits().filter(x => x.src === "manuel") : unitsIn(u.ch, u.src), at = sib.indexOf(u), prev = sib[at - 1], nxt = sib[at + 1];
   const official = Array.isArray(u.corrige);
   const draw = () => {
     const cor = official ? null : u.corrige, s = CSTEPS[st.i];
     const sectionHtml = k => k === "mineure" ? (cor.mineure || []).map(x => `<div class="minor"><h4>${fmt(x.condition)}</h4><p>${fmt(x.corrige)}</p></div>`).join("") : paras(cor[k]);
     let corr;
-    if (official) corr = st.all ? `<div class="corr"><strong>Corrigé du manuel</strong>${officialHtml(u.corrige)}<p class="small muted src">${esc(u.source || "")}</p></div>` : `<div><button type="button" class="btn main" id="cshow">Afficher le corrigé du manuel</button></div>`;
+    if (official && u.nocorr) corr = `<div class="corr"><strong>Corrigé</strong><p>${esc(u.nocorr)}</p></div>`;
+    else if (official) corr = st.all ? `<div class="corr"><strong>Corrigé du manuel</strong>${officialHtml(u.corrige)}<p class="small muted src">${esc(u.source || "")}</p></div>` : `<div><button type="button" class="btn main" id="cshow">Afficher le corrigé du manuel</button></div>`;
     else if (st.all) corr = `<div class="corr full"><strong>Corrigé complet</strong>${CSTEPS.map(x => `<h3>${esc(x.t)}</h3>${sectionHtml(x.k)}`).join("")}</div>`;
     else corr = st.shown[s.k] ? `<div class="corr"><strong>Corrigé : ${esc(s.t.toLowerCase())}</strong>${sectionHtml(s.k)}</div><div><button type="button" class="btn" id="call">Corrigé complet</button></div>` : `<div class="row"><button type="button" class="btn main" id="cshow">Voir cette étape du corrigé</button><button type="button" class="btn" id="call">Corrigé complet</button></div>`;
     const steps = official ? "" : `<ol class="csteps">${CSTEPS.map((x, i) => `<li class="${i === st.i && !st.all ? "cur" : st.shown[x.k] || st.all ? "done" : ""}">${i + 1}. ${esc(x.t)}</li>`).join("")}</ol>`;
     const work = official ? `` : (st.all ? "" : `<h3>${esc(s.t)}</h3><p class="muted" style="margin:0">${esc(s.h)}</p>`);
     box.innerHTML = `<div class="head"><div class="kick"><a href="#/obl/outils/cas">Cas pratiques</a> · <a href="#/obl/ch/${u.ch}/cas">Chapitre ${u.ch}</a> · Cas ${esc(u.code)}</div><h1>${esc(u.titre)}</h1>${u.n > 1 ? `<p class="muted small">Question ${u.k} sur ${u.n} de ce cas, traitée séparément.</p>` : ""}</div>
-      <section class="enonce"><h2>Énoncé</h2><div class="faits">${paras(u.faits)}</div>${u.q ? `<p class="cq"><strong>${fmt(u.q)}</strong></p>` : ""}</section>
+      <section class="enonce"><h2>Énoncé</h2><div class="faits">${paras(u.faits)}</div>${u.q ? `<p class="cq"><strong>${fmt(u.q)}</strong></p>` : ""}${u.prepa ? `<h3 class="prepa">Travail préparatoire</h3><div class="faits prepa">${paras(u.prepa)}</div>` : ""}</section>
       <section class="panel">${steps}${work}
         <label class="small muted" for="draft">Votre réponse (non enregistrée : elle disparaît quand vous quittez la page)</label><textarea id="draft">${esc(st.draft)}</textarea>
         ${corr}
@@ -580,10 +576,10 @@ function oblBank(id) {
   if (u) { setMain(`<div class="content" id="cb"></div>`); return caseView($("#cb"), u); }
   const all = allUnits(), site = all.filter(x => x.src === "site"), man = all.filter(x => x.src === "manuel");
   const grp = (list, tag) => PARTS.map(p => { const chs = CHS.filter(c => c.part === p.id && list.some(x => x.ch === c.num)); if (!chs.length) return "";
-    return `<section class="sec" id="${tag}-${p.id}"><h2>${esc(p.t)}</h2>${chs.map(c => `<h3 class="cbch"><a href="#/obl/ch/${c.num}/cas">Chapitre ${c.num} · ${esc(c.titre || c.court)}</a> <span class="muted small">${plural(list.filter(x => x.ch === c.num).length, "cas")}</span></h3><div class="cplist">${list.filter(x => x.ch === c.num).map(caseRow).join("")}</div>`).join("")}</section>`; }).join("");
+    return `<section class="sec" id="${tag}-${p.id}"><h2>${esc(p.t)}</h2>${chs.map(c => `<h3 class="cbch"><a href="#/obl/ch/${c.num}/cas">Chapitre ${c.num} · ${esc(c.titre || c.court)}</a> <span class="muted small">${plural(list.filter(x => x.ch === c.num).length, "cas", "cas")}</span></h3><div class="cplist">${list.filter(x => x.ch === c.num).map(caseRow).join("")}</div>`).join("")}</section>`; }).join("");
   setMain(`<div class="head"><h1>Cas pratiques</h1><p class="muted" style="margin-top:6px">${plural(site.length, "cas indépendant", "cas indépendants")}, classés par chapitre. Choisissez un cas, rédigez votre réponse, puis consultez le corrigé, présenté étape par étape ou en entier.</p></div>
-    <div class="content">${grp(site, "cb")}${man.length ? `<h2 class="hman">Cas du manuel</h2>${grp(man, "cm")}` : ""}</div>`);
-  thumbs(PARTS.filter(p => site.some(x => (CHS[x.ch - 1] || {}).part === p.id)).map(p => ["cb-" + p.id, p.court]));
+    <div class="content">${grp(site, "cb")}${man.length ? `<section class="sec" id="cm-top"><h2 class="hman">Cas pratique du manuel Hypercours</h2><p class="muted" style="margin-top:6px">${plural(man.length, "cas pratique")} du manuel HyperCours (Droit des obligations 2027), repris tels quels avec leur corrigé, dans l'ordre du manuel.</p>${grp(man, "cm")}</section>` : ""}</div>`);
+  thumbs(PARTS.filter(p => site.some(x => (CHS[x.ch - 1] || {}).part === p.id)).map(p => ["cb-" + p.id, p.court]).concat(man.length ? [["cm-top", "Manuel Hypercours"]] : []));
 }
 
 /* ---------- Articles ---------- */

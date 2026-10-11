@@ -530,6 +530,7 @@ const paras = t => String(t || "").split(/\n\n+/).filter(Boolean).map(p => `<p>$
 function officialHtml(paraList) {
   return paraList.map(p => typeof p === "object" ? `<h4 class="ctitle">${fmt(p.h)}</h4>` : `<p>${fmt(p)}</p>`).join("");
 }
+const CAS_OPEN = new Set();
 function caseRow(u) {
   return `<a class="chrow cprow" href="#/obl/outils/cas/${esc(u.id)}"><span class="n">${esc(u.code)}</span><span class="t">${esc(u.titre)}<small class="cpq">${esc(u.apercu || u.q || "")}</small></span><span class="right"><span class="sc">${u.n > 1 ? `question ${u.k} sur ${u.n}` : ""}</span></span></a>`;
 }
@@ -544,6 +545,7 @@ function caseView(box, u) {
   const st = { i: 0, shown: {}, all: false, draft: "" };
   const sib = u.src === "manuel" ? allUnits().filter(x => x.src === "manuel") : unitsIn(u.ch, u.src), at = sib.indexOf(u), prev = sib[at - 1], nxt = sib[at + 1];
   const official = Array.isArray(u.corrige);
+  CAS_OPEN.add(u.src + u.ch);
   const draw = () => {
     const cor = official ? null : u.corrige, s = CSTEPS[st.i];
     const sectionHtml = k => k === "mineure" ? (cor.mineure || []).map(x => `<div class="minor"><h4>${fmt(x.condition)}</h4><p>${fmt(x.corrige)}</p></div>`).join("") : paras(cor[k]);
@@ -576,7 +578,7 @@ function oblBank(id) {
   if (u) { setMain(`<div class="content" id="cb"></div>`); return caseView($("#cb"), u); }
   const hyp = id === "hypercours", all = allUnits(), site = all.filter(x => x.src === "site"), man = all.filter(x => x.src === "manuel");
   const grp = (list, tag) => PARTS.map(p => { const chs = CHS.filter(c => c.part === p.id && list.some(x => x.ch === c.num)); if (!chs.length) return "";
-    return `<section class="sec" id="${tag}-${p.id}"><h2>${esc(p.t)}</h2>${chs.map(c => `<h3 class="cbch"><a href="#/obl/ch/${c.num}/cas">Chapitre ${c.num} · ${esc(c.titre || c.court)}</a> <span class="muted small">${plural(list.filter(x => x.ch === c.num).length, "cas", "cas")}</span></h3><div class="cplist">${list.filter(x => x.ch === c.num).map(caseRow).join("")}</div>`).join("")}</section>`; }).join("");
+    return `<section class="sec" id="${tag}-${p.id}"><h2>${esc(p.t)}</h2>${chs.map(c => { const l = list.filter(x => x.ch === c.num), key = l[0].src + c.num; return `<details class="pgch cpch" id="${tag}-ch${c.num}" data-k="${key}" ${CAS_OPEN.has(key) ? "open" : ""}><summary><span class="n">${c.num}</span><span class="t">${esc(c.titre || c.court)}</span><span class="count">${plural(l.length, "cas", "cas")}</span></summary><div class="cplist">${l.map(caseRow).join("")}</div></details>`; }).join("")}</section>`; }).join("");
   const switcher = `<div class="seg" role="group" aria-label="Source des cas"><a href="#/obl/outils/cas" ${!hyp ? 'aria-current="page"' : ""}>Manuel de cas pratique</a><a href="#/obl/outils/cas/hypercours" ${hyp ? 'aria-current="page"' : ""}>Manuel Hypercours</a></div>`;
   const intro = hyp
     ? `${plural(man.length, "cas pratique")} du manuel HyperCours (Droit des obligations 2027), repris tels quels avec leur corrigé, dans l'ordre du manuel.`
@@ -584,6 +586,7 @@ function oblBank(id) {
   const list = hyp ? man : site, tag = hyp ? "cm" : "cb";
   setMain(`<div class="head"><h1>Cas pratiques</h1><div class="row" style="margin-top:10px">${switcher}</div><p class="muted" style="margin-top:10px">${intro}</p></div>
     <div class="content">${grp(list, tag)}</div>`);
+  document.querySelectorAll("details.cpch").forEach(d => d.addEventListener("toggle", () => { d.open ? CAS_OPEN.add(d.dataset.k) : CAS_OPEN.delete(d.dataset.k); }));
   thumbs(PARTS.filter(p => list.some(x => (CHS[x.ch - 1] || {}).part === p.id)).map(p => [tag + "-" + p.id, p.court]));
 }
 

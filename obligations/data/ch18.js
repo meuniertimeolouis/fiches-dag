@@ -46,7 +46,7 @@ OBL.chapitres.push({
         ] },
         { h: "Les conditions relatives au gérant" },
         { liste: [
-          "**Intention de gérer l'affaire d'autrui** : le gérant agit dans l'intérêt du maître (Civ., 25 juin 1919). Cet intérêt n'a pas à être **exclusif** : l'intérêt personnel du gérant n'exclut pas la gestion d'affaires ([[1301-4]], al. 1er). L'acte peut aussi être inspiré par l'intérêt général : celui qui poursuit des voleurs et récupère la recette d'un magasin gère l'affaire de ce dernier (Civ. 1re, 26 janv. 1988).",
+          "**Intention de gérer l'affaire d'autrui** : le gérant agit dans l'intérêt du maître (Civ., 25 juin 1919). Cet intérêt n'a pas à être **exclusif** : l'intérêt personnel du gérant n'exclut pas la gestion d'affaires ([[1301-4]], al. 1er). L'acte peut aussi être inspiré par l'intérêt général : celui qui poursuit des voleurs et récupère la recette d'un magasin gère l'affaire de ce dernier (Civ. 1re, 26 janv. 1988 ; dans le même sens, Civ. 1re, 12 janv. 2012).",
           "**Absence d'obligation préexistante** (« sans y être tenu ») : celui qui agit en exécution d'une obligation **légale** (Civ. 1re, 17 juill. 1996) ou **contractuelle** (Soc., 11 oct. 1984 ; rappel : Civ. 1re, 15 mai 2019) n'est pas gérant d'affaires. La spontanéité est de l'essence du quasi-contrat."
         ] },
         { h: "Les conditions relatives à l'acte de gestion" },
@@ -63,14 +63,14 @@ OBL.chapitres.push({
           ["Principe", "Toutes les obligations d'un **mandataire** ([[1301]])", "Tenu seulement si l'affaire a été **utilement gérée** ([[1301-2]])"],
           ["Contenu", "Soins d'une **personne raisonnable** ; **poursuivre** la gestion jusqu'à ce que le maître ou son successeur puisse y pourvoir ([[1301-1]], al. 1er) ; rendre compte", "Remplir les **engagements** contractés dans son intérêt ; **rembourser les dépenses** ; **indemniser les dommages** subis par le gérant du fait de la gestion ([[1301-2]], al. 1er et 2)"],
           ["Intérêts", "—", "Les sommes avancées portent intérêt **du jour du paiement** ([[1301-2]], al. 3)"],
-          ["Faute", "Responsable de ses fautes ; le juge peut **modérer** l'indemnité due au maître selon les circonstances (urgence, bénévolat) ([[1301-1]], al. 2)", "—"],
+          ["Faute", "Responsable de ses fautes ; le juge peut **modérer** l'indemnité due au maître selon les circonstances (urgence, péril ; bénévolat, par analogie avec le mandat gratuit, art. 1992, al. 2) ([[1301-1]], al. 2)", "—"],
           ["Rémunération", "—", "**Aucune** : la gestion est désintéressée (Civ. 1re, 29 mai 2019)"]
         ] } },
         { p: "Gestion **intéressée** : lorsque le gérant avait aussi un intérêt personnel, la charge des engagements, des dépenses et des dommages se **répartit à proportion des intérêts de chacun** dans l'affaire commune ([[1301-4]], al. 2)." },
         { h: "Les effets à l'égard des tiers" },
         { p: "Quand le gérant conclut des contrats avec des tiers (achat de matériaux, appel à un artisan), qui est engagé envers ceux-ci ?" },
         { liste: [
-          "**Avant 2016** : si le gérant avait agi **au nom du maître**, représentation parfaite, seul le maître était obligé ; s'il avait agi **en son nom propre**, il était seul tenu envers le tiers (Civ. 1re, 2 févr. 2022), sauf à se faire rembourser par le maître.",
+          "**Avant 2016** (distinction posée par Civ. 1re, 14 janv. 1959) : si le gérant avait agi **au nom du maître**, représentation parfaite, seul le maître était obligé ; s'il avait agi **en son nom propre**, il était seul tenu envers le tiers (Civ. 1re, 2 févr. 2022), sauf à se faire rembourser par le maître.",
           "**Depuis 2016** : le maître doit remplir les engagements contractés « **dans son intérêt** » par le gérant ([[1301-2]], al. 1er). Le critère **semble** ne plus être le nom sous lequel le gérant a contracté mais l'intérêt du maître, pourvu que la gestion ait été **utile** : le manuel n'y voit qu'une modification « en partie » des solutions antérieures."
         ] },
         { attention: "Le gérant n'est jamais rémunéré, mais il est **indemnisé de ses dommages** (blessure subie en intervenant, par exemple) : ne confondez pas rémunération et indemnisation." }
@@ -138,9 +138,9 @@ OBL.chapitres.push({
         { h: "Seconde condition : l'absence de justification" },
         { def: { terme: "Enrichissement injustifié", texte: "enrichissement qui ne procède **ni de l'accomplissement d'une obligation par l'appauvri ni de son intention libérale** ([[1303-1]]). Un contrat, la loi, une libéralité, une décision de justice justifient le transfert de valeur." } },
         { liste: [
-          "**Devoir moral, obligation naturelle, amitié** : ils justifient l'appauvrissement. **Exception** : l'aide excédant **notablement** les exigences de la piété filiale ouvre droit à indemnité (Civ. 1re, 12 juill. 1994 ; Civ. 1re, 30 avr. 2025, n° 23-15.838). Même une simple relation d'amitié justifie l'appauvrissement (Civ. 3e, 1er mars 1989).",
+          "**Devoir moral, obligation naturelle, amitié** : ils justifient l'appauvrissement. **Exception** : l'aide excédant **notablement** les exigences de la piété filiale ouvre droit à indemnité (Civ. 1re, 12 juill. 1994 ; Civ. 1re, 23 janv. 2001 ; Civ. 1re, 30 avr. 2025, n° 23-15.838). Même une simple relation d'amitié justifie l'appauvrissement (Civ. 3e, 1er mars 1989).",
           "**Profit personnel** : pas d'indemnisation si l'appauvrissement procède d'un acte accompli par l'appauvri **en vue d'un profit personnel** ([[1303-2]], al. 1er).",
-          "**Faute de l'appauvri** : elle n'exclut plus l'action (avant 2016, la jurisprudence l'écartait en cas de faute caractérisée, voire de faute lourde ou intentionnelle : Civ. 1re, 5 avr. 2018, mais admettait l'action pour une simple imprudence) ; le juge peut seulement **modérer** l'indemnisation ([[1303-2]], al. 2)."
+          "**Faute de l'appauvri** : elle n'exclut plus l'action. Avant 2016, la jurisprudence, hésitante et divisée entre chambres, admettait l'action malgré une simple imprudence ou négligence (Civ. 1re, 11 mars 1997) mais l'écartait en cas de faute caractérisée (Civ. 1re, 15 déc. 1998 ; Com., 19 mai 1998), certains arrêts exigeant une faute lourde ou intentionnelle (Civ. 1re, 5 avr. 2018, n° 17-12.595). Désormais, le juge peut seulement **modérer** l'indemnisation ([[1303-2]], al. 2)."
         ] }
       ]
     },
@@ -152,7 +152,7 @@ OBL.chapitres.push({
         { schema: { type: "etapes", titre: "Tester la subsidiarité dans une copie", etapes: [
           { t: "1. Une autre action existe-t-elle en théorie ?", d: "contrat, responsabilité, gestion d'affaires, indu, action spéciale prévue par la loi" },
           { t: "2. Est-elle fermée par un obstacle de droit ?", d: "prescription, forclusion, autorité de la chose jugée, défaut de preuve : l'action *de in rem verso* est **irrecevable** ([[1303-3]])" },
-          { t: "3. Ou ses conditions ne sont-elles simplement pas réunies en l'espèce ?", d: "la jurisprudence admet alors l'enrichissement injustifié (épouse d'agriculteur privée de salaire différé : Civ. 1re, 14 mars 1995)" },
+          { t: "3. Ou ses conditions ne sont-elles simplement pas réunies en l'espèce ?", d: "la jurisprudence admet alors l'enrichissement injustifié (épouse d'agriculteur privée de salaire différé : Civ. 1re, 14 mars 1995 ; dans le même sens, Civ. 1re, 14 janv. et 25 févr. 2003 ; Civ. 1re, 4 mai 2017, n° 16-15.563)" },
           { t: "4. Conclure", d: "une action « ouverte » ferme la voie ; une action inexistante en l'espèce la laisse ouverte" }
         ] } },
         { attention: "Carence probatoire = obstacle de droit. Le prêteur qui ne peut prouver le prêt (faute d'écrit, [[1359]]) ne peut pas se rabattre sur l'enrichissement injustifié (Civ. 1re, 2 avr. 2009 ; Civ. 1re, 10 janv. 2024)." },
@@ -215,7 +215,7 @@ OBL.regimes.push(
     ],
     exonerations: [
       { nom: "La faute du gérant", question: "Le gérant a-t-il manqué aux soins d'une personne raisonnable ou abandonné la gestion prématurément ?", detail: "Il répond de ses fautes envers le maître ([[1301-1]], al. 1er), mais le juge peut modérer l'indemnité selon les circonstances : urgence, bénévolat (al. 2).", effet: "Dommages et intérêts dus au maître, éventuellement modérés, qui se compensent avec ce que le maître doit au gérant." },
-      { nom: "L'inutilité de la gestion", question: "L'acte était-il inutile ou inopportun ?", detail: "Le maître n'est alors pas tenu au titre de [[1301-2]].", effet: "Le gérant n'obtient que la valeur du profit éventuellement retiré par le maître ([[1301-5]], [[1303]])." }
+      { nom: "L'inutilité de la gestion", question: "L'acte était-il inutile ou inopportun ?", detail: "Le maître n'est alors pas tenu au titre de [[1301-2]].", effet: "Si le maître en a profité, le gérant n'obtient que l'indemnité de l'enrichissement injustifié : la moindre des valeurs de l'enrichissement et de l'appauvrissement ([[1301-5]], [[1303]])." }
     ],
     copie: [
       "Qualifier d'abord (mandat ? gestion d'affaires ?), puis vérifier chaque mot de [[1301]] : sans y être tenu, sciemment, utilement, à l'insu ou sans opposition.",

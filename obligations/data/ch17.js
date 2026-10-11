@@ -18,7 +18,7 @@ OBL.chapitres.push({
         ] },
         { h: "Dans quel délai ?" },
         { schema: { type: "tableau", titre: "Délais de prescription de l'action en responsabilité", colonnes: ["Hypothèse", "Durée", "Point de départ", "Texte"], lignes: [
-          ["Droit commun (contractuel ou extracontractuel)", "**5 ans**", "Jour où la victime a connu ou aurait dû connaître les faits, c'est-à-dire la manifestation du dommage (Civ. 1re, 11 mars 2010)", "[[2224]]"],
+          ["Droit commun (contractuel ou extracontractuel)", "**5 ans**", "Jour où la victime a connu ou aurait dû connaître les faits, c'est-à-dire la manifestation du dommage (Civ. 1re, 11 mars 2010, n° 09-12.710 ; Com., 5 mars 2025, n° 23-23.918)", "[[2224]]"],
           ["Dommage **corporel** (victime directe ou indirecte), atteintes psychiques comprises", "**10 ans**", "**Consolidation** du dommage initial ou aggravé (atteintes psychiques comprises : Civ. 2e, 7 juill. 2022, n° 20-19.147)", "[[2226]], al. 1er"],
           ["Tortures, actes de barbarie, violences ou agressions sexuelles contre un mineur", "**20 ans**", "Idem", "[[2226]], al. 2"],
           ["Produits défectueux", "**3 ans** (et extinction à 10 ans)", "Connaissance du dommage, du défaut et du producteur", "[[1245-16]]"]
@@ -42,7 +42,7 @@ OBL.chapitres.push({
           "**Victime par ricochet** : le fait générateur atteint une autre personne, mais son préjudice (affection, perte de revenus) lui est **propre**. À ne pas confondre avec l'action que les **héritiers** exercent au nom du défunt : les proches peuvent cumuler les deux qualités et demander réparation de deux préjudices distincts.",
           "**Syndicats** : action légale pour l'intérêt collectif de la profession (C. trav., art. L. 2132-3).",
           "**Associations** : elles défendent les intérêts individuels de leurs membres ; pour l'**intérêt collectif**, même sans habilitation légale, l'action est admise s'il entre dans leur **objet social** (Civ. 3e, 26 sept. 2007 ; Civ. 1re, 18 sept. 2008) ; l'admission de l'action pour les intérêts individuels des membres remonte à Civ., 25 nov. 1929.",
-          "**Action de groupe** : créée en 2014 pour les consommateurs, elle a été unifiée et largement ouverte par la loi n° 2025-391 du 30 avril 2025, pour le compte de plusieurs personnes placées dans une situation similaire résultant d'un même manquement d'un professionnel ou d'une personne publique."
+          "**Action de groupe** : créée en 2014 pour les consommateurs, elle a été unifiée et largement ouverte par la loi n° 2025-391 du 30 avril 2025, pour le compte de plusieurs personnes placées dans une situation similaire résultant d'un même manquement, ou d'un manquement de même nature, à des obligations légales ou contractuelles, commis par un professionnel, une personne morale de droit public ou un organisme privé chargé d'un service public."
         ] },
         { h: "Un préjudice certain : la perte de chance" },
         { def: { terme: "Perte de chance", texte: "« disparition actuelle et certaine d'une éventualité favorable » (Ass. plén., 27 juin 2025). Le préjudice final (gagner le procès, réussir le concours) est incertain ; la **chance** perdue, elle, est certaine et se répare, à condition d'être réelle et sérieuse : une chance purement hypothétique ne l'est pas (Civ. 2e, 12 mai 1966, refus pour une carrière de pharmacienne à peine envisagée)." } },
@@ -62,9 +62,9 @@ OBL.chapitres.push({
         { schema: { type: "frise", titre: "Concubinage et naissance : l'évolution de la légitimité", evenements: [
           { date: "27 juill. 1937", t: "Civ.", d: "refus d'indemniser le concubin : il faut la lésion d'un intérêt juridiquement protégé" },
           { date: "27 févr. 1970", t: "Ch. mixte (Dangereux)", d: "le concubin survivant est indemnisé ; seule limite : une relation **stable**, pour la certitude du préjudice" },
-          { date: "17 nov. 2000", t: "Ass. plén. (Perruche)", d: "l'enfant né handicapé, dont la mère a été privée par des fautes médicales de la possibilité d'interrompre sa grossesse, est indemnisé du préjudice résultant de son handicap" },
+          { date: "17 nov. 2000", t: "Ass. plén. (Perruche)", d: "l'enfant né handicapé, dont la mère a été privée par des fautes médicales de la possibilité d'interrompre sa grossesse, est indemnisé du préjudice résultant de son handicap (confirmé par Ass. plén., 13 juill. et 28 nov. 2001), alors que le Conseil d'État refusait (CE, 14 févr. 1997)" },
           { date: "4 mars 2002", t: "Loi « anti-Perruche »", d: "nul ne peut se prévaloir d'un préjudice du seul fait de sa naissance (CASF, art. L. 114-5) ; les parents ne sont indemnisés que de **leur propre préjudice**, sur preuve d'une **faute caractérisée**" },
-          { date: "6 oct. 2005", t: "CEDH (Draon et Maurice c/ France)", d: "l'application immédiate aux instances en cours viole le droit au respect des biens" },
+          { date: "6 oct. 2005", t: "CEDH (Draon et Maurice c/ France)", d: "l'application immédiate aux instances en cours viole le droit au respect des biens ; la Cour de cassation et le Conseil d'État s'alignent (Civ. 1re, 24 janv. 2006 ; CE, 24 févr. 2006)" },
           { date: "11 juin 2010", t: "Cons. const., n° 2010-2 QPC", d: "disposition transitoire censurée : la loi ne vaut que pour les enfants nés après son entrée en vigueur" }
         ] } },
         { p: "La **faute caractérisée** exigée des praticiens s'apprécie selon la jurisprudence (Civ. 1re, 16 janv. 2013). Le préjudice propre des parents ne se limite plus au préjudice moral : il peut inclure des pertes de gains professionnels et une incidence professionnelle, lorsqu'ils cessent ou modifient leur activité pour s'occuper de l'enfant handicapé (Civ. 1re, 15 oct. 2025, n° 24-16.323)." }
@@ -100,7 +100,7 @@ OBL.chapitres.push({
           { date: "11 mai 2010", t: "Soc.", d: "réparation de l'inquiétude permanente des salariés exposés à l'amiante, soumis à des contrôles qui réactivent l'angoisse" },
           { date: "3 mars 2015", t: "Soc.", d: "restriction aux salariés des établissements ouvrant droit à la préretraite amiante (ACAATA)" },
           { date: "5 avr. 2019", t: "Ass. plén., n° 18-17.442", d: "revirement : tout salarié exposé à l'amiante avec un **risque élevé de pathologie grave** peut agir, sur le fondement de l'obligation de sécurité de l'employeur" },
-          { date: "11 sept. 2019", t: "Soc., n° 17-24.879", d: "extension à toute **substance nocive ou toxique** ; le salarié doit prouver une anxiété personnellement subie" },
+          { date: "11 sept. 2019", t: "Soc., n° 17-24.879", d: "extension à toute **substance nocive ou toxique** ; le salarié doit prouver une anxiété personnellement subie (réalité de l'anxiété à prouver : Soc., 15 déc. 2021, n° 20-11.046)" },
           { date: "18 févr. 2026", t: "Civ. 1re, n° 21-23.415 (Distilbène)", d: "hors du travail : l'anxiété née d'un risque élevé de pathologie grave est caractérisée par la seule **connaissance** de ce risque par la victime ; le préjudice était déjà admis pour des effets secondaires de médicaments ou substances dangereuses (Civ. 2e, 15 juin 2023 ; Civ. 1re, 18 déc. 2024, qui le rejette faute de preuve d'une exposition à un risque élevé)" }
         ] } },
         { h: "Le dommage corporel et la nomenclature Dintilhac" },
@@ -112,7 +112,7 @@ OBL.chapitres.push({
         ] } },
         { liste: [
           "**Déficit fonctionnel** : perte de qualité de vie et troubles dans les conditions d'existence, indépendamment des revenus ; poste **extrapatrimonial**, temporaire ou permanent.",
-          "**Préjudice d'agrément** : impossibilité de pratiquer **régulièrement** une activité **spécifique** sportive ou de loisirs (Civ. 2e, 28 mai 2009), à prouver (Civ. 2e, 29 mars 2018) ; il ne recouvre plus la perte générale des agréments de la vie, que l'assemblée plénière y avait incluse (Ass. plén., 19 déc. 2003) et qu'absorbe désormais le déficit fonctionnel (revirement du 28 mai 2009).",
+          "**Préjudice d'agrément** : impossibilité de pratiquer **régulièrement** une activité **spécifique** sportive ou de loisirs (Civ. 2e, 28 mai 2009) ; la victime prouve qu'elle la pratiquait régulièrement et qu'elle ne peut plus la pratiquer, ou seulement de manière limitée (Civ. 2e, 29 mars 2018, n° 17-14.499) ; il ne recouvre plus la perte générale des agréments de la vie, que l'assemblée plénière y avait incluse (Ass. plén., 19 déc. 2003) et qu'absorbe désormais le déficit fonctionnel (revirement du 28 mai 2009).",
           "**Souffrances endurées** (ancien *pretium doloris*) : souffrances physiques et morales jusqu'à la consolidation.",
           "**Préjudice esthétique** : atteinte à l'apparence (cicatrices), temporaire ou permanent.",
           "**Préjudice sexuel** : morphologique, lié à l'acte sexuel, lié à la procréation (Civ. 2e, 17 juin 2010).",
@@ -125,7 +125,7 @@ OBL.chapitres.push({
           ["Patrimoniaux", "Frais d'obsèques ; **perte de revenus** des proches (part des revenus du défunt consacrée à chacun, durée prévisible) ; frais divers", "Pertes de revenus des proches (ex. arrêt de travail pour l'assister) ; frais divers"],
           ["Extrapatrimoniaux", "**Préjudice d'affection** ; préjudice d'accompagnement", "Préjudice d'affection ; préjudices extrapatrimoniaux exceptionnels (bouleversement de la vie familiale)"]
         ] } },
-        { arret: { ref: "Civ. 2e, 14 déc. 2017, n° 16-26.687 ; Civ. 2e, 11 févr. 2021, n° 19-23.525", apport: "L'enfant **déjà conçu** au décès de son père (2017), ou de son grand-père (2021), peut obtenir réparation du préjudice moral que lui cause l'absence définitive du défunt (règle *infans conceptus*). En revanche, l'enfant **non encore conçu** n'a pas de préjudice en lien de causalité avec le décès (Civ. 2e, 11 mars 2021)." } },
+        { arret: { ref: "Civ. 2e, 14 déc. 2017, n° 16-26.687 ; Civ. 2e, 11 févr. 2021, n° 19-23.525", apport: "L'enfant **déjà conçu** au décès de son père (2017), ou de son grand-père (2021), peut obtenir réparation du préjudice moral que lui cause l'absence définitive du défunt (règle *infans conceptus*). En revanche, l'enfant **non encore conçu** n'a pas de préjudice en lien de causalité avec le décès (Civ. 2e, 11 mars 2021, n° 19-17.384). L'arrêt de 2017 est un **revirement** : la 2e chambre civile refusait auparavant toute réparation, à l'enfant déjà conçu (Civ. 2e, 4 nov. 2010, n° 09-68.903) comme à l'enfant non conçu (Civ. 2e, 3 mars 2011, n° 10-16.284)." } },
         { attention: "Le préjudice des victimes par ricochet est soumis aux **mêmes limites** que celui de la victime directe : sa faute leur est opposable (Ass. plén., 19 juin 1981) ; en matière d'accident de la circulation, [[L85-6|art. 6 de la loi de 1985]]." }
       ]
     },
@@ -136,10 +136,10 @@ OBL.chapitres.push({
         { h: "Le principe de réparation intégrale" },
         { p: "Réparer « **tout le préjudice, mais rien que le préjudice** » : replacer la victime dans la situation où elle se serait trouvée sans le fait dommageable, sans perte ni profit." },
         { liste: [
-          "**Tout le préjudice** : pas de réparation partielle, sauf exceptions (clause limitative en matière contractuelle ; en matière contractuelle, seul le dommage **prévisible** est dû, sauf faute lourde ou dolosive, [[1231-3]]). Le juge ne peut pas réduire l'indemnité au motif que son coût serait **disproportionné** pour le responsable (Civ. 3e, 4 avr. 2024, n° 22-21.132).",
+          "**Tout le préjudice** : pas de réparation partielle, sauf exceptions (clause limitative en matière contractuelle ; en matière contractuelle, seul le dommage **prévisible** est dû, sauf faute lourde ou dolosive, [[1231-3]]). En matière extracontractuelle, le juge ne peut pas réduire l'indemnité au motif que son coût serait **disproportionné** pour le responsable (Civ. 3e, 4 avr. 2024, n° 22-21.132).",
           "**Pas d'obligation de minimiser son dommage** : « la victime n'est pas tenue de limiter son préjudice dans l'intérêt du responsable » (Civ. 2e, 19 juin 2003, deux arrêts). Solution critiquée ; le projet de réforme de 2017 prévoyait une réduction sauf dommage corporel.",
           "**Rien que le préjudice** : pas d'enrichissement de la victime, donc pas de **dommages et intérêts punitifs** ; l'indemnité ne varie pas avec la gravité de la faute.",
-          "**Bien usagé** : s'il est réparable, coût de la réparation ; sinon, coût de remplacement (valeur vénale d'un bien équivalent d'occasion) ; à défaut de marché, valeur à neuf, **sans abattement pour vétusté** (Civ. 2e, 23 janv. 2003)."
+          "**Bien usagé** : s'il est réparable, coût de la réparation ; sinon, coût de remplacement (valeur vénale d'un bien équivalent d'occasion) ; à défaut de marché, valeur à neuf (Civ. 2e, 14 janv. 1999), **sans abattement pour vétusté** (Civ. 2e, 23 janv. 2003)."
         ] },
         { h: "L'exception : la sanction civile de l'article 1254" },
         { p: "Créée par la loi n° 2025-391 du 30 avril 2025 (art. 16), en vigueur depuis le 3 mai 2025, elle sanctionne la **faute lucrative** : une somme s'ajoute aux dommages et intérêts compensatoires." },
@@ -200,9 +200,9 @@ OBL.chapitres.push({
         { p: "Le fait d'un tiers n'exonère le défendeur que s'il présente les caractères de la **force majeure** (exonération totale). Sinon, il n'a **aucun effet** à l'égard de la victime : tous les coauteurs d'un même dommage sont tenus ***in solidum***, chacun pour le tout, même s'ils sont responsables sur des fondements différents (contractuel et délictuel, pour faute et sans faute). Ex. : deux chasseurs tirent en même temps sur un promeneur." },
         { schema: { type: "tableau", titre: "L'obligation *in solidum* : dette et contribution", colonnes: ["Stade", "Règle"], lignes: [
           ["**Obligation à la dette** (victime / responsables)", "La victime réclame la **totalité** à l'un quelconque des coauteurs, ou les assigne ensemble"],
-          ["**Contribution à la dette** (entre coauteurs)", "Celui qui a payé exerce un **recours subrogatoire** contre les autres"],
+          ["**Contribution à la dette** (entre coauteurs)", "Celui qui a payé exerce un **recours subrogatoire** contre les autres (règles rappelées par Civ. 2e, 13 sept. 2018, n° 17-20.099 et 17-14.654)"],
           ["Plusieurs fautes", "Partage selon la **gravité** respective des fautes"],
-          ["Plusieurs responsables sans faute", "Partage **par parts égales** (parts viriles), sauf cas particuliers"],
+          ["Plusieurs responsables sans faute", "Partage **par parts égales** (parts viriles), sauf cas particuliers (produits défectueux : Civ. 1re, 18 févr. 2026, n° 24-19.881, remboursement intégral de l'utilisateur sans faute par le producteur)"],
           ["Un fautif et un responsable sans faute", "La charge définitive pèse **entièrement sur le fautif**"]
         ] } },
         { attention: "*In solidum* n'est pas solidarité : la solidarité ne se présume pas ([[1310]]) et suppose un texte ou une clause ; l'obligation *in solidum* est une création jurisprudentielle qui produit l'effet principal de la solidarité (paiement du tout) sans ses effets secondaires." },

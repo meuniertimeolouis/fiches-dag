@@ -21,7 +21,7 @@ OBL.complements[1] = {
     { t: "Qualifier une obligation selon toutes les grilles", p: "Exercice classique : source (acte / fait / loi), objet (faire, ne pas faire / pécuniaire, en nature), intensité (moyens / résultat). Les qualifications se **superposent**, et leur conjonction détermine le régime. Ne pas s'arrêter à une seule grille." },
     { t: "Créancier chirographaire", p: "Le créancier chirographaire n'a que le droit de gage général : ni droit de suite, ni droit de préférence. C'est la raison d'être des sûretés, réelles (hypothèque) ou personnelles (cautionnement), qui améliorent ses chances de paiement." },
     { t: "Intérêts moratoires : ce que le créancier n'a pas à prouver", p: "L'[[1231-6]], al. 2, le dispense de justifier d'une perte. Le point de départ est la mise en demeure. Le préjudice distinct causé par la **mauvaise foi** du débiteur ouvre droit à des dommages et intérêts séparés (al. 3)." },
-    { t: "Obligation de résultat : l'exonération", p: "On n'écrit pas « le débiteur est toujours responsable » : il échappe à sa responsabilité en prouvant la **force majeure** ([[1218]], [[1231-1]]). En obligation de moyens, il suffit au contraire de prouver qu'il a été diligent." }
+    { t: "Obligation de résultat : l'exonération", p: "On n'écrit pas « le débiteur est toujours responsable » : il échappe à sa responsabilité en prouvant la **force majeure** ([[1218]], [[1231-1]]). En obligation de moyens, c'est au contraire au créancier de prouver la faute du débiteur ; celui-ci peut, en pratique, établir sa diligence." }
   ],
   pieges: [
     { faux: "L'obligation en nature est celle qui n'est pas sanctionnée par le juge.",

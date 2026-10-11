@@ -33,7 +33,7 @@ OBL.chapitres.push({
         ] } } },
         { h: "L'accident de la circulation" },
         { liste: [
-          "**Événement fortuit** : le fait **volontaire** est exclu (le conducteur qui fonce délibérément sur une personne ne relève pas de la loi, mais du droit commun).",
+          "**Événement fortuit** : le fait **volontaire** est exclu (le conducteur qui fonce délibérément sur une personne ne relève pas de la loi, mais du droit commun ; rappel : Civ. 2e, 15 févr. 2024, n° 21-22.319).",
           "**Lien avec la circulation** apprécié largement : la loi joue pour un véhicule **en stationnement**, dans un atelier de réparation ou lors d'une cascade de tournage.",
           "Lieu de circulation **public ou privé** (parking, chemin privé) ; en revanche, pas dans un hall d'immeuble.",
           "Exclusion quand l'engin cause le dommage dans sa **fonction d'outil** (chariot élévateur qui lève une charge, moissonneuse-batteuse au travail)."
@@ -43,17 +43,17 @@ OBL.chapitres.push({
         { schema: { type: "tableau", titre: "VTAM ou pas ?", colonnes: ["Engin", "Qualification", "Source"], lignes: [
           ["Voiture, moto, scooter, camion, tracteur", "**VTAM**", "Définition même"],
           ["Tondeuse autoportée, mini-moto", "**VTAM** (même si la circulation n'est pas sa fonction principale)", "Civ. 2e, 24 juin 2004 ; Civ. 2e, 22 oct. 2015"],
-          ["Fauteuil roulant électrique", "**Pas un VTAM** : dispositif médical de déplacement", "Civ. 2e, 6 mai 2021, n° 20-14.551"],
+          ["Fauteuil roulant électrique", "**Pas un VTAM** : dispositif médical de déplacement", "Civ. 2e, 6 mai 2021, n° 20-14.551 ; solution confirmée depuis par C. assur., art. L. 211-1, al. 2"],
           ["Vélo à assistance électrique", "Hors de la notion de véhicule à moteur pour l'assurance obligatoire (assistance au pédalage seulement)", "CJUE, 12 oct. 2023, aff. C-286/22"],
           ["Trottinette électrique et autres engins motorisés", "Qualification probable (assurance obligatoire), non tranchée", "Jurisprudence à venir"],
-          ["Train, tramway sur voie propre", "**Exclus** ([[L85-1|art. 1er]])", "Un train au passage à niveau reste sur sa voie propre ; un tramway qui traverse un carrefour ouvert aux autres usagers n'y est pas"]
+          ["Train, tramway sur voie propre", "**Exclus** ([[L85-1|art. 1er]])", "Un train au passage à niveau reste sur sa voie propre (loi écartée : Civ. 2e, 17 nov. 2016, n° 15-27.832 ; 8 déc. 2016, n° 15-26.265) ; un tramway qui traverse un carrefour ouvert aux autres usagers n'y est pas (précisions sur la voie propre : Civ. 2e, 5 mars 2020, n° 19-11.411 ; 21 déc. 2023, n° 21-25.352)"]
         ] } },
         { h: "L'implication" },
         { p: "Le législateur a choisi l'**implication** pour rompre avec la causalité : est impliqué le véhicule qui a **joué un rôle quelconque** dans l'accident, même s'il n'en est pas la cause (rappel récent : Civ. 2e, 3 avr. 2025, n° 23-19.534). La preuve varie selon les situations." },
         { schema: { type: "tableau", titre: "La preuve de l'implication", colonnes: ["Situation", "Solution", "Référence"], lignes: [
-          ["**Contact** entre le véhicule et la victime (ou son véhicule)", "Implication **certaine**, que le véhicule soit **en mouvement ou à l'arrêt**", "Civ. 2e, 23 mars 1994 : est nécessairement impliqué tout VTAM heurté, à l'arrêt ou en mouvement"],
+          ["**Contact** entre le véhicule et la victime (ou son véhicule)", "Implication **certaine**, que le véhicule soit **en mouvement ou à l'arrêt**", "Civ. 2e, 23 mars 1994 : est nécessairement impliqué tout VTAM heurté, à l'arrêt ou en mouvement (revirement : jusque-là, la victime devait prouver le rôle perturbateur du véhicule en stationnement)"],
           ["**Pas de contact**", "La victime doit prouver que le véhicule a **joué un rôle** (éblouissement, manœuvre qui fait chuter, gravillons projetés)", "Appréciation souple : véhicule de pompiers dont le conducteur fait signe aux cyclistes (Civ. 2e, 1er juin 2011)"],
-          ["**Accident complexe** (carambolage)", "Sont impliqués **tous les véhicules intervenus à quelque titre que ce soit** dans un accident traité comme un **fait unique**, s'il y a continuité temporelle et causale", "Abandon de l'appréciation collision par collision, qui prévalait auparavant ; continuité appréciée au cas par cas (Civ. 2e, 24 mai 2018, n° 17-19.445)"]
+          ["**Accident complexe** (carambolage)", "Sont impliqués **tous les véhicules intervenus à quelque titre que ce soit** dans un accident traité comme un **fait unique**, s'il y a continuité temporelle et causale", "Civ. 2e, 2 oct. 2008 ; 17 juin 2010 ; rappel : Civ. 2e, 15 déc. 2022, n° 21-11.423. Abandon de l'appréciation collision par collision, qui prévalait auparavant ; continuité appréciée au cas par cas (Civ. 2e, 24 mai 2018, n° 17-19.445)"]
         ] } },
         { h: "L'imputabilité du dommage à l'accident" },
         { p: "Le dommage doit se rattacher à l'accident. L'imputabilité est **présumée** : le conducteur impliqué ne s'en libère qu'en prouvant que l'accident est **sans relation** avec le dommage (Civ. 2e, 19 févr. 1997). La présomption vaut pour un dommage apparu peu après l'accident ; pour un suicide survenu des mois plus tard, les ayants droit doivent prouver le lien." },
@@ -85,10 +85,10 @@ OBL.chapitres.push({
         { attention: "Recherche volontaire du dommage = avoir **voulu l'atteinte corporelle** (suicide, automutilation). C'est la seule faute opposable aux victimes super-protégées." },
         { h: "La faute du conducteur victime" },
         { p: "Le conducteur est la « victime sacrifiée » de la loi : **toute faute** peut réduire ou supprimer son indemnisation ([[L85-4|art. 4]]), pour des raisons surtout financières (coût pour les assureurs)." },
-        { def: { terme: "Conducteur", texte: "celui qui a la **maîtrise** du véhicule ou se trouve **dans ou sur** celui-ci au moment de l'accident. La personne éjectée ou descendue du véhicule peut avoir perdu cette qualité ; en cas de doute, la preuve incombe à celui qui invoque la qualité de conducteur." } },
+        { def: { terme: "Conducteur", texte: "celui qui a la **maîtrise** du véhicule ou se trouve **dans ou sur** celui-ci au moment de l'accident. Est conducteur le cyclomotoriste qui attache son casque sur sa machine (Civ. 2e, 29 mars 2012), non le passager qui saisit le volant pour rétablir la trajectoire (Civ. 2e, 23 mars 2017, n° 15-25.585). La personne éjectée ou descendue du véhicule peut avoir perdu cette qualité ; en cas de doute, la preuve incombe à celui qui invoque la qualité de conducteur." } },
         { schema: { type: "etapes", titre: "Appliquer l'article 4 au conducteur victime", etapes: [
           { t: "Caractériser une faute", d: "excès de vitesse, alcool, franchissement de ligne blanche, casque ou ceinture non attaché, etc." },
-          { t: "Vérifier son rôle causal", d: "la faute doit avoir **contribué à la réalisation de son préjudice** (Ch. mixte, 28 mars 1997). Un état d'ivresse ne suffit pas sans lien avec le dommage (Ass. plén., 6 avr. 2007), pas plus que l'absence de permis (Crim., 27 nov. 2007)." },
+          { t: "Vérifier son rôle causal", d: "la faute doit avoir **contribué à la réalisation de son préjudice** (Crim., 22 mai 1996 ; Ch. mixte, 28 mars 1997). Un état d'ivresse ne suffit pas sans lien avec le dommage (Ass. plén., 6 avr. 2007), pas plus que l'absence de permis (Crim., 27 nov. 2007)." },
           { t: "Apprécier la faute isolément", d: "en faisant **abstraction du comportement des autres conducteurs** (Civ. 2e, 13 oct. 2005)." },
           { t: "Fixer l'effet", d: "limitation ou exclusion, appréciée souverainement par les juges du fond ; l'exclusion totale n'exige pas les caractères de la force majeure." }
         ] } },
@@ -108,25 +108,25 @@ OBL.chapitres.push({
       contenu: [
         { p: "Transposant la directive du 25 juillet 1985, la loi du 19 mai 1998 a créé une **responsabilité de plein droit du producteur**, qu'il soit ou non lié par contrat avec la victime ([[1245]]). La France, condamnée pour transposition imparfaite (CJCE, 25 avr. 2002 et 14 mars 2006), a modifié le texte, notamment sur la responsabilité du fournisseur (loi du 5 avril 2006)." },
         { schema: { type: "arbre", titre: "Conditions de la responsabilité du producteur", racine: { t: "[[1245]]", d: "responsabilité sans faute", enfants: [
-          { t: "Un produit", d: "tout bien **meuble**, même incorporé dans un immeuble ; électricité ; produits du sol, de l'élevage ; éléments du corps humain ([[1245-2]])" },
+          { t: "Un produit", d: "tout bien **meuble**, même incorporé dans un immeuble ; électricité ; produits du sol, de l'élevage ([[1245-2]]) ; éléments du corps humain, qui y sont assimilés (v. [[1245-11]])" },
           { t: "Un défaut", d: "le produit n'offre pas la **sécurité à laquelle on peut légitimement s'attendre** ([[1245-3]])" },
           { t: "Une mise en circulation", d: "dessaisissement **volontaire** du producteur ; une seule mise en circulation ([[1245-4]])" },
           { t: "Un dommage réparable", d: "atteinte à la personne ; atteinte à un **autre bien** que le produit, au-delà de 500 € ([[1245-1]])" },
           { t: "Un lien de causalité", d: "entre le défaut et le dommage, prouvé par la victime ([[1245-8]])" }
         ] } } },
         { h: "Le produit" },
-        { p: "Définition large ([[1245-2]]). En sont exclus les **immeubles** (responsabilité des constructeurs : les personnes responsables sur le fondement des articles 1792 s. ne sont pas des producteurs, [[1245-5]], al. 3) et l'information inexacte d'un article de journal, qui n'est pas un produit (CJUE, 10 juin 2021, aff. C-65/20). Terrain privilégié : les **médicaments** et produits de santé." },
+        { p: "Définition large ([[1245-2]]). En sont exclus les **immeubles** (responsabilité des constructeurs : les personnes responsables sur le fondement des articles 1792 s. ne sont pas des producteurs, [[1245-5]], dernier al.) et l'information inexacte d'un article de journal, qui n'est pas un produit (CJUE, 10 juin 2021, aff. C-65/20). Terrain privilégié : les **médicaments** et produits de santé." },
         { h: "Le défaut" },
         { liste: [
           "Notion de **sécurité**, non d'aptitude à l'usage : un produit qui ne marche pas relève de la garantie des vices ou de la conformité, pas de [[1245]].",
           "Appréciation *in abstracto*, selon toutes les circonstances : **présentation**, **usage raisonnablement attendu**, **moment de la mise en circulation** ([[1245-3]], al. 2). Un produit n'est pas défectueux du seul fait qu'un autre, plus perfectionné, est sorti ensuite (al. 3).",
-          "**Défaut d'information** : une notice qui ne signale pas un risque suffit souvent à caractériser le défaut ; mais la mention du risque n'exonère pas toujours, notamment si le bilan bénéfice/risque est défavorable.",
+          "**Défaut d'information** : une notice qui ne signale pas un risque suffit souvent à caractériser le défaut (ex. Dépakine : Civ. 1re, 27 nov. 2019, n° 18-16.537) ; mais la mention du risque n'exonère pas toujours, notamment si le bilan bénéfice/risque est défavorable (Civ. 1re, 26 sept. 2018, n° 17-21.271).",
           "Le respect des règles de l'art, des normes ou d'une **autorisation administrative** (AMM) n'exclut pas le défaut ([[1245-9]]).",
           "Si le **type ou la série** est défectueux, inutile de prouver le défaut de l'exemplaire utilisé (CJUE, 5 mars 2015).",
           "Preuve **double** : la victime établit le **défaut** et le lien causal avec le dommage, mais aussi que le dommage est **imputable au produit** ; la Cour de cassation l'a affirmé à propos de l'intoxication d'un agriculteur par un produit phytosanitaire (Civ. 1re, 21 oct. 2020, Monsanto)."
         ] },
         { h: "La preuve" },
-        { p: "La victime prouve le **dommage**, le **défaut** et le **lien de causalité** ([[1245-8]]). Elle peut recourir à des **présomptions graves, précises et concordantes** (Civ. 1re, 22 mai 2008, vaccin contre l'hépatite B), même quand la science n'établit ni n'exclut le lien (CJUE, 21 juin 2017, aff. C-621/15), mais sans présomption irréfragable. L'appréciation des indices (proximité temporelle, absence d'antécédents) relève des juges du fond." },
+        { p: "La victime prouve le **dommage**, le **défaut** et le **lien de causalité** ([[1245-8]]). Elle peut recourir à des **présomptions graves, précises et concordantes** (Civ. 1re, 22 mai 2008, vaccin contre l'hépatite B), même quand la science n'établit ni n'exclut le lien (CJUE, 21 juin 2017, aff. C-621/15), mais sans présomption irréfragable. L'appréciation des indices (proximité temporelle, absence d'antécédents) relève des juges du fond. Ce contentieux a été sinueux : refus faute de preuve scientifique (Civ. 1re, 23 sept. 2003), ouverture aux présomptions (2008), question préjudicielle (Civ. 1re, 12 nov. 2015) ; après l'arrêt de la CJUE, la Cour de cassation reste peu favorable aux victimes de vaccins (Civ. 1re, 18 oct. 2017)." },
         { h: "Le producteur et les autres responsables" },
         { schema: { type: "tableau", titre: "Qui répond du défaut ?", colonnes: ["Personne", "Régime", "Texte"], lignes: [
           ["Fabricant du produit fini, producteur d'une matière première, fabricant d'une partie composante (à titre professionnel)", "**Producteur**", "[[1245-5]], al. 1er"],
@@ -149,7 +149,7 @@ OBL.chapitres.push({
           ["Exemple", "Produit mis en circulation le 1er mars 2024 : responsabilité éteinte le 1er mars 2034, sauf action engagée avant", "Victime qui apprend tout le 10 janv. 2026 : action possible jusqu'au 10 janv. 2029"],
           ["Tempérament", "Pas d'extinction en cas de **faute** du producteur (« sauf faute du producteur »)", "Voir l'évolution sur la consolidation, ci-dessous"]
         ] } },
-        { p: "La 1re chambre civile avait fixé le point de départ de la prescription à la **consolidation** du dommage et jugé qu'il ne pouvait pas courir pour une maladie évolutive (Civ. 1re, 5 juill. 2023, n° 22-18.914). La CJUE a condamné cette lecture : le délai court dès que la victime connaît le dommage, apparu de façon certaine, **peu important son évolution ultérieure**, ainsi que le défaut et le producteur (CJUE, 26 mars 2026, *LF c/ Sanofi Pasteur*, aff. C-338/24, qui juge aussi le délai de dix ans compatible avec le droit d'accès au juge). La Cour de cassation devrait s'aligner." },
+        { p: "La 1re chambre civile avait d'abord retardé le point de départ de la prescription à la remise du rapport d'expertise (Civ. 1re, 27 nov. 2019, Dépakine), puis l'avait fixé à la **consolidation** du dommage et jugé qu'il ne pouvait pas courir pour une maladie évolutive (Civ. 1re, 5 juill. 2023, n° 22-18.914). La CJUE a condamné cette lecture : le délai court dès que la victime connaît le dommage, apparu de façon certaine, **peu important son évolution ultérieure**, ainsi que le défaut et le producteur (CJUE, 26 mars 2026, *LF c/ Sanofi Pasteur*, aff. C-338/24, qui juge aussi le délai de dix ans compatible avec le droit d'accès au juge). La Cour de cassation devrait s'aligner." },
         { h: "Des causes d'exonération limitativement énumérées" },
         { schema: { type: "tableau", titre: "Ce que le producteur peut invoquer", colonnes: ["Moyen", "Effet", "Texte"], lignes: [
           ["Absence de mise en circulation ; défaut né après la mise en circulation ; produit non destiné à la distribution", "Exonération totale", "[[1245-10]], 1° à 3°"],
@@ -186,7 +186,7 @@ OBL.chapitres.push({
     {
       titre: "Les troubles anormaux de voisinage",
       contenu: [
-        { p: "Création prétorienne (arrêt du 27 novembre 1844, sous le visa des articles 544 et 1382 anciens), la responsabilité s'est détachée de la faute et de l'abus de droit pour reposer sur un principe autonome : « **nul ne doit causer à autrui un trouble anormal de voisinage** » (Civ. 2e, 19 nov. 1986). La loi du 15 avril 2024 l'a codifiée à [[1253]], en reprenant l'essentiel de la jurisprudence." },
+        { p: "Création prétorienne (arrêt du 27 novembre 1844, sous le visa de l'article 544 et de l'ancien article 1382), la responsabilité s'est détachée de la faute et de l'abus de droit pour reposer sur un principe autonome : « **nul ne doit causer à autrui un trouble anormal de voisinage** » (Civ. 2e, 19 nov. 1986). La loi du 15 avril 2024 l'a codifiée à [[1253]], en reprenant l'essentiel de la jurisprudence." },
         { schema: { type: "arbre", titre: "La responsabilité de l'article 1253", racine: { t: "Responsabilité **de plein droit** ([[1253]], al. 1er)", enfants: [
           { t: "Un trouble", d: "bruit, odeurs, vibrations, fumées, perte d'ensoleillement, poussières ; en principe durable, parfois un événement unique (Civ. 3e, 8 nov. 2018)" },
           { t: "Anormal", d: "excède les inconvénients normaux de voisinage : intensité, heure, lieu (ville ou campagne), seuil de la personne raisonnable ; peu importe que l'activité soit licite ou autorisée" },
@@ -195,13 +195,13 @@ OBL.chapitres.push({
           { lien: "sauf", t: "Préoccupation", d: "activité antérieure à l'installation de la victime, conforme aux lois et règlements, poursuivie sans aggravation (al. 2)" }
         ] } } },
         { liste: [
-          "**Pas de faute** à prouver, et l'absence de faute ne libère pas le responsable. Seule la **cause étrangère** exonère, selon le droit commun.",
+          "**Pas de faute** à prouver, et l'absence de faute ne libère pas le responsable : responsabilité purement objective (déjà avant 2024 : Civ. 3e, 16 mars 2022, n° 18-23.954). Hors la préoccupation (ci-dessous), seule la **cause étrangère** exonère, selon le droit commun.",
           "Le **propriétaire** répond du seul fait de son titre, même s'il n'occupe pas les lieux : il peut être tenu *in solidum* avec l'occupant.",
-          "L'entrepreneur « voisin occasionnel », que la jurisprudence retenait (Civ. 3e, 30 juin 1998), n'est plus dans la liste ; le **maître d'ouvrage**, lui, y figure.",
-          "L'autorisation administrative ou le « patrimoine sensoriel des campagnes » (C. envir., art. L. 110-1) ne rendent pas normal un trouble excessif."
+          "L'entrepreneur « voisin occasionnel », que la jurisprudence retenait parfois (Civ. 3e, 30 juin 1998), n'est plus dans la liste, ce qui semble mettre fin à cette jurisprudence ; le **maître d'ouvrage**, lui, y figure.",
+          "L'autorisation administrative ou le « patrimoine sensoriel des campagnes » (C. envir., art. L. 110-1) ne rendent pas normal un trouble excessif (Civ. 3e, 7 déc. 2023, n° 22-22.137)."
         ] },
         { h: "La préoccupation" },
-        { p: "Il serait peu cohérent qu'on se plaigne d'un trouble qui existait avant son arrivée. L'article 1253, al. 2, exclut donc la responsabilité quand le trouble provient d'activités **antérieures** à l'acte qui transfère la propriété ou la jouissance à la victime (ou, à défaut d'acte, à son entrée en possession), à trois conditions : activités **conformes aux lois et règlements**, poursuivies **dans les mêmes conditions** ou dans des conditions nouvelles **qui n'aggravent pas** le trouble. Pour les **activités agricoles**, l'article L. 311-1-1 du Code rural est plus souple : il admet aussi les changements résultant d'une mise en conformité ou sans modification substantielle de leur nature ou de leur intensité." }
+        { p: "Il serait peu cohérent qu'on se plaigne d'un trouble qui existait avant son arrivée. L'article 1253, al. 2, exclut donc la responsabilité quand le trouble provient d'activités **antérieures** à l'acte qui transfère la propriété ou la jouissance à la victime (ou, à défaut d'acte, à son entrée en possession) ; ces activités doivent en outre être **conformes aux lois et règlements** et s'être poursuivies **dans les mêmes conditions** ou dans des conditions nouvelles **qui n'aggravent pas** le trouble. Pour les **activités agricoles**, l'article L. 311-1-1 du Code rural est plus souple : il admet aussi les changements résultant d'une mise en conformité ou sans modification substantielle de leur nature ou de leur intensité." }
       ]
     },
     {
@@ -280,7 +280,7 @@ OBL.regimes.push(
     fondement: ["1245", "1245-3", "1245-8", "1245-10", "1245-15", "1245-16"],
     resume: "Engager la responsabilité sans faute du producteur pour le dommage causé par le défaut de sécurité de son produit, contractant ou non de la victime.",
     conditions: [
-      { nom: "Un produit", question: "Un bien meuble (même incorporé à un immeuble), l'électricité, un produit du corps humain ?", detail: "[[1245-2]]. Pas les immeubles (constructeurs : [[1245-5]], al. 3)." },
+      { nom: "Un produit", question: "Un bien meuble (même incorporé à un immeuble), l'électricité, un produit du corps humain ?", detail: "[[1245-2]]. Pas les immeubles (constructeurs : [[1245-5]], dernier al.)." },
       { nom: "Un producteur ou assimilé", question: "Le défendeur est-il fabricant, producteur de matière première ou de composante, importateur, ou se présente-t-il comme producteur ?", detail: "[[1245-5]] ; composante et incorporateur solidaires ([[1245-7]]). Le fournisseur n'est tenu que si le producteur n'est pas identifié et s'il ne désigne pas son fournisseur dans les trois mois ([[1245-6]]).", piege: "Assigner le vendeur alors que le producteur est connu." },
       { nom: "Une mise en circulation", question: "Le producteur s'est-il volontairement dessaisi du produit ?", detail: "[[1245-4]] ; une seule mise en circulation ; point de départ du délai de dix ans." },
       { nom: "Un défaut de sécurité", question: "Le produit offrait-il la sécurité à laquelle on pouvait légitimement s'attendre, compte tenu de sa présentation, de son usage attendu et du moment de sa mise en circulation ?", detail: "[[1245-3]] ; le défaut d'information suffit souvent ; normes et AMM indifférentes ([[1245-9]]).", preuve: "Victime ([[1245-8]]) ; présomptions graves, précises et concordantes admises.", piege: "Confondre défaut de sécurité et défaut d'usage (garantie des vices)." },

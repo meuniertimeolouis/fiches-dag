@@ -31,7 +31,7 @@ OBL.chapitres.push({
           ["Simplement potestative", "Dépend de la volonté du débiteur, mais aussi de circonstances extérieures (« si je démissionne »)", "Valable (distinction doctrinale reçue en jurisprudence)", "Valable si la réalisation ne dépend pas de la **seule** volonté du débiteur"],
           ["Purement potestative", "Dépend de la seule volonté du débiteur (« si je le veux »)", "Nulle (art. 1174 anc.), si suspensive et du côté du débiteur", "**Nulle**, sauf exécution en connaissance de cause"]
         ] } },
-        { p: "Les distinctions anciennes restent applicables aux contrats conclus avant le 1er octobre 2016. Le texte nouveau abandonne les catégories pour un critère unique : la réalisation dépend-elle de la **seule volonté du débiteur** ? Une condition apparemment extérieure (le mariage du vendeur) peut être potestative si le débiteur en maîtrise seul la survenance." },
+        { p: "Les distinctions anciennes restent applicables aux contrats conclus avant le 1er octobre 2016. Le texte nouveau abandonne les catégories pour un critère unique : la réalisation dépend-elle de la **seule volonté du débiteur** ? Il consacre ainsi la jurisprudence antérieure, qui annulait déjà toute condition soumettant, sous des présentations diverses, l'exécution à l'**arbitraire du débiteur**. Une condition apparemment extérieure (le mariage du vendeur) peut être potestative si le débiteur en maîtrise seul la survenance." },
         { p: "Sous l'empire du droit antérieur, la nullité ne frappait que la condition **suspensive**, **purement potestative**, du côté du **débiteur** : la condition **résolutoire** potestative était admise (faculté de rachat, [[1659]] ; reprise d'un article dans les magasins qui acceptent l'échange). L'article [[1304-2]] vise l'obligation « contractée sous une condition » sans distinguer suspensive et résolutoire : la portée exacte du texte sur ce point relève de l'interprétation." }
       ]
     },
@@ -53,7 +53,7 @@ OBL.chapitres.push({
           "Avant la réforme, la fiction de l'ancien article 1178 (Civ. 3e, 12 sept. 2007) jouait avec modération : la jurisprudence n'exigeait de la partie tenue que des **diligences moyennes** pour que la condition se réalise."
         ] },
         { h: "La renonciation" },
-        { p: "Une partie peut renoncer à la condition stipulée **dans son intérêt exclusif**, tant que celle-ci n'est **ni accomplie ni défaillie** ([[1304-4]], rédaction issue de la loi du 20 avril 2018). La condition de prêt est stipulée dans l'intérêt exclusif de l'acquéreur : lui seul peut y renoncer, et avant l'échéance." },
+        { p: "Une partie peut renoncer à la condition stipulée **dans son intérêt exclusif**, tant que celle-ci n'est **ni accomplie ni défaillie** ([[1304-4]], rédaction issue de la loi du 20 avril 2018), qui codifie une jurisprudence constante (Com. 20 févr. 2007, n° 05-19.601). La condition de prêt est stipulée dans l'intérêt exclusif de l'acquéreur : lui seul peut y renoncer, et avant l'échéance." },
         { h: "Le dénouement" },
         { schema: { type: "etapes", titre: "Le sort de l'obligation sous condition suspensive", etapes: [
           { t: "Conclusion du contrat", d: "le lien contractuel existe ; l'obligation est en suspens ; les risques de la chose restent au débiteur" },
@@ -61,7 +61,7 @@ OBL.chapitres.push({
           { t: "Accomplissement", d: "l'obligation devient pure et simple **à compter de l'accomplissement**, sans rétroactivité ([[1304-6]], al. 1er), sauf stipulation contraire ; même alors, risques, administration et fruits restent au débiteur jusqu'à l'accomplissement (al. 2)" },
           { t: "Ou défaillance", d: "l'obligation est réputée n'avoir **jamais existé** ([[1304-6]], al. 3) : restitution de ce qui aurait été exécuté" }
         ] } },
-        { attention: "Revirement de 2016 : sous l'empire de l'ancien article 1179, l'accomplissement de la condition suspensive **rétroagissait** au jour de l'engagement. Depuis la réforme, la rétroactivité n'existe plus que si les parties l'ont **stipulée** ([[1304-6]], al. 2). Dans une vente sous condition suspensive, le transfert de propriété n'intervient donc, en principe, qu'au jour de l'accomplissement." },
+        { attention: "Changement opéré par l'ordonnance de 2016 : sous l'empire de l'ancien article 1179, l'accomplissement de la condition suspensive **rétroagissait** au jour de l'engagement. Depuis la réforme, la rétroactivité n'existe plus que si les parties l'ont **stipulée** ([[1304-6]], al. 2). Dans une vente sous condition suspensive, le transfert de propriété n'intervient donc, en principe, qu'au jour de l'accomplissement." },
         { p: "Condition **résolutoire** : son accomplissement **éteint rétroactivement** l'obligation, sans remettre en cause les actes conservatoires et d'administration ([[1304-7]], al. 1er). Pas de rétroactivité si les parties l'ont écartée ou si les prestations échangées ont trouvé leur **utilité au fur et à mesure** de l'exécution réciproque (al. 2), ce qui vise les contrats à exécution successive. Si elle défaille, l'obligation est **consolidée**." }
       ]
     },
@@ -70,14 +70,14 @@ OBL.chapitres.push({
       contenu: [
         { def: { terme: "Terme", texte: "événement **futur et certain** qui diffère l'**exigibilité** de l'obligation, « encore que la date en soit incertaine » ([[1305]]). Le terme affecte l'exigibilité (terme suspensif) ou la durée (terme extinctif), jamais l'existence de l'obligation." } },
         { schema: { type: "tableau", titre: "Les classifications du terme", colonnes: ["Critère", "Distinction", "Exemple"], lignes: [
-          ["Source", "**Conventionnel** (exprès ou tacite, [[1305-1]], al. 1er), **judiciaire** (fixé par le juge à défaut d'accord, al. 2 ; délais de grâce de [[1343-5]], deux ans au plus), **légal**", "Livraison d'une maison à achever : terme tacite"],
+          ["Source", "**Conventionnel** (exprès ou tacite, [[1305-1]], al. 1er), **judiciaire** (fixé par le juge à défaut d'accord, al. 2 ; délais de grâce de [[1343-5]], deux ans au plus), **légal** (moratoires légaux)", "Livraison d'une maison à achever : terme tacite"],
           ["Date", "**Certain** : date connue ; **incertain** : date inconnue, survenance certaine", "« Le 31 juillet » / « au décès de X »"],
           ["Effet", "**Suspensif** : diffère l'exigibilité ; **extinctif** : met fin à l'obligation", "CDD du 1er juillet (suspensif) au 31 août (extinctif)"],
           ["Bénéficiaire", "Débiteur (présomption), créancier, ou les deux ([[1305-3]])", "Prêt à intérêt : terme souvent stipulé dans l'intérêt des deux parties"]
         ] } },
         { h: "Les effets du terme suspensif" },
         { liste: [
-          "**Avant l'échéance** : la dette **existe** mais n'est **pas exigible** : « ce qui n'est dû qu'à terme ne peut être exigé avant l'échéance » ([[1305-2]]). Le créancier peut accomplir des actes conservatoires. Ce qui a été **payé d'avance ne peut être répété** (même texte) : la dette existait.",
+          "**Avant l'échéance** : la dette **existe** mais n'est **pas exigible** : « ce qui n'est dû qu'à terme ne peut être exigé avant l'échéance » ([[1305-2]]). Le créancier peut accomplir des actes conservatoires ou agir en nullité de l'obligation. Ce qui a été **payé d'avance ne peut être répété** (même texte) : la dette existait.",
           "**À l'échéance** : l'obligation devient exigible ; les intérêts moratoires et l'exécution forcée supposent en principe une **mise en demeure** ([[1344]], [[1344-1]]).",
           "**Terme extinctif** : l'obligation s'exécute normalement puis s'éteint **sans rétroactivité** ; pour le contrat à durée déterminée, voir [[1212]]."
         ] },
@@ -88,7 +88,7 @@ OBL.chapitres.push({
           "**Déchéance conventionnelle** : clause d'exigibilité anticipée en cas de défaillance (échéances impayées d'un prêt), très fréquente.",
           "**Effet relatif** : la déchéance encourue par un débiteur est **inopposable à ses coobligés, même solidaires, et à ses cautions** ([[1305-5]]) : eux conservent le bénéfice du terme."
         ] },
-        { attention: "Le décès du débiteur n'entraîne pas la déchéance du terme (Civ. 1re, 20 oct. 2021, n° 20-13.661). L'ouverture d'une sauvegarde ou d'un redressement judiciaire ne rend pas exigibles les créances non échues ; le jugement qui ouvre ou prononce la **liquidation judiciaire**, en revanche, les rend exigibles (C. com., art. L. 643-1), sous des réserves propres au droit des entreprises en difficulté." },
+        { attention: "Le décès du débiteur n'entraîne pas la déchéance du terme (Civ. 1re, 20 oct. 2021, n° 20-13.661). Depuis la loi du 25 janvier 1985, l'ouverture d'une procédure collective n'est plus en soi une cause de déchéance du terme : l'ouverture d'une sauvegarde ou d'un redressement judiciaire ne rend pas exigibles les créances non échues ; le jugement qui ouvre ou prononce la **liquidation judiciaire**, en revanche, les rend exigibles (C. com., art. L. 643-1), sous des réserves propres au droit des entreprises en difficulté." },
         { p: "Avant la réforme, la Cour de cassation lisait l'ancien article 1188 **strictement** : il ne visait que les sûretés **conventionnelles**, et leur diminution devait être **imputable au débiteur**. Ces exigences de l'ancien article 1188 sont à garder en tête pour les contrats antérieurs au 1er octobre 2016 (le manuel ne dit pas si elles valent pour [[1305-4]])." },
         { schema: { type: "tableau", titre: "Terme ou condition : la synthèse", colonnes: ["", "Terme", "Condition"], lignes: [
           ["Événement", "Futur et **certain**", "Futur et **incertain**"],
@@ -146,7 +146,7 @@ OBL.chapitres.push({
           "Tout acte qui **interrompt ou suspend la prescription** à l'égard de l'un des créanciers profite aux autres ([[1312]]).",
           "La jurisprudence a étendu cette solution à la **mise en demeure**.",
           "La **remise de dette** consentie par un seul créancier ne libère le débiteur que pour **la part de ce créancier** ([[1350-1]], al. 2) ; de même pour le serment déféré par l'un d'eux ([[1385-4]]).",
-          "**Source** : exclusivement conventionnelle, sur clause expresse du titre ; même entre commerçants, elle ne se présume pas (Civ. 1re, 16 juin 1992 ; Com. 26 sept. 2018, n° 16-28.133)."
+          "**Source** : jusqu'à la réforme, toujours conventionnelle, sur clause expresse du titre ([[1310]] la dit désormais « légale ou conventionnelle », mais elle reste en pratique conventionnelle) ; même entre commerçants, elle ne se présume pas (Civ. 1re, 16 juin 1992 ; Com. 26 sept. 2018, n° 16-28.133)."
         ] },
         { attention: "Technique rare et dangereuse : les créanciers s'exposent à la malhonnêteté ou à l'insolvabilité de celui qui a encaissé. Application pratique principale : le **compte joint** (chaque cotitulaire peut en retirer la totalité)." }
       ]
@@ -159,7 +159,7 @@ OBL.chapitres.push({
         { h: "Les sources" },
         { liste: [
           "**Conventionnelle** : elle ne se présume pas ([[1310]]) ; elle doit être **certaine**, mais aucune formule sacramentelle n'est exigée : une volonté non équivoque suffit (Civ. 1re, 3 déc. 1974 ; Civ. 3e, 26 janv. 2005). Clause type : « les preneurs sont tenus solidairement ».",
-          "**Légale** : parents exerçant l'autorité parentale ([[1242]], al. 4) ; coemprunteurs d'une même chose ([[1887]]) ; époux pour les dettes ménagères (art. 220) ; coauteurs condamnés pour une même infraction (C. pr. pén.).",
+          "**Légale** : parents exerçant l'autorité parentale ([[1242]], al. 4) ; coemprunteurs d'une même chose ([[1887]]) ; époux pour les dettes ménagères (art. 220) ; condamnés pour un même crime ou délit, quant aux restitutions et dommages et intérêts (C. pr. pén., art. 375-2 et 480-1).",
           "**Présumée en matière commerciale** : exception coutumière ancienne, maintenue par la jurisprudence entre commerçants pour les dettes commerciales."
         ] },
         { h: "L'obligation à la dette : unité de dette, pluralité de liens" },
@@ -174,12 +174,12 @@ OBL.chapitres.push({
         { liste: [
           "La **demande d'intérêts** formée contre l'un fait courir les intérêts à l'égard de tous ([[1314]]).",
           "L'**interruption de la prescription** contre l'un vaut contre tous ([[2245]], al. 1er).",
-          "Le **serment** déféré à l'un profite aux autres ([[1385-4]]).",
-          "Les codébiteurs répondent **solidairement de l'inexécution** ; la charge définitive pèse sur ceux à qui elle est imputable ([[1319]]).",
-          "La **transaction** conclue avec l'un oblige les autres, en application de la représentation mutuelle (Com. 28 mars 2006). Les **voies de recours** et l'autorité de la chose jugée relèvent du même mécanisme ; voir par exemple l'effet de l'appel d'un coobligé en cas de solidarité ou d'indivisibilité (C. pr. civ., art. 552).",
+          "Le **serment** déféré à l'un profite aux autres, s'il a été déféré sur la dette et non sur le fait de la solidarité ([[1385-4]]).",
+          "Les codébiteurs répondent **solidairement de l'inexécution** ; la charge définitive pèse sur ceux à qui elle est imputable ([[1319]], règle nouvelle pour les obligations solidaires contractées depuis le 1er octobre 2016).",
+          "La **transaction** conclue avec l'un est opposable aux autres, en application de la représentation mutuelle (Com. 28 mars 2006). Les **voies de recours** et l'autorité de la chose jugée relèvent du même mécanisme ; voir par exemple l'effet de l'appel d'un coobligé en cas de solidarité ou d'indivisibilité (C. pr. civ., art. 552).",
           "Mais la **déchéance du terme** encourue par l'un est **inopposable** aux autres ([[1305-5]])."
         ] },
-        { p: "Ces effets étaient expliqués par l'idée de **représentation mutuelle** des codébiteurs, chacun étant le « contradicteur légitime » du créancier et le représentant de ses coobligés (Civ., 1er déc. 1885), mais seulement pour conserver ou diminuer la dette, jamais pour l'aggraver (*ad conservandam, non ad augendam obligationem*). Critiquée, cette notion n'est pas reprise par l'ordonnance, qui énumère les effets au cas par cas." },
+        { p: "Ces effets étaient expliqués par l'idée de **représentation mutuelle** des codébiteurs, chacun étant le « contradicteur légitime » du créancier et le représentant de ses coobligés (Civ., 1er déc. 1885), mais seulement pour conserver ou diminuer la dette, jamais pour l'aggraver (*ad conservandam, non ad augendam obligationem*). Critiquée (artifice d'un mandat tacite, domaine incertain) et déjà en recul en jurisprudence avant la réforme (Civ. 2e, 29 janv. 1997 ; Civ. 1re, 24 nov. 1998), cette notion n'est pas reprise par l'ordonnance, qui énumère les effets au cas par cas." },
         { h: "La contribution à la dette" },
         { schema: { type: "etapes", titre: "A, B et C doivent solidairement 900 euros ; A paie tout", etapes: [
           { t: "1. Obligation à la dette", d: "le créancier réclame 900 euros à A, qui ne peut exiger la division ([[1313]])" },
@@ -227,7 +227,7 @@ OBL.chapitres.push({
   regimes: ["condition-suspensive", "terme-decheance", "solidarite-passive"],
   cas: ["ch19-appartement-colocation"],
   quiz: [
-    { q: "« Je te rembourserai quand je vendrai ma maison. » L'événement est objectivement incertain. Selon la jurisprudence récente, c'est :", choix: ["Un terme incertain", "Une condition", "Une obligation pure et simple"], bonne: 1, expl: "Civ. 1re, 13 avr. 1999 : un événement incertain dans sa réalisation est une condition, peu important ce que les parties tenaient pour acquis ; [[1305]] exige un événement certain." },
+    { q: "« Je te rembourserai quand je vendrai ma maison. » L'événement est objectivement incertain. Selon la jurisprudence récente, c'est :", choix: ["Un terme incertain", "Une condition", "Une obligation pure et simple"], bonne: 1, expl: "Civ. 1re, 13 avr. 1999 : un événement incertain dans sa réalisation est une condition, peu important ce que les parties tenaient pour acquis ; [[1305]] exige un événement certain. La jurisprudence a toutefois parfois hésité (Com. 12 oct. 2004 ; Civ. 3e, 7 janv. 2016)." },
     { q: "Une promesse de vente est conclue le 5 janvier sous condition suspensive de prêt ; le prêt est accordé le 20 février, sans clause de rétroactivité. L'obligation du vendeur devient pure et simple :", choix: ["Le 20 février", "Le 5 janvier", "Le jour de l'acte authentique seulement"], bonne: 0, expl: "[[1304-6]], al. 1er : à compter de l'accomplissement, la rétroactivité devant être stipulée (al. 2)." },
     { q: "L'acquéreur, qui devait solliciter un prêt sur vingt ans, n'a demandé qu'un prêt sur dix ans, qui lui est refusé. La condition suspensive :", choix: ["A défailli : l'acquéreur est libéré", "Est nulle comme potestative", "Est réputée accomplie"], bonne: 2, expl: "[[1304-3]], al. 1er : il a empêché l'accomplissement en demandant un prêt non conforme (Civ. 3e, 30 janv. 2008)." },
     { q: "« Je te vends ma moto si je le décide d'ici un mois. » L'obligation est :", choix: ["Nulle", "Valable, sous condition suspensive", "Valable, sous condition résolutoire"], bonne: 0, expl: "[[1304-2]] : condition dépendant de la seule volonté du débiteur." },

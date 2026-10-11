@@ -125,7 +125,7 @@ window.OBL.cours = {
             "La qualification n'est pas toujours évidente : le client blessé dans un magasin en libre accès, avant tout achat, agit sur le terrain **délictuel** (Civ. 1re, 9 sept. 2020, n° 19-11.882, cité par le manuel).",
             "Projet sénatorial de 2020 : option ouverte à la victime d'un dommage corporel (art. 1233, al. 2) ; action contractuelle du tiers intéressé à la bonne exécution (art. 1234, al. 2). Ce sont des projets."
           ]},
-          { a2: "Ass. plén., 6 octobre 2006, n° 05-13.255 (Boot shop / Myr'Ho) et Ass. plén., 13 janvier 2020, n° 17-19.963 (Bois rouge)", r: "Le **tiers** à un contrat peut invoquer, sur le fondement délictuel, un manquement contractuel dès lors que ce manquement lui a causé un dommage." },
+          { a2: "Ass. plén., 6 octobre 2006, n° 05-13.255 (Boot shop / Myr'Ho) et Ass. plén., 13 janvier 2020, n° 17-19.963 (Bois rouge)", r: "Le **tiers** à un contrat peut invoquer, sur le fondement délictuel, un manquement contractuel dès lors que ce manquement lui a causé un dommage ; selon la chambre commerciale, il peut toutefois se voir opposer les conditions et limites de la responsabilité applicables entre les contractants (Com., 3 juill. 2024, n° 21-14.947 ; Com., 17 déc. 2025, n° 24-20.154), solution que l'Assemblée plénière n'a pas consacrée." },
           { cp: "Premier réflexe de tout cas pratique : y a-t-il un contrat valable entre le responsable et la victime, et le dommage vient-il de son exécution ? Si oui, terrain contractuel (art. 1231-1) ; sinon, art. 1240 s. Le tiers victime d'une inexécution contractuelle agit, lui, sur le terrain délictuel." }
         ]},
         { t: "2. Le droit commun de la responsabilité et les régimes spéciaux", c: [

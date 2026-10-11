@@ -97,7 +97,7 @@ OBL.chapitres.push({
         { h: "La preuve" },
         { liste: [
           "**Charge** : celui qui se prétend libéré doit justifier le paiement ([[1353]], al. 2).",
-          "**Moyens** : le paiement se prouve **par tout moyen** ([[1342-8]]). La Cour de cassation l'avait déjà jugé, qualifiant le paiement de **fait juridique** (Civ. 1re, 16 sept. 2010), contre l'ancienne exigence d'un écrit au-delà de 1 500 euros. La quittance reste la preuve la plus sûre.",
+          "**Moyens** : le paiement se prouve **par tout moyen** ([[1342-8]]). La Cour de cassation l'avait déjà jugé, qualifiant le paiement de **fait juridique** (Civ. 1re, 6 juill. 2004 ; Civ. 1re, 16 sept. 2010), contre l'ancienne exigence d'un écrit au-delà de 1 500 euros. La quittance reste la preuve la plus sûre.",
           "**Remise du titre** : la remise **volontaire** par le créancier de l'**original sous signature privée** ou de la **copie exécutoire** du titre vaut **présomption simple de libération** ([[1342-9]]) ; remise à un codébiteur solidaire : même effet pour tous. La cause de la libération (paiement ou remise de dette) reste à prouver par celui qui s'en prévaut."
         ] },
         { attention: "Avant l'ordonnance de 2016, la remise de l'acte sous seing privé faisait présumer la libération de façon **irréfragable** (la remise de la grosse notariée, de façon simple). Pour les remises consenties à compter du 1er octobre 2016, la présomption est toujours **simple**." },
@@ -119,9 +119,9 @@ OBL.chapitres.push({
         { def: { terme: "Novation", texte: "« contrat qui a pour objet de substituer à une obligation, qu'elle éteint, une obligation nouvelle qu'elle crée » ([[1329]], al. 1er). Extinction et création sont **indissociables**. Pratique : renégociation bancaire des dettes." } },
         { h: "Les conditions (outre celles de tout contrat)" },
         { liste: [
-          "**Une obligation ancienne valable** : pas de novation si elle est nulle ([[1331]] ; elle était, selon la jurisprudence, la cause de l'obligation nouvelle : Civ. 1re, 7 nov. 1995), sauf si la novation a pour **objet déclaré** de substituer un engagement valable à un engagement vicié (hypothèse proche de la confirmation). L'engagement d'exécuter une obligation naturelle n'est pas une novation : c'est une transformation « improprement qualifiée novation » (Civ. 1re, 10 oct. 1995).",
+          "**Une obligation ancienne valable** : pas de novation si elle est nulle ([[1331]] ; elle était, selon la jurisprudence, la cause de l'obligation nouvelle : Civ. 1re, 7 nov. 1995), sauf si la novation a pour **objet déclaré** de substituer un engagement valable à un engagement vicié (ce qui suppose une cause de nullité seulement **relative** ; hypothèse proche de la confirmation). L'engagement d'exécuter une obligation naturelle n'est pas une novation : c'est une transformation « improprement qualifiée novation » (Civ. 1re, 10 oct. 1995).",
           "**Une obligation nouvelle valable** ([[1331]]) : si elle est annulée, l'obligation ancienne revit, même lorsque l'annulation tient au fait de l'une des parties (Com., 14 mai 1996).",
-          "**Un élément nouveau** (*aliquid novi*) : changement d'**objet** (livrer un bien au lieu de payer, capital au lieu d'une rente viagère), de **cause** (dette de prix transformée en prêt), de **débiteur** ou de **créancier** ([[1329]], al. 2), adjonction d'une condition. Ne suffisent pas : un changement de montant, de lieu, de monnaie, de sûreté, d'indexation, de délais ou de modalités de remboursement.",
+          "**Un élément nouveau** (*aliquid novi*) : changement d'**objet** (livrer un bien au lieu de payer, capital au lieu d'une rente viagère), de **cause** (dette de prix transformée en prêt), de **débiteur** ou de **créancier** ([[1329]], al. 2), adjonction d'une condition. Ne suffisent pas : un changement de montant, de lieu, de monnaie, de sûreté, d'indexation, de délais ou de modalités de remboursement. À l'inverse, un changement trop radical (vente transformée en donation) n'est pas non plus une novation.",
           "**L'intention de nover** (*animus novandi*) : « la novation ne se présume pas ; la volonté de l'opérer doit résulter clairement de l'acte » ([[1330]]). La jurisprudence antérieure à la réforme l'admettait tacite si elle était dépourvue d'ambiguïté (Civ. 3e, 15 janv. 1975), les juges du fond interprétant, dans le doute, la volonté des parties ; rappel de la règle, y compris dans une novation réalisée dans le cadre d'une stipulation pour autrui : Com., 26 janv. 2010 ; Civ. 3e, 8 janv. 2026, n° 24-11.645."
         ] },
         { h: "Les trois variétés" },
@@ -151,7 +151,7 @@ OBL.chapitres.push({
         { schema: { type: "tableau", titre: "Délégation parfaite (novatoire) et imparfaite (simple)", colonnes: ["", "Délégation **parfaite**", "Délégation **imparfaite**"], lignes: [
           ["Texte", "[[1337]]", "[[1338]]"],
           ["Condition", "Le délégant est débiteur du délégataire **et** la volonté du délégataire de le **décharger** résulte **expressément** de l'acte", "Le délégataire n'a **pas** déchargé le délégant (solution de principe)"],
-          ["Délégataire / délégant", "**Novation par changement de débiteur** : le délégant est libéré", "Le délégataire garde son débiteur et en gagne un **second** ; le paiement de l'un libère l'autre à due concurrence"],
+          ["Délégataire / délégant", "**Novation par changement de débiteur** : le délégant est libéré, le délégataire devient créancier du délégué (Com., 12 oct. 2010)", "Le délégataire garde son débiteur et en gagne un **second** ; le paiement de l'un libère l'autre à due concurrence"],
           ["Exceptions", "Le délégant **reste tenu** s'il a **expressément** garanti la solvabilité future du délégué, ou si ce dernier était soumis à une procédure d'apurement de ses dettes lors de la délégation ([[1337]], al. 2)", "—"],
           ["Délégataire / délégué", "Engagement autonome : inopposabilité des exceptions ([[1336]], al. 2)", "Idem"],
           ["Délégant créancier du délégué", "Le délégué est **libéré envers le délégant**, à concurrence de son engagement envers le délégataire ([[1339]], al. 4)", "La créance du délégant ne s'éteint **que par l'exécution** du délégué envers le délégataire ([[1339]], al. 1er)"]
@@ -163,7 +163,7 @@ OBL.chapitres.push({
           "La **cession** ou la **saisie** de cette créance ne produisent effet que sous les mêmes limites (ce qui tranche les hésitations jurisprudentielles antérieures : la saisie-arrêt ou la saisie-attribution pratiquées sur la créance du délégant avaient été écartées par Com., 16 avr. 1996 et Com., 14 févr. 2006, alors que Com., 29 avr. 2002 avait admis l'avis à tiers détenteur).",
           "Délégation **parfaite** : si le délégataire a libéré le délégant, le délégué est lui-même libéré envers le délégant, à concurrence de son engagement (alinéa 4, issu de la loi de ratification du 20 avril 2018)."
         ] },
-        { attention: "La décharge du délégant doit être **expresse** : l'acceptation du délégué par le délégataire ne suffit pas. Dans le doute, la délégation est **imparfaite**. En cas pratique, si l'énoncé est ambigu, examinez les deux hypothèses." }
+        { attention: "La décharge du délégant doit être **expresse** (la jurisprudence antérieure exigeait déjà une volonté non équivoque du délégataire : Com., 12 déc. 1995) : l'acceptation du délégué par le délégataire ne suffit pas. Dans le doute, la délégation est **imparfaite**. En cas pratique, si l'énoncé est ambigu, examinez les deux hypothèses." }
       ]
     },
     {
@@ -189,13 +189,13 @@ OBL.chapitres.push({
         { h: "Les effets de la compensation légale" },
         { liste: [
           "Extinction **à due concurrence**, avec les accessoires : la plus faible dette disparaît, la plus forte subsiste pour le surplus. La compensation « équivaut à un paiement » (Com., 15 mars 2023, n° 20-23.552).",
-          "**À la date où les conditions sont réunies**, mais **sous réserve d'être invoquée** ([[1347]], al. 2) : fin de la controverse née de l'ancien article 1290 (« de plein droit… même à l'insu des débiteurs »).",
+          "**À la date où les conditions sont réunies**, mais **sous réserve d'être invoquée** ([[1347]], al. 2) : la jurisprudence admettait déjà un effet extinctif par la seule force de la loi (Com., 20 févr. 2007) tout en exigeant que la compensation soit invoquée ; fin de la controverse née de l'ancien article 1290 (« de plein droit… même à l'insu des débiteurs »).",
           "Plusieurs dettes compensables : règles d'**imputation** des paiements ([[1347-4]]).",
           "**Pluralité** : la caution peut opposer la compensation de ce que le créancier doit au débiteur principal ; le codébiteur solidaire peut faire déduire la part du coobligé créancier du créancier ([[1347-6]])."
         ] },
         { schema: { type: "tableau", titre: "Les trois compensations", colonnes: ["", "Légale", "Judiciaire", "Conventionnelle"], lignes: [
           ["Texte", "[[1347]] à [[1347-7]]", "[[1348]]", "[[1348-2]]"],
-          ["Conditions", "Réciprocité, fongibilité, certitude, liquidité, exigibilité (connexité : ni liquidité ni exigibilité)", "Dette **certaine** mais pas encore liquide ou exigible ; le juge ne supplée ni la réciprocité ni la fongibilité", "**Réciprocité** ; les autres conditions peuvent être écartées par les parties"],
+          ["Conditions", "Réciprocité, fongibilité, certitude, liquidité, exigibilité (connexité : ni liquidité ni exigibilité)", "Dette **certaine** mais pas encore liquide ou exigible ; le juge ne supplée ni la réciprocité ni la fongibilité", "**Réciprocité** (déjà Com., 23 juin 1992) ; les autres conditions peuvent être écartées par les parties"],
           ["Qui la déclenche ?", "La loi, à condition qu'une partie l'**invoque**", "Le juge", "L'accord des parties, pour des obligations présentes ou futures"],
           ["Date d'effet", "Réunion des conditions (connexité : exigibilité de la première dette)", "**Décision**, sauf décision contraire", "**Accord**, ou coexistence des obligations futures"]
         ] } }
@@ -229,7 +229,7 @@ OBL.chapitres.push({
         { schema: { type: "frise", titre: "L'évolution du droit de la prescription", evenements: [
           { date: "Avant 2008", t: "Trente ans de droit commun", d: "anc. art. 2262 : toutes les actions, réelles ou personnelles ; dix ans en matière commerciale et pour la responsabilité extracontractuelle ; multitude de courtes prescriptions, avec **interversion** (nouveau délai de trente ans après interruption)" },
           { date: "17 juin 2008", t: "Loi n° 2008-561", d: "droit commun de **cinq ans** pour les actions personnelles ou mobilières, point de départ **glissant**, **délai butoir** de vingt ans, aménagements conventionnels, fin de l'interversion" },
-          { date: "Droit transitoire", t: "Délais raccourcis", d: "le nouveau délai court à compter de l'entrée en vigueur de la loi nouvelle, sans que la durée totale dépasse l'ancienne ([[2222]], al. 2) ; un délai allongé s'applique aux prescriptions non acquises, en tenant compte du temps écoulé" },
+          { date: "Droit transitoire", t: "Délais raccourcis", d: "le nouveau délai court à compter de l'entrée en vigueur de la loi nouvelle, sans que la durée totale dépasse l'ancienne ([[2222]], al. 2) ; un délai allongé s'applique aux prescriptions non acquises, en tenant compte du temps écoulé ; une instance introduite avant la loi reste jugée selon la loi ancienne (L. 17 juin 2008, art. 26, III)" },
           { date: "8 août 2016", t: "Préjudice écologique", d: "action prescrite par dix ans à compter de la connaissance de sa manifestation ([[2226-1]])" }
         ] } },
         { h: "Les principaux délais" },
@@ -239,8 +239,9 @@ OBL.chapitres.push({
           ["**10 ans**", "Responsabilité née d'un **dommage corporel**, quelle que soit sa nature ([[2226]])", "**Consolidation** du dommage initial ou aggravé"],
           ["**20 ans**", "Dommage causé par des tortures ou actes de barbarie, ou par des violences ou agressions sexuelles contre un mineur ([[2226]], al. 2)", "Consolidation"],
           ["**10 ans**", "Préjudice écologique ([[2226-1]]) ; responsabilité des constructeurs ([[1792-4-3]]) ; actions contre les professionnels et établissements de santé (CSP, art. L. 1142-28)", "Connaissance de la manifestation du préjudice ; réception des travaux ; consolidation du dommage"],
-          ["**30 ans**", "Actions **réelles immobilières** ([[2227]]) ; le droit de propriété est **imprescriptible**", "Connaissance des faits"],
+          ["**30 ans**", "Actions **réelles immobilières** ([[2227]]) ; le droit de propriété est **imprescriptible** ; nullité absolue du mariage ([[184]])", "Connaissance des faits ; célébration du mariage ([[184]])"],
           ["**3 ans**", "Produits défectueux ([[1245-16]]), avec extinction de la responsabilité dix ans après la mise en circulation ([[1245-15]]) ; salaires (C. trav., art. L. 3245-1)", "Connaissance du dommage, du défaut et du producteur"],
+          ["**4 ans**", "Créances **sur** l'État, les départements, les communes et les établissements publics (déchéance quadriennale, L. n° 68-1250 du 31 déc. 1968, art. 1er)", "Premier jour de l'année suivant celle au cours de laquelle les droits ont été acquis"],
           ["**2 ans**", "Action des professionnels contre les **consommateurs** (C. consom., art. L. 218-2) ; actions dérivant du contrat d'assurance (C. assur., art. L. 114-1) ; vices cachés ([[1648]])", "Selon le texte (découverte du vice pour [[1648]])"]
         ] } },
         { p: "Les courtes prescriptions sont d'**interprétation stricte** (Com., 29 mars 2023, n° 21-23.104). La directive (UE) 2024/2853 sur les produits défectueux, à transposer au plus tard le 9 décembre 2026, n'a pas encore modifié les articles 1245-15 et 1245-16." },
@@ -282,7 +283,7 @@ OBL.chapitres.push({
     "Preuve du paiement par tout moyen ([[1342-8]]) ; remise du titre : présomption **simple** de libération ([[1342-9]]) ; imputation : choix du débiteur, puis dettes échues, intérêt du débiteur, ancienneté, proportion ([[1342-10]]).",
     "Mise en demeure du créancier : deux mois, puis consignation ou séquestre libératoires ([[1345]] s.).",
     "Novation : obligations ancienne et nouvelle valables ([[1331]]), *aliquid novi*, intention claire ([[1330]]) ; extinction des accessoires, sauf réserve des sûretés avec l'accord des garants ([[1334]]).",
-    "Délégation : engagement autonome du délégué, exceptions inopposables ([[1336]]) ; parfaite si décharge **expresse** du délégant ([[1337]]), sinon second débiteur ([[1338]]) ; créance du délégant neutralisée jusqu'à l'exécution ([[1339]]).",
+    "Délégation : engagement autonome du délégué, exceptions inopposables ([[1336]]) ; parfaite si décharge **expresse** du délégant ([[1337]]), sinon second débiteur ([[1338]]) ; créance du délégant neutralisée jusqu'à l'exécution ([[1339]]), sauf délégation parfaite (délégué libéré envers le délégant : [[1339]], al. 4).",
     "Compensation légale : dettes réciproques, fongibles, certaines, liquides, exigibles ([[1347-1]]) ; effet à la date des conditions **si elle est invoquée** ([[1347]]) ; connexité : ni liquidité ni exigibilité exigées ([[1348-1]]).",
     "Confusion ([[1349]]) et remise de dette ([[1350]]) : attention aux effets sur codébiteurs et cautions ([[1349-1]], [[1350-1]], [[1350-2]]).",
     "Prescription : 5 ans de droit commun à compter de la connaissance ([[2224]]) ; 10 ans pour le dommage corporel ([[2226]]) ; butoir de 20 ans ([[2232]]) ; interruption = nouveau délai ([[2231]]) ; suspension = simple arrêt ([[2230]]) ; jamais relevée d'office ([[2247]])."

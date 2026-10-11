@@ -554,7 +554,7 @@ function caseView(box, u) {
     else corr = st.shown[s.k] ? `<div class="corr"><strong>Corrigé : ${esc(s.t.toLowerCase())}</strong>${sectionHtml(s.k)}</div><div><button type="button" class="btn" id="call">Corrigé complet</button></div>` : `<div class="row"><button type="button" class="btn main" id="cshow">Voir cette étape du corrigé</button><button type="button" class="btn" id="call">Corrigé complet</button></div>`;
     const steps = official ? "" : `<ol class="csteps">${CSTEPS.map((x, i) => `<li class="${i === st.i && !st.all ? "cur" : st.shown[x.k] || st.all ? "done" : ""}">${i + 1}. ${esc(x.t)}</li>`).join("")}</ol>`;
     const work = official ? `` : (st.all ? "" : `<h3>${esc(s.t)}</h3><p class="muted" style="margin:0">${esc(s.h)}</p>`);
-    box.innerHTML = `<div class="head"><div class="kick"><a href="#/obl/outils/cas">Cas pratiques</a> · <a href="#/obl/ch/${u.ch}/cas">Chapitre ${u.ch}</a> · Cas ${esc(u.code)}</div><h1>${esc(u.titre)}</h1>${u.n > 1 ? `<p class="muted small">Question ${u.k} sur ${u.n} de ce cas, traitée séparément.</p>` : ""}</div>
+    box.innerHTML = `<div class="head"><div class="kick"><a href="#/obl/outils/cas${u.src === "manuel" ? "/hypercours" : ""}">Cas pratiques</a> · <a href="#/obl/ch/${u.ch}/cas">Chapitre ${u.ch}</a> · Cas ${esc(u.code)}</div><h1>${esc(u.titre)}</h1>${u.n > 1 ? `<p class="muted small">Question ${u.k} sur ${u.n} de ce cas, traitée séparément.</p>` : ""}</div>
       <section class="enonce"><h2>Énoncé</h2><div class="faits">${paras(u.faits)}</div>${u.q ? `<p class="cq"><strong>${fmt(u.q)}</strong></p>` : ""}${u.prepa ? `<h3 class="prepa">Travail préparatoire</h3><div class="faits prepa">${paras(u.prepa)}</div>` : ""}</section>
       <section class="panel">${steps}${work}
         <label class="small muted" for="draft">Votre réponse (non enregistrée : elle disparaît quand vous quittez la page)</label><textarea id="draft">${esc(st.draft)}</textarea>
@@ -572,14 +572,19 @@ function caseView(box, u) {
   draw();
 }
 function oblBank(id) {
-  const u = id && allUnits().find(x => x.id === id);
+  const u = id && id !== "hypercours" && allUnits().find(x => x.id === id);
   if (u) { setMain(`<div class="content" id="cb"></div>`); return caseView($("#cb"), u); }
-  const all = allUnits(), site = all.filter(x => x.src === "site"), man = all.filter(x => x.src === "manuel");
+  const hyp = id === "hypercours", all = allUnits(), site = all.filter(x => x.src === "site"), man = all.filter(x => x.src === "manuel");
   const grp = (list, tag) => PARTS.map(p => { const chs = CHS.filter(c => c.part === p.id && list.some(x => x.ch === c.num)); if (!chs.length) return "";
     return `<section class="sec" id="${tag}-${p.id}"><h2>${esc(p.t)}</h2>${chs.map(c => `<h3 class="cbch"><a href="#/obl/ch/${c.num}/cas">Chapitre ${c.num} · ${esc(c.titre || c.court)}</a> <span class="muted small">${plural(list.filter(x => x.ch === c.num).length, "cas", "cas")}</span></h3><div class="cplist">${list.filter(x => x.ch === c.num).map(caseRow).join("")}</div>`).join("")}</section>`; }).join("");
-  setMain(`<div class="head"><h1>Cas pratiques</h1><p class="muted" style="margin-top:6px">${plural(site.length, "cas indépendant", "cas indépendants")}, classés par chapitre. Choisissez un cas, rédigez votre réponse, puis consultez le corrigé, présenté étape par étape ou en entier.</p></div>
-    <div class="content">${grp(site, "cb")}${man.length ? `<section class="sec" id="cm-top"><h2 class="hman">Cas pratique du manuel Hypercours</h2><p class="muted" style="margin-top:6px">${plural(man.length, "cas pratique")} du manuel HyperCours (Droit des obligations 2027), repris tels quels avec leur corrigé, dans l'ordre du manuel.</p>${grp(man, "cm")}</section>` : ""}</div>`);
-  thumbs(PARTS.filter(p => site.some(x => (CHS[x.ch - 1] || {}).part === p.id)).map(p => ["cb-" + p.id, p.court]).concat(man.length ? [["cm-top", "Manuel Hypercours"]] : []));
+  const switcher = `<div class="seg" role="group" aria-label="Source des cas"><a href="#/obl/outils/cas" ${!hyp ? 'aria-current="page"' : ""}>Manuel de cas pratique</a><a href="#/obl/outils/cas/hypercours" ${hyp ? 'aria-current="page"' : ""}>Manuel Hypercours</a></div>`;
+  const intro = hyp
+    ? `${plural(man.length, "cas pratique")} du manuel HyperCours (Droit des obligations 2027), repris tels quels avec leur corrigé, dans l'ordre du manuel.`
+    : `${plural(site.length, "cas indépendant", "cas indépendants")}, classés par chapitre. Choisissez un cas, rédigez votre réponse, puis consultez le corrigé, présenté étape par étape ou en entier.`;
+  const list = hyp ? man : site, tag = hyp ? "cm" : "cb";
+  setMain(`<div class="head"><h1>Cas pratiques</h1><div class="row" style="margin-top:10px">${switcher}</div><p class="muted" style="margin-top:10px">${intro}</p></div>
+    <div class="content">${grp(list, tag)}</div>`);
+  thumbs(PARTS.filter(p => list.some(x => (CHS[x.ch - 1] || {}).part === p.id)).map(p => [tag + "-" + p.id, p.court]));
 }
 
 /* ---------- Articles ---------- */

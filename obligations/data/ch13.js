@@ -13,7 +13,7 @@ OBL.chapitres.push({
         { liste: [
           "**Valeur constitutionnelle** : le principe selon lequel tout fait fautif oblige son auteur à réparer a valeur constitutionnelle (Cons. const., 22 oct. 1982, n° 82-144 DC) et découle de l'art. 4 de la Déclaration de 1789 (Cons. const., 9 nov. 1999, n° 99-419 DC). Le législateur peut l'aménager, pas le supprimer.",
           "**Pas de définition légale** : le Code distingue faute volontaire ([[1240]]) et faute d'imprudence ([[1241]]), mais la jurisprudence les traite de façon **unitaire**. Définition classique de Planiol : la faute est la **violation d'une obligation préexistante**. C'est un **standard**, adaptable à toutes les situations.",
-          "**Contrôle de la Cour de cassation** : la qualification de faute est une question de droit, que la Cour contrôle de près."
+          "**Contrôle de la Cour de cassation** : la qualification de faute est une question de droit, que la Cour contrôle de près (Civ., 28 févr. 1910)."
         ] },
         { schema: { type: "arbre", titre: "La faute délictuelle en droit positif", racine: { t: "Faute ([[1240]], [[1241]])", d: "à prouver par la victime", enfants: [
           { t: "Élément objectif (seul exigé)", d: "violation d'une norme de conduite", enfants: [
@@ -42,13 +42,13 @@ OBL.chapitres.push({
         { p: "La doctrine classique craignait qu'une responsabilité pour simple omission ne menace la liberté individuelle. La Cour de cassation l'a pourtant admise largement dans l'**arrêt Branly** (Civ., 27 févr. 1951) : un historien de la TSF avait passé sous silence le rôle d'Édouard Branly. La faute « peut consister aussi bien dans une abstention que dans un acte positif » ; l'abstention, **même sans intention de nuire**, engage son auteur lorsque le fait omis devait être accompli en vertu d'une obligation **légale, réglementaire ou conventionnelle**, ou **dans l'ordre professionnel** (pour un historien, l'objectivité)." },
         { schema: { type: "tableau", titre: "Les deux apports de l'arrêt Branly", colonnes: ["Condition", "Contenu", "Portée"], lignes: [
           ["Intention de nuire", "**Inutile** : l'abstention peut être volontaire ou non", "Unifie le régime de l'abstention et de la commission ([[1240]] et [[1241]])"],
-          ["Obligation d'agir préexistante", "**Nécessaire** : loi, règlement, contrat, déontologie, usage professionnel", "Appréciée largement : même les règles normales de la vie en société peuvent l'imposer, sans texte spécial"]
+          ["Obligation d'agir préexistante", "**Nécessaire** : loi, règlement, contrat, coutume, déontologie, usage professionnel", "Appréciée largement : même les règles normales de la vie en société peuvent l'imposer, sans texte spécial"]
         ] } },
         { h: "L'appréciation de la faute" },
         { def: { terme: "Appréciation *in abstracto*", texte: "le juge compare le comportement du défendeur à celui d'une **personne raisonnable** placée dans les mêmes circonstances (l'expression a remplacé le « bon père de famille » dans le Code civil en 2014). Il ne tient pas compte des défauts **personnels** de l'auteur (maladresse, étourderie) ; il tient compte des **circonstances externes** : profession et spécialité (un chirurgien est comparé à un chirurgien de la même spécialité), urgence, difficultés particulières de l'acte." } },
         { liste: [
-          "**Gravité indifférente** : la faute la plus légère suffit (*culpa levissima*) ; la victime n'a pas à prouver une faute grave.",
-          "**Intention de nuire indifférente** : [[1240]] suppose un fait **volontaire**, pas une volonté de nuire. L'intention facilite seulement la preuve ; la recherche délibérée d'un gain peut, en outre, exposer un professionnel à la sanction civile de la faute lucrative ([[1254]])."
+          "**Gravité indifférente** : la faute la plus légère suffit (*culpa levissima* : Civ., 11 janv. 1922) ; la victime n'a pas à prouver une faute grave.",
+          "**Intention de nuire indifférente** : [[1240]] suppose un fait **volontaire**, pas une volonté de nuire (Civ. 2e, 2 avr. 1997). L'intention facilite seulement la preuve ; la recherche délibérée d'un gain peut, en outre, exposer un professionnel à la sanction civile de la faute lucrative ([[1254]])."
         ] },
         { attention: "Pour aller plus loin (points non traités par le manuel dans ce chapitre). **L'abus de droit** est une application de la faute : exercer un droit dans l'intention de nuire ou sans intérêt légitime (Req., 3 août 1915, Clément-Bayard : pieux hérissés de piques contre les dirigeables du voisin). En revanche, les **troubles anormaux de voisinage** relèvent d'une responsabilité **sans faute** : codifiée par la loi du 15 avril 2024, elle pèse **de plein droit** sur le propriétaire, le locataire, l'occupant ou le maître d'ouvrage à l'origine d'un trouble excédant les inconvénients normaux de voisinage, sauf antériorité d'une activité conforme aux lois et règlements et non aggravée ([[1253]]). Ne jamais écrire qu'il faut prouver une faute du voisin." }
       ]
@@ -75,12 +75,12 @@ OBL.chapitres.push({
         { h: "L'enfant privé de discernement (*infans*)" },
         { p: "Le mineur doué de discernement a toujours pu être responsable de sa faute. Pour l'*infans*, la jurisprudence refusait toute faute, faute d'imputabilité. Revirement par l'**Assemblée plénière le 9 mai 1984** : dans **Derguini** (fillette de 5 ans et 9 mois qui traverse puis rebrousse chemin devant une voiture) et **Lemaire** (garçon de 13 ans électrocuté en changeant une ampoule sans couper le disjoncteur), la cour d'appel « n'était pas tenue de vérifier si le mineur était capable de discerner les conséquences de son acte » pour retenir sa faute. Le même jour, l'arrêt **Gabillet** a admis qu'un jeune enfant puisse être **gardien** d'une chose, et l'arrêt **Fullenwarth** a assoupli la responsabilité des parents (v. chapitres 14 et 15)." },
         { schema: { type: "tableau", titre: "La faute objective de l'infans : un résultat paradoxal", colonnes: ["Hypothèse", "Conséquence", "Appréciation"], lignes: [
-          ["**Infans auteur** du dommage", "La victime peut agir contre l'enfant lui-même sur [[1240]] et [[1241]]", "Intérêt limité : l'enfant est souvent insolvable ; mieux vaut agir contre les **parents**, responsables de plein droit ([[1242]], al. 4)"],
+          ["**Infans auteur** du dommage", "La victime peut agir contre l'enfant lui-même sur [[1240]] et [[1241]] (confirmé pour un enfant responsable envers un tiers : Civ. 2e, 12 déc. 1984)", "Intérêt limité : l'enfant est souvent insolvable ; mieux vaut agir contre les **parents**, responsables de plein droit ([[1242]], al. 4)"],
           ["**Infans victime**", "Sa faute lui est **opposée** pour **réduire** son indemnisation (Derguini, Lemaire ; Civ. 2e, 28 févr. 1996)", "Contraire à l'objectif d'indemnisation qui justifiait la faute objective ; critiqué"]
         ] } },
         { liste: [
           "**Mode d'appréciation** : la deuxième chambre civile compare l'enfant à une **personne raisonnable**, et non à un enfant du même âge : elle a cassé un arrêt qui écartait la faute parce que le comportement était normal pour cet âge (Civ. 2e, 28 févr. 1996). Une partie de la doctrine préfère un modèle d'enfant d'âge équivalent ; la jurisprudence ne l'a pas suivie, même si certains arrêts de la 1re chambre civile ont pu sembler aller en ce sens (Civ. 1re, 6 mars 1996).",
-          "**Réformes envisagées** : les avant-projets Catala et Terré, le projet de 2017 et la proposition sénatoriale de 2020 (art. 1255 proposé) écarteraient la faute d'une victime privée de discernement. Non adoptés.",
+          "**Réformes envisagées** : les avant-projets Catala (art. 1351-1) et Terré (art. 46, al. 2), le projet de 2017 et la proposition sénatoriale de 2020 (art. 1255 proposé) écarteraient la faute d'une victime privée de discernement. Non adoptés.",
           "**Correctif légal ponctuel** : en matière d'accidents de la circulation, les victimes non conductrices de moins de 16 ans sont indemnisées de leurs dommages corporels « dans tous les cas », sauf si elles ont volontairement recherché le dommage ([[L85-3]]). Les faits de l'arrêt Derguini relèveraient aujourd'hui de cette loi."
         ] }
       ]
@@ -92,16 +92,16 @@ OBL.chapitres.push({
         { h: "La force majeure" },
         { def: { terme: "Force majeure", texte: "événement **irrésistible**, **imprévisible** et **extérieur** au responsable, qui l'a contraint à commettre le fait dommageable. Elle exonère **totalement**." } },
         { liste: [
-          "Après des divergences (la 1re chambre civile mettait l'accent sur l'irrésistibilité, la 2e exigeait aussi l'imprévisibilité), l'**Assemblée plénière** a unifié la notion par deux arrêts du **14 avril 2006** : irrésistibilité **et** imprévisibilité sont requises, quelle que soit la nature de la responsabilité.",
-          "L'**extériorité** a été rappelée par l'Assemblée plénière le 10 juillet 2020.",
+          "Après des divergences (la 1re chambre civile mettait l'accent sur l'irrésistibilité, la 2e exigeait aussi l'imprévisibilité : Civ. 2e, 12 déc. 2002 ; 23 janv. 2003), l'**Assemblée plénière** a unifié la notion par deux arrêts du **14 avril 2006** : irrésistibilité **et** imprévisibilité sont requises, quelle que soit la nature de la responsabilité.",
+          "L'**extériorité** a été rappelée par l'Assemblée plénière le 10 juillet 2020 (n° 18-18.542).",
           "**Date d'appréciation** : au jour du **fait dommageable** en matière délictuelle ; en matière contractuelle, l'imprévisibilité s'apprécie lors de la **conclusion du contrat** ([[1218]])."
         ] },
         { h: "Le fait d'un tiers ou de la victime" },
         { schema: { type: "tableau", titre: "Effets du fait d'un tiers ou de la victime", colonnes: ["", "Présente les caractères de la force majeure", "Ne les présente pas"], lignes: [
-          ["**Fait d'un tiers**", "Exonération **totale** s'il présente les caractères de la force majeure, même non fautif", "**Aucune** exonération envers la victime : les coauteurs sont tenus ***in solidum*** ; la répartition se fait ensuite par recours entre eux"],
+          ["**Fait d'un tiers**", "Exonération **totale** s'il présente les caractères de la force majeure, même non fautif (Civ. 2e, 17 déc. 1963)", "**Aucune** exonération envers la victime : les coauteurs sont tenus ***in solidum*** ; la répartition se fait ensuite par recours entre eux"],
           ["**Fait de la victime**", "Exonération **totale**, même si le fait n'est pas fautif", "Exonération **partielle** seulement s'il est **fautif** : partage de responsabilité selon la gravité des fautes respectives"]
         ] } },
-        { attention: "La victime **n'est pas tenue de limiter son préjudice dans l'intérêt du responsable** (Civ. 2e, 19 juin 2003, deux arrêts) : refuser des soins ou de relancer son commerce après le dommage n'est pas une faute qui réduit son indemnité. Le projet de 2017 et la proposition sénatoriale de 2020 voulaient revenir sur cette solution, sauf en cas de dommage corporel. Non adoptés." }
+        { attention: "La victime **n'est pas tenue de limiter son préjudice dans l'intérêt du responsable** (Civ. 2e, 19 juin 2003, deux arrêts) : refuser des soins ou de relancer son commerce après le dommage n'est pas une faute qui réduit son indemnité. Le projet de 2017 et la proposition sénatoriale de 2020 voulaient revenir sur cette solution, sauf en cas de dommage corporel (projet, art. 1263 ; proposition, art. 1264). Non adoptés." }
       ]
     },
     {
@@ -119,8 +119,8 @@ OBL.chapitres.push({
         { p: "Admise d'abord pour le transport bénévole, elle joue aujourd'hui surtout en **matière sportive**. Son champ a été fortement réduit." },
         { liste: [
           "**Domaine** : depuis Civ. 2e, 4 nov. 2010, elle ne peut plus être opposée à la victime qui agit contre le **gardien d'une chose** sur l'art. 1384, al. 1er anc. ([[1242]], al. 1er). Elle reste invocable en matière de **faute**. (Le législateur a ensuite exclu, entre pratiquants, la responsabilité du fait des choses pour les seuls dommages **matériels** survenus lors d'une compétition ou de son entraînement, sur un lieu réservé à la pratique : C. sport, art. L. 321-3-1, loi du 12 mars 2012.)",
-          "**Acceptation libre et éclairée** d'un danger particulier : la jurisprudence la limite désormais à la **compétition sportive** (pas au jeu improvisé ou à l'entraînement amical).",
-          "**Seuls les risques normaux** de l'activité peuvent être acceptés : traditionnellement, ceux qui résultent d'une pratique **conforme aux règles** ; certains arrêts jugent aussi la nature du risque (un risque de **mort** ne peut pas être accepté).",
+          "**Acceptation libre et éclairée** d'un danger particulier : la jurisprudence traditionnelle la limitait aux sports dangereux ou pratiqués en compétition (Civ. 2e, 22 mars 1995) ; elle la limite désormais à la **compétition sportive** (pas au jeu improvisé entre mineurs : Civ. 2e, 28 mars 2002 ; pas davantage à l'entraînement amical).",
+          "**Seuls les risques normaux** de l'activité peuvent être acceptés : traditionnellement, ceux qui résultent d'une pratique **conforme aux règles** ; certains arrêts jugent aussi la nature du risque (un risque de **mort** ne peut pas être accepté : Civ. 2e, 8 mars 1995).",
           "**Effet** : l'illicéité est neutralisée, la responsabilité n'est pas engagée."
         ] },
         { h: "Le consentement de la victime" },

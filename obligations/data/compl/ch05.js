@@ -33,7 +33,7 @@
       juste: "Depuis 2016, c'est le **créancier** qui peut fixer le prix, à charge de le **motiver** en cas de contestation ; le juge ne peut qu'accorder des dommages et intérêts en cas d'abus, voire prononcer la résolution ([[1165]]).",
       pourquoi: "C'était la solution de la jurisprudence antérieure ; le pouvoir de détermination du juge a disparu. Même solution, sans révision du prix, pour le contrat-cadre ([[1164]])." },
     { faux: "L'article 1171 permet de sanctionner n'importe quelle clause déséquilibrée du contrat d'adhésion, même négociée.",
-      juste: "Depuis la loi du 20 avril 2018 (contrats conclus à compter du 1er octobre 2018), la clause doit être **non négociable et unilatéralement déterminée à l'avance** par une partie ; la preuve en incombe au demandeur ([[1171]]).",
+      juste: "Depuis la loi du 20 avril 2018 (contrats conclus à compter du 1er octobre 2018), la clause doit être **non négociable et déterminée à l'avance par l'une des parties** ; la preuve en incombe au demandeur ([[1171]]).",
       pourquoi: "Une clause négociable ou négociée, même exorbitante, ne peut plus être sanctionnée sur ce fondement." },
     { faux: "La lésion est un vice du consentement qu'il faut prouver comme l'erreur.",
       juste: "C'est un vice **objectif** : il suffit de prouver le déséquilibre, apprécié à la formation du contrat, sans avoir à établir un vice de la volonté (Req., 28 déc. 1932 ; [[1674]]).",

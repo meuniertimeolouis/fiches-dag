@@ -147,7 +147,7 @@ window.OBL.arrets = [
     "ou": "Dissertation sur l'histoire de l'enrichissement sans cause."
    }
   ],
-  "distinguer": "Ne pas confondre avec l'arrêt Boudier (Req. 15 juin 1892), qui a consacré l'action de in rem verso. À ne pas confondre non plus la subsidiarité avec la simple absence des conditions d'une autre action : l'art. 1303-3 écarte l'action lorsque l'autre action existe ou se heurte à un obstacle de droit comme la prescription, mais l'échec de l'autre action pour défaut de preuve n'ouvre pas le in rem verso. La jurisprudence antérieure à 2016 avait nuancé la règle ; à vérifier avant de citer un arrêt précis d'assouplissement.",
+  "distinguer": "Ne pas confondre avec l'arrêt Boudier (Req. 15 juin 1892), qui a consacré l'action de in rem verso. À ne pas confondre non plus la subsidiarité avec la simple absence des conditions d'une autre action : l'art. 1303-3 écarte l'action lorsque l'autre action existe ou se heurte à un obstacle de droit comme la prescription, mais l'échec de l'autre action pour défaut de preuve n'ouvre pas le in rem verso. Depuis la fin des années 1980, la jurisprudence avait assoupli la règle : l'action est admise lorsque les conditions de l'autre action ne sont pas réunies en l'espèce (Civ. 1re, 14 mars 1995, épouse d'agriculteur ne pouvant bénéficier d'un salaire différé ; manuel p. 563).",
   "textes": [
    "1303-3"
   ],
@@ -1272,7 +1272,7 @@ window.OBL.arrets = [
   "nom": "Gabillet",
   "juridiction": "Ass. plén.",
   "date": "1984-05-09",
-  "numero": "80-14994",
+  "numero": "80-14.994",
   "provenance": [
    "CM",
    "Manuel"
@@ -2487,7 +2487,7 @@ window.OBL.arrets = [
     "ou": "Cas pratique : preuve de l'engagement ; commentaire d'arrêt."
    }
   ],
-  "distinguer": "Depuis la réforme de 2016, l'art. 1100, al. 2 du Code civil consacre l'idée : les obligations naturelles produisent des effets d'un devoir de conscience envers autrui, et l'exécution volontaire ou la promesse d'exécuter vaut engagement. Ne pas parler de vraie novation (art. 1329 s.) ; distinguer du paiement volontaire d'une obligation naturelle (art. 1302, al. 2), qui interdit seulement la répétition.",
+  "distinguer": "Depuis la réforme de 2016, l'art. 1100, al. 2 du Code civil consacre l'idée : les obligations « peuvent naître de l'exécution volontaire ou de la promesse d'exécution d'un devoir de conscience envers autrui ». Ne pas parler de vraie novation (art. 1329 s.) ; distinguer du paiement volontaire d'une obligation naturelle (art. 1302, al. 2), qui interdit seulement la répétition.",
   "textes": [
    "1100 al. 2",
    "1302 al. 2",
@@ -5075,7 +5075,7 @@ window.OBL.arrets = [
    "1302 al. 2"
   ],
   "td_fiche": false,
-  "theme": "Quasi-contrats",
+  "theme": "Introduction",
   "articles": [
    "1100",
    "1302"
@@ -9930,7 +9930,7 @@ window.OBL.arrets = [
    "CM"
   ],
   "chapitres": [
-   10,
+   11,
    17
   ],
   "notions": [

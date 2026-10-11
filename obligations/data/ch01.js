@@ -16,7 +16,7 @@ OBL.chapitres.push({
           { t: "Pouvoir de contrainte (obligatio)", d: "moyens étatiques d'obtenir l'exécution" }
         ] } } },
         { h: "1. La dette (debitum)" },
-        { p: "C'est le cœur du lien : ce que le débiteur doit au créancier. Longtemps conçue comme un lien strictement personnel, donc intransmissible, elle est aujourd'hui aussi regardée comme une **valeur patrimoniale** : la créance est un bien qui circule. La Cour européenne des droits de l'homme la protège d'ailleurs comme un « bien » au sens de l'article 1er du Protocole n° 1, et la réforme de 2016 a organisé la cession de créance, de dette et de contrat." },
+        { p: "C'est le cœur du lien : ce que le débiteur doit au créancier. Longtemps conçue comme un lien strictement personnel (« assujettissement physique et magique », selon Ph. Malaurie), donc intransmissible, elle est aujourd'hui aussi regardée comme une **valeur patrimoniale** : la créance est un bien qui circule. La Cour européenne des droits de l'homme la protège d'ailleurs comme un « bien » au sens de l'article 1er du Protocole n° 1 (Cour EDH, 9 déc. 1994 ; 6 oct. 2005 ; 14 févr. 2006). Avant même la réforme, la jurisprudence admettait de plus en plus largement la transmission de l'obligation, et même, sous certaines conditions, du contrat tout entier ; la réforme de 2016 a organisé la cession de créance, de dette et de contrat." },
         { h: "2. Le pouvoir de contrainte (obligatio)" },
         { p: "Une dette ne devient une obligation juridique que si le créancier dispose d'un moyen de contrainte étatique pour en obtenir l'exécution. Historiquement exercée sur la **personne** du débiteur, la contrainte s'exerce aujourd'hui sur son **patrimoine** (saisies, astreintes)." },
         { p: "Tout créancier bénéficie d'un **droit de gage général** sur l'ensemble des biens de son débiteur ([[2284]], [[2285]]). Mais le créancier ordinaire, dit **chirographaire**, n'a ni droit de suite ni droit de préférence : il vient en concours avec les autres créanciers. D'où l'intérêt de prendre une **sûreté** : réelle (hypothèque, gage…) ou personnelle (cautionnement…)." },
@@ -28,6 +28,7 @@ OBL.chapitres.push({
       contenu: [
         { def: { terme: "Obligation naturelle", texte: "obligation juridique **dépourvue de pouvoir de contrainte** : elle comporte une dette mais pas d'exécution forcée. Le Code civil y fait référence à l'[[1302|article 1302, alinéa 2]] et, depuis 2016, à l'[[1100|article 1100, alinéa 2]]." } },
         { attention: "Ne pas confondre l'obligation **naturelle** (sans contrainte) et l'obligation **en nature** (qui porte sur autre chose qu'une somme d'argent). Confusion fréquente et sanctionnée sur une copie." },
+        { p: "**Origines.** Le droit romain en connaissait deux hypothèses principales : l'obligation consentie par l'esclave, dépourvu de personnalité juridique, et l'obligation conclue sans respecter les formes impératives. Aucune action en justice n'était possible, mais l'exécution spontanée ne pouvait être remise en cause. Le Code de 1804 ne l'évoquait qu'à propos de la répétition (anc. art. 1235, al. 2, devenu [[1302]], al. 2, qui parle désormais de « restitution »)." },
         { h: "Deux conceptions doctrinales" },
         { schema: { type: "tableau", titre: "Les deux lectures de l'obligation naturelle", colonnes: ["", "Obligation civile imparfaite", "Devoir moral monté à la vie juridique"], lignes: [
           ["Auteurs", "Aubry et Rau (XIXe s.)", "Ripert (début XXe s.)"],
@@ -44,7 +45,7 @@ OBL.chapitres.push({
         ] } } },
         { arret: { ref: "Cass. civ. 1re, 10 oct. 1995, n° 93-20.300", apport: "L'engagement unilatéral pris en connaissance de cause d'exécuter une obligation naturelle transforme celle-ci en **obligation civile** : le créancier peut alors en exiger l'exécution en justice." } },
         { arret: { ref: "Req. 17 janv. 1938", apport: "Le paiement spontané d'une dette **prescrite** est valable et ne peut être répété. La décision ne vise pas expressément l'obligation naturelle, mais elle est l'application classique de la conception d'Aubry et Rau. Même solution aujourd'hui, de façon textuelle : [[2249]]." } },
-        { arret: { ref: "Req. 7 mars 1911", apport: "Exemple type de la thèse de Ripert : entre frères et sœurs, il n'existe pas d'obligation alimentaire légale, mais un devoir moral. Celui qui s'engage à l'exécuter se lie juridiquement (voir aussi, pour des illustrations plus récentes, Civ. 1re, 4 janv. 2005 ; 23 mai 2006 ; 17 oct. 2012 ; 11 oct. 2017, n° 16-24.533)." } },
+        { arret: { ref: "Req. 7 mars 1911", apport: "Exemple type de la thèse de Ripert : entre frères et sœurs, il n'existe pas d'obligation alimentaire légale, mais un devoir moral. Celui qui s'engage à l'exécuter se lie juridiquement (voir aussi, pour des illustrations plus récentes, Civ. 1re, 4 janv. 2005, n° 02-18.904 ; 23 mai 2006 ; 17 oct. 2012 ; 11 oct. 2017, n° 16-24.533)." } },
         { p: "Cas voisin de la dette prescrite : celui d'un débiteur placé dans une procédure de rétablissement personnel (Civ. 2e, 22 mars 2018, n° 17-14.024)." },
         { p: "La vraie difficulté pratique est donc de **caractériser** l'obligation naturelle préexistante : c'est elle qui justifie que le paiement ou la promesse ne soient pas une libéralité ou un paiement de l'indu." }
       ]
@@ -52,7 +53,8 @@ OBL.chapitres.push({
     {
       titre: "Classification par la source",
       contenu: [
-        { p: "Avant 2016, l'ancien article 1370 distinguait quatre sources : le contrat, le quasi-contrat, le délit et quasi-délit, et la loi. La réforme a reformulé ce classement à l'[[1100|article 1100, alinéa 1er]] : les obligations naissent d'**actes juridiques**, de **faits juridiques** ou de l'**autorité seule de la loi**." },
+        { p: "Le Code civil ne contient pas de dispositions générales sur la classification des obligations : ce sont des propositions doctrinales. La doctrine souligne d'ailleurs la diversité des sources (traité international, loi, usage, jurisprudence, décision d'une autorité administrative)." },
+        { p: "Avant 2016, l'ancien article 1370 distinguait quatre sources : le contrat (accord de volontés destiné à créer des effets de droit), le quasi-contrat (fait licite qui engendre des obligations sans l'accord des parties), le délit et quasi-délit (fait illicite qui oblige à réparer le préjudice causé), et la loi. La réforme a reformulé ce classement à l'[[1100|article 1100, alinéa 1er]] : les obligations naissent d'**actes juridiques**, de **faits juridiques** ou de l'**autorité seule de la loi**." },
         { schema: { type: "arbre", titre: "Les sources des obligations (art. 1100 s.)", racine: { t: "Sources des obligations", d: "[[1100]], al. 1er", enfants: [
           { t: "Actes juridiques", d: "manifestations de volonté destinées à produire des effets de droit ([[1100-1]])", enfants: [
             { t: "Contrat", d: "conventionnel" },
@@ -72,11 +74,11 @@ OBL.chapitres.push({
       titre: "Classification par l'objet",
       contenu: [
         { h: "1. Donner, faire, ne pas faire : une distinction abandonnée" },
-        { p: "Les anciens articles 1101 et 1126 opposaient l'obligation de **donner** (transférer la propriété), de **faire** (prestation positive : soigner, travailler, mettre un local à disposition) et de **ne pas faire** (abstention : non-concurrence, non-construction). Son intérêt tenait surtout à la sanction de l'inexécution (ancien art. 1142)." },
-        { p: "L'ordonnance du 10 février 2016 ne l'a pas reprise. La critique visait l'obligation de donner : en droit français, la propriété se transfère **par le seul échange des consentements**, sans que le débiteur ait quoi que ce soit à faire. Le transfert est désormais traité comme un **effet translatif** du contrat : il s'opère lors de la conclusion du contrat ([[1196]])." },
+        { p: "Les anciens articles 1101 et 1126 opposaient l'obligation de **donner** (transférer la propriété), de **faire** (prestation positive : soigner, travailler, mettre un local à disposition) et de **ne pas faire** (abstention : non-concurrence, non-construction). L'obligation de donner se rencontrait dans tous les contrats translatifs de propriété (vente, donation, échange). Bien que posée dans des articles relatifs au seul contrat, la distinction valait quelle que soit la source de l'obligation. Son intérêt tenait surtout à la sanction de l'inexécution (ancien art. 1142)." },
+        { p: "L'ordonnance du 10 février 2016 ne l'a pas reprise (abandon au moins formel). La critique visait l'obligation de donner : en droit français, la propriété se transfère **par le seul échange des consentements**, sans que le débiteur ait quoi que ce soit à faire. Le transfert est désormais traité comme un **effet translatif** du contrat : il s'opère lors de la conclusion du contrat ([[1196]])." },
         { attention: "Après 2016, parler d'« obligation de donner » est un anachronisme sur une copie. Dites : effet translatif du contrat (art. 1196). La distinction faire / ne pas faire garde en revanche un intérêt didactique, notamment en responsabilité contractuelle." },
         { h: "2. Obligations pécuniaires et obligations en nature" },
-        { p: "C'est aujourd'hui la distinction la plus utile en pratique. L'obligation **pécuniaire** porte sur une somme d'argent ; l'obligation **en nature** porte sur toute autre prestation (faire, ne pas faire, livrer autre chose que de l'argent)." },
+        { p: "C'est aujourd'hui la distinction la plus utile en pratique. Absente du Code de 1804, elle est implicitement reconnue par l'ordonnance de 2016, qui consacre des règles propres aux obligations de somme d'argent ([[1343]] s.). L'obligation **pécuniaire** porte sur une somme d'argent (elle est présente dans tous les rapports à titre onéreux) ; l'obligation **en nature** porte sur toute autre prestation (faire, ne pas faire, livrer autre chose que de l'argent). La dette d'argent est exposée à la dépréciation monétaire, que les parties tentent de prévenir par des clauses d'indexation." },
         { schema: { type: "tableau", titre: "Pourquoi distinguer ?", colonnes: ["", "Obligation pécuniaire", "Obligation en nature"], lignes: [
           ["Objet", "Une somme d'argent", "Toute autre prestation"],
           ["Paiement", "Règles propres : **nominalisme** (le débiteur paie le montant nominal), sauf indexation ([[1343]])", "Règles générales du paiement"],
@@ -88,12 +90,12 @@ OBL.chapitres.push({
     {
       titre: "Classification par l'intensité : moyens ou résultat",
       contenu: [
-        { p: "Proposée par **Demogue** et reprise par la jurisprudence, cette distinction n'est pas écrite dans le Code civil (elle était seulement sous-entendue par les anciens articles 1137 et 1147) ; la réforme de 2016 ne l'a pas consacrée. Elle reste pleinement appliquée en droit positif, la réforme d'ensemble de la responsabilité civile n'ayant toujours pas abouti." },
+        { p: "Proposée par **Demogue** et reprise par la jurisprudence, cette distinction n'est pas écrite dans le Code civil (elle était seulement sous-entendue par les anciens articles 1137 et 1147) ; la réforme de 2016 ne l'a pas consacrée. Elle reste pleinement appliquée en droit positif, la réforme d'ensemble de la responsabilité civile n'ayant toujours pas abouti. Les deux projets de réforme de la responsabilité civile présentés par la Chancellerie (mars 2016, avril 2017) semblaient pourtant l'abandonner, non sans susciter les interrogations de la doctrine." },
         { schema: { type: "tableau", titre: "Obligation de moyens / obligation de résultat", colonnes: ["", "Obligation de moyens", "Obligation de résultat"], lignes: [
           ["Promesse", "Mettre en œuvre tous les moyens disponibles pour atteindre un but, sans le garantir", "Atteindre un résultat déterminé"],
           ["Exemples", "Le médecin (soigner, pas guérir) ; l'avocat (défendre, pas gagner)", "Le vendeur qui doit livrer une chose de genre ; le transporteur de personnes (sécurité)"],
           ["Preuve de l'inexécution", "Le créancier doit prouver une **faute** du débiteur (manque de diligence)", "Il suffit de constater que le résultat **n'est pas atteint**"],
-          ["Exonération du débiteur", "Il prouve qu'il a été diligent", "Seulement en prouvant la **force majeure** ([[1218]], [[1231-1]])"]
+          ["Exonération du débiteur", "Pas de responsabilité tant que le créancier ne prouve pas sa faute (en pratique, il établit sa diligence)", "Seulement en prouvant la **force majeure** ([[1218]], [[1231-1]])"]
         ] } },
         { p: "L'intérêt de la distinction se révèle donc surtout au stade de la **responsabilité contractuelle** : elle répartit la charge de la preuve (voir le chapitre sur l'inexécution du contrat)." }
       ]

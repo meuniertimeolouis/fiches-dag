@@ -231,7 +231,7 @@ function coursHome() {
     <div class="row">${last ? `<a class="btn main" href="#/obl/cours/${last.id}">Reprendre : ${esc(last.t)}</a>` : first ? `<a class="btn main" href="#/obl/cours/${first.id}">Commencer par l'introduction</a>` : ""}<a class="btn" href="#/obl/manuel">Fiches du manuel</a></div>`;
   const row = (href, n, t, d) => `<a class="chrow" href="${href}"><span class="n">${n}</span><span class="t">${esc(t)}${d && d !== t ? `<small class="sub">${esc(d)}</small>` : ""}</span><span class="right"></span></a>`;
   let k = 0;
-  setMain(`<section class="resume"><div class="eyebrow">Licence 2 · Semestre 3</div><h1>Droit des obligations</h1>${resume}</section>
+  setMain(`<section class="resume"><div class="eyebrow">Licence 2</div><h1>Droit des obligations</h1>${resume}</section>
     ${COURS_TITRES.map((p, i) => `<section class="part" id="cp-${i}"><h2>${esc(p.t)}</h2>${p.ids.map(coursCh).filter(Boolean).map(c => row(`#/obl/cours/${c.id}`, ++k, c.t, c.kick)).join("")}</section>`).join("")}
     <section class="part" id="cp-hp"><h2>Hors plan : notions du manuel pour le cas pratique</h2>
       <p class="muted small hpnote">Ces notions ne figurent pas dans les plans distribués mais servent en cas pratique. Elles sont présentées sous l'angle de leur utilité : à quoi elles servent, comment raisonner, quels pièges éviter.</p>

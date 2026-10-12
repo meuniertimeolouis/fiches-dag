@@ -48,7 +48,7 @@
   };
   F["action-nullite"] = {
     pour: "l'action en nullité soit recevable et permette d'anéantir le contrat",
-    alors: "le juge prononce la nullité ([[1178]], al. 1er) : le contrat est censé n'avoir jamais existé et les prestations s'effacent par des restitutions ([[1178]], al. 2).",
+    alors: "le juge prononce la nullité ([[1178]], al. 1er) : le contrat est censé n'avoir jamais existé et les prestations s'effacent par des restitutions ([[1178]], al. 3).",
     sinon: "l'action est irrecevable (défaut de qualité) ou prescrite : le contrat est consolidé ; seule demeure l'exception de nullité, tant que le contrat n'a pas été exécuté ([[1185]]).",
     reserve: "la confirmation, pour la seule nullité relative ([[1182]]) ; l'action interrogatoire ([[1183]])."
   };

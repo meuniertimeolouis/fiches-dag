@@ -157,7 +157,7 @@ function oblFichesTD() {
   chrome("obl", "obl/td");
   const dir = "../obligations/fiches-td/";
   setMain(`<div class="head"><h1>Fiches TD</h1><p class="muted" style="margin-top:6px">Une fiche par séance de TD : les notions du TD, les exercices corrigés, les pièges, le vocabulaire, les articles, la jurisprudence et une auto-évaluation corrigée. Format A4, prêtes à imprimer.</p></div>
-    <section class="part"><h2>Responsabilité extracontractuelle</h2>${FICHES_TD.map(x => `<div class="chrow tdrow"><span class="n">${x.td}</span><span class="t">${esc(x.t)}<small class="cpq">${esc(x.d)}</small></span><span class="right row"><a class="btn" href="${dir + x.f}" target="_blank" rel="noopener">Ouvrir</a><a class="btn main" href="${dir + x.f}" download="${esc(x.t)} - TD ${x.td}.pdf">Télécharger</a></span></div>`).join("")}</section>`);
+    <section class="part"><h2>Responsabilité extracontractuelle</h2>${FICHES_TD.map(x => `<div class="chrow tdrow"><span class="n">${x.td}</span><span class="t">${esc(x.t)}<small class="cpq">${esc(x.d)}</small></span><span class="right row"><a class="btn" href="${dir + x.f}?v=2" target="_blank" rel="noopener">Ouvrir</a><a class="btn main" href="${dir + x.f}?v=2" download="${esc(x.t)} - TD ${x.td}.pdf">Télécharger</a></span></div>`).join("")}</section>`);
 }
 
 /* =================== DROIT DES OBLIGATIONS =================== */

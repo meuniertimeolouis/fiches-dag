@@ -114,7 +114,7 @@ function chrome(sub, toolCur) {
   document.querySelectorAll(".subjects a").forEach(a => a.setAttribute("aria-current", a.dataset.sub === sub ? "page" : "false"));
   const tools = sub === "obl"
     ? [["obl", "Cours"], ["obl/manuel", "Fiches du manuel"], ["obl/td", "Fiches TD"], ["obl/outils/regimes", "Régimes"], ["obl/outils/articles", "Articles"], ["obl/outils/pieges", "Pièges"], ["obl/outils/cas", "Cas pratiques"], ["obl/outils/arrets", "Arrêts"], ["obl/outils/quiz", "Quiz mélangé"]]
-    : [["dag", "Parcours"], ["dag/frise", "Frise chronologique"], ["dag/fiches", "Toutes les fiches"]];
+    : [["dag/cours", "Cours"], ["dag", "Parcours"], ["dag/frise", "Frise chronologique"], ["dag/fiches", "Toutes les fiches"]];
   $("#tools").innerHTML = tools.map(([p, t]) => `<a href="#/${p}" ${toolCur === p ? 'aria-current="page"' : ""}>${t}</a>`).join("") +
 "";
   $("#thumbs").innerHTML = "";
@@ -139,6 +139,7 @@ function render() {
     if (r[1] === "hp") return horsPlan(r[2]);
     return coursHome();
   }
+  if (r[1] === "cours") return dagCours(r[2]);
   if (r[1] === "s") return dagSeance(r[2], r[3] || "frise");
   if (r[1] === "frise") { chrome("dag", "dag/frise"); setMain(`<div class="head"><h1>Frise chronologique des arrêts</h1></div><div id="frise"></div>`); return friseView($("#frise"), { seance: "all" }); }
   if (r[1] === "fiches") return dagAll();
@@ -298,6 +299,30 @@ function horsPlan(id) {
       <div class="next">${prev ? `<a class="btn" href="#/obl/hp/${prev.id}">← ${esc(prev.t)}</a>` : ""}<span></span>${next ? `<a class="btn main" href="#/obl/hp/${next.id}">${esc(next.t)} →</a>` : `<a class="btn main" href="#/obl">Retour au cours</a>`}</div>
     </div></div></div>`);
   main().querySelectorAll(".reveal").forEach(b => b.addEventListener("click", () => b.closest(".pg").classList.add("open")));
+  main().querySelectorAll(".toc [data-scroll]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); const el = document.getElementById(a.dataset.scroll); if (el) el.scrollIntoView({ behavior: "smooth" }); }));
+}
+
+/* ---------- Cours de droit administratif (plan du Pr Gabayet) ---------- */
+const DAGC = window.DAGC || { chapitres: [], limites: [] };
+function dagCours(id) {
+  chrome("dag", "dag/cours");
+  const i = DAGC.chapitres.findIndex(c => c.id === id), c = DAGC.chapitres[i];
+  if (!c) {
+    const row = (c, n) => `<a class="chrow" href="#/dag/cours/${c.id}"><span class="n">${n}</span><span class="t">${esc(c.t)}<small class="sub">${esc(c.kick)}</small></span><span class="right"></span></a>`;
+    setMain(`<section class="resume"><div class="eyebrow">Licence 2 · Droit administratif général</div><h1>Cours</h1><p>Le cours suit le plan annuel du Pr Gabayet (syllabus 2026-2027), avec les titres du syllabus, rempli à partir du Précis et de l'HyperCours. Pour l'instant : <strong>Partie 1, Titre 1 (Les acteurs du droit administratif)</strong>.</p></section>
+      <section class="part"><h2>Partie 1 · Les clés du droit administratif</h2><h3 class="muted">Titre 1. Les acteurs du droit administratif</h3>${DAGC.chapitres.map((c, k) => row(c, k + 1)).join("")}</section>
+      <section class="part"><h2>Limites de vérification</h2><ul class="small muted">${(DAGC.limites || []).map(x => `<li>${fmtA(x)}</li>`).join("")}</ul></section>`);
+    return;
+  }
+  const prev = DAGC.chapitres[i - 1], next = DAGC.chapitres[i + 1];
+  const secs = (c.s || []).map((n, j) => ["s-" + j, n.t]);
+  setMain(`<div class="path"><nav class="stepper toc" aria-label="Sommaire"><a class="back" href="#/dag/cours">← Cours</a><ol>${secs.map(([sid, t]) => `<li><a href="#${sid}" data-scroll="${sid}"><span>${esc(t.replace(/^Section \d+\s*[–-]\s*/, ""))}</span></a></li>`).join("")}</ol></nav>
+    <div><div class="head"><div class="kick">${esc(c.kick)}</div><h1>${esc(c.t)}</h1></div>
+    <div class="content cours">${c.intro ? `<p class="lead">${fmtA(c.intro)}</p>` : ""}
+    ${(c.s || []).map((n, j) => coursNode(n, 0, "s-" + j)).join("")}
+    <p class="muted small vlim"><strong>Sources :</strong> ${esc(c.manuel)}. ${(DAGC.limites || []).map(fmtA).join(" ")}</p>
+    <div class="next">${prev ? `<a class="btn" href="#/dag/cours/${prev.id}">← ${esc(prev.t)}</a>` : ""}<span></span>${next ? `<a class="btn main" href="#/dag/cours/${next.id}">${esc(next.t)} →</a>` : `<a class="btn main" href="#/dag/cours">Retour au cours</a>`}</div>
+    </div></div></div>`);
   main().querySelectorAll(".toc [data-scroll]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); const el = document.getElementById(a.dataset.scroll); if (el) el.scrollIntoView({ behavior: "smooth" }); }));
 }
 

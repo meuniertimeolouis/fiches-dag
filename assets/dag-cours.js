@@ -579,7 +579,223 @@ window.DAGC = {
   ]}
   ]
 }
-
+,
+{
+  id: "p2t2c1", partie: "Partie 2 · Les activités de l'administration", titre: "Titre 2. La police administrative", kick: "Partie 2 · Titre 2 · Chapitre 1", t: "La notion de police administrative",
+  plan: "Syllabus pp. 4-5", manuel: "Précis n° 147-171 ; HyperCours ch. 10 (n° 559-584)",
+  intro: "**La police administrative est l'ensemble des interventions de l'administration qui imposent à la libre action des particuliers la discipline exigée par la vie en société** (définition classique, reprise par le Précis et l'HyperCours). Elle poursuit une finalité unique : **prévenir les troubles à l'ordre public**. Principe de toute la matière, posé par le commissaire du gouvernement Corneille (concl. sur CE, 19 mai 1933, Benjamin ; formule reprise sous CE, 17 août 1917, Baldy) : **« la liberté est la règle, la restriction de police l'exception »**. Le droit de la police administrative est donc un droit de **conciliation** entre l'ordre public et les libertés. Ce chapitre répond à deux questions : à quoi sert la police (section 1) et qui l'exerce (section 2).",
+  s: [
+  { t: "Section 1 – La prévention des troubles à l'ordre public, finalité de la police administrative", c: [
+    { p: "La finalité de la police administrative est **préventive** : l'autorité intervient **avant** le trouble, pour l'empêcher. C'est ce but qui la définit, et qui la distingue de la police judiciaire." }
+  ], s: [
+    { t: "§ 1. La notion d'ordre public", c: [
+      { def: { terme: "Ordre public (police administrative)", texte: "Notion **autonome** (à ne pas confondre avec l'ordre public de l'art. 6 du Code civil, qui limite la liberté contractuelle). Standard juridique : ensemble des exigences minimales de la vie en société que l'autorité de police doit préserver. La **sauvegarde de l'ordre public** est un **objectif de valeur constitutionnelle** (Cons. const., 12-13 août 1993, n° 93-325 DC)." } },
+      { p: "L'ordre public n'est défini par aucun texte unique : sa définition est **jurisprudentielle** et évolue avec les mœurs. On distingue les composantes classiques (A) et l'ordre public dit immatériel (B)." }
+    ], s: [
+      { t: "A. Les composantes classiques de l'ordre public", c: [
+        { p: "Le CGCT, pour la police municipale, énumère l'ordre public « **matériel et extérieur** » : **le bon ordre, la sûreté, la sécurité et la salubrité publiques** (art. L. 2212-2), repris par les autres textes de police." },
+        { liste: [
+          "**Tranquillité** (bon ordre) : lutte contre les bruits, tapages, attroupements. Le maire peut, par exemple, réglementer le bruit.",
+          "**Sécurité** : circulation, incendie, bâtiments menaçant ruine, risques naturels.",
+          "**Salubrité** : hygiène, santé publique, déchets. Exemple : la lutte contre le tabagisme dans les lieux publics relève de la salubrité (CE, 19 mars 2007, Le Gac).",
+          "**Sûreté** : protection des personnes et des biens contre les violences, vols et accidents."
+        ]},
+        { attention: "Ordre public « matériel et extérieur » : la police ne vise pas, en principe, l'ordre moral ou intérieur (ce qu'on pense ou ce que l'on ressent). Cette conception a pourtant été élargie par la jurisprudence (voir B)." }
+      ]},
+      { t: "B. L'ordre public immatériel", c: [
+        { p: "Au-delà de l'ordre public matériel, le juge a admis que certaines exigences **morales** puissent justifier une mesure de police. Le juge garde un **contrôle strict**, pour éviter que la police ne devienne une censure." }
+      ], s: [
+        { t: "1. La question de la moralité publique", c: [
+          { p: "**Principe.** La moralité publique n'est une composante de l'ordre public que **sous conditions**. Le maire ne peut interdire un spectacle au nom de la seule morale : il faut des **circonstances locales** (risque de troubles précis)." },
+          { liste: [
+            "**CE, 18 déc. 1959, Sté « Les films Lutetia »** : le maire peut interdire la projection d'un film, **malgré le visa ministériel**, si celle-ci est susceptible de provoquer des troubles sérieux ou si, en raison de **circonstances locales**, elle porte atteinte à l'ordre public. Arrêt qui fonde la **combinaison PAS / PAG** (chapitre 2, section 3).",
+            "**CE, ass., 19 avr. 1963, Ville de Dijon** et **CE, 26 juill. 1985, Ville d'Aix-en-Provence** : mêmes solutions pour la moralité ; sans circonstances locales, l'interdiction est illégale.",
+            "**CE, 8 déc. 1997, Commune d'Arcueil** (messageries roses) ; **CE, 8 juin 2005, Commune de Houilles** (sex-shop) : la moralité publique peut justifier une réglementation locale si elle est liée à des circonstances locales.",
+            "**CE, sect., 30 juin 2000, Association Promouvoir** (film Baise-moi) : la **classification des films** et le visa relèvent de la PAS du ministre de la Culture, qui doit concilier liberté d'expression et protection de la jeunesse ; le juge contrôle la qualification (voir aussi CE, 28 sept. 2016 et CE, 5 avr. 2019, Margo Cinema).",
+            "**Couvre-feu pour les mineurs** : admis seulement si limité dans le temps et l'espace et justifié par des circonstances locales (CE, ord., 9 juill. 2001, Préfet du Loiret) ; annulé pour une mesure générale et trop large (CE, 6 juin 2018, LDH)."
+          ]},
+          { cp: "Réflexe : devant un arrêté fondé sur la « moralité », chercher d'abord les **circonstances locales**. Sans elles, l'arrêté est illégal pour erreur de droit sur la composante de l'ordre public." }
+        ]},
+        { t: "2. Le respect de la dignité de la personne humaine", c: [
+          { def: { terme: "Dignité de la personne humaine", texte: "Composante de l'ordre public **consacrée par CE, ass., 27 oct. 1995, Commune de Morsang-sur-Orge et Ville d'Aix-en-Provence** (lancer de nains) : le maire peut interdire une attraction qui porte atteinte à la dignité, **sans avoir besoin de circonstances locales**, et même si la personne concernée y consent. Principe à valeur constitutionnelle (Cons. const., 27 juill. 1994, n° 94-343/344 DC)." } },
+          { attention: "Date et références à retenir : l'arrêt Morsang-sur-Orge est du **27 octobre 1995** (assemblée). Le Conseil constitutionnel a consacré la sauvegarde de la dignité contre toute forme d'asservissement et de dégradation le **27 juillet 1994** (94-343/344 DC, lois bioéthique)." },
+          { liste: [
+            "**CE, ord., 5 janv. 2007, Association Solidarité des Français** (« soupe au cochon ») : le juge des référés a admis l'interdiction d'une distribution de soupe au porc, à raison de son but discriminatoire à l'égard de certains publics.",
+            "**CE, ord., 9 janv. 2014, Ministre de l'Intérieur c/ Dieudonné** (spectacle « Le Mur ») : l'interdiction préventive est légale quand le spectacle porte atteinte à la dignité (propos antisémites) et risque de troubler l'ordre public. Le juge des référés applique un contrôle poussé de la proportionnalité. Voir aussi CEDH, 10 nov. 2015, Dieudonné M'Bala M'Bala c/ France (irrecevabilité).",
+            "**CE, 9 juill. 2003, Lecomte** (mendicité) : la mendicité ne peut être interdite que si elle est source de troubles (agressive, insistante)."
+          ]},
+          { p: "**Droit européen.** La dignité peut justifier une restriction à une liberté économique : CJCE, 14 oct. 2004, Omega (laserdrome simulant des « homicides »). Les États peuvent donc retenir une conception nationale de l'ordre public, sous contrôle de proportionnalité." }
+        ]}
+      ]}
+    ]},
+    { t: "§ 2. Un critère de distinction entre police administrative et police judiciaire", c: [
+      { def: { terme: "Police administrative / police judiciaire", texte: "**Police administrative** : mission **préventive**, qui vise à empêcher les troubles à l'ordre public (agit avant l'infraction). **Police judiciaire** : mission **répressive**, qui constate les infractions pénales, en rassemble les preuves et en recherche les auteurs (art. 14 CPP), sous l'autorité du procureur (art. 12 CPP)." } },
+      { p: "**Un critère matériel et finaliste, non organique.** Les mêmes agents (policiers, gendarmes) exercent l'une et l'autre fonction. On regarde donc la **finalité de l'opération**, non la qualité de ceux qui agissent. **CE, sect., 11 mai 1951, Consorts Baud** (concl. Delvolvé) : les opérations de PJ sont celles qui visent à **constater une infraction déterminée**. Voir aussi T. confl., 7 juin 1951, Noualek." },
+      { liste: [
+        "**Requalification** : le juge peut requalifier une mesure. CE, ass., 24 juin 1960, Sté Frampar (saisie de journaux, relevant de la PA).",
+        "**Cas mixtes** : l'opération est qualifiée selon son **but dominant** : T. confl., 12 juin 1978, Sté Le Profil ; T. confl., 12 déc. 2005, Époux Girodie.",
+        "**Prévention d'une infraction** : une mesure destinée à prévenir des infractions est de PA (CE, 9 nov. 2015, AGRIF)."
+      ]},
+      { p: "**Enjeux de la distinction** :" },
+      { liste: [
+        "**Juge compétent** : le juge administratif pour la PA ; le juge judiciaire pour la PJ (T. confl., 27 nov. 1952, Préfet de la Guyane).",
+        "**Imputation de la responsabilité** : pour la PJ, la responsabilité est celle de l'**État** ; pour la PA, elle relève de la personne publique dont relève l'autorité de police, par exemple la **commune** pour un maire.",
+        "**Régime juridique** : règles de procédure différentes (Code de procédure pénale pour la PJ, droit administratif pour la PA)."
+      ]},
+      { cp: "Réflexe : qualifier d'abord l'opération (**but dominant** : prévenir ou réprimer ?) avant de désigner le juge compétent. Une même opération peut changer de nature en cours de route (de PA en PJ dès qu'une infraction est constatée)." }
+    ]}
+  ]},
+  { t: "Section 2 – La distinction police administrative générale / police administrative spéciale", c: [
+    { p: "Il existe une multitude de pouvoirs de police. On les classe en **police administrative générale (PAG)** et **police administrative spéciale (PAS)**." }
+  ], s: [
+    { t: "§ 1. La signification de la distinction", c: [
+      { p: "La distinction répond à un double critère : l'autorité compétente et l'intérêt à protéger." }
+    ], s: [
+      { t: "A. La distinction organique", c: [
+        { p: "**PAG** : pouvoir de police qui s'exerce sur **l'ensemble des personnes** (et des activités) d'un **territoire** donné, au nom de l'ordre public général. **PAS** : pouvoir de police qui concerne une **catégorie d'administrés ou d'activités** (étrangers, installations classées, publicité, médicaments, chasse, etc.). La PAS est **instituée par la loi** (Cons. const., 7 nov. 2000, n° 2000-190 L ; 20 févr. 1987, n° 87-149 L) et confiée à une autorité désignée par le texte." }
+      ]},
+      { t: "B. La distinction quant à l'intérêt public à sauvegarder", c: [
+        { p: "La PAG protège l'ordre public **dans toutes ses composantes** (tranquillité, sécurité, salubrité). La PAS protège une **préoccupation particulière**, qui peut même sortir de l'ordre public classique : police des prix, concentrations (CE, sect., 9 avr. 1999, Coca-Cola), protection de l'environnement (CE, 15 janv. 1986, Pec-Engineering), de l'urbanisme, du domaine public, des immeubles menaçant ruine." },
+        { p: "Les PAS ont souvent des **pouvoirs renforcés** : elles peuvent recourir à une **autorisation préalable**, alors que la PAG ne le peut pas en principe (voir chapitre 3, section 3)." },
+        { attention: "Attention : une PAS peut poursuivre un but étranger à l'ordre public (la concurrence, l'esthétique d'un site), alors que la PAG ne peut jamais le faire. Ne pas écrire que toute PAS vise l'ordre public." }
+      ]}
+    ]},
+    { t: "§ 2. Les autorités de PAG", c: [], s: [
+      { t: "A. L'autorité de PAG nationale : le chef du gouvernement (PM)", c: [
+        { p: "Depuis **CE, 8 août 1919, Labonne** (le chef de l'État titulaire de la PAG nationale, sous la IIIe République), la jurisprudence a ensuite attribué ce pouvoir, sous la Ve République, au **Premier ministre**, en vertu de ses pouvoirs réglementaires de droit commun (art. 21 C) : **CE, 17 févr. 1978, Comité pour léguer l'esprit de la Résistance**. Illustration récente : le décret n° 2020-260 du 16 mars 2020 (confinement lié au Covid-19)." },
+        { liste: [
+          "**Les ministres** n'ont **pas de PAG nationale** : ils ne peuvent exercer que des PAS que la loi leur confie.",
+          "L'autorité de PAG nationale est le Premier ministre (PM) pour le Précis. **L'HyperCours** l'attribue aussi au Président de la République, mais la solution jurisprudentielle retenue est celle du Premier ministre (divergence signalée en bas de page)."
+        ]}
+      ]},
+      { t: "B. Les autorités de PAG locales", c: [], s: [
+        { t: "1) Le préfet", c: [
+          { p: "Le préfet exerce la PAG dans le **département** pour les mesures **excédant le territoire d'une commune**, ou lorsque le maire est défaillant (CGCT, art. L. 2215-1) :" },
+          { liste: [
+            "**Pouvoir de substitution** au maire, après **mise en demeure** restée sans résultat (CGCT, art. L. 2215-1, 3°). Exception : l'urgence.",
+            "**Direction de la police d'État** (CSI, art. L. 122-1) et mise en œuvre du plan **ORSEC** en cas de catastrophe.",
+            "À **Paris**, la police est exercée par le **préfet de police**, et non par le maire."
+          ]}
+        ]},
+        { t: "2) Le maire", c: [
+          { p: "Le maire dispose de la **police municipale** : « **assurer le bon ordre, la sûreté, la sécurité et la salubrité publiques** » (CGCT, art. L. 2212-1 et L. 2212-2). Il agit par **arrêté**, non le conseil municipal (CE, 31 janv. 1997, Cochery Bourdin)." },
+          { liste: [
+            "**Étatisation partielle** : dans les communes à police étatisée, certains pouvoirs sont confiés à l'État (CGCT, art. L. 2214-1, L. 2214-3, L. 2214-4).",
+            "**Transfert à l'intercommunalité** : la loi du 13 août 2004 permet de transférer certains pouvoirs de police du maire au **président de l'EPCI** (CGCT, art. L. 5211-9-2) ; CE, 17 juin 2024, Farino.",
+            "**Polices municipales** : le maire peut disposer d'agents de police municipale, dont les missions sont fixées par le CSI (art. L. 511-1 et s.), et conclure des **contrats locaux de sécurité** (CSI, art. L. 132-1 et s.).",
+            "**Président du conseil départemental** : police de la circulation **hors agglomération** sur les routes départementales (CGCT, art. L. 3221-4)."
+          ]},
+          { attention: "Le maire agit à double titre : au nom de la **commune** (police municipale) et au nom de l'**État** (certaines attributions : état civil, opérations électorales). Ne pas les confondre dans une question de responsabilité." }
+        ]}
+      ]}
+    ]}
+  ]}
+  ]
+}
+,
+{
+  id: "p2t2c2", partie: "Partie 2 · Les activités de l'administration", titre: "Titre 2. La police administrative", kick: "Partie 2 · Titre 2 · Chapitre 2", t: "La mise en œuvre du pouvoir de police administrative",
+  plan: "Syllabus p. 5", manuel: "Précis n° 172-181 ; HyperCours ch. 10 (n° 585-600)",
+  intro: "**Le pouvoir de police est aussi un devoir.** Trois règles encadrent sa mise en œuvre : l'autorité de police **doit agir** quand l'ordre public est menacé (section 1) ; elle **ne peut pas déléguer** ce pouvoir (section 2) ; enfin, plusieurs autorités pouvant intervenir sur un même objet, il faut savoir **comment leurs mesures se combinent** (section 3).",
+  s: [
+  { t: "Section 1 – L'obligation de prendre des mesures de police administrative", c: [
+    { p: "**Principe.** L'autorité investie d'un pouvoir de police n'a pas seulement la **faculté** d'agir : elle a l'**obligation** de prendre les mesures nécessaires lorsque l'ordre public est menacé." },
+    { liste: [
+      "**CE, 23 oct. 1959, Doublet** : le préfet, devant un péril grave, doit user de ses pouvoirs pour y mettre fin.",
+      "**CE, ass., 27 oct. 1995, Commune de Morsang-sur-Orge** : le maire est tenu de prendre « toute mesure » pour prévenir une atteinte à l'ordre public.",
+      "**CE, ass., 20 oct. 1972, Ville de Paris c/ Marabout** : le refus d'agir engage la responsabilité de l'autorité de police ; **CAA Nancy, 19 juin 2006, Urbès** (poids lourds) : même logique pour l'inaction du maire."
+    ]},
+    { p: "**Sanction.** Le **refus d'agir est illégal** (recours pour excès de pouvoir) et peut engager la **responsabilité** de la personne publique pour **faute simple** (le juge vérifie si l'autorité a pris les mesures que commandaient les circonstances). Le référé-liberté est possible lorsque la carence porte une **atteinte grave et manifestement illégale à une liberté fondamentale** (CE, ord., 23 nov. 2015, Calais ; CE, 31 juill. 2017, Calais) ; mais l'inaction n'est pas à elle seule une atteinte grave (CE, ord., 20 juill. 2001, Mandelieu)." },
+    { p: "**Droit européen.** L'État peut être condamné pour carence dans le maintien de l'ordre : **CJCE, 9 déc. 1997, Commission c/ France** (blocage de camions de fruits et légumes, « guerre de la fraise »)." },
+    { p: "**Contrôle du juge.** Il est **variable** : normal en principe, mais plus restreint lorsque l'autorité dispose de moyens limités ou doit arbitrer (CE, 10 mars 2004, Association Promouvoir ; CE, 26 oct. 2007, ADNA). Voir aussi CE, 7 févr. 2020, Confédération paysanne." },
+    { cp: "Réflexe : devant une question « le maire pouvait-il ne rien faire ? », rappeler l'**obligation d'agir**, puis préciser que la responsabilité suppose une faute et que le juge tient compte des **moyens disponibles**." }
+  ]},
+  { t: "Section 2 – L'interdiction de déléguer le pouvoir de police administrative", c: [
+    { p: "**Principe.** Le pouvoir de police est une prérogative de puissance publique attachée à l'autorité qui en est investie : elle **ne peut ni l'abandonner ni le déléguer** à une personne privée. Une **délégation de service public** de la police est impossible (CE, ass., 17 juin 1932, Ville de Castelnaudary ; CE, 1er avr. 1994, Commune de Menton ; TA Nice, 22 déc. 2006, Vigitel)." },
+    { liste: [
+      "**CE, 29 déc. 1997, Commune d'Ostrecourt** : la police ne peut être confiée par contrat à un tiers.",
+      "**Exceptions limitées** : CE, 21 juin 2000, Plage « Chez Joseph » (concession de plage, la commune garde sa police) ; CAA Versailles, 12 juin 2014, EGS."
+    ]},
+    { p: "**Contrat et police.** Le pouvoir de police ne peut pas être aliéné par contrat : l'autorité conserve sa liberté d'agir (CE, 5 nov. 1943, Leneveu ; CE, 23 oct. 1974, Valet ; CE, 8 mars 1985, Amis de la Terre)." },
+    { p: "**Fondement constitutionnel.** L'interdiction de déléguer découle de l'**article 12 de la DDHC** (la force publique est instituée pour l'avantage de tous). Le Conseil constitutionnel n'admet que des délégations de **portée limitée**, sous le **contrôle effectif** de l'autorité publique : Cons. const., 10 mars 2011, n° 2011-625 DC ; QPC n° 2017-637 ; QPC n° 2021-940 (Air France) ; QPC n° 2023-1042 (agents contractuels de droit privé) ; 29 mars 2018, n° 2017-695 QPC ; 24 avr. 2025, n° 2025-878 DC (Jeux olympiques de 2024). Le **CSI, livre VI**, encadre la sécurité privée, qui ne peut exercer que des missions de surveillance et non de police." },
+    { attention: "À ne pas confondre : une personne privée peut **concourir** à la sécurité (entreprises de sécurité privée) ou exécuter des **tâches matérielles** pour l'autorité de police, mais **ne peut pas prendre de décisions de police** ni exercer des contraintes. La limite est la **portée limitée** des prérogatives sous contrôle effectif." }
+  ]},
+  { t: "Section 3 – La combinaison des mesures de police administrative", c: [
+    { p: "Plusieurs autorités peuvent intervenir sur un même objet. Il faut régler leurs rapports." }
+  ], s: [
+    { t: "§ 1. La combinaison des mesures de PAG", c: [
+      { p: "**CE, 18 avr. 1902, Commune de Néris-les-Bains** : une autorité de PAG **inférieure** peut aggraver la mesure prise par l'autorité supérieure, si elle justifie de **circonstances locales** (le maire peut être plus rigoureux que le préfet). Elle ne peut pas être moins rigoureuse." },
+      { liste: [
+        "**Circulation** : le maire peut prendre des mesures plus strictes que le Code de la route (C. route, art. R. 411-8, R. 413-3), sous réserve de circonstances locales ; la loi LOM de 2019 a complété les pouvoirs du président du conseil départemental (CGCT, art. L. 3221-4-1).",
+        "Une mesure du **préfet** s'impose au maire dans son champ ; le maire garde la **faculté de renforcer**."
+      ]}
+    ]},
+    { t: "§ 2. La combinaison des mesures de PAS et PAG", c: [
+      { p: "**Principe.** L'existence d'une PAS **n'exclut pas** en principe l'intervention de la PAG : le maire peut agir sur le fondement de son pouvoir général, si les circonstances locales le justifient et à condition de ne pas contredire la police spéciale. Arrêt de principe : **CE, 18 déc. 1959, Lutetia** (la PAS du visa ne fait pas obstacle à l'intervention du maire en cas de circonstances locales). Voir aussi CE, 2 juill. 1997, Bricq (tondeuses) ; CE, 2 déc. 2009, Commune de Rachecourt-sur-Marne." },
+      { p: "**Exception : l'exclusivité de la PAS.** Lorsque la loi organise une **police spéciale complète**, avec un but identique à la PAG, le maire ne peut plus utiliser sa PAG pour la même finalité. Illustrations : antennes relais (CE, ass., 26 oct. 2011, Commune de Saint-Denis), OGM (CE, 24 sept. 2012, Commune de Valence), compteurs Linky (CE, 28 juin 2019, Commune de Cast), pesticides et glyphosate (CE, 31 déc. 2020, Commune d'Arcueil), Covid-19 (CE, ord., 17 avr. 2020, Commune de Sceaux)." },
+      { p: "**Réserve : le péril imminent.** Le maire peut agir malgré l'exclusivité si un **péril imminent** exige une mesure immédiate (CE, 29 sept. 2003, Houillères du bassin de Lorraine ; CE, 4 juill. 2024, démolition). Voir aussi CE, 10 avr. 2002 (circulation aérienne) ; CE, 6 janv. 1997, AS Conseil Formation ; CGCT, art. L. 2216-1 et L. 2216-2." },
+      { p: "**Entre PAS** : les législations sont **indépendantes** et se **cumulent** : une même installation peut exiger permis de construire, autorisation ICPE et autorisation au titre de la police de l'eau." },
+      { cp: "Réflexe : en cas de conflit PAS / PAG, dire (1) la PAG reste possible en principe, (2) sauf **PAS exclusive** organisée par la loi, (3) sauf **péril imminent**. Citer Lutetia pour (1), Saint-Denis 2011 pour (2)." }
+    ]},
+    { t: "Les actes de police : forme et régimes d'exception", c: [
+      { liste: [
+        "**Motivation** : les mesures de police restrictives de liberté doivent être motivées (CRPA, art. L. 211-2) ; procédure contradictoire préalable (art. L. 121-1).",
+        "**Sanction de la violation** : amende de police, contravention de 1re classe (C. pén., art. R. 610-5), la légalité de l'arrêté conditionnant la condamnation (art. 111-5 C. pén.).",
+        "**Régimes d'exception** : état d'urgence (loi du 3 avr. 1955 ; Cons. const., 19 févr. 2016, n° 2016-536 QPC ; CE, ass., avis, 6 juill. 2016, Napol ; CE, sect., 11 déc. 2015, Domenjoud ; CEDH, 16 mai 2024, Domenjoud) ; coupure d'internet (CE, ass., 1er avr. 2025, LDH) ; Jeux olympiques 2024 (lois n° 2018-202 et n° 2023-380 ; vidéosurveillance algorithmique ; Cons. const., 24 avr. 2025)."
+      ]}
+    ]}
+  ]}
+  ]
+}
+,
+{
+  id: "p2t2c3", partie: "Partie 2 · Les activités de l'administration", titre: "Titre 2. La police administrative", kick: "Partie 2 · Titre 2 · Chapitre 3", t: "Le contrôle juridictionnel des mesures de police administrative",
+  plan: "Syllabus p. 5", manuel: "Précis n° 182-191 ; HyperCours ch. 10 (n° 601-609)",
+  intro: "**Le juge administratif exerce sur les mesures de police un contrôle approfondi**, parce qu'elles touchent aux libertés. Il vérifie la compétence, la procédure, l'absence de détournement de pouvoir (CE, 14 mars 1934, Demoiselle Rault), l'exactitude des faits et, surtout, la **qualification juridique** et la **proportionnalité** de la mesure. Au cœur de ce contrôle, la mesure doit répondre à un **but** légitime, être **nécessaire**, et ne pas appartenir aux mesures **prohibées**.",
+  s: [
+  { t: "Section 1 – Le contrôle du but de la mesure", c: [
+    { p: "**Règle.** Une mesure de police doit viser exclusivement la **prévention d'un trouble à l'ordre public**. Toute autre finalité est un **détournement de pouvoir** : but financier, politique, ou esthétique en PAG." },
+    { liste: [
+      "**CE, sect., 18 févr. 1972, Chambre syndicale du Bâtiment de la Haute-Garonne** et **CE, 11 mars 1983, Bures-sur-Yvette** : l'esthétique n'est pas une composante de l'ordre public (contra CE, 3 juin 1938, Renault, ancienne solution).",
+      "**CE, ord., 26 août 2016, Ligue des droits de l'homme (burkini)** : la laïcité n'est pas une composante de l'ordre public ; l'interdiction ne se justifie que par un **risque avéré** de trouble. À distinguer des affaires relevant du service public (CE, ord., 21 juin 2022, Grenoble ; CE, 29 juin 2023, Alliance citoyenne).",
+      "**CE, 23 avr. 1997, Commune des Gets** : la limitation de la **concurrence** n'est pas un but de police."
+    ]}
+  ]},
+  { t: "Section 2 – Le contrôle de la nécessité de la mesure", c: [
+    { p: "**Principe.** Même légitime par son but, la mesure doit être **nécessaire** et **proportionnée** : l'autorité doit choisir la mesure la **moins restrictive** parmi celles qui suffisent." },
+    { liste: [
+      "**CE, 19 mai 1933, Benjamin** : l'interdiction de deux conférences d'un écrivain est illégale, car l'éventualité de troubles n'était pas assez grave pour qu'on ne puisse maintenir l'ordre sans interdire la réunion. C'est l'arrêt de base du contrôle de nécessité.",
+      "**Autres jalons** : CE, 5 août 1908, Morel ; CE, 19 févr. 1909, Abbé Olivier.",
+      "**Triple test** (CE, ass., 26 oct. 2011, Association pour la promotion de l'image) : la mesure doit être **adaptée** (apte à atteindre le but), **nécessaire** (pas de mesure moins attentatoire) et **proportionnée** (équilibre entre l'atteinte à la liberté et l'objectif)."
+    ]},
+    { attention: "Le contrôle porte sur les **circonstances de fait** : plus la liberté en cause est fondamentale, plus le contrôle est serré. En référé-liberté (CJA, art. L. 521-2), le juge vérifie très concrètement le risque allégué." },
+    { cp: "Réflexe : toujours appliquer le **triple test** (adaptée, nécessaire, proportionnée) et citer **Benjamin** pour la nécessité." }
+  ]},
+  { t: "Section 3 – Les mesures prohibées", c: [
+    { p: "Certaines mesures sont, par principe, **illégales** parce qu'elles suppriment la liberté au lieu de la limiter." }
+  ], s: [
+    { t: "§ 1. Les régimes préventifs de l'exercice d'une liberté", c: [
+      { p: "**Principe.** La PAG ne peut pas subordonner une liberté à une **autorisation préalable** : la liberté est la règle. **CE, ass., 22 juin 1951, Daudignac** (photographe sur la voie publique) : le maire ne peut créer un régime d'autorisation préalable pour une activité, sauf si la loi le prévoit ou pour l'occupation du **domaine public** (CE, 29 janv. 1932, Société des autobus antibois). Les régimes **répressifs** (sanction après l'abus) sont préférés aux régimes préventifs." },
+      { p: "**Exceptions légales** : la loi peut instituer des régimes préventifs." },
+      { liste: [
+        "**Rave parties** : déclaration préalable (CSI, art. L. 211-5 ; CE, 30 avr. 2004, Technopol).",
+        "**Manifestations** : déclaration préalable, le maire ou le préfet pouvant les interdire en cas de risque (CSI, art. L. 211-1, L. 211-2, L. 211-4 ; CE, 8 nov. 2024, Institut Illiade ; CE, ord., 18 oct. 2023, Comité Action Palestine).",
+        "**Liberté de réunion** : CE, ord., 19 août 2002, Front national ; CE, ord., 6 mai 2024, Sud Éducation ; CE, ord., 29 nov. 2024, Sciences Po.",
+        "**Association** : liberté de la loi de 1901 (CE, ass., 11 juill. 1956, Amicale des Annamites ; Cons. const., 16 juill. 1971). La **dissolution** relève du CSI (art. L. 212-1) : CE, sect., 9 nov. 2023, Soulèvements de la Terre."
+      ]}
+    ]},
+    { t: "§ 2. Les interdictions générales et absolues", c: [
+      { p: "**Principe.** Une mesure de police ne peut pas interdire de manière **générale et absolue** (sur tout le territoire et en tout temps) l'exercice d'une liberté : elle est disproportionnée par nature." },
+      { liste: [
+        "**T. confl., 8 avr. 1935, Action française** ; **CE, sect., 4 mai 1984, Guez** ; **CE, 12 nov. 1997, Communauté tibétaine** ; **CE, 6 juin 2001, Vannes** (taxis) ; **CE, 8 nov. 2013, Olympique Lyonnais**.",
+        "**Nuance** : une interdiction large reste admise si elle est limitée dans l'espace et le temps et justifiée (CE, 6 sept. 2020, masque obligatoire dans de larges zones)."
+      ]},
+      { p: "**Limites du contrôle.** Le contrôle est plus réduit en matière de police des **étrangers** (erreur manifeste d'appréciation). Pour les **publications d'origine étrangère**, voir CE, ass., 2 nov. 1973, Maspero et CEDH, 2001, Ekin." },
+      { p: "**Juridictions.** Le juge administratif est compétent, sauf **voie de fait** ou **faute personnelle** (juge judiciaire) ; le juge pénal apprécie l'exception d'illégalité (art. 111-5 C. pén.)." }
+    ]}
+  ]}
+  ]
+}
   ],
   /* Points de vérification à communiquer à l'étudiant (affichés en bas de page). */
   limites: [
@@ -587,6 +803,9 @@ window.DAGC = {
     "Divergences relevées : Naliato est daté du 12 janv. 1955 par le Précis et du 11 janv. 1955 par l'HyperCours (11 retenu) ; CCI de La Rochelle est du 18 mars 1977 dans le Précis et « 1997 » dans l'HyperCours (1977 retenu) ; le Précis cite Terrier comme « T. confl. » à un endroit alors que c'est un arrêt du Conseil d'État.",
     "À revérifier avant un examen : le seuil européen des concessions (5,538 M€ HT depuis le 1er janv. 2024, modifié tous les deux ans), la valeur de la continuité (« principe fondamental » dans le Précis, PGD pour le Conseil d'État) et l'arrêt Defrance (CE, 15 janv. 1935) cité par le seul Précis.",
     "Titre 2 : les références des arrêts (Terrier, Feutry, de Fonscolombe, Thérond, Bac d'Eloka, Effimief, Bertin, Le Béton, Duperray, Luchon) viennent du Précis n° 466-470 ; non revérifiées sur les bases officielles.",
+    "Partie 2, Titre 2 (police administrative) : références tirées du Précis (n° 147-191) et de l'HyperCours (ch. 10, n° 559-609), non revérifiées sur Légifrance ni sur la base du Conseil d'État ; numéros de GAJA omis. Les deux manuels divergent sur l'autorité de PAG nationale (Premier ministre pour le Précis ; l'HyperCours y ajoute le Président de la République) : le Premier ministre est retenu.",
+    "Dans les sources, la décision du Conseil constitutionnel sur la dignité est datée du « 27 février 1994 » ; la décision 94-343/344 DC est du **27 juillet 1994** (date retenue, à revérifier). Le numéro « 2011-8625 DC » est une coquille d'OCR pour 2011-625 DC. Le numéro de l'ordonnance Dieudonné (9 janv. 2014) diffère selon les pages du manuel : il n'est pas indiqué ici.",
+    "À revérifier avant un examen : le détail des arrêts récents cités sans analyse (CE 2023-2025 : Institut Illiade, Sciences Po, Soulèvements de la Terre, LDH coupure d'internet) et la date de l'arrêt Daudignac (22 juin 1951, écrite différemment par endroits).",
     "Les références ont été relues dans le texte OCR du Précis (Dalloz, 2025) et de l'HyperCours : coquilles possibles sur les chiffres. Légifrance et la base du Conseil d'État n'étaient pas accessibles depuis le conteneur de travail.",
     "Le Précis date la décision Conseil de la concurrence tantôt du 23 janvier 1987 (n° 456, 491), tantôt du « 23 juillet 1987 » (n° 452, p. 484) ou du « 23 juin 1987 » (n° 457) : la date correcte est **23 janvier 1987** (n° 86-224 DC).",
     "Les nombres (42 TA, 9 CAA) viennent du Précis 2025 et peuvent évoluer ; à vérifier avant un examen."

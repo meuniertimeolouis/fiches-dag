@@ -114,7 +114,7 @@ function chrome(sub, toolCur) {
   document.querySelectorAll(".subjects a").forEach(a => a.setAttribute("aria-current", a.dataset.sub === sub ? "page" : "false"));
   const tools = sub === "obl"
     ? [["obl", "Cours"], ["obl/manuel", "Fiches du manuel"], ["obl/td", "Fiches TD"], ["obl/outils/regimes", "Régimes"], ["obl/outils/articles", "Articles"], ["obl/outils/pieges", "Pièges"], ["obl/outils/cas", "Cas pratiques"], ["obl/outils/arrets", "Arrêts"], ["obl/outils/quiz", "Quiz mélangé"]]
-    : [["dag/cours", "Cours"], ["dag", "Parcours"], ["dag/frise", "Frise chronologique"], ["dag/fiches", "Toutes les fiches"]];
+    : [["dag/cours", "Cours"], ["dag", "Séance de TD"], ["dag/frise", "Frise chronologique"], ["dag/fiches", "Toutes les fiches"]];
   $("#tools").innerHTML = tools.map(([p, t]) => `<a href="#/${p}" ${toolCur === p ? 'aria-current="page"' : ""}>${t}</a>`).join("") +
 "";
   $("#thumbs").innerHTML = "";
@@ -786,14 +786,14 @@ function dagHome() {
   const last = S.last && S.last.sub === "dag" ? S.last : null;
   const resume = last
     ? `<p>Reprise à la séance ${esc(last.n)}, <strong>${esc(DAG.SEANCES[last.n])}</strong>, étape ${esc(DSTEPS.find(s => s.k === last.step).t.toLowerCase())}.</p><div class="row"><a class="btn main" href="#/dag/s/${last.n}/${last.step}">Reprendre</a></div>`
-    : `<p>Trois séances, ${DAG.D.length} arrêts. Chaque séance se révise en trois temps : situer les arrêts sur la frise, apprendre les fiches, puis se tester.</p><div class="row"><a class="btn main" href="#/dag/s/2/frise">Commencer par la séance 2</a></div>`;
+    : `<p>${Object.keys(DAG.SEANCES).length} séances, ${DAG.D.length} arrêts. Chaque séance se révise en trois temps : situer les arrêts sur la frise, apprendre les fiches, puis se tester.</p><div class="row"><a class="btn main" href="#/dag/s/2/frise">Commencer par la séance 2</a></div>`;
   setMain(`<section class="resume"><div class="eyebrow">Licence 2</div><h1>Droit administratif</h1>${resume}</section>
     <section class="part"><h2>Séances</h2>${Object.keys(DAG.SEANCES).map(s => {
       const n = DAG.D.filter(d => d.s === s).length, p = S.dag[s] || {};
       return `<a class="chrow" href="#/dag/s/${s}/${(DSTEPS.find(x => !p[x.k]) || DSTEPS[0]).k}"><span class="n">${s}</span><span class="t">${esc(DAG.SEANCES[s])} <span class="muted small">(${n} arrêts)</span></span>
         <span class="right"><span class="st">${DSTEPS.map(x => `<i class="${p[x.k] ? "on" : ""}"></i>`).join("")}</span><span class="sc">${p.test && p.test.of ? `test ${p.test.best}/${p.test.of}` : ""}</span></span></a>`;
     }).join("")}</section>
-    <section class="part"><h2>Toute la frise</h2><p>Les ${DAG.D.length} arrêts de 1855 à 2026, avec les liens qui les unissent : qui reprend, précise, nuance ou assouplit qui.</p><p style="margin-top:10px"><a class="btn" href="#/dag/frise">Ouvrir la frise chronologique</a></p></section>`);
+    <section class="part"><h2>Toute la frise</h2><p>Les ${DAG.D.length} arrêts de ${Math.min(...DAG.D.map(d => +d.date.slice(0, 4)))} à ${Math.max(...DAG.D.map(d => +d.date.slice(0, 4)))}, avec les liens qui les unissent : qui reprend, précise, nuance ou assouplit qui.</p><p style="margin-top:10px"><a class="btn" href="#/dag/frise">Ouvrir la frise chronologique</a></p></section>`);
   $("#thumbs").innerHTML = Object.keys(DAG.SEANCES).map(s => `<a href="#/dag/s/${s}/frise">Séance ${s}</a>`).join("");
 }
 function dagSeance(s, step) {

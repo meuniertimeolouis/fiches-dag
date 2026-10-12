@@ -311,7 +311,7 @@ function dagCours(id) {
     const row = (c, n) => `<a class="chrow" href="#/dag/cours/${c.id}"><span class="n">${n}</span><span class="t">${esc(c.t)}<small class="sub">${esc(c.kick)}</small></span><span class="right"></span></a>`;
     setMain(`<section class="resume"><div class="eyebrow">Licence 2 · Droit administratif général</div><h1>Cours</h1><p>Le cours suit le plan annuel du Pr Gabayet (syllabus 2026-2027), avec les titres du syllabus, rempli à partir du Précis et de l'HyperCours. Pour l'instant : <strong>Partie 1, Titres 1 et 2</strong>, et <strong>Partie 2, Titres 1 et 2</strong> (le service public et la police administrative).</p></section>
       ${(() => { let lp = "", lt = "", out = ""; DAGC.chapitres.forEach((c, k) => { const p = c.partie || "Partie 1 · Les clés du droit administratif", t = c.titre || "Titre 1. Les acteurs du droit administratif"; if (p !== lp) { out += (lp ? "</section>" : "") + `<section class="part"><h2>${esc(p)}</h2>`; lp = p; lt = ""; } if (t !== lt) { out += `<h3 class="muted">${esc(t)}</h3>`; lt = t; } out += row(c, k + 1); }); return out + (lp ? "</section>" : ""); })()}
-      <section class="part"><h2>Limites de vérification</h2><ul class="small muted">${(DAGC.limites || []).map(x => `<li>${fmtA(x)}</li>`).join("")}</ul></section>`);
+      <section class="part"><h2>Sous réserve</h2><p class="small muted">Ce cours est donné sous réserve : il peut contenir des erreurs et ne remplace ni les CM du professeur ni les TD.</p></section>`);
     return;
   }
   const prev = DAGC.chapitres[i - 1], next = DAGC.chapitres[i + 1];
@@ -320,7 +320,7 @@ function dagCours(id) {
     <div><div class="head"><div class="kick">${esc(c.kick)}</div><h1>${esc(c.t)}</h1></div>
     <div class="content cours">${c.intro ? `<p class="lead">${fmtA(c.intro)}</p>` : ""}
     ${(c.s || []).map((n, j) => coursNode(n, 0, "s-" + j)).join("")}
-    <p class="muted small vlim"><strong>Sources :</strong> ${esc(c.manuel)}. ${(DAGC.limites || []).map(fmtA).join(" ")}</p>
+    <p class="muted small vlim"><strong>Sources :</strong> ${esc(c.manuel)}. Ce cours est donné sous réserve : il peut contenir des erreurs et ne remplace ni les CM du professeur ni les TD.</p>
     <div class="next">${prev ? `<a class="btn" href="#/dag/cours/${prev.id}">← ${esc(prev.t)}</a>` : ""}<span></span>${next ? `<a class="btn main" href="#/dag/cours/${next.id}">${esc(next.t)} →</a>` : `<a class="btn main" href="#/dag/cours">Retour au cours</a>`}</div>
     </div></div></div>`);
   main().querySelectorAll(".toc [data-scroll]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); const el = document.getElementById(a.dataset.scroll); if (el) el.scrollIntoView({ behavior: "smooth" }); }));

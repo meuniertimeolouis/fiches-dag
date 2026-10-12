@@ -156,9 +156,98 @@ window.DAGC = {
   ]}
   ]
 }
+,{
+  id: "t2c1", titre: "Titre 2. L'identification du droit administratif", kick: "Partie 1 · Titre 2 · Chapitre 1", t: "La question de l'autonomie du droit administratif",
+  plan: "Syllabus p. 3", manuel: "Précis n° 9-15, 42, 455 ; HyperCours introduction (sections 1 et 3)",
+  intro: "**Le droit administratif est-il un droit à part, ou l'administration est-elle soumise au droit commun ?** En France, la réponse est : en principe un droit **dérogatoire** au droit privé, mais dont l'autonomie est **relative**. Ne pas confondre **droit de l'administration** (tout le droit applicable à l'administration) et **droit administratif** (les seules règles propres).",
+  s: [
+  { t: "Section 1 – L'autonomie du droit administratif au regard du droit privé", s: [
+    { t: "§1. Les raisons de l'autonomie", c: [
+      { p: "**Point de départ** : une administration peut être soumise au **même droit que les particuliers** (c'est le modèle britannique traditionnel : même Common Law, mêmes juges ordinaires, avec des exceptions comme l'expropriation) ou à un **droit spécifique** (modèle français). Cette opposition, classique depuis Dicey et Hauriou, est aujourd'hui jugée **trop schématique** (S. Cassese : la Common Law n'est pas que du droit privé, un droit administratif existait déjà en Angleterre, les particularités françaises sont surestimées) ; on observe des convergences." },
+      { p: "**Pourquoi la France a un droit propre** :" },
+      { liste: [
+        "**Raison historique** : le droit administratif est né de la séparation des autorités (loi des 16-24 août 1790) puis de la création d'un **juge spécialisé** (loi du 24 mai 1872). On considère qu'**un juge spécialisé a pu créer un droit spécialisé**, ce que les juridictions judiciaires n'auraient pas su ou voulu faire.",
+        "**Raison de fond** : l'administration poursuit l'**intérêt général**, qui doit prévaloir sur les intérêts particuliers. Le droit privé suppose l'**égalité** juridique des parties ; face à l'administration, ce postulat ne tient pas. Il faut lui reconnaître des **prérogatives exorbitantes** (décision exécutoire, exécution forcée, expropriation).",
+        "**Mais aussi des sujétions** : l'intérêt général impose à l'administration des obligations plus strictes que celles des particuliers (mise en concurrence pour ses contrats, concours pour recruter, égalité d'accès aux emplois publics). Jean Rivero parle de « dérogations en plus » et de « dérogations en moins »."
+      ]},
+      { a2: "T. confl., 8 févr. 1873, Blanco", r: "Cité pour affirmer que la responsabilité de l'État n'est pas régie par le Code civil : elle a « ses règles spéciales, qui varient suivant les besoins du service et la nécessité de concilier les droits de l'État avec les droits privés » (voir Titre 1)." },
+      { p: "**Un système équilibré** : ces prérogatives sont acceptables parce que l'administration est soumise au **principe de légalité** et à un **contrôle juridictionnel effectif**. Le Précis note que le système français peut même être plus protecteur : la responsabilité de la puissance publique y est admise dès 1873, contre 1946 aux États-Unis (droit fédéral) et 1947 au Royaume-Uni." },
+      { cp: "Réflexe : en dissertation, présenter la **justification** de l'autonomie (intérêt général + juge spécialisé) **et** sa contrepartie (légalité, contrôle). Ne pas écrire que le droit administratif est « le droit des privilèges de l'administration »." }
+    ]},
+    { t: "§2. La portée de l'autonomie", c: [
+      { p: "L'autonomie est **dérogatoire** (le principe) mais **relative** (la réalité) :" },
+      { liste: [
+        "**Elle n'est pas totale** : l'administration utilise souvent le droit privé. Si le propriétaire d'un immeuble accepte de le lui vendre, la vente est régie par le **Code civil**. C'est la solution normale pour les entreprises industrielles et commerciales gérées par l'administration (SPIC). On parle de **gestion privée** (opposée à la **gestion publique**, qui implique des prérogatives de puissance publique).",
+        "**Le juge administratif applique parfois le droit privé** (dol dans un contrat administratif, prescription). Quand la règle de droit privé ne contredit pas les nécessités de l'action administrative, il n'y a aucune raison de ne pas l'appliquer ; quand elle les contrarie, il lui substitue une règle propre. L'autonomie devrait donc rester **relative**.",
+        "**Mais elle se renforce** : le juge administratif développe de plus en plus des solutions propres plutôt que de recourir au droit privé, ce qui rend l'autonomie « de moins en moins relative » (Précis n° 12)."
+      ]},
+      { attention: "Ne pas répéter que Blanco impose l'inapplicabilité du Code civil à toute l'administration. Le Précis souligne que cet arrêt ne concerne que la **responsabilité** et que son extension à tout le droit administratif résulte d'une interprétation « singulièrement constructive ». De même, la « liaison de la compétence et du fond » (la compétence suit le fond) est une **fausse idée simple** : le juge administratif peut appliquer le droit privé, et le juge judiciaire le droit administratif." },
+      { p: "**Autonomie et sources** : le droit administratif est longtemps resté un droit **jurisprudentiel** et **non codifié**. Le Code civil a rassemblé des règles préexistantes ; la codification du droit administratif était matériellement impossible au XIXe et dans la première moitié du XXe siècle. Aujourd'hui, des **codifications sectorielles** existent (urbanisme, expropriation, CGCT, CG3P, commande publique, fonction publique, et le **CRPA** pour la procédure et les actes unilatéraux) sans assurer à elles seules la cohérence d'ensemble." },
+      { p: "Le droit administratif reste très jurisprudentiel dans les domaines peu encadrés par les textes (responsabilité administrative, régime commun des contrats), même si l'inflation de textes et le droit de l'Union réduisent le rôle créateur du juge." }
+    ]}
+  ]},
+  { t: "Section 2 – Le droit de l'Administration et le droit administratif", c: [
+    { def: { terme: "Droit de l'administration (sens large)", texte: "ensemble des règles applicables à l'**activité administrative**, qu'elles relèvent du droit privé ou qu'elles soient différentes de lui." } },
+    { def: { terme: "Droit administratif (sens strict)", texte: "les seules règles **originales**, propres à l'activité administrative, c'est-à-dire distinctes de celles du droit privé : le droit public régissant l'administration (on parle aussi de droit public administratif)." } },
+    { p: "Les manuels de droit administratif n'étudient que les règles originales et renvoient aux ouvrages de droit privé pour le reste. La définition stricte est acceptable à condition de ne pas oublier que l'on ne décrit pas **toutes** les règles applicables à l'action administrative." },
+    { p: "Cette distinction conduit à une **relativisation** : même dans les pays à juridiction unique, il existe un corps de règles spécifiques à l'administration (organisation, prérogatives de puissance publique, police administrative). Le droit administratif au sens large comporte aussi de plus en plus de droit privé (externalisation, privatisation du secteur public, techniques de droit privé pour financer ou gérer des biens publics), ce qui impose aux juristes de connaître **les deux** branches (HyperCours)." },
+    { attention: "Autre distinction à ne pas confondre : le **droit public** est plus large que le droit administratif (il comprend le droit constitutionnel, le droit international public…). La *summa divisio* droit public / droit privé est d'abord, selon Eisenmann, une **division d'objets d'étude ou d'enseignement**." },
+    { cp: "Réflexe : en introduction, définir le droit administratif **au sens strict** (règles dérogatoires) et signaler d'emblée qu'il coexiste avec du droit privé applicable à l'administration : cela montre la maîtrise du sujet." }
+  ]}
+  ]
+},
+{
+  id: "t2c2", titre: "Titre 2. L'identification du droit administratif", kick: "Partie 1 · Titre 2 · Chapitre 2", t: "La question des critères du droit administratif",
+  plan: "Syllabus p. 3", manuel: "Précis n° 38-41, 466-470 ; HyperCours introduction et ch. 13",
+  intro: "**Quel critère détermine le champ du droit administratif et la compétence du juge administratif ?** La loi des 16-24 août 1790 parle de « fonctions administratives » sans les définir : la doctrine et la jurisprudence ont cherché un critère. Trois ont été proposés : la distinction **actes d'autorité / actes de gestion**, la **puissance publique**, le **service public**. Aucun n'a éliminé les autres : la jurisprudence les **combine** de façon pragmatique.",
+  s: [
+  { t: "Section 1 – Le critère de la dichotomie acte d'autorité / acte de gestion", c: [
+    { p: "**Idée** : l'État est « dédoublé » : tantôt **puissance publique** (il commande, au nom de l'intérêt général), tantôt **personne civile** (propriétaire, partie à des contrats). Les actes d'**autorité** relèvent du juge administratif ; les actes de **gestion** de son patrimoine, comme ceux d'un propriétaire privé, relèvent du juge judiciaire et du droit privé. La distinction a dominé jusqu'au début du XXe siècle." },
+    { liste: [
+      "**Critère à l'origine finaliste** : l'acte d'autorité est celui qui vise l'intérêt général et suppose des prérogatives de puissance publique.",
+      "**Origine** : le Conseil d'État a d'abord défendu un critère **organique** (privilège de juridiction de l'État) et la théorie de l'**État débiteur** (seule l'autorité administrative peut « constituer l'État débiteur »). Voir CE, 6 déc. 1855, Rothschild et CE, 16 août 1861, Dekeister, où la notion de service public s'entend comme la mise en œuvre de prérogatives de puissance publique."
+    ]},
+    { attention: "Ne pas présenter Rothschild ou Blanco comme consacrant le critère du service public au sens moderne : à l'époque, « service public » désigne la mise en œuvre de prérogatives de puissance publique (Précis n° 467)." },
+    { p: "**Sort du critère** : abandonné comme critère général. Il subsiste dans un champ limité : la **gestion du domaine privé** reste réputée obéir à des considérations patrimoniales et relève du juge judiciaire (T. confl., 24 oct. 1994, Duperray, cité par le Précis)." }
+  ]},
+  { t: "Section 2 – Le critère des moyens : la puissance publique", c: [
+    { def: { terme: "Prérogatives de puissance publique", texte: "privilèges et protections reconnus à l'administration pour faire prévaloir l'intérêt général face aux intérêts particuliers, par exemple la **décision exécutoire** (acte unilatéral qui s'impose sans consentement) et l'**exécution forcée**." } },
+    { p: "**La thèse** : pour le doyen **Vedel**, le droit administratif est « le droit commun de la puissance publique » ; lorsqu'une personne agit avec des prérogatives exorbitantes, il est légitime de lui appliquer le droit administratif. **Chapus** voit dans la puissance publique le critère de la **compétence du juge administratif**." },
+    { p: "**Les limites** : le Précis juge que cette idée ne correspond pas à tout le droit positif et ne peut pas être présentée comme « le » critère. Beaucoup d'activités administratives n'impliquent pas de prérogatives (service public sans pouvoir de contrainte), et inversement." },
+    { p: "**Renouveau par la gestion privée** : la distinction « gestion publique / gestion privée » a ressuscité ce critère : une personne publique peut gérer un service public en renonçant à ses prérogatives. Voir CE, 31 juill. 1912, Société des granits porphyroïdes des Vosges (contrats de fournitures selon les règles des contrats entre particuliers) et T. confl., 22 janv. 1921, Société commerciale de l'Ouest africain, dit « du Bac d'Eloka » (service exploité « dans les mêmes conditions qu'un industriel ordinaire » : compétence judiciaire, origine des **SPIC**)." },
+    { a2: "T. confl., 22 janv. 1921, Société commerciale de l'Ouest africain (Bac d'Eloka)", r: "Un service public peut relever du juge judiciaire s'il est géré comme une entreprise privée : le service public ne suffit donc pas à fonder la compétence administrative. Point de départ de la notion de SPIC." },
+    { cp: "Réflexe : la puissance publique intervient à la fois comme critère d'identification d'un acte (l'acte unilatéral est généralement une prérogative de puissance publique) et comme limite du service public (gestion privée). La citer quand on discute la qualification d'un acte ou d'un contrat." }
+  ]},
+  { t: "Section 3 – Le critère du but : le service public", c: [
+    { p: "**La thèse de l'École du service public** (Léon Duguit, Gaston Jèze) : à partir de Blanco et de quelques arrêts de la fin du XIXe et du début du XXe siècle, le droit administratif serait le **droit des services publics** : la notion fournirait à la fois le **champ** du droit administratif et la **compétence** du juge. L'État n'est plus fondé sur la souveraineté mais sur la mission de faire fonctionner des services publics. Cette conception a animé la jurisprudence et une grande partie de la doctrine jusque dans les années 1950." },
+    { liste: [
+      "**CE, 6 févr. 1903, Terrier** (conclusions Romieu) : « Tout ce qui concerne l'organisation et le fonctionnement des services publics proprement dits, généraux ou locaux, soit que l'administration agisse par voie de contrat, soit qu'elle procède par voie d'autorité, constitue une opération administrative qui est par sa nature de la compétence administrative. »",
+      "**T. confl., 29 févr. 1908, Feutry** : responsabilité des départements ; **T. confl., 13 avr. 1908, de Fonscolombe** : communes ; **CE, 4 mars 1910, Thérond** : contrats.",
+      "**Réaffirmation dans les années 1950** : T. confl., 28 mars 1955, Effimief (travaux publics dans le cadre d'une mission de service public) ; CE, sect., 20 avr. 1956, Époux Bertin et Consorts Grimouard (contrats administratifs) ; CE, sect., 19 oct. 1956, Société Le Béton (domaine public)."
+    ]},
+    { p: "**La crise du service public** : dès l'origine, la thèse a deux exceptions majeures :" },
+    { liste: [
+      "**L'administration ne gère pas que des services publics** : la **police administrative** (réglementer l'activité des particuliers) ne fournit pas un service. Le droit administratif est plus large que le service public.",
+      "**La gestion d'un service public n'utilise pas toujours le droit administratif** : les **SPIC** relèvent largement du droit privé et du juge judiciaire (Bac d'Eloka), des organismes privés gèrent des services publics (caisses de sécurité sociale), et la gestion privée progresse dans les services traditionnels."
+    ]},
+    { attention: "Conclusion à retenir : le service public ne peut plus être **ni** le critère du champ du droit administratif **ni** celui de la compétence du juge administratif, malgré les efforts du Conseil d'État pour le restaurer. Il reste une notion **centrale** (Titre 1 de la Partie 2) mais pas exclusive." },
+    { p: "**Synthèse : une pluralité de critères combinés** (Précis n° 469) :" },
+    { liste: [
+      "Le critère **organique** joue un rôle incontestable : les décisions des personnes publiques sont présumées administratives ; un contrat n'est administratif en principe que si une partie au moins est une personne publique ; un bien n'appartient au domaine public que s'il appartient à une personne publique.",
+      "Mais le critère organique n'est **jamais suffisant** : il doit être complété par le **service public** ou les **prérogatives de puissance publique**, qui jouent alors de façon **alternative**. Un acte d'une personne publique accompli hors service public et sans prérogatives (gestion du domaine privé) relève du juge judiciaire (Duperray).",
+      "Le critère organique n'est **pas toujours nécessaire** : une personne privée chargée d'une mission de service public peut prendre un acte administratif **dans l'exercice de prérogatives de puissance publique** : cumul des critères fonctionnel et formel.",
+      "Ces critères se **justifient mutuellement** : une activité n'est un service public que si une personne publique la gère, habilite une personne privée avec des prérogatives, ou la contrôle assez pour manifester son intention d'en faire un service public."
+    ]},
+    { p: "**Blocs de compétence** : pour simplifier, la jurisprudence ou la loi raisonnent parfois globalement (Bac d'Eloka puis SPIC : relations avec les agents, sauf directeur et comptable public, et avec les usagers relevant du juge judiciaire ; CE, 31 mai 2006, Office du tourisme de Luchon, même pour un acte unilatéral). Le législateur détermine aussi la compétence de façon directe ou en qualifiant les actes (par exemple en disant qu'une catégorie de contrats est administrative)." },
+    { cp: "Réflexe de copie : (1) la personne en cause est-elle publique ? (2) agit-elle dans le cadre d'un service public ? (3) met-elle en œuvre des prérogatives de puissance publique ? (4) un texte attribue-t-il la compétence ? Conclure en soulignant la **combinaison pragmatique** des critères, et non en affirmant « le critère est X »." }
+  ]}
+  ]
+}
+
   ],
   /* Points de vérification à communiquer à l'étudiant (affichés en bas de page). */
   limites: [
+    "Titre 2 : les références des arrêts (Terrier, Feutry, de Fonscolombe, Thérond, Bac d'Eloka, Effimief, Bertin, Le Béton, Duperray, Luchon) viennent du Précis n° 466-470 ; non revérifiées sur les bases officielles.",
     "Les références ont été relues dans le texte OCR du Précis (Dalloz, 2025) et de l'HyperCours : coquilles possibles sur les chiffres. Légifrance et la base du Conseil d'État n'étaient pas accessibles depuis le conteneur de travail.",
     "Le Précis date la décision Conseil de la concurrence tantôt du 23 janvier 1987 (n° 456, 491), tantôt du « 23 juillet 1987 » (n° 452, p. 484) ou du « 23 juin 1987 » (n° 457) : la date correcte est **23 janvier 1987** (n° 86-224 DC).",
     "Les nombres (42 TA, 9 CAA) viennent du Précis 2025 et peuvent évoluer ; à vérifier avant un examen."

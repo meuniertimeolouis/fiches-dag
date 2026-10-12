@@ -309,8 +309,8 @@ function dagCours(id) {
   const i = DAGC.chapitres.findIndex(c => c.id === id), c = DAGC.chapitres[i];
   if (!c) {
     const row = (c, n) => `<a class="chrow" href="#/dag/cours/${c.id}"><span class="n">${n}</span><span class="t">${esc(c.t)}<small class="sub">${esc(c.kick)}</small></span><span class="right"></span></a>`;
-    setMain(`<section class="resume"><div class="eyebrow">Licence 2 · Droit administratif général</div><h1>Cours</h1><p>Le cours suit le plan annuel du Pr Gabayet (syllabus 2026-2027), avec les titres du syllabus, rempli à partir du Précis et de l'HyperCours. Pour l'instant : <strong>Partie 1, Titre 1 (Les acteurs du droit administratif)</strong>.</p></section>
-      <section class="part"><h2>Partie 1 · Les clés du droit administratif</h2><h3 class="muted">Titre 1. Les acteurs du droit administratif</h3>${DAGC.chapitres.map((c, k) => row(c, k + 1)).join("")}</section>
+    setMain(`<section class="resume"><div class="eyebrow">Licence 2 · Droit administratif général</div><h1>Cours</h1><p>Le cours suit le plan annuel du Pr Gabayet (syllabus 2026-2027), avec les titres du syllabus, rempli à partir du Précis et de l'HyperCours. Pour l'instant : <strong>Partie 1, Titres 1 et 2</strong>.</p></section>
+      <section class="part"><h2>Partie 1 · Les clés du droit administratif</h2>${DAGC.chapitres.map((c, k) => (k === 0 ? `<h3 class="muted">Titre 1. Les acteurs du droit administratif</h3>` : c.titre && c.titre !== DAGC.chapitres[k - 1].titre ? `<h3 class="muted">${esc(c.titre)}</h3>` : "") + row(c, k + 1)).join("")}</section>
       <section class="part"><h2>Limites de vérification</h2><ul class="small muted">${(DAGC.limites || []).map(x => `<li>${fmtA(x)}</li>`).join("")}</ul></section>`);
     return;
   }

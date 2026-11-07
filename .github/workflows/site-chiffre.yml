@@ -1,0 +1,44 @@
+name: Mettre à jour le site chiffré
+
+# Après chaque modification des sources sur main, régénère prive.html
+# (seule version publiée du site, protégée par mot de passe). Aucun secret
+# n'est nécessaire : le chiffrement utilise la clé publique du dépôt.
+on:
+  push:
+    branches: [main]
+    paths-ignore: [prive.html]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: site-chiffre
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Régénérer prive.html
+        run: node scripts/build-site.mjs
+      - name: Enregistrer prive.html s'il a changé
+        id: commit
+        run: |
+          if git diff --quiet -- prive.html; then echo "Déjà à jour."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add prive.html
+          git commit -m "Site chiffré mis à jour"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && echo "pushed=1" >> "$GITHUB_OUTPUT" && exit 0; sleep 5; done
+          exit 1
+      - name: Demander la publication par GitHub Pages
+        if: steps.commit.outputs.pushed == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "La publication suivra le push."

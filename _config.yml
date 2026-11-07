@@ -1,0 +1,8 @@
+# GitHub Pages ne publie que la version chiffrée du site (prive.html, servie à /reviser/).
+# Les sources ci-dessous restent dans le dépôt mais ne sont plus servies.
+exclude:
+  - reviser
+  - obligations/data
+  - assets
+  - scripts
+  - README.md
